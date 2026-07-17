@@ -16,7 +16,7 @@
 
 ## Research expansion
 
-- [ ] Verify and add all 11 Reactor Pilot Program projects; distinguish project count from company count.
+- [x] Verify and add all 11 initial Reactor Pilot Program projects; distinguish project count from company count.
 - [ ] Build the complete U.S. project census with NRC, DOE, utility, DoD, and national-lab sources.
 - [ ] Build the global comparison from regulator/IAEA/country primary sources before publishing global counts.
 - [ ] Add the full DOE program inventory, EO deliverable deadlines, congressional authorities, awards, and appropriation status.

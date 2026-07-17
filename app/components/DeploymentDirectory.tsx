@@ -9,7 +9,7 @@ export function DeploymentDirectory() {
   const [query, setQuery] = useState("");
   const [stage, setStage] = useState(0);
   const filtered = useMemo(() => projects.filter((project) => {
-    const matchesText = `${project.name} ${project.developer} ${project.location} ${project.technology}`.toLowerCase().includes(query.toLowerCase());
+    const matchesText = `${project.name} ${project.developer} ${project.location} ${project.technology} ${project.programs.join(" ")}`.toLowerCase().includes(query.toLowerCase());
     return matchesText && (!stage || project.stage === stage);
   }), [query, stage]);
 

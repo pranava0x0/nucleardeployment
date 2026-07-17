@@ -5,6 +5,7 @@ const basePath = isGitHubPages ? "/nucleardeployment" : "";
 
 const nextConfig: NextConfig = {
   output: isGitHubPages ? "export" : undefined,
+  ...(isGitHubPages ? { generateBuildId: async () => process.env.GITHUB_SHA?.slice(0, 12) ?? "local-pages" } : {}),
   basePath,
   assetPrefix: basePath || undefined,
   trailingSlash: isGitHubPages,

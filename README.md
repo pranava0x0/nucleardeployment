@@ -2,13 +2,15 @@
 
 Deployment Core is an evidence-led tracker for U.S. nuclear deployment. It separates announcements from binding commitments, licensing, physical construction, criticality, operation, and replication.
 
-The current release is a research-backed tracked set. Its counts describe six sourced projects, not a comprehensive national census.
+The current release is a research-backed tracked set: 17 sourced projects and 15 company records, including all 11 initial Reactor Pilot Program projects. It is not yet a comprehensive national census.
 
 ## What is included
 
 - National overview and eight-stage commitment ladder
 - Linked company names inside every active pipeline stage
 - Company directory and sourced company detail pages
+- DOE program labels that separate the Reactor Pilot Program, Nuclear Energy Launch Pad, ARDP, DOME, and Project Pele
+- Four tracked 2026 criticality records: three government-reported and one company-reported
 - Filterable deployment directory
 - Project pages with latest evidence, next gate, owner, blocker, and confidence
 - Schematic U.S. project map plus a non-map list

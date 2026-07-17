@@ -18,14 +18,14 @@ test("server-renders the evidence-led homepage", async () => {
   const html = await response.text();
   assert.match(html, /Deployment Core/);
   assert.match(html, /America is rebuilding the machinery/);
-  assert.match(html, /From interest to repeat deployment/);
+  assert.match(html, /Projects by stage/);
   assert.match(html, /Exploring the idea/);
   assert.match(html, /Work or fuel at the site/);
-  assert.match(html, /2 projects/);
+  assert.match(html, /10 projects/);
   assert.match(html, /TerraPower/);
   assert.match(html, /Kairos Power/);
   assert.doesNotMatch(html, /Announcement is not deployment/);
-  assert.match(html, /sourced U\.S\. projects currently tracked/);
+  assert.doesNotMatch(html, /metric-rail/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });
 
@@ -65,14 +65,32 @@ test("server-renders a project record with its next gate and source", async () =
 
 test("all source links use https and every project states a next action", async () => {
   const dataModule = await import("../app/data.ts");
+  const companySlugs = new Set(dataModule.companies.map((company) => company.slug));
   for (const project of dataModule.projects) {
     assert.match(project.source, /^https:\/\//);
     assert.ok(project.next.length > 20, project.name);
     assert.ok(project.sourceLabel.length > 4, project.name);
+    assert.ok(companySlugs.has(project.companySlug), `${project.name} has no company record`);
+    assert.ok(project.programs.length > 0, `${project.name} has no program label`);
   }
   for (const collection of [dataModule.federalActions, dataModule.programs, dataModule.capital]) {
     for (const record of collection) assert.match(record.source, /^https:\/\//);
   }
+});
+
+test("DOE program coverage distinguishes pilot, criticality, and ARDP projects", async () => {
+  const dataModule = await import("../app/data.ts");
+  const pilotProjects = dataModule.projects.filter((project) => project.programs.includes("Reactor Pilot Program"));
+  const criticalityProjects = pilotProjects.filter((project) => project.status === "Initial criticality achieved");
+  const ardpProjects = dataModule.projects.filter((project) => project.programs.includes("ARDP demonstration"));
+  const launchPadProjects = dataModule.projects.filter((project) => project.programs.includes("Nuclear Energy Launch Pad"));
+
+  assert.equal(dataModule.projects.length, 17);
+  assert.equal(dataModule.companies.length, 15);
+  assert.equal(pilotProjects.length, 11);
+  assert.deepEqual(criticalityProjects.map((project) => project.name).sort(), ["Aalo Critical Test Reactor", "Antares R1 Mark-0", "Ward 250 critical experiment"]);
+  assert.deepEqual(ardpProjects.map((project) => project.slug).sort(), ["long-mott-xe-100", "natrium-kemmerer"]);
+  assert.deepEqual(launchPadProjects.map((project) => project.slug), ["deployable-unity"]);
 });
 
 test("CSS keeps palette values in the root token block", async () => {

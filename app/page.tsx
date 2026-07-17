@@ -19,16 +19,10 @@ export default function Home() {
           <div className="orbit one" /><div className="orbit two" /><div className="orbit three" />
           <div className="core-readout"><span>NATIONAL STATUS</span><b>BUILD</b><small>Institutions → projects → repeat delivery</small></div>
         </div>
-        <div className="metric-rail" aria-label="Tracked sample summary">
-          <div><b>{projects.length}</b><span>sourced U.S. projects currently tracked</span></div>
-          <div><b>{projects.filter((p) => p.stage >= 6).length}</b><span>at physical deployment or beyond</span></div>
-          <div><b>{projects.filter((p) => p.status.includes("criticality")).length}</b><span>tracked critical experiments</span></div>
-          <div><b>4</b><span>nuclear executive orders tracked</span></div>
-        </div>
       </section>
 
       <section className="section pipeline-section">
-        <div className="section-head"><div><p className="eyebrow">Deployment pipeline</p><h2>From interest to repeat deployment.</h2></div><p>Each stage marks stronger evidence. Counts cover the <b>{projects.length} sourced projects in this release</b>, not every announced U.S. reactor.</p></div>
+        <div className="section-head"><div><p className="eyebrow">Deployment pipeline</p><h2>Projects by stage.</h2></div><p>Evidence gets harder as projects move right. This release tracks <b>{projects.length} sourced projects</b>; it is not a complete U.S. reactor census.</p></div>
         <div className="pipeline" aria-label="Eight deployment stages and tracked project counts">
           {counts.map((item) => <article className={`pipe-step ${item.count ? "has-data" : ""}`} key={item.stage}>
             <span className="pipe-number">STAGE {item.stage}</span>

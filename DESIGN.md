@@ -13,10 +13,10 @@
 - Project status must remain legible without color: stage number, label, evidence text, and next gate always travel together.
 - Pipeline summaries stay compact: every stage shows its number, name, plain-language meaning, and a count with its unit. Never use a naked number or empty vertical bar as the explanation.
 - Map markers encode stage number and link to a plain list that exposes the same records.
-- The landing page leads with the national status and real sample counts. No generic marketing hero or feature-card row.
+- The landing page leads with the national status and the deployment pipeline. Counts live beside the stages they explain; there is no generic stat strip or feature-card row.
 - System fonts only. Serif for the national narrative and large numbers; sans for explanation; mono for labels, dates, stages, and source-state language.
 - Corners stay square. Structure comes from rules, grids, and contrast rather than shadows or glass effects.
-- Mobile preserves essential content, uses horizontal scrolling only for stage sequences or metric strips, and keeps touch controls at least 44px high.
+- Mobile preserves essential content, uses horizontal scrolling only for stage sequences, and keeps touch controls at least 44px high.
 
 ---
 

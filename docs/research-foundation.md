@@ -66,7 +66,14 @@ Initial authoritative surfaces:
 
 | Program | Purpose | Current measurable evidence | Next evidence |
 | --- | --- | --- | --- |
-| Reactor Pilot Program | DOE-authorized privately funded test reactors outside national laboratories | 11 initial projects; DOE reported two zero-power criticalities by June 18, 2026 | Additional authorization, criticality, test results, commercial licensing use |
+| Reactor Pilot Program | DOE-authorized privately funded test reactors outside national laboratories | 11 initial projects; DOE reported Antares and Valar criticalities, while Aalo reported a third pilot criticality on July 4, 2026 | Additional authorization, criticality, test results, commercial licensing use |
+| Nuclear Energy Launch Pad | NRIC pathway for experiments at national-laboratory sites | DOE reported Unity criticality on June 30, 2026 | Test results and a commercial licensing pathway |
+
+### July 4 criticality source audit · 2026-07-17
+
+- DOE Office of Nuclear Energy's LinkedIn feed first reported [11 pilot selections and four approved preliminary documented safety analyses](https://www.linkedin.com/posts/nuclearenergygov_reactor-pilot-program-progress-report-activity-7434991138165563392-yxhT), then reported [Unity as criticality number three](https://www.linkedin.com/posts/nuclearenergygov_criticality-number-three-on-june-30-activity-7478100277536043009-NvZD) under the separate Nuclear Energy Launch Pad.
+- DOE.gov remains the primary government source for the earlier [Antares](https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality) and [Valar](https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality) criticalities.
+- [Aalo reported its July 4 criticality](https://www.linkedin.com/posts/aalo-atomics_on-july-4-2026-at-1220-am-mt-we-brought-activity-7479885863984713728-HTO7) on its own LinkedIn account. Until DOE publishes a matching project announcement, the tracker labels that milestone **Company-reported** rather than government-confirmed.
 | Advanced Reactor Demonstration Program | Cost-shared commercial demonstrations | Natrium construction permit and reported groundbreaking; Long Mott application review | Construction progress, operating-license applications, fuel readiness |
 | DOME | Fueled microreactor test bed at INL | Facility opened April 2026; two initial conditional experiment selections | Installed experiments, authorization, test campaigns, published results |
 | NRIC | Access to national-lab testing and demonstration capability | DOME operation and Launch Pad activity | Project-specific experiments and evidence packages |
@@ -226,7 +233,7 @@ Key relationship rule: claims attach to a source and an applicable entity. A pro
 7. Run link liveness, but do not treat a live link as proof of accuracy.
 8. Require manual editorial review before publication.
 
-## 13. Landing-page metrics
+## 13. Landing-page counts
 
 Strong metrics once a complete denominator exists:
 
@@ -242,7 +249,7 @@ Strong metrics once a complete denominator exists:
 - required fuel capacity versus qualified domestic supply
 - milestone changes over 90 days and 18 months
 
-Until the census is complete, the site uses only labeled sample counts.
+Until the census is complete, counts stay inside the views they explain. The landing page does not promote a generic metric strip.
 
 ## 14. Performance and accessibility budget
 
@@ -281,14 +288,15 @@ Every publish cycle should produce a change log: added, advanced, delayed, cance
 
 These gaps block comprehensive national/global totals. They do not block the small evidence-led MVP.
 
-## 17. Implemented sample records
+## 17. Implemented tracked records
 
 The canonical current examples are in `app/data.ts`:
 
-- six projects at different maturity points
+- 17 projects at different maturity points, including all 11 initial Reactor Pilot Program selections and the Unity Launch Pad experiment
+- 15 linked company records
 - four executive-order records
 - three DOE programs
 - three technology classes
 - three financing records with different conditions
 
-Every sample project includes a source, status, latest milestone, next gate, owner, blocker, and confidence label.
+Every tracked project includes a source, program, status, latest milestone, next gate, owner, blocker, and confidence label.
