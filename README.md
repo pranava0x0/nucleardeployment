@@ -2,7 +2,7 @@
 
 Deployment Core is an evidence-led tracker for U.S. nuclear deployment. It separates announcements from binding commitments, licensing, physical construction, criticality, operation, and replication.
 
-The current release is a research-backed tracked set: 17 sourced projects and 15 company records, including all 11 initial Reactor Pilot Program projects. It is not yet a comprehensive national census.
+The current release is a research-backed tracked set: 28 sourced projects and 24 company records, including all 11 initial Reactor Pilot Program projects. It is not yet a comprehensive national census.
 
 ## What is included
 

@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <div className="hero-core">
           <div className="orbit one" /><div className="orbit two" /><div className="orbit three" />
-          <div className="core-readout"><span>NATIONAL STATUS</span><b>BUILD</b><small>Institutions → projects → repeat delivery</small></div>
+          <div className="core-readout" aria-label="National status: build projects toward repeat delivery"><b>BUILD</b><small>PROJECTS → REPEAT</small></div>
         </div>
       </section>
 

@@ -26,7 +26,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <article className="evidence-card latest"><p className="eyebrow">Latest verified milestone</p><h2>{project.latest}</h2><p>{project.latestDate} · {project.sourceLabel}</p><a href={project.source} target="_blank" rel="noreferrer">Open primary source ↗</a></article>
         <article className="evidence-card next"><p className="eyebrow">Next required milestone</p><h2>{project.next}</h2><dl><dt>Responsible</dt><dd>{project.nextOwner}</dd><dt>Key blocker</dt><dd>{project.blocker}</dd></dl></article>
       </div>
-      <div className="fact-grid"><div><span>Technology</span><b>{project.technology}</b></div><div><span>Capacity</span><b>{project.capacity}</b></div><div><span>Commitment</span><b>Level {project.commitment} / 8</b></div><div><span>Evidence</span><b>{project.verification}</b></div></div>
+      <div className="fact-grid"><div><span>Generation</span><b>{project.generation}</b></div><div><span>Scale</span><b>{project.scale}</b></div><div><span>Reactor family</span><b>{project.family}</b></div><div><span>Role</span><b>{project.reactorRole}</b></div><div><span>Capacity</span><b>{project.capacity}</b></div><div><span>Evidence</span><b>{project.verification}</b></div></div>
     </section>
   </main></PageShell>;
 }

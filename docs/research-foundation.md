@@ -14,6 +14,7 @@ The current U.S. deployment story is not one fleet build. It is several parallel
 4. Physical progress exists but remains concentrated. Natrium, Hermes 2, Project Pele, and fuel/test infrastructure provide stronger evidence than project announcements alone.
 5. Zero-power criticality in the Reactor Pilot Program is meaningful technology evidence. It is not electricity generation, grid connection, commercial operation, or replication.
 6. Fuel availability, qualified fabrication, licensing, project finance, customer contracts, and first-of-a-kind delivery remain cross-cutting gates.
+7. Social and trade sources are discovery surfaces only. The retained source registry and search history live under `data/research/`.
 
 The central product claim is therefore narrow: the United States is rebuilding the institutions and industrial pathways needed for deployment. The tracker must measure whether those pathways produce licensed, financed, constructed, operating, and repeated projects.
 
@@ -66,14 +67,14 @@ Initial authoritative surfaces:
 
 | Program | Purpose | Current measurable evidence | Next evidence |
 | --- | --- | --- | --- |
-| Reactor Pilot Program | DOE-authorized privately funded test reactors outside national laboratories | 11 initial projects; DOE reported Antares and Valar criticalities, while Aalo reported a third pilot criticality on July 4, 2026 | Additional authorization, criticality, test results, commercial licensing use |
+| Reactor Pilot Program | DOE-authorized privately funded test reactors outside national laboratories | 11 initial projects; DOE reported Antares, Valar, and Aalo criticalities by July 4, 2026 | Additional authorization, test results, commercial licensing use |
 | Nuclear Energy Launch Pad | NRIC pathway for experiments at national-laboratory sites | DOE reported Unity criticality on June 30, 2026 | Test results and a commercial licensing pathway |
 
 ### July 4 criticality source audit · 2026-07-17
 
 - DOE Office of Nuclear Energy's LinkedIn feed first reported [11 pilot selections and four approved preliminary documented safety analyses](https://www.linkedin.com/posts/nuclearenergygov_reactor-pilot-program-progress-report-activity-7434991138165563392-yxhT), then reported [Unity as criticality number three](https://www.linkedin.com/posts/nuclearenergygov_criticality-number-three-on-june-30-activity-7478100277536043009-NvZD) under the separate Nuclear Energy Launch Pad.
 - DOE.gov remains the primary government source for the earlier [Antares](https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality) and [Valar](https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality) criticalities.
-- [Aalo reported its July 4 criticality](https://www.linkedin.com/posts/aalo-atomics_on-july-4-2026-at-1220-am-mt-we-brought-activity-7479885863984713728-HTO7) on its own LinkedIn account. Until DOE publishes a matching project announcement, the tracker labels that milestone **Company-reported** rather than government-confirmed.
+- DOE later published a matching [fourth-criticality announcement for Aalo](https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal), superseding the company-only evidence label.
 | Advanced Reactor Demonstration Program | Cost-shared commercial demonstrations | Natrium construction permit and reported groundbreaking; Long Mott application review | Construction progress, operating-license applications, fuel readiness |
 | DOME | Fueled microreactor test bed at INL | Facility opened April 2026; two initial conditional experiment selections | Installed experiments, authorization, test campaigns, published results |
 | NRIC | Access to national-lab testing and demonstration capability | DOME operation and Launch Pad activity | Project-specific experiments and evidence packages |
@@ -108,6 +109,15 @@ The public eight-level commitment ladder is a navigation layer. It does not repl
 One project may be advanced on one track and early on another. Public pages show a compact summary; the future normalized schema stores all five separately.
 
 ## 6. Technology taxonomy — first tranche
+
+Every record separates four axes:
+
+- generation: Gen II, Gen III+, Gen IV, or experimental / unclassified
+- scale: large reactor, SMR, microreactor, test reactor, or critical experiment
+- reactor family: LWR/PWR, LWR/BWR, HTGR, SFR, FHR, MSR, heat-pipe, or design TBD
+- role: commercial power, demonstration power, research/test, critical experiment, or site envelope
+
+These axes must not be collapsed. An SMR can be a PWR or BWR; a microreactor can be gas-cooled, heat-pipe, fast-spectrum, or undisclosed.
 
 | Technology | Typical role | Fuel / coolant | Meaningful validation |
 | --- | --- | --- | --- |

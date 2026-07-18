@@ -6,6 +6,8 @@
 - [x] Add a sourced company directory and company detail pages linked to project records.
 - [x] Add repository-path-safe static export and GitHub Pages deployment on every push to `main`.
 - [x] Replace tiny all-caps section eyebrows and oversized gaps with a tighter reactor construction-log hierarchy.
+- [x] Split reactor generation, scale, family, and operating role into separate project fields and filters.
+- [x] Add a machine-readable source registry plus append-only web-search and agent-run history.
 
 ## Data foundation
 
