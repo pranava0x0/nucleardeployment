@@ -85,18 +85,18 @@ This is not the complete DOE inventory. Missing program families remain in the b
 
 ## 5. Unified deployment framework
 
-The public eight-level commitment ladder is a navigation layer. It does not replace the five detailed maturity tracks.
+The public eight-stage deployment pipeline is a navigation layer. It does not replace the five detailed maturity tracks.
 
-### Public commitment ladder
+### Public deployment stages
 
 1. Interest
-2. Preliminary commitment
-3. Development commitment
-4. Contractual commitment
-5. Regulatory and financial readiness
-6. Physical deployment
-7. Operational progress
-8. Replication and scale
+2. Preliminary
+3. Development
+4. Contractual
+5. Ready
+6. Physical
+7. Operational
+8. Replication
 
 ### Detailed maturity tracks
 
@@ -247,7 +247,7 @@ Key relationship rule: claims attach to a source and an applicable entity. A pro
 
 Strong metrics once a complete denominator exists:
 
-- projects by eight commitment levels
+- projects by eight deployment stages
 - projects with accepted license applications
 - permits/licenses issued by type
 - projects under physical nuclear construction

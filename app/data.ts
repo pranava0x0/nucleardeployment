@@ -19,7 +19,6 @@ export type Project = {
   capacity: string;
   stage: number;
   stageLabel: string;
-  commitment: number;
   status: string;
   summary: string;
   latest: string;
@@ -32,8 +31,6 @@ export type Project = {
   source: string;
   sourceLabel: string;
   programs: string[];
-  x: number | null;
-  y: number | null;
 };
 
 export const stages = [
@@ -65,7 +62,6 @@ export const projects: Project[] = [
     capacity: "345 MWe + storage",
     stage: 6,
     stageLabel: "Physical deployment",
-    commitment: 5,
     status: "Construction permitted",
     summary: "A commercial-scale advanced reactor demonstration replacing capacity near a retiring coal plant.",
     latest: "NRC issued construction permit CPAR-1; DOE later reported groundbreaking for the nuclear island.",
@@ -78,8 +74,6 @@ export const projects: Project[] = [
     source: "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/past-license-activities/terrapower",
     sourceLabel: "NRC application record",
     programs: ["ARDP demonstration"],
-    x: 22,
-    y: 36,
   },
   {
     slug: "hermes-2",
@@ -96,7 +90,6 @@ export const projects: Project[] = [
     capacity: "Two low-power test reactors",
     stage: 6,
     stageLabel: "Physical deployment",
-    commitment: 5,
     status: "Construction underway",
     summary: "Two non-power test reactors intended to support commercial validation of Kairos Power's KP-FHR technology.",
     latest: "DOE reported Hermes 2 groundbreaking after the NRC issued two construction permits.",
@@ -109,8 +102,6 @@ export const projects: Project[] = [
     source: "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos",
     sourceLabel: "NRC Hermes 2 record",
     programs: ["ARDP risk reduction"],
-    x: 68,
-    y: 62,
   },
   {
     slug: "long-mott-xe-100",
@@ -127,7 +118,6 @@ export const projects: Project[] = [
     capacity: "4 × 80 MWe + process heat",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "License review",
     summary: "A four-module industrial energy project designed to supply electricity and process heat at Dow's Seadrift site.",
     latest: "NRC environmental review concluded with an environmental assessment and finding of no significant impact.",
@@ -140,8 +130,6 @@ export const projects: Project[] = [
     source: "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/long-mott",
     sourceLabel: "NRC Long Mott dashboard",
     programs: ["ARDP demonstration"],
-    x: 51,
-    y: 78,
   },
   {
     slug: "project-pele",
@@ -158,7 +146,6 @@ export const projects: Project[] = [
     capacity: "1–5 MWe",
     stage: 6,
     stageLabel: "Physical deployment",
-    commitment: 4,
     status: "Prototype construction",
     summary: "A transportable microreactor demonstration for resilient military power, under DOE safety oversight.",
     latest: "DoD broke ground at INL for the prototype demonstration site.",
@@ -171,8 +158,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/ne/articles/department-defense-breaks-ground-project-pele-microreactor",
     sourceLabel: "DOE Project Pele update",
     programs: ["Project Pele"],
-    x: 20,
-    y: 28,
   },
   {
     slug: "kaleidos-dome",
@@ -189,7 +174,6 @@ export const projects: Project[] = [
     capacity: "Experiment",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "Conditional test slot",
     summary: "A planned fueled experiment in DOE's DOME microreactor test bed, subject to readiness milestones.",
     latest: "DOE conditionally selected Kaleidos for an initial DOME test slot.",
@@ -202,8 +186,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/ne/demonstration-microreactor-experiments-dome",
     sourceLabel: "DOE DOME program",
     programs: ["DOME"],
-    x: 24,
-    y: 29,
   },
   {
     slug: "valar-ward-250",
@@ -220,7 +202,6 @@ export const projects: Project[] = [
     capacity: "No electricity generation",
     stage: 7,
     stageLabel: "Operational progress",
-    commitment: 6,
     status: "Initial criticality achieved",
     summary: "A DOE-authorized zero-power criticality demonstration; it is evidence of reactor physics, not commercial operation.",
     latest: "The Ward 250 experiment achieved zero-power criticality outside a national laboratory.",
@@ -233,8 +214,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality",
     sourceLabel: "DOE criticality announcement",
     programs: ["Reactor Pilot Program"],
-    x: 27,
-    y: 48,
   },
   {
     slug: "aalo-x-critical-assembly",
@@ -251,7 +230,6 @@ export const projects: Project[] = [
     capacity: "No electricity generation",
     stage: 7,
     stageLabel: "Operational progress",
-    commitment: 6,
     status: "Initial criticality achieved",
     summary: "A full-scale zero-power core under DOE authorization; it validates reactor physics and systems but does not generate electricity.",
     latest: "DOE reported that Aalo-X completed a zero-power fueled criticality demonstration early on July 4.",
@@ -264,8 +242,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal",
     sourceLabel: "DOE fourth-criticality announcement",
     programs: ["Reactor Pilot Program"],
-    x: 19,
-    y: 27,
   },
   {
     slug: "antares-mark-0",
@@ -282,7 +258,6 @@ export const projects: Project[] = [
     capacity: "Zero-power critical experiment",
     stage: 7,
     stageLabel: "Operational progress",
-    commitment: 6,
     status: "Initial criticality achieved",
     summary: "A zero-power fueled experiment that validates reactor physics but does not generate electricity.",
     latest: "DOE reported that the Mark-0 completed zero-power fueled criticality at Idaho National Laboratory.",
@@ -295,8 +270,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality",
     sourceLabel: "DOE criticality announcement",
     programs: ["Reactor Pilot Program"],
-    x: 21,
-    y: 30,
   },
   {
     slug: "atomic-alchemy-groves",
@@ -313,7 +286,6 @@ export const projects: Project[] = [
     capacity: "Not disclosed by DOE",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "DOE pilot development",
     summary: "Atomic Alchemy's privately funded Groves project under DOE's Reactor Pilot Program pathway.",
     latest: "A DOE variance package identified the Groves project and its 40-acre Caldwell County site.",
@@ -326,8 +298,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
     sourceLabel: "DOE contractor variance package",
     programs: ["Reactor Pilot Program"],
-    x: 50,
-    y: 76,
   },
   {
     slug: "deep-fission-dbr",
@@ -344,7 +314,6 @@ export const projects: Project[] = [
     capacity: "Not disclosed by DOE",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "DOE pilot development",
     summary: "A DBR test-reactor project selected for DOE's Reactor Pilot Program; DOE has not published its site in the cited record.",
     latest: "DOE identified the DBR reactor in its advanced-reactor contractor variance package without publishing a site.",
@@ -357,8 +326,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
     sourceLabel: "DOE contractor variance package",
     programs: ["Reactor Pilot Program"],
-    x: null,
-    y: null,
   },
   {
     slug: "last-energy-pwr-5",
@@ -375,7 +342,6 @@ export const projects: Project[] = [
     capacity: "Not disclosed by DOE",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "DOE pilot development",
     summary: "Last Energy's PWR-5 test project at the Texas A&M RELLIS campus under the DOE pilot pathway.",
     latest: "DOE identified PWR-5 and the Texas A&M RELLIS campus in its contractor variance package.",
@@ -388,8 +354,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
     sourceLabel: "DOE contractor variance package",
     programs: ["Reactor Pilot Program"],
-    x: 51,
-    y: 72,
   },
   {
     slug: "oklo-aurora-pilot",
@@ -406,7 +370,6 @@ export const projects: Project[] = [
     capacity: "Not disclosed for pilot",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "DOE pilot development",
     summary: "One of two Oklo projects selected through DOE's Reactor Pilot Program.",
     latest: "DOE identified the Aurora reactor at Idaho National Laboratory in its contractor variance package.",
@@ -419,8 +382,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
     sourceLabel: "DOE contractor variance package",
     programs: ["Reactor Pilot Program"],
-    x: 23,
-    y: 32,
   },
   {
     slug: "oklo-pluto-pilot",
@@ -437,7 +398,6 @@ export const projects: Project[] = [
     capacity: "Not disclosed for pilot",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "DOE pilot development",
     summary: "Oklo's second DOE pilot project, paired with an advanced-fuels facility near Savannah River National Laboratory.",
     latest: "DOE identified the Pluto reactor and Advanced Fuels Foundry location in its contractor variance package.",
@@ -450,8 +410,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
     sourceLabel: "DOE contractor variance package",
     programs: ["Reactor Pilot Program"],
-    x: 76,
-    y: 68,
   },
   {
     slug: "natura-acu-pilot",
@@ -468,7 +426,6 @@ export const projects: Project[] = [
     capacity: "Research reactor; output not disclosed",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "DOE pilot development",
     summary: "Natura Resources' university-based test-reactor project in DOE's Reactor Pilot Program.",
     latest: "DOE identified Abilene Christian University as the project site in its contractor variance package.",
@@ -481,8 +438,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
     sourceLabel: "DOE contractor variance package",
     programs: ["Reactor Pilot Program"],
-    x: 47,
-    y: 69,
   },
   {
     slug: "radiant-kaleidos-ripper-pilot",
@@ -499,7 +454,6 @@ export const projects: Project[] = [
     capacity: "Two test reactors; output not disclosed",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "DOE pilot development",
     summary: "Radiant's DOE pilot project covers the Kaleidos and RiPPer test reactors at Idaho National Laboratory.",
     latest: "DOE identified both reactors and their INL site in its contractor variance package.",
@@ -512,8 +466,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
     sourceLabel: "DOE contractor variance package",
     programs: ["Reactor Pilot Program"],
-    x: 25,
-    y: 34,
   },
   {
     slug: "terrestrial-tetra-1",
@@ -530,7 +482,6 @@ export const projects: Project[] = [
     capacity: "Not disclosed by DOE",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "DOE pilot development",
     summary: "Terrestrial Energy's TETRA-1 test project under the DOE Reactor Pilot Program pathway.",
     latest: "DOE identified TETRA-1 and the Texas A&M RELLIS campus in its contractor variance package.",
@@ -543,8 +494,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
     sourceLabel: "DOE contractor variance package",
     programs: ["Reactor Pilot Program"],
-    x: 54,
-    y: 74,
   },
   {
     slug: "deployable-unity",
@@ -561,7 +510,6 @@ export const projects: Project[] = [
     capacity: "No electricity generation",
     stage: 7,
     stageLabel: "Operational progress",
-    commitment: 6,
     status: "Initial criticality achieved",
     summary: "A zero-power experiment authorized through NRIC's Nuclear Energy Launch Pad; it is not a power-producing reactor.",
     latest: "DOE reported that Unity achieved initial criticality at about 11:55 p.m. Mountain Time on June 30, fulfilling the three-reactor July 4 target.",
@@ -574,8 +522,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor",
     sourceLabel: "DOE third-criticality announcement",
     programs: ["Nuclear Energy Launch Pad"],
-    x: 17,
-    y: 31,
   },
   {
     slug: "tamu-rellis-site",
@@ -592,7 +538,6 @@ export const projects: Project[] = [
     capacity: "10–1,000 MWe site envelope",
     stage: 2,
     stageLabel: "Preliminary commitment",
-    commitment: 2,
     status: "NRC pre-application engagement",
     summary: "A proposed university site intended to host multiple advanced-reactor projects; no single commercial design is selected.",
     latest: "NRC lists an active pre-application engagement for a future early site permit at the RELLIS campus.",
@@ -605,8 +550,6 @@ export const projects: Project[] = [
     source: "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/pre-application-activities/texas-am-system",
     sourceLabel: "NRC pre-application record",
     programs: ["NRC pre-application"],
-    x: 48,
-    y: 74,
   },
   {
     slug: "clinch-river-bwrx-300",
@@ -623,7 +566,6 @@ export const projects: Project[] = [
     capacity: "300 MWe",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "Construction-permit review",
     summary: "TVA's utility-led BWRX-300 project at the already permitted Clinch River site.",
     latest: "NRC accepted TVA's construction-permit application for a full safety review.",
@@ -636,8 +578,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/ne/articles/nrc-dockets-construction-permit-application-tva-small-modular-reactor",
     sourceLabel: "DOE summary of NRC docketing",
     programs: ["Gen III+ SMR Pathway", "NRC construction-permit review"],
-    x: 67,
-    y: 61,
   },
   {
     slug: "palisades-pioneer-smr-300",
@@ -654,7 +594,6 @@ export const projects: Project[] = [
     capacity: "2 × 300 MWe",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "Phased permit review",
     summary: "A proposed two-unit SMR-300 plant adjacent to the existing Palisades reactor.",
     latest: "NRC accepted Part 1 of the phased construction-permit application, including a limited-work request, for detailed review.",
@@ -667,8 +606,6 @@ export const projects: Project[] = [
     source: "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/pioneer",
     sourceLabel: "NRC Pioneer application record",
     programs: ["Gen III+ SMR Pathway", "NRC construction-permit review"],
-    x: 55,
-    y: 40,
   },
   {
     slug: "evinci-dome",
@@ -685,7 +622,6 @@ export const projects: Project[] = [
     capacity: "Up to 20 MWt in DOME",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "Conditional DOME selection",
     summary: "A fueled eVinci test reactor selected for the DOME microreactor test bed.",
     latest: "DOE conditionally selected Westinghouse for a self-funded eVinci experiment in DOME.",
@@ -698,8 +634,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed",
     sourceLabel: "DOE DOME selection",
     programs: ["DOME"],
-    x: 20,
-    y: 38,
   },
   {
     slug: "uiuc-kronos",
@@ -716,7 +650,6 @@ export const projects: Project[] = [
     capacity: "Non-power research reactor",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "Construction-permit application",
     summary: "A university research reactor based on NANO Nuclear Energy's KRONOS technology.",
     latest: "UIUC submitted a construction-permit application and NRC opened its project record.",
@@ -729,8 +662,6 @@ export const projects: Project[] = [
     source: "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/kronos",
     sourceLabel: "NRC KRONOS application record",
     programs: ["NRC research-reactor licensing"],
-    x: 59,
-    y: 42,
   },
   {
     slug: "belews-creek-esp",
@@ -747,7 +678,6 @@ export const projects: Project[] = [
     capacity: "Not selected",
     stage: 3,
     stageLabel: "Development commitment",
-    commitment: 3,
     status: "Early site permit review",
     summary: "A coal-site transition candidate under NRC review for future advanced nuclear development.",
     latest: "NRC accepted and docketed Duke Energy's early site permit application for detailed review.",
@@ -760,8 +690,6 @@ export const projects: Project[] = [
     source: "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/dukeenergy",
     sourceLabel: "NRC Belews Creek application record",
     programs: ["NRC early site permit"],
-    x: 75,
-    y: 59,
   },
   {
     slug: "constellation-new-york-smr-site",
@@ -778,7 +706,6 @@ export const projects: Project[] = [
     capacity: "Not selected",
     stage: 4,
     stageLabel: "Contractual commitment",
-    commitment: 4,
     status: "Federal siting award selected",
     summary: "A DOE-backed effort to pursue an NRC early site permit for a future New York SMR project.",
     latest: "DOE selected Constellation for a $17.26 million cost-shared site-preparation award.",
@@ -791,8 +718,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/articles/energy-department-awards-94-million-american-companies-help-expedite-deployments-small",
     sourceLabel: "DOE Gen III+ SMR award selection",
     programs: ["Gen III+ SMR Pathway"],
-    x: null,
-    y: null,
   },
   {
     slug: "nppd-nebraska-smr-site",
@@ -809,7 +734,6 @@ export const projects: Project[] = [
     capacity: "Not selected",
     stage: 4,
     stageLabel: "Contractual commitment",
-    commitment: 4,
     status: "Federal siting award selected",
     summary: "A DOE-backed effort to obtain an NRC early site permit for future Nebraska SMR deployment.",
     latest: "DOE selected NPPD for a $27.86 million cost-shared site-preparation award.",
@@ -822,8 +746,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/articles/energy-department-awards-94-million-american-companies-help-expedite-deployments-small",
     sourceLabel: "DOE Gen III+ SMR award selection",
     programs: ["Gen III+ SMR Pathway"],
-    x: null,
-    y: null,
   },
   {
     slug: "crane-restart",
@@ -840,7 +762,6 @@ export const projects: Project[] = [
     capacity: "835 MWe",
     stage: 5,
     stageLabel: "Regulatory and financial readiness",
-    commitment: 5,
     status: "Finance closed; licensing active",
     summary: "The former Three Mile Island Unit 1 is being restored for a proposed return to commercial service.",
     latest: "DOE closed a $1 billion restart loan while NRC continued licensing reviews and restart inspections.",
@@ -853,8 +774,6 @@ export const projects: Project[] = [
     source: "https://www.nrc.gov/info-finder/reactors/ccec",
     sourceLabel: "NRC Crane restart record",
     programs: ["DOE Energy Dominance Financing", "NRC restart review"],
-    x: 77,
-    y: 43,
   },
   {
     slug: "mcre-lotus",
@@ -871,7 +790,6 @@ export const projects: Project[] = [
     capacity: "Non-power experiment",
     stage: 6,
     stageLabel: "Physical deployment",
-    commitment: 5,
     status: "Fuel production underway",
     summary: "A fast-spectrum, salt-fueled experiment intended to inform commercial molten-chloride reactor deployment.",
     latest: "INL produced the first of an expected 72–75 fuel-salt batches required for criticality.",
@@ -884,8 +802,6 @@ export const projects: Project[] = [
     source: "https://www.energy.gov/ne/articles/idaho-national-lab-creates-first-batch-fuel-worlds-first-fast-spectrum-molten-salt",
     sourceLabel: "DOE MCRE fuel milestone",
     programs: ["MCRE", "LOTUS"],
-    x: 17,
-    y: 38,
   },
   {
     slug: "vogtle-3-4",
@@ -902,7 +818,6 @@ export const projects: Project[] = [
     capacity: "2,234 MWe total",
     stage: 8,
     stageLabel: "Replication and scale",
-    commitment: 8,
     status: "Two repeat units in commercial operation",
     summary: "The first two U.S. AP1000 units, delivered sequentially at one site and now operating commercially.",
     latest: "Unit 4 entered commercial operation after Unit 3, completing the two-unit AP1000 expansion.",
@@ -915,8 +830,6 @@ export const projects: Project[] = [
     source: "https://www.georgiapower.com/news-hub/press-releases/vogtle-unit-4-enters-commercial-operation.html",
     sourceLabel: "Georgia Power commercial-operation record",
     programs: ["Commercial AP1000 deployment"],
-    x: 74,
-    y: 68,
   },
 ];
 

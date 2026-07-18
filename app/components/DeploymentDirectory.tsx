@@ -36,10 +36,10 @@ export function DeploymentDirectory() {
       <div className="result-count"><b>{filtered.length}</b><span>of {projects.length} records</span></div>
     </div>
     <div className="deployment-table" role="table" aria-label="Tracked nuclear deployments">
-      <div className="table-head" role="row"><span>Project</span><span>Stage</span><span>Latest evidence</span><span>Next gate</span></div>
+      <div className="table-head" role="row"><span>Project</span><span>Stage</span><span>Latest milestone</span><span>Next step</span></div>
       {filtered.map((project) => <Link className="deployment-row" href={`/deployments/${project.slug}`} role="row" key={project.slug}>
         <span className="project-cell"><b>{project.name}</b><small>{project.developer} · {project.location}</small><em>{project.generation} · {project.scale} · {project.family}</em></span>
-        <span className="stage-cell"><StageCore stage={project.commitment} compact /><i>{project.stageLabel}</i></span>
+        <span className="stage-cell"><StageCore stage={project.stage} compact /><i>{stageLabels[project.stage - 1]}</i></span>
         <span><b>{project.status}</b><small>{project.latestDate} · {project.verification}</small></span>
         <span><b>{project.next.split(".")[0]}</b><small>{project.nextOwner}</small></span>
       </Link>)}

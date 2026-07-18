@@ -6,17 +6,26 @@
 
 ## Deployment Core visual identity
 
-**Identity:** a reactor construction log meets an editorial public record: graphite and ceramic surfaces, acid-yellow energy signal, Charter-like display serif against a compact system sans/mono stack, with a radial deployment core as the memorable move. Section labels read like plain field notes—not tiny, tracked, all-caps "eyebrows." Dense rules and evidence rows take priority over ornamental whitespace.
+**Identity:** a reactor control dossier: midnight control-room surfaces, ceramic paper, electric-blue instrumentation, and safety-orange exceptions. Open system grotesque display type carries names and milestones; a quieter humanist sans carries explanation; mono is reserved for stages, dates, and measured state. Section labels read like field notes—not tiny, tracked, all-caps "eyebrows." Dense project rows take priority over ornamental whitespace or repeated rules.
 
-- The acid-yellow accent means verified forward motion or the primary action. Signal orange marks a current gate or unresolved transition. Neither color is decorative.
+**Mark:** an asymmetric reactor core wrapped by forward-swept orbital paths and left-to-right velocity trails. It represents nuclear deployment acceleration, stays legible at masthead size, and avoids the static three-loop atom cliché.
+
+- Electric blue marks navigation, active instrumentation, or forward motion. Safety orange marks a current gate or unresolved transition. Neither color is decorative.
 - Use fine grid lines, radial geometry, ledgers, and stage tracks. Avoid cooling-tower imagery, flags, seals, retro atoms, green-energy branding, and neon cyberpunk.
 - Project status must remain legible without color: stage number, label, evidence text, and next gate always travel together.
 - Pipeline summaries stay compact: every stage shows its number, name, plain-language meaning, and a count with its unit. Never use a naked number or empty vertical bar as the explanation.
-- Map markers encode stage number and link to a plain list that exposes the same records.
+- Location views use named regional ledgers until source-backed coordinates support a real geographic layer. Never imply precision with invented marker positions.
 - The landing page leads with the national status and the deployment pipeline. Counts live beside the stages they explain; there is no generic stat strip or feature-card row.
-- System fonts only. Serif for the national narrative and large numbers; sans for explanation; mono for labels, dates, stages, and source-state language.
+- System fonts only. Wide humanist grotesque for the national narrative and large numbers; quiet sans for explanation; mono for labels, dates, stages, and source-state language.
 - Corners stay square. Structure comes from rules, grids, and contrast rather than shadows or glass effects.
 - Mobile preserves essential content, uses horizontal scrolling only for stage sequences, and keeps touch controls at least 44px high.
+- Visible body copy starts at 15px; data labels start at 13px. Dense does not mean tiny. Reduce padding and minimum heights before shrinking type.
+- Do not repeat one tiny all-caps eyebrow treatment across the site. Page metadata, section leads, project identity, and data labels use different hierarchy: a ruled data line, a plain-language lead, a circular reactor marker, or an inline field label. Section copy stays sentence case.
+- Page titles stand alone. Do not add a kicker, eyebrow, category label, or mini-headline above an H1. Put useful freshness, role, location, or source metadata after the descriptive sentence.
+- Page descriptions state scope and contents in one factual sentence. Never explain that the interface is clarifying an obvious distinction; avoid “this view,” “not X but Y,” rhetorical corrections, or language that lectures the reader.
+- Section headings name their contents. Do not pair a generic category label with a second, slogan-like headline. Use one heading; add supporting copy only when it contributes scope, timeframe, or method.
+- Rules separate real structures such as rows and datasets. Do not place a full-width rule above every heading or repeat border, grid, and card outlines in the same block.
+- Prefer direct operational language: “Deployment stage,” “Current,” “Next step,” and “Primary source.” “Evidence” describes provenance in methodology, not a generic heading or badge on every record.
 
 ---
 
@@ -51,19 +60,18 @@ The giveaways of an unconsidered, model-generated UI. Each right-hand cell is th
 
 ## 2. Typography: system stacks only by default
 
-No web fonts unless justified: a Google Fonts link costs a render-blocking RTT and ~50KB, and the system stack approximates Charter / Inter / SF Mono everywhere.
+No web fonts unless justified: a Google Fonts link costs a render-blocking RTT and ~50KB. Choose deliberate system stacks and test their fallbacks.
 
 ```css
---font-sans:  -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+--font-sans:  "Avenir Next", "Century Gothic", "Segoe UI",
               "Helvetica Neue", Arial, sans-serif;
---font-serif: "Charter", "Source Serif 4", "Source Serif Pro",
-              "Iowan Old Style", "Apple Garamond", "Palatino", "Georgia",
-              "Times New Roman", serif;
+--font-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+              "Helvetica Neue", Arial, sans-serif;
 --font-mono:  ui-monospace, "SF Mono", "JetBrains Mono", Menlo,
               Consolas, monospace;
 ```
 
-- **Serif for editorial display** (H1, hero H2, KPI numerals, verbatim quotes). Signals "this is content, not chrome."
+- **Open system grotesque for industrial display** (H1, hero H2, KPI numerals). Signals physical delivery without squeezing words together.
 - **Sans for body and UI** (everything else).
 - **Mono for code, IDs, paths, share codes.** Anything that has to round-trip a copy/paste.
 - **Tabular numerals.** `font-feature-settings: "tnum"` on `:root`. Any column of numbers (KPIs, table cells, dates, counts) lines up.

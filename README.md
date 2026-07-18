@@ -6,7 +6,7 @@ The current release is a research-backed tracked set: 28 sourced projects and 24
 
 ## What is included
 
-- National overview and eight-stage commitment ladder
+- National overview and eight-stage deployment pipeline
 - Linked company names inside every active pipeline stage
 - Company directory and sourced company detail pages
 - DOE program labels that separate the Reactor Pilot Program, Nuclear Energy Launch Pad, ARDP, DOME, and Project Pele

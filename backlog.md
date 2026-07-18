@@ -2,12 +2,13 @@
 
 ## Shipped beyond the first release
 
-- [x] Show company names inside the commitment pipeline.
+- [x] Show company names inside the deployment pipeline.
 - [x] Add a sourced company directory and company detail pages linked to project records.
 - [x] Add repository-path-safe static export and GitHub Pages deployment on every push to `main`.
 - [x] Replace tiny all-caps section eyebrows and oversized gaps with a tighter reactor construction-log hierarchy.
 - [x] Split reactor generation, scale, family, and operating role into separate project fields and filters.
 - [x] Add a machine-readable source registry plus append-only web-search and agent-run history.
+- [x] Replace the misleading schematic map with a regional location ledger until verified coordinates exist.
 
 ## Data foundation
 
@@ -27,7 +28,7 @@
 
 ## Product
 
-- [ ] Replace the schematic map with a lightweight geographic layer only after complete coordinates and accessible list parity exist.
+- [ ] Add a true geographic layer only after complete coordinates and accessible list parity exist.
 - [ ] Add shareable URL filters and project comparison.
 - [ ] Add CSV downloads and a public API after the normalized schema stabilizes.
 - [ ] Add change log, source-monitoring queue, and editorial review screen.

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "Deployment Core · U.S. Nuclear Tracker",
     template: "%s · Deployment Core",
   },
-  description: "Evidence-led tracking of U.S. nuclear projects, companies, federal actions, capital, licensing, construction, criticality, and next milestones.",
+  description: "Source-backed tracking of U.S. nuclear projects, companies, federal actions, capital, licensing, construction, criticality, and next milestones.",
   openGraph: {
     title: "Deployment Core · U.S. Nuclear Tracker",
     description: "From interest to repeat deployment: see who is building, what moved, and what comes next.",
