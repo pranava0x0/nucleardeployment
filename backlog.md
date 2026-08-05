@@ -36,7 +36,8 @@
 
 ## Quality
 
-- [ ] **High.** Upgrade Next.js from 16.2.6 to 16.2.11 or later. The 2026-07-20 advisory covers nine CVEs (four high) affecting 16.0–16.2.10, including the CVE-2026-64642 middleware bypass. See `security.md`.
+- [x] Upgrade Next.js off the range covered by the 2026-07-20 advisory (nine CVEs, four high, including the CVE-2026-64642 middleware bypass). Moved 16.2.6 to 16.2.12.
+- [ ] **Medium.** Triage the 11 high `npm audit` findings in the build chain (`postcss`, `sharp`, `undici`, `miniflare`, `wrangler`, `js-yaml`, `brace-expansion`, `fast-uri`, `react-server-dom-webpack`). All are pre-existing and none reach the static export, but the count grew from 0 on 2026-07-17 without any dependency change. The `--force` path wants `@cloudflare/vite-plugin@1.50.0`, outside the stated range. See `security.md`.
 - [ ] Pin the five `deploy-pages.yml` actions to full commit SHAs. They still use moving `@v4` / `@v5` tags in a workflow holding `pages: write` and `id-token: write`.
 - [ ] Upgrade the `deploy-pages.yml` actions off the deprecated Node 20 runtime. Every run currently emits a forced-to-Node-24 warning.
 - [x] Run the build and test gate on every pull request, not only on push to `main`, so a broken change cannot silently freeze the deployed site.
