@@ -787,3 +787,20 @@ test("a program selection is never filed under permits or physical work", async 
     assert.match(event.label, isSelection, `"${event.label.slice(0, 60)}" reads as a selection or agreement`);
   }
 });
+
+test("a dossier never attributes its state to a regulator that did not document it", async () => {
+  const dataModule = await import("../app/data.ts");
+  for (const entrant of dataModule.raceEntrants) {
+    const html = (await (await render(`/companies/${entrant.companySlug}`)).text()).replace(/<!--.*?-->/g, "");
+    // The strongest state can rest on press reporting about a counterparty
+    // agreement, or on a company release. A fixed "Regulator-documented"
+    // prefix overstated provenance on every such dossier.
+    assert.doesNotMatch(html, /Regulator-documented state/, `${entrant.companySlug} does not claim regulator provenance by default`);
+    const row = dataModule.raceBoard().find((entry) => entry.entrant.companySlug === entrant.companySlug);
+    if (row.strongest && dataModule.statedTargets.some((target) => target.companySlug === entrant.companySlug)) {
+      for (const claim of row.strongest.claims) {
+        assert.ok(html.includes(claim.verification), `${entrant.companySlug} shows the basis of its strongest state (${claim.verification})`);
+      }
+    }
+  }
+});

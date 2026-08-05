@@ -1313,7 +1313,7 @@ export const capacityBands: { band: CapacityBand; label: string; rule: string; a
   { band: "construction", label: "Nuclear construction", rule: "NRC construction permit issued and physical nuclear work documented.", authority: "NRC" },
   { band: "doe-authorized", label: "DOE-authorized build", rule: "Built under a DOE authorization pathway with physical work documented. Not an NRC license to operate.", authority: "DOE" },
   { band: "review", label: "Under review", rule: "Construction-permit or combined-license application docketed and in active regulator review.", authority: "NRC" },
-  { band: "contracted", label: "Contracted", rule: "Executed offtake, order, or delivery agreement not yet in regulator review.", authority: "Counterparty" },
+  { band: "contracted", label: "Contracted", rule: "An executed, funded agreement for a named project, whether offtake, order, delivery, or development funding, not yet in regulator review. Each claim says which kind it is.", authority: "Counterparty" },
   { band: "framework", label: "Announced, non-binding", rule: "MOU, LOI, master agreement, or announced target. No executed project documents.", authority: "None" },
 ];
 

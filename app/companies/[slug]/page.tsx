@@ -27,6 +27,9 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
   const highestStage = companyProjects.length ? Math.max(...companyProjects.map((project) => project.stage)) : null;
   const reactorClasses = [...new Set(companyProjects.map((project) => `${project.generation} · ${project.scale}`))].join(" / ");
   const dossier = dossierFor(slug);
+  // The strongest state can rest on a regulator record, a company release, or
+  // press reporting. Carry its actual basis rather than implying a regulator.
+  const strongestBasis = [...new Set(dossier?.row?.strongest?.claims.map((claim) => claim.verification) ?? [])].join(", ");
 
   return <PageShell><main id="main" className="inner-page company-page">
     <header className="project-hero grid-bg">
@@ -133,7 +136,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
           {dossier.targets.map((target) => <li key={target.target}>
             <span className="ledger-date">{target.statedDate ? `Stated ${target.statedDate}` : "Date not stated"}</span>
             <b>{target.target}</b>
-            <span className="ledger-detail">Regulator-documented state today: {dossier.row?.strongestLine ?? "no capacity on record"}</span>
+            <span className="ledger-detail">Documented state today: {dossier.row?.strongestLine ?? "no capacity on record"}{strongestBasis && ` · ${strongestBasis}`}</span>
             {target.conflict && <span className="ledger-conflict">
               Conflicting account: {target.conflict}{" "}
               {target.conflictSource && <a href={target.conflictSource} target="_blank" rel="noreferrer">Source ↗</a>}
