@@ -10,6 +10,14 @@
 - [x] Add a machine-readable source registry plus append-only web-search and agent-run history.
 - [x] Replace the misleading schematic map with a regional location ledger until verified coordinates exist.
 
+## Race board follow-ups
+
+- [ ] Watch uncompressed page weight. The homepage is 456 KB raw against a 250 KB target, though only 122 KB gzipped. The 185 KB React framework chunk dominates and predates this work; revisit if the raw figure gates anything. Priority: low.
+- [ ] Add the `permitted` band back when an entrant first holds an authorization with no physical work started. It was dropped because no entrant occupied it and an empty legend slot is worse than an absent one. Priority: low.
+- [ ] Bootstrap a `REFRESH.md` for the race dataset via the data-refresh skill, so capacity claims, funding rounds, and proof events can be re-verified on a cadence rather than by hand. Priority: medium.
+- [ ] Re-check Radiant's unit rating. The spec's synthesis table says 1.2 MWe and the microreactor fact pack says about 1 MWe; the site ships 1 because the pack is the research base. Priority: low.
+- [ ] Revisit whether the board needs its own `/race` route once the roster passes about 25 entrants. It sits on `/` today, per the spec's one-surface preference. Priority: low.
+
 ## Data foundation
 
 - [ ] Move the canonical dataset from `app/data.ts` into validated normalized records with entities for projects, designs, programs, milestones, commitments, licenses, funding, facilities, and sources.

@@ -1957,8 +1957,13 @@ export function raceBoard(claims: CapacityClaim[] = capacityClaims): RaceRow[] {
         ? "No executed megawatts · announced pipeline only"
         : "No executed or announced megawatts on record";
 
+    // An unquantified framework is not the same fact as no framework. Saying
+    // "0 MWe announced" for a real agreement whose capacity was never disclosed
+    // would tell a screen-reader user the opposite of what the caption says.
     const ariaLabel = `${company.name}: ${cells
-      .map((cell) => `${formatMWe(cell.mwe)} ${cell.label.toLowerCase()}`)
+      .map((cell) => cell.mwe === 0 && cell.claims.length > 0
+        ? `${cell.label.toLowerCase()} on record, capacity not disclosed`
+        : `${formatMWe(cell.mwe)} ${cell.label.toLowerCase()}`)
       .join(", ")}.`;
 
     return {

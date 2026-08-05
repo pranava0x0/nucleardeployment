@@ -54,6 +54,22 @@ test("the homepage race board states its zero and gives every entrant a row", as
   // Framework megawatts are always labelled as announcements, never bare.
   const oklo = board.find((row) => row.company.slug === "oklo");
   assert.match(html, new RegExp(`${oklo.frameworkMWe.toLocaleString("en-US")} MWe announced, non-binding`));
+
+  // An agreement whose capacity was never disclosed is not the same fact as no
+  // agreement. Asserted against the literal text, not against ariaLabel itself,
+  // which would just compare the renderer to the function that generated it.
+  const undisclosed = board.filter((row) => {
+    const framework = row.cells.find((cell) => cell.band === "framework");
+    return framework.mwe === 0 && framework.claims.length > 0;
+  });
+  assert.ok(undisclosed.length > 0, "the dataset still exercises the undisclosed-capacity case");
+  for (const row of undisclosed) {
+    assert.match(row.ariaLabel, /capacity not disclosed/, `${row.company.name} says its framework capacity is undisclosed`);
+    assert.doesNotMatch(row.ariaLabel, /0 MWe announced/, `${row.company.name} does not report an undisclosed framework as zero`);
+  }
+  // A company with genuinely no framework still reports a plain zero.
+  const noFramework = board.find((row) => row.cells.find((cell) => cell.band === "framework").claims.length === 0);
+  assert.match(noFramework.ariaLabel, /0 MWe announced, non-binding/, "no agreement reads as zero, not as undisclosed");
   // No chart library ships to the client.
   assert.doesNotMatch(html, /chart\.js|d3\.|recharts|plotly/i);
 });
@@ -473,4 +489,34 @@ test("the methodology page explains the race rules the board links to", async ()
     assert.ok(html.includes(`Granting authority: ${band.authority}`), `${band.label} states its authority`);
   }
   assert.match(html, /tracked sample/, "counts state their inclusion basis");
+});
+
+test("touch targets and band encoding survive in the stylesheet", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+
+  // The 44px floor is scoped to coarse pointers so desktop keeps inline scale.
+  // Measured in a real browser at 375px: without this block every board link is 24px.
+  const coarse = css.match(/@media \(pointer: coarse\)\s*\{([\s\S]*?)\n\}/);
+  assert.ok(coarse, "a coarse-pointer block exists");
+  assert.match(coarse[1], /min-height:\s*44px/, "it sets a 44px floor");
+  for (const selector of [".race-id h3 a", ".ledger li > a", ".back-link"]) {
+    assert.ok(coarse[1].includes(selector), `${selector} gets the touch floor`);
+  }
+
+  // The legend swatch must not out-rank a band's own border, or the legend stops
+  // showing the encoding it exists to teach (the review band's outline).
+  const swatchAt = css.indexOf(".legend-swatch {");
+  const bandAt = css.indexOf(".band-review {");
+  // Both must exist: indexOf returns -1 when a rule is deleted, and -1 is less
+  // than any real index, so a bare "<" comparison passes on a missing rule.
+  assert.ok(swatchAt >= 0, "the legend swatch rule exists");
+  assert.ok(bandAt >= 0, "the review band rule exists");
+  assert.ok(swatchAt < bandAt, "legend-swatch is declared before the band rules so band borders win");
+  // Evidence is encoded by fill and outline, never by hue alone.
+  assert.match(css, /\.band-review \{[^}]*border:\s*2px solid/, "review renders as an outline");
+  assert.match(css, /\.band-contracted \{[^}]*repeating-linear-gradient/, "contracted renders as a hatch");
+  assert.match(css, /\.band-framework \{[^}]*repeating-linear-gradient/, "framework renders as a hatch");
+  // Hatching is CSS, not a charting library.
+  assert.doesNotMatch(css, /chart|d3|recharts/i);
 });
