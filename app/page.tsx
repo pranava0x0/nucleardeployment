@@ -1,25 +1,27 @@
 import Link from "next/link";
 import { PageShell } from "./components/SiteHeader";
+import { RaceBoard } from "./components/RaceBoard";
 import { StageCore } from "./components/StageCore";
-import { capital, federalActions, projects, stageCounts } from "./data";
+import { capital, dataAsOf, federalActions, projects, raceEntrants, stageCounts } from "./data";
 
 export default function Home() {
   const counts = stageCounts();
   const recent = [...projects].sort((a, b) => b.latestDate.localeCompare(a.latestDate)).slice(0, 3);
+  const vogtle = projects.find((project) => project.slug === "vogtle-3-4");
   return <PageShell>
     <main id="main">
-      <section className="hero grid-bg">
-        <div className="hero-copy">
-          <h1>America is rebuilding the machinery to deploy nuclear energy.</h1>
-          <p className="dek">U.S. reactor projects from licensing and construction through criticality, operation, and repeat delivery.</p>
-          <p className="hero-meta"><span className="live-dot" /> Updated through July 2026 · {projects.length} sourced projects</p>
-          <div className="hero-actions"><Link className="button primary" href="/deployments">Explore deployments</Link><Link className="button secondary" href="/map">Browse locations</Link></div>
-        </div>
-        <div className="hero-core">
-          <div className="orbit one" /><div className="orbit two" /><div className="orbit three" />
-          <div className="core-readout" aria-label="National status: build projects toward repeat delivery"><b>BUILD</b><small>PROJECTS → REPEAT</small></div>
-        </div>
+      <section className="masthead grid-bg">
+        <h1>{raceEntrants.length} companies are racing to put a gigawatt of new nuclear on the American grid.</h1>
+        <p className="dek">None of them has generated a commercial megawatt yet. This is where each one actually stands, measured in megawatts at each level of evidence rather than in announcements.</p>
+        <p className="masthead-context">
+          For scale: the last new American nuclear capacity was {vogtle?.capacity} at Vogtle Units 3 and 4, the only new
+          U.S. nuclear this century, finished in {vogtle?.latestDate}. Every company below is trying to do it smaller and
+          faster. <a href={vogtle?.source} target="_blank" rel="noreferrer">{vogtle?.sourceLabel} ↗</a>
+        </p>
+        <p className="hero-meta"><span className="live-dot" /> Data as of {dataAsOf} · {raceEntrants.length} race entrants · {projects.length} sourced projects</p>
       </section>
+
+      <RaceBoard />
 
       <section className="section pipeline-section">
         <div className="section-head"><h2>Projects by stage</h2><p><b>{projects.length} sourced U.S. projects</b>, grouped by strongest documented milestone.</p></div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { dataAsOf } from "../data";
 
 const nav = [
   ["Overview", "/"],
@@ -20,7 +21,7 @@ export function SiteHeader() {
       <nav aria-label="Primary navigation">
         {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
       </nav>
-      <Link className="method-link" href="/methodology">DATA / 2026.07</Link>
+      <Link className="method-link" href="/methodology">DATA / {dataAsOf.slice(0, 7).replace("-", ".")}</Link>
     </header>
   );
 }

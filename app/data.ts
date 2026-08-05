@@ -1900,6 +1900,16 @@ export const statedTargets: StatedTarget[] = [
 /** A gigawatt, the line every bar is read against. */
 export const gigawattMWe = 1000;
 
+/**
+ * The board track runs past the gigawatt line so the line reads as a target
+ * rather than the edge of the bar. Framework megawatts beyond it are clipped
+ * visually and carry their full figure in text.
+ */
+export const raceScaleMWe = 1200;
+
+/** One date for the whole dataset. Every "as of" on the site derives from it. */
+export const dataAsOf = "2026-08-05";
+
 export type RaceBandCell = { band: CapacityBand; label: string; mwe: number; claims: CapacityClaim[] };
 
 export type RaceRow = {

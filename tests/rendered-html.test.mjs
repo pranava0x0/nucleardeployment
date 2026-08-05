@@ -17,7 +17,7 @@ test("server-renders the evidence-led homepage", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Deployment Core/);
-  assert.match(html, /America is rebuilding the machinery/);
+  assert.match(html, /racing to put a gigawatt/);
   assert.match(html, /Projects by stage/);
   assert.match(html, /brand\/reactor-velocity-mark\.png/);
   assert.match(html, /Exploring the idea/);
@@ -28,7 +28,39 @@ test("server-renders the evidence-led homepage", async () => {
   assert.doesNotMatch(html, /Announcement is not deployment/);
   assert.doesNotMatch(html, /metric-rail/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
+  // The retired orbit hero must not leave markup or styles behind.
+  assert.doesNotMatch(html, /core-readout|hero-core|class="orbit/);
 });
+
+test("the homepage race board states its zero and gives every entrant a row", async () => {
+  const dataModule = await import("../app/data.ts");
+  const raw = await (await render()).text();
+  // React splits interpolated text with <!-- --> markers; assert on what a reader sees.
+  const html = raw.replace(/<!--.*?-->/g, "");
+  const board = dataModule.raceBoard();
+
+  // The zero is written, not implied by an empty bar.
+  assert.match(html, /0 MWe operational across all 18 entrants/);
+  assert.match(html, new RegExp(`as of ${dataModule.dataAsOf}`));
+
+  for (const row of board) {
+    assert.ok(html.includes(row.company.name), `${row.company.name} has a board row`);
+    // A reader with no colour still gets the ranking: the strongest state travels as text.
+    assert.ok(html.includes(row.strongestLine), `${row.company.name} states "${row.strongestLine}"`);
+    // Band segments are not the data. The aria label carries the exact per-band megawatts.
+    assert.ok(html.includes(escapeHtml(row.ariaLabel)), `${row.company.name} labels its figure with per-band MWe`);
+  }
+
+  // Framework megawatts are always labelled as announcements, never bare.
+  const oklo = board.find((row) => row.company.slug === "oklo");
+  assert.match(html, new RegExp(`${oklo.frameworkMWe.toLocaleString("en-US")} MWe announced, non-binding`));
+  // No chart library ships to the client.
+  assert.doesNotMatch(html, /chart\.js|d3\.|recharts|plotly/i);
+});
+
+function escapeHtml(value) {
+  return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
 
 test("server-renders company directory and company detail pages", async () => {
   const directory = await render("/companies");
