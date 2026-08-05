@@ -702,6 +702,16 @@ test("debt never renders inside the equity frame", async () => {
     // its own frame and the amounts stay honest.
     assert.doesNotMatch(event.amount, /\bdebt\b|credit facility/i, `${event.companySlug} shows debt in the equity frame: ${event.amount}`);
   }
+  for (const event of dataModule.fundingEvents.filter((record) => equity.kinds.includes(record.kind))) {
+    // A registration filed raises nothing. Holtec's unpriced S-1 and
+    // Westinghouse's confidential filing both rendered as money raised.
+    assert.match(event.amount, /\$/, `${event.companySlug} states an amount raised: ${event.amount}`);
+    assert.doesNotMatch(event.amount, /\bfiled\b|not priced|not disclosed/i, `${event.companySlug} reports a filing as a raise: ${event.amount}`);
+  }
+  const filed = dataModule.fundingFrames.find((frame) => frame.frame === "Filed, not raised");
+  assert.ok(filed, "filings have their own frame");
+  assert.ok(dataModule.fundingEvents.some((event) => filed.kinds.includes(event.kind)), "the filing frame carries records");
+
   // A cumulative figure spanning equity and debt is a cross-frame sum, which
   // the capital rules forbid.
   for (const event of dataModule.fundingEvents) {
@@ -774,7 +784,7 @@ test("a program selection is never filed under permits or physical work", async 
   // unawarded Air Force finalist status rendering under "Physical progress"
   // and a program naming rendering under "Licensing".
   const grantsPermission = /\b(approved|issued|accepted|extended|granted|authoriz|submitted|filed)/i;
-  const isSelection = /\b(selected|named one of|finalists?|other transaction agreement)\b/i;
+  const isSelection = /\b(selected|named one of|finalists?|other transaction agreement|signed)\b/i;
 
   for (const event of dataModule.proofEvents.filter((record) => record.kind === "Permit / authorization")) {
     assert.match(event.label, grantsPermission, `"${event.label.slice(0, 60)}" names the authorizing act`);
@@ -783,6 +793,14 @@ test("a program selection is never filed under permits or physical work", async 
   for (const event of dataModule.proofEvents.filter((record) => record.kind === "Test program")) {
     assert.doesNotMatch(event.label, isSelection, `"${event.label.slice(0, 60)}" is a selection, not work at a site`);
   }
+  // The physical lane is work at a site. A licence granted and a contract
+  // signed are neither, and both rendered there under "Fuel milestone".
+  const isPaperwork = /\b(issued|approved|granted|authorized|accepted|signed)\b|\blicense\b/i;
+  const physicalKinds = dataModule.proofLanes.find((lane) => lane.lane === "Physical progress").kinds;
+  for (const event of dataModule.proofEvents.filter((record) => physicalKinds.includes(record.kind))) {
+    assert.doesNotMatch(event.label, isPaperwork, `"${event.label.slice(0, 60)}" is paperwork, not work at a site`);
+  }
+
   const selections = dataModule.proofEvents.filter((record) => record.kind === "Program selection / agreement");
   assert.ok(selections.length >= 4, `the dataset carries programme selections: ${selections.length}`);
   for (const event of selections) {
