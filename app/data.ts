@@ -2009,3 +2009,44 @@ export function byDateDescending<T extends { date: string | null }>(records: T[]
     return b.date.localeCompare(a.date);
   });
 }
+
+/**
+ * How a dossier splits its ledgers. Defined here, not in the component, so a
+ * test can prove every record kind lands in exactly one lane. A kind that
+ * belongs to no lane would otherwise vanish from the page silently.
+ */
+export const fundingFrames: { frame: string; note: string; kinds: FundingEvent["kind"][] }[] = [
+  { frame: "Raised", note: "Private and public equity. Never added to federal money.", kinds: ["Venture equity", "Public offering", "IPO / listing", "Strategic investment"] },
+  { frame: "Awarded", note: "Federal awards and cost share. A ceiling, not cash received.", kinds: ["Federal award", "Cost share"] },
+  { frame: "Loaned", note: "Federal debt, repayable. Never counted as a raise.", kinds: ["Federal loan"] },
+];
+
+export const proofLanes: { lane: string; note: string; kinds: ProofEvent["kind"][] }[] = [
+  { lane: "Licensing", note: "Permits and authorizations, with the authority that granted each one.", kinds: ["Permit / authorization"] },
+  { lane: "Physical progress", note: "Work at a site. Criticalities are proof the physics works, not electricity.", kinds: ["Construction start", "Criticality", "Fuel milestone", "Test program"] },
+  { lane: "Design proof outside the U.S.", note: "Real progress on the same design abroad. Contributes 0 MWe to the U.S. race.", kinds: ["Design proof (non-U.S.)"] },
+];
+
+export function dossierFor(companySlug: string) {
+  const entrant = entrantFor(companySlug);
+  if (!entrant) return null;
+  const claims = capacityClaims.filter((claim) => claim.companySlug === companySlug);
+  return {
+    entrant,
+    row: raceBoard().find((row) => row.entrant.companySlug === companySlug) ?? null,
+    funding: fundingFrames.map((frame) => ({
+      ...frame,
+      events: byDateDescending(fundingEvents.filter((event) => event.companySlug === companySlug && frame.kinds.includes(event.kind))),
+    })),
+    cash: cashPositions.filter((position) => position.companySlug === companySlug),
+    proof: proofLanes.map((lane) => ({
+      ...lane,
+      events: byDateDescending(proofEvents.filter((event) => event.companySlug === companySlug && lane.kinds.includes(event.kind))),
+    })),
+    pipeline: {
+      executed: byDateDescending(claims.filter((claim) => claim.band !== "framework")),
+      announced: byDateDescending(claims.filter((claim) => claim.band === "framework")),
+    },
+    targets: statedTargets.filter((target) => target.companySlug === companySlug),
+  };
+}

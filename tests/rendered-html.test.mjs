@@ -58,8 +58,14 @@ test("the homepage race board states its zero and gives every entrant a row", as
   assert.doesNotMatch(html, /chart\.js|d3\.|recharts|plotly/i);
 });
 
+/** Mirrors React's text and attribute escaping, apostrophes included. */
 function escapeHtml(value) {
-  return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#x27;");
 }
 
 test("server-renders company directory and company detail pages", async () => {
@@ -324,4 +330,99 @@ test("race capacity counts hold a floor and stay in disjoint frames", async () =
   // Each claim sits in exactly one band, so the bands never double-count a megawatt.
   const summed = dataModule.capacityClaims.reduce((total, claim) => total + claim.mwe, 0);
   assert.equal(summed, Object.values(totals).reduce((total, value) => total + value, 0));
+});
+
+test("every record kind lands in exactly one dossier lane", async () => {
+  const dataModule = await import("../app/data.ts");
+  // A kind belonging to no lane would silently vanish from every dossier.
+  const fundingLaned = dataModule.fundingFrames.flatMap((frame) => frame.kinds);
+  const proofLaned = dataModule.proofLanes.flatMap((lane) => lane.kinds);
+  assert.equal(new Set(fundingLaned).size, fundingLaned.length, "no funding kind is laned twice");
+  assert.equal(new Set(proofLaned).size, proofLaned.length, "no proof kind is laned twice");
+  for (const event of dataModule.fundingEvents) {
+    assert.ok(fundingLaned.includes(event.kind), `funding kind "${event.kind}" has no lane`);
+  }
+  for (const event of dataModule.proofEvents) {
+    assert.ok(proofLaned.includes(event.kind), `proof kind "${event.kind}" has no lane`);
+  }
+});
+
+test("every entrant dossier renders every lane, with explicit empty states", async () => {
+  const dataModule = await import("../app/data.ts");
+  const lanes = ["Funding", "Pipeline", "Company-stated targets", ...dataModule.proofLanes.map((lane) => lane.lane)];
+
+  for (const entrant of dataModule.raceEntrants) {
+    const response = await render(`/companies/${entrant.companySlug}`);
+    assert.equal(response.status, 200, entrant.companySlug);
+    const raw = await response.text();
+    // The RSC flight payload in a <script> mirrors the DOM text, so anything that
+    // counts occurrences has to look at the document only, not the payload too.
+    const html = raw.replace(/<!--.*?-->/g, "").replace(/<script[\s\S]*?<\/script>/gi, "");
+    const visible = html.replace(/<[^>]+>/g, " ");
+    const dossier = dataModule.dossierFor(entrant.companySlug);
+
+    for (const lane of lanes) assert.ok(html.includes(lane), `${entrant.companySlug} renders the ${lane} lane`);
+    assert.ok(html.includes(escapeHtml(entrant.design)), `${entrant.companySlug} shows its design`);
+    assert.ok(html.includes(escapeHtml(entrant.rosterBasis)), `${entrant.companySlug} states why it is on the board`);
+    // Derived, never hand-written.
+    assert.ok(html.includes(`${dossier.row.unitsToGigawatt} × ${entrant.unitMWe.toLocaleString("en-US")} MWe`), `${entrant.companySlug} shows gigawatt math`);
+    // A private company says so rather than rendering a blank cell.
+    assert.ok(html.includes(entrant.ticker ?? "Private"), `${entrant.companySlug} states its listing`);
+    // No placeholder ever reaches the reader.
+    for (const token of ["undefined", "NaN", "Infinity", "[object Object]"]) {
+      assert.ok(!visible.includes(token), `${entrant.companySlug} leaks "${token}" into visible text`);
+    }
+    // Empty lanes say so out loud. Counted, not merely "some empty state exists
+    // somewhere on the page" -- that version passed even with a lane's empty
+    // state deleted, because other lanes' copy satisfied the match.
+    const emptyProofLanes = dossier.proof.filter((lane) => lane.events.length === 0).length;
+    assert.equal(
+      (html.match(/Nothing on record in this lane/g) ?? []).length,
+      emptyProofLanes,
+      `${entrant.companySlug} labels each of its ${emptyProofLanes} empty proof lanes`,
+    );
+    for (const frame of dossier.funding) {
+      const copy = `No ${frame.frame.toLowerCase()} money on record`;
+      // Both directions: present when empty, absent when populated.
+      assert.equal(html.includes(copy), frame.events.length === 0, `${entrant.companySlug} ${frame.frame} empty state matches its contents`);
+    }
+    assert.equal(html.includes("No reported cash position on record"), dossier.cash.length === 0, `${entrant.companySlug} cash empty state matches`);
+    assert.equal(html.includes("No executed megawatts on record"), dossier.pipeline.executed.length === 0, `${entrant.companySlug} executed empty state matches`);
+    assert.equal(html.includes("No announced pipeline on record"), dossier.pipeline.announced.length === 0, `${entrant.companySlug} announced empty state matches`);
+    assert.equal(html.includes("No company-stated target on record"), dossier.targets.length === 0, `${entrant.companySlug} target empty state matches`);
+  }
+});
+
+test("dossier ledger dates descend, with undated records last", async () => {
+  const dataModule = await import("../app/data.ts");
+  for (const entrant of dataModule.raceEntrants) {
+    const html = (await (await render(`/companies/${entrant.companySlug}`)).text()).replace(/<!--.*?-->/g, "");
+    for (const list of html.match(/<ul class="ledger[^"]*">[\s\S]*?<\/ul>/g) ?? []) {
+      const dates = [...list.matchAll(/<span class="ledger-date">([^<]*)<\/span>/g)].map((match) => match[1]);
+      const undatedAt = dates.findIndex((date) => date.includes("not stated"));
+      const dated = dates.filter((date) => !date.includes("not stated"));
+      if (undatedAt !== -1) {
+        assert.equal(undatedAt, dated.length, `${entrant.companySlug} sorts undated records after dated ones`);
+      }
+      for (let i = 1; i < dated.length; i += 1) {
+        assert.ok(dated[i - 1] >= dated[i], `${entrant.companySlug} ledger runs newest first: ${dated.join(" then ")}`);
+      }
+    }
+  }
+});
+
+test("every rendered source link is https and every custom property is defined", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const dataModule = await import("../app/data.ts");
+
+  const html = await (await render(`/companies/${dataModule.raceEntrants[0].companySlug}`)).text();
+  const external = [...html.matchAll(/href="(https?:\/\/[^"]+)"/g)].map((match) => match[1]);
+  assert.ok(external.length > 5, "the dossier links its sources");
+  for (const href of external) assert.match(href, /^https:\/\//, `${href} uses https`);
+
+  // An undefined var() fails silently: the property is simply dropped at paint.
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  const declared = new Set([...css.match(/:root\s*\{([\s\S]*?)\}/)[1].matchAll(/--([\w-]+)\s*:/g)].map((match) => match[1]));
+  const used = new Set([...css.matchAll(/var\(--([\w-]+)/g)].map((match) => match[1]));
+  assert.deepEqual([...used].filter((token) => !declared.has(token)), [], "every var() resolves to a declared token");
 });
