@@ -98,9 +98,22 @@ listed because the pattern matters more than the individual bugs:
   session's own tests only covered the path it had edited, which is the
   "review scoped to the files I expect matter" blind spot.
 
-Two of the three were invisible to a green 24-test suite. The third was a fact
-no test could check. Budget a review round rather than treating a passing suite
-as the gate.
+A second round found a fourth, and the worst of them: **the source cited for
+Oklo's 75 MWe did not support the claim.** The linked GAIN page reports an NRC
+combined-license acceptance, not the 2025 groundbreaking the band rests on, and
+that claim drives the board's third-place ranking. Content-verifying the rest of
+the ranking-driving sources then found a fifth: the Kairos release cited for a
+20 MWe figure states "up to 50 megawatts".
+
+Both are the same defect, and it is the one the project's rules warn about most
+directly: a real, reachable, plausible URL that does not say what the page says
+it says. A link check cannot catch it. Only reading the source can. The
+verification pass is recorded in `data/research/link-check-history.jsonl` with a
+`content_check` field, so the next reader can see which sources were read rather
+than merely fetched.
+
+None of these five were visible to a green test suite. Budget a review round
+rather than treating a passing suite as the gate.
 
 ## Three tests were vacuous before they were fixed
 
