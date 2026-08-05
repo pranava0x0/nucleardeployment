@@ -50,14 +50,15 @@ fourth-criticality release alongside it.
     operational        0 MWe   across  0 entrants
     construction     365 MWe   across  2 entrants   TerraPower 345, Kairos 20
     doe-authorized    75 MWe   across  1 entrant    Oklo Aurora-INL
-    review         1,235 MWe   across  4 entrants   Holtec 600, X-energy 320, GVH 300, Nano 15
+    review         1,220 MWe   across  3 entrants   Holtec 600, X-energy 320, GVH 300
     contracted         1 MWe   across  1 entrant    Radiant, DIU and Air Force
     framework     40,395 MWe   across 13 entrants
 
-Regenerated from `raceTotals()` on 2026-08-05 after the entrant-count fix. The
-first version of this block said 11 framework entrants, which was true of the
-buggy count and stale the moment the count was repaired. A number written beside
-the data it describes goes stale silently; regenerate it rather than edit it.
+Regenerated from `raceTotals()` on 2026-08-05, twice. The first version said 11
+framework entrants, true of the buggy count and stale the moment the count was
+repaired. The second still carried NANO's 15 MWe in the review band before that
+claim was withdrawn. A number written beside the data it describes goes stale
+silently; regenerate it rather than edit it.
 
 Announced capacity runs about **24 to one** against everything resting on an
 executed action, and about **92 to one** against what is actually being built.

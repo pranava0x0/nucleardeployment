@@ -340,7 +340,12 @@ test("race capacity counts hold a floor and stay in disjoint frames", async () =
   assert.equal(totals.operational, 0);
   assert.ok(totals.construction >= 365, `construction floor: ${totals.construction}`);
   assert.ok(totals["doe-authorized"] >= 75, `DOE-authorized floor: ${totals["doe-authorized"]}`);
-  assert.ok(totals.review >= 1235, `review floor: ${totals.review}`);
+  // Supersession, 2026-08-05: the floor was 1,235. NANO Nuclear's 15 MWe left
+  // the review band because its NRC filing is for a non-power research reactor
+  // at the University of Illinois, and the board's rule is that test reactors
+  // contribute 0 MWe. The filing remains a proof event. A floor drop needs a
+  // reason recorded here, never a quiet edit.
+  assert.ok(totals.review >= 1220, `review floor: ${totals.review}`);
   assert.ok(totals.framework >= 40395, `framework floor: ${totals.framework}`);
 
   // Each claim sits in exactly one band, so the bands never double-count a megawatt.
@@ -672,5 +677,42 @@ test("a conflicting account carries its own source", async () => {
     assert.notEqual(target.conflictSource, target.source, `${target.companySlug} cites a different source for the conflict`);
     const html = await (await render(`/companies/${target.companySlug}`)).text();
     assert.ok(html.includes(target.conflictSource), `${target.companySlug} links the conflict's source`);
+  }
+});
+
+test("debt never renders inside the equity frame", async () => {
+  const dataModule = await import("../app/data.ts");
+  const equity = dataModule.fundingFrames.find((frame) => frame.frame === "Raised");
+  const borrowed = dataModule.fundingFrames.find((frame) => frame.frame === "Borrowed");
+  assert.ok(equity && borrowed, "the equity and debt frames both exist");
+
+  for (const event of dataModule.fundingEvents.filter((record) => equity.kinds.includes(record.kind))) {
+    // A round announced as "$470M ($370M equity + $100M debt)" rendered whole
+    // inside a frame defined as equity. Rounds are split so each part sits in
+    // its own frame and the amounts stay honest.
+    assert.doesNotMatch(event.amount, /\bdebt\b|credit facility/i, `${event.companySlug} shows debt in the equity frame: ${event.amount}`);
+  }
+  // A cumulative figure spanning equity and debt is a cross-frame sum, which
+  // the capital rules forbid.
+  for (const event of dataModule.fundingEvents) {
+    assert.doesNotMatch(event.amount, /disclosed cumulative|disclosed across rounds/i, `${event.companySlug} sums across frames: ${event.amount}`);
+  }
+  assert.ok(dataModule.fundingEvents.some((event) => event.kind === "Venture debt"), "the dataset carries private debt");
+});
+
+test("no capacity claim rates a non-power reactor", async () => {
+  const dataModule = await import("../app/data.ts");
+  // NANO Nuclear's review claim carried the 15 MWe commercial KRONOS rating
+  // while the filing it cited is for a non-power research reactor at the
+  // University of Illinois. Test and research reactors contribute 0 MWe.
+  const nano = dataModule.raceBoard().find((row) => row.entrant.companySlug === "nano-nuclear");
+  assert.equal(nano.executedMWe, 0, "NANO's research-reactor filing carries no capacity");
+  const nonPowerProjects = dataModule.projects.filter((project) => /non-power/i.test(project.capacity));
+  assert.ok(nonPowerProjects.length > 0, "the dataset still tracks a non-power reactor");
+  for (const project of nonPowerProjects) {
+    const claims = dataModule.capacityClaims.filter((claim) => claim.label.includes(project.location.split(",")[0]));
+    for (const claim of claims) {
+      assert.equal(claim.mwe, 0, `${claim.label} rates a non-power reactor at ${claim.mwe} MWe`);
+    }
   }
 });

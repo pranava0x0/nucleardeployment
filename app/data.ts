@@ -1342,7 +1342,7 @@ export type FundingEvent = {
   companySlug: string;
   /** YYYY-MM, or null when no source dates the event. Never guessed. */
   date: string | null;
-  kind: "Venture equity" | "Public offering" | "IPO / listing" | "Strategic investment" | "Federal award" | "Federal loan" | "Cost share";
+  kind: "Venture equity" | "Public offering" | "IPO / listing" | "Strategic investment" | "Federal award" | "Federal loan" | "Cost share" | "Venture debt";
   /** The frame travels with the figure: "$1.02B IPO proceeds", not a bare number. */
   amount: string;
   counterparty: string;
@@ -1369,7 +1369,10 @@ export const raceEntrants: RaceEntrant[] = [
     unitMWeNote: "Up to 500 MWe for 5+ hours with the molten-salt storage boost.",
     lane: "Grid-scale SMR",
     rosterBasis: "NRC construction permit issued for Kemmerer Unit 1 and construction underway in Wyoming.",
-    rosterSource: "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit",
+    // The construction release carries both halves of the basis: it states the
+    // permit issuance and the construction start. The permit release covers
+    // only the first.
+    rosterSource: "https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant",
   },
   {
     companySlug: "oklo",
@@ -1378,7 +1381,7 @@ export const raceEntrants: RaceEntrant[] = [
     unitMWeNote: "Design scaled from 15 MWe through 50 MWe to a current 75 MWe maximum.",
     lane: "Grid-scale SMR",
     ticker: "NYSE: OKLO",
-    rosterBasis: "Aurora-INL under construction on the DOE pathway; combined license application accepted for NRC review.",
+    rosterBasis: "Aurora-INL under construction under the DOE Reactor Pilot Program, with a combined license application submitted to the NRC.",
     rosterSource: "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx",
   },
   {
@@ -1597,16 +1600,6 @@ export const capacityClaims: CapacityClaim[] = [
     source: "https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing",
     verification: "Verified",
   },
-  {
-    companySlug: "nano-nuclear",
-    band: "review",
-    mwe: 15,
-    label: "KRONOS MMR, University of Illinois · construction-permit application accepted for review 2026-05-20",
-    binding: true,
-    date: "2026-05",
-    source: "https://npre.illinois.edu/news/stories/imdp-cpa",
-    verification: "Company-reported",
-  },
 
   // Contracted — executed delivery agreement, not yet in regulator review.
   {
@@ -1730,7 +1723,7 @@ export const capacityClaims: CapacityClaim[] = [
     companySlug: "gev-hitachi",
     band: "framework",
     mwe: 3000,
-    label: "U.S.–Japan investment framework · unidentified sites in Tennessee and Alabama, separate from Clinch River",
+    label: "U.S.–Japan investment framework · unidentified sites in Tennessee and Alabama; the framework names no site, so it is counted as additional to Clinch River, an assumption the source does not confirm",
     binding: false,
     date: "2026-03",
     source: "https://www.ans.org/news/2026-03-25/article-7878/new-us-bwrx300-projects-get-japanese-investment/",
@@ -1852,16 +1845,20 @@ export const fundingEvents: FundingEvent[] = [
   { companySlug: "terrestrial-energy", date: "2025-10", kind: "IPO / listing", amount: "Over $292M gross including a $50M PIPE", counterparty: "HCM II Acquisition Corp (Nasdaq)", source: "https://www.barchart.com/story/news/35743041/terrestrial-energy-inc-completes-business-combination-with-hcm-ii-acquisition-corp" },
   { companySlug: "westinghouse", date: "2026-06", kind: "Federal loan", amount: "$17.5B conditional commitment, scoped to AP1000 long-lead items only", counterparty: "EXIM and DOE Office of Energy Dominance Financing", source: "https://info.westinghousenuclear.com/news/westinghouse-announces-department-of-energy-partnership-to-jumpstart-large-scale-nuclear-supply-chain" },
   { companySlug: "westinghouse", date: "2026-07", kind: "IPO / listing", amount: "Confidential draft S-1 filed; share count, price and venue not disclosed", counterparty: "Not disclosed", source: "https://www.bloomberg.com/news/articles/2026-07-31/nuclear-tech-firm-westinghouse-files-confidentially-for-ipo" },
-  { companySlug: "aalo-atomics", date: "2025-08", kind: "Venture equity", amount: "$100M Series B; $133M disclosed cumulative", counterparty: "Valor Equity Partners (lead), NRG Energy, Hitachi Ventures", source: "https://www.businesswire.com/news/home/20250820559252/en/Aalo-Atomics-Secures-$100-Million-in-Series-B-Funding-to-Build-Modular-Nuclear-Plants-Purpose-Built-for-Powering-AI-Data-Centers" },
-  { companySlug: "radiant-industries", date: "2025-12", kind: "Venture equity", amount: "$300M+ Series D at a valuation above $1.8B; ~$525M+ disclosed cumulative", counterparty: "Draper Associates and Boost VC", source: "https://www.bloomberg.com/news/articles/2025-12-17/nuclear-startup-radiant-raises-300-million-for-small-reactors" },
+  { companySlug: "aalo-atomics", date: "2025-08", kind: "Venture equity", amount: "$100M Series B", counterparty: "Valor Equity Partners (lead), NRG Energy, Hitachi Ventures", source: "https://www.businesswire.com/news/home/20250820559252/en/Aalo-Atomics-Secures-$100-Million-in-Series-B-Funding-to-Build-Modular-Nuclear-Plants-Purpose-Built-for-Powering-AI-Data-Centers" },
+  { companySlug: "radiant-industries", date: "2025-12", kind: "Venture equity", amount: "$300M+ Series D at a valuation above $1.8B", counterparty: "Draper Associates and Boost VC", source: "https://www.bloomberg.com/news/articles/2025-12-17/nuclear-startup-radiant-raises-300-million-for-small-reactors" },
   { companySlug: "radiant-industries", date: "2025-05", kind: "Venture equity", amount: "$165M Series C", counterparty: "DCVC", source: "https://www.radiantnuclear.com/blog/series-c-close/" },
-  { companySlug: "valar-atomics", date: "2026-08", kind: "Venture equity", amount: "$1B Series B at a $6B valuation, plus a $200M credit facility; ~$1.78B disclosed across rounds", counterparty: "Sequoia Capital (lead); Erebor Bank on the facility", source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia" },
-  { companySlug: "valar-atomics", date: "2026-03", kind: "Venture equity", amount: "$450M ($340M equity + $110M debt) at a $2B valuation", counterparty: "Not disclosed", source: "https://theaiworld.org/news/valar-atomics-raises-450m-to-power-ai-data-centres" },
+  { companySlug: "valar-atomics", date: "2026-08", kind: "Venture equity", amount: "$1B Series B at a $6B valuation", counterparty: "Sequoia Capital (lead)", source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia" },
+  { companySlug: "valar-atomics", date: "2026-08", kind: "Venture debt", amount: "$200M credit facility, announced alongside the Series B", counterparty: "Erebor Bank (lead), J.P. Morgan, Crescent Cove, Hercules Capital", source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia" },
+  { companySlug: "valar-atomics", date: "2026-03", kind: "Venture equity", amount: "$340M equity within a $450M round at a $2B valuation", counterparty: "Not disclosed", source: "https://theaiworld.org/news/valar-atomics-raises-450m-to-power-ai-data-centres" },
+  { companySlug: "valar-atomics", date: "2026-03", kind: "Venture debt", amount: "$110M debt within the same $450M round", counterparty: "Not disclosed", source: "https://theaiworld.org/news/valar-atomics-raises-450m-to-power-ai-data-centres" },
   { companySlug: "valar-atomics", date: "2025-11", kind: "Venture equity", amount: "$130M Series A", counterparty: "Not disclosed", source: "https://techfundingnews.com/a-high-school-dropouts-nuclear-startup-just-landed-1b-from-sequoia-at-a-6b-valuation/" },
-  { companySlug: "antares-nuclear", date: "2026-07", kind: "Venture equity", amount: "$470M Series C ($370M equity + $100M debt); ~$604M disclosed cumulative", counterparty: "Paradigm and Caffeinated Capital", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
-  { companySlug: "antares-nuclear", date: "2025-12", kind: "Venture equity", amount: "$96M Series B ($71M equity + $25M debt)", counterparty: "Shine Capital", source: "https://www.businesswire.com/news/home/20251202017776/en/Antares-Raises-$96-Million-in-Series-B-Funding-to-Accelerate-Nuclear-Microreactor-Development" },
+  { companySlug: "antares-nuclear", date: "2026-07", kind: "Venture equity", amount: "$370M equity within a $470M Series C", counterparty: "Paradigm and Caffeinated Capital", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
+  { companySlug: "antares-nuclear", date: "2026-07", kind: "Venture debt", amount: "$100M debt within the same $470M Series C", counterparty: "Not disclosed", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
+  { companySlug: "antares-nuclear", date: "2025-12", kind: "Venture equity", amount: "$71M equity within a $96M Series B", counterparty: "Shine Capital", source: "https://www.businesswire.com/news/home/20251202017776/en/Antares-Raises-$96-Million-in-Series-B-Funding-to-Accelerate-Nuclear-Microreactor-Development" },
+  { companySlug: "antares-nuclear", date: "2025-12", kind: "Venture debt", amount: "$25M debt within the same $96M Series B", counterparty: "Not disclosed", source: "https://www.businesswire.com/news/home/20251202017776/en/Antares-Raises-$96-Million-in-Series-B-Funding-to-Accelerate-Nuclear-Microreactor-Development" },
   { companySlug: "deep-fission", date: "2026-06", kind: "IPO / listing", amount: "$40M gross at $16/share, scaled back from a ~$156M roadshow target", counterparty: "Nasdaq (FISN)", source: "https://www.gurufocus.com/news/8922229/deep-fission-fisn-prices-ipo-at-16-raising-40-million" },
-  { companySlug: "last-energy", date: "2025-12", kind: "Venture equity", amount: "$100M Series C; ~$160–164M disclosed cumulative", counterparty: "Astera Institute", source: "https://techcrunch.com/2025/12/16/nuclear-startup-last-energy-raises-100m-for-its-steel-encased-micro-reactor/" },
+  { companySlug: "last-energy", date: "2025-12", kind: "Venture equity", amount: "$100M Series C", counterparty: "Astera Institute", source: "https://techcrunch.com/2025/12/16/nuclear-startup-last-energy-raises-100m-for-its-steel-encased-micro-reactor/" },
   { companySlug: "last-energy", date: "2024-08", kind: "Venture equity", amount: "$40M Series B", counterparty: "Gigafund and the Autodesk Foundation", source: "https://www.nucnet.org/news/us-startup-last-energy-raises-usd40-million-for-ambitious-microreactor-project-8-5-2024" },
   { companySlug: "deployable-energy", date: null, kind: "Venture equity", amount: "~$1.7M raised to date alongside substantial founder self-funding", counterparty: "Blue Corridor Ventures, Capital Factory, Nucleation Capital", source: "https://www.premieralts.com/companies/deployable-energy" },
   { companySlug: "nano-nuclear", date: "2025-09", kind: "Federal award", amount: "~$1.25M AFWERX Direct-to-Phase-II contract, a feasibility study rather than a unit order", counterparty: "U.S. Air Force", source: "https://www.globenewswire.com/news-release/2025/09/09/3147107/0/en/FOR-IMMEDIATE-RELEASE-UPDATE-NANO-Nuclear-Awarded-AFWERX-Direct-to-Phase-II-Contract-for-KRONOS-MMR-RDT-E-at-Joint-Base-Anacostia-Bolling.html" },
@@ -2059,7 +2056,7 @@ export function byDateDescending<T extends { date: string | null }>(records: T[]
 export const fundingFrames: { frame: string; note: string; kinds: FundingEvent["kind"][] }[] = [
   { frame: "Raised", note: "Private and public equity. Never added to federal money.", kinds: ["Venture equity", "Public offering", "IPO / listing", "Strategic investment"] },
   { frame: "Awarded", note: "Federal awards and cost share. A ceiling, not cash received.", kinds: ["Federal award", "Cost share"] },
-  { frame: "Loaned", note: "Federal debt, repayable. Never counted as a raise.", kinds: ["Federal loan"] },
+  { frame: "Borrowed", note: "Debt, repayable. Never counted as a raise, federal or private.", kinds: ["Federal loan", "Venture debt"] },
 ];
 
 export const proofLanes: { lane: string; note: string; kinds: ProofEvent["kind"][] }[] = [
