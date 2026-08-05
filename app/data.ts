@@ -1581,7 +1581,7 @@ export const capacityClaims: CapacityClaim[] = [
     companySlug: "x-energy",
     band: "review",
     mwe: 320,
-    label: "Long Mott, Texas · 4 × 80 MWe; environmental review closed 2026-05, safety decision targeted 2026-11",
+    label: "Long Mott, Seadrift, Texas · Dow site, 4 × 80 MWe; environmental review closed 2026-05, safety decision targeted 2026-11",
     binding: true,
     date: "2026-05",
     source: "https://x-energy.com/news/nrc-issues-environmental-assessment-with-finding-of-no-significant-impact-for-dow-and-x-energys-propsed-advanced-nuclear-project-in-texas/",
@@ -1685,7 +1685,12 @@ export const capacityClaims: CapacityClaim[] = [
     companySlug: "x-energy",
     band: "framework",
     mwe: 5000,
-    label: "Amazon · U.S. framework targeting 2039; the funded Cascade first phase of 320 MWe sits inside this figure",
+    // Distinct from the Long Mott claim above, which is Dow's Texas site under
+    // NRC review. Cascade is Energy Northwest's Washington site and sits inside
+    // this framework; the two projects share a 4 x 80 MWe rating and nothing
+    // else. A PR review read them as one project and called this a double
+    // count, so both labels now name their state.
+    label: "Amazon · U.S. framework targeting 2039, separate from the Texas project under review; includes the funded Cascade first phase of 320 MWe at Richland, Washington",
     binding: false,
     date: "2024-10",
     source: "https://www.ans.org/news/article-6480/amazon-investing-in-smrs-to-deploy-5gw-by-2039/",

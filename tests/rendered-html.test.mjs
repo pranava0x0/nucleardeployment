@@ -637,3 +637,26 @@ test("stated targets are targets, not editorial absences", async () => {
     assert.match(html, /No company-stated target on record/, `${entrant.companySlug} says it has no stated target`);
   }
 });
+
+test("a company's capacity claims describe different projects", async () => {
+  const dataModule = await import("../app/data.ts");
+  // X-energy's Long Mott (Dow, Texas, under review) and Cascade (Energy
+  // Northwest, Washington, inside the Amazon framework) share a 4 x 80 MWe
+  // rating and nothing else. A PR review read them as one project and reported
+  // a double count. They are separate, and each label must say where it is.
+  const xenergy = dataModule.capacityClaims.filter((claim) => claim.companySlug === "x-energy");
+  const review = xenergy.find((claim) => claim.band === "review");
+  const framework = xenergy.find((claim) => claim.band === "framework");
+  assert.match(review.label, /Texas/, "the reviewed project names its state");
+  assert.match(framework.label, /Washington/, "the framework's funded phase names its state");
+  assert.match(framework.label, /separate from the Texas project under review/, "the framework says it does not contain the reviewed project");
+
+  // Every claim label opens with a distinct project or counterparty per company,
+  // so no two claims can silently describe the same megawatts.
+  for (const entrant of dataModule.raceEntrants) {
+    const labels = dataModule.capacityClaims
+      .filter((claim) => claim.companySlug === entrant.companySlug)
+      .map((claim) => claim.label.split(" · ")[0]);
+    assert.equal(new Set(labels).size, labels.length, `${entrant.companySlug} names each claim's project distinctly`);
+  }
+});

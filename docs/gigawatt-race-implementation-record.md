@@ -134,6 +134,16 @@ became a conflation fixed elsewhere but missed here, one mislabelled article
 became thirty-four. Treat a review finding as a sample, and grep for the pattern
 before calling it fixed.
 
+One review finding was wrong, and checking rather than complying was the right
+call. It reported X-energy's review-band 320 MWe and the 320 MWe Cascade phase
+inside its framework claim as the same megawatts counted twice. They are
+different projects on different sides of the country that happen to share a
+4 x 80 MWe rating: Long Mott is Dow's Texas site under NRC review, Cascade is
+Energy Northwest's Washington site inside the Amazon framework, and the research
+pack lists them as separate pipeline lines. The numbers stood. The labels did
+not: two 320 MWe figures for one company, one named inside the other's label,
+invited the misreading, so both now name their state.
+
 A related caution: the first attempt at the relabel rewrote nine curated
 `projects[]` records as collateral, because the script matched on indentation
 rather than on section. It was reverted and rescoped. A mechanical fix needs a
