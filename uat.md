@@ -25,17 +25,22 @@ Environment: local vinext development server at `http://localhost:3000`
 
 ## Core routes
 
-| Flow | Expected result | Status |
-| --- | --- | --- |
-| Overview | Evidence-led homepage renders without a runtime dialog | Pass |
-| Deployment pipeline | Eight named stages show meanings, counts, and linked company names | Pass |
-| Companies | 15 company cards render with 36px names and linked project profiles | Pass |
-| Deployments | 17 records render with search and stage controls | Pass |
-| Project detail | Aalo and Unity records show program, evidence label, next gate, and source | Pass |
-| Map | 16 mapped markers and 17 list records render; the undisclosed site is explained | Pass |
-| Federal action | Tracker renders four orders and four DOE program records | Pass |
-| Capital + supply | Ledger renders with three external source links | Pass |
-| Methodology | Definitions and stage method render | Pass |
+Counts re-measured against this commit on 2026-08-05. The 2026-07-17 run recorded
+15 company cards and 17 deployment records; the dataset has grown since, and
+leaving those numbers under a current date would have presented stale figures as
+fresh evidence.
+
+| Flow | Expected result | Status | Last verified |
+| --- | --- | --- | --- |
+| Overview | Race board leads, then the stage pipeline; no runtime dialog | Pass | 2026-08-05 |
+| Deployment pipeline | Eight named stages show meanings, counts, and linked company names across 24 distinct companies | Pass | 2026-08-05 |
+| Companies | 26 company cards render with linked profiles; the two with no tracked project say so | Pass | 2026-08-05 |
+| Deployments | 28 records render with search and stage controls | Pass | 2026-08-05 |
+| Project detail | Aalo and Unity records show program, evidence label, next gate, and source | Pass | 2026-07-17 |
+| Map | Regional location ledger renders; the undisclosed site is explained | Pass | 2026-07-17 |
+| Federal action | Tracker renders four orders and four DOE program records | Pass | 2026-07-17 |
+| Capital + supply | Ledger renders with three external source links | Pass | 2026-07-17 |
+| Methodology | Definitions, stage method, and the race rules under `#race` render | Pass | 2026-08-05 |
 
 ## Interaction checks
 
@@ -43,8 +48,8 @@ Environment: local vinext development server at `http://localhost:3000`
 | --- | --- | --- |
 | Primary navigation | Deployments and Map open without full reload errors | Pass |
 | Pipeline scan | All eight stages expose stage number, name, meaning, project count, and readable company names | Pass |
-| Company links | Pipeline exposes 15 linked companies across active stages without duplicate Oklo links | Pass |
-| Text search | `Aalo` narrows 17 records to one | Pass |
+| Company links | Pipeline exposes linked companies across active stages without duplicate Oklo links | Pass |
+| Text search | `Aalo` narrows the 28 records to one | Pass |
 | Stage filter | Stage 7 plus the active query keeps the one matching operational record | Pass |
 | Directory row | Clicking Aalo opens its project record with a company-reported LinkedIn source | Pass |
 

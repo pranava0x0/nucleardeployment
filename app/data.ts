@@ -1613,6 +1613,17 @@ export const capacityClaims: CapacityClaim[] = [
     verification: "Press-reported",
   },
 
+  {
+    companySlug: "x-energy",
+    band: "contracted",
+    mwe: 320,
+    label: "Cascade Advanced Energy Facility, Richland, Washington · Energy Northwest and Amazon signed a development and funding agreement for an initial four modules; the site is licensed for up to 960 MWe",
+    binding: true,
+    date: "2024-10",
+    source: "https://www.utilitydive.com/news/washington-nuclear-facility-smrs-cascade-amazon-modular/802967/",
+    verification: "Press-reported",
+  },
+
   // Announced, non-binding.
   {
     companySlug: "oklo",
@@ -1677,13 +1688,13 @@ export const capacityClaims: CapacityClaim[] = [
   {
     companySlug: "x-energy",
     band: "framework",
-    mwe: 5000,
-    // Distinct from the Long Mott claim above, which is Dow's Texas site under
-    // NRC review. Cascade is Energy Northwest's Washington site and sits inside
-    // this framework; the two projects share a 4 x 80 MWe rating and nothing
-    // else. A PR review read them as one project and called this a double
-    // count, so both labels now name their state.
-    label: "Amazon · U.S. framework targeting 2039, separate from the Texas project under review; includes the funded Cascade first phase of 320 MWe at Richland, Washington",
+    mwe: 4680,
+    // The Amazon framework's first phase is funded by an executed agreement, so
+    // it sits in the contracted band above and only the options-based remainder
+    // is counted here. Distinct from the Long Mott claim, which is Dow's Texas
+    // site under NRC review: the two projects share a 4 x 80 MWe rating and
+    // nothing else, and a PR review read them as one.
+    label: "Amazon · options-based U.S. framework targeting 2039, beyond the funded Cascade phase, separate from the Texas project under review",
     binding: false,
     date: "2024-10",
     source: "https://www.ans.org/news/article-6480/amazon-investing-in-smrs-to-deploy-5gw-by-2039/",

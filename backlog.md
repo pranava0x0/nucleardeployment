@@ -37,7 +37,7 @@
 ## Product
 
 - [x] Decide the LWR/SMR refocus. Resolved 2026-08-05 as a company-centric gigawatt race; the three blocking scope questions are answered in [docs/plan-gigawatt-race.md](docs/plan-gigawatt-race.md), and [docs/redesign-lwr-smr.md](docs/redesign-lwr-smr.md) keeps the measured scope analysis.
-- [ ] **High.** Implement the gigawatt race per [docs/plan-gigawatt-race.md](docs/plan-gigawatt-race.md): race data layer with band/source tests, homepage race board, company race dossiers, methodology update, then UAT. Five phases, each shippable end-to-end. Research packs in `docs/research/company-packs-*.md` dated 2026-08-05.
+- [x] Implement the gigawatt race per [docs/plan-gigawatt-race.md](docs/plan-gigawatt-race.md). All five phases shipped 2026-08-05: race data layer, homepage race board, company race dossiers, methodology, and UAT. Decisions, deviations, and the defects found in review are recorded in [docs/gigawatt-race-implementation-record.md](docs/gigawatt-race-implementation-record.md). Remaining follow-ups are in "Race board follow-ups" above.
 - [ ] Add a true geographic layer only after complete coordinates and accessible list parity exist.
 - [ ] Add shareable URL filters and project comparison.
 - [ ] Add CSV downloads and a public API after the normalized schema stabilizes.

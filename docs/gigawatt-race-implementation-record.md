@@ -51,8 +51,8 @@ fourth-criticality release alongside it.
     construction     365 MWe   across  2 entrants   TerraPower 345, Kairos 20
     doe-authorized    75 MWe   across  1 entrant    Oklo Aurora-INL
     review         1,220 MWe   across  3 entrants   Holtec 600, X-energy 320, GVH 300
-    contracted         1 MWe   across  1 entrant    Radiant, DIU and Air Force
-    framework     40,395 MWe   across 13 entrants
+    contracted       321 MWe   across  2 entrants   X-energy Cascade 320, Radiant 1
+    framework     40,075 MWe   across 13 entrants
 
 Regenerated from `raceTotals()` on 2026-08-05, twice. The first version said 11
 framework entrants, true of the buggy count and stale the moment the count was

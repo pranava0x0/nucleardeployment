@@ -346,7 +346,13 @@ test("race capacity counts hold a floor and stay in disjoint frames", async () =
   // contribute 0 MWe. The filing remains a proof event. A floor drop needs a
   // reason recorded here, never a quiet edit.
   assert.ok(totals.review >= 1220, `review floor: ${totals.review}`);
-  assert.ok(totals.framework >= 40395, `framework floor: ${totals.framework}`);
+  // Supersession, 2026-08-05: the floor was 40,395. Cascade's 320 MWe funded
+  // phase moved from the framework band to contracted, because Energy Northwest
+  // and Amazon signed a development and funding agreement for it and only the
+  // options-based remainder is an announcement. Capacity moved between bands;
+  // none was lost.
+  assert.ok(totals.framework >= 40075, `framework floor: ${totals.framework}`);
+  assert.ok(totals.contracted >= 321, `contracted floor: ${totals.contracted}`);
 
   // Each claim sits in exactly one band, so the bands never double-count a megawatt.
   const summed = dataModule.capacityClaims.reduce((total, claim) => total + claim.mwe, 0);
@@ -652,9 +658,11 @@ test("a company's capacity claims describe different projects", async () => {
   const xenergy = dataModule.capacityClaims.filter((claim) => claim.companySlug === "x-energy");
   const review = xenergy.find((claim) => claim.band === "review");
   const framework = xenergy.find((claim) => claim.band === "framework");
+  const contracted = xenergy.find((claim) => claim.band === "contracted");
   assert.match(review.label, /Texas/, "the reviewed project names its state");
-  assert.match(framework.label, /Washington/, "the framework's funded phase names its state");
+  assert.match(contracted.label, /Washington/, "the funded Cascade phase names its state");
   assert.match(framework.label, /separate from the Texas project under review/, "the framework says it does not contain the reviewed project");
+  assert.match(framework.label, /beyond the funded Cascade phase/, "the framework excludes the phase now counted as contracted");
 
   // Every claim label opens with a distinct project or counterparty per company,
   // so no two claims can silently describe the same megawatts.
