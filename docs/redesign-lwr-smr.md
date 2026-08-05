@@ -1,6 +1,9 @@
 # Redesign plan: focusing Deployment Core on LWRs and SMRs
 
-Status: proposal, not implemented. Written 2026-08-05.
+Status: resolved 2026-08-05. The owner chose a company-centric refocus — the
+race to a gigawatt — which answers this document's three open questions
+without a record filter. See [plan-gigawatt-race.md](plan-gigawatt-race.md).
+The measured scope analysis below still holds and informed that plan.
 
 ## The ask
 
