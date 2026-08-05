@@ -96,7 +96,7 @@ test("DOE program coverage distinguishes pilot, criticality, and ARDP projects",
   const launchPadProjects = dataModule.projects.filter((project) => project.programs.includes("Nuclear Energy Launch Pad"));
 
   assert.equal(dataModule.projects.length, 28);
-  assert.equal(dataModule.companies.length, 24);
+  assert.equal(dataModule.companies.length, 26);
   assert.equal(pilotProjects.length, 11);
   assert.deepEqual(criticalityProjects.map((project) => project.name).sort(), ["Aalo Critical Test Reactor", "Antares R1 Mark-0", "Ward 250 critical experiment"]);
   assert.deepEqual(ardpProjects.map((project) => project.slug).sort(), ["long-mott-xe-100", "natrium-kemmerer"]);
@@ -199,4 +199,97 @@ test("Vite dev cache never points at removed packages", async () => {
       `stale Vite cache entry for ${dependency}: ${record.src}`,
     );
   }
+});
+
+test("every race record carries one band, an https source, and a real or null date", async () => {
+  const dataModule = await import("../app/data.ts");
+  const companySlugs = new Set(dataModule.companies.map((company) => company.slug));
+  const bands = new Set(dataModule.capacityBands.map((entry) => entry.band));
+  const entrantSlugs = new Set(dataModule.raceEntrants.map((entrant) => entrant.companySlug));
+
+  assert.equal(entrantSlugs.size, dataModule.raceEntrants.length, "no entrant is listed twice");
+  for (const entrant of dataModule.raceEntrants) {
+    assert.ok(companySlugs.has(entrant.companySlug), `${entrant.companySlug} has a company record`);
+    assert.match(entrant.rosterSource, /^https:\/\//, entrant.companySlug);
+    assert.ok(entrant.rosterBasis.length > 20, `${entrant.companySlug} states why it qualifies`);
+    assert.ok(entrant.unitMWe > 0, `${entrant.companySlug} has a unit rating`);
+  }
+
+  for (const claim of dataModule.capacityClaims) {
+    assert.ok(entrantSlugs.has(claim.companySlug), `claim for ${claim.companySlug} belongs to an entrant`);
+    assert.ok(bands.has(claim.band), `${claim.label} uses a known band`);
+    assert.ok(claim.mwe >= 0, `${claim.label} is not negative`);
+    assert.match(claim.source, /^https:\/\//, claim.label);
+    assert.equal(claim.binding, claim.band !== "framework", `${claim.label} binding flag matches its band`);
+    if (claim.date !== null) assert.match(claim.date, /^\d{4}-\d{2}$/, claim.label);
+  }
+
+  for (const record of [...dataModule.fundingEvents, ...dataModule.proofEvents]) {
+    assert.ok(entrantSlugs.has(record.companySlug), `record for ${record.companySlug} belongs to an entrant`);
+    assert.match(record.source, /^https:\/\//, record.companySlug);
+    if (record.date !== null) assert.match(record.date, /^\d{4}-\d{2}(-\d{2})?$/, record.companySlug);
+  }
+  for (const record of [...dataModule.statedTargets, ...dataModule.cashPositions]) {
+    assert.ok(entrantSlugs.has(record.companySlug), `record for ${record.companySlug} belongs to an entrant`);
+    assert.match(record.source, /^https:\/\//, record.companySlug);
+  }
+});
+
+test("test reactors and critical experiments contribute zero megawatts", async () => {
+  const dataModule = await import("../app/data.ts");
+  const criticalities = dataModule.proofEvents.filter((event) => event.kind === "Criticality");
+  assert.equal(criticalities.length, 4, "all four DOE pilot criticalities are recorded");
+  assert.deepEqual(
+    criticalities.map((event) => event.companySlug).sort(),
+    ["aalo-atomics", "antares-nuclear", "deployable-energy", "valar-atomics"],
+  );
+  for (const event of criticalities) {
+    assert.match(event.powerNote ?? "", /0 MWe/, `${event.companySlug} criticality states it contributes no capacity`);
+  }
+  // A criticality never lands a megawatt in a capacity band.
+  for (const slug of ["antares-nuclear", "deployable-energy"]) {
+    const row = dataModule.raceBoard().find((entry) => entry.entrant.companySlug === slug);
+    assert.equal(row.executedMWe, 0, `${slug} has a criticality but no executed capacity`);
+  }
+});
+
+test("the board reports an honest zero and never lets frameworks move a row", async () => {
+  const dataModule = await import("../app/data.ts");
+  const board = dataModule.raceBoard();
+  assert.equal(board.length, dataModule.raceEntrants.length, "every entrant gets a row");
+
+  for (const row of board) {
+    const operational = row.cells.find((cell) => cell.band === "operational");
+    assert.equal(operational.mwe, 0, `${row.company.name} has no operational capacity yet`);
+    assert.match(row.ariaLabel, /operational/, `${row.company.name} states operational MWe in its label`);
+    assert.equal(row.unitsToGigawatt, Math.ceil(1000 / row.entrant.unitMWe));
+  }
+
+  // Zeroing every framework megawatt must not reorder the board.
+  const zeroed = dataModule.capacityClaims.map((claim) => claim.band === "framework" ? { ...claim, mwe: 0 } : claim);
+  assert.deepEqual(
+    dataModule.raceBoard(zeroed).map((row) => row.company.slug),
+    board.map((row) => row.company.slug),
+    "framework megawatts do not affect board order",
+  );
+
+  // Ranking runs strongest-band-first, not by total megawatts.
+  const order = board.map((row) => row.company.slug);
+  assert.ok(order.indexOf("oklo") < order.indexOf("holtec"), "a DOE-authorized build outranks a larger application in review");
+  assert.ok(order.indexOf("terrapower") < order.indexOf("oklo"), "an NRC-permitted build outranks a DOE-pathway build");
+});
+
+test("race capacity counts hold a floor and stay in disjoint frames", async () => {
+  const dataModule = await import("../app/data.ts");
+  const totals = Object.fromEntries(dataModule.raceTotals().map((entry) => [entry.band, entry.mwe]));
+  assert.ok(dataModule.raceEntrants.length >= 18, `entrant count floor: ${dataModule.raceEntrants.length}`);
+  assert.equal(totals.operational, 0);
+  assert.ok(totals.construction >= 365, `construction floor: ${totals.construction}`);
+  assert.ok(totals["doe-authorized"] >= 75, `DOE-authorized floor: ${totals["doe-authorized"]}`);
+  assert.ok(totals.review >= 1235, `review floor: ${totals.review}`);
+  assert.ok(totals.framework >= 40395, `framework floor: ${totals.framework}`);
+
+  // Each claim sits in exactly one band, so the bands never double-count a megawatt.
+  const summed = dataModule.capacityClaims.reduce((total, claim) => total + claim.mwe, 0);
+  assert.equal(summed, Object.values(totals).reduce((total, value) => total + value, 0));
 });
