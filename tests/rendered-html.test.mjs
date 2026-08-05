@@ -511,7 +511,9 @@ test("touch targets and band encoding survive in the stylesheet", async () => {
   const coarse = css.match(/@media \(pointer: coarse\)\s*\{([\s\S]*?)\n\}/);
   assert.ok(coarse, "a coarse-pointer block exists");
   assert.match(coarse[1], /min-height:\s*44px/, "it sets a 44px floor");
-  for (const selector of [".race-id h3 a", ".ledger li > a", ".back-link"]) {
+  // Descendant selector: a "> a" form missed the conflict source nested inside
+  // .ledger-conflict, and the masthead's source link was omitted entirely.
+  for (const selector of [".race-id h3 a", ".ledger li a", ".back-link", ".masthead-context a", ".roster-basis a"]) {
     assert.ok(coarse[1].includes(selector), `${selector} gets the touch floor`);
   }
 

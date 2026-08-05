@@ -414,7 +414,8 @@ footer a { margin-left: auto; font: 700 13px var(--font-mono); }
 @media (max-width: 1023px) {
   .site-header { height: auto; min-height: 64px; flex-wrap: wrap; }
   .brand { width: auto; border-right: 0; }
-  .site-header nav { order: 3; width: 100%; flex-basis: 100%; height: 44px; border-top: 1px solid var(--border); }
+  /* 45px so the 1px border does not eat into the 44px touch target. */
+  .site-header nav { order: 3; width: 100%; flex-basis: 100%; height: 45px; border-top: 1px solid var(--border); }
   .method-link { margin-left: auto; }
   .masthead { padding: 44px 32px 36px; }
   .masthead h1 { font-size: clamp(36px, 5.6vw, 56px); }
@@ -527,11 +528,15 @@ footer a { margin-left: auto; font: 700 13px var(--font-mono); }
 /* Touch targets. Scoped to coarse pointers so these keep their natural inline
    scale on desktop instead of bloating into buttons beside lightweight text. */
 @media (pointer: coarse) {
+  /* Descendant, not direct-child: the conflict source link is nested inside
+     .ledger-conflict and a "> a" selector missed it. */
   .race-id h3 a,
-  .ledger li > a,
+  .ledger li a,
   .roster-basis a,
+  .masthead-context a,
   .back-link,
-  .company-summary a {
+  .company-summary a,
+  footer a {
     min-height: 44px;
     display: inline-flex;
     align-items: center;
