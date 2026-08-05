@@ -573,3 +573,25 @@ test("every entrant's unit rating obeys the roster rule", async () => {
     );
   }
 });
+
+test("band entrant counts include companies whose capacity is undisclosed", async () => {
+  const dataModule = await import("../app/data.ts");
+  for (const total of dataModule.raceTotals()) {
+    const expected = new Set(
+      dataModule.capacityClaims.filter((claim) => claim.band === total.band).map((claim) => claim.companySlug),
+    ).size;
+    // An agreement of undisclosed size is still an agreement. Counting on
+    // mwe > 0 dropped Aalo and BWXT and made the legend contradict their rows.
+    assert.equal(total.entrants, expected, `${total.band} counts every entrant with a claim`);
+  }
+  const framework = dataModule.raceTotals().find((total) => total.band === "framework");
+  const undisclosed = dataModule.capacityClaims.filter((claim) => claim.band === "framework" && claim.mwe === 0);
+  assert.ok(undisclosed.length > 0, "the dataset still exercises the undisclosed-capacity case");
+  for (const claim of undisclosed) {
+    assert.ok(
+      dataModule.raceTotals().find((total) => total.band === "framework").entrants >= 1,
+      `${claim.companySlug} is counted in the framework band`,
+    );
+  }
+  assert.equal(framework.entrants, 13);
+});

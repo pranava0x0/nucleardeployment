@@ -1418,7 +1418,7 @@ export const raceEntrants: RaceEntrant[] = [
     unitMWeNote: "The earlier certified design was 50 MWe. A six-module VOYGR-6 plant is 462 MWe.",
     lane: "Grid-scale SMR",
     ticker: "NYSE: SMR",
-    rosterBasis: "Holds the only NRC-approved U.S. SMR design and a named U.S. deployment program through ENTRA1 Energy.",
+    rosterBasis: "Holds the only NRC-approved SMR design in the United States, a standard design approval for the 77 MWe module.",
     rosterSource: "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design",
   },
   {
@@ -1428,7 +1428,7 @@ export const raceEntrants: RaceEntrant[] = [
     unitMWeNote: "Per Core-unit. The commercial IMSR400 plant pairs two Core-units for 390 MWe net.",
     lane: "Grid-scale SMR",
     ticker: "Nasdaq: IMSR",
-    rosterBasis: "DOE Other Transaction Agreement for a pilot IMSR and roughly 77 acres secured at Texas A&M-RELLIS.",
+    rosterBasis: "Secured roughly 77 acres at the Texas A&M-RELLIS campus for a pilot IMSR, to generate the site data an NRC construction-permit application requires.",
     rosterSource: "https://www.ans.org/news/2026-06-23/article-8139/terrestrial-energy-and-texas-am-reach-agreement-on-reactor-siting/",
   },
   {
@@ -1446,7 +1446,7 @@ export const raceEntrants: RaceEntrant[] = [
     unitMWe: 20,
     unitMWeNote: "PWR-5 is the 5 MWe pilot version of the same design.",
     lane: "Microreactor",
-    rosterBasis: "DOE Reactor Pilot Program selection to build and test PWR-5 at Texas A&M-RELLIS, plus a sited Texas project.",
+    rosterBasis: "Selected for the DOE Reactor Pilot Program to build and test the PWR-5 at the Texas A&M-RELLIS campus.",
     rosterSource: "https://www.world-nuclear-news.org/articles/last-energy-microreactor-planned-at-texas-university",
   },
   {
@@ -1465,7 +1465,7 @@ export const raceEntrants: RaceEntrant[] = [
     unitMWe: 10,
     unitMWeNote: "30 MWt. The commercial Aalo Pod bundles units into a 50 MWe plant.",
     lane: "Microreactor",
-    rosterBasis: "Built, licensed and operated its own Critical Test Reactor at INL under the DOE Reactor Pilot Program.",
+    rosterBasis: "Reached DOE-authorized criticality with its Critical Test Reactor at Idaho National Laboratory, the fourth and last before the July 4 2026 goal.",
     rosterSource: "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal",
   },
   {
@@ -1492,7 +1492,7 @@ export const raceEntrants: RaceEntrant[] = [
     design: "Unity",
     unitMWe: 1,
     lane: "Microreactor",
-    rosterBasis: "Reached DOE-authorized criticality at INL and was named to DOE's Launch Pad program.",
+    rosterBasis: "Reached DOE-authorized criticality with the Unity reactor at Idaho National Laboratory.",
     rosterSource: "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor",
   },
   {
@@ -1999,7 +1999,9 @@ export function raceTotals(claims: CapacityClaim[] = capacityClaims) {
     rule,
     authority,
     mwe: claims.filter((claim) => claim.band === band).reduce((total, claim) => total + claim.mwe, 0),
-    entrants: new Set(claims.filter((claim) => claim.band === band && claim.mwe > 0).map((claim) => claim.companySlug)).size,
+    // Counted on having a claim, not on the claim carrying megawatts. An
+    // agreement of undisclosed size is still an agreement, and the rows say so.
+    entrants: new Set(claims.filter((claim) => claim.band === band).map((claim) => claim.companySlug)).size,
   }));
 }
 

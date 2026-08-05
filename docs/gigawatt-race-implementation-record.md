@@ -112,7 +112,20 @@ verification pass is recorded in `data/research/link-check-history.jsonl` with a
 `content_check` field, so the next reader can see which sources were read rather
 than merely fetched.
 
-None of these five were visible to a green test suite. Budget a review round
+A third round found two more, and both were wider than reported. The review
+named NuScale's roster basis as citing a source that did not establish it;
+auditing that pattern across all 18 entrants found **five** bases making a
+compound claim on a single-fact source. The review named the legend's entrant
+count as excluding undisclosed-capacity frameworks; that was the same
+zero-versus-unknown conflation already fixed in the aria-labels, missed because
+the earlier fix was applied where the defect was reported rather than everywhere
+the pattern occurred.
+
+That is the lesson worth keeping. Three of the seven findings were reported as
+one row and were really a class. Treat a review finding as a sample, and grep
+for the pattern before calling it fixed.
+
+None of these seven were visible to a green test suite. Budget a review round
 rather than treating a passing suite as the gate.
 
 ## Three tests were vacuous before they were fixed

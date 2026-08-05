@@ -30,9 +30,10 @@ export default function MethodologyPage() {
 
       <article className="method-note">
         <h3>Who is on the board</h3>
-        <p>An entrant is a company with a named new-design commercial power reactor of roughly 350 MWe or less per unit, and a documented U.S. deployment program: an NRC docket, a DOE authorization, a sited project, or a binding U.S. customer. {raceEntrants.length} companies qualify as of {dataAsOf}. This is a tracked sample, not a census of everyone building a reactor.</p>
+        <p>An entrant is a company with a named new-design commercial power reactor of roughly 350 MWe or less per unit, and documented U.S. regulatory or physical progress toward deploying it: an NRC docket, an NRC-approved design, a DOE authorization, a sited project, or a binding U.S. customer. {raceEntrants.length} companies qualify as of {dataAsOf}. This is a tracked sample, not a census of everyone building a reactor.</p>
+        <p>Each entrant page states one specific qualifying fact and cites the single source that establishes it. Where a company has more than one claim to a place on the board, the others appear in its ledgers with their own sources rather than being bundled into the roster basis.</p>
         <p>Companies that only run test reactors or make fuel appear as context on entrant pages, not as entrants. Large AP1000-class reactors stay in the stage pipeline as tracked context; they are not racing to a first gigawatt.</p>
-        <p>Every entrant page states the specific evidence that put that company on the board, with its source.</p>
+
       </article>
 
       <article className="method-note">
