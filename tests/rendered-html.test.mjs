@@ -724,3 +724,55 @@ test("no capacity claim rates a non-power reactor", async () => {
     }
   }
 });
+
+test("prose that quotes race figures matches the data it describes", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const dataModule = await import("../app/data.ts");
+  const totals = Object.fromEntries(dataModule.raceTotals().map((entry) => [entry.band, entry.mwe]));
+  const building = totals.construction + totals["doe-authorized"];
+  const executed = dataModule.raceTotals().filter((entry) => entry.band !== "framework").reduce((sum, entry) => sum + entry.mwe, 0);
+  const group = (value) => value.toLocaleString("en-US");
+
+  // A number written beside the data it describes goes stale silently. The
+  // README, the implementation record, and uat.md each shipped a figure that
+  // the data had already moved past, three separate times.
+  const files = [
+    ["../README.md", [group(totals.framework), group(building), String(dataModule.raceEntrants.length)]],
+    ["../docs/gigawatt-race-implementation-record.md", [group(totals.framework), group(totals.review), group(totals.contracted)]],
+  ];
+  for (const [path, figures] of files) {
+    const prose = await readFile(new URL(path, import.meta.url), "utf8");
+    assert.ok(prose.length > 500, `${path} was read`);
+    for (const figure of figures) {
+      assert.ok(prose.includes(figure), `${path} is missing the current figure ${figure}`);
+    }
+  }
+
+  // Both ratios are rendered live, so the prose must agree with what a reader sees.
+  const record = await readFile(new URL("../docs/gigawatt-race-implementation-record.md", import.meta.url), "utf8");
+  assert.ok(record.includes(`**${Math.round(totals.framework / executed)} to one**`), "the executed ratio in the record is current");
+  assert.ok(record.includes(`**${Math.round(totals.framework / building)} to one**`), "the building ratio in the record is current");
+});
+
+test("a program selection is never filed under permits or physical work", async () => {
+  const dataModule = await import("../app/data.ts");
+  // Being chosen for a program, or signing an agreement to pursue one, is
+  // neither a regulator's authorization nor work at a site. A review found an
+  // unawarded Air Force finalist status rendering under "Physical progress"
+  // and a program naming rendering under "Licensing".
+  const grantsPermission = /\b(approved|issued|accepted|extended|granted|authoriz)/i;
+  const isSelection = /\b(selected|named one of|finalists?|other transaction agreement)\b/i;
+
+  for (const event of dataModule.proofEvents.filter((record) => record.kind === "Permit / authorization")) {
+    assert.match(event.label, grantsPermission, `"${event.label.slice(0, 60)}" names the authorizing act`);
+    assert.doesNotMatch(event.label, isSelection, `"${event.label.slice(0, 60)}" is a selection, not an authorization`);
+  }
+  for (const event of dataModule.proofEvents.filter((record) => record.kind === "Test program")) {
+    assert.doesNotMatch(event.label, isSelection, `"${event.label.slice(0, 60)}" is a selection, not work at a site`);
+  }
+  const selections = dataModule.proofEvents.filter((record) => record.kind === "Program selection / agreement");
+  assert.ok(selections.length >= 4, `the dataset carries programme selections: ${selections.length}`);
+  for (const event of selections) {
+    assert.match(event.label, isSelection, `"${event.label.slice(0, 60)}" reads as a selection or agreement`);
+  }
+});

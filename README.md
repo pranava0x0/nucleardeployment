@@ -2,7 +2,7 @@
 
 Deployment Core is an evidence-led tracker for U.S. nuclear deployment. It separates announcements from binding commitments, licensing, physical construction, criticality, operation, and replication.
 
-The site leads with the race to a gigawatt: 18 companies building new-design reactors for U.S. deployment, ranked by the strongest state their megawatts have actually reached. As of 2026-08-05 that ranking starts from an honest zero. No entrant has generated a commercial megawatt, 440 MWe are physically being built, and 40,395 MWe have been announced without binding documents behind them.
+The site leads with the race to a gigawatt: 18 companies building new-design reactors for U.S. deployment, ranked by the strongest state their megawatts have actually reached. As of 2026-08-05 that ranking starts from an honest zero. No entrant has generated a commercial megawatt, 440 MWe are physically being built, and 40,075 MWe have been announced without binding documents behind them.
 
 The current release is a research-backed tracked set: 28 sourced projects and 26 company records, including all 11 initial Reactor Pilot Program projects. It is not yet a complete national census.
 

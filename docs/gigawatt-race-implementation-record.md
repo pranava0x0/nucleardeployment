@@ -60,8 +60,8 @@ repaired. The second still carried NANO's 15 MWe in the review band before that
 claim was withdrawn. A number written beside the data it describes goes stale
 silently; regenerate it rather than edit it.
 
-Announced capacity runs about **24 to one** against everything resting on an
-executed action, and about **92 to one** against what is actually being built.
+Announced capacity runs about **20 to one** against everything resting on an
+executed action, and about **91 to one** against what is actually being built.
 Both are rendered, both labeled, and both derived rather than typed in. Three
 entrants have no capacity claim at all (Westinghouse, Deployable Energy,
 Antares) and still render a row.
