@@ -28,6 +28,7 @@
 
 ## Product
 
+- [ ] **High.** Decide the LWR/SMR refocus. Plan and measured impact in [docs/redesign-lwr-smr.md](docs/redesign-lwr-smr.md). Blocked on three scope questions: which union defines the commercial track, whether microreactors count as SMRs, and whether the proving track stays on the homepage. A literal LWR-or-SMR filter drops 18 of 28 projects, 9 of 11 DOE pilot projects, and all 4 criticality achievements.
 - [ ] Add a true geographic layer only after complete coordinates and accessible list parity exist.
 - [ ] Add shareable URL filters and project comparison.
 - [ ] Add CSV downloads and a public API after the normalized schema stabilizes.
