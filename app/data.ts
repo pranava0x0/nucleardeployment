@@ -1283,8 +1283,8 @@ export type CapacityBand = "operational" | "construction" | "doe-authorized" | "
 export const capacityBands: { band: CapacityBand; label: string; rule: string; authority: string }[] = [
   { band: "operational", label: "Operational", rule: "Grid-connected and generating commercial power.", authority: "Grid operator" },
   { band: "construction", label: "Nuclear construction", rule: "NRC construction permit issued and physical nuclear work documented.", authority: "NRC" },
-  { band: "doe-authorized", label: "DOE-authorized build", rule: "Built under a DOE authorization pathway with physical work documented. Not an NRC licence to operate.", authority: "DOE" },
-  { band: "review", label: "Under review", rule: "Construction-permit or combined-licence application docketed and in active regulator review.", authority: "NRC" },
+  { band: "doe-authorized", label: "DOE-authorized build", rule: "Built under a DOE authorization pathway with physical work documented. Not an NRC license to operate.", authority: "DOE" },
+  { band: "review", label: "Under review", rule: "Construction-permit or combined-license application docketed and in active regulator review.", authority: "NRC" },
   { band: "contracted", label: "Contracted", rule: "Executed offtake, order, or delivery agreement not yet in regulator review.", authority: "Counterparty" },
   { band: "framework", label: "Announced, non-binding", rule: "MOU, LOI, master agreement, or announced target. No executed project documents.", authority: "None" },
 ];
@@ -1353,7 +1353,7 @@ export const raceEntrants: RaceEntrant[] = [
     unitMWeNote: "Design scaled from 15 MWe through 50 MWe to a current 75 MWe maximum.",
     lane: "Grid-scale SMR",
     ticker: "NYSE: OKLO",
-    rosterBasis: "Aurora-INL under construction on the DOE pathway; combined licence application accepted for NRC review.",
+    rosterBasis: "Aurora-INL under construction on the DOE pathway; combined license application accepted for NRC review.",
     rosterSource: "https://gain.inl.gov/regulatory-update-oklos-combined-license-application-accepted-by-nrc-for-review/",
   },
   {
@@ -1418,7 +1418,7 @@ export const raceEntrants: RaceEntrant[] = [
     unitMWeNote: "The earlier certified design was 50 MWe. A six-module VOYGR-6 plant is 462 MWe.",
     lane: "Grid-scale SMR",
     ticker: "NYSE: SMR",
-    rosterBasis: "Holds the only NRC-approved U.S. SMR design and a named U.S. deployment programme through ENTRA1 Energy.",
+    rosterBasis: "Holds the only NRC-approved U.S. SMR design and a named U.S. deployment program through ENTRA1 Energy.",
     rosterSource: "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design",
   },
   {
@@ -1481,7 +1481,7 @@ export const raceEntrants: RaceEntrant[] = [
     companySlug: "bwxt",
     design: "Project Pele / BANR",
     unitMWe: 1.5,
-    unitMWeNote: "The Pele demonstration unit is rated 1.5 MWe against a 1–5 MWe programme target. BANR is 75 MWt.",
+    unitMWeNote: "The Pele demonstration unit is rated 1.5 MWe against a 1–5 MWe program target. BANR is 75 MWt.",
     lane: "Microreactor",
     ticker: "NYSE: BWXT",
     rosterBasis: "Prime contractor building the Project Pele transportable microreactor for the Department of Defense at INL.",
@@ -1492,7 +1492,7 @@ export const raceEntrants: RaceEntrant[] = [
     design: "Unity",
     unitMWe: 1,
     lane: "Microreactor",
-    rosterBasis: "Reached DOE-authorized criticality at INL and was named to DOE's Launch Pad programme.",
+    rosterBasis: "Reached DOE-authorized criticality at INL and was named to DOE's Launch Pad program.",
     rosterSource: "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor",
   },
   {
@@ -1529,12 +1529,12 @@ export const capacityClaims: CapacityClaim[] = [
     verification: "Verified",
   },
 
-  // DOE-authorized build — physical work under a DOE pathway, no NRC licence to operate.
+  // DOE-authorized build — physical work under a DOE pathway, no NRC license to operate.
   {
     companySlug: "oklo",
     band: "doe-authorized",
     mwe: 75,
-    label: "Aurora-INL, Idaho · groundbreaking 2025-09-22 on the DOE pathway; NRC combined licence still under review",
+    label: "Aurora-INL, Idaho · groundbreaking 2025-09-22 on the DOE pathway; NRC combined license still under review",
     binding: true,
     date: "2025-09",
     source: "https://gain.inl.gov/regulatory-update-oklos-combined-license-application-accepted-by-nrc-for-review/",
@@ -1640,7 +1640,7 @@ export const capacityClaims: CapacityClaim[] = [
     companySlug: "oklo",
     band: "framework",
     mwe: 5,
-    label: "Eielson Air Force Base, Alaska · notice of intent to award; contract pending a final NRC licence",
+    label: "Eielson Air Force Base, Alaska · notice of intent to award; contract pending a final NRC license",
     binding: false,
     date: "2025-06",
     source: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
@@ -1670,7 +1670,7 @@ export const capacityClaims: CapacityClaim[] = [
     companySlug: "terrestrial-energy",
     band: "framework",
     mwe: 4000,
-    label: "Riot Platforms · programme ceiling for data-centre sites in Texas and Kentucky; no site-specific commitment",
+    label: "Riot Platforms · program ceiling for data-centre sites in Texas and Kentucky; no site-specific commitment",
     binding: false,
     date: "2026-05",
     source: "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/",
@@ -1805,7 +1805,7 @@ export const fundingEvents: FundingEvent[] = [
   { companySlug: "terrapower", date: "2022-08", kind: "Venture equity", amount: "$750M minimum equity raise", counterparty: "SK Inc. and SK Innovation", source: "https://www.terrapower.com/fundraise" },
   { companySlug: "terrapower", date: null, kind: "Cost share", amount: "Up to $2B DOE ceiling, 50% of project costs", counterparty: "DOE Advanced Reactor Demonstration Program", source: "https://www.terrapower.com/fundraise" },
   { companySlug: "oklo", date: "2024-05", kind: "IPO / listing", amount: "Up to $645M cash from the combination, including a $300M PIPE", counterparty: "AltC Acquisition Corp (NYSE)", source: "https://news.spacconference.com/2024/05/07/oklo-to-debut-on-nyse-following-altc-acqusition-shareholder-approval/" },
-  { companySlug: "oklo", date: "2026-05", kind: "Public offering", amount: "Up to $1B at-the-market programme, replacing a prior programme that placed ~$1.5B gross", counterparty: "Public markets", source: "https://www.tipranks.com/news/oklo-is-about-to-report-q2-earnings-heres-what-to-expect-from-the-nuclear-energy-stock" },
+  { companySlug: "oklo", date: "2026-05", kind: "Public offering", amount: "Up to $1B at-the-market program, replacing a prior program that placed ~$1.5B gross", counterparty: "Public markets", source: "https://www.tipranks.com/news/oklo-is-about-to-report-q2-earnings-heres-what-to-expect-from-the-nuclear-energy-stock" },
   { companySlug: "kairos-power", date: "2024-02", kind: "Cost share", amount: "Up to $303M of a $629M project, milestone-based", counterparty: "DOE Advanced Reactor Demonstration Program", source: "https://www.powermag.com/doe-kairos-unveil-milestone-based-funding-agreement-for-advanced-nuclear-demonstration-project/" },
   { companySlug: "kairos-power", date: "2026-02", kind: "Federal award", amount: "$27M agreement", counterparty: "Oak Ridge National Laboratory", source: "https://www.nucnet.org/news/oak-ridge-lab-signs-usd27m-deal-with-kairos-power-for-advanced-reactor-development-2-5-2026" },
   { companySlug: "x-energy", date: "2026-04", kind: "IPO / listing", amount: "~$1.018B gross at $23.00/share", counterparty: "Nasdaq Global Select Market", source: "https://techcrunch.com/2026/04/24/x-energy-stock-pops-27-on-first-day-of-trading-following-upsized-ipo/" },
@@ -1857,7 +1857,7 @@ export const proofEvents: ProofEvent[] = [
   { companySlug: "oklo", date: "2026-07", kind: "Permit / authorization", label: "DOE issued startup authorization for the Groves isotope test reactor, clearing fuel load; criticality not confirmed as of 2026-08-05", source: "https://www.world-nuclear-news.org/articles/oklo-cleared-to-start-up-test-reactor", verification: "Government-reported" },
   { companySlug: "radiant-industries", date: "2026-02", kind: "Permit / authorization", label: "DOE approved the Kaleidos preliminary documented safety analysis for the DOME test", source: "https://www.radiantnuclear.com/blog/doe-pdsa-approval/", verification: "Government-reported" },
   { companySlug: "radiant-industries", date: "2026-07", kind: "Fuel milestone", label: "First TRISO fuel shipment received at the DOME facility, INL; criticality not confirmed as of 2026-08-05", source: "https://www.world-nuclear-news.org/articles/triso-fuel-delivered-for-kaleidos-reactor-experiment", verification: "Government-reported" },
-  { companySlug: "x-energy", date: "2026-02", kind: "Fuel milestone", label: "TRISO-X received a 40-year NRC special nuclear material licence for commercial HALEU fuel manufacture", source: "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication", verification: "Government-reported" },
+  { companySlug: "x-energy", date: "2026-02", kind: "Fuel milestone", label: "TRISO-X received a 40-year NRC special nuclear material license for commercial HALEU fuel manufacture", source: "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication", verification: "Government-reported" },
   { companySlug: "gev-hitachi", date: "2026-03", kind: "Design proof (non-U.S.)", label: "Shaft excavation completed for the first BWRX-300 at Darlington, Ontario", powerNote: "Canadian unit. Contributes 0 MWe to the U.S. race.", source: "https://www.nucnet.org/news/opg-completes-excavation-works-at-darlington-bwrx-300-smr-project-3-1-2026", verification: "Government-reported" },
   { companySlug: "nuscale", date: "2025-05", kind: "Permit / authorization", label: "NRC issued a standard design approval for the uprated 77 MWe design, the only approved U.S. SMR design", source: "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design", verification: "Government-reported" },
   { companySlug: "nuscale", date: "2026-02", kind: "Design proof (non-U.S.)", label: "RoPower took a final investment decision for a 462 MWe six-module plant at Doicești, Romania", powerNote: "Romanian project. Contributes 0 MWe to the U.S. race.", source: "https://www.world-nuclear-news.org/articles/final-investment-decision-taken-for-romanias-smrs", verification: "Company-reported" },
@@ -1874,7 +1874,7 @@ export const proofEvents: ProofEvent[] = [
   { companySlug: "aalo-atomics", date: "2025-09", kind: "Fuel milestone", label: "Signed what Aalo describes as the first U.S. commercial contract for delivery of enriched uranium to a reactor company", source: "https://www.businesswire.com/news/home/20250910715287/en/Aalo-Atomics-Becomes-First-U.S.-Nuclear-Reactor-Company-with-a-Contract-for-Commercial-Delivery-of-Enriched-Uranium-Hits-Crucial-Next-Milestone-on-Path-to-2026-Startup", verification: "Company-reported" },
   { companySlug: "valar-atomics", date: "2026-04", kind: "Permit / authorization", label: "DOE approved the final documented safety analysis for Ward 250, an expedited pathway that bypassed NRC licensing for this test unit", source: "https://oodaloop.com/briefs/technology/valar-atomics-begins-construction-on-ward-250-nuclear-reactor-utah/", verification: "Government-reported" },
   { companySlug: "nano-nuclear", date: "2026-05", kind: "Permit / authorization", label: "NRC formally accepted the KRONOS construction-permit application for full review, an estimated 12-month clock", source: "https://www.globenewswire.com/news-release/2026/05/20/3298411/0/en/NANO-Nuclear-s-KRONOS-MMR-and-the-University-of-Illinois-Urbana-Champaign-Advance-to-Next-Regulatory-Milestone-as-U-S-NRC-Formally-Accepts-Construction-Permit-Application-for-Revie.html", verification: "Verified" },
-  { companySlug: "deployable-energy", date: "2026-04", kind: "Permit / authorization", label: "Named one of the first four developers in DOE's Launch Pad programme", source: "https://www.rdworldonline.com/doe-announces-first-selections-for-nuclear-energy-dome-program/", verification: "Government-reported" },
+  { companySlug: "deployable-energy", date: "2026-04", kind: "Permit / authorization", label: "Named one of the first four developers in DOE's Launch Pad program", source: "https://www.rdworldonline.com/doe-announces-first-selections-for-nuclear-energy-dome-program/", verification: "Government-reported" },
   { companySlug: "antares-nuclear", date: "2026-07", kind: "Test program", label: "One of three finalists competing for Air Force installation assignments in Colorado and Montana; no award made", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/", verification: "Company-reported" },
 ];
 

@@ -106,7 +106,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
       </section>)}
 
       <section className="section dossier-lane">
-        <div className="section-head"><h2>Pipeline</h2><p>Executed first. Announcements are labelled as announcements and never added to them.</p></div>
+        <div className="section-head"><h2>Pipeline</h2><p>Executed first. Announcements are labeled as announcements and never added to them.</p></div>
         <h3 className="lane-sub">Backed by an executed action</h3>
         {dossier.pipeline.executed.length ? <ul className="ledger wide">
           {dossier.pipeline.executed.map((claim) => <li key={claim.label}>

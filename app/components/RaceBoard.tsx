@@ -30,7 +30,7 @@ export function RaceBar({ row, compact = false }: { row: RaceRow; compact?: bool
       </div>
       <figcaption className="race-caption">
         {frameworkMWe > 0
-          ? <span>{mwe(frameworkMWe)} MWe announced, non-binding{frameworkMWe > gigawattMWe ? " — runs past the line" : ""}</span>
+          ? <span>{mwe(frameworkMWe)} MWe announced, non-binding{frameworkMWe > gigawattMWe ? ", runs past the line" : ""}</span>
           : framework?.claims.length
             ? <span>Announced framework on record, capacity not disclosed</span>
             : <span>No announced pipeline on record</span>}
@@ -58,7 +58,7 @@ export function RaceBoard() {
 
       <p className="race-zero">
         <b>0 MWe operational across all {board.length} entrants.</b> Every megawatt below sits in a leading
-        indicator — under construction, under review, under contract, or merely announced. {mwe(executedTotal)} MWe
+        indicator: under construction, under review, under contract, or merely announced. {mwe(executedTotal)} MWe
         rest on an executed action; {mwe(frameworkTotal)} MWe are announced and non-binding, about{" "}
         {announcedRatio} times more.
       </p>

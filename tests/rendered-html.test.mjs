@@ -426,3 +426,51 @@ test("every rendered source link is https and every custom property is defined",
   const used = new Set([...css.matchAll(/var\(--([\w-]+)/g)].map((match) => match[1]));
   assert.deepEqual([...used].filter((token) => !declared.has(token)), [], "every var() resolves to a declared token");
 });
+
+test("shipped copy stays out of the AI register", async () => {
+  const dataModule = await import("../app/data.ts");
+  // DESIGN.md section 11.1. Enforced over the rendered build, per that section.
+  const banned = [
+    "delve", "leverage", "robust", "seamless", "elevate", "unlock", "empower", "harness",
+    "tapestry", "testament", "underscore", "pivotal", "cutting-edge", "game-changer",
+    "ever-evolving", "it's worth noting", "it's important to note", "when it comes to",
+    "at the end of the day", "in conclusion", "at your fingertips", "next level",
+    "designed to help you", "not only",
+  ];
+  const paths = ["/", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
+    ...dataModule.raceEntrants.map((entrant) => `/companies/${entrant.companySlug}`)];
+
+  for (const path of paths) {
+    const raw = await (await render(path)).text();
+    // Displayed prose only: attributes carry source titles and URLs we do not author.
+    const prose = raw
+      .replace(/<script[\s\S]*?<\/script>/gi, "")
+      .replace(/<!--.*?-->/g, "")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ");
+    for (const word of banned) {
+      assert.ok(!prose.toLowerCase().includes(word), `${path} ships "${word}" in visible copy`);
+    }
+    // House style: no em-dashes in displayed prose.
+    assert.ok(!prose.includes("—"), `${path} ships an em-dash in visible copy`);
+  }
+});
+
+test("the methodology page explains the race rules the board links to", async () => {
+  const dataModule = await import("../app/data.ts");
+  const raw = await (await render("/methodology")).text();
+  const html = raw.replace(/<!--.*?-->/g, "").replace(/<script[\s\S]*?<\/script>/gi, "");
+
+  // The board's legend links to /methodology#race, so the anchor has to exist.
+  assert.match(html, /id="race"/, "the race anchor the board links to exists");
+  for (const heading of ["Who is on the board", "What counts as a megawatt", "The six bands",
+    "A DOE authorization is not an NRC license", "Binding and non-binding never merge"]) {
+    assert.ok(html.includes(heading), `methodology explains: ${heading}`);
+  }
+  // Every band is defined with the authority that grants it, including the empty one.
+  for (const band of dataModule.capacityBands) {
+    assert.ok(html.includes(band.label), `methodology defines the ${band.label} band`);
+    assert.ok(html.includes(`Granting authority: ${band.authority}`), `${band.label} states its authority`);
+  }
+  assert.match(html, /tracked sample/, "counts state their inclusion basis");
+});
