@@ -36,6 +36,10 @@
 
 ## Quality
 
+- [ ] **High.** Upgrade Next.js from 16.2.6 to 16.2.11 or later. The 2026-07-20 advisory covers nine CVEs (four high) affecting 16.0–16.2.10, including the CVE-2026-64642 middleware bypass. See `security.md`.
+- [ ] Pin the five `deploy-pages.yml` actions to full commit SHAs. They still use moving `@v4` / `@v5` tags in a workflow holding `pages: write` and `id-token: write`.
+- [ ] Upgrade the `deploy-pages.yml` actions off the deprecated Node 20 runtime. Every run currently emits a forced-to-Node-24 warning.
+- [x] Run the build and test gate on every pull request, not only on push to `main`, so a broken change cannot silently freeze the deployed site.
 - [x] Add automated contrast checks for the text and semantic token pairs used in the UI.
 - [ ] Add browser UAT at 375×812, 768×1024, and 1280×800 when browser testing is requested or available.
 - [ ] Add link-liveness checks that classify dead versus blocked sources without treating HTTP 200 as fact verification.

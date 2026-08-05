@@ -1,0 +1,49 @@
+name: CI
+
+# Runs the same build and test gate the Pages deploy depends on, but on every
+# pull request, so a broken change is caught before it reaches `main` instead of
+# silently freezing the live site at the last good build.
+#
+# Trigger is `pull_request`, never `pull_request_target`: this workflow checks
+# out untrusted head code, so it must run without repository write scope.
+# No step interpolates event text (title, body, branch name) into a shell.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Read-only. This workflow builds and tests; it never publishes. Deploy keeps
+# its own `pages: write` / `id-token: write` grant in deploy-pages.yml.
+permissions:
+  contents: read
+
+# Separate group from the `pages` deploy concurrency, so a pull request run can
+# never cancel an in-flight deploy of `main`.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # Pinned to the exact floor in package.json engines, so CI tests the
+      # oldest Node the project claims to support. 22.18.0 is the release that
+      # unflagged TypeScript type stripping; tests/rendered-html.test.mjs
+      # imports app/data.ts directly and cannot run below it.
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Build and verify rendered HTML
+        run: npm test
+      - name: Build and verify static Pages export
+        run: npm run test:pages
