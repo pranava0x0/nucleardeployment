@@ -134,8 +134,11 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
             <span className="ledger-date">{target.statedDate ? `Stated ${target.statedDate}` : "Date not stated"}</span>
             <b>{target.target}</b>
             <span className="ledger-detail">Regulator-documented state today: {dossier.row?.strongestLine ?? "no capacity on record"}</span>
-            {target.conflict && <span className="ledger-conflict">Conflicting account: {target.conflict}</span>}
-            <a href={target.source} target="_blank" rel="noreferrer">Source ↗</a>
+            {target.conflict && <span className="ledger-conflict">
+              Conflicting account: {target.conflict}{" "}
+              {target.conflictSource && <a href={target.conflictSource} target="_blank" rel="noreferrer">Source ↗</a>}
+            </span>}
+            <a href={target.source} target="_blank" rel="noreferrer">Target source ↗</a>
           </li>)}
         </ul> : <p className="lane-empty">No company-stated target on record as of {dataAsOf}.</p>}
       </section>

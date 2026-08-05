@@ -1828,6 +1828,9 @@ export type StatedTarget = {
   source: string;
   /** A documented figure that disagrees with the company's own target. */
   conflict?: string;
+  /** The conflict's own source. Required whenever `conflict` is set: it is a
+   *  different publication from the target it disputes. */
+  conflictSource?: string;
 };
 
 export const fundingEvents: FundingEvent[] = [
@@ -1910,7 +1913,7 @@ export const proofEvents: ProofEvent[] = [
 ];
 
 export const statedTargets: StatedTarget[] = [
-  { companySlug: "terrapower", target: "First Natrium plant completed in 2030", statedDate: "2026-03", source: "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit", conflict: "Coverage of the same permit frames the plant's NRC-told schedule as early 2031." },
+  { companySlug: "terrapower", target: "First Natrium plant completed in 2030", statedDate: "2026-03", source: "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit", conflict: "Coverage of the same permit frames the plant's NRC-told schedule as early 2031, a five to seven year slip from DOE's original target.", conflictSource: "https://thebreakthrough.org/press/release-the-nrc-issues-construction-permit-for-terrapowers-natrium-reactor" },
   { companySlug: "oklo", target: "First commercial Aurora-INL plant in late 2027 to early 2028", statedDate: "2025-03", source: "https://www.utilitydive.com/news/oklo-75-mw-reactor-design-smr-nuclear/743578/" },
   { companySlug: "kairos-power", target: "Hermes 2 operating by December 2027", statedDate: "2026-04", source: "https://www.neimagazine.com/news/kairos-breaks-ground-on-hermes-2/" },
   { companySlug: "x-energy", target: "TX-1 fuel facility complete mid-2026, operations from 2027 supplying Long Mott", statedDate: "2026-02", source: "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication" },

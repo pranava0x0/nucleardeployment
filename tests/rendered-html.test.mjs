@@ -660,3 +660,17 @@ test("a company's capacity claims describe different projects", async () => {
     assert.equal(new Set(labels).size, labels.length, `${entrant.companySlug} names each claim's project distinctly`);
   }
 });
+
+test("a conflicting account carries its own source", async () => {
+  const dataModule = await import("../app/data.ts");
+  const conflicts = dataModule.statedTargets.filter((target) => target.conflict);
+  assert.ok(conflicts.length > 0, "the dataset still exercises the conflict case");
+  for (const target of conflicts) {
+    // The conflict comes from a different publication than the target it
+    // disputes, so the target's source cannot stand in for it.
+    assert.match(target.conflictSource ?? "", /^https:\/\//, `${target.companySlug} sources its conflicting account`);
+    assert.notEqual(target.conflictSource, target.source, `${target.companySlug} cites a different source for the conflict`);
+    const html = await (await render(`/companies/${target.companySlug}`)).text();
+    assert.ok(html.includes(target.conflictSource), `${target.companySlug} links the conflict's source`);
+  }
+});
