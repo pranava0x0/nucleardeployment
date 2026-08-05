@@ -595,3 +595,45 @@ test("band entrant counts include companies whose capacity is undisclosed", asyn
   }
   assert.equal(framework.entrants, 13);
 });
+
+test("every race record's reporting basis matches its source tier", async () => {
+  const dataModule = await import("../app/data.ts");
+  // A review found trade-press articles labelled Government-reported, which
+  // misstates the methodology's source hierarchy. Roughly twenty records were
+  // wrong, so the tier is derived from the host rather than trusted to the eye.
+  for (const record of [...dataModule.capacityClaims, ...dataModule.proofEvents]) {
+    assert.equal(
+      record.verification,
+      dataModule.verificationForSource(record.source),
+      `${record.companySlug} "${(record.label ?? "").slice(0, 40)}" is labelled ${record.verification} on ${new URL(record.source).host}`,
+    );
+  }
+  // Press is the default, so an unknown host can never silently claim a
+  // stronger tier than it has earned.
+  assert.equal(dataModule.verificationForSource("https://example.com/a"), "Press-reported");
+  assert.equal(dataModule.verificationForSource("https://www.federalregister.gov/x"), "Verified");
+  assert.equal(dataModule.verificationForSource("https://www.energy.gov/x"), "Government-reported");
+  // All four tiers are represented, so no legend or filter value renders empty.
+  const used = new Set([...dataModule.capacityClaims, ...dataModule.proofEvents].map((record) => record.verification));
+  for (const tier of ["Verified", "Government-reported", "Company-reported", "Press-reported"]) {
+    assert.ok(used.has(tier), `the dataset carries at least one ${tier} record`);
+  }
+});
+
+test("stated targets are targets, not editorial absences", async () => {
+  const dataModule = await import("../app/data.ts");
+  for (const target of dataModule.statedTargets) {
+    // An absence belongs in the lane's empty state, where it needs no source.
+    // A row saying "no date stated" cited to an unrelated project page was
+    // caught in review.
+    assert.doesNotMatch(target.target, /^No\b/i, `${target.companySlug} states a target rather than an absence`);
+  }
+  // The company with no target on record still renders the explicit empty state.
+  const withTarget = new Set(dataModule.statedTargets.map((target) => target.companySlug));
+  const without = dataModule.raceEntrants.filter((entrant) => !withTarget.has(entrant.companySlug));
+  assert.ok(without.length > 0, "the dataset still exercises the no-target case");
+  for (const entrant of without) {
+    const html = await (await render(`/companies/${entrant.companySlug}`)).text();
+    assert.match(html, /No company-stated target on record/, `${entrant.companySlug} says it has no stated target`);
+  }
+});

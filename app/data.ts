@@ -1,4 +1,29 @@
-export type Verification = "Verified" | "Government-reported" | "Company-reported";
+/**
+ * Who reported the evidence, in the order the methodology's source hierarchy
+ * ranks them. "Verified" is the regulator's own record; the rest name the
+ * reporter. Race records are checked against the source host by a test, because
+ * getting this right by eye failed across roughly twenty of them.
+ */
+export type Verification = "Verified" | "Government-reported" | "Company-reported" | "Press-reported";
+
+/** Source-host tiers for race records. A host in no list is press by default. */
+export const verificationHosts: { verification: Verification; hosts: string[] }[] = [
+  { verification: "Verified", hosts: ["nrc.gov", "federalregister.gov", "sec.gov"] },
+  { verification: "Government-reported", hosts: ["energy.gov", "inl.gov", "gain.inl.gov", "nric.inl.gov", "army.mil", "eia.gov"] },
+  { verification: "Company-reported", hosts: [
+    "terrapower.com", "kairospower.com", "oklo.com", "x-energy.com", "holtecinternational.com",
+    "nuscalepower.com", "aalo.com", "radiantnuclear.com", "valaratomics.com", "deepfission.com",
+    "bwxt.com", "ir.terrestrialenergy.com", "info.westinghousenuclear.com", "gevernova.com",
+    "tatachemicals.com", "switch.com", "riotplatforms.com", "deployable.energy", "npre.illinois.edu",
+    "businesswire.com", "globenewswire.com", "prnewswire.com", "energy-communities-alliance.squarespace.com",
+  ] },
+];
+
+/** The tier a source URL belongs to. Press is the default, never an upgrade. */
+export function verificationForSource(source: string): Verification {
+  const host = new URL(source).host.replace(/^www\./, "");
+  return verificationHosts.find((tier) => tier.hosts.includes(host))?.verification ?? "Press-reported";
+}
 export type GenerationClass = "Gen II" | "Gen III+" | "Gen IV" | "Experimental / unclassified";
 export type ScaleClass = "Large reactor" | "SMR" | "Microreactor" | "Test reactor" | "Critical experiment";
 export type ReactorFamily = "LWR · PWR" | "LWR · BWR" | "LWR · design TBD" | "HTGR" | "SFR" | "FHR" | "MSR" | "Heat-pipe" | "Design TBD";
@@ -1516,7 +1541,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: true,
     date: "2026-04",
     source: "https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant",
-    verification: "Verified",
+    verification: "Company-reported",
   },
   {
     companySlug: "kairos-power",
@@ -1526,7 +1551,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: true,
     date: "2026-04",
     source: "https://www.neimagazine.com/news/kairos-breaks-ground-on-hermes-2/",
-    verification: "Verified",
+    verification: "Press-reported",
   },
 
   // DOE-authorized build — physical work under a DOE pathway, no NRC license to operate.
@@ -1560,7 +1585,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: true,
     date: "2026-05",
     source: "https://x-energy.com/news/nrc-issues-environmental-assessment-with-finding-of-no-significant-impact-for-dow-and-x-energys-propsed-advanced-nuclear-project-in-texas/",
-    verification: "Verified",
+    verification: "Company-reported",
   },
   {
     companySlug: "gev-hitachi",
@@ -1580,7 +1605,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: true,
     date: "2026-05",
     source: "https://npre.illinois.edu/news/stories/imdp-cpa",
-    verification: "Verified",
+    verification: "Company-reported",
   },
 
   // Contracted — executed delivery agreement, not yet in regulator review.
@@ -1592,7 +1617,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: true,
     date: "2025-08",
     source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
-    verification: "Verified",
+    verification: "Press-reported",
   },
 
   // Announced, non-binding.
@@ -1624,7 +1649,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: "2024-04",
     source: "https://www.nucnet.org/news/oklo-signs-nuclear-pre-agreement-with-data-company-equinix-4-2-2024",
-    verification: "Company-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "oklo",
@@ -1634,7 +1659,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: "2025-04",
     source: "https://www.power-eng.com/nuclear/oklo-secures-up-to-750-mw-worth-of-new-data-center-partnerships/",
-    verification: "Company-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "oklo",
@@ -1644,7 +1669,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: "2025-06",
     source: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
-    verification: "Government-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "nuscale",
@@ -1654,7 +1679,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: "2025-09",
     source: "https://www.world-nuclear-news.org/articles/tva-entra1-energy-team-up-for-smr-deployment",
-    verification: "Company-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "x-energy",
@@ -1664,7 +1689,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: "2024-10",
     source: "https://www.ans.org/news/article-6480/amazon-investing-in-smrs-to-deploy-5gw-by-2039/",
-    verification: "Company-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "terrestrial-energy",
@@ -1694,7 +1719,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: "2023-03",
     source: "https://www.neimagazine.com/news/pacificorp-considers-adding-two-more-natrium-units-to-its-generation-mix-by-2033-10759748/",
-    verification: "Company-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "gev-hitachi",
@@ -1704,7 +1729,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: "2026-03",
     source: "https://www.ans.org/news/2026-03-25/article-7878/new-us-bwrx300-projects-get-japanese-investment/",
-    verification: "Government-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "holtec",
@@ -1714,7 +1739,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: "2026-07",
     source: "https://www.powermag.com/holtec-targets-2036-for-1-36-gw-smr-300-project-at-oyster-creek/",
-    verification: "Company-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "holtec",
@@ -1724,7 +1749,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: "2026-08",
     source: "https://www.manilatimes.net/2026/08/04/tmt-newswire/globenewswire/holtec-entergy-and-hyundai-ec-sign-moa-to-evaluate-potential-smr-300-projects-in-gulf-south-region/2397924",
-    verification: "Company-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "deep-fission",
@@ -1734,7 +1759,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: "2025-01",
     source: "https://www.world-nuclear-news.org/articles/deep-fission-and-endeavour-announce-strategic-partnership",
-    verification: "Company-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "last-energy",
@@ -1744,7 +1769,7 @@ export const capacityClaims: CapacityClaim[] = [
     binding: false,
     date: null,
     source: "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/",
-    verification: "Company-reported",
+    verification: "Press-reported",
   },
   {
     companySlug: "kairos-power",
@@ -1845,38 +1870,38 @@ export const cashPositions: CashPosition[] = [
 
 export const proofEvents: ProofEvent[] = [
   { companySlug: "antares-nuclear", date: "2026-06-04", kind: "Criticality", label: "Mark-0 reached initial criticality at Idaho National Laboratory, the first of the DOE pilot cohort", powerNote: "Zero-power demonstrator. Contributes 0 MWe.", source: "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors", verification: "Government-reported" },
-  { companySlug: "valar-atomics", date: "2026-06-18", kind: "Criticality", label: "Ward 250 reached fuelled criticality in Emery County, Utah, the only pilot reactor built outside a national laboratory", powerNote: "Ran at 100 kWt, a zero-power demonstration. Contributes 0 MWe.", source: "https://www.world-nuclear-news.org/articles/valar-atomics-achieves-criticality-in-doe-reactor-pilot-program", verification: "Government-reported" },
+  { companySlug: "valar-atomics", date: "2026-06-18", kind: "Criticality", label: "Ward 250 reached fuelled criticality in Emery County, Utah, the only pilot reactor built outside a national laboratory", powerNote: "Ran at 100 kWt, a zero-power demonstration. Contributes 0 MWe.", source: "https://www.world-nuclear-news.org/articles/valar-atomics-achieves-criticality-in-doe-reactor-pilot-program", verification: "Press-reported" },
   { companySlug: "deployable-energy", date: "2026-07-01", kind: "Criticality", label: "Unity reached initial criticality at the National Reactor Innovation Center, INL, about 150 days from kickoff", powerNote: "Demonstration reactor. Contributes 0 MWe.", source: "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor", verification: "Government-reported" },
   { companySlug: "aalo-atomics", date: "2026-07-04", kind: "Criticality", label: "Critical Test Reactor reached initial criticality at INL, the fourth and last before the July 4 goal and the first new reactor built at INL in 50 years", powerNote: "Zero-power test reactor. Contributes 0 MWe.", source: "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal", verification: "Government-reported" },
-  { companySlug: "terrapower", date: "2026-03", kind: "Permit / authorization", label: "NRC issued construction permit CPAR-1, the first for a commercial-scale Gen IV reactor and the first non-light-water permit in over 40 years", source: "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit", verification: "Verified" },
-  { companySlug: "terrapower", date: "2026-04", kind: "Construction start", label: "Nuclear construction began at Kemmerer with about 1,600 workers mobilized", source: "https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant", verification: "Verified" },
-  { companySlug: "kairos-power", date: "2026-04", kind: "Construction start", label: "Groundbreaking at Hermes 2, the first power-producing Gen IV reactor to hold an NRC construction permit", source: "https://www.kairospower.com/updates/kairos-power-breaks-ground-on-hermes-2-demonstration-plant", verification: "Verified" },
+  { companySlug: "terrapower", date: "2026-03", kind: "Permit / authorization", label: "NRC issued construction permit CPAR-1, the first for a commercial-scale Gen IV reactor and the first non-light-water permit in over 40 years", source: "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit", verification: "Company-reported" },
+  { companySlug: "terrapower", date: "2026-04", kind: "Construction start", label: "Nuclear construction began at Kemmerer with about 1,600 workers mobilized", source: "https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant", verification: "Company-reported" },
+  { companySlug: "kairos-power", date: "2026-04", kind: "Construction start", label: "Groundbreaking at Hermes 2, the first power-producing Gen IV reactor to hold an NRC construction permit", source: "https://www.kairospower.com/updates/kairos-power-breaks-ground-on-hermes-2-demonstration-plant", verification: "Company-reported" },
   { companySlug: "kairos-power", date: "2026-05", kind: "Permit / authorization", label: "NRC extended the Hermes 1 construction-completion deadline from 2026-12-31 to 2029-04-30", source: "https://www.federalregister.gov/documents/2026/05/18/2026-09880/in-the-matter-of-kairos-power-llc-hermes-test-reactor-extension-of-latest-date-for-completion-of", verification: "Verified" },
   { companySlug: "oklo", date: "2025-09", kind: "Construction start", label: "Groundbreaking on the first Aurora powerhouse at Idaho National Laboratory, under the DOE Reactor Pilot Program", source: "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx", verification: "Company-reported" },
   { companySlug: "oklo", date: "2025-09", kind: "Permit / authorization", label: "DOE approved the conceptual design for the Aurora Fuel Fabrication Facility at INL, which will feed the first Aurora core", source: "https://www.energy.gov/ne/articles/us-department-energy-signs-oklo-fuel-fabrication-facility-design-concept", verification: "Government-reported" },
   { companySlug: "oklo", date: "2025-12", kind: "Test program", label: "Fast-spectrum plutonium criticality experiment with Los Alamos National Laboratory", powerNote: "Research collaboration, not a licensed power reactor. Contributes 0 MWe.", source: "https://oklo.com/newsroom/news-details/2025/Oklo-and-Los-Alamos-National-Lab-Conduct-Fast-Spectrum-Plutonium-Criticality-Experiment/default.aspx", verification: "Company-reported" },
-  { companySlug: "oklo", date: "2026-07", kind: "Permit / authorization", label: "DOE issued startup authorization for the Groves isotope test reactor, clearing fuel load; criticality not confirmed as of 2026-08-05", source: "https://www.world-nuclear-news.org/articles/oklo-cleared-to-start-up-test-reactor", verification: "Government-reported" },
-  { companySlug: "radiant-industries", date: "2026-02", kind: "Permit / authorization", label: "DOE approved the Kaleidos preliminary documented safety analysis for the DOME test", source: "https://www.radiantnuclear.com/blog/doe-pdsa-approval/", verification: "Government-reported" },
-  { companySlug: "radiant-industries", date: "2026-07", kind: "Fuel milestone", label: "First TRISO fuel shipment received at the DOME facility, INL; criticality not confirmed as of 2026-08-05", source: "https://www.world-nuclear-news.org/articles/triso-fuel-delivered-for-kaleidos-reactor-experiment", verification: "Government-reported" },
+  { companySlug: "oklo", date: "2026-07", kind: "Permit / authorization", label: "DOE issued startup authorization for the Groves isotope test reactor, clearing fuel load; criticality not confirmed as of 2026-08-05", source: "https://www.world-nuclear-news.org/articles/oklo-cleared-to-start-up-test-reactor", verification: "Press-reported" },
+  { companySlug: "radiant-industries", date: "2026-02", kind: "Permit / authorization", label: "DOE approved the Kaleidos preliminary documented safety analysis for the DOME test", source: "https://www.radiantnuclear.com/blog/doe-pdsa-approval/", verification: "Company-reported" },
+  { companySlug: "radiant-industries", date: "2026-07", kind: "Fuel milestone", label: "First TRISO fuel shipment received at the DOME facility, INL; criticality not confirmed as of 2026-08-05", source: "https://www.world-nuclear-news.org/articles/triso-fuel-delivered-for-kaleidos-reactor-experiment", verification: "Press-reported" },
   { companySlug: "x-energy", date: "2026-02", kind: "Fuel milestone", label: "TRISO-X received a 40-year NRC special nuclear material license for commercial HALEU fuel manufacture", source: "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication", verification: "Government-reported" },
-  { companySlug: "gev-hitachi", date: "2026-03", kind: "Design proof (non-U.S.)", label: "Shaft excavation completed for the first BWRX-300 at Darlington, Ontario", powerNote: "Canadian unit. Contributes 0 MWe to the U.S. race.", source: "https://www.nucnet.org/news/opg-completes-excavation-works-at-darlington-bwrx-300-smr-project-3-1-2026", verification: "Government-reported" },
+  { companySlug: "gev-hitachi", date: "2026-03", kind: "Design proof (non-U.S.)", label: "Shaft excavation completed for the first BWRX-300 at Darlington, Ontario", powerNote: "Canadian unit. Contributes 0 MWe to the U.S. race.", source: "https://www.nucnet.org/news/opg-completes-excavation-works-at-darlington-bwrx-300-smr-project-3-1-2026", verification: "Press-reported" },
   { companySlug: "nuscale", date: "2025-05", kind: "Permit / authorization", label: "NRC issued a standard design approval for the uprated 77 MWe design, the only approved U.S. SMR design", source: "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design", verification: "Government-reported" },
-  { companySlug: "nuscale", date: "2026-02", kind: "Design proof (non-U.S.)", label: "RoPower took a final investment decision for a 462 MWe six-module plant at Doicești, Romania", powerNote: "Romanian project. Contributes 0 MWe to the U.S. race.", source: "https://www.world-nuclear-news.org/articles/final-investment-decision-taken-for-romanias-smrs", verification: "Company-reported" },
-  { companySlug: "holtec", date: "2026-06", kind: "Design proof (non-U.S.)", label: "Holtec and EDF submitted a joint proposal for up to four SMR-300 units at Cottam, England", powerNote: "UK proposal. Contributes 0 MWe to the U.S. race.", source: "https://www.ans.org/news/2026-06-29/article-8155/holtec-and-edf-submit-proposal-to-deploy-smr300-at-cottam-nottinghamshire/", verification: "Company-reported" },
+  { companySlug: "nuscale", date: "2026-02", kind: "Design proof (non-U.S.)", label: "RoPower took a final investment decision for a 462 MWe six-module plant at Doicești, Romania", powerNote: "Romanian project. Contributes 0 MWe to the U.S. race.", source: "https://www.world-nuclear-news.org/articles/final-investment-decision-taken-for-romanias-smrs", verification: "Press-reported" },
+  { companySlug: "holtec", date: "2026-06", kind: "Design proof (non-U.S.)", label: "Holtec and EDF submitted a joint proposal for up to four SMR-300 units at Cottam, England", powerNote: "UK proposal. Contributes 0 MWe to the U.S. race.", source: "https://www.ans.org/news/2026-06-29/article-8155/holtec-and-edf-submit-proposal-to-deploy-smr300-at-cottam-nottinghamshire/", verification: "Press-reported" },
   { companySlug: "westinghouse", date: "2026-02", kind: "Test program", label: "DOE conditionally selected Westinghouse for the first fuelled microreactor experiments at the DOME test bed", source: "https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed", verification: "Government-reported" },
-  { companySlug: "westinghouse", date: null, kind: "Design proof (non-U.S.)", label: "The Saskatchewan Research Council is the first commercial eVinci customer, planning a pilot by 2029", powerNote: "Canadian customer. Contributes 0 MWe to the U.S. race.", source: "https://www.powermag.com/westinghouse-secures-first-customer-for-evinci-nuclear-microreactor/", verification: "Company-reported" },
-  { companySlug: "terrestrial-energy", date: "2025-09", kind: "Permit / authorization", label: "NRC approved the IMSR principal design criteria, including its inherent power-control mechanism", source: "https://www.globenewswire.com/news-release/2025/09/10/3147707/0/en/NRC-Completes-Safety-Evaluation-and-Approves-Terrestrial-Energy-IMSR-Principal-Design-Criteria-Including-its-Mechanism-for-Inherent-Reactor-Power-Control.html", verification: "Government-reported" },
+  { companySlug: "westinghouse", date: null, kind: "Design proof (non-U.S.)", label: "The Saskatchewan Research Council is the first commercial eVinci customer, planning a pilot by 2029", powerNote: "Canadian customer. Contributes 0 MWe to the U.S. race.", source: "https://www.powermag.com/westinghouse-secures-first-customer-for-evinci-nuclear-microreactor/", verification: "Press-reported" },
+  { companySlug: "terrestrial-energy", date: "2025-09", kind: "Permit / authorization", label: "NRC approved the IMSR principal design criteria, including its inherent power-control mechanism", source: "https://www.globenewswire.com/news-release/2025/09/10/3147707/0/en/NRC-Completes-Safety-Evaluation-and-Approves-Terrestrial-Energy-IMSR-Principal-Design-Criteria-Including-its-Mechanism-for-Inherent-Reactor-Power-Control.html", verification: "Company-reported" },
   { companySlug: "terrestrial-energy", date: "2026-01", kind: "Permit / authorization", label: "Executed a DOE Other Transaction Agreement for Project TETRA, a pilot IMSR; it did not reach the July 4 2026 criticality goal", source: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under", verification: "Company-reported" },
-  { companySlug: "last-energy", date: "2026-05", kind: "Permit / authorization", label: "DOE approved the PWR-5 preliminary documented safety analysis at Texas A&M-RELLIS; criticality not confirmed as of 2026-08-05", source: "https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026", verification: "Government-reported" },
-  { companySlug: "last-energy", date: null, kind: "Design proof (non-U.S.)", label: "Signed power purchase agreements for 34 units, 680 MW, with four industrial partners in Poland and the UK", powerNote: "Non-U.S. capacity. Contributes 0 MWe to the U.S. race.", source: "https://www.powermag.com/last-energy-secures-ppas-for-34-smr-nuclear-power-plants-in-poland-and-the-uk/", verification: "Company-reported" },
+  { companySlug: "last-energy", date: "2026-05", kind: "Permit / authorization", label: "DOE approved the PWR-5 preliminary documented safety analysis at Texas A&M-RELLIS; criticality not confirmed as of 2026-08-05", source: "https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026", verification: "Press-reported" },
+  { companySlug: "last-energy", date: null, kind: "Design proof (non-U.S.)", label: "Signed power purchase agreements for 34 units, 680 MW, with four industrial partners in Poland and the UK", powerNote: "Non-U.S. capacity. Contributes 0 MWe to the U.S. race.", source: "https://www.powermag.com/last-energy-secures-ppas-for-34-smr-nuclear-power-plants-in-poland-and-the-uk/", verification: "Press-reported" },
   { companySlug: "deep-fission", date: "2026-07", kind: "Test program", label: "An unfuelled prototype reactor canister arrived at the Parsons, Kansas site for installation testing", source: "https://www.deepfission.com/pr-media-kit/press-releases/detail/114/deep-fission-prototype-reactor-canister-arrives-at-kansas-site-advancing-reactor-proof-of-concept-program", verification: "Company-reported" },
   { companySlug: "bwxt", date: "2024-09", kind: "Construction start", label: "The Department of Defense broke ground at INL for the Project Pele prototype site", source: "https://www.energy.gov/ne/articles/department-defense-breaks-ground-project-pele-microreactor", verification: "Government-reported" },
   { companySlug: "bwxt", date: null, kind: "Fuel milestone", label: "Delivered a full core of TRISO fuel for the Project Pele microreactor; criticality not confirmed as of 2026-08-05", source: "https://www.bwxt.com/bwxt-delivers-full-core-of-triso-nuclear-fuel-for-project-pele-microreactor/", verification: "Company-reported" },
   { companySlug: "aalo-atomics", date: "2025-09", kind: "Fuel milestone", label: "Signed what Aalo describes as the first U.S. commercial contract for delivery of enriched uranium to a reactor company", source: "https://www.businesswire.com/news/home/20250910715287/en/Aalo-Atomics-Becomes-First-U.S.-Nuclear-Reactor-Company-with-a-Contract-for-Commercial-Delivery-of-Enriched-Uranium-Hits-Crucial-Next-Milestone-on-Path-to-2026-Startup", verification: "Company-reported" },
-  { companySlug: "valar-atomics", date: "2026-04", kind: "Permit / authorization", label: "DOE approved the final documented safety analysis for Ward 250, an expedited pathway that bypassed NRC licensing for this test unit", source: "https://oodaloop.com/briefs/technology/valar-atomics-begins-construction-on-ward-250-nuclear-reactor-utah/", verification: "Government-reported" },
-  { companySlug: "nano-nuclear", date: "2026-05", kind: "Permit / authorization", label: "NRC formally accepted the KRONOS construction-permit application for full review, an estimated 12-month clock", source: "https://www.globenewswire.com/news-release/2026/05/20/3298411/0/en/NANO-Nuclear-s-KRONOS-MMR-and-the-University-of-Illinois-Urbana-Champaign-Advance-to-Next-Regulatory-Milestone-as-U-S-NRC-Formally-Accepts-Construction-Permit-Application-for-Revie.html", verification: "Verified" },
-  { companySlug: "deployable-energy", date: "2026-04", kind: "Permit / authorization", label: "Named one of the first four developers in DOE's Launch Pad program", source: "https://www.rdworldonline.com/doe-announces-first-selections-for-nuclear-energy-dome-program/", verification: "Government-reported" },
-  { companySlug: "antares-nuclear", date: "2026-07", kind: "Test program", label: "One of three finalists competing for Air Force installation assignments in Colorado and Montana; no award made", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/", verification: "Company-reported" },
+  { companySlug: "valar-atomics", date: "2026-04", kind: "Permit / authorization", label: "DOE approved the final documented safety analysis for Ward 250, an expedited pathway that bypassed NRC licensing for this test unit", source: "https://oodaloop.com/briefs/technology/valar-atomics-begins-construction-on-ward-250-nuclear-reactor-utah/", verification: "Press-reported" },
+  { companySlug: "nano-nuclear", date: "2026-05", kind: "Permit / authorization", label: "NRC formally accepted the KRONOS construction-permit application for full review, an estimated 12-month clock", source: "https://www.globenewswire.com/news-release/2026/05/20/3298411/0/en/NANO-Nuclear-s-KRONOS-MMR-and-the-University-of-Illinois-Urbana-Champaign-Advance-to-Next-Regulatory-Milestone-as-U-S-NRC-Formally-Accepts-Construction-Permit-Application-for-Revie.html", verification: "Company-reported" },
+  { companySlug: "deployable-energy", date: "2026-04", kind: "Permit / authorization", label: "Named one of the first four developers in DOE's Launch Pad program", source: "https://www.rdworldonline.com/doe-announces-first-selections-for-nuclear-energy-dome-program/", verification: "Press-reported" },
+  { companySlug: "antares-nuclear", date: "2026-07", kind: "Test program", label: "One of three finalists competing for Air Force installation assignments in Colorado and Montana; no award made", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/", verification: "Press-reported" },
 ];
 
 export const statedTargets: StatedTarget[] = [
@@ -1884,7 +1909,6 @@ export const statedTargets: StatedTarget[] = [
   { companySlug: "oklo", target: "First commercial Aurora-INL plant in late 2027 to early 2028", statedDate: "2025-03", source: "https://www.utilitydive.com/news/oklo-75-mw-reactor-design-smr-nuclear/743578/" },
   { companySlug: "kairos-power", target: "Hermes 2 operating by December 2027", statedDate: "2026-04", source: "https://www.neimagazine.com/news/kairos-breaks-ground-on-hermes-2/" },
   { companySlug: "x-energy", target: "TX-1 fuel facility complete mid-2026, operations from 2027 supplying Long Mott", statedDate: "2026-02", source: "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication" },
-  { companySlug: "gev-hitachi", target: "No commercial-operation date stated for Clinch River Unit 1 as of 2026-08-05", statedDate: null, source: "https://www.opg.com/story/opg-ready-to-begin-building-north-americas-first-small-modular-reactor/", conflict: "The Canadian first unit at Darlington is targeted online by the end of the decade; the U.S. unit has no stated date." },
   { companySlug: "holtec", target: "Execute a power contract for PIONEER in 2026, NRC permit in 2028, interconnection in 2029", statedDate: null, source: "https://energy-communities-alliance.squarespace.com/s/Holtec-Slides.pdf" },
   { companySlug: "nuscale", target: "Management targets converting the TVA collaboration into a signed power contract by the end of 2026", statedDate: "2026-05", source: "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-first-quarter-2026-results" },
   { companySlug: "westinghouse", target: "Full-scale commercial eVinci deployment could begin as early as 2029, contingent on NRC licensing and HALEU supply", statedDate: null, source: "https://www.powermag.com/westinghouse-secures-first-customer-for-evinci-nuclear-microreactor/" },

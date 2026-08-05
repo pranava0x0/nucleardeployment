@@ -121,9 +121,23 @@ zero-versus-unknown conflation already fixed in the aria-labels, missed because
 the earlier fix was applied where the defect was reported rather than everywhere
 the pattern occurred.
 
-That is the lesson worth keeping. Three of the seven findings were reported as
-one row and were really a class. Treat a review finding as a sample, and grep
-for the pattern before calling it fixed.
+A fourth round found the widest one yet. The `Verification` enum had no value
+for trade press, so press articles were labelled as government or company
+reporting; the review named a single NucNet record, and deriving the tier from
+the source host found **34 of 60 race records wrong**. The enum now has a
+`Press-reported` tier, the host-to-tier mapping ships as data, and a test
+recomputes every label rather than trusting the eye.
+
+That is the lesson worth keeping. Five of the nine findings were reported as one
+row and were really a class: one bad source became five, one miscounted band
+became a conflation fixed elsewhere but missed here, one mislabelled article
+became thirty-four. Treat a review finding as a sample, and grep for the pattern
+before calling it fixed.
+
+A related caution: the first attempt at the relabel rewrote nine curated
+`projects[]` records as collateral, because the script matched on indentation
+rather than on section. It was reverted and rescoped. A mechanical fix needs a
+boundary as much as a rule.
 
 None of these seven were visible to a green test suite. Budget a review round
 rather than treating a passing suite as the gate.
