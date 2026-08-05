@@ -520,3 +520,56 @@ test("touch targets and band encoding survive in the stylesheet", async () => {
   // Hatching is CSS, not a charting library.
   assert.doesNotMatch(css, /chart|d3|recharts/i);
 });
+
+test("no text-carrying element ever renders blank", async () => {
+  const dataModule = await import("../app/data.ts");
+  // The project rule is that null renders as an explicit placeholder, never a
+  // blank element. This guards the class: a PR review found the companies
+  // directory rendering an empty <b></b> for the stage of a roster entrant with
+  // no tracked project, while the detail page handled the same case correctly.
+  const paths = ["/", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
+    ...dataModule.companies.map((company) => `/companies/${company.slug}`)];
+
+  for (const path of paths) {
+    const html = (await (await render(path)).text())
+      .replace(/<script[\s\S]*?<\/script>/gi, "")
+      .replace(/<!--.*?-->/g, "");
+    for (const tag of ["b", "strong", "dd", "h1", "h2", "h3", "td"]) {
+      const empty = [...html.matchAll(new RegExp(`<${tag}(\\s[^>]*)?></${tag}>`, "g"))];
+      assert.equal(empty.length, 0, `${path} renders an empty <${tag}${empty[0]?.[1] ?? ""}>`);
+    }
+  }
+});
+
+test("every company card states a stage or says it has no tracked project", async () => {
+  const dataModule = await import("../app/data.ts");
+  const html = (await (await render("/companies")).text()).replace(/<!--.*?-->/g, "").replace(/<script[\s\S]*?<\/script>/gi, "");
+  const projectless = dataModule.companies.filter((company) => company.projectSlugs.length === 0);
+  assert.ok(projectless.length > 0, "the roster still includes a company with no tracked project");
+  assert.equal(
+    (html.match(/No tracked project<\/b>/g) ?? []).length,
+    projectless.length,
+    "each projectless company card states so explicitly",
+  );
+});
+
+test("every entrant's unit rating obeys the roster rule", async () => {
+  const dataModule = await import("../app/data.ts");
+  for (const entrant of dataModule.raceEntrants) {
+    // The roster rule caps an entrant at roughly 350 MWe per unit.
+    assert.ok(entrant.unitMWe > 0 && entrant.unitMWe <= 350, `${entrant.companySlug} is rated ${entrant.unitMWe} MWe`);
+    assert.equal(entrant.lane, entrant.unitMWe >= 50 ? "Grid-scale SMR" : "Microreactor", `${entrant.companySlug} lane matches its rating`);
+
+    // A roster basis must say what the company HAS, never what it lacks. This
+    // is the guard that catches the real defect a PR review found: Westinghouse
+    // was rated 300 MWe on the AP300 while its own basis read "AP300 has no
+    // named U.S. site", so the row asserted a position its evidence denied.
+    // A row rated by one design and justified by another is otherwise a
+    // judgment call no test can make.
+    assert.doesNotMatch(
+      entrant.rosterBasis,
+      /\b(no|not|never|lacks|without|absent|unnamed)\b/i,
+      `${entrant.companySlug} qualifies on affirmative evidence, not on an absence`,
+    );
+  }
+});

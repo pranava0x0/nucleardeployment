@@ -38,9 +38,15 @@ one actually — not in announcements, in megawatts at each evidence level.
 
 **The editorial anchor:** the last new gigawatt took Vogtle Units 3 & 4
 eleven-plus years from license application to commercial operation
-(2,234 MWe, the only new U.S. nuclear this century). The race board asks who
-builds the next one, smaller and faster. Vogtle is context above the board,
-not an entrant.
+(2,234 MWe). The race board asks who builds the next one, smaller and
+faster. Vogtle is context above the board, not an entrant.
+
+Correction, 2026-08-05: this section originally called Vogtle "the only new
+U.S. nuclear this century." That is wrong, and it shipped to the homepage
+before a PR review caught it. Watts Bar Unit 2 added 1,150 MW in 2016, the
+first U.S. reactor to come online since 1996, though its construction began
+in 1973 and was suspended from 1985 to 2007. Say "most recent," not "only."
+<https://www.eia.gov/todayinenergy/detail.php?id=26652>
 
 **The honest zero:** as of 2026-08, every race entrant has 0 MWe of
 operational SMR capacity. The board must show that plainly. The race is

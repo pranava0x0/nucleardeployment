@@ -14,9 +14,9 @@ export default function Home() {
         <h1>{raceEntrants.length} companies are racing to put a gigawatt of new nuclear on the American grid.</h1>
         <p className="dek">None of them has generated a commercial megawatt yet. This is where each one actually stands, measured in megawatts at each level of evidence rather than in announcements.</p>
         <p className="masthead-context">
-          For scale: the last new American nuclear capacity was {vogtle?.capacity} at Vogtle Units 3 and 4, the only new
-          U.S. nuclear this century, finished in {vogtle?.latestDate}. Every company below is trying to do it smaller and
-          faster. <a href={vogtle?.source} target="_blank" rel="noreferrer">{vogtle?.sourceLabel} ↗</a>
+          For scale: the most recent new American nuclear capacity was {vogtle?.capacity} at Vogtle Units 3 and 4, the
+          first two U.S. AP1000 units, finished in {vogtle?.latestDate}. Every company below is trying to do it smaller
+          and faster. <a href={vogtle?.source} target="_blank" rel="noreferrer">{vogtle?.sourceLabel} ↗</a>
         </p>
         <p className="hero-meta"><span className="live-dot" /> Data as of {dataAsOf} · {raceEntrants.length} race entrants · {projects.length} sourced projects</p>
       </section>

@@ -12,9 +12,10 @@ export default function CompaniesPage() {
       <div className="company-grid">
         {companies.map((company) => {
           const companyProjects = projects.filter((project) => company.projectSlugs.includes(project.slug));
-          const highestStage = Math.max(...companyProjects.map((project) => project.stage));
+          // A roster entrant can have no tracked project, so there may be no stage.
+          const highestStage = companyProjects.length ? Math.max(...companyProjects.map((project) => project.stage)) : null;
           return <Link className="company-card" href={`/companies/${company.slug}`} key={company.slug}>
-            <div><span>{company.role}</span><b>{stageLabels[highestStage - 1]}</b></div>
+            <div><span>{company.role}</span><b>{highestStage !== null ? stageLabels[highestStage - 1] : "No tracked project"}</b></div>
             <h2>{company.name}</h2>
             <p>{company.summary}</p>
             <small>{companyProjects.length} tracked {companyProjects.length === 1 ? "project" : "projects"} · {company.technology}</small>

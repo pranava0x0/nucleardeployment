@@ -79,6 +79,29 @@ incident:
   really 27. Every figure in the methodology prose is now derived from the
   dataset.
 
+## What the PR review caught that this session did not
+
+Three P2 findings on #6, all reproduced before fixing and all real. They are
+listed because the pattern matters more than the individual bugs:
+
+- **A false claim inherited from the spec.** The homepage said Vogtle was "the
+  only new U.S. nuclear this century." Watts Bar Unit 2 added 1,150 MW in 2016.
+  The spec asserted it, and it was copied without checking, which is exactly the
+  failure the project's "a spec's data assumptions are guesses" rule names. The
+  spec now carries a dated correction so the next reader does not inherit it.
+- **A row whose evidence contradicted its own headline.** Westinghouse was rated
+  300 MWe on the AP300 while its roster basis read "AP300 has no named U.S.
+  site." Now the 5 MWe eVinci, which is the company's only documented U.S.
+  reactor program.
+- **A fix applied to one of two render paths.** `/companies/[slug]` handled a
+  projectless entrant; `/companies` still rendered an empty `<b></b>`. The
+  session's own tests only covered the path it had edited, which is the
+  "review scoped to the files I expect matter" blind spot.
+
+Two of the three were invisible to a green 24-test suite. The third was a fact
+no test could check. Budget a review round rather than treating a passing suite
+as the gate.
+
 ## Three tests were vacuous before they were fixed
 
 Every new assertion was sabotage-checked: mutate the source, confirm red,
