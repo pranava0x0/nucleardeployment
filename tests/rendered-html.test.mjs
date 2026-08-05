@@ -626,7 +626,7 @@ test("every race record's reporting basis matches its source tier", async () => 
   assert.equal(dataModule.verificationForSource("https://www.energy.gov/x"), "Government-reported");
   // All four tiers are represented, so no legend or filter value renders empty.
   const used = new Set([...dataModule.capacityClaims, ...dataModule.proofEvents].map((record) => record.verification));
-  for (const tier of ["Verified", "Government-reported", "Company-reported", "Press-reported"]) {
+  for (const tier of ["Verified", "Government-reported", "Institution-reported", "Company-reported", "Press-reported"]) {
     assert.ok(used.has(tier), `the dataset carries at least one ${tier} record`);
   }
 });
@@ -750,6 +750,17 @@ test("prose that quotes race figures matches the data it describes", async () =>
 
   // Both ratios are rendered live, so the prose must agree with what a reader sees.
   const record = await readFile(new URL("../docs/gigawatt-race-implementation-record.md", import.meta.url), "utf8");
+  const claimless = dataModule.raceEntrants.filter((entrant) =>
+    !dataModule.capacityClaims.some((claim) => claim.companySlug === entrant.companySlug));
+  const spelled = ["zero", "One", "Two", "Three", "Four", "Five", "Six"][claimless.length];
+  assert.ok(record.includes(`${spelled}\nentrants have no capacity claim`) || record.includes(`${spelled} entrants have no capacity claim`),
+    `the record says ${spelled} entrants have no capacity claim`);
+  for (const entrant of claimless) {
+    const company = dataModule.companies.find((item) => item.slug === entrant.companySlug);
+    // Match the distinctive first token: the prose uses short forms ("Antares",
+    // "NANO Nuclear") where the dataset carries the full legal name.
+    assert.ok(record.includes(company.name.split(" ")[0]), `the record names ${company.name} among the claimless`);
+  }
   assert.ok(record.includes(`**${Math.round(totals.framework / executed)} to one**`), "the executed ratio in the record is current");
   assert.ok(record.includes(`**${Math.round(totals.framework / building)} to one**`), "the building ratio in the record is current");
 });
@@ -760,7 +771,7 @@ test("a program selection is never filed under permits or physical work", async 
   // neither a regulator's authorization nor work at a site. A review found an
   // unawarded Air Force finalist status rendering under "Physical progress"
   // and a program naming rendering under "Licensing".
-  const grantsPermission = /\b(approved|issued|accepted|extended|granted|authoriz)/i;
+  const grantsPermission = /\b(approved|issued|accepted|extended|granted|authoriz|submitted|filed)/i;
   const isSelection = /\b(selected|named one of|finalists?|other transaction agreement)\b/i;
 
   for (const event of dataModule.proofEvents.filter((record) => record.kind === "Permit / authorization")) {

@@ -4,17 +4,20 @@
  * reporter. Race records are checked against the source host by a test, because
  * getting this right by eye failed across roughly twenty of them.
  */
-export type Verification = "Verified" | "Government-reported" | "Company-reported" | "Press-reported";
+export type Verification = "Verified" | "Government-reported" | "Institution-reported" | "Company-reported" | "Press-reported";
 
 /** Source-host tiers for race records. A host in no list is press by default. */
 export const verificationHosts: { verification: Verification; hosts: string[] }[] = [
   { verification: "Verified", hosts: ["nrc.gov", "federalregister.gov", "sec.gov"] },
   { verification: "Government-reported", hosts: ["energy.gov", "inl.gov", "gain.inl.gov", "nric.inl.gov", "army.mil", "eia.gov"] },
+  // Universities and public institutions report on programs they host or
+  // co-apply for. That is not the reactor company speaking.
+  { verification: "Institution-reported", hosts: ["npre.illinois.edu", "illinois.edu", "acu.edu", "tamu.edu"] },
   { verification: "Company-reported", hosts: [
     "terrapower.com", "kairospower.com", "oklo.com", "x-energy.com", "holtecinternational.com",
     "nuscalepower.com", "aalo.com", "radiantnuclear.com", "valaratomics.com", "deepfission.com",
     "bwxt.com", "ir.terrestrialenergy.com", "info.westinghousenuclear.com", "gevernova.com",
-    "tatachemicals.com", "switch.com", "riotplatforms.com", "deployable.energy", "npre.illinois.edu",
+    "tatachemicals.com", "switch.com", "riotplatforms.com", "deployable.energy",
     "businesswire.com", "globenewswire.com", "prnewswire.com", "energy-communities-alliance.squarespace.com",
   ] },
 ];
@@ -1915,6 +1918,7 @@ export const proofEvents: ProofEvent[] = [
   { companySlug: "bwxt", date: null, kind: "Fuel milestone", label: "Delivered a full core of TRISO fuel for the Project Pele microreactor; criticality not confirmed as of 2026-08-05", source: "https://www.bwxt.com/bwxt-delivers-full-core-of-triso-nuclear-fuel-for-project-pele-microreactor/", verification: "Company-reported" },
   { companySlug: "aalo-atomics", date: "2025-09", kind: "Fuel milestone", label: "Signed what Aalo describes as the first U.S. commercial contract for delivery of enriched uranium to a reactor company", source: "https://www.businesswire.com/news/home/20250910715287/en/Aalo-Atomics-Becomes-First-U.S.-Nuclear-Reactor-Company-with-a-Contract-for-Commercial-Delivery-of-Enriched-Uranium-Hits-Crucial-Next-Milestone-on-Path-to-2026-Startup", verification: "Company-reported" },
   { companySlug: "valar-atomics", date: "2026-04", kind: "Permit / authorization", label: "DOE approved the final documented safety analysis for Ward 250, an expedited pathway that bypassed NRC licensing for this test unit", source: "https://oodaloop.com/briefs/technology/valar-atomics-begins-construction-on-ward-250-nuclear-reactor-utah/", verification: "Press-reported" },
+  { companySlug: "nano-nuclear", date: "2026-03", kind: "Permit / authorization", label: "The University of Illinois, with NANO Nuclear, submitted a construction-permit application to the NRC for a KRONOS reactor on its campus", powerNote: "A non-power research reactor. Contributes 0 MWe.", source: "https://npre.illinois.edu/news/stories/imdp-cpa", verification: "Institution-reported" },
   { companySlug: "nano-nuclear", date: "2026-05", kind: "Permit / authorization", label: "NRC formally accepted the KRONOS construction-permit application for full review, an estimated 12-month clock", source: "https://www.globenewswire.com/news-release/2026/05/20/3298411/0/en/NANO-Nuclear-s-KRONOS-MMR-and-the-University-of-Illinois-Urbana-Champaign-Advance-to-Next-Regulatory-Milestone-as-U-S-NRC-Formally-Accepts-Construction-Permit-Application-for-Revie.html", verification: "Company-reported" },
   { companySlug: "deployable-energy", date: "2026-04", kind: "Program selection / agreement", label: "Named one of the first four developers in DOE's Launch Pad program", source: "https://www.rdworldonline.com/doe-announces-first-selections-for-nuclear-energy-dome-program/", verification: "Press-reported" },
   { companySlug: "antares-nuclear", date: "2026-07", kind: "Program selection / agreement", label: "One of three finalists competing for Air Force installation assignments in Colorado and Montana; no award made", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/", verification: "Press-reported" },
@@ -2070,7 +2074,7 @@ export const fundingFrames: { frame: string; note: string; kinds: FundingEvent["
 ];
 
 export const proofLanes: { lane: string; note: string; kinds: ProofEvent["kind"][] }[] = [
-  { lane: "Licensing", note: "Permits and authorizations, with the authority that granted each one.", kinds: ["Permit / authorization"] },
+  { lane: "Licensing", note: "Applications, permits and authorizations, naming the authority in each case.", kinds: ["Permit / authorization"] },
   { lane: "Physical progress", note: "Work at a site. Criticalities are proof the physics works, not electricity.", kinds: ["Construction start", "Criticality", "Fuel milestone", "Test program"] },
   { lane: "Program selections and agreements", note: "Being chosen for a program, or signing one. Neither is a permit nor work at a site.", kinds: ["Program selection / agreement"] },
   { lane: "Design proof outside the U.S.", note: "Real progress on the same design abroad. Contributes 0 MWe to the U.S. race.", kinds: ["Design proof (non-U.S.)"] },

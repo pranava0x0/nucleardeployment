@@ -62,9 +62,9 @@ silently; regenerate it rather than edit it.
 
 Announced capacity runs about **20 to one** against everything resting on an
 executed action, and about **91 to one** against what is actually being built.
-Both are rendered, both labeled, and both derived rather than typed in. Three
-entrants have no capacity claim at all (Westinghouse, Deployable Energy,
-Antares) and still render a row.
+Both are rendered, both labeled, and both derived rather than typed in. Four
+entrants have no capacity claim at all (NANO Nuclear, Westinghouse, Deployable
+Energy, Antares) and still render a row.
 
 ## Defects found and fixed during this work
 
