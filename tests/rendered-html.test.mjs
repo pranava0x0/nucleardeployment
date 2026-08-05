@@ -19,9 +19,10 @@ test("server-renders the evidence-led homepage", async () => {
   assert.match(html, /Deployment Core/);
   assert.match(html, /America is rebuilding the machinery/);
   assert.match(html, /Projects by stage/);
+  assert.match(html, /brand\/reactor-velocity-mark\.png/);
   assert.match(html, /Exploring the idea/);
   assert.match(html, /Work or fuel at the site/);
-  assert.match(html, /10 projects/);
+  assert.match(html, /15 projects/);
   assert.match(html, /TerraPower/);
   assert.match(html, /Kairos Power/);
   assert.doesNotMatch(html, /Announcement is not deployment/);
@@ -43,13 +44,20 @@ test("server-renders company directory and company detail pages", async () => {
   assert.match(detailHtml, /Natrium/);
   assert.match(detailHtml, /Sodium-cooled fast reactor/);
   assert.match(detailHtml, /Submit and secure the separate NRC operating license/);
+  assert.match(detailHtml, /Deployment stage/);
+  assert.match(detailHtml, /Projects and next steps/);
+  assert.match(detailHtml, /Primary source/);
+  assert.doesNotMatch(detailHtml, /Evidence-linked profile|Commitment level|Evidence and next gates/);
 });
 
 test("server-renders core directory and methodology routes", async () => {
-  for (const [path, text] of [["/deployments", "Deployments"], ["/federal-action", "Four orders"], ["/capital", "Money is not one metric"], ["/methodology", "Evidence before labels"]]) {
+  for (const [path, text] of [["/deployments", "U.S. reactor projects"], ["/federal-action", "Four executive orders"], ["/capital", "Federal loans"], ["/methodology", "Version 0.2 definitions"], ["/map", "Named U.S. reactor sites"]]) {
     const response = await render(path);
     assert.equal(response.status, 200, path);
-    assert.match(await response.text(), new RegExp(text, "i"));
+    const html = await response.text();
+    assert.match(html, new RegExp(text, "i"));
+    assert.match(html, /page-lead grid-bg"><h1>/);
+    assert.doesNotMatch(html, /Money is not one metric|This view keeps them separate|Evidence before labels/);
   }
 });
 
@@ -58,7 +66,7 @@ test("server-renders a project record with its next gate and source", async () =
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Natrium/);
-  assert.match(html, /Next required milestone/);
+  assert.match(html, /Next milestone/);
   assert.match(html, /NRC application record/);
   assert.match(html, /separate NRC operating license/);
 });
@@ -67,6 +75,8 @@ test("all source links use https and every project states a next action", async 
   const dataModule = await import("../app/data.ts");
   const companySlugs = new Set(dataModule.companies.map((company) => company.slug));
   for (const project of dataModule.projects) {
+    assert.equal("commitment" in project, false, `${project.name} uses deployment stage only`);
+    assert.equal("x" in project || "y" in project, false, `${project.name} has no invented map coordinates`);
     assert.match(project.source, /^https:\/\//);
     assert.ok(project.next.length > 20, project.name);
     assert.ok(project.sourceLabel.length > 4, project.name);
@@ -85,12 +95,47 @@ test("DOE program coverage distinguishes pilot, criticality, and ARDP projects",
   const ardpProjects = dataModule.projects.filter((project) => project.programs.includes("ARDP demonstration"));
   const launchPadProjects = dataModule.projects.filter((project) => project.programs.includes("Nuclear Energy Launch Pad"));
 
-  assert.equal(dataModule.projects.length, 17);
-  assert.equal(dataModule.companies.length, 15);
+  assert.equal(dataModule.projects.length, 28);
+  assert.equal(dataModule.companies.length, 24);
   assert.equal(pilotProjects.length, 11);
   assert.deepEqual(criticalityProjects.map((project) => project.name).sort(), ["Aalo Critical Test Reactor", "Antares R1 Mark-0", "Ward 250 critical experiment"]);
   assert.deepEqual(ardpProjects.map((project) => project.slug).sort(), ["long-mott-xe-100", "natrium-kemmerer"]);
   assert.deepEqual(launchPadProjects.map((project) => project.slug), ["deployable-unity"]);
+});
+
+test("reactor generation, scale, family, and role stay separate", async () => {
+  const dataModule = await import("../app/data.ts");
+  for (const project of dataModule.projects) {
+    assert.ok(project.generation, `${project.name} has generation`);
+    assert.ok(project.scale, `${project.name} has scale`);
+    assert.ok(project.family, `${project.name} has reactor family`);
+    assert.ok(project.reactorRole, `${project.name} has reactor role`);
+  }
+  const bwrx = dataModule.projects.find((project) => project.slug === "clinch-river-bwrx-300");
+  assert.deepEqual([bwrx.generation, bwrx.scale, bwrx.family], ["Gen III+", "SMR", "LWR · BWR"]);
+});
+
+test("research archive is structured, unique, and append-only JSON", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const registry = JSON.parse(await readFile(new URL("../data/research/source-registry.json", import.meta.url), "utf8"));
+  const searchLines = (await readFile(new URL("../data/research/search-history.jsonl", import.meta.url), "utf8")).trim().split("\n").map(JSON.parse);
+  const linkChecks = (await readFile(new URL("../data/research/link-check-history.jsonl", import.meta.url), "utf8")).trim().split("\n").map(JSON.parse);
+  const ids = registry.sources.map((source) => source.id);
+  const urls = registry.sources.map((source) => source.url);
+  assert.equal(new Set(ids).size, ids.length);
+  assert.equal(new Set(urls).size, urls.length);
+  assert.ok(registry.sources.length >= 20);
+  for (const source of registry.sources) {
+    assert.match(source.url, /^https:\/\//);
+    assert.ok(Array.isArray(source.officials));
+    assert.ok(Array.isArray(source.companies));
+    assert.ok(Array.isArray(source.reactor_types));
+    assert.ok(Array.isArray(source.deployment_stages));
+    assert.ok(Array.isArray(source.industry_domains));
+  }
+  assert.ok(searchLines.length >= 4);
+  assert.ok(linkChecks.length >= 11);
+  assert.ok(linkChecks.every((check) => ["live", "blocked", "dead"].includes(check.classification)));
 });
 
 test("CSS keeps palette values in the root token block", async () => {
@@ -98,6 +143,14 @@ test("CSS keeps palette values in the root token block", async () => {
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
   const withoutRoot = css.replace(/:root\s*\{[\s\S]*?\}/, "");
   assert.doesNotMatch(withoutRoot, /#[0-9a-f]{3,8}\b/i);
+});
+
+test("visible interface type never drops below 12px", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  const sizes = [...css.matchAll(/(?:font(?:-size)?\s*:[^;]*?)(\d+)px/g)].map((match) => Number(match[1]));
+  assert.ok(sizes.length > 20);
+  assert.ok(sizes.every((size) => size >= 12), `smallest visible type is ${Math.min(...sizes)}px`);
 });
 
 test("text and semantic token pairs meet WCAG AA contrast", async () => {

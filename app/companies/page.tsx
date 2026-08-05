@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Companies" };
 
 export default function CompaniesPage() {
   return <PageShell><main id="main" className="inner-page">
-    <header className="page-lead grid-bg"><p className="eyebrow">Builders and delivery partners</p><h1>Companies</h1><p>See which commercial developers and delivery partners sit behind the tracked projects, what evidence they have reached, and what must happen next.</p></header>
+    <header className="page-lead grid-bg"><h1>Companies</h1><p>Reactor developers, site sponsors, operators, and delivery partners linked to tracked U.S. projects.</p></header>
     <section className="section">
       <div className="company-grid">
         {companies.map((company) => {

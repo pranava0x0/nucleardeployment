@@ -5,13 +5,18 @@ import Link from "next/link";
 import { projects, stageLabels } from "../data";
 import { StageCore } from "./StageCore";
 
+const generations = [...new Set(projects.map((project) => project.generation))];
+const scales = [...new Set(projects.map((project) => project.scale))];
+
 export function DeploymentDirectory() {
   const [query, setQuery] = useState("");
   const [stage, setStage] = useState(0);
+  const [generation, setGeneration] = useState("");
+  const [scale, setScale] = useState("");
   const filtered = useMemo(() => projects.filter((project) => {
-    const matchesText = `${project.name} ${project.developer} ${project.location} ${project.technology} ${project.programs.join(" ")}`.toLowerCase().includes(query.toLowerCase());
-    return matchesText && (!stage || project.stage === stage);
-  }), [query, stage]);
+    const matchesText = `${project.name} ${project.developer} ${project.location} ${project.technology} ${project.generation} ${project.scale} ${project.family} ${project.reactorRole} ${project.programs.join(" ")}`.toLowerCase().includes(query.toLowerCase());
+    return matchesText && (!stage || project.stage === stage) && (!generation || project.generation === generation) && (!scale || project.scale === scale);
+  }), [generation, query, scale, stage]);
 
   return <>
     <div className="filters" aria-label="Deployment filters">
@@ -20,13 +25,21 @@ export function DeploymentDirectory() {
         <option value={0}>All tracked stages</option>
         {stageLabels.map((label, index) => <option key={label} value={index + 1}>{index + 1} · {label}</option>)}
       </select></label>
+      <label><span>GENERATION</span><select value={generation} onChange={(event) => setGeneration(event.target.value)}>
+        <option value="">All generations</option>
+        {generations.map((item) => <option key={item}>{item}</option>)}
+      </select></label>
+      <label><span>SCALE</span><select value={scale} onChange={(event) => setScale(event.target.value)}>
+        <option value="">All sizes</option>
+        {scales.map((item) => <option key={item}>{item}</option>)}
+      </select></label>
       <div className="result-count"><b>{filtered.length}</b><span>of {projects.length} records</span></div>
     </div>
     <div className="deployment-table" role="table" aria-label="Tracked nuclear deployments">
-      <div className="table-head" role="row"><span>Project</span><span>Stage</span><span>Latest evidence</span><span>Next gate</span></div>
+      <div className="table-head" role="row"><span>Project</span><span>Stage</span><span>Latest milestone</span><span>Next step</span></div>
       {filtered.map((project) => <Link className="deployment-row" href={`/deployments/${project.slug}`} role="row" key={project.slug}>
-        <span className="project-cell"><b>{project.name}</b><small>{project.developer} · {project.location}</small></span>
-        <span className="stage-cell"><StageCore stage={project.commitment} compact /><i>{project.stageLabel}</i></span>
+        <span className="project-cell"><b>{project.name}</b><small>{project.developer} · {project.location}</small><em>{project.generation} · {project.scale} · {project.family}</em></span>
+        <span className="stage-cell"><StageCore stage={project.stage} compact /><i>{stageLabels[project.stage - 1]}</i></span>
         <span><b>{project.status}</b><small>{project.latestDate} · {project.verification}</small></span>
         <span><b>{project.next.split(".")[0]}</b><small>{project.nextOwner}</small></span>
       </Link>)}
