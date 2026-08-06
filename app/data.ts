@@ -1,4 +1,39 @@
-export type Verification = "Verified" | "Government-reported" | "Company-reported";
+/**
+ * Who reported the evidence, in the order the methodology's source hierarchy
+ * ranks them. "Verified" is the regulator's own record; the rest name the
+ * reporter. Race records are checked against the source host by a test, because
+ * getting this right by eye failed across roughly twenty of them.
+ */
+export type Verification = "Verified" | "Government-reported" | "Institution-reported" | "Company-reported" | "Press-reported";
+
+/** Source-host tiers for race records. A host in no list is press by default. */
+export const verificationHosts: { verification: Verification; hosts: string[] }[] = [
+  { verification: "Verified", hosts: ["nrc.gov", "federalregister.gov", "sec.gov"] },
+  { verification: "Government-reported", hosts: ["energy.gov", "inl.gov", "gain.inl.gov", "nric.inl.gov", "army.mil", "eia.gov"] },
+  // Universities and public institutions report on programs they host or
+  // co-apply for. That is not the reactor company speaking.
+  { verification: "Institution-reported", hosts: ["npre.illinois.edu", "illinois.edu", "acu.edu", "tamu.edu"] },
+  { verification: "Company-reported", hosts: [
+    "terrapower.com", "kairospower.com", "oklo.com", "x-energy.com", "holtecinternational.com",
+    "nuscalepower.com", "aalo.com", "radiantnuclear.com", "valaratomics.com", "deepfission.com",
+    "bwxt.com", "ir.terrestrialenergy.com", "info.westinghousenuclear.com", "gevernova.com",
+    "tatachemicals.com", "switch.com", "riotplatforms.com", "deployable.energy", "georgiapower.com",
+    "businesswire.com", "globenewswire.com", "prnewswire.com", "energy-communities-alliance.squarespace.com",
+  ] },
+  { verification: "Press-reported", hosts: [
+    "world-nuclear-news.org", "ans.org", "nucnet.org", "powermag.com", "neimagazine.com",
+    "washingtontechnology.com", "utilitydive.com", "techcrunch.com", "bloomberg.com",
+    "power-eng.com", "news.spacconference.com", "barchart.com", "oodaloop.com",
+    "rdworldonline.com", "thebreakthrough.org", "esgtoday.com", "spacenews.com",
+    "datacenterdynamics.com", "fortune.com", "sltrib.com", "axios.com",
+  ] },
+];
+
+/** The tier a source URL belongs to. Press is the default, never an upgrade. */
+export function verificationForSource(source: string): Verification {
+  const host = new URL(source).host.replace(/^www\./, "");
+  return verificationHosts.find((tier) => tier.hosts.includes(host))?.verification ?? "Press-reported";
+}
 export type GenerationClass = "Gen II" | "Gen III+" | "Gen IV" | "Experimental / unclassified";
 export type ScaleClass = "Large reactor" | "SMR" | "Microreactor" | "Test reactor" | "Critical experiment";
 export type ReactorFamily = "LWR · PWR" | "LWR · BWR" | "LWR · design TBD" | "HTGR" | "SFR" | "FHR" | "MSR" | "Heat-pipe" | "Design TBD";
@@ -574,7 +609,7 @@ export const projects: Project[] = [
     nextOwner: "TVA and NRC",
     blocker: "Construction-permit decision, final design, supply chain, and project finance",
     confidence: "High",
-    verification: "Verified",
+    verification: "Government-reported",
     source: "https://www.energy.gov/ne/articles/nrc-dockets-construction-permit-application-tva-small-modular-reactor",
     sourceLabel: "DOE summary of NRC docketing",
     programs: ["Gen III+ SMR Pathway", "NRC construction-permit review"],
@@ -1085,6 +1120,26 @@ export const companies: Company[] = [
     source: "https://www.georgiapower.com/news-hub/press-releases/vogtle-unit-4-enters-commercial-operation.html",
     sourceLabel: "Georgia Power commercial-operation record",
   },
+  {
+    slug: "nuscale",
+    name: "NuScale Power",
+    role: "Reactor technology provider",
+    summary: "Holds the only NRC-approved U.S. SMR design; ENTRA1 Energy is its exclusive commercial partner for plant development.",
+    technology: "Integral pressurized-water SMR",
+    projectSlugs: [],
+    source: "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design",
+    sourceLabel: "DOE record of the 77 MWe design approval",
+  },
+  {
+    slug: "gev-hitachi",
+    name: "GE Vernova Hitachi",
+    role: "Reactor technology provider",
+    summary: "Developer of the BWRX-300, the design under NRC construction-permit review at TVA's Clinch River site and under construction at Darlington, Ontario.",
+    technology: "Boiling-water SMR",
+    projectSlugs: [],
+    source: "https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing",
+    sourceLabel: "NRC Clinch River hearing notice",
+  },
 ];
 
 export const federalActions = [
@@ -1241,4 +1296,818 @@ export function stageCounts() {
       .map((slug) => companies.find((company) => company.slug === slug))
       .filter((company): company is Company => Boolean(company)),
   }));
+}
+
+/* ---------------------------------------------------------------------------
+   The race to a gigawatt
+   ---------------------------------------------------------------------------
+   Company-centric capacity accounting layered over the project records above.
+   Research basis: docs/research/company-packs-*.md (researched 2026-08-05).
+   Rules enforced by tests in tests/rendered-html.test.mjs:
+     - A megawatt sits in exactly one band, its strongest documented state.
+     - Test reactors and critical experiments contribute 0 MWe. They are proof
+       events, never capacity.
+     - A company-stated target never moves a megawatt between bands. Only a
+       documented action does.
+     - Binding and non-binding never merge into one figure.
+--------------------------------------------------------------------------- */
+
+export type CapacityBand = "operational" | "construction" | "doe-authorized" | "review" | "contracted" | "framework";
+
+/** Strongest evidence first. Board sort and render order both read this. */
+export const capacityBands: { band: CapacityBand; label: string; rule: string; authority: string }[] = [
+  { band: "operational", label: "Operational", rule: "Grid-connected and generating commercial power.", authority: "Grid operator" },
+  { band: "construction", label: "Nuclear construction", rule: "NRC construction permit issued and physical nuclear work documented.", authority: "NRC" },
+  { band: "doe-authorized", label: "DOE-authorized build", rule: "Built under a DOE authorization pathway with physical work documented. Not an NRC license to operate.", authority: "DOE" },
+  { band: "review", label: "Under review", rule: "Construction-permit or combined-license application docketed and in active regulator review.", authority: "NRC" },
+  { band: "contracted", label: "Contracted", rule: "An executed, funded agreement for a named project, whether offtake, order, delivery, or development funding, not yet in regulator review. Each claim says which kind it is.", authority: "Counterparty" },
+  { band: "framework", label: "Announced, non-binding", rule: "MOU, LOI, master agreement, or announced target. No executed project documents.", authority: "None" },
+];
+
+export type RaceEntrant = {
+  companySlug: string;
+  design: string;
+  unitMWe: number;
+  unitMWeNote?: string;
+  lane: "Grid-scale SMR" | "Microreactor";
+  ticker?: string;
+  rosterBasis: string;
+  rosterSource: string;
+};
+
+export type CapacityClaim = {
+  companySlug: string;
+  band: CapacityBand;
+  mwe: number;
+  label: string;
+  /** False if and only if the band is framework. Everything else rests on an executed action. */
+  binding: boolean;
+  /** YYYY-MM of the action supporting the band, or null when no source states one. */
+  date: string | null;
+  source: string;
+  verification: Verification;
+};
+
+export type FundingEvent = {
+  companySlug: string;
+  /** YYYY-MM, or null when no source dates the event. Never guessed. */
+  date: string | null;
+  kind: "Venture equity" | "Public offering" | "IPO / listing" | "Strategic investment" | "Federal award" | "Federal loan" | "Cost share" | "Venture debt" | "Offering filed";
+  /** The frame travels with the figure: "$1.02B IPO proceeds", not a bare number. */
+  amount: string;
+  counterparty: string;
+  source: string;
+};
+
+export type ProofEvent = {
+  companySlug: string;
+  /** YYYY-MM or YYYY-MM-DD, or null when no source dates the event. Never guessed. */
+  date: string | null;
+  kind: "Criticality" | "Construction start" | "Fuel milestone" | "Permit / authorization" | "Design proof (non-U.S.)" | "Test program" | "Program selection / agreement";
+  label: string;
+  /** Keeps a criticality from reading as electricity. */
+  powerNote?: string;
+  source: string;
+  verification: Verification;
+};
+
+export const raceEntrants: RaceEntrant[] = [
+  {
+    companySlug: "terrapower",
+    design: "Natrium",
+    unitMWe: 345,
+    unitMWeNote: "Up to 500 MWe for 5+ hours with the molten-salt storage boost.",
+    lane: "Grid-scale SMR",
+    rosterBasis: "NRC construction permit issued for Kemmerer Unit 1 and construction underway in Wyoming.",
+    // The construction release carries both halves of the basis: it states the
+    // permit issuance and the construction start. The permit release covers
+    // only the first.
+    rosterSource: "https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant",
+  },
+  {
+    companySlug: "oklo",
+    design: "Aurora",
+    unitMWe: 75,
+    unitMWeNote: "Design scaled from 15 MWe through 50 MWe to a current 75 MWe maximum.",
+    lane: "Grid-scale SMR",
+    ticker: "NYSE: OKLO",
+    rosterBasis: "Aurora-INL under construction under the DOE Reactor Pilot Program, with a combined license application submitted to the NRC.",
+    rosterSource: "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx",
+  },
+  {
+    companySlug: "kairos-power",
+    design: "KP-FHR",
+    unitMWe: 140,
+    unitMWeNote: "Commercial product rating. Hermes 2 is a ~20 MWe demonstration plant.",
+    lane: "Grid-scale SMR",
+    rosterBasis: "Hermes 2 holds the first NRC construction permit for a power-producing Gen IV reactor and is under construction.",
+    rosterSource: "https://www.kairospower.com/updates/kairos-power-breaks-ground-on-hermes-2-demonstration-plant",
+  },
+  {
+    companySlug: "holtec",
+    design: "SMR-300",
+    unitMWe: 300,
+    unitMWeNote: "Holtec's technical bulletin states 300 MWe net; 2026 partner materials describe approximately 340 MWe.",
+    lane: "Grid-scale SMR",
+    rosterBasis: "Phased construction-permit application for PIONEER 1&2 docketed at the NRC for the Palisades site.",
+    rosterSource: "https://www.federalregister.gov/documents/2026/02/27/2026-03943/smr-llc-pioneer-units-1-and-2-phased-construction-permit-application-limited-work-authorization",
+  },
+  {
+    companySlug: "x-energy",
+    design: "Xe-100",
+    unitMWe: 80,
+    unitMWeNote: "A standard plant bundles four modules for 320 MWe.",
+    lane: "Grid-scale SMR",
+    ticker: "Nasdaq: XE",
+    rosterBasis: "Long Mott construction-permit application under NRC safety review after the environmental review closed.",
+    rosterSource: "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-054.pdf",
+  },
+  {
+    companySlug: "gev-hitachi",
+    design: "BWRX-300",
+    unitMWe: 300,
+    lane: "Grid-scale SMR",
+    rosterBasis: "TVA's Clinch River Unit 1 construction permit is under NRC review with a mandatory hearing scheduled.",
+    rosterSource: "https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing",
+  },
+  {
+    companySlug: "nano-nuclear",
+    design: "KRONOS MMR",
+    unitMWe: 15,
+    unitMWeNote: "Rated up to 45 MWt.",
+    lane: "Microreactor",
+    ticker: "Nasdaq: NNE",
+    rosterBasis: "NRC accepted the KRONOS construction-permit application for the University of Illinois site.",
+    rosterSource: "https://npre.illinois.edu/news/stories/imdp-cpa",
+  },
+  {
+    companySlug: "radiant-industries",
+    design: "Kaleidos",
+    unitMWe: 1,
+    unitMWeNote: "About 3 MWt.",
+    lane: "Microreactor",
+    rosterBasis: "Signed delivery agreement with the Defense Innovation Unit and the Department of the Air Force.",
+    rosterSource: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
+  },
+  {
+    companySlug: "nuscale",
+    design: "NuScale Power Module / VOYGR",
+    unitMWe: 77,
+    unitMWeNote: "The earlier certified design was 50 MWe. A six-module VOYGR-6 plant is 462 MWe.",
+    lane: "Grid-scale SMR",
+    ticker: "NYSE: SMR",
+    rosterBasis: "Holds the only NRC-approved SMR design in the United States, a standard design approval for the 77 MWe module.",
+    rosterSource: "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design",
+  },
+  {
+    companySlug: "terrestrial-energy",
+    design: "IMSR",
+    unitMWe: 195,
+    unitMWeNote: "Per Core-unit. The commercial IMSR400 plant pairs two Core-units for 390 MWe net.",
+    lane: "Grid-scale SMR",
+    ticker: "Nasdaq: IMSR",
+    rosterBasis: "Secured roughly 77 acres at the Texas A&M-RELLIS campus for a pilot IMSR, to generate the site data an NRC construction-permit application requires.",
+    rosterSource: "https://www.ans.org/news/2026-06-23/article-8139/terrestrial-energy-and-texas-am-reach-agreement-on-reactor-siting/",
+  },
+  {
+    companySlug: "westinghouse",
+    design: "eVinci",
+    unitMWe: 5,
+    unitMWeNote: "13 MWt. Westinghouse also develops the 300 MWe AP300, which has no named U.S. site, customer, or order on record as of 2026-08-05, so it does not set this row's rating.",
+    lane: "Microreactor",
+    rosterBasis: "DOE selected the eVinci for the first fueled microreactor experiments at the DOME test bed, the company's only documented U.S. reactor program.",
+    rosterSource: "https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed",
+  },
+  {
+    companySlug: "last-energy",
+    design: "PWR-20",
+    unitMWe: 20,
+    unitMWeNote: "PWR-5 is the 5 MWe pilot version of the same design.",
+    lane: "Microreactor",
+    rosterBasis: "Selected for the DOE Reactor Pilot Program to build and test the PWR-5 at the Texas A&M-RELLIS campus.",
+    rosterSource: "https://www.world-nuclear-news.org/articles/last-energy-microreactor-planned-at-texas-university",
+  },
+  {
+    companySlug: "deep-fission",
+    design: "Gravity Reactor",
+    unitMWe: 15,
+    unitMWeNote: "NRC pre-application material describes 45 MWt producing up to 15 MWe; 2025 press describes 15 MWt / 5 MWe.",
+    lane: "Microreactor",
+    ticker: "Nasdaq: FISN",
+    rosterBasis: "DOE Reactor Pilot Program selection with a sited pilot project at Parsons, Kansas.",
+    rosterSource: "https://www.world-nuclear-news.org/articles/deep-fission-begins-drilling-first-data-acquisition-well",
+  },
+  {
+    companySlug: "aalo-atomics",
+    design: "Aalo-X",
+    unitMWe: 10,
+    unitMWeNote: "30 MWt. The commercial Aalo Pod bundles units into a 50 MWe plant.",
+    lane: "Microreactor",
+    rosterBasis: "Reached DOE-authorized criticality with its Critical Test Reactor at Idaho National Laboratory, the fourth and last before the July 4 2026 goal.",
+    rosterSource: "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal",
+  },
+  {
+    companySlug: "valar-atomics",
+    design: "Ward 250",
+    unitMWe: 5,
+    unitMWeNote: "Commercial scale-up target. The Utah test unit ran at 100 kWt.",
+    lane: "Microreactor",
+    rosterBasis: "Reached DOE-authorized criticality in Utah, the only pilot reactor built outside a national laboratory.",
+    rosterSource: "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality",
+  },
+  {
+    companySlug: "bwxt",
+    design: "Project Pele / BANR",
+    unitMWe: 1.5,
+    unitMWeNote: "The Pele demonstration unit is rated 1.5 MWe against a 1–5 MWe program target. BANR is 75 MWt.",
+    lane: "Microreactor",
+    ticker: "NYSE: BWXT",
+    rosterBasis: "Prime contractor building the Project Pele transportable microreactor for the Department of Defense at INL.",
+    rosterSource: "https://www.energy.gov/ne/articles/department-defense-breaks-ground-project-pele-microreactor",
+  },
+  {
+    companySlug: "deployable-energy",
+    design: "Unity",
+    unitMWe: 1,
+    lane: "Microreactor",
+    rosterBasis: "Reached DOE-authorized criticality with the Unity reactor at Idaho National Laboratory.",
+    rosterSource: "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor",
+  },
+  {
+    companySlug: "antares-nuclear",
+    design: "R1",
+    unitMWe: 0.3,
+    unitMWeNote: "200–300 kWe.",
+    lane: "Microreactor",
+    rosterBasis: "First DOE Reactor Pilot Program participant to reach criticality, at INL with the U.S. Army.",
+    rosterSource: "https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality",
+  },
+];
+
+export const capacityClaims: CapacityClaim[] = [
+  // Nuclear construction — NRC permit issued and physical work documented.
+  {
+    companySlug: "terrapower",
+    band: "construction",
+    mwe: 345,
+    label: "Kemmerer Unit 1, Wyoming · permit issued 2026-03, construction started 2026-04-23",
+    binding: true,
+    date: "2026-04",
+    source: "https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "kairos-power",
+    band: "construction",
+    mwe: 20,
+    label: "Hermes 2, Oak Ridge · two 35 MWt reactors on one power system, 20 MWe combined. Kairos frames the same plant as supplying up to 50 MW to the TVA grid.",
+    binding: true,
+    date: "2026-04",
+    source: "https://www.neimagazine.com/news/kairos-breaks-ground-on-hermes-2/",
+    verification: "Press-reported",
+  },
+
+  // DOE-authorized build — physical work under a DOE pathway, no NRC license to operate.
+  {
+    companySlug: "oklo",
+    band: "doe-authorized",
+    mwe: 75,
+    label: "Aurora-INL, Idaho · groundbreaking 2025-09-22 under the DOE Reactor Pilot Program; NRC combined license still under review",
+    binding: true,
+    date: "2025-09",
+    source: "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx",
+    verification: "Company-reported",
+  },
+
+  // Under review — application docketed and in active regulator review.
+  {
+    companySlug: "holtec",
+    band: "review",
+    mwe: 600,
+    label: "PIONEER 1&2, Palisades site, Michigan · 2 × 300 MWe; phased permit application with limited work authorization docketed",
+    binding: true,
+    date: "2026-02",
+    source: "https://www.federalregister.gov/documents/2026/02/27/2026-03943/smr-llc-pioneer-units-1-and-2-phased-construction-permit-application-limited-work-authorization",
+    verification: "Verified",
+  },
+  {
+    companySlug: "x-energy",
+    band: "review",
+    mwe: 320,
+    label: "Long Mott, Seadrift, Texas · Dow site, 4 × 80 MWe; environmental review closed 2026-05, safety decision targeted 2026-11",
+    binding: true,
+    date: "2026-05",
+    source: "https://x-energy.com/news/nrc-issues-environmental-assessment-with-finding-of-no-significant-impact-for-dow-and-x-energys-propsed-advanced-nuclear-project-in-texas/",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "gev-hitachi",
+    band: "review",
+    mwe: 300,
+    label: "Clinch River Unit 1, Tennessee · TVA project; safety evaluation complete, mandatory hearing 2026-08-13",
+    binding: true,
+    date: "2026-07",
+    source: "https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing",
+    verification: "Verified",
+  },
+
+  // Contracted — executed delivery agreement, not yet in regulator review.
+  {
+    companySlug: "radiant-industries",
+    band: "contracted",
+    mwe: 1,
+    label: "Defense Innovation Unit and Department of the Air Force · delivery agreement signed 2025-08-14; base not yet assigned",
+    binding: true,
+    date: "2025-08",
+    source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
+    verification: "Press-reported",
+  },
+
+  {
+    companySlug: "x-energy",
+    band: "contracted",
+    mwe: 320,
+    label: "Cascade Advanced Energy Facility, Richland, Washington · Energy Northwest and Amazon signed a development and funding agreement for four modules. The site is licensed for up to 960 MWe.",
+    binding: true,
+    date: "2024-10",
+    source: "https://www.utilitydive.com/news/washington-nuclear-facility-smrs-cascade-amazon-modular/802967/",
+    verification: "Press-reported",
+  },
+
+  // Announced, non-binding.
+  {
+    companySlug: "oklo",
+    band: "framework",
+    mwe: 12000,
+    label: "Switch master power agreement · stated 12 GW by 2044, individual power contracts still to be signed",
+    binding: false,
+    date: "2024-12",
+    source: "https://www.switch.com/oklo-and-switch-form-landmark-strategic-relationship/",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "oklo",
+    band: "framework",
+    mwe: 1200,
+    label: "Meta · Pike County, Ohio; first phase stated as early as 2030, full capacity 2034",
+    binding: false,
+    date: "2026-01",
+    source: "https://oklo.com/newsroom/news-details/2026/Oklo-Meta-Announce-Agreement-in-Support-of-1-2-GW-Nuclear-Energy-Development-in-Southern-Ohio/default.aspx",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "oklo",
+    band: "framework",
+    mwe: 500,
+    label: "Equinix · letter of intent with a $25M prepayment and a right of first refusal",
+    binding: false,
+    date: "2024-04",
+    source: "https://www.nucnet.org/news/oklo-signs-nuclear-pre-agreement-with-data-company-equinix-4-2-2024",
+    verification: "Press-reported",
+  },
+  {
+    companySlug: "oklo",
+    band: "framework",
+    mwe: 50,
+    label: "Diamondback Energy · non-binding letter of intent toward a 20-year power agreement near Midland, Texas",
+    binding: false,
+    date: "2025-04",
+    source: "https://oklo.com/newsroom/news-details/2024/Oklo-Signs-LOI-to-Supply-50-Megawatts-of-Power-to-Diamondback-Energy/default.aspx",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "oklo",
+    band: "framework",
+    mwe: 5,
+    label: "Eielson Air Force Base, Alaska · notice of intent to award; contract pending a final NRC license",
+    binding: false,
+    date: "2025-06",
+    source: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
+    verification: "Press-reported",
+  },
+  {
+    companySlug: "nuscale",
+    band: "framework",
+    mwe: 6000,
+    label: "ENTRA1 Energy and TVA · non-binding collaborative agreement across TVA's seven-state region, about 72 modules in up to six plants; no power contract signed",
+    binding: false,
+    date: "2025-09",
+    source: "https://www.nuscalepower.com/press-releases/2025/nuscale-proudly-supports-tva-and-entra1-energy-announcement-of-landmark-6-gigawatt-small-module-reactor-smr-deployment-program",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "x-energy",
+    band: "framework",
+    mwe: 4680,
+    // The Amazon framework's first phase is funded by an executed agreement, so
+    // it sits in the contracted band above and only the options-based remainder
+    // is counted here. Distinct from the Long Mott claim, which is Dow's Texas
+    // site under NRC review: the two projects share a 4 x 80 MWe rating and
+    // nothing else, and a PR review read them as one.
+    label: "Amazon · options-based U.S. framework targeting 2039, beyond the funded Cascade phase, separate from the Texas project under review",
+    binding: false,
+    date: "2024-10",
+    source: "https://www.ans.org/news/article-6480/amazon-investing-in-smrs-to-deploy-5gw-by-2039/",
+    verification: "Press-reported",
+  },
+  {
+    companySlug: "terrestrial-energy",
+    band: "framework",
+    mwe: 4000,
+    label: "Riot Platforms · program ceiling for data-centre sites in Texas and Kentucky; no site-specific commitment",
+    binding: false,
+    date: "2026-05",
+    source: "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "terrapower",
+    band: "framework",
+    mwe: 2800,
+    label: "Meta · up to eight plants, no site identified; 4 GW with the storage boost, initial units stated as early as 2032",
+    binding: false,
+    date: "2026-01",
+    source: "https://www.terrapower.com/terrapower-announces-deal-with-meta",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "terrapower",
+    band: "framework",
+    mwe: 690,
+    label: "PacifiCorp · two additional Utah units selected in a 2023 integrated resource plan, planning stage",
+    binding: false,
+    date: "2023-03",
+    source: "https://www.terrapower.com/pacificorp-forecasts-need-for-two-additional-natrium-reactors-in-new-regulatory-filing/",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "gev-hitachi",
+    band: "framework",
+    mwe: 3000,
+    label: "U.S.–Japan investment framework · unidentified sites in Tennessee and Alabama. It names no site, so it is counted as additional to Clinch River. The source does not confirm that.",
+    binding: false,
+    date: "2026-03",
+    source: "https://www.ans.org/news/2026-03-25/article-7878/new-us-bwrx300-projects-get-japanese-investment/",
+    verification: "Press-reported",
+  },
+  {
+    companySlug: "holtec",
+    band: "framework",
+    mwe: 1360,
+    label: "Oyster Creek, New Jersey · 4 × SMR-300 targeted for 2036; no permit, financing, or power purchaser disclosed",
+    binding: false,
+    date: "2026-07",
+    source: "https://www.powermag.com/holtec-targets-2036-for-1-36-gw-smr-300-project-at-oyster-creek/",
+    verification: "Press-reported",
+  },
+  {
+    companySlug: "holtec",
+    band: "framework",
+    mwe: 680,
+    label: "Entergy and Hyundai E&C · memorandum of agreement to evaluate dual-unit projects across the Gulf South",
+    binding: false,
+    date: "2026-08",
+    source: "https://www.manilatimes.net/2026/08/04/tmt-newswire/globenewswire/holtec-entergy-and-hyundai-ec-sign-moa-to-evaluate-potential-smr-300-projects-in-gulf-south-region/2397924",
+    verification: "Press-reported",
+  },
+  {
+    companySlug: "deep-fission",
+    band: "framework",
+    mwe: 2000,
+    label: "Endeavour Energy · partnership to co-develop capacity for a data-centre portfolio, first reactors stated 2029",
+    binding: false,
+    date: "2025-01",
+    source: "https://deepfission.com/deep-fission-and-endeavour-announce-strategic-partnership/",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "last-energy",
+    band: "framework",
+    mwe: 600,
+    label: "Haskell County, Texas · 200-acre developer site for up to 30 units; ERCOT interconnection request filed",
+    binding: false,
+    date: null,
+    source: "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/",
+    verification: "Press-reported",
+  },
+  {
+    companySlug: "kairos-power",
+    band: "framework",
+    mwe: 480,
+    label: "Google master plant development agreement · remainder of the stated 500 MW by 2035 beyond Hermes 2",
+    binding: false,
+    date: "2024-10",
+    source: "https://www.kairospower.com/updates/google-and-kairos-power-partner-to-deploy-500-mw-of-clean-electricity-generation",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "valar-atomics",
+    band: "framework",
+    mwe: 30,
+    label: "NVIDIA · pilot data centre in Emery County, Utah; collaboration, no executed offtake",
+    binding: false,
+    date: "2026-08",
+    source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "bwxt",
+    band: "framework",
+    mwe: 0,
+    label: "Tata Chemicals · letter of intent for up to eight BANR units in Wyoming; capacity not disclosed",
+    binding: false,
+    date: "2024-12",
+    source: "https://www.tatachemicals.com/upload/content_pdf/BWXT-Tata-LOI-12-December-2024.pdf",
+    verification: "Company-reported",
+  },
+  {
+    companySlug: "aalo-atomics",
+    band: "framework",
+    mwe: 0,
+    label: "Crusoe · strategic partnership to power one modular data centre at INL in 2027; capacity not disclosed",
+    binding: false,
+    date: "2026-07",
+    source: "https://www.globenewswire.com/news-release/2026/07/30/3336005/0/en/crusoe-and-aalo-atomics-form-strategic-partnership-with-goal-of-deploying-first-nuclear-powered-ai-factory.html",
+    verification: "Company-reported",
+  },
+];
+
+/** Cash on hand is a balance, not an event. Kept in its own frame so it is never summed with rounds. */
+export type CashPosition = { companySlug: string; asOf: string; amount: string; source: string };
+
+export type StatedTarget = {
+  companySlug: string;
+  target: string;
+  statedDate: string | null;
+  source: string;
+  /** A documented figure that disagrees with the company's own target. */
+  conflict?: string;
+  /** The conflict's own source. Required whenever `conflict` is set: it is a
+   *  different publication from the target it disputes. */
+  conflictSource?: string;
+};
+
+export const fundingEvents: FundingEvent[] = [
+  { companySlug: "terrapower", date: "2025-06", kind: "Venture equity", amount: "$650M round", counterparty: "NVentures (NVIDIA), Bill Gates, HD Hyundai", source: "https://www.terrapower.com/terrapower-announces-650-million-fundraise" },
+  { companySlug: "terrapower", date: "2022-08", kind: "Venture equity", amount: "$750M minimum equity raise", counterparty: "SK Inc. and SK Innovation", source: "https://www.terrapower.com/fundraise" },
+  { companySlug: "terrapower", date: null, kind: "Cost share", amount: "Up to $2B DOE ceiling, 50% of project costs", counterparty: "DOE Advanced Reactor Demonstration Program", source: "https://www.terrapower.com/fundraise" },
+  { companySlug: "oklo", date: "2024-05", kind: "IPO / listing", amount: "Up to $645M cash from the combination, including a $300M PIPE", counterparty: "AltC Acquisition Corp (NYSE)", source: "https://news.spacconference.com/2024/05/07/oklo-to-debut-on-nyse-following-altc-acqusition-shareholder-approval/" },
+  { companySlug: "oklo", date: "2026-05", kind: "Public offering", amount: "Up to $1B at-the-market program, replacing a prior program that placed ~$1.5B gross", counterparty: "Public markets", source: "https://www.tipranks.com/news/oklo-is-about-to-report-q2-earnings-heres-what-to-expect-from-the-nuclear-energy-stock" },
+  { companySlug: "kairos-power", date: "2024-02", kind: "Cost share", amount: "Up to $303M of a $629M project, milestone-based", counterparty: "DOE Advanced Reactor Demonstration Program", source: "https://www.powermag.com/doe-kairos-unveil-milestone-based-funding-agreement-for-advanced-nuclear-demonstration-project/" },
+  { companySlug: "kairos-power", date: "2026-02", kind: "Federal award", amount: "$27M agreement", counterparty: "Oak Ridge National Laboratory", source: "https://www.nucnet.org/news/oak-ridge-lab-signs-usd27m-deal-with-kairos-power-for-advanced-reactor-development-2-5-2026" },
+  { companySlug: "x-energy", date: "2026-04", kind: "IPO / listing", amount: "~$1.018B gross at $23.00/share", counterparty: "Nasdaq Global Select Market", source: "https://techcrunch.com/2026/04/24/x-energy-stock-pops-27-on-first-day-of-trading-following-upsized-ipo/" },
+  { companySlug: "x-energy", date: "2025-11", kind: "Venture equity", amount: "$700M Series D", counterparty: "Jane Street (lead), ARK Invest, Galvanize, Point72", source: "https://x-energy.com/news/x-energy-closes-oversubscribed-700-million-series-d-financing-round-to-continue-expansion-to-meet-global-energy-demand/" },
+  { companySlug: "x-energy", date: "2025-02", kind: "Venture equity", amount: "$700M Series C-1", counterparty: "Segra Capital, Jane Street, Ares Management", source: "https://x-energy.com/news/x-energy-closes-upsized-700-million-series-c-1-financing-round-to-accelerate-the-development-of-advanced-small-modular-nuclear-technology/" },
+  { companySlug: "holtec", date: "2025-12", kind: "Federal award", amount: "$400M Tier 1 milestone-based cost share", counterparty: "DOE Gen III+ SMR Pathway to Deployment", source: "https://holtecinternational.com/hh-40-24/" },
+  { companySlug: "holtec", date: "2026-07", kind: "Offering filed", amount: "Public S-1 filed; terms not priced", counterparty: "Nasdaq, targeting ticker HNUC", source: "https://www.sec.gov/Archives/edgar/data/0002104277/000119312526301023/d40440ds1.htm" },
+  { companySlug: "holtec", date: "2024-09", kind: "Federal loan", amount: "$1.52B loan guarantee for the existing 800 MW Palisades reactor, not the new units; $784.8M advanced as of 2026-03-31", counterparty: "DOE Loan Programs Office", source: "https://holtecinternational.com/2024/09/30/hh-39-17/" },
+  { companySlug: "gev-hitachi", date: "2025-12", kind: "Federal award", amount: "Up to $400M Tier 1 award to TVA for Clinch River", counterparty: "DOE Gen III+ SMR Pathway to Deployment", source: "https://www.ans.org/news/2025-12-03/article-7593/doe-selects-tva-and-holtec-for-smr-awards/" },
+  { companySlug: "nuscale", date: "2022-05", kind: "IPO / listing", amount: "~$380M proceeds including a $235M PIPE", counterparty: "Spring Valley Acquisition Corp (NYSE)", source: "https://www.nuscalepower.com/press-releases/2022/nuscale-completes-merger-with-spring-valley" },
+  { companySlug: "terrestrial-energy", date: "2025-10", kind: "IPO / listing", amount: "Over $292M gross including a $50M PIPE", counterparty: "HCM II Acquisition Corp (Nasdaq)", source: "https://www.barchart.com/story/news/35743041/terrestrial-energy-inc-completes-business-combination-with-hcm-ii-acquisition-corp" },
+  { companySlug: "westinghouse", date: "2026-06", kind: "Federal loan", amount: "$17.5B conditional commitment, scoped to AP1000 long-lead items only", counterparty: "EXIM and DOE Office of Energy Dominance Financing", source: "https://info.westinghousenuclear.com/news/westinghouse-announces-department-of-energy-partnership-to-jumpstart-large-scale-nuclear-supply-chain" },
+  { companySlug: "westinghouse", date: "2026-07", kind: "Offering filed", amount: "Confidential draft S-1 filed; share count, price and venue not disclosed", counterparty: "Not disclosed", source: "https://www.bloomberg.com/news/articles/2026-07-31/nuclear-tech-firm-westinghouse-files-confidentially-for-ipo" },
+  { companySlug: "aalo-atomics", date: "2025-08", kind: "Venture equity", amount: "$100M Series B", counterparty: "Valor Equity Partners (lead), NRG Energy, Hitachi Ventures", source: "https://www.businesswire.com/news/home/20250820559252/en/Aalo-Atomics-Secures-$100-Million-in-Series-B-Funding-to-Build-Modular-Nuclear-Plants-Purpose-Built-for-Powering-AI-Data-Centers" },
+  { companySlug: "radiant-industries", date: "2025-12", kind: "Venture equity", amount: "$300M+ Series D at a valuation above $1.8B", counterparty: "Draper Associates and Boost VC", source: "https://www.bloomberg.com/news/articles/2025-12-17/nuclear-startup-radiant-raises-300-million-for-small-reactors" },
+  { companySlug: "radiant-industries", date: "2025-05", kind: "Venture equity", amount: "$165M Series C", counterparty: "DCVC", source: "https://www.radiantnuclear.com/blog/series-c-close/" },
+  { companySlug: "valar-atomics", date: "2026-08", kind: "Venture equity", amount: "$1B Series B at a $6B valuation", counterparty: "Sequoia Capital (lead)", source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia" },
+  { companySlug: "valar-atomics", date: "2026-08", kind: "Venture debt", amount: "$200M credit facility, announced alongside the Series B", counterparty: "Erebor Bank (lead), J.P. Morgan, Crescent Cove, Hercules Capital", source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia" },
+  { companySlug: "valar-atomics", date: "2026-03", kind: "Venture equity", amount: "$340M equity within a $450M round at a $2B valuation", counterparty: "Not disclosed", source: "https://theaiworld.org/news/valar-atomics-raises-450m-to-power-ai-data-centres" },
+  { companySlug: "valar-atomics", date: "2026-03", kind: "Venture debt", amount: "$110M debt within the same $450M round", counterparty: "Not disclosed", source: "https://theaiworld.org/news/valar-atomics-raises-450m-to-power-ai-data-centres" },
+  { companySlug: "valar-atomics", date: "2025-11", kind: "Venture equity", amount: "$130M Series A", counterparty: "Not disclosed", source: "https://techfundingnews.com/a-high-school-dropouts-nuclear-startup-just-landed-1b-from-sequoia-at-a-6b-valuation/" },
+  { companySlug: "antares-nuclear", date: "2026-07", kind: "Venture equity", amount: "$370M equity within a $470M Series C", counterparty: "Paradigm and Caffeinated Capital", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
+  { companySlug: "antares-nuclear", date: "2026-07", kind: "Venture debt", amount: "$100M debt within the same $470M Series C", counterparty: "Not disclosed", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
+  { companySlug: "antares-nuclear", date: "2025-12", kind: "Venture equity", amount: "$71M equity within a $96M Series B", counterparty: "Shine Capital", source: "https://www.businesswire.com/news/home/20251202017776/en/Antares-Raises-$96-Million-in-Series-B-Funding-to-Accelerate-Nuclear-Microreactor-Development" },
+  { companySlug: "antares-nuclear", date: "2025-12", kind: "Venture debt", amount: "$25M debt within the same $96M Series B", counterparty: "Not disclosed", source: "https://www.businesswire.com/news/home/20251202017776/en/Antares-Raises-$96-Million-in-Series-B-Funding-to-Accelerate-Nuclear-Microreactor-Development" },
+  { companySlug: "deep-fission", date: "2026-06", kind: "IPO / listing", amount: "$40M gross at $16/share, scaled back from a ~$156M roadshow target", counterparty: "Nasdaq (FISN)", source: "https://www.gurufocus.com/news/8922229/deep-fission-fisn-prices-ipo-at-16-raising-40-million" },
+  { companySlug: "last-energy", date: "2025-12", kind: "Venture equity", amount: "$100M Series C", counterparty: "Astera Institute", source: "https://techcrunch.com/2025/12/16/nuclear-startup-last-energy-raises-100m-for-its-steel-encased-micro-reactor/" },
+  { companySlug: "last-energy", date: "2024-08", kind: "Venture equity", amount: "$40M Series B", counterparty: "Gigafund and the Autodesk Foundation", source: "https://www.nucnet.org/news/us-startup-last-energy-raises-usd40-million-for-ambitious-microreactor-project-8-5-2024" },
+  { companySlug: "deployable-energy", date: null, kind: "Venture equity", amount: "~$1.7M raised to date alongside substantial founder self-funding", counterparty: "Blue Corridor Ventures, Capital Factory, Nucleation Capital", source: "https://www.premieralts.com/companies/deployable-energy" },
+  { companySlug: "nano-nuclear", date: "2025-09", kind: "Federal award", amount: "~$1.25M AFWERX Direct-to-Phase-II contract, a feasibility study rather than a unit order", counterparty: "U.S. Air Force", source: "https://www.globenewswire.com/news-release/2025/09/09/3147107/0/en/FOR-IMMEDIATE-RELEASE-UPDATE-NANO-Nuclear-Awarded-AFWERX-Direct-to-Phase-II-Contract-for-KRONOS-MMR-RDT-E-at-Joint-Base-Anacostia-Bolling.html" },
+  { companySlug: "bwxt", date: "2020-12", kind: "Cost share", amount: "Share of a $30M DOE risk-reduction award split across five companies", counterparty: "DOE Advanced Reactor Demonstration Program", source: "https://www.neimagazine.com/news/bwxt-awarded-second-contract-to-evaluate-microreactor-for-wyoming/" },
+];
+
+export const cashPositions: CashPosition[] = [
+  { companySlug: "oklo", asOf: "2026-03-31", amount: "~$2.5B cash and marketable securities, no debt", source: "https://www.tipranks.com/news/oklo-is-about-to-report-q2-earnings-heres-what-to-expect-from-the-nuclear-energy-stock" },
+  { companySlug: "nuscale", asOf: "2026-03-31", amount: "$1.0B cash, equivalents and investments", source: "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-first-quarter-2026-results" },
+  { companySlug: "x-energy", asOf: "2026-03-31", amount: "$944.0M total liquidity, a pre-IPO balance date", source: "https://x-energy.com/news/x-energy-reports-first-quarter-2026-results/" },
+  { companySlug: "nano-nuclear", asOf: "2026-03-31", amount: "$568.7M cash and short-term investments", source: "https://www.stocktitan.net/news/NNE/nano-nuclear-reports-q1-fy-2026-financial-results-and-provides-awkjhq74zjnt.html" },
+  { companySlug: "terrestrial-energy", asOf: "2026-03-31", amount: "$289.9M cash and investments", source: "https://www.businesswire.com/news/home/20260514188075/en/Terrestrial-Energy-Reports-First-Quarter-2026-Results" },
+];
+
+export const proofEvents: ProofEvent[] = [
+  { companySlug: "antares-nuclear", date: "2026-06-04", kind: "Criticality", label: "Mark-0 reached initial criticality at Idaho National Laboratory, the first of the DOE pilot cohort", powerNote: "Zero-power demonstrator. Contributes 0 MWe.", source: "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors", verification: "Government-reported" },
+  { companySlug: "valar-atomics", date: "2026-06-18", kind: "Criticality", label: "Ward 250 reached fuelled criticality in Emery County, Utah, the only pilot reactor built outside a national laboratory", powerNote: "Ran at 100 kWt, a zero-power demonstration. Contributes 0 MWe.", source: "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality", verification: "Government-reported" },
+  { companySlug: "deployable-energy", date: "2026-07-01", kind: "Criticality", label: "Unity reached initial criticality at the National Reactor Innovation Center, INL, about 150 days from kickoff", powerNote: "Demonstration reactor. Contributes 0 MWe.", source: "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor", verification: "Government-reported" },
+  { companySlug: "aalo-atomics", date: "2026-07-04", kind: "Criticality", label: "Critical Test Reactor reached initial criticality at INL, the fourth and last before the July 4 goal and the first new reactor built at INL in 50 years", powerNote: "Zero-power test reactor. Contributes 0 MWe.", source: "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal", verification: "Government-reported" },
+  { companySlug: "terrapower", date: "2026-03", kind: "Permit / authorization", label: "NRC issued construction permit CPAR-1, the first for a commercial-scale Gen IV reactor and the first non-light-water permit in over 40 years", source: "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit", verification: "Company-reported" },
+  { companySlug: "terrapower", date: "2026-04", kind: "Construction start", label: "Nuclear construction began at Kemmerer with about 1,600 workers mobilized", source: "https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant", verification: "Company-reported" },
+  { companySlug: "kairos-power", date: "2026-04", kind: "Construction start", label: "Groundbreaking at Hermes 2, the first power-producing Gen IV reactor to hold an NRC construction permit", source: "https://www.kairospower.com/updates/kairos-power-breaks-ground-on-hermes-2-demonstration-plant", verification: "Company-reported" },
+  { companySlug: "kairos-power", date: "2026-05", kind: "Permit / authorization", label: "NRC extended the Hermes 1 construction-completion deadline from 2026-12-31 to 2029-04-30", source: "https://www.federalregister.gov/documents/2026/05/18/2026-09880/in-the-matter-of-kairos-power-llc-hermes-test-reactor-extension-of-latest-date-for-completion-of", verification: "Verified" },
+  { companySlug: "oklo", date: "2025-09", kind: "Construction start", label: "Groundbreaking on the first Aurora powerhouse at Idaho National Laboratory, under the DOE Reactor Pilot Program", source: "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx", verification: "Company-reported" },
+  { companySlug: "oklo", date: "2025-09", kind: "Permit / authorization", label: "DOE approved the conceptual design for the Aurora Fuel Fabrication Facility at INL, which will feed the first Aurora core", source: "https://www.energy.gov/ne/articles/us-department-energy-signs-oklo-fuel-fabrication-facility-design-concept", verification: "Government-reported" },
+  { companySlug: "oklo", date: "2025-12", kind: "Test program", label: "Fast-spectrum plutonium criticality experiment with Los Alamos National Laboratory", powerNote: "Research collaboration, not a licensed power reactor. Contributes 0 MWe.", source: "https://oklo.com/newsroom/news-details/2025/Oklo-and-Los-Alamos-National-Lab-Conduct-Fast-Spectrum-Plutonium-Criticality-Experiment/default.aspx", verification: "Company-reported" },
+  { companySlug: "oklo", date: "2026-07", kind: "Permit / authorization", label: "DOE issued startup authorization for the Groves isotope test reactor, clearing fuel load; criticality not confirmed as of 2026-08-05", source: "https://oklo.com/newsroom/news-details/2026/Oklo-Receives-U-S--Department-of-Energy-Startup-Authorization-for-Groves-Reactor-Clearing-Way-for-Fuel-Loading-and-First-Criticality/default.aspx", verification: "Company-reported" },
+  { companySlug: "radiant-industries", date: "2026-02", kind: "Permit / authorization", label: "DOE approved the Kaleidos preliminary documented safety analysis for the DOME test", source: "https://www.radiantnuclear.com/blog/doe-pdsa-approval/", verification: "Company-reported" },
+  { companySlug: "radiant-industries", date: "2026-07", kind: "Fuel milestone", label: "First TRISO fuel shipment received at the DOME facility, INL; criticality not confirmed as of 2026-08-05", source: "https://www.radiantnuclear.com/blog/triso-fuel-inl/", verification: "Company-reported" },
+  { companySlug: "x-energy", date: "2026-02", kind: "Permit / authorization", label: "NRC issued TRISO-X a 40-year special nuclear material license for commercial HALEU fuel manufacture", source: "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication", verification: "Government-reported" },
+  { companySlug: "gev-hitachi", date: "2026-03", kind: "Design proof (non-U.S.)", label: "Shaft excavation completed for the first BWRX-300 at Darlington, Ontario", powerNote: "Canadian unit. Contributes 0 MWe to the U.S. race.", source: "https://www.nucnet.org/news/opg-completes-excavation-works-at-darlington-bwrx-300-smr-project-3-1-2026", verification: "Press-reported" },
+  { companySlug: "nuscale", date: "2025-05", kind: "Permit / authorization", label: "NRC issued a standard design approval for the uprated 77 MWe design, the only approved U.S. SMR design", source: "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design", verification: "Government-reported" },
+  { companySlug: "nuscale", date: "2026-02", kind: "Design proof (non-U.S.)", label: "RoPower took a final investment decision for a 462 MWe six-module plant at Doicești, Romania", powerNote: "Romanian project. Contributes 0 MWe to the U.S. race.", source: "https://www.world-nuclear-news.org/articles/final-investment-decision-taken-for-romanias-smrs", verification: "Press-reported" },
+  { companySlug: "holtec", date: "2026-06", kind: "Design proof (non-U.S.)", label: "Holtec and EDF submitted a joint proposal for up to four SMR-300 units at Cottam, England", powerNote: "UK proposal. Contributes 0 MWe to the U.S. race.", source: "https://www.ans.org/news/2026-06-29/article-8155/holtec-and-edf-submit-proposal-to-deploy-smr300-at-cottam-nottinghamshire/", verification: "Press-reported" },
+  { companySlug: "westinghouse", date: "2026-02", kind: "Program selection / agreement", label: "DOE conditionally selected Westinghouse for the first fuelled microreactor experiments at the DOME test bed", source: "https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed", verification: "Government-reported" },
+  { companySlug: "westinghouse", date: null, kind: "Design proof (non-U.S.)", label: "The Saskatchewan Research Council is the first commercial eVinci customer, planning a pilot by 2029", powerNote: "Canadian customer. Contributes 0 MWe to the U.S. race.", source: "https://www.powermag.com/westinghouse-secures-first-customer-for-evinci-nuclear-microreactor/", verification: "Press-reported" },
+  { companySlug: "terrestrial-energy", date: "2025-09", kind: "Permit / authorization", label: "NRC approved the IMSR principal design criteria, including its inherent power-control mechanism", source: "https://www.globenewswire.com/news-release/2025/09/10/3147707/0/en/NRC-Completes-Safety-Evaluation-and-Approves-Terrestrial-Energy-IMSR-Principal-Design-Criteria-Including-its-Mechanism-for-Inherent-Reactor-Power-Control.html", verification: "Company-reported" },
+  { companySlug: "terrestrial-energy", date: "2026-01", kind: "Program selection / agreement", label: "Executed a DOE Other Transaction Agreement for Project TETRA, a pilot IMSR; it did not reach the July 4 2026 criticality goal", source: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under", verification: "Company-reported" },
+  { companySlug: "last-energy", date: "2026-05", kind: "Permit / authorization", label: "DOE approved the PWR-5 preliminary documented safety analysis at Texas A&M-RELLIS; criticality not confirmed as of 2026-08-05", source: "https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026", verification: "Press-reported" },
+  { companySlug: "last-energy", date: null, kind: "Design proof (non-U.S.)", label: "Signed power purchase agreements for 34 units, 680 MW, with four industrial partners in Poland and the UK", powerNote: "Non-U.S. capacity. Contributes 0 MWe to the U.S. race.", source: "https://www.powermag.com/last-energy-secures-ppas-for-34-smr-nuclear-power-plants-in-poland-and-the-uk/", verification: "Press-reported" },
+  { companySlug: "deep-fission", date: "2026-07", kind: "Test program", label: "An unfuelled prototype reactor canister arrived at the Parsons, Kansas site for installation testing", source: "https://www.deepfission.com/pr-media-kit/press-releases/detail/114/deep-fission-prototype-reactor-canister-arrives-at-kansas-site-advancing-reactor-proof-of-concept-program", verification: "Company-reported" },
+  { companySlug: "bwxt", date: "2024-09", kind: "Construction start", label: "The Department of Defense broke ground at INL for the Project Pele prototype site", source: "https://www.energy.gov/ne/articles/department-defense-breaks-ground-project-pele-microreactor", verification: "Government-reported" },
+  { companySlug: "bwxt", date: null, kind: "Fuel milestone", label: "Delivered a full core of TRISO fuel for the Project Pele microreactor; criticality not confirmed as of 2026-08-05", source: "https://www.bwxt.com/bwxt-delivers-full-core-of-triso-nuclear-fuel-for-project-pele-microreactor/", verification: "Company-reported" },
+  { companySlug: "aalo-atomics", date: "2025-09", kind: "Program selection / agreement", label: "Signed what Aalo describes as the first U.S. commercial contract for delivery of enriched uranium to a reactor company", source: "https://www.businesswire.com/news/home/20250910715287/en/Aalo-Atomics-Becomes-First-U.S.-Nuclear-Reactor-Company-with-a-Contract-for-Commercial-Delivery-of-Enriched-Uranium-Hits-Crucial-Next-Milestone-on-Path-to-2026-Startup", verification: "Company-reported" },
+  { companySlug: "valar-atomics", date: "2026-04", kind: "Permit / authorization", label: "DOE approved the final documented safety analysis for Ward 250, an expedited pathway that bypassed NRC licensing for this test unit", source: "https://oodaloop.com/briefs/technology/valar-atomics-begins-construction-on-ward-250-nuclear-reactor-utah/", verification: "Press-reported" },
+  { companySlug: "nano-nuclear", date: "2026-03", kind: "Permit / authorization", label: "The University of Illinois, with NANO Nuclear, submitted a construction-permit application to the NRC for a KRONOS reactor on its campus", powerNote: "A non-power research reactor. Contributes 0 MWe.", source: "https://npre.illinois.edu/news/stories/imdp-cpa", verification: "Institution-reported" },
+  { companySlug: "nano-nuclear", date: "2026-05", kind: "Permit / authorization", label: "NRC formally accepted the KRONOS construction-permit application for full review, an estimated 12-month clock", source: "https://www.globenewswire.com/news-release/2026/05/20/3298411/0/en/NANO-Nuclear-s-KRONOS-MMR-and-the-University-of-Illinois-Urbana-Champaign-Advance-to-Next-Regulatory-Milestone-as-U-S-NRC-Formally-Accepts-Construction-Permit-Application-for-Revie.html", verification: "Company-reported" },
+  { companySlug: "deployable-energy", date: "2026-04", kind: "Program selection / agreement", label: "Named one of the first four developers in DOE's Nuclear Energy Launch Pad", source: "https://inl.gov/news-release/national-reactor-innovation-center-announces-first-selections-for-nuclear-energy-launch-pad/", verification: "Government-reported" },
+  { companySlug: "antares-nuclear", date: "2026-07", kind: "Program selection / agreement", label: "One of three finalists competing for Air Force installation assignments in Colorado and Montana; no award made", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/", verification: "Press-reported" },
+];
+
+export const statedTargets: StatedTarget[] = [
+  { companySlug: "terrapower", target: "First Natrium plant completed in 2030", statedDate: "2026-03", source: "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit", conflict: "Coverage of the same permit frames the plant's NRC-told schedule as early 2031, a five to seven year slip from DOE's original target.", conflictSource: "https://thebreakthrough.org/press/release-the-nrc-issues-construction-permit-for-terrapowers-natrium-reactor" },
+  { companySlug: "oklo", target: "First commercial Aurora-INL plant in late 2027 to early 2028", statedDate: "2025-03", source: "https://www.utilitydive.com/news/oklo-75-mw-reactor-design-smr-nuclear/743578/" },
+  { companySlug: "kairos-power", target: "Hermes 2 operating by December 2027", statedDate: "2026-04", source: "https://www.neimagazine.com/news/kairos-breaks-ground-on-hermes-2/" },
+  { companySlug: "x-energy", target: "TX-1 fuel facility complete mid-2026, operations from 2027 supplying Long Mott", statedDate: "2026-02", source: "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication" },
+  { companySlug: "holtec", target: "Execute a power contract for PIONEER in 2026, NRC permit in 2028, interconnection in 2029", statedDate: null, source: "https://energy-communities-alliance.squarespace.com/s/Holtec-Slides.pdf" },
+  { companySlug: "nuscale", target: "Management targets converting the TVA collaboration into a signed power contract by the end of 2026", statedDate: "2026-05", source: "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-first-quarter-2026-results" },
+  { companySlug: "westinghouse", target: "Full-scale commercial eVinci deployment could begin as early as 2029, contingent on NRC licensing and HALEU supply", statedDate: null, source: "https://www.powermag.com/westinghouse-secures-first-customer-for-evinci-nuclear-microreactor/" },
+  { companySlug: "westinghouse", target: "AP300 design certification around 2027, first-unit construction toward the end of the decade, with no U.S. site named", statedDate: null, source: "https://www.world-nuclear-news.org/Articles/Westinghouse-unveils-AP300-small-modular-reactor" },
+  { companySlug: "terrestrial-energy", target: "Commercial IMSR plant at RELLIS in the early 2030s; no construction-start or first-power date disclosed", statedDate: "2026-06", source: "https://www.ans.org/news/2026-06-23/article-8139/terrestrial-energy-and-texas-am-reach-agreement-on-reactor-siting/" },
+  { companySlug: "aalo-atomics", target: "Aalo-X built by the end of 2026 and a reactor paired with a data centre by July 2027", statedDate: null, source: "https://www.aalo.com/aalo-x" },
+  { companySlug: "radiant-industries", target: "Factory-scale manufacturing and first customer deliveries beginning 2028", statedDate: null, source: "https://www.esgtoday.com/clean-energy-startup-radiant-raises-165-million-to-replace-diesel-generators-with-portable-nuclear-reactors/" },
+  { companySlug: "antares-nuclear", target: "Mark-1 producing electricity in 2027 and installation deployment by 2028", statedDate: "2026-07", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
+  { companySlug: "deep-fission", target: "First commercial underground reactor operating at Parsons, Kansas by 2027 or 2028", statedDate: null, source: "https://interestingengineering.com/energy/us-firm-deep-fission-6000-ft-well" },
+  { companySlug: "nano-nuclear", target: "Potential KRONOS construction start in the second half of 2027, after an estimated 12-month NRC review clock", statedDate: "2026-05", source: "https://www.globenewswire.com/news-release/2026/05/20/3298411/0/en/NANO-Nuclear-s-KRONOS-MMR-and-the-University-of-Illinois-Urbana-Champaign-Advance-to-Next-Regulatory-Milestone-as-U-S-NRC-Formally-Accepts-Construction-Permit-Application-for-Revie.html" },
+  { companySlug: "bwxt", target: "Tata Chemicals installation targeted for the early 2030s, with commercial terms still to be established", statedDate: "2024-12", source: "https://www.tatachemicals.com/upload/content_pdf/BWXT-Tata-LOI-12-December-2024.pdf" },
+];
+
+/** A gigawatt, the line every bar is read against. */
+export const gigawattMWe = 1000;
+
+/**
+ * The board track runs past the gigawatt line so the line reads as a target
+ * rather than the edge of the bar. Framework megawatts beyond it are clipped
+ * visually and carry their full figure in text.
+ */
+export const raceScaleMWe = 1200;
+
+/** One date for the whole dataset. Every "as of" on the site derives from it. */
+export const dataAsOf = "2026-08-05";
+
+export type RaceBandCell = { band: CapacityBand; label: string; mwe: number; claims: CapacityClaim[] };
+
+export type RaceRow = {
+  entrant: RaceEntrant;
+  company: Company;
+  cells: RaceBandCell[];
+  /** Sum of every band resting on an executed action. Framework is excluded by design. */
+  executedMWe: number;
+  frameworkMWe: number;
+  strongest: RaceBandCell | null;
+  strongestLine: string;
+  unitsToGigawatt: number;
+  ariaLabel: string;
+};
+
+const bandOrder = capacityBands.map((entry) => entry.band);
+/** Framework megawatts are announcements. They render, but they never move a row. */
+const rankedBands = bandOrder.filter((band) => band !== "framework");
+
+function formatMWe(mwe: number) {
+  return `${mwe.toLocaleString("en-US")} MWe`;
+}
+
+/**
+ * The one place per-entrant band sums are computed. Components render this and
+ * never aggregate claims themselves.
+ */
+export function raceBoard(claims: CapacityClaim[] = capacityClaims): RaceRow[] {
+  const rows = raceEntrants.map((entrant) => {
+    const company = companies.find((item) => item.slug === entrant.companySlug);
+    if (!company) throw new Error(`race entrant ${entrant.companySlug} has no company record`);
+    const own = claims.filter((claim) => claim.companySlug === entrant.companySlug);
+    const cells: RaceBandCell[] = capacityBands.map(({ band, label }) => {
+      const bandClaims = own.filter((claim) => claim.band === band);
+      return { band, label, mwe: bandClaims.reduce((total, claim) => total + claim.mwe, 0), claims: bandClaims };
+    });
+    const executedMWe = cells.filter((cell) => cell.band !== "framework").reduce((total, cell) => total + cell.mwe, 0);
+    const frameworkMWe = cells.find((cell) => cell.band === "framework")?.mwe ?? 0;
+    const strongest = cells.find((cell) => cell.band !== "framework" && cell.mwe > 0) ?? null;
+    const frameworkCell = cells.find((cell) => cell.band === "framework");
+
+    const strongestLine = strongest
+      ? `${strongest.label} · ${formatMWe(strongest.mwe)}`
+      : frameworkCell?.claims.length
+        ? "No executed megawatts · announced pipeline only"
+        : "No executed or announced megawatts on record";
+
+    // An unquantified framework is not the same fact as no framework. Saying
+    // "0 MWe announced" for a real agreement whose capacity was never disclosed
+    // would tell a screen-reader user the opposite of what the caption says.
+    const ariaLabel = `${company.name}: ${cells
+      .map((cell) => cell.mwe === 0 && cell.claims.length > 0
+        ? `${cell.label.toLowerCase()} on record, capacity not disclosed`
+        : `${formatMWe(cell.mwe)} ${cell.label.toLowerCase()}`)
+      .join(", ")}.`;
+
+    return {
+      entrant,
+      company,
+      cells,
+      executedMWe,
+      frameworkMWe,
+      strongest,
+      strongestLine,
+      unitsToGigawatt: Math.ceil(gigawattMWe / entrant.unitMWe),
+      ariaLabel,
+    };
+  });
+
+  return rows.sort((a, b) => {
+    for (const band of rankedBands) {
+      const left = a.cells.find((cell) => cell.band === band)?.mwe ?? 0;
+      const right = b.cells.find((cell) => cell.band === band)?.mwe ?? 0;
+      if (left !== right) return right - left;
+    }
+    return a.company.name.localeCompare(b.company.name);
+  });
+}
+
+/** Board-wide totals. Each band is its own frame; the numbers are never added across bands. */
+export function raceTotals(claims: CapacityClaim[] = capacityClaims) {
+  return capacityBands.map(({ band, label, rule, authority }) => ({
+    band,
+    label,
+    rule,
+    authority,
+    mwe: claims.filter((claim) => claim.band === band).reduce((total, claim) => total + claim.mwe, 0),
+    // Counted on having a claim, not on the claim carrying megawatts. An
+    // agreement of undisclosed size is still an agreement, and the rows say so.
+    entrants: new Set(claims.filter((claim) => claim.band === band).map((claim) => claim.companySlug)).size,
+  }));
+}
+
+export function entrantFor(companySlug: string) {
+  return raceEntrants.find((entrant) => entrant.companySlug === companySlug) ?? null;
+}
+
+/** Newest first. Undated records sort last rather than being dropped or guessed into place. */
+export function byDateDescending<T extends { date: string | null }>(records: T[]) {
+  return [...records].sort((a, b) => {
+    if (a.date === b.date) return 0;
+    if (!a.date) return 1;
+    if (!b.date) return -1;
+    return b.date.localeCompare(a.date);
+  });
+}
+
+/**
+ * How a dossier splits its ledgers. Defined here, not in the component, so a
+ * test can prove every record kind lands in exactly one lane. A kind that
+ * belongs to no lane would otherwise vanish from the page silently.
+ */
+export const fundingFrames: { frame: string; note: string; kinds: FundingEvent["kind"][] }[] = [
+  { frame: "Raised", note: "Private and public equity. Never added to federal money.", kinds: ["Venture equity", "Public offering", "IPO / listing", "Strategic investment"] },
+  { frame: "Awarded", note: "Federal awards and cost share. A ceiling, not cash received.", kinds: ["Federal award", "Cost share"] },
+  { frame: "Borrowed", note: "Debt, repayable. Never counted as a raise, federal or private.", kinds: ["Federal loan", "Venture debt"] },
+  { frame: "Filed, not raised", note: "A registration filed with the SEC. The filing itself raises nothing.", kinds: ["Offering filed"] },
+];
+
+export const proofLanes: { lane: string; note: string; kinds: ProofEvent["kind"][] }[] = [
+  { lane: "Licensing", note: "Applications, permits and authorizations, naming the authority in each case.", kinds: ["Permit / authorization"] },
+  { lane: "Physical progress", note: "Work at a site. Criticalities are proof the physics works, not electricity.", kinds: ["Construction start", "Criticality", "Fuel milestone", "Test program"] },
+  { lane: "Program selections and agreements", note: "Being chosen for a program, or signing one. Neither is a permit nor work at a site.", kinds: ["Program selection / agreement"] },
+  { lane: "Design proof outside the U.S.", note: "Real progress on the same design abroad. Contributes 0 MWe to the U.S. race.", kinds: ["Design proof (non-U.S.)"] },
+];
+
+export function dossierFor(companySlug: string) {
+  const entrant = entrantFor(companySlug);
+  if (!entrant) return null;
+  const claims = capacityClaims.filter((claim) => claim.companySlug === companySlug);
+  return {
+    entrant,
+    row: raceBoard().find((row) => row.entrant.companySlug === companySlug) ?? null,
+    funding: fundingFrames.map((frame) => ({
+      ...frame,
+      events: byDateDescending(fundingEvents.filter((event) => event.companySlug === companySlug && frame.kinds.includes(event.kind))),
+    })),
+    cash: cashPositions.filter((position) => position.companySlug === companySlug),
+    proof: proofLanes.map((lane) => ({
+      ...lane,
+      events: byDateDescending(proofEvents.filter((event) => event.companySlug === companySlug && lane.kinds.includes(event.kind))),
+    })),
+    pipeline: {
+      executed: byDateDescending(claims.filter((claim) => claim.band !== "framework")),
+      announced: byDateDescending(claims.filter((claim) => claim.band === "framework")),
+    },
+    targets: statedTargets.filter((target) => target.companySlug === companySlug),
+  };
 }

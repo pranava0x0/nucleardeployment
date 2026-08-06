@@ -10,6 +10,16 @@
 - [x] Add a machine-readable source registry plus append-only web-search and agent-run history.
 - [x] Replace the misleading schematic map with a regional location ledger until verified coordinates exist.
 
+## Race board follow-ups
+
+- [ ] Bring the stage pipeline's company chips up to the 44px touch floor. Measured 2026-08-05 at 375px: 31 links inside `.pipe-companies` render at 20 to 39px. Pre-existing and untouched by the race work, and the fix is not free, since 44px on every chip makes the pipeline cards much taller. Decide whether to raise the chips, make each card a single target, or document an inline exception in DESIGN.md. Priority: medium.
+- [ ] Upgrade the remaining 52 trade-press citations to primary sources. Run `npm run data:press` for the queue. Eleven were upgraded on 2026-08-05; the rest need a company newsroom, regulator, or national-lab original located and read. Ten cite low-quality aggregators (tipranks, stocktitan, gurufocus, premieralts, techfundingnews, theaiworld, interestingengineering, manilatimes) and should go first. Priority: medium.
+- [ ] Watch uncompressed page weight. The homepage is 456 KB raw against a 250 KB target, though only 122 KB gzipped. The 185 KB React framework chunk dominates and predates this work; revisit if the raw figure gates anything. Priority: low.
+- [ ] Add the `permitted` band back when an entrant first holds an authorization with no physical work started. It was dropped because no entrant occupied it and an empty legend slot is worse than an absent one. Priority: low.
+- [ ] Bootstrap a `REFRESH.md` for the race dataset via the data-refresh skill, so capacity claims, funding rounds, and proof events can be re-verified on a cadence rather than by hand. Priority: medium.
+- [ ] Re-check Radiant's unit rating. The spec's synthesis table says 1.2 MWe and the microreactor fact pack says about 1 MWe; the site ships 1 because the pack is the research base. Priority: low.
+- [ ] Revisit whether the board needs its own `/race` route once the roster passes about 25 entrants. It sits on `/` today, per the spec's one-surface preference. Priority: low.
+
 ## Data foundation
 
 - [ ] Move the canonical dataset from `app/data.ts` into validated normalized records with entities for projects, designs, programs, milestones, commitments, licenses, funding, facilities, and sources.
@@ -28,6 +38,8 @@
 
 ## Product
 
+- [x] Decide the LWR/SMR refocus. Resolved 2026-08-05 as a company-centric gigawatt race; the three blocking scope questions are answered in [docs/plan-gigawatt-race.md](docs/plan-gigawatt-race.md), and [docs/redesign-lwr-smr.md](docs/redesign-lwr-smr.md) keeps the measured scope analysis.
+- [x] Implement the gigawatt race per [docs/plan-gigawatt-race.md](docs/plan-gigawatt-race.md). All five phases shipped 2026-08-05: race data layer, homepage race board, company race dossiers, methodology, and UAT. Decisions, deviations, and the defects found in review are recorded in [docs/gigawatt-race-implementation-record.md](docs/gigawatt-race-implementation-record.md). Remaining follow-ups are in "Race board follow-ups" above.
 - [ ] Add a true geographic layer only after complete coordinates and accessible list parity exist.
 - [ ] Add shareable URL filters and project comparison.
 - [ ] Add CSV downloads and a public API after the normalized schema stabilizes.

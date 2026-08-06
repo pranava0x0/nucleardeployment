@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Deployment Core · U.S. Nuclear Tracker",
     description: "From interest to repeat deployment: see who is building, what moved, and what comes next.",
     type: "website",
-    images: [{ url: imageUrl, width: 1735, height: 907, alt: "Deployment Core — From interest to repeat deployment" }],
+    images: [{ url: imageUrl, width: 1735, height: 907, alt: "Deployment Core: from interest to repeat deployment" }],
   },
   twitter: {
     card: "summary_large_image",

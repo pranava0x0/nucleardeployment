@@ -1,0 +1,155 @@
+# Deployment Core
+
+> A public evidence layer for U.S. nuclear deployment. It tracks which companies
+> are building new-design reactors, how far each has actually got, and what
+> document proves it. Every number on the site links to a source.
+
+Data as of 2026-08-05. This is a tracked sample, not a census.
+
+## What the site measures
+
+Companies race to put one gigawatt of new-design nuclear on the U.S. grid.
+Each company's capacity is split into bands by how strong the evidence is.
+A megawatt sits in exactly one band, so the bands never double-count.
+
+- **Operational** (0 MWe, 0 companies): Grid-connected and generating commercial power. Granting authority: Grid operator.
+- **Nuclear construction** (365 MWe, 2 companies): NRC construction permit issued and physical nuclear work documented. Granting authority: NRC.
+- **DOE-authorized build** (75 MWe, 1 companies): Built under a DOE authorization pathway with physical work documented. Not an NRC license to operate. Granting authority: DOE.
+- **Under review** (1,220 MWe, 3 companies): Construction-permit or combined-license application docketed and in active regulator review. Granting authority: NRC.
+- **Contracted** (321 MWe, 2 companies): An executed, funded agreement for a named project, whether offtake, order, delivery, or development funding, not yet in regulator review. Each claim says which kind it is. Granting authority: Counterparty.
+- **Announced, non-binding** (40,075 MWe, 13 companies): MOU, LOI, master agreement, or announced target. No executed project documents. Granting authority: None.
+
+## The headline numbers
+
+- No company has generated a commercial megawatt. Operational capacity is 0 MWe.
+- 440 MWe is physically under construction.
+- 1,981 MWe rests on an executed action of any kind, including applications filed.
+- 40,075 MWe has been announced without binding documents.
+- Announced capacity is about 20x everything executed, and about 91x what is being built.
+
+## Rules that govern the numbers
+
+- Binding and non-binding capacity are never added together.
+- Test reactors and critical experiments count 0 MWe. A criticality proves the
+  physics works. It is not electricity and not a licence to sell any.
+- A company-stated target never moves a megawatt between bands. Only a
+  documented action does.
+- U.S. megawatts only. The same design built abroad counts 0 MWe here.
+- A DOE authorization is not an NRC licence. The bands keep them apart.
+
+## Companies
+
+1. **TerraPower** (Natrium, 345 MWe per unit, Grid-scale SMR)
+   - Strongest state: Nuclear construction · 345 MWe
+   - Capacity: 345 MWe nuclear construction; 3,490 MWe announced, non-binding
+   - On the board because: NRC construction permit issued for Kemmerer Unit 1 and construction underway in Wyoming. Source: https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/terrapower
+2. **Kairos Power** (KP-FHR, 140 MWe per unit, Grid-scale SMR)
+   - Strongest state: Nuclear construction · 20 MWe
+   - Capacity: 20 MWe nuclear construction; 480 MWe announced, non-binding
+   - On the board because: Hermes 2 holds the first NRC construction permit for a power-producing Gen IV reactor and is under construction. Source: https://www.kairospower.com/updates/kairos-power-breaks-ground-on-hermes-2-demonstration-plant
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/kairos-power
+3. **Oklo** (Aurora, 75 MWe per unit, Grid-scale SMR)
+   - Strongest state: DOE-authorized build · 75 MWe
+   - Capacity: 75 MWe doe-authorized build; 13,755 MWe announced, non-binding
+   - On the board because: Aurora-INL under construction under the DOE Reactor Pilot Program, with a combined license application submitted to the NRC. Source: https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/oklo
+4. **Holtec International** (SMR-300, 300 MWe per unit, Grid-scale SMR)
+   - Strongest state: Under review · 600 MWe
+   - Capacity: 600 MWe under review; 2,040 MWe announced, non-binding
+   - On the board because: Phased construction-permit application for PIONEER 1&2 docketed at the NRC for the Palisades site. Source: https://www.federalregister.gov/documents/2026/02/27/2026-03943/smr-llc-pioneer-units-1-and-2-phased-construction-permit-application-limited-work-authorization
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/holtec
+5. **X-energy** (Xe-100, 80 MWe per unit, Grid-scale SMR)
+   - Strongest state: Under review · 320 MWe
+   - Capacity: 320 MWe under review; 320 MWe contracted; 4,680 MWe announced, non-binding
+   - On the board because: Long Mott construction-permit application under NRC safety review after the environmental review closed. Source: https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-054.pdf
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/x-energy
+6. **GE Vernova Hitachi** (BWRX-300, 300 MWe per unit, Grid-scale SMR)
+   - Strongest state: Under review · 300 MWe
+   - Capacity: 300 MWe under review; 3,000 MWe announced, non-binding
+   - On the board because: TVA's Clinch River Unit 1 construction permit is under NRC review with a mandatory hearing scheduled. Source: https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/gev-hitachi
+7. **Radiant Industries** (Kaleidos, 1 MWe per unit, Microreactor)
+   - Strongest state: Contracted · 1 MWe
+   - Capacity: 1 MWe contracted
+   - On the board because: Signed delivery agreement with the Defense Innovation Unit and the Department of the Air Force. Source: https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/radiant-industries
+8. **Aalo Atomics** (Aalo-X, 10 MWe per unit, Microreactor)
+   - Strongest state: No executed megawatts · announced pipeline only
+   - Capacity: none on record
+   - On the board because: Reached DOE-authorized criticality with its Critical Test Reactor at Idaho National Laboratory, the fourth and last before the July 4 2026 goal. Source: https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/aalo-atomics
+9. **Antares Nuclear** (R1, 0.3 MWe per unit, Microreactor)
+   - Strongest state: No executed or announced megawatts on record
+   - Capacity: none on record
+   - On the board because: First DOE Reactor Pilot Program participant to reach criticality, at INL with the U.S. Army. Source: https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/antares-nuclear
+10. **BWXT** (Project Pele / BANR, 1.5 MWe per unit, Microreactor)
+   - Strongest state: No executed megawatts · announced pipeline only
+   - Capacity: none on record
+   - On the board because: Prime contractor building the Project Pele transportable microreactor for the Department of Defense at INL. Source: https://www.energy.gov/ne/articles/department-defense-breaks-ground-project-pele-microreactor
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/bwxt
+11. **Deep Fission** (Gravity Reactor, 15 MWe per unit, Microreactor)
+   - Strongest state: No executed megawatts · announced pipeline only
+   - Capacity: 2,000 MWe announced, non-binding
+   - On the board because: DOE Reactor Pilot Program selection with a sited pilot project at Parsons, Kansas. Source: https://www.world-nuclear-news.org/articles/deep-fission-begins-drilling-first-data-acquisition-well
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/deep-fission
+12. **Deployable Energy** (Unity, 1 MWe per unit, Microreactor)
+   - Strongest state: No executed or announced megawatts on record
+   - Capacity: none on record
+   - On the board because: Reached DOE-authorized criticality with the Unity reactor at Idaho National Laboratory. Source: https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/deployable-energy
+13. **Last Energy** (PWR-20, 20 MWe per unit, Microreactor)
+   - Strongest state: No executed megawatts · announced pipeline only
+   - Capacity: 600 MWe announced, non-binding
+   - On the board because: Selected for the DOE Reactor Pilot Program to build and test the PWR-5 at the Texas A&M-RELLIS campus. Source: https://www.world-nuclear-news.org/articles/last-energy-microreactor-planned-at-texas-university
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/last-energy
+14. **NANO Nuclear Energy** (KRONOS MMR, 15 MWe per unit, Microreactor)
+   - Strongest state: No executed or announced megawatts on record
+   - Capacity: none on record
+   - On the board because: NRC accepted the KRONOS construction-permit application for the University of Illinois site. Source: https://npre.illinois.edu/news/stories/imdp-cpa
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/nano-nuclear
+15. **NuScale Power** (NuScale Power Module / VOYGR, 77 MWe per unit, Grid-scale SMR)
+   - Strongest state: No executed megawatts · announced pipeline only
+   - Capacity: 6,000 MWe announced, non-binding
+   - On the board because: Holds the only NRC-approved SMR design in the United States, a standard design approval for the 77 MWe module. Source: https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/nuscale
+16. **Terrestrial Energy** (IMSR, 195 MWe per unit, Grid-scale SMR)
+   - Strongest state: No executed megawatts · announced pipeline only
+   - Capacity: 4,000 MWe announced, non-binding
+   - On the board because: Secured roughly 77 acres at the Texas A&M-RELLIS campus for a pilot IMSR, to generate the site data an NRC construction-permit application requires. Source: https://www.ans.org/news/2026-06-23/article-8139/terrestrial-energy-and-texas-am-reach-agreement-on-reactor-siting/
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/terrestrial-energy
+17. **Valar Atomics** (Ward 250, 5 MWe per unit, Microreactor)
+   - Strongest state: No executed megawatts · announced pipeline only
+   - Capacity: 30 MWe announced, non-binding
+   - On the board because: Reached DOE-authorized criticality in Utah, the only pilot reactor built outside a national laboratory. Source: https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/valar-atomics
+18. **Westinghouse** (eVinci, 5 MWe per unit, Microreactor)
+   - Strongest state: No executed or announced megawatts on record
+   - Capacity: none on record
+   - On the board because: DOE selected the eVinci for the first fueled microreactor experiments at the DOME test bed, the company's only documented U.S. reactor program. Source: https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed
+   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/westinghouse
+
+## Where the evidence comes from
+
+Every record names who reported it, in the order the methodology ranks them:
+- Verified: 3 records
+- Government-reported: 10 records
+- Institution-reported: 1 records
+- Company-reported: 29 records
+- Press-reported: 18 records
+
+- Verified means the regulator's own record, such as a Federal Register notice.
+- Press-reported is a real source, but it is never the best one available when
+  the company or the regulator published the same fact.
+
+## Pages
+
+- https://pranava0x0.github.io/nucleardeployment/ - the race board
+- https://pranava0x0.github.io/nucleardeployment/methodology - roster rule, band rules, source hierarchy
+- https://pranava0x0.github.io/nucleardeployment/deployments - every tracked project record
+- https://pranava0x0.github.io/nucleardeployment/companies - every company
+- https://pranava0x0.github.io/nucleardeployment/federal-action - executive orders and DOE programs
+- https://pranava0x0.github.io/nucleardeployment/capital - loans, awards, and cost shares
+
+Generated from app/data.ts by scripts/build-llms-txt.mjs. Do not edit by hand.
