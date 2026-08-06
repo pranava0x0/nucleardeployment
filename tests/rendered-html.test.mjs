@@ -824,3 +824,77 @@ test("a dossier never attributes its state to a regulator that did not document 
     }
   }
 });
+
+test("llms.txt is generated from the data and stays in sync", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const dataModule = await import("../app/data.ts");
+  const llms = await readFile(new URL("../public/llms.txt", import.meta.url), "utf8");
+
+  // Generated, never hand-edited. scripts/build-llms-txt.mjs --check enforces
+  // byte equality; this asserts the content a machine reader depends on.
+  assert.match(llms, /Do not edit by hand/);
+  assert.ok(llms.includes(`Data as of ${dataModule.dataAsOf}`), "llms.txt states the data date");
+  for (const band of dataModule.capacityBands) {
+    const total = dataModule.raceTotals().find((entry) => entry.band === band.band);
+    assert.ok(llms.includes(`**${band.label}** (${total.mwe.toLocaleString("en-US")} MWe`), `llms.txt carries the ${band.label} total`);
+  }
+  for (const entrant of dataModule.raceEntrants) {
+    const company = dataModule.companies.find((item) => item.slug === entrant.companySlug);
+    assert.ok(llms.includes(company.name), `llms.txt lists ${company.name}`);
+    assert.ok(llms.includes(entrant.rosterSource), `llms.txt cites why ${company.name} qualifies`);
+  }
+  // The rules a reader needs to not misuse the numbers.
+  for (const rule of ["never added together", "count 0 MWe", "never moves a megawatt", "U.S. megawatts only"]) {
+    assert.ok(llms.includes(rule), `llms.txt states the rule: ${rule}`);
+  }
+  // It is served as a static file, so it must land in the build output.
+  const built = await readFile(new URL("../dist/client/llms.txt", import.meta.url), "utf8");
+  assert.equal(built, llms, "the built llms.txt matches the committed one");
+});
+
+test("every page passes the accessibility checks a screen reader depends on", async () => {
+  const dataModule = await import("../app/data.ts");
+  const paths = ["/", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
+    ...dataModule.raceEntrants.slice(0, 4).map((entrant) => `/companies/${entrant.companySlug}`)];
+
+  for (const path of paths) {
+    const raw = await (await render(path)).text();
+    const html = raw.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<!--.*?-->/g, "");
+
+    assert.match(raw, /<html[^>]+lang="en"/, `${path} declares a language`);
+    assert.match(html, /<a[^>]*class="skip-link"[^>]*href="#main"/, `${path} has a skip link`);
+    assert.match(html, /id="main"/, `${path} has the skip-link target`);
+
+    // Every image carries alt text. An empty alt is allowed only when the image
+    // is decorative and marked aria-hidden.
+    for (const [tag] of [...html.matchAll(/<img\b[^>]*>/g)].map((match) => [match[0]])) {
+      assert.match(tag, /\salt="/, `${path} has an image with no alt attribute: ${tag.slice(0, 80)}`);
+      if (/alt=""/.test(tag)) assert.match(tag, /aria-hidden="true"/, `${path} has an empty alt that is not marked decorative`);
+    }
+
+    // Every link has an accessible name: text content, or an explicit label.
+    for (const match of html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)) {
+      const [, attrs, inner] = match;
+      const visible = inner.replace(/<[^>]+>/g, "").replace(/&[a-z]+;|&#x?[0-9a-f]+;/gi, "").trim();
+      const labelled = /aria-label="[^"]+"/.test(attrs) || /aria-labelledby="/.test(attrs);
+      assert.ok(visible.length > 0 || labelled, `${path} has a link with no accessible name: ${match[0].slice(0, 90)}`);
+    }
+
+    // Headings descend without skipping a level, so the outline is navigable.
+    const levels = [...html.matchAll(/<h([1-4])\b/g)].map((match) => Number(match[1]));
+    assert.equal(levels[0], 1, `${path} starts at h1`);
+    assert.equal(levels.filter((level) => level === 1).length, 1, `${path} has exactly one h1`);
+    for (let i = 1; i < levels.length; i += 1) {
+      assert.ok(levels[i] - levels[i - 1] <= 1, `${path} skips from h${levels[i - 1]} to h${levels[i]}`);
+    }
+
+    // Duplicate ids break every id-based association, including labels.
+    const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]);
+    assert.equal(new Set(ids).size, ids.length, `${path} repeats an id: ${ids.find((id, i) => ids.indexOf(id) !== i)}`);
+
+    // A hidden subtree must not contain anything focusable.
+    for (const match of html.matchAll(/<([a-z]+)\b[^>]*aria-hidden="true"[^>]*>([\s\S]{0,400}?)<\/\1>/g)) {
+      assert.doesNotMatch(match[2], /<a\s|<button\s|tabindex="0"/, `${path} hides a focusable element from assistive tech`);
+    }
+  }
+});

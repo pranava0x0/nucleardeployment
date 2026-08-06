@@ -15,7 +15,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand" href="/" aria-label="Deployment Core home">
-        <span className="brand-mark" aria-hidden="true"><Image src={`${basePath}/brand/reactor-velocity-mark.png`} alt="" width={58} height={58} unoptimized /></span>
+        <span className="brand-mark" aria-hidden="true"><Image src={`${basePath}/brand/reactor-velocity-mark.png`} alt="" aria-hidden="true" width={58} height={58} unoptimized /></span>
         <span><b>DEPLOYMENT</b><small>CORE / U.S. NUCLEAR</small></span>
       </Link>
       <nav aria-label="Primary navigation">

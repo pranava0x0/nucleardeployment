@@ -284,6 +284,17 @@ Concrete gotchas that aren't obvious until you hit them:
 - **No `print()` for runtime output**. Use the `logging` module.
 - **Test alongside code, not after.**
 - **Commit at natural checkpoints**: per-feature, per-bug-fix, per-doc-update. Small, focused commits over large monolithic ones.
+- **Data collection gets a script; data judgement does not.** Anything mechanical
+  and repeatable (validating sources, checking links, generating derived files,
+  linting prose) is a script in `scripts/` with an `npm run data:*` entry, so the
+  next session runs a command instead of re-deriving the method. Anything
+  requiring a read (does this page support this claim, is this the best available
+  source) stays a human or agent read, recorded in
+  `data/research/link-check-history.jsonl`. See [REFRESH.md](REFRESH.md).
+- **Never cite a source you have not opened.** Copy the URL from the page you
+  read. A reconstructed slug can resolve to a real but unrelated document, which
+  is worse than a dead link because nothing looks wrong. One such citation
+  survived three review rounds here.
 - **Touch targets ≥ 44px on touch** — gate on `@media (pointer: coarse)` so desktop inline controls don't bloat (see [DESIGN.md § 12](DESIGN.md) pitfall).
 - **Mobile first.** If you change UI, resize the preview to 375×812 (iPhone SE) and verify before declaring done.
 - **No API keys in code, ever.** Read from environment variables; halt with a clear error if missing.

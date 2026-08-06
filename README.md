@@ -41,6 +41,17 @@ npm run lint
 npm run test:pages
 ```
 
+## Check the data
+
+```bash
+npm run data:check
+```
+
+Validates every source, confirms `public/llms.txt` matches the data, and reads
+the built pages for model-register words. `npm run data:press` lists records
+still citing trade press; `npm run data:links` re-checks that every source
+resolves. The full procedure is in [REFRESH.md](REFRESH.md).
+
 ## Publish
 
 Every push to `main` builds, verifies, and deploys the static export with GitHub Actions. The project-path checks prevent broken assets and links on GitHub Pages.
