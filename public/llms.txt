@@ -14,7 +14,7 @@ A megawatt sits in exactly one band, so the bands never double-count.
 
 - **Operational** (0 MWe, 0 companies): Grid-connected and generating commercial power. Granting authority: Grid operator.
 - **Nuclear construction** (365 MWe, 2 companies): NRC construction permit issued and physical nuclear work documented. Granting authority: NRC.
-- **DOE-authorized build** (75 MWe, 1 companies): Built under a DOE authorization pathway with physical work documented. Not an NRC license to operate. Granting authority: DOE.
+- **DOE-authorized build** (75 MWe, 1 company): Built under a DOE authorization pathway with physical work documented. Not an NRC license to operate. Granting authority: DOE.
 - **Under review** (1,220 MWe, 3 companies): Construction-permit or combined-license application docketed and in active regulator review. Granting authority: NRC.
 - **Contracted** (321 MWe, 2 companies): An executed, funded agreement for a named project, whether offtake, order, delivery, or development funding, not yet in regulator review. Each claim says which kind it is. Granting authority: Counterparty.
 - **Announced, non-binding** (40,075 MWe, 13 companies): MOU, LOI, master agreement, or announced target. No executed project documents. Granting authority: None.

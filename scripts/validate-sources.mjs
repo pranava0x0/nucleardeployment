@@ -33,6 +33,8 @@ const unknownHosts = new Map();
 
 const knownHosts = new Set(data.verificationHosts.flatMap((tier) => tier.hosts));
 
+const byTier = {};
+
 for (const row of rows) {
   const host = hostOf(row.source);
   if (!host) {
@@ -42,7 +44,10 @@ for (const row of rows) {
   if (!row.source.startsWith("https://")) {
     errors.push(`${row.kind} ${row.companySlug}: source is not https: ${row.source}`);
   }
+  // Resolved once per row. A second pass to build the tally recomputed this for
+  // every record and left two places to keep in step.
   const tier = data.verificationForSource(row.source);
+  byTier[tier] = (byTier[tier] ?? 0) + 1;
   if (row.verification && row.verification !== tier) {
     errors.push(`${row.kind} ${row.companySlug}: labelled ${row.verification} but ${host} is ${tier}`);
   }
@@ -50,12 +55,6 @@ for (const row of rows) {
     unknownHosts.set(host, (unknownHosts.get(host) ?? 0) + 1);
   }
   if (tier === "Press-reported") pressRows.push({ ...row, host });
-}
-
-const byTier = {};
-for (const row of rows) {
-  const tier = data.verificationForSource(row.source);
-  byTier[tier] = (byTier[tier] ?? 0) + 1;
 }
 
 if (args.has("--json")) {
@@ -86,12 +85,14 @@ if (args.has("--json")) {
     }
   }
   console.log(`\n${pressRows.length} record(s) cite trade press. Run with --press to list them.`);
-  if (errors.length) {
-    console.log(`\n${errors.length} error(s):`);
-    for (const error of errors) console.log(`   ${error}`);
-  } else {
-    console.log("\nNo source errors.");
-  }
+  if (!errors.length) console.log("\nNo source errors.");
+}
+
+// Printed in every mode. Exiting non-zero without saying why leaves the caller
+// to rerun a different subcommand to find out.
+if (errors.length && !args.has("--json")) {
+  console.error(`\n${errors.length} error(s):`);
+  for (const error of errors) console.error(`   ${error}`);
 }
 
 process.exit(errors.length ? 1 : 0);

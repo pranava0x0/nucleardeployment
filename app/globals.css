@@ -343,6 +343,8 @@ footer a { margin-left: auto; font: 700 13px var(--font-mono); }
 .race-seg { min-width: 3px; height: 100%; display: block; }
 .gw-line { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--ink); z-index: 2; }
 .race-caption { margin: 5px 0 0; font: 500 12px/1.4 var(--font-mono); color: var(--ink-muted); }
+.race-overflow { color: var(--ink); font-weight: 700; }
+.race-track[data-overflow="true"] { border-right: 3px solid var(--signal); }
 
 .legend-swatch { width: 16px; height: 16px; flex: none; border: 1px solid var(--border-strong); }
 .band-operational { background: var(--verified); }

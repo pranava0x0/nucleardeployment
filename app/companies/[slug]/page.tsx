@@ -58,9 +58,11 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
       <p className="race-state">{dossier.row.strongestLine}</p>
       <p className="gw-math">
         One gigawatt is <b>{dossier.row.unitsToGigawatt} × {mwe(dossier.entrant.unitMWe)} MWe</b> units.
-        {" "}{dossier.row.executedMWe > 0
-          ? <>{mwe(dossier.row.executedMWe)} MWe rest on an executed action, {Math.round((dossier.row.executedMWe / gigawattMWe) * 100)}% of the way there.</>
-          : <>No megawatts rest on an executed action yet.</>}
+        {" "}{dossier.row.executedMWe >= gigawattMWe
+          ? <>{mwe(dossier.row.executedMWe)} MWe rest on an executed action, past the gigawatt.</>
+          : dossier.row.executedMWe > 0
+            ? <>{mwe(dossier.row.executedMWe)} MWe rest on an executed action, {Math.round((dossier.row.executedMWe / gigawattMWe) * 100)}% of the way there.</>
+            : <>No megawatts rest on an executed action yet.</>}
       </p>
       <p className="roster-basis"><b>Why this company is on the board:</b> {dossier.entrant.rosterBasis}{" "}
         <a href={dossier.entrant.rosterSource} target="_blank" rel="noreferrer">Source ↗</a></p>

@@ -18,6 +18,14 @@ const OUT = new URL("../public/llms.txt", import.meta.url);
 const data = await loadData();
 const mwe = (value) => value.toLocaleString("en-US");
 
+/** Matches app/layout.tsx, which builds metadataBase from the same variable. */
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://pranava0x0.github.io").replace(/\/$/, "");
+const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH ?? "/nucleardeployment").replace(/\/$/, "");
+const page = (path = "") => `${SITE_URL}${BASE_PATH}${path}`;
+
+/** "1 companies" is the kind of thing a machine reader quotes back at you. */
+const plural = (count, one, many) => `${count} ${count === 1 ? one : many}`;
+
 const totals = data.raceTotals();
 const executed = totals.filter((entry) => entry.band !== "framework").reduce((sum, entry) => sum + entry.mwe, 0);
 const building = totals.filter((entry) => entry.band === "construction" || entry.band === "doe-authorized").reduce((sum, entry) => sum + entry.mwe, 0);
@@ -43,7 +51,7 @@ say("A megawatt sits in exactly one band, so the bands never double-count.");
 say();
 for (const band of data.capacityBands) {
   const total = totals.find((entry) => entry.band === band.band);
-  say(`- **${band.label}** (${mwe(total.mwe)} MWe, ${total.entrants} companies): ${band.rule} Granting authority: ${band.authority}.`);
+  say(`- **${band.label}** (${mwe(total.mwe)} MWe, ${plural(total.entrants, "company", "companies")}): ${band.rule} Granting authority: ${band.authority}.`);
 }
 say();
 
@@ -75,7 +83,7 @@ for (const [index, row] of data.raceBoard().entries()) {
   say(`   - Strongest state: ${row.strongestLine}`);
   say(`   - Capacity: ${parts.length ? parts.join("; ") : "none on record"}`);
   say(`   - On the board because: ${row.entrant.rosterBasis} Source: ${row.entrant.rosterSource}`);
-  say(`   - Full record: https://pranava0x0.github.io/nucleardeployment/companies/${row.company.slug}`);
+  say(`   - Full record: ${page(`/companies/${row.company.slug}`)}`);
 }
 say();
 
@@ -97,12 +105,12 @@ say();
 
 say("## Pages");
 say();
-say("- https://pranava0x0.github.io/nucleardeployment/ - the race board");
-say("- https://pranava0x0.github.io/nucleardeployment/methodology - roster rule, band rules, source hierarchy");
-say("- https://pranava0x0.github.io/nucleardeployment/deployments - every tracked project record");
-say("- https://pranava0x0.github.io/nucleardeployment/companies - every company");
-say("- https://pranava0x0.github.io/nucleardeployment/federal-action - executive orders and DOE programs");
-say("- https://pranava0x0.github.io/nucleardeployment/capital - loans, awards, and cost shares");
+say(`- ${page("/")} - the race board`);
+say(`- ${page("/methodology")} - roster rule, band rules, source hierarchy`);
+say(`- ${page("/deployments")} - every tracked project record`);
+say(`- ${page("/companies")} - every company`);
+say(`- ${page("/federal-action")} - executive orders and DOE programs`);
+say(`- ${page("/capital")} - loans, awards, and cost shares`);
 say();
 say("Generated from app/data.ts by scripts/build-llms-txt.mjs. Do not edit by hand.");
 

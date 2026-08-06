@@ -45,5 +45,7 @@ jobs:
         run: npm run lint
       - name: Build and verify rendered HTML
         run: npm test
+      - name: Validate every sourced record, llms.txt, and shipped prose
+        run: npm run data:check
       - name: Build and verify static Pages export
         run: npm run test:pages

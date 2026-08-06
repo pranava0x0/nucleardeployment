@@ -16,14 +16,23 @@
 
 import { loadData } from "./lib/records.mjs";
 
+/**
+ * Matched on word boundaries, so "underscore" does not fire inside a longer
+ * word. "realm" and "not only" were here and are not: both have ordinary uses
+ * ("the regulatory realm", "not only the NRC but also DOE") and a hard failure
+ * with no escape hatch would block a legitimate sentence.
+ */
 const BANNED = [
-  "delve", "leverage", "robust", "seamless", "elevate", "unlock", "empower", "harness",
+  "delve", "leverage", "seamless", "elevate", "unlock", "empower", "harness",
   "tapestry", "testament", "underscore", "pivotal", "cutting-edge", "game-changer",
-  "ever-evolving", "realm", "it's worth noting", "it's important to note",
+  "ever-evolving", "robust", "it's worth noting", "it's important to note",
   "when it comes to", "at the end of the day", "in conclusion", "at your fingertips",
-  "next level", "designed to help you", "not only", "navigate the complexities",
-  "in today's", "a testament to", "plays a crucial role", "stands as",
+  "next level", "designed to help you", "navigate the complexities",
+  "in today's", "a testament to", "plays a crucial role",
 ];
+
+const escapeForRegex = (word) => word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const bannedPattern = new RegExp(`\\b(${BANNED.map(escapeForRegex).join("|")})\\b`, "i");
 
 /** Padding that adds length without adding meaning. */
 const HEDGES = ["generally", "typically", "in most cases", "arguably", "somewhat", "fairly", "quite"];
@@ -66,16 +75,17 @@ for (const path of paths) {
   const { text, blocks } = await prose(path);
   const lower = text.toLowerCase();
 
-  for (const word of BANNED) {
-    const at = lower.indexOf(word);
-    if (at >= 0) failures.push(`${path}: model register "${word}" — ...${text.slice(Math.max(0, at - 50), at + 50)}...`);
+  const banned = bannedPattern.exec(text);
+  if (banned) {
+    const at = banned.index;
+    failures.push(`${path}: model register "${banned[1]}" - ...${text.slice(Math.max(0, at - 50), at + 50)}...`);
   }
   const dash = text.indexOf("—");
-  if (dash >= 0) failures.push(`${path}: em-dash — ...${text.slice(Math.max(0, dash - 50), dash + 50)}...`);
+  if (dash >= 0) failures.push(`${path}: em-dash - ...${text.slice(Math.max(0, dash - 50), dash + 50)}...`);
 
   for (const hedge of HEDGES) {
     const at = lower.indexOf(` ${hedge} `);
-    if (at >= 0) warnings.push(`${path}: hedge "${hedge}" — ...${text.slice(Math.max(0, at - 40), at + 40)}...`);
+    if (at >= 0) warnings.push(`${path}: hedge "${hedge}" - ...${text.slice(Math.max(0, at - 40), at + 40)}...`);
   }
 
   // Sentences over 32 words are usually two sentences. Measured per block, so a
