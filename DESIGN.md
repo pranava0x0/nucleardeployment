@@ -528,3 +528,28 @@ Decisions made by *omission*:
 - **Apple Human Interface Guidelines**: touch targets, safe areas, mobile-first ergonomics.
 - **Pieter Levels (levels.io)**: "you don't need a backend, you don't need a CSS framework, you don't need a font, you don't need npm." When in doubt, ship the simpler thing.
 - **Andrej Karpathy**: performance budgets are real constraints, not afterthoughts; measure before optimizing; the smallest version that works is the right starting point.
+
+---
+
+## Race board decisions (2026-08-05)
+
+- **Two tracks per row, never one stacked bar.** A single linear scale cannot hold
+  13,755 MWe of announcements and 345 MWe of construction: every executed
+  megawatt becomes invisible and the gigawatt line lands at 7% of the width.
+  Executed capacity and announced capacity get separate tracks on the same
+  scale, and are never summed. This enforces the "incompatible frames are never
+  summed" data rule structurally rather than by discipline.
+- **The track runs to 1,200 MWe so the gigawatt rule sits at 83.3%,** reading as
+  a target with visible runway rather than as the edge of the bar. Every track on
+  the site puts the line in the same place, exported as `gigawattLinePercent`.
+- **Evidence is encoded by fill, never by hue alone.** Solid for built or
+  authorized, 2px outline for under review, hatch for contracted and announced.
+  The exact per-band megawatts travel in each figure's `aria-label` and the
+  strongest state travels as plain text, so the ranking survives without colour.
+- **Declare the legend swatch before the band rules.** `.legend-swatch` declared
+  after them out-ranked each band's own border at equal specificity, so the
+  legend showed a grey hairline where the bars showed a blue outline: the legend
+  taught an encoding the board did not use.
+- **Scope the 44px touch floor to `@media (pointer: coarse)`,** and use a
+  descendant selector. A `>` child selector missed a link nested one level deeper
+  and left it at 24px on touch. Measure at 375px rather than reading the rule.
