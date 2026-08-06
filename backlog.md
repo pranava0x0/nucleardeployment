@@ -12,6 +12,8 @@
 
 ## Race board follow-ups
 
+- [x] Fix the 14 findings from the post-merge review of PR #6. Done 2026-08-06 on `chore/session-learnings`: link-checker classification and argument validation, `data:check` in CI, all deploy actions SHA-pinned, race-bar overflow marker, capped gigawatt progress, llms.txt URL derivation and pluralisation, plus four cleanup items. Each carries a regression test. Details in `issues.md` under REVIEW-002.
+
 - [ ] Bring the stage pipeline's company chips up to the 44px touch floor. Measured 2026-08-05 at 375px: 31 links inside `.pipe-companies` render at 20 to 39px. Pre-existing and untouched by the race work, and the fix is not free, since 44px on every chip makes the pipeline cards much taller. Decide whether to raise the chips, make each card a single target, or document an inline exception in DESIGN.md. Priority: medium.
 - [ ] Upgrade the remaining 52 trade-press citations to primary sources. Run `npm run data:press` for the queue. Eleven were upgraded on 2026-08-05; the rest need a company newsroom, regulator, or national-lab original located and read. Ten cite low-quality aggregators (tipranks, stocktitan, gurufocus, premieralts, techfundingnews, theaiworld, interestingengineering, manilatimes) and should go first. Priority: medium.
 - [ ] Watch uncompressed page weight. The homepage is 456 KB raw against a 250 KB target, though only 122 KB gzipped. The 185 KB React framework chunk dominates and predates this work; revisit if the raw figure gates anything. Priority: low.

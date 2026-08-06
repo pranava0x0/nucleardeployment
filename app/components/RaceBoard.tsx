@@ -11,10 +11,13 @@ export function RaceBar({ row, compact = false }: { row: RaceRow; compact?: bool
   const executed = row.cells.filter((cell) => cell.band !== "framework" && cell.mwe > 0);
   const framework = row.cells.find((cell) => cell.band === "framework");
   const frameworkMWe = framework?.mwe ?? 0;
+  // Segments are clamped individually, so a row whose bands sum past the track
+  // would render as a full bar with nothing to say so. Say so.
+  const executedOverflows = row.executedMWe > raceScaleMWe;
 
   return (
     <figure className={`race-figure${compact ? " compact" : ""}`} aria-label={row.ariaLabel}>
-      <div className="race-track" data-empty={executed.length ? undefined : "true"}>
+      <div className="race-track" data-empty={executed.length ? undefined : "true"} data-overflow={executedOverflows ? "true" : undefined}>
         {executed.map((cell) => (
           <span
             className={`race-seg band-${cell.band}`}
@@ -29,6 +32,7 @@ export function RaceBar({ row, compact = false }: { row: RaceRow; compact?: bool
         <span className="gw-line" style={{ left: `${gigawattLinePercent}%` }} aria-hidden="true" />
       </div>
       <figcaption className="race-caption">
+        {executedOverflows && <span className="race-overflow">{mwe(row.executedMWe)} MWe executed, past the end of the track. </span>}
         {frameworkMWe > 0
           ? <span>{mwe(frameworkMWe)} MWe announced, non-binding{frameworkMWe > gigawattMWe ? ", runs past the line" : ""}</span>
           : framework?.claims.length

@@ -898,3 +898,129 @@ test("every page passes the accessibility checks a screen reader depends on", as
     }
   }
 });
+
+test("every CI action is pinned to a commit SHA", async () => {
+  const { readFile, readdir } = await import("node:fs/promises");
+  const dir = new URL("../.github/workflows/", import.meta.url);
+  const files = (await readdir(dir)).filter((name) => name.endsWith(".yml"));
+  assert.ok(files.length >= 2, "workflows were found to check");
+
+  for (const file of files) {
+    const yaml = await readFile(new URL(file, dir), "utf8");
+    const uses = [...yaml.matchAll(/uses:\s*(\S+)/g)].map((match) => match[1]);
+    assert.ok(uses.length > 0, `${file} declares actions`);
+    for (const ref of uses) {
+      // CLAUDE.md: every `uses:` pinned to a 40-char SHA, not a moving tag.
+      // deploy-pages.yml shipped on @v4/@v5/@v3 while holding pages:write.
+      assert.match(ref, /@[0-9a-f]{40}$/, `${file} pins ${ref} to a moving tag`);
+    }
+    // A SHA with no version comment is unreviewable.
+    for (const line of yaml.split("\n").filter((row) => row.includes("uses:"))) {
+      assert.match(line, /#\s*v\d/, `${file} has a SHA with no version comment: ${line.trim()}`);
+    }
+  }
+});
+
+test("CI runs the data validation, not just the unit tests", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const ci = await readFile(new URL("../.github/workflows/ci.yml", import.meta.url), "utf8");
+  // The in-suite tier test covers capacityClaims and proofEvents. The validator
+  // covers every sourced record, including roster sources, funding, targets,
+  // projects and companies. Without this step those merge unchecked.
+  assert.match(ci, /npm run data:check/, "ci.yml runs data:check");
+
+  const pkg = JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8"));
+  for (const script of ["data:validate", "data:llms", "data:prose", "data:check"]) {
+    assert.ok(pkg.scripts[script], `package.json defines ${script}`);
+  }
+  assert.match(pkg.scripts["data:check"], /validate-sources/, "data:check validates sources");
+  assert.match(pkg.scripts["data:check"], /--check/, "data:check verifies llms.txt is current");
+  assert.match(pkg.scripts["data:check"], /audit-prose/, "data:check reads the shipped prose");
+});
+
+test("the link checker refuses a bad --limit instead of checking nothing", async () => {
+  const { execFile } = await import("node:child_process");
+  const { promisify } = await import("node:util");
+  const { fileURLToPath } = await import("node:url");
+  const run = promisify(execFile);
+  // fileURLToPath, not .pathname: this repository lives under a directory with a
+  // space in its name, and .pathname hands back a percent-encoded string that
+  // node cannot resolve as a file.
+  const script = fileURLToPath(new URL("../scripts/check-links.mjs", import.meta.url));
+
+  // `--limit notanumber` produced NaN, slice(0, NaN) returned [], and the run
+  // printed "live 0 · blocked 0 · dead 0" and exited 0. A typo made the check
+  // pass while checking nothing.
+  for (const bad of [["--limit", "notanumber"], ["--limit", "0"], ["--limit", "-3"], ["--limit"]]) {
+    await assert.rejects(
+      run(process.execPath, [script, ...bad]),
+      (error) => error.code === 2,
+      `check-links rejects ${bad.join(" ")}`,
+    );
+  }
+  // A good limit still resolves work, without fetching anything.
+  const { stdout } = await run(process.execPath, [script, "--limit", "5", "--dry-run"]);
+  assert.match(stdout, /5 unique source URL\(s\)/);
+});
+
+test("a company past a gigawatt is reported, not silently clipped", async () => {
+  const dataModule = await import("../app/data.ts");
+  // No entrant currently exceeds the track, so assert both directions: the
+  // marker is absent today, and the data layer surfaces the condition the
+  // component renders it from.
+  const html = (await (await render("/")).text()).replace(/<!--.*?-->/g, "");
+  assert.doesNotMatch(html, /past the end of the track/, "no row overflows the track today");
+  for (const row of dataModule.raceBoard()) {
+    assert.ok(row.executedMWe <= dataModule.raceScaleMWe, `${row.company.name} fits the track`);
+  }
+
+  // Inflate one claim past the scale and confirm the row reports it.
+  const inflated = dataModule.capacityClaims.map((claim) =>
+    claim.companySlug === "holtec" && claim.band === "review" ? { ...claim, mwe: 2400 } : claim);
+  const overflowed = dataModule.raceBoard(inflated).find((row) => row.company.slug === "holtec");
+  assert.ok(overflowed.executedMWe > dataModule.raceScaleMWe, "the inflated row exceeds the track");
+  assert.match(overflowed.ariaLabel, /2,400 MWe under review/, "the label still states the true figure");
+
+  // And the dossier never claims more than a full gigawatt of progress.
+  const { readFile } = await import("node:fs/promises");
+  const dossier = await readFile(new URL("../app/companies/[slug]/page.tsx", import.meta.url), "utf8");
+  assert.match(dossier, /executedMWe >= gigawattMWe/, "the page branches before the percentage can exceed 100");
+});
+
+test("the prose linter matches whole words", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const audit = await readFile(new URL("../scripts/audit-prose.mjs", import.meta.url), "utf8");
+  // Substring matching would fire inside a longer word, and two entries with
+  // ordinary uses were hard failures with no escape hatch.
+  assert.match(audit, /\\\\b\(\$\{BANNED/, "the pattern is anchored on word boundaries");
+  const banned = audit.slice(audit.indexOf("const BANNED = ["), audit.indexOf("];", audit.indexOf("const BANNED = [")));
+  assert.ok(banned.length > 100, "the banned list was located");
+  for (const word of ['"realm"', '"not only"']) {
+    assert.ok(!banned.includes(word), `${word} is not a hard failure`);
+  }
+  for (const word of ['"delve"', '"seamless"', '"leverage"']) {
+    assert.ok(banned.includes(word), `${word} is still banned`);
+  }
+});
+
+test("llms.txt counts read as English", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const llms = await readFile(new URL("../public/llms.txt", import.meta.url), "utf8");
+  assert.doesNotMatch(llms, /\b1 companies\b/, "singular counts use the singular noun");
+  assert.match(llms, /\b1 company\b/, "the dataset still exercises a single-entrant band");
+  // The base URL is derived from the same variable the app uses.
+  const generator = await readFile(new URL("../scripts/build-llms-txt.mjs", import.meta.url), "utf8");
+  assert.match(generator, /NEXT_PUBLIC_SITE_URL/, "the generator derives the site URL rather than hardcoding it");
+  assert.equal((generator.match(/pranava0x0\.github\.io/g) ?? []).length, 1, "the host appears once, as a fallback");
+
+  // Run the generator's own --check. Reading the committed file alone cannot
+  // see a change to the generator: reverting the pluralisation fix left this
+  // test green because the stale file on disk still read correctly.
+  const { execFile } = await import("node:child_process");
+  const { promisify } = await import("node:util");
+  const { fileURLToPath } = await import("node:url");
+  const { stdout } = await promisify(execFile)(process.execPath, [
+    fileURLToPath(new URL("../scripts/build-llms-txt.mjs", import.meta.url)), "--check",
+  ]);
+  assert.match(stdout, /matches the data/, "the committed llms.txt is what the generator produces today");
+});

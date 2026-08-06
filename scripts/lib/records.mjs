@@ -59,9 +59,3 @@ export function hostOf(url) {
     return null;
   }
 }
-
-/** Primary means the party that did the thing, or the regulator that recorded it. */
-export function isPrimary(data, source) {
-  const tier = data.verificationForSource(source);
-  return tier !== "Press-reported";
-}
