@@ -1,0 +1,332 @@
+Oklo reveals 75-MW reactor design, eyes late 2027 commercial deployment | Utility Dive
+Skip to main content
+CONTINUE TO SITE ➞
+Don't miss tomorrow's electric utility industry news
+Let Utility Dive's free newsletter keep you informed, straight from your inbox.
+Daily Dive M-F
+Storage Weekly Every Tuesday
+Load Management Weekly Every Wednesday In partnership with
+Renewable Energy Weekly Every Thursday In partnership with
+By signing up to receive our newsletter, you agree to our
+Terms of Use and
+Privacy Policy . You can unsubscribe at anytime.
+Informa TechTarget
+|
+Smart Cities Dive
+Waste Dive
+Explore our brands
+An Informa TechTarget Publication
+Deep Dive
+Opinion
+Library
+Events
+Press Releases
+Topics
+Sign up
+Search
+Sign up
+Search
+People also ask
+Loading questions...
+Generation
+T&D
+Grid Reliability
+Electrification
+Load Management
+Renewables
+Storage
+DER
+Regs
+Corp News
+An article from
+Dive Brief
+Oklo reveals 75-MW reactor design, eyes late 2027 commercial deployment
+A partnership with gas-fired “prime power” provider RPower will support “urgent” short-term needs for the advanced nuclear company’s data center customers, Oklo said Monday.
+Published March 26, 2025
+By
+Brian Martucci
+Share
+Copy link
+Email
+LinkedIn
+X/Twitter
+Facebook
+Print
+License
+Add us on Google
+A rendering of an Oklo Aurora powerhouse reactor. Oklo is on track to submit its combined license application to the U.S. Nuclear Regulatory Commission later this year and deploy its first commercial power plant at Idaho National Laboratory by early 2028, the advanced nuclear developer said on March 24, 2025.
+Tasos Katopodis via Getty Images
+Dive Brief:
+Oklo remains on track to submit its combined license application to the U.S. Nuclear Regulatory Commission later this year and deploy its first commercial power plant at Idaho National Laboratory in late 2027 or early 2028, the advanced nuclear developer said Monday .
+The company expanded its Aurora powerhouse design from 50 MW to 75 MW to support demand from large data center customers “without adding any notable technical, design or regulatory complexities,” it said.
+Oklo also added two new board members to replace former Liberty Energy CEO Chris Wright, who left earlier this year to serve as U.S. Energy Secretary. One of the incoming board members is Daniel Poneman, former president and CEO of Centrus Energy, a U.S. nuclear fuel supplier from which Oklo plans to source high-assay, low-enriched uranium fuel.
+Dive Insight:
+Since July 2023, when it announced that it would go public via a merger with a special purpose acquisition company cofounded by OpenAI CEO Sam Altman, Oklo’s order pipeline has grown from less than 1 GW to around 14 GW, it said Monday in a separate quarterly update.
+That pipeline includes a 12-GW, 20-year “master power agreement” with data center developer and operator Switch , plus several smaller agreements with other data center firms and Texas-based oil and gas operator Diamondback Energy .
+Master power agreements are more flexible and less risky than traditional power purchase agreements, which Oklo has not pursued to date, Chief Financial Officer Craig Bealmear said Monday on an investor webcast. Covering planned capacity investments, delivery timelines, target sites and regions and power price ranges, the agreements act as frameworks for Oklo’s customer relationships and eventual project-level PPAs, Oklo said in its quarterly update.
+In the investor materials and webcast, Oklo detailed plans for a “phased deployment” of power generation infrastructure in partnership with RPower, an off-grid, gas-fired “prime power” provider. The partnership envisions rapid deployment of gas-fired generation as a near-term “bridge” for data center customers with urgent power needs, followed by phased powerhouse deployment and an eventual end state where RPower’s generators provide backup power and grid services, Oklo said.
+“[The partnership] enhances grid stability, allowing RPower to act as a good grid citizen with Oklo, supplying surplus power to the grid when needed,” Bealmear said.
+Oklo’s decision to upsize its powerhouse capacity from 50 MW to 75 MW was “very much a customer-informed design decision” based on “where we see … the data center architectures progressing,” CEO Jacob DeWitte said on the investor call. The 75-MW size allows Oklo to serve an emerging “sweet spot” between 60 MW and 72 MW per data hall with margin to spare, whereas a 50-MW reactor would “limit some of the upside,” he said.
+The larger reactor design is more fuel-efficient and offers “economies of scale” by allowing future customers to achieve the same output with fewer reactors, Bealmear said. But the upsize is modest enough not to introduce new technical or design risk in licensing, he added.
+Ongoing, multiyear preapplication engagement with the NRC and recent positive regulatory developments have Oklo cautiously optimistic for a smooth licensing process, DeWitte said.
+“One reference point that I think is important here is TerraPower’s construction permit work — they did a readiness assessment and relatively quickly thereafter [in March 2024] submitted a construction permit, and there’s been recent news that the NRC is ahead of schedule on that review,” DeWitte said. “[TerraPower’s design] is a very similar technology set to ours.”
+Oklo’s imminent Pre-Application Readiness Assessment will address the siting and environmental components of its combined license application for its first commercial powerhouse at Idaho National Laboratory, where Oklo has begun early site work, the company said Monday.
+Oklo plans to submit its combined license application in the fourth quarter of this year, following the Oct. 1 effective date for the NRC’s proposed 55% hourly rate reduction for advanced reactor applicants, DeWitte said.
+Though it has enough HALEU fuel for the INL reactor’s initial load, Oklo shares other advanced reactor companies’ near-term concerns about limited nuclear fuel supplies, DeWitte said. Congress unlocked $2.7 billion for U.S. HALEU production last year in a law that also banned most uranium imports from Russia, significantly tightening the civilian market as suppliers like Centrus work to build domestic capacity.
+“I do worry about the bridge between now and the early 2030s,” DeWitte said.
+But growing orderbooks for advanced reactors ought to spur additional investments in U.S. production capacity, while tech giants’ interest in HALEU-fueled reactors in particular suggest key customers see the fuel issue as a “solvable problem,” DeWitte said. And Oklo’s planned investment is in fuel recycling capabilities , which could eventually reduce its fuel costs by 80%, “a little bit of an ace up our sleeves,” he added.
+Recommended Reading
+Generator, advanced nuclear stocks reel as low-cost DeepSeek chills AI load growth outlook
+By Brian Martucci &#8226;
+Jan. 28, 2025
+Oklo inks 12-GW advanced reactor supply agreement with data center developer Switch
+By Brian Martucci &#8226;
+Dec. 18, 2024
+Oklo’s microreactor project pipeline jumps 93% ahead of 2027 planned deployment
+By Brian Martucci &#8226;
+Aug. 15, 2024
+Add us on Google
+Share
+Copy link
+Email
+LinkedIn
+X/Twitter
+Facebook
+Print
+License
+Filed Under:
+Generation,
+Corporate News
+Utility Dive news delivered to your inbox
+Get the free daily newsletter read by industry experts
+Email:
+Select Newsletter:
+Daily Dive
+M-F
+Select Newsletter:
+Storage Weekly
+Every Tuesday
+Select Newsletter:
+Load Management Weekly
+Every Wednesday
+Select Newsletter:
+Renewable Energy Weekly
+Every Thursday
+Select user consent:
+By signing up to receive our newsletter, you agree to our
+Terms of Use and
+Privacy Policy . You can unsubscribe at anytime.
+Sign up
+A valid email address is required.
+Please select at least one newsletter.
+Editors' picks
+Getty Images
+PJM board proposes backstop capacity auction, data center curtailment plans
+FERC&rsquo;s response to the proposals will likely &ldquo;influence utility capital investment, data center development timelines and the allocation of reliability risks and costs,&rdquo; ClearView Energy Partners said.
+By Ethan Howland •
+Updated July 28, 2026
+Justin Sullivan/Getty Images via Getty Images
+DOE mulls changes to Biden-era transformer rule, raising utility concerns
+Utility associations supported the 2024 efficiency requirements for distribution transformers and oppose their repeal. The rule may threaten national security, DOE says.
+By Robert Walton •
+July 29, 2026
+Get the free newsletter
+Subscribe to Utility Dive for top news, trends & analysis
+Email:
+Select Newsletter:
+Daily Dive
+M-F
+Select Newsletter:
+Storage Weekly
+Every Tuesday
+Select Newsletter:
+Load Management Weekly
+Every Wednesday
+Select Newsletter:
+Renewable Energy Weekly
+Every Thursday
+Select user consent:
+By signing up to receive our newsletter, you agree to our
+Terms of Use and
+Privacy Policy . You can unsubscribe at anytime.
+Sign up
+A valid email address is required.
+Please select at least one newsletter.
+Take your knowledge further with
+Sign up for the free newsletter.
+Interested? Explore more of what has to offer.
+One-click newsletter signup
+You're all set
+Thanks for signing up!
+Please keep an eye out for a confirmation email from
+[email&#160;protected]
+To ensure we make it into your inbox regularly,
+add us to your allow list, mark us as a safe sender, or add us to your address book.
+Check out more from
+Most Popular
+Facing an estimated 474 GW of interconnection requests, Texas hits pause on data centers
+Battery-eligible New Jersey VPP program begins to take shape
+$700M microgrid bill has state energy office, electrical manufacturer support
+AEP secures 13 GW of gas turbines as generation ‘central’ to growth plans
+Library resources
+Webinar - on demand
+When the Grid Goes Down, Will Your Finance Operations Hold Up?
+Custom content for
+SAP Concur
+Playbook
+What Utilities Can Learn from Virtual Power Plant Pioneers
+Custom content for
+Kraken Technologies
+Playbook
+Why Utilities Need a Modern Communication Intelligence Layer
+Custom content for
+Convey
+View all
+Company Announcements
+View all
+| Post a press release
+What We're Reading
+Bloomberg
+NextEra–Dominion Merger Faces Intervention From Virginia Governor Spanberger
+Reuters
+RWE says it reached $1.22B deal to cancel US offshore wind leases and invest in gas
+Canary Media
+Trump is blocking billions of dollars of grants that would fix the grid
+View all
+Events
+View all
+| Promote an event
+Industry Intel
+Integrating Geospatial Data and Analytics Into Your Cloud Strategy: A Game Changer For Utilities
+Webinar - on demand
+&bull;
+Provided by Korem
+How to leverage new satellite technology for smarter post-disaster utility and transportation management
+Webinar - on demand
+&bull;
+Provided by ICEYE
+Reducing Grid Strain With Automated Energy Management for EV Charging
+Webinar - on demand
+&bull;
+Provided by Amply
+Utility Dive news delivered to your inbox
+Get the free daily newsletter read by industry experts
+Email:
+Select Newsletter:
+Daily Dive
+M-F
+Select Newsletter:
+Storage Weekly
+Every Tuesday
+Select Newsletter:
+Load Management Weekly
+Every Wednesday
+Select Newsletter:
+Renewable Energy Weekly
+Every Thursday
+Select user consent:
+By signing up to receive our newsletter, you agree to our
+Terms of Use and
+Privacy Policy . You can unsubscribe at anytime.
+Sign up
+A valid email address is required.
+Please select at least one newsletter.
+Company Announcements
+View all
+| Post a press release
+FYLD Appoints Sonam Kala as Vice President of Strategy and Growth to Help Infrastructure Organ…
+From FYLD
+August 06, 2026
+Lucasys Tax Repairs Now Available on SAP® Store
+From Lucasys Inc
+August 05, 2026
+CHESSA Announces Goldi America as Title Sponsor of the 2026 Energize Summit
+From Chesapeake Solar and Storage Association (CHESSA)
+July 30, 2026
+IESO Nova Scotia Opens Competitive Procurement Process for Critical Electricity Generation Cap…
+From IESO Nova Scotia
+July 28, 2026
+Editors' picks
+Getty Images
+PJM board proposes backstop capacity auction, data center curtailment plans
+FERC&rsquo;s response to the proposals will likely &ldquo;influence utility capital investment, data center development timelines and the allocation of reliability risks and costs,&rdquo; ClearView Energy Partners said.
+By Ethan Howland •
+Updated July 28, 2026
+Justin Sullivan/Getty Images via Getty Images
+DOE mulls changes to Biden-era transformer rule, raising utility concerns
+Utility associations supported the 2024 efficiency requirements for distribution transformers and oppose their repeal. The rule may threaten national security, DOE says.
+By Robert Walton •
+July 29, 2026
+Latest in Generation
+NRG nears 1.2-GW hyperscaler deal amid Texas data center pause
+By Brian Martucci
+Duke Energy to issue $10B in equity to capture gas generation growth opportunity
+By Emma Penrod
+PSEG offers data center supply proposals in PJM’s bilateral contracting process
+By Ethan Howland
+Southern Co. contracted large load rises to 17 GW
+By Meris Lutz
+Explore
+About
+Editorial Team
+Contact Us
+Newsletter
+Purchase Licensing Rights
+Press Releases
+What We're Reading
+Reach our audience
+Advertising
+Post a press release
+Submit an opinion piece
+Promote an event
+Related Publications
+Smart Cities Dive
+Waste Dive
+This website is owned and operated by
+Informa TechTarget ,
+a global network that informs, influences and connects the world's technology buyers and sellers.
+&copy; 2025 TechTarget, Inc. or its subsidiaries. All rights reserved. An Informa PLC company.
+Privacy policy
+| Terms of use
+| Take down policy
+| Cookie Preferences / Do Not Sell
+Search
+Home
+Topics
+Generation
+T&D
+Grid Reliability
+Electrification
+Load Management
+Renewables
+Storage
+DER
+Regs
+Corp News
+Deep Dive
+Opinion
+Library
+Events
+Press Releases
+Get Utility Dive in your inbox
+The free newsletter covering the top industry headlines
+Email:
+Select Newsletter:
+Daily Dive
+M-F
+Select Newsletter:
+Storage Weekly
+Every Tuesday
+Select Newsletter:
+Load Management Weekly
+Every Wednesday
+Select Newsletter:
+Renewable Energy Weekly
+Every Thursday
+Select user consent:
+By signing up to receive our newsletter, you agree to our
+Terms of Use and
+Privacy Policy . You can unsubscribe at anytime.
+Sign up
+A valid email address is required.
+Please select at least one newsletter.

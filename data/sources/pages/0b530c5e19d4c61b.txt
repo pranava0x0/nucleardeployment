@@ -1,0 +1,716 @@
+Terrestrial Energy Inc. Completes Business Combination with HCM II Acquisition Corp.
+[[ type === 'moc' ? 'MARKET ON CLOSE' : 'FREE WEBINAR' ]]
+[[ timeLabel ]] WATCH LIVE :
+Your browser of choice has not been tested for use with Barchart.com. If you have issues, please download one of the browsers listed here .
+Barchart for Businesses
+Barchart for Businesses
+Let's find a solution for your business.
+1 }"> 1">&#10003; 1 Your market
+2 }"> 2">&#10003; 2 What are you looking for?
+3 Your information
+What industry are you in?
+You're in . What are you looking for?
+&rarr;
+&larr; Back Continue &rarr;
+Last step &mdash; Provide us your details so we can get in touch with you!
+Get in touch &rarr; Sending... * All fields required. A specialist will respond within 1 business day.
+&larr; Back
+Thank you!
+We've received your inquiry. A specialist will reach out within 1 business day.
+Start over
+Explore our Market Data & Technology Solutions
+Data &rarr;
+Market Data Physical Commodity Prices Grain Prices & Yield Forecasts Commodity Fundamentals News Feeds Company Data Weather & Geospatial
+Services &rarr;
+Market Data & APIs Charting & Tools Commodity Workflow Solutions
+Platforms &rarr;
+cmdtyView Front-End producerView CRM Excel Add-In Digital Information Board
+See our full suite of services at barchart.com/solutions &rarr;
+Log In Menu
+Stocks | Futures | Watchlist | News | More
+Advanced search
+or
+Select a Commodity Wheat Corn Soybeans Soybean Meal Soybean Oil Oats Rough Rice Hard Red Winter Wheat Spring Wheat Canola Crude Oil WTI ULSD NY Harbor Gasoline RBOB Natural Gas Crude Oil Brent Ethanol Gold Silver High Grade Copper Platinum Palladium Aluminum Live Cattle Feeder Cattle Lean Hogs Pork Cutout Class III Milk Nonfat Dry Milk Dry Whey Butter Cash-Settled Cheese Cash-Settled Cotton #2 Orange Juice Coffee Sugar #11 Cocoa Lumber S&P 500 E-Mini Nasdaq 100 E-Mini Dow Futures E-Mini Russell 2000 E-Mini S&P Midcap E-Mini S&P 500 Micro S&P Nasdaq Micro S&P 500 VIX U.S. Dollar Index Bitcoin Micro Ether Micro British Pound Canadian Dollar Japanese Yen Swiss Franc Euro FX Australian Dollar Mexican Peso New Zealand Dollar South African Rand Brazilian Real T-Bond Ultra T-Bond 10 Year T-Note 5 Year T-Note 2 Year T-Note Ultra T-Note 30 Day Fed Funds 3-Month SOFR Crude Oil Brent Crude Oil WTI Gas Oil UK Natural Gas Dutch TTF Gas RBOB Blendstock Heating Oil Euro Bund Euro Bobl Euro Schatz Euro Buxl Euro OAT Long-Term Euro BTP Long-Term Eurex Conf Long-Term Euro Bono Long-Term 10-Year Long Gilt 3-Month EuriBor 3-Month ESTR 3-Month SONIA 3-Month SARON Rapeseed Feed Wheat Milling Wheat Corn Euro Stoxx 50 Index FTSE 100 Index DAX Index Swiss Market Index CAC 40 Index AEX Index BEL 20 PSI 20 IBEX 35-Mini OMX Swedish Index VSTOXX Mini Steel Scrap Steel Rebar Cocoa #7 Coffee Robusta 10-T Sugar White #5
+Watchlist | Portfolio | Dashboard
+MAIN MENU
+Home Stocks Options Learn
+ETFs Futures Currencies Watchlist
+Investing News Tools Portfolio
+POPULAR
+Stocks Percent Change Top 100 Stocks Stocks Highs/Lows Stocks Volume Leaders Unusual Options Activity Options Volume Leaders
+Commodities Grains Energies Alerts Pre-Market Post-Market
+Stocks Stocks
+Market Pulse Stock Market Overview
+Market Momentum
+Market Performance
+Top 100 Stocks
+Today&#039;s Price Surprises
+New Highs & Lows
+Economic Overview
+Earnings Within 7 Days
+Earnings & Dividends
+Stock Screener
+Barchart Trade Picks Today&#039;s Top Stock Pick
+All Top Stock Picks
+Performance Leaders Percent Change
+Price Change
+Range Change
+Gap Up & Gap Down
+3, 4, 5 Day Gainers
+Before & After Markets Pre-Market Trading
+Post-Market Trading
+Most Active Volume Leaders
+Price Volume Leaders
+Volume Advances
+Trading Liquidity
+Indices Market Indices
+S&P Indices
+S&P Sectors
+Dow Jones Indices
+Nasdaq Indices
+Russell Indices
+Volatility Indices
+Commodities Indices
+US Sectors Indices
+World Indices
+Trading Signals New Recommendations
+Top Stocks to Own
+Top Signal Strength
+Top Signal Direction
+Stock Signal Upgrades
+Sectors Stock Market Sectors
+Major Markets Heat Map
+Industry Rankings
+Industry Heat Map
+Industry Performance
+Stocks by Grouping
+Options Options
+Market Pulse Options Market Overview
+Unusual Options Activity
+Options Flow
+Upcoming Earnings
+Volatility IV Rank and IV Percentile
+Implied vs Realized Vol
+Rising vs Falling Volatility
+Highest Implied Volatility
+%Change in Volatility
+Volume & Open Interest Most Active Options
+Unusual Options Volume
+Options Volume Leaders
+Highest Open Positions
+Change in Open Interest
+%Change in Open Interest
+Data & Tools Options Time & Sales
+Options Price History
+Options Calculator
+Options Learning Center
+Option Screeners Options Screener
+Long Call Screener
+Long Put Screener
+Income Strategies Covered Call
+Naked Put
+Vertical Spreads Bull Call Spread
+Bear Call Spread
+Bear Put Spread
+Bull Put Spread
+Protection Strategies Married Put
+Protective Collar
+Straddle and Strangle Long Straddle
+Short Straddle
+Long Strangle
+Short Strangle
+Horizontal Strategies Long Call Calendar
+Long Put Calendar
+Long Call Diagonal
+Short Call Diagonal
+Long Put Diagonal
+Short Put Diagonal
+Butterfly Strategies Long Call Butterfly
+Short Call Butterfly
+Long Put Butterfly
+Short Put Butterfly
+Long Iron Butterfly
+Short Iron Butterfly
+Condor Strategies Long Call Condor
+Short Call Condor
+Long Put Condor
+Short Put Condor
+Long Iron Condor
+Short Iron Condor
+ETFs ETFs
+Market Pulse ETF Market Overview
+Popular ETFs
+ETF Finder
+Top 100 ETFs
+Today&#039;s Price Surprises
+New Highs & Lows
+Top Dividend ETFs
+ETF Screener
+Performance Leaders Percent Change
+Price Change
+Range Change
+Gap Up & Gap Down
+3, 4, 5 Day Gainers
+Before & After Markets Pre-Market Trading
+Post-Market Trading
+Most Active Volume Leaders
+Price Volume Leaders
+Volume Advances
+Trading Signals New Recommendations
+Top ETFs to Own
+Top Signal Strength
+Top Signal Direction
+ETFs Signal Upgrades
+Mutual Funds Today&#039;s Price Surprises
+New Highs & Lows
+Performance
+Price Change
+Funds Screener
+Futures Futures
+Market Pulse Futures Market Overview
+Long Term Trends
+Today&#039;s Price Surprises
+Highs & Lows
+Futures Market Map
+Performance Leaders
+Most Active Futures
+Prices by Exchange
+Commodity Groupings Commodities Prices
+Currencies
+Energies
+Financials
+Grains
+Indices
+Livestock
+Metals
+Softs
+Mini & Micro Futures
+Futures Trading Guide Trading Guide
+Historical Performance
+Commitment of Traders Commitment of Traders
+Legacy Report
+Disaggregated Report
+Financial TFF Report
+Resources Contract Specifications
+Futures Expirations
+First Notice Dates
+Options Expirations
+Economic Calendar
+Cash Markets Cash Markets Overview
+Corn Indexes
+Soybean Indexes
+European Futures Euro Futures Overview
+Long Term Trends
+Today&#039;s Price Surprises
+Highs & Lows
+Futures Market Map
+Performance Leaders
+Most Active Futures
+European Groupings Commodities Prices
+Energies
+Financials
+Grains
+Indices
+Metals
+Softs
+Europe Power Futures
+Europe Gas Futures
+Baltic Freight Indices
+European Trading Guide European Trading Guide
+Historical Performance
+Currencies Currencies
+Forex Market Pulse Forex Market Overview
+Long Term Trends
+Today&#039;s Price Surprises
+Highs & Lows
+Forex Market Map
+Performance Leaders
+Currency Converter
+Crypto Market Pulse Crypto Market Overview
+Market Capitalizations
+Bitcoin Futures
+Trading Signals New Recommendations
+Commitment of Traders Commitment of Traders
+Legacy Report
+Financial TFF Report
+Currency Groupings Popular Cross Rates
+Australian Dollar
+British Pound
+Canadian Dollar
+Euro FX
+Japanese Yen
+Swiss Franc
+US Dollar
+Metals Rates
+All Forex Markets
+Crypto Groupings Popular Coins
+Bitcoin
+Bitcoin-Cash
+Ethereum
+Litecoin
+Monero
+XRP
+Tether
+Zcash
+Investing Investing
+Investing Ideas Today’s Investing Ideas
+Top Performing Stocks
+Top Trending Tickers
+Barchart Screeners
+Insider Trading Insider Trading Activity
+Politician Insider Trading
+Today&#039;s Picks Chart of the Day
+Top Stock Pick
+Futures Trading Guide
+My Screeners Stock Screener
+ETF Screener
+Funds Screener
+Options Screener
+Technical Ideas Bullish Moving Averages
+Bearish Moving Averages
+Breakouts and Reversals
+Candlestick Patterns
+eMACD Buy Signals
+Hot Penny Stocks
+RSI Bullish Divergence
+RSI Bearish Divergence
+Short Interest Stocks
+Standout Stocks
+Top Stocks Under $10
+TTM Squeeze
+Up Trending Stocks
+Down Trending Stocks
+Dividend Ideas Best Dividend Stocks
+Dividend Aristocrats
+Dividend Kings
+Power Investors Cathie Wood Stocks
+Warren Buffett Stocks
+Themed Lists AI Stocks
+Battery Stocks
+Biotechnology Stocks
+Cannabis Stocks
+Clean Energy Stocks
+Crypto Stocks
+Cybersecurity Stocks
+Data Center Stocks
+Drones & Flying Cars
+EV Stocks
+Fintech Stocks
+Gold Stocks
+Magnificent 7
+Nuclear Energy Stocks
+Oil Stocks
+Power & Infrastructure
+Quantum Computing
+Rare Earth Minerals
+REIT Stocks
+Robotics Stocks
+Semiconductor Stocks
+Space Race Stocks
+World Markets
+News News
+Barchart Markets Today
+Barchart News
+Exclusives
+Contributors
+Chart of the Day
+News Feeds
+Featured Authors Andrew Hecht
+Austin Schroeder
+Caleb Naysmith
+Darin Newsom
+Don Dawson
+Elizabeth Volk
+Gavin McMaster
+Jeannine Mancini
+Jim Van Meerten
+Justin Estes
+Mark Hake
+Oleksandr Pylypenko
+Rich Asplund
+Rick Orford
+Rob Isbitts
+Sarah Holzmann
+All Authors
+Commodity News All Commodities
+Energy
+Grains
+Livestock
+Metals
+Softs
+Financial News All Financials
+Crypto
+Dividends
+ETFs
+FX
+Interest Rates
+Options
+Stock Market
+Free Newsletters All Free Newsletters
+The Barchart Brief
+Active Investor
+Unusual Options Activity
+Dividend Investor
+Pre-Market Bulletin
+Commodity Bulletin
+Chart of the Day
+Ag Market Commentary
+Press Releases All Press Releases
+ACCESS Newswire
+Business Wire
+GlobeNewswire
+TMX Newsfile
+PR Newswire
+Tools Tools
+Member Tools My Watchlist
+Investor Portfolio
+Standard Portfolio
+Dashboard
+Symbol Notes
+Alert Center
+Alert Templates
+Barchart Screeners
+My Charts
+Custom Views
+Barchart Custom Views
+Chart Templates
+Barchart Chart Templates
+Compare Stocks
+Daily Prices Download
+Historical Data Download
+My Custom Reports Watchlist Emails
+Standard Portfolio Emails
+Investor Portfolio Emails
+Screener Emails
+End-of-Day My Charts
+End-of-Day Reports
+Manage Tools Organize Watchlists
+Organize Portfolios
+Organize Investor Portfolios
+Organize Screeners
+Organize My Charts
+My Account My Profile
+Site Preferences
+Author Followings
+Trading Alerts & Ideas
+Learn Learn
+Knowledge Base Site Education
+Options Education
+Options Learning Center
+Quick Start Tutorials
+Site News
+Barchart Webinars Upcoming Webinars
+Archived Webinars
+Popular Webinars
+Barchart Live Market on Close
+Market on Close Archive
+Membership Barchart Premier
+Barchart Plus
+Membership Comparison
+Barchart for Excel
+Create Free Account
+Barchart Resources Technical Indicators
+Barchart Trading Signals
+Time & Sales Conditions
+Barchart Special Symbols
+Barchart Data Fields
+Options Resources Profit & Loss Charts
+Options Volatility
+Options Greeks
+Covered Call
+Naked Put
+Long Call Option
+Deep ITM Calls
+Long Put Option
+Credit Spreads
+Short Straddles
+Short Iron Condor
+7 Ways to Make Money
+Hedge Stocks with Options
+Site News
+Contact Market:
+US
+Canada
+UK
+Australia
+Europe
+News Menu
+News
+Barchart
+Markets Today
+Barchart News
+Exclusives
+Contributors
+Chart of the Day
+News Feeds
+Featured Authors
+Andrew Hecht
+Austin Schroeder
+Caleb Naysmith
+Darin Newsom
+Don Dawson
+Elizabeth Volk
+Gavin McMaster
+Jeannine Mancini
+Jim Van Meerten
+Justin Estes
+Mark Hake
+Oleksandr Pylypenko
+Rich Asplund
+Rick Orford
+Rob Isbitts
+Sarah Holzmann
+All Authors
+Commodity News
+All Commodities
+Energy
+Grains
+Livestock
+Metals
+Softs
+Financial News
+All Financials
+Crypto
+Dividends
+ETFs
+FX
+Interest Rates
+Options
+Stock Market
+Free Newsletters
+All Free Newsletters
+The Barchart Brief
+Active Investor
+Unusual Options Activity
+Dividend Investor
+Pre-Market Bulletin
+Commodity Bulletin
+Chart of the Day
+Ag Market Commentary
+Press Releases
+All Press Releases
+ACCESS Newswire
+Business Wire
+GlobeNewswire
+TMX Newsfile
+PR Newswire
+Terrestrial Energy Inc. Completes Business Combination with HCM II Acquisition Corp.
+Terrestrial Energy Inc. CLEAR® Verified - GlobeNewswire - Tue Oct 28, 2025 Press Release All information and data in this article is solely for informational purposes. For more information please view the Barchart Disclosure Policy here
+Share
+Terrestrial Energy to begin trading on the Nasdaq Stock Market under ticker symbol “IMSR” on October 29, 2025
+The transaction closed with gross proceeds exceeding $292 million before expenses, reflecting previously placed $50 million common stock PIPE and a negligible level of redemptions
+Transaction proceeds to accelerate commercial deployment of Terrestrial Energy's proprietary Integral Molten Salt Reactor (IMSR) nuclear technology
+CHARLOTTE, N.C. and STAMFORD, Conn., Oct. 28, 2025 (GLOBE NEWSWIRE) -- Terrestrial Energy Inc. (“Terrestrial Energy” or the “Company”), a developer of small modular nuclear plants using advanced reactor technology, announced today that it has completed its business combination with HCM II Acquisition Corp. (Nasdaq: HOND; HONDW) (“HCM II”).
+The business combination was approved by HCM II’s shareholders on October 20, 2025. In connection with the completion of the business combination, HCM II has been renamed Terrestrial Energy Inc., and its securities will be listed on the Nasdaq Stock Market LLC (“Nasdaq”) on October 29, 2025 under the symbols “IMSR” and “IMSRW”, respectively.
+Simon Irish, CEO of Terrestrial Energy, commented, “The completion of this merger provides the capital and support for a rapid acceleration in our growth plans and our capacity to respond to growing demand for nuclear energy supply across multiple industrial sectors. At 390 MWe, our IMSR unit will be ideally sized both to maintain the critical economies of unit scale required for cost-competitive nuclear energy, while enabling seamless, customer co-located deployment. The IMSR plant will offer best-in-class high-temperature output for superior capital efficiency, a secure fuel supply chain insulated from HALEU-related supply chain disruptions, and a modular design that enables swift construction timelines.
+There has never been greater demand for cost-competitive, clean, reliable, high-temperature industrial heat and electricity. This transaction strategically aligns capital with nuclear technology that is well-positioned to meet that demand. Building on more than a decade of engineering, regulatory engagement, and supply chain development, we are now positioned for sustained, effective growth. With our capital-efficient business model, established regulatory track record, and strong partnerships already in place, we are exceptionally well-prepared to lead the next generation of nuclear energy – delivering transformative, scalable solutions that meet the industrial demands of the future."
+Shawn Matthews, Chairman and CEO of HCM II, commented, “Terrestrial Energy's IMSR technology represents the ideal nuclear energy solution, offering the safety, efficiency, and economic advantages that are essential for meeting the world's growing energy demands. We are thrilled to help enable and accelerate their time to market through the capital raised from this transaction.”
+Company Overview
+Terrestrial Energy is a developer of Generation IV nuclear plants using proprietary Integral Molten Salt Reactor (IMSR) technology. IMSR technology captures the transformative operating benefits of molten salt reactor technology in a small modular plant design that represents true innovation in affordability, efficiency, and versatility of nuclear energy supply.
+Terrestrial Energy’s IMSR plants will supply zero-carbon, clean, firm, low-cost, high-temperature industrial heat and/or electricity for a dual-use energy role. Industrial applications include data center power supply, industrial heat and power, grid power, and green fuels sectors. The Company’s IMSR plant design, consisting of two operating IMSRs, has an 822 MWth / 390 MWe capacity. Terrestrial Energy’s IMSR technology is differentiated from legacy nuclear technology through its use of molten salt reactor design, delivering superior efficiency and inherently safe operation.
+Terrestrial Energy’s IMSR plants are designed to utilize low-cost, readily available Standard-Assay Low Enriched Uranium (SALEU) fuel enriched to contain less than 5% of uranium-235, providing access to secure and scalable fuel supply chains necessary for widespread fleet deployment. The Company believes the use of SALEU fuel is a strategic advantage given significant geopolitical challenges affecting the commercial availability of High-Assay Low-Enriched Uranium (HALEU) fuel enriched to between 15% and 20% uranium-235.
+In recent months, Terrestrial Energy has been selected for both the U.S. Department of Energy (DOE) Office of Nuclear Energy’s Advanced Reactor Pilot Program and its Fuel Line Pilot Program. Together, these programs provide a pathway to significantly accelerate Terrestrial Energy’s IMSR commercialization.
+In February 2025, Terrestrial Energy further advanced its commercialization efforts when Texas A&M University selected Terrestrial Energy’s IMSR plant in a competitive RFP process to site a commercial IMSR plant at the Texas A&M-RELLIS campus. This partnership provides a high-profile platform to showcase a commercial IMSR plant, benefiting from the Texas A&M University System’s national leadership in nuclear technology research and development.
+Terrestrial Energy has also established strategic partnerships and agreements with leading organizations including Westinghouse, Ameresco, Energy Solutions, Siemens, the U.S. Department of Energy, and multiple U.S. national labs including, Idaho National Laboratory, Oakridge National Laboratory, Argonne National Laboratory, among others. The Company has a pipeline of multiple IMSR plant projects, which are sourced from a portfolio of consortium relationships. These relationships offer sites, construction, fuel supply, plant operating services, as well as heat and power offtake, with the capabilities to deliver further IMSR plant projects. They cover a range of deployment use-cases including co-location for data center power supply, co-located industrial plant heat and power supply, and distributed on-grid generation.
+Transaction Overview
+As a result of the business combination, Terrestrial Energy has received in excess of $292 million in gross proceeds, prior to transaction expenses, including $50 million from a common stock PIPE investment from new non-affiliated fundamental institutional investors, and approximately $242 million of cash from HCM II’s trust account, reflecting redemptions by less than 1% of HCM II’s shareholders.
+Advisors
+Cantor Fitzgerald & Co. served as exclusive capital markets advisor and sole PIPE placement agent. King & Spalding LLP acted as legal counsel to HCM II. Bryan Cave Leighton Paisner LLP served as legal counsel to Terrestrial Energy. DLA Piper LLP (US) served as legal counsel to the placement agent, Cantor Fitzgerald & Co. ICR served as strategic communications advisor to Terrestrial Energy.
+About Terrestrial Energy
+Terrestrial Energy is a developer of Generation IV nuclear plants that use its proprietary Integral Molten Salt Reactor (IMSR). The IMSR captures the transformative operating benefits of molten salt reactor technology in a plant design that represents true innovation in capital efficiency, cost reduction, versatility and functionality of nuclear energy supply. IMSR plants are designed to be small and modular for distributed supply of low-cost, reliable, dispatchable, clean, high-temperature industrial heat and electricity, and to be customized for dual-use energy role relevant to many industrial applications, such as petrochemical and chemical synthesis, and data center operation. In so doing, IMSR plants extend the application of nuclear energy far beyond electric power markets. Their deployment will support the rapid global decarbonization of the primary energy system across a broad spectrum and increase its sustainability. Terrestrial Energy uses an innovative plant design together with proven and demonstrated molten salt reactor technology and standard nuclear fuel for a nuclear plant with a unique set of operating characteristics and compelling transformative commercial potential. Terrestrial Energy is engaged with regulators, suppliers, industrial partners and energy end-users to build, license and commission the first IMSR plants in the early 2030s.
+About HCM II Acquisition Corp.
+HCM II Acquisition Corp. was a blank check company formed for the purpose of effecting a merger, amalgamation, share exchange, asset acquisition, share purchase, reorganization or similar business combination with one or more businesses.
+Important Information for Shareholders
+The statements contained in this press release that are not purely historical are forward-looking statements. These forward-looking statements include, but are not limited to, statements regarding our expectations, hopes, beliefs, intentions or strategies regarding the future. In addition, any statements that refer to projections, forecasts or other characterizations of future events or circumstances, including any underlying assumptions, are forward-looking statements. The words "anticipate," "believe," "continue," "could," "estimate," "expect," "intends," "may," "might," "plan," "possible," "potential," "predict," "project," "should," "would" and similar expressions may identify forward-looking statements, but the absence of these words does not mean that a statement is not forward-looking.
+The forward-looking statements contained in this press release are based on our current expectations and beliefs concerning future developments and their potential effects the Company. There can be no assurance that future developments affecting the Company will be those that we have anticipated. These forward-looking statements speak only as of the date this press release is actually delivered and involve a number of risks, uncertainties (some of which are beyond our control) or other assumptions that may cause actual results or performance to be materially different from those expressed or implied by these forward-looking statements. Should one or more of these risks or uncertainties materialize, or should any of our assumptions prove incorrect, actual results may vary in material respects from those projected in these forward-looking statements. Factors that may cause actual results to differ materially from current expectations include, but are not limited to: (1) the outcome of any legal proceedings that may be instituted against the Company or others following the announcement of the Business Combination; (2) the risk that the Business Combination disrupts current plans and operations of the Company as a result of the announcement and consummation of the Business Combination; (3) the ability to recognize the anticipated benefits of the Business Combination, which may be affected by, among other things, competition, the ability of the combined company to grow and manage growth profitably, maintain relationships with customers and suppliers and retain its management and key employees; (4) changes in applicable laws or regulations; (5) the possibility that the Company may be adversely affected by other economic, business, and/or competitive factors; (6) changes in domestic and foreign business, market, financial, political conditions, and in applicable laws and regulations; (7) the ability to meet stock exchange listing standards following the consummation of the Business Combination; (8) the ability of the Company to build or maintain relationships with customers and suppliers and retain its management and key employees; and (9) other risk factors described herein as well as the risk factors and uncertainties described in documents filed by the Company with the U.S. Securities and Exchange Commission (the “SEC”), the sections entitled “Risk Factors” and “Cautionary Note Regarding Forward-Looking Statements” and similar sections in its filings with the SEC, including the Registration Statement relating to the Business Combination filed by the Company, and any periodic Exchange Act reports filed with the SEC such as its Annual Reports on Form 10-K, Quarterly Reports on Form 10-Q, and Current Reports on Form 8-K. The recipient of this press release should carefully consider the foregoing risk factors and the other risks and uncertainties which will be more fully described in the documents filed by the Company from time to time with the SEC. If any of these risks materialize or the underlying assumptions prove incorrect, actual results could differ materially from the results implied by these forward-looking statements. In addition, there may be additional risks that the Company presently know, or that it currently believe are immaterial, that could also cause actual results to differ from those contained in the forward-looking statements. Nothing in this communication should be regarded as a representation or warranty, either express or implied, by any person that the forward-looking statements set forth herein will be achieved or that any of the contemplated results of such forward-looking statements will be achieved. You should not place undue reliance on forward-looking statements, which speak only as of the date they are made.
+In addition, the information contained in this press release is provided as of the date hereof and may change, and the Company and its representatives and affiliates specifically disclaim any obligation to, and do not intend to, update or revise any forward-looking statements, whether as a result of new information, inaccuracies, future events or otherwise, except as may be required under applicable securities laws. Information contained on our website is not a part of or incorporated into this press release.
+Terrestrial Energy Investor Center:
+https://www.terrestrialenergy.com/investors
+Terrestrial Energy Media & Investor Contact:
+TerrestrialEnergy@icrinc.com
+This article contains syndicated content. We have not reviewed, approved, or endorsed the content, and may receive compensation for placement of the content on this site. For more information please view the Barchart Disclosure Policy here .
+Related Symbols
+Symbol Last Chg %Chg
+IMSR 5.40 +0.05 +0.93%
+Terrestrial Energy Inc
+HONDW 7.03 +0.03 +0.43%
+Hcm II Acquisition Corp. WT
+IMSRW 2.52 +0.02 +0.80%
+Terrestrial Energy Inc WT
+HOND 18.04 +0.16 +0.87%
+Hcm II Acquisition Corp
+Most Popular News
+1
+S&P Futures Gain on Hopes for U.S.-Iran Deal; SpaceX and AMD Sink After Earnings
+2
+Investors Short Snowflake Inc. Puts Options In Huge Volume - For a 10% Yield Over 1.3 Years Out
+3
+Strong Earnings Push the S&P 500 to New Record High
+4
+Here&#039;s Exactly What Elon Musk Said About Nvidia on the SpaceX Earnings Call
+5
+Netflix Calendar Spread: A Smart Play for a Neutral Outlook
+Log In Sign Up
+Site News
+Contact Market:
+US
+Canada
+UK
+Australia
+Europe
+HOME
+Stocks Market Pulse
+Stock Market Overview Market Momentum Market Performance Top 100 Stocks Today&#039;s Price Surprises New Highs & Lows Economic Overview Earnings Within 7 Days Earnings & Dividends Stock Screener
+Barchart Trade Picks
+Today&#039;s Top Stock Pick All Top Stock Picks
+Performance Leaders
+Percent Change Price Change Range Change Gap Up & Gap Down 3, 4, 5 Day Gainers
+Before & After Markets
+Pre-Market Trading Post-Market Trading
+Most Active
+Volume Leaders Price Volume Leaders Volume Advances Trading Liquidity
+Indices
+Market Indices S&P Indices S&P Sectors Dow Jones Indices Nasdaq Indices Russell Indices Volatility Indices Commodities Indices US Sectors Indices World Indices
+Trading Signals
+New Recommendations Top Stocks to Own Top Signal Strength Top Signal Direction Stock Signal Upgrades
+Sectors
+Stock Market Sectors Major Markets Heat Map Industry Rankings Industry Heat Map Industry Performance Stocks by Grouping
+Options Market Pulse
+Options Market Overview Unusual Options Activity Options Flow Upcoming Earnings
+Volatility
+IV Rank and IV Percentile Implied vs Realized Vol Rising vs Falling Volatility Highest Implied Volatility %Change in Volatility
+Volume & Open Interest
+Most Active Options Unusual Options Volume Options Volume Leaders Highest Open Positions Change in Open Interest %Change in Open Interest
+Data & Tools
+Options Time & Sales Options Price History Options Calculator Options Learning Center
+Option Screeners
+Options Screener Long Call Screener Long Put Screener
+Income Strategies
+Covered Call Naked Put
+Vertical Spreads
+Bull Call Spread Bear Call Spread Bear Put Spread Bull Put Spread
+Protection Strategies
+Married Put Protective Collar
+Straddle and Strangle
+Long Straddle Short Straddle Long Strangle Short Strangle
+Horizontal Strategies
+Long Call Calendar Long Put Calendar Long Call Diagonal Short Call Diagonal Long Put Diagonal Short Put Diagonal
+Butterfly Strategies
+Long Call Butterfly Short Call Butterfly Long Put Butterfly Short Put Butterfly Long Iron Butterfly Short Iron Butterfly
+Condor Strategies
+Long Call Condor Short Call Condor Long Put Condor Short Put Condor Long Iron Condor Short Iron Condor
+ETFs Market Pulse
+ETF Market Overview Popular ETFs ETF Finder Top 100 ETFs Today&#039;s Price Surprises New Highs & Lows Top Dividend ETFs ETF Screener
+Performance Leaders
+Percent Change Price Change Range Change Gap Up & Gap Down 3, 4, 5 Day Gainers
+Before & After Markets
+Pre-Market Trading Post-Market Trading
+Most Active
+Volume Leaders Price Volume Leaders Volume Advances
+Trading Signals
+New Recommendations Top ETFs to Own Top Signal Strength Top Signal Direction ETFs Signal Upgrades
+Mutual Funds
+Today&#039;s Price Surprises New Highs & Lows Performance Price Change Funds Screener
+Futures Market Pulse
+Futures Market Overview Long Term Trends Today&#039;s Price Surprises Highs & Lows Futures Market Map Performance Leaders Most Active Futures Prices by Exchange
+Commodity Groupings
+Commodities Prices Currencies Energies Financials Grains Indices Livestock Metals Softs Mini & Micro Futures
+Futures Trading Guide
+Trading Guide Historical Performance
+Commitment of Traders
+Commitment of Traders Legacy Report Disaggregated Report Financial TFF Report
+Resources
+Contract Specifications Futures Expirations First Notice Dates Options Expirations Economic Calendar
+Cash Markets
+Cash Markets Overview Corn Indexes Soybean Indexes
+European Futures
+Euro Futures Overview Long Term Trends Today&#039;s Price Surprises Highs & Lows Futures Market Map Performance Leaders Most Active Futures
+European Groupings
+Commodities Prices Energies Financials Grains Indices Metals Softs Europe Power Futures Europe Gas Futures Baltic Freight Indices
+European Trading Guide
+European Trading Guide Historical Performance
+Currencies Forex Market Pulse
+Forex Market Overview Long Term Trends Today&#039;s Price Surprises Highs & Lows Forex Market Map Performance Leaders Currency Converter
+Crypto Market Pulse
+Crypto Market Overview Market Capitalizations Bitcoin Futures
+Trading Signals
+New Recommendations
+Commitment of Traders
+Commitment of Traders Legacy Report Financial TFF Report
+Currency Groupings
+Popular Cross Rates Australian Dollar British Pound Canadian Dollar Euro FX Japanese Yen Swiss Franc US Dollar Metals Rates All Forex Markets
+Crypto Groupings
+Popular Coins Bitcoin Bitcoin-Cash Ethereum Litecoin Monero XRP Tether Zcash
+Investing Investing Ideas
+Today’s Investing Ideas Top Performing Stocks Top Trending Tickers Barchart Screeners
+Insider Trading
+Insider Trading Activity Politician Insider Trading
+Today&#039;s Picks
+Chart of the Day Top Stock Pick Futures Trading Guide
+My Screeners
+Stock Screener ETF Screener Funds Screener Options Screener
+Technical Ideas
+Bullish Moving Averages Bearish Moving Averages Breakouts and Reversals Candlestick Patterns eMACD Buy Signals Hot Penny Stocks RSI Bullish Divergence RSI Bearish Divergence Short Interest Stocks Standout Stocks Top Stocks Under $10 TTM Squeeze Up Trending Stocks Down Trending Stocks
+Dividend Ideas
+Best Dividend Stocks Dividend Aristocrats Dividend Kings
+Power Investors
+Cathie Wood Stocks Warren Buffett Stocks
+Themed Lists
+AI Stocks Battery Stocks Biotechnology Stocks Cannabis Stocks Clean Energy Stocks Crypto Stocks Cybersecurity Stocks Data Center Stocks Drones & Flying Cars EV Stocks Fintech Stocks Gold Stocks Magnificent 7 Nuclear Energy Stocks Oil Stocks Power & Infrastructure Quantum Computing Rare Earth Minerals REIT Stocks Robotics Stocks Semiconductor Stocks Space Race Stocks World Markets
+News Barchart
+Markets Today Barchart News Exclusives Contributors Chart of the Day News Feeds
+Featured Authors
+Andrew Hecht Austin Schroeder Caleb Naysmith Darin Newsom Don Dawson Elizabeth Volk Gavin McMaster Jeannine Mancini Jim Van Meerten Justin Estes Mark Hake Oleksandr Pylypenko Rich Asplund Rick Orford Rob Isbitts Sarah Holzmann All Authors
+Commodity News
+All Commodities Energy Grains Livestock Metals Softs
+Financial News
+All Financials Crypto Dividends ETFs FX Interest Rates Options Stock Market
+Free Newsletters
+All Free Newsletters The Barchart Brief Active Investor Unusual Options Activity Dividend Investor Pre-Market Bulletin Commodity Bulletin Chart of the Day Ag Market Commentary
+Press Releases
+All Press Releases ACCESS Newswire Business Wire GlobeNewswire TMX Newsfile PR Newswire
+Tools Member Tools
+My Watchlist Investor Portfolio Standard Portfolio Dashboard Symbol Notes Alert Center Alert Templates Barchart Screeners My Charts Custom Views Barchart Custom Views Chart Templates Barchart Chart Templates Compare Stocks Daily Prices Download Historical Data Download
+My Custom Reports
+Watchlist Emails Standard Portfolio Emails Investor Portfolio Emails Screener Emails End-of-Day My Charts End-of-Day Reports
+Manage Tools
+Organize Watchlists Organize Portfolios Organize Investor Portfolios Organize Screeners Organize My Charts
+My Account
+My Profile Site Preferences Author Followings Trading Alerts & Ideas
+Learn Knowledge Base
+Site Education Options Education Options Learning Center Quick Start Tutorials Site News
+Barchart Webinars
+Upcoming Webinars Archived Webinars Popular Webinars
+Barchart Live
+Market on Close Market on Close Archive
+Membership
+Barchart Premier Barchart Plus Membership Comparison Barchart for Excel Create Free Account
+Barchart Resources
+Technical Indicators Barchart Trading Signals Time & Sales Conditions Barchart Special Symbols Barchart Data Fields
+Options Resources
+Profit & Loss Charts Options Volatility Options Greeks Covered Call Naked Put Long Call Option Deep ITM Calls Long Put Option Credit Spreads Short Straddles Short Iron Condor 7 Ways to Make Money Hedge Stocks with Options
+Site News
+B2B SOLUTIONS About Market Data News Feeds & API Services Data Management Digital Solutions OnDemand APIs Software Indexes cmdtyView Ag Solutions
+Contact Barchart
+Site Map
+Back to top
+Contact Barchart
+Membership Barchart Premier Barchart Plus Barchart for Excel Create Free Account
+Resources Site Map Site Education Newsletters Advertise
+Barchart App Business Solutions Market Data APIs Real-Time Futures Barchart Merchandise
+Stocks: 15 20 minute delay (Cboe BZX is real-time), ET. Volume reflects consolidated markets. Futures and Forex: 10 or 15 minute delay, CT. Market Data powered by Barchart Solutions. Fundamental data provided by Zacks and Morningstar .
+Barchart is committed to ensuring digital accessibility for individuals with disabilities. We encourage users to Contact Us with feedback and accommodation requests.
+© 2026 Barchart.com, Inc. All Rights Reserved.
+About Barchart | Affiliate Program | Terms of Use | Privacy Policy | Do Not Sell or Share My Personal Information | Cookie Notice | Cookie Settings
+Want to use this as
+your default charts setting?
+Save this setup as a Chart Templates
+Switch the Market flag
+for targeted data from your country of choice. Open the menu and switch the
+Market flag for targeted data from your country of choice.
+Want Streaming Chart Updates?
+Switch your Site Preferences
+to use Interactive Charts
+Need More Chart Options?
+Right-click on the chart to open the Interactive Chart menu.
+Use your up/down arrows to move through the symbols.

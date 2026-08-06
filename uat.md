@@ -1,9 +1,18 @@
 # UAT Baseline
 
-Last run: 2026-08-05
+Last run: 2026-08-06
 Environment: local vinext development server at `http://localhost:3000`
 
 ## Learned pathways
+
+- **Measure scroll depth to each landmark, not just "does it render".** The
+  board renders correctly at every breakpoint and is still below the fold on
+  both. `getBoundingClientRect().top + scrollY` for each landmark, divided by
+  `innerHeight`, turns a design opinion into a number worth acting on.
+- **Count the affordances for finding one item.** Search inputs, filters, and
+  in-page anchors on the lead surface. The homepage has zero of each while
+  `/deployments` has four, which is the kind of gap nobody notices by clicking
+  around because they already know where everything is.
 
 - **Verify accessibility by reading the tree, never from a screenshot.** The race
   board's whole a11y contract is the per-band megawatt figure in each figure's
@@ -52,6 +61,21 @@ fresh evidence.
 | Text search | `Aalo` narrows the 28 records to one | Pass |
 | Stage filter | Stage 7 plus the active query keeps the one matching operational record | Pass |
 | Directory row | Clicking Aalo opens its project record with a company-reported LinkedIn source | Pass |
+
+## Findability and scroll depth (2026-08-06)
+
+| Measure | Desktop 1440x900 | Mobile 375x812 |
+| --- | --- | --- |
+| First board row appears at | 853px | 1,222px |
+| Board rows visible above the fold | 1 of 18 | **0 of 18** |
+| "How to read the bars" appears at | 2,568px (after all rows) | 4,843px (after all rows) |
+| Full page height | 5.8 screens | 11.8 screens |
+| Search, filter or anchor on the board | none | none |
+| Click targets per row | 1 (the company name) | 1 |
+| Sticky context while scrolling | none | none |
+
+No console errors. Logged as UX-001 and UX-002 in `issues.md`, with the
+improvements queued in `backlog.md`.
 
 ## Race board checks (2026-08-05)
 

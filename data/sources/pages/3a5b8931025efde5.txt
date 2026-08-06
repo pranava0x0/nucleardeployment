@@ -1,0 +1,79 @@
+Crusoe and Aalo Atomics Form Strategic Partnership with
+Accessibility: Skip TopNav
+Consumer Products and Services News
+Automobiles and Parts News
+Food & Beverage News
+Home Goods & Construction News
+Leisure Goods News
+Media & Entertainment News
+Personal Care News
+Retail News
+Travel and Leisure News
+Energy News
+Alternative Energy News
+Oil Gas and Coal News
+Chemicals News
+Banks & Financial Services News
+Banking News
+Closed-End Investments News
+Finance and Credit Services News
+Investment Banking and Brokerage Services News
+Insurance News
+Real Estate & REITs News
+Healthcare News
+Healthcare Providers News
+Medical Equipment News
+Medical Supplies and Services News
+Biotechnology News
+Pharmaceuticals News
+Cannabis Producers News
+Industrials and Utilities News
+Aerospace and Defense News
+Construction and Materials News
+Utilities News
+Industrials News
+Metals & Mining News
+Technology and Telecom News
+Software News
+IT Services News
+Semiconductors News
+Electronic Components & Equipment News
+Computer Hardware News
+Telecom Equipment News
+Telecom Services News
+More
+Browse the Latest News
+Crusoe and Aalo Atomics Form Strategic Partnership with Goal of Deploying First Nuclear-Powered AI Factory
+Commercial Partnership Builds Upon Aalo’s Recent Criticality; Demonstrates American Leadership in AI and Energy
+July 30, 2026 08:00 ET
+| Source:
+Crusoe
+Crusoe
+DENVER and AUSTIN, Texas, July 30, 2026 (GLOBE NEWSWIRE) -- Crusoe, the industry’s first vertically integrated AI infrastructure provider, and Aalo Atomics, the company building fully modular nuclear reactors (XMRs) to power modern AI data centers, today announce a strategic partnership focused on developing and deploying the first nuclear-powered AI Factory data center designed to validate nuclear power’s effectiveness with AI workloads.
+“The next generation of AI infrastructure demands power that is reliable, abundant, clean and at scale, and Aalo’s nuclear reactors are built to meet that need,” said Cully Cavness, Co-Founder, President and Chief Strategy Officer, Crusoe. “One of Crusoe’s core values is to ‘bend the arc of energy toward sustainability,’ and within that value we embrace the principle of using Crusoe’s market position to support and accelerate energy innovation. In line with our core values, we look forward to Aalo and Crusoe jointly demonstrating to the industry the first AI data center powered by a small modular nuclear reactor.”
+Aalo will initially power a Crusoe Spark™ modular data center, running Crusoe Cloud, in 2027 at Idaho National Laboratory as a proof of concept. Looking forward, Aalo and Crusoe intend to deploy Aalo Pods and Aalo’s 50 MWe XMR power plants at Crusoe data centers, by the end of 2029.
+“As one of only four companies to reach criticality by President Trump’s deadline for companies in the DOE Reactor Pilot Program, we are now well positioned for not only the full power operation of our 10 MWe Aalo-X reactor, but also the deployment of the Aalo Pod to power commercial data centers,” said Matt Loszak, CEO, Aalo Atomics. “We are now the only nuclear technology company to design and build a nuclear reactor fueled to produce 10MW of electricity – an achievement that positions Aalo as the premier power provider for the modern data center.”
+Aalo has already begun work on its second nuclear reactor (located next to the Aalo-X test reactor at INL), testing a commercial-scale system that will produce electricity and power for an on-site Crusoe Spark™ modular data center.
+About Crusoe
+As the AI factory company, Crusoe is on a mission to accelerate the abundance of energy and intelligence. The company provides a reliable, scalable, cost-effective, energy-first solution for AI infrastructure. By harnessing large-scale energy sources, building AI-optimized data centers, and delivering a powerful AI cloud platform, Crusoe empowers its customers and partners to build the future faster.
+About Aalo Atomics
+Aalo Atomics, based in Austin, Texas, builds nuclear reactors to power modern AI data centers. Founded in 2023, Aalo has secured over $136M in funding to date from multiple investors, including Valor Equity Partners, 50Y, Fine Structure Ventures, Hitachi Ventures, NRG Energy, Vamos Ventures, Tishman Speyer, Kindred Ventures, Harpoon Ventures, Crescent Enterprises, Crosscut, Alumni Ventures, MCJ, Gaingels, and Nucleation Capital, among others. To learn more, visit www.aalo.com .
+Media Contact
+media@crusoe.ai
+A photo accompanying this announcement is available at https://www.globenewswire.com/NewsRoom/AttachmentNg/7096e3b6-ae5f-430d-8345-10c8cf903fb5
+Crusoe Aalo
+Crusoe Aalo
+GlobeNewswire
+Recommended Reading
+July 21, 2026 05:00 ET
+|
+Source: Crusoe
+Crusoe and ON.energy to Deploy 5 GW of AI UPS™ at Multiple Hyperscale Campuses
+MIAMI and DENVER, July 21, 2026 (GLOBE NEWSWIRE) -- Crusoe, the AI factory company, and ON.energy today announced a partnership to power the next generation of AI infrastructure: deploying 5...
+Read More
+July 15, 2026 10:00 ET
+|
+Source: Crusoe
+Crusoe and Lancium Announce 1.0 Gigawatt AI Data Center Campus in Childress, Texas
+CHILDRESS, Texas, July 15, 2026 (GLOBE NEWSWIRE) -- Crusoe, the industry's first vertically integrated AI infrastructure provider, and Lancium, an energy technology and infrastructure company, today...
+Read More

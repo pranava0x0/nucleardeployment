@@ -41,3 +41,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# Cached source snapshots are committed on purpose: they are the evidence.
+# Nothing here is generated at runtime.

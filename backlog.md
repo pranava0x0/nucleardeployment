@@ -12,6 +12,20 @@
 
 ## Race board follow-ups
 
+### From the 2026-08-06 UAT (measured, not guessed)
+
+The board is the product, and on both breakpoints a reader has to scroll past
+the masthead to reach it. Measurements below are from the built pages.
+
+- [ ] **High. Get the first board rows above the fold.** The masthead is 527px tall on desktop and about 1,200px on mobile, so the first row sits at 853px (desktop, 1 row visible) and 1,222px (mobile, **0 rows visible**). A reader on a phone scrolls one and a half screens before seeing a single company. Move the Vogtle context and the "data as of" line below the board or into the methodology, and let the headline plus the honest-zero sentence carry the top of the page. Target: 3 rows visible on desktop, 1 on mobile, without losing the zero statement.
+- [ ] **High. Let a reader find one company without reading all 18 rows.** The homepage has zero search inputs, zero filters, and zero in-page anchors; `/deployments` has a search box and three filters but the lead surface has none. A reader who wants Oklo scrolls or leaves. Add a single client-side filter box above the board that narrows rows as you type, matching company, design, and lane. One control, no new page, no round trip.
+- [ ] **High. Move "How to read the bars" above the board.** The legend sits at 2,568px on desktop and 4,843px on mobile, which is after all 18 rows. A reader meets the encoding only once they have stopped needing it. Put a one-line key above the first row and keep the full band table where it is.
+- [ ] **Medium. Keep the gigawatt line and band key in view while scrolling the board.** Nothing on the page is sticky. Eighteen rows is roughly four screens on mobile, and the reference for what the bars mean scrolls away immediately. A slim sticky header carrying the scale and the line marker would hold the context that makes a bar readable.
+- [ ] **Medium. Make the whole board row clickable** (UX-002 in issues.md), and give the dossier a "back to the board" link (UX-001). Together these remove a mis-click and a wrong-destination round trip from the most common path: scan board, open company, return to board.
+- [ ] **Medium. Cut the mobile page from 11.8 screens.** The homepage stacks the board, the eight-stage pipeline, recent milestones, federal orders, capital, and a post-criticality explainer. On a phone that is a long scroll to reach anything below the board. Consider collapsing the lower sections behind their existing section links, since each already has a dedicated page.
+- [ ] **Low. Give the board a sort control.** It ranks by strongest evidence, which is right as a default, but a reader comparing announcements or capital cannot reorder. A two-option toggle (evidence, announced capacity) would answer a common question without a new page.
+
+
 - [x] Fix the 14 findings from the post-merge review of PR #6. Done 2026-08-06 on `chore/session-learnings`: link-checker classification and argument validation, `data:check` in CI, all deploy actions SHA-pinned, race-bar overflow marker, capped gigawatt progress, llms.txt URL derivation and pluralisation, plus four cleanup items. Each carries a regression test. Details in `issues.md` under REVIEW-002.
 
 - [ ] Bring the stage pipeline's company chips up to the 44px touch floor. Measured 2026-08-05 at 375px: 31 links inside `.pipe-companies` render at 20 to 39px. Pre-existing and untouched by the race work, and the fix is not free, since 44px on every chip makes the pipeline cards much taller. Decide whether to raise the chips, make each card a single target, or document an inline exception in DESIGN.md. Priority: medium.

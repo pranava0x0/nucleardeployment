@@ -2,6 +2,10 @@
 
 ## Open
 
+- 2026-08-06 — UX-001 (open): The dossier's only way back is "← All companies", which goes to `/companies`. Most readers arrive from the race board on `/`, so the back link returns them somewhere they have never been, and getting back to their place on the board takes a second click or the browser button. Fix: label and target the back link by where the reader came from, or add a "back to the board" link beside it.
+- 2026-08-06 — UX-002 (open): A board row's only click target is the company name, roughly 100 to 170px wide inside a row about 90px tall. The rest of the row, including the bar a reader is looking at, is inert. Fix: make the whole row the link, keeping the name as the visible affordance.
+- 2026-08-06 — DATA-023 (open): Three Federal Register sources cached as a 1,180-byte "Request Access" page rather than the document, because the site answers scripted fetches with a 200 and a refusal notice. Fixed for Federal Register by fetching its documented JSON API, and a wall detector now refuses to store any interstitial as a snapshot. Sixteen other sources remain behind walls and need a browser read recorded in `link-check-history.jsonl`. Run `npm run data:claims` for the queue.
+
 - The dataset now covers 28 sourced U.S. projects, all 11 initial Reactor Pilot Program projects, 26 companies, and 18 race entrants, but it is not yet a complete U.S. or global census.
 - Uncompressed page weight is 456 KB on the homepage against a 250 KB target. Transfer size is 122 KB gzipped, which is within budget, and the dominant term is the 185 KB React framework chunk that predates the race board. Watch it rather than treat the raw figure as a regression; see backlog.md.
 - `npm audit` reports moderate transitive findings in the vinext/Next.js build chain. No high or critical findings remain after updating Vite, the Cloudflare Vite plugin, and Wrangler on 2026-07-17. Avoid `npm audit fix --force`; it proposes incompatible downgrades.

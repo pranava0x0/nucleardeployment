@@ -1,0 +1,199 @@
+Oklo Inc. - Oklo and Los Alamos National Lab Conduct Fast Spectrum Plutonium Criticality Experiment
+Skip to main content
+Overview
+Energy
+Energy
+Ohio
+Technology
+Fuel Recycling
+Fuel Recycling
+Tennessee
+Isotopes
+Isotopes
+Texas
+About
+Regulatory
+Newsroom
+Press Releases
+Media
+POV
+Investors
+Overview
+Financials
+Quarterly results
+SEC filings
+Governance
+Governance documents
+Executive management
+Board of directors
+Committee composition
+News
+Events & Presentations
+Stock Info
+Resources
+Investor FAQs
+Investor email alerts
+Investor contacts
+FAQs
+Contacts
+Investor Contacts
+Business Development
+Careers
+Store
+Skip to main content
+News Details
+Overview
+Energy
+Energy
+Ohio
+Technology
+Fuel Recycling
+Fuel Recycling
+Tennessee
+Isotopes
+Isotopes
+Texas
+About
+Regulatory
+Newsroom
+Press Releases
+Media
+POV
+Investors
+Overview
+Financials
+Quarterly results
+SEC filings
+Governance
+Governance documents
+Executive management
+Board of directors
+Committee composition
+News
+Events & Presentations
+Stock Info
+Resources
+Investor FAQs
+Investor email alerts
+Investor contacts
+FAQs
+Contacts
+Investor Contacts
+Business Development
+Careers
+Store
+Investor Relations Menu
+View all news
+Oklo and Los Alamos National Lab Conduct Fast Spectrum Plutonium Criticality Experiment
+12/17/2025
+Download (opens in new window)
+Multi-day fast-spectrum reactor experiments at the U.S. Department of Energy’s National Criticality Experiments Research Center generate modern benchmark data.
+The data supports Oklo’s plutonium-fueled fast reactor project Pluto under the U.S. Department of Energy’s Reactor Pilot Program and advances work to use surplus plutonium as a bridge fuel for advanced reactors.
+NEVADA NATIONAL SECURITY SITE, Nev.--(BUSINESS WIRE)--
+Oklo Inc. (NYSE: OKLO) (Oklo), an advanced nuclear technology company, today announced it has been conducting a multi-day plutonium fast reactor critical test suite with Los Alamos National Laboratory (LANL) at the U.S. Department of Energy’s (DOE) National Criticality Experiments Research Center (NCERC) under a Strategic Partnership Project (SPP).
+Oklo Aurora powerhouse (Image: Oklo)
+LANL—America’s center of excellence for plutonium science—is an essential partner for developing and validating plutonium as an advanced reactor bridge fuel by providing the R&D foundation needed for future fast reactor development and deployment. The campaign marks the first public technical milestone for Oklo’s Pluto reactor—a plutonium-fueled fast test reactor project selected under DOE’s Reactor Pilot Program (RPP)—and the first step in a larger collaborative program with LANL to qualify surplus plutonium as fuel for commercial advanced reactors.
+Using plutonium materials already held within its inventory, LANL carried out a series of low-power experiments on the Flattop fast-spectrum critical assembly with Oklo. Over several days, the system was taken critical and through power maneuvers and transients to capture detailed reactivity feedback and power response measurements, demonstrating the inherent safety features of a plutonium-fueled fast-spectrum system. Tests included taking the system critical and then increasing power and temperature in the reactor’s core, which led to negative reactivity feedback that shut the system down. The resulting data constitutes a modern set of benchmark measurements in a fast-spectrum configuration, helping build data to use surplus plutonium as commercial reactor fuel and informing Oklo’s work on Pluto and future systems.
+The experiments were carried out at NCERC, a unique national asset dedicated to critical experiments and reactor physics testing located at the LANL-operated Nevada National Security Site (NNSS), under the oversight of DOE and the National Nuclear Security Administration (NNSA). NCERC provides specialized test assemblies, diagnostic systems, and expert staff to perform rigorous, highly controlled criticality and reactivity experiments under DOE and NNSA oversight. The work builds on a growing collaboration between LANL and Oklo spanning SPPs and a Cooperative Research and Development Agreement focused on advanced fuels, such as plutonium, and advanced reactors.
+“This campaign is part of a larger plan to turn America’s surplus fuel stockpiles into bridge fuel for advanced reactors,” said Jacob DeWitte, co-founder and CEO of Oklo. “By working with LANL—the worldwide leader in plutonium science—at DOE’s NCERC facility, we are generating the modern benchmark data needed to qualify surplus plutonium as a bridge fuel for advanced reactors, strengthening U.S. energy dominance, supporting the near-term deployment of clean, reliable capacity, and eliminating material that would otherwise remain in long-term storage.”
+The U.S. holds a sizable legacy surplus of Cold War-era materials, including plutonium, that has been managed for decades at significant cost to taxpayers. In May 2025, federal policies directed DOE to halt the dilute-and-dispose program and begin establishing pathways to make around 34 metric tons of surplus plutonium available to industry in forms suitable for the fabrication of advanced reactor fuel. That evolution opens the door to convert material previously treated as a liability into a source of useful energy.
+“One of the challenges and gates to deploying new nuclear is the shortfall in domestic nuclear fuel production across the fuel supply chains. The government has reserves of usable fuel materials, like plutonium, that can be used as bridge fuel for new reactors as the industry expands its supply chains. This bridge fuel can help us build more reactors more quickly and bring clean power online sooner in larger quantities while also helping alleviate strains on power supplies that are increasing energy costs,” said DeWitte. “This is material that the government would otherwise spend billions of dollars of taxpayer money to ultimately bury. Instead, we can use it to build more power plants sooner. Greater fuel supplies also help us bring stronger orders to our developing fuel supply chains, which helps scale those sooner. Legacy materials like these surplus stockpiles of plutonium are significant enablers in producing more clean power sooner.”
+Fast reactors also offer a productive disposition pathway for these materials: fissioning surplus plutonium destroys the material while generating clean energy, creating a bridge fuel that can enable early deployment of advanced reactors while high-assay low-enriched uranium (HALEU) and recycling-based fuel supply chains scale. The surplus plutonium can be fabricated into fuel that is interchangeable with HALEU-based fuel and the fuel produced from recycling.
+Oklo’s work with DOE and LANL is a clear demonstration of DOE’s capabilities in handling and testing advanced nuclear systems and fuels, the first in a planned series of fast-spectrum experiments Oklo expects to conduct at NCERC. The recent test campaign builds on a large data set of similar tests and experiments run by LANL and NCERC, and future work will include additional benchmark measurements for transuranic-bearing recycled fuels, HALEU-based fuels, and other configurations that will advance both near-term reactor designs and longer-term use of recycled fuel.
+Pluto, one of Oklo’s selections under DOE’s RPP, is a fast test reactor being developed by Oklo. Data from this project provides an early contribution to Pluto’s design and safety basis. The data also helps build the technical foundations for using fuel fabricated from surplus plutonium in future Aurora powerhouses, which are intended to deliver clean, reliable power to the U.S. grid.
+About Oklo Inc.: Oklo Inc. is developing fast fission power plants to deliver clean, reliable, affordable energy at global scale; establishing a domestic supply chain for critical radioisotopes; and advancing nuclear fuel recycling to convert used nuclear fuel into clean energy. Oklo was the first to receive a site use permit from the U.S. Department of Energy for a commercial advanced fission plant, was awarded fuel from Idaho National Laboratory, and submitted the first custom combined license application for an advanced reactor to the U.S. Nuclear Regulatory Commission. Oklo is also developing advanced fuel recycling technologies in collaboration with the U.S. Department of Energy and U.S. National Laboratories.
+Forward-Looking Statements
+This press release includes statements that express Oklo’s opinions, expectations, objectives, beliefs, plans, intentions, strategies, assumptions, forecasts or projections regarding future events or future results and therefore are, or may be deemed to be, “forward-looking statements.” The words “may,” “will,” “could,” “should,” “expects,” “anticipates,” “intends,” “plans,” “believes,” “seeks,” “estimates,” “continue,” “might,” “possible,” “potential,” “predict,” “project,” “goal,” “would,” “commit,” or, in each case, their negative or other variations or comparable terminology, and similar expressions may identify forward-looking statements, but the absence of these words does not mean that a statement is not forward-looking. These forward-looking statements include all matters that are not historical facts. They appear in a number of places throughout this press release and include statements regarding our intentions, beliefs or current expectations concerning, among other things, results of operations, financial condition, liquidity, prospects, growth, strategies and the markets in which Oklo operates. Such forward-looking statements are based on information available as of the date of this press release, and current expectations, forecasts and assumptions, and involve a number of judgments, risks and uncertainties.
+As a result of a number of known and unknown risks and uncertainties, the actual results or performance of Oklo may be materially different from those expressed or implied by these forward-looking statements. The following important risk factors could affect Oklo’s future results and cause those results or other outcomes to differ materially from those expressed or implied in the forward-looking statements: risks related to the development and deployment of Oklo’s powerhouses; the risk that Oklo is pursuing an emerging market with no commercial project operating and regulatory uncertainties; risks related to acquisitions, divestitures, or joint ventures we may engage in; the need for financing to construct plants, which remain subject to market, financial, political, and legal conditions; risks related to an inability to raise additional capital to support our business and sustain our growth on favorable terms; the effects of competition; risks related to accessing high-assay low-enriched uranium, plutonium, and other fuels at acceptable costs (including recycled fuels); risks related to our supply chain; risks related to power purchase agreements; risks related to human capital; risks related to our intellectual property; risks related to cybersecurity and data privacy; changes in applicable laws or regulations, including tariffs; the outcome of any government and regulatory proceedings and investigations and inquiries; and the other factors set forth in our documents we have filed with the U.S. Securities and Exchange Commission (the “SEC”).
+The foregoing list of factors is not exhaustive. You should carefully consider the foregoing factors and the other risks and uncertainties of the other documents filed by Oklo from time to time with the SEC. The forward-looking statements contained in this press release are based on current expectations and beliefs concerning future developments and their potential effects on Oklo. There can be no assurance that future developments affecting Oklo will be those that Oklo has anticipated. Oklo undertakes no obligation to update or revise any forward-looking statements to reflect events or circumstances after the date of this presentation, except as may be required by law.
+Media and Investor Contact for Oklo:
+Bonita Chester, Head of Communications and Media at media@oklo.com
+Investor Contact:
+Sam Doane, Director of Investor Relations at investors@oklo.com
+Source: Oklo Inc.
+Multimedia Files:
+Oklo Aurora powerhouse (Image: Oklo)
+2000 x 1000
+jpg
+2.39 MB
+Download:
+Download original
+jpg
+2.39 MB
+2000 x 1000
+Download thumbnail
+png
+53 KB
+200 x 100
+Download lowres
+png
+277 KB
+480 x 240
+Download square
+png
+157 KB
+250 x 250
+4069 x 1376
+jpg
+132 KB
+Download:
+Download original
+jpg
+132 KB
+4069 x 1376
+Download thumbnail
+png
+3 KB
+200 x 68
+Download lowres
+png
+9 KB
+480 x 162
+Download square
+png
+5 KB
+250 x 250
+View all news
+Subscribe to receive Oklo news and updates
+To opt-in for investor email alerts, please enter your email address in the field below and select at least one alert option. After submitting your request, you will receive an activation email to the requested email address. You must click the activation link in order to complete your subscription. You can sign up for additional alert options at any time.
+At Oklo Inc., we promise to treat your data with respect and will not share your information with any third party. You can unsubscribe to any of the investor alerts you are subscribed to by visiting the ‘unsubscribe’ section below. If you experience any issues with this process, please contact us for further assistance.
+By providing your email address below, you are providing consent to Oklo Inc. to send you the requested investor email alert updates.
+* Required
+Email
+*
+Investor Alert Options
+Investor alert options
+*
+News
+Quarterly results
+Annual reports
+SEC filings
+End of day stock quote
+Events & presentations
+Unsubscribe
+Email alert sign-up confirmation
+Tech
+About
+Careers
+Store
+Contact
+Terms of Services
+Privacy
+Twitter opens in a new window
+Youtube opens in a new window
+Linkedin opens in a new window
+Facebook opens in a new window
+© Q4 Inc. - All rights reserved
+Privacy Policy
+Terms of Use
+Site Map
+Powered by Q4 Inc.
+5.184.0.5
+(opens in new window)
+Stay Connected:
+Linkedin opens in a new window
+Twitter opens in a new window
+Facebook opens in a new window
+Youtube opens in a new window
+Instagram opens in a new window
+Opens in a new window

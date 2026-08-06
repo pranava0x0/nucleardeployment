@@ -1,0 +1,232 @@
+Demonstration of Microreactor Experiments (DOME) | Department of Energy
+Skip to main content
+An official website of the United States government
+Here's how you know
+Here's how you know
+Official websites use .gov
+A .gov website belongs to an official government organization in the United States.
+Secure .gov websites use HTTPS
+A lock (
+Lock
+Locked padlock
+) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+Policy & Priorities
+Main Menu
+Policy & Priorities
+View all Policy & Priorities
+Increase American Energy Production
+Expanding domestic energy resources to support national needs and economic growth.
+Energy Innovation
+Driving research and development to shape the future of energy systems and technologies.
+Energy Exports
+Supporting global energy markets through U.S. energy production and trade.
+Affordable Energy for Consumers
+Promoting access to reliable and cost-effective energy for households and businesses.
+Strategic Petroleum Reserve (SPR)
+Managing emergency fuel reserves to support national energy security.
+Nuclear Security
+Maintaining the safety, security, and effectiveness of the nation’s nuclear deterrent.
+Nuclear Energy
+Advancing nuclear technologies to support energy, security, and innovation goals.
+Energy Reliability
+Ensuring consistent and dependable energy delivery across the nation.
+Energy Infrastructure
+Strengthening and modernizing the systems that produce, deliver, and store energy.
+Leadership & Organization
+Main Menu
+Leadership & Organization
+View all Leadership & Organization
+Chris Wright
+Secretary of Energy
+James Danly
+Deputy Secretary of Energy
+Leadership & Organization Pages
+Staff Offices
+Supporting DOE operations through policy, administration, and mission services.
+Science and Innovation Program Offices
+Leading scientific research and technology development across priority areas.
+Independent Offices
+Providing oversight and specialized functions across key areas of the Department.
+Energy Program Offices
+Managing programs that support energy production, efficiency, and delivery.
+National Laboratories
+Advancing research and innovation through DOE’s National Laboratory System.
+Nuclear Security Offices
+Overseeing national security efforts related to nuclear safety and defense.
+Featured
+Hydrocarbons and Geothermal Energy Office
+Topics
+Main Menu
+Topics
+View all Topics
+Energy Sources
+Learn about the resources and technologies used to produce power across the United States.
+Energy Usage
+Explore how energy is consumed in homes, businesses, transportation, and industry.
+Policy
+Understand the laws, regulations, and strategies that guide energy decisions and national priorities.
+Science & Innovation
+See how research, discovery, and new technologies are shaping the future of energy.
+Economy
+Discover how energy affects jobs, markets, investment, and economic growth.
+National Security & Safety
+Learn how energy systems support resilience, infrastructure protection, and public safety.
+News & Events
+Main Menu
+News & Events
+View all News & Events
+Press Releases
+August 4, 2026
+Reuse of Wartime Lands in Volunteer State Launches Nation’s Next American Energy Hub
+The U.S. Department of Energy’s Office of Environmental Management recently… Read more
+View all Press Releases
+Fact Sheets
+FACT SHEET: The Department of Energy is Ensuring Affordable Energy Access in Ohio While Powering the Future of AI
+FACT SHEET: The Energy Department is Unleashing Beautiful, Clean Coal
+FACT SHEET: The Energy Department is Lowering Electricity Costs in Georgia and Alabama
+View all Fact Sheets
+Upcoming Events
+Aug 5
+2:00PM EDT - 1:00PM EDT
+2026 Federal Utility Partnership Working Group (FUPWG) Seminar
+Aug 12
+11:00AM EDT - 7:30PM EDT
+Hanford EM SSAB Meeting (August 2026)
+Aug 12
+6:00PM EDT - 8:00PM EDT
+Oak Ridge EM SSAB Meeting (August 2026)
+View all Events
+About
+Main Menu
+About
+Mission
+Supporting USA energy, science, and security priorities.
+History & Achievements
+Nobel Prize Laureates
+Contact Us
+Access general information and ways to connect with the Department of Energy.
+Careers
+Internships & Fellowships
+Apprenticeships & Workforce Development
+Work at DOE
+Funding Opportunities
+Breadcrumb
+Office of Nuclear Energy
+Demonstration of Microreactor Experiments (DOME)
+Demonstration of Microreactor Experiments (DOME)
+Banner Color
+Light Text on a Dark Overlay (Default)
+Background
+Microreactors are small, factory-built nuclear reactors that typically provide between 1 and 50 megawatts of reliable power to remote locations, military bases, and commercial operations. Facilities needed to test these reactors can be cost-prohibitive for reactor developers to build and increase the risk of developing new technologies.
+Program Overview
+The Demonstration of Microreactor Experiments (DOME) facility at Idaho National Laboratory is the world’s first microreactor test bed. The U.S. Department of Energy (DOE) repurposed the Experimental Breeder Reactor II containment structure at the lab to provide private industry a safe place to quickly test fueled reactor experiments up to 20 megawatts of thermal energy.
+Each testing campaign is self-funded by the applicant with the sequencing of experiments based on several criteria, including development and procurement scheduling, technology readiness, fuel availability, and a regulatory approval plan.
+The DOME facility is operated by DOE’s National Reactor Innovation Center , which accelerates the deployment of advanced reactor technologies by enabling private industry access to world-class capabilities, expertise, and infrastructure across the Department’s national laboratory complex.
+Current Opportunities
+DOME Scheduling
+DOE made conditional selections for the first tests in DOME on July 1, 2025. Both companies are expected to meet certain milestones throughout the process to maintain their allotted time in DOME and to ensure efficient use of the test bed. Testing will start as early as spring 2026.
+Radiant (El Segundo, CA) - Kaleidos Development Unit
+Westinghouse (Etna, PA) - eVinci Nuclear Test Reactor
+The review process will be performed annually to consider new applicants, changing conditions, and DOE priorities.
+The next application round is expected to open in 2026.
+Announcements
+DOME Updates
+World’s First Microreactor Test Bed Now Open for Business (April 2026)
+Energy Department Announces First Microreactor Experiments in DOME Test Bed (July 2025)
+Energy Department Finds No Significant Impacts for DOME Microreactor Test Bed (June 2025)
+Trump Administration Pushes Microreactor Test Beds to Front of the Line (May 2025)
+3 Microreactor Experiments to Watch Starting in 2026 (March 2025)
+DOE Awards $5 Million for Second Phase of Advanced Reactor Experiment Designs (November 2024)
+Radiant Completes Study for First Kaleidos Microreactor Experiment (November 2024)
+Westinghouse Completes Study for First eVinci Microreactor Experiment (September 2024)
+DOE Awards $3.9 Million for Advanced Reactor Experiment Designs (October 2023)
+Resources
+NRIC DOME webpage
+DOME Virtual Tour
+DOME Final Environmental Assessment
+What is a Nuclear Microreactor?
+FAQs
+DOME
+What is DOME?
+Demonstration of Microreactor Experiments (DOME) is one of two new test beds being developed for fueled reactor tests at INL. It will host microreactor tests generating up to 20 megawatts of thermal energy. DOME offers testing infrastructure and the expertise of NRIC and INL so that industry can test their advanced reactor concepts to generate data to support design and licensing activities.
+DOME re-establishes the containment dome of the former Experimental-Breeder Reactor-II (EBR-II).
+Why is DOME needed?
+DOME is needed to accelerate testing and commercialization of microreactors. It can be cost prohibitive and time consuming for private companies to construct their own testing facilities. DOME is expected to defray the cost to build multiple containment structures and perform fueled reactor experiments for developers. Advanced reactor developers need to test their concepts to generate data to support design and licensing activities.
+How does DOME support the Trump administration’s energy agenda?
+President Trump is committed to expanding the nation’s nuclear capabilities to reestablish the United States as a global leader in nuclear power. The DOME scheduling announcement unleashes American innovation and unlocks a new resource for private industry to help lower the risk of developing new reactor technologies in the United States.
+What is the size of the DOME test bed? How many experiments can it support?
+The DOME test bed will have an approximately 80-foot diameter floor space to accommodate a shipping container-sized experiment. DOME will support one reactor experiment at a time. The Department estimates each DOME reactor experiment will operate up to six months. The specific timeframe for each experiment will be dependent on the complexity of the reactor design, the arrival of needed equipment, and testing requirements.
+Why can’t more than one test campaign run in DOME at a time?
+Due to safety protocols, only one experiment can operate at a time in DOME.
+How will reactor experiments be set up? Will they be fueled?
+DOME users would be responsible for transporting the reactor and associated equipment to INL. DOE would support testing by assisting in the development of advanced nuclear reactor projects; integrating projects into the DOME test bed; and operating the reactor experiment.
+Why is DOME considered a strategic nuclear energy asset for the United States?
+The Trump Administration has a bold and ambitious agenda to unleash American energy at home and abroad to restore the nation’s energy dominance. This will require the rapid deployment and commercialization of advanced nuclear reactors to meet the nation’s growing demand for secure, affordable and abundant energy to power industry and economic growth. DOME defrays costs and accelerates development timelines for reactor developers by providing access to a state-of-the-art containment structure that can house fueled reactor experiments.
+How are test campaigns in DOME different from test reactors?
+DOE defines test reactors as operating reactors that can have smaller experiments embedded within the reactor to achieve specific test data. This could include experiments to determine how a material is affected by neutron flux or how new fuel designs survive in extreme environments of heat or radiation. The DOME test campaigns allow the developers to test the reactor itself, achieve criticality for the first time, and verify analysis and software digital twins for future use in the commercial deployment of their reactors. DOME is the only facility in the country and the first in the world to provide reactor developers access to a containment structure where these fueled experiments can occur.
+How long will DOME operate?
+DOE estimates that the operational lifespan of the DOME test bed will be approximately 20 years.
+Who will fund the operational costs of reactor experiments?
+Reactor developers are expected to self-fund their test campaigns in DOME.
+How much did it cost to build DOME?
+DOME is still under construction but anticipated to be completed for less than $77.5 million.
+How much will it cost to operate DOME an annual basis?
+The cost of annual operations will vary depending on the reactor and associated test plan utilizing the DOME facility.
+How is the construction and operation of DOME funded?
+DOME is a U.S. Department of Energy testing facility operated by the National Reactor Innovation Center and located at Idaho National Laboratory. Funding for DOME’s construction and operation comes from DOE’s Office of Nuclear Energy. The cost of testing microreactors in DOME will be assumed by reactor developers.
+NRIC
+What is NRIC’s role with DOME?
+The DOME test bed was established and will be operated and managed under NRIC in support of the DOE Office of Nuclear Energy.
+Scheduling and Sequencing of Experiments in DOME
+Who can request access to DOME?
+Any U.S. reactor developer, either private industry or government agency, may request access to DOME through the formal application process outlined in the current notice of opportunity.
+How do interested parties request access?
+Interested parties must complete the application template with all required information by the stated deadline to be considered for scheduling their test campaign in DOME. This is intended to be an annual process.
+Does submitting an application guarantee a developer access to DOME?
+NRIC has developed a formal review process to ensure that priority access to DOME is given to reactor developers whose designs have a strong likelihood of success due to technology maturity and other factors. Developers who are not able to meet key milestones and safety protocols with their design may be deferred to a future call.
+Why is the schedule and sequencing reviewed on an annual basis?
+The schedule is provided for planning purposes based on the best available information at the time. It is reviewed annually to maximize the efficient use of DOME, account for new applicants and reflect DOE mission priorities.
+When will scheduling be announced?
+NRIC’s goal is to review all applications and anticipates making the official scheduling announcement within six months after applications are received. However, please note that this date may change depending upon the application review process. If this date changes, we will notify applicants promptly for their awareness.
+Selection Process
+How is the scheduling and sequencing determined?
+NRIC has a standard application template. When completed, the template provides NRIC and INL the information necessary to assess the ability and likelihood of the reactor developer to prepare an advanced reactor system ready for testing at the requested date.
+The NRIC, INL, and DOE evaluation of each applicant has two primary considerations: (1) technical and (2) schedule completeness. These considerations will guide the process to ensure the scheduling and prioritization of the DOME test bed best serves the DOE mission and the participating advanced reactor developers. For technical and scheduling considerations, the committees will consider risk and uncertainty in the ability of the applicant to achieve the stated aspects in the application. It is NRIC’s objective to maximize the availability of DOME for all developers.
+Is DOME open to privately funded developers interested in testing their microreactor designs?
+Yes, any U.S. developer interested in working with NRIC to test their microreactor design can reach out directly to learn more about requirements and timing.
+When will the first experiment/test reactor go into DOME?
+The first reactor may be received by DOME as soon as 2026, with testing likely to begin as early as 2026.
+Reactor Designs
+What type or reactor designs can DOME accommodate?
+DOME can accommodate TRISO-fueled microreactor designs that are less than 20 megawatts thermal and use less than 20% enriched fuel.
+Committed to Restoring America’s Energy Dominance.
+Follow Us
+Link to Facebook
+Link to Instagram
+Link to Linkedin
+Link to Youtube
+Link to X
+Link to Flickr
+Quick Links
+Newsroom
+Contact Us
+Careers
+Resources
+Budget & Performance
+Directives, Delegations, & Requirements
+Freedom of Information Act (FOIA)
+Inspector General
+Privacy Program
+Federal Government
+USA.gov
+The White House
+Open Gov
+Accessibility
+Privacy
+Information Quality
+No Fear Act
+Web Policies
+Vulnerability Disclosure Program
+Whistleblower Protection
+Equal Employment Opportunity
+Notice of Court Orders
