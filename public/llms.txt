@@ -134,7 +134,7 @@ A megawatt sits in exactly one band, so the bands never double-count.
 
 Every record names who reported it, in the order the methodology ranks them:
 - Verified: 3 records
-- Government-reported: 10 records
+- Government-reported: 11 records
 - Institution-reported: 1 records
 - Company-reported: 30 records
 - Press-reported: 18 records

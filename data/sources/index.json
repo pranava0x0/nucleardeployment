@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T18:32:36.752Z",
+  "updated_at": "2026-08-07T12:52:56.987Z",
   "sources": {
     "https://deepfission.com/deep-fission-and-endeavour-announce-strategic-partnership/": {
       "hash": "01821f6b5fc3268c",
@@ -118,7 +118,7 @@
     },
     "https://oklo.com/newsroom/news-details/2026/Oklos-Groves-Reactor-Achieves-First-Criticality-in-Under-a-Year/default.aspx": {
       "hash": "f1b960f1cd9ace8d",
-      "fetched_at": "2026-08-06T18:32:13.100Z",
+      "fetched_at": "2026-08-07T12:52:56.986Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -419,6 +419,14 @@
       "state": "stored",
       "title": "U.S. Department of Energy Reactor Pilot Program | Department of Energy",
       "bytes": 7074
+    },
+    "https://www.energy.gov/nepa/articles/cx-271014-groves-1-project": {
+      "hash": "60c79d6f68b5f27f",
+      "fetched_at": "2026-08-07T12:52:26.889Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "CX-271014: Groves-1 Project | Department of Energy",
+      "bytes": 6046
     },
     "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf": {
       "hash": "77f376c4a67fb2c5",

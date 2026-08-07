@@ -104,6 +104,10 @@ hand-edit: that number went stale four separate times before the test existed.
   (`/api/v1/documents/<number>.json`) and a wall detector refuses to store any
   interstitial as a snapshot. If another host starts doing this, add its marker
   to `WALL_MARKERS` in `scripts/lib/source-cache.mjs`.
+- `oklo.com/newsroom` is a JavaScript investor-relations page that blocks
+  scripted fetches, so Oklo's own releases never cache. Read them with a browser
+  or fetch tool and record the read in `link-check-history.jsonl`; that is the
+  record for those claims.
 - About sixteen sources sit behind bot walls with no API. Those need a browser
   read, recorded in `link-check-history.jsonl`. `data:claims` lists them.
 - `gain.inl.gov` returns 403 to scripted fetches.
