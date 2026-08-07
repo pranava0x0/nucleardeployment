@@ -4,7 +4,7 @@
 > are building new-design reactors, how far each has actually got, and what
 > document proves it. Every number on the site links to a source.
 
-Data as of 2026-08-05. This is a tracked sample, not a census.
+Data as of 2026-08-06. This is a tracked sample, not a census.
 
 ## What the site measures
 
@@ -134,9 +134,9 @@ A megawatt sits in exactly one band, so the bands never double-count.
 
 Every record names who reported it, in the order the methodology ranks them:
 - Verified: 3 records
-- Government-reported: 10 records
+- Government-reported: 11 records
 - Institution-reported: 1 records
-- Company-reported: 29 records
+- Company-reported: 30 records
 - Press-reported: 18 records
 
 - Verified means the regulator's own record, such as a Federal Register notice.

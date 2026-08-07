@@ -292,11 +292,16 @@ test("every race record carries one band, an https source, and a real or null da
 test("test reactors and critical experiments contribute zero megawatts", async () => {
   const dataModule = await import("../app/data.ts");
   const criticalities = dataModule.proofEvents.filter((event) => event.kind === "Criticality");
-  assert.equal(criticalities.length, 4, "all four DOE pilot criticalities are recorded");
+  // The four that met the July 4 2026 federal goal, plus any since. Asserted
+  // separately so a new criticality does not read as a broken count: Oklo's
+  // Groves reactor went critical on 2026-08-06, after the deadline.
+  const beforeGoal = criticalities.filter((event) => event.date <= "2026-07-04");
   assert.deepEqual(
-    criticalities.map((event) => event.companySlug).sort(),
+    beforeGoal.map((event) => event.companySlug).sort(),
     ["aalo-atomics", "antares-nuclear", "deployable-energy", "valar-atomics"],
+    "the four pre-deadline DOE pilot criticalities are recorded",
   );
+  assert.ok(criticalities.length >= 4, `criticality count floor: ${criticalities.length}`);
   for (const event of criticalities) {
     assert.match(event.powerNote ?? "", /0 MWe/, `${event.companySlug} criticality states it contributes no capacity`);
   }
@@ -1023,4 +1028,65 @@ test("llms.txt counts read as English", async () => {
     fileURLToPath(new URL("../scripts/build-llms-txt.mjs", import.meta.url)), "--check",
   ]);
   assert.match(stdout, /matches the data/, "the committed llms.txt is what the generator produces today");
+});
+
+test("the source cache is committed and refuses to store refusal pages", async () => {
+  const { readIndex, readCachedText, urlHash, looksLikeWall, apiUrlFor } = await import("../scripts/lib/source-cache.mjs");
+  const dataModule = await import("../app/data.ts");
+  const index = await readIndex();
+
+  assert.ok(Object.keys(index.sources).length > 100, "the cache index covers the dataset");
+
+  // A wall page returns 200 with real-looking text. Storing one is a silent
+  // failure: three Federal Register snapshots were 1,180 bytes of "Request
+  // Access" and made hand-verified records report as unconfirmed.
+  // Long enough that only the marker check can catch it. A short sample was
+  // caught by the length check instead, so disabling the markers left this green.
+  const longWall = "Federal Register :: Request Access\nDue to aggressive automated scraping of FederalRegister.gov, "
+    + "programmatic access is limited to our developer APIs. ".repeat(40);
+  assert.ok(longWall.length > 800, "the sample is past the length floor");
+  assert.match(looksLikeWall(longWall) ?? "", /interstitial/, "a long interstitial is caught by its marker, not its length");
+  assert.match(looksLikeWall("tiny") ?? "", /bytes/, "a near-empty page is caught by length");
+  assert.equal(looksLikeWall("x".repeat(2000)), null, "real content is not flagged");
+
+  // Federal Register publishes an API and refuses page scraping; use it.
+  assert.match(
+    apiUrlFor("https://www.federalregister.gov/documents/2026/02/27/2026-03943/smr-llc-pioneer-units-1-and-2-phased-construction-permit-application-limited-work-authorization"),
+    /api\/v1\/documents\/2026-03943\.json$/,
+  );
+  assert.equal(apiUrlFor("https://oklo.com/newsroom/whatever"), null, "other hosts are fetched normally");
+
+  // Nothing stored may itself be a wall.
+  for (const [url, entry] of Object.entries(index.sources)) {
+    if (entry.state !== "stored") continue;
+    const text = await readCachedText(entry.hash);
+    assert.ok(text, `${url} is marked stored and has a snapshot`);
+    assert.equal(looksLikeWall(text), null, `${url} stored a refusal page`);
+  }
+
+  // Every source the dataset cites has an index entry, so nothing is silently
+  // uncached after a record is added.
+  const { sourcedRecords } = await import("../scripts/lib/records.mjs");
+  const cited = new Set(sourcedRecords(dataModule).map((row) => row.source));
+  const missing = [...cited].filter((url) => !index.sources[url]);
+  assert.deepEqual(missing, [], "every cited source is in the cache index; run npm run data:cache");
+});
+
+test("today's criticality is recorded as proof, not capacity", async () => {
+  const dataModule = await import("../app/data.ts");
+  const groves = dataModule.proofEvents.find((event) => event.date === "2026-08-06" && event.kind === "Criticality");
+  assert.ok(groves, "the 2026-08-06 criticality is recorded");
+  assert.equal(groves.companySlug, "oklo");
+  assert.match(groves.powerNote, /0 MWe/, "a test reactor contributes no capacity");
+  assert.match(groves.label, /private land/, "the label states what is new about it");
+
+  // It must not have moved a megawatt. Groves is an isotope test reactor.
+  const oklo = dataModule.raceBoard().find((row) => row.entrant.companySlug === "oklo");
+  assert.equal(oklo.executedMWe, 75, "Oklo's executed capacity is unchanged by a test-reactor criticality");
+  assert.equal(dataModule.raceTotals().find((total) => total.band === "operational").mwe, 0, "still no operational capacity");
+
+  // The superseded note is gone: it said criticality was unconfirmed.
+  const auth = dataModule.proofEvents.find((event) => event.companySlug === "oklo" && /startup authorization/.test(event.label));
+  assert.doesNotMatch(auth.label, /not confirmed/, "the superseded status note was removed");
+  assert.equal(dataModule.dataAsOf, "2026-08-06", "the dataset date reflects the newest record");
 });

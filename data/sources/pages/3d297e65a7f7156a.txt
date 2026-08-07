@@ -1,0 +1,210 @@
+Aalo Pod: 50 MWe Nuclear Power Plant for AI Data Centers
+Applications Technology Factory Company Updates Contact
+The mission and the timeline.
+Home
+What Aalo powers and what's next.
+Applications
+The Pod, the reactor and our roadmap
+Technology
+Where the reactors get made.
+Factory
+The team and the story.
+Company
+The latest from the floor.
+Updates
+Aalo © 2026
+All rights reserved
+Designed by tonik
+We build mass-manufactured nuclear plants designed to power anything from a data center to a city - eventually achieving 3¢/kWh electricity.
+Become a Partner
+Work at Aalo
+Invest
+Menu
+Aalo Pod
+TM
+The Aalo Pod is a rapidly deployable 50 MWe power plant for AI compute. Comprised of factory-manufactured modules that fit on the back of the truck.
+Scroll to learn more
+What it is
+The Aalo Pod is a 50 MWe power plant with five 10 MWe reactors sharing multiple turbines. With phased maintenance, it is never fully offline.
+Co-located with data centers, the Aalo Pod is the clean and sustainable power solution for artificial intelligence.
+Tech Specs
+Configuration
+POD Configuration
+5 Reactors
+Auxiliary systems
+Shared turbines
+Reactor model
+Aalo-1
+Reactor Type
+Sodium Thermal (STR)
+Core Systems
+Moderator
+Graphite
+Coolant
+Liquid Sodium
+Operating Pressure
+Near Atmospheric
+Operating temp.
+160 - 425 °C
+Fuel
+Form
+UO₂ Ceramic
+Enrichment
+8 % LEU+
+Safety
+Shutdown
+Automatic, Passive
+Decay Heat Removal
+72 + hrs, fully passive
+From Prototype to Production
+Sodium Test Loop
+Q1 2026
+Critical Assembly Facility
+Q2 2026
+Aalo-0
+Q3 2026
+Aalo-X
+Q1 2027
+Aalo Pod
+Q3 2028
+Sodium Test Loop
+100% Operational
+The foundation of our sodium testing program. The STL circulates sodium reliably with in-house design, manufacturing, and test programs. Its small-scale components provide baseline flow, temperature, and quality data for Aalo-0 and Aalo-X. Operational in our skunkworks lab in Idaho today.
+1/5
+Sodium Test Loop
+Q1 2026
+Critical Assembly Facility
+Q2 2026
+Aalo-0
+Q3 2026
+Aalo-X
+Q1 2027
+Aalo Pod
+Q3 2028
+First Nuclear Reactor
+100% Complete
+The CTR is a zero-power reactor built at Idaho National Laboratory. It enables us to validate core neutronics, test control rod mechanisms, and implement a lifecycle build and licensing process for a nuclear facility at full-scale. On July 3, 2026, in the CTR, we achieved initial criticality: a self-sustaining nuclear reaction.
+1/5
+Sodium Test Loop
+Q1 2026
+Critical Assembly Facility
+Q2 2026
+Aalo-0
+Q3 2026
+Aalo-X
+Q1 2027
+Aalo Pod
+Q3 2028
+Full-Scale Sodium System
+65% Complete
+The power plant without the heat. Aalo-0 is the non-nuclear sodium loops, heat exchangers, and turbine — built at full commercial scale with electrical heaters simulating a reactor core. Aalo-0 de-risks every system in the plant outside of the nuclear components proved at the CTR.
+1/5
+Sodium Test Loop
+Q1 2026
+Critical Assembly Facility
+Q2 2026
+Aalo-0
+Q3 2026
+Aalo-X
+Q1 2027
+Aalo Pod
+Q3 2028
+First Power Plant
+Groundwork complete
+The first integrated power plant. Aalo-X brings everything together—nuclear core, sodium loops, turbine—into a full operating power plant on a DOE-granted site at INL. 10 MWe, full power, with a colocated data center.
+1/5
+Sodium Test Loop
+Q1 2026
+Critical Assembly Facility
+Q2 2026
+Aalo-0
+Q3 2026
+Aalo-X
+Q1 2027
+Aalo Pod
+Q3 2028
+First Commercial Pod
+Construction begins 2028
+Five reactors, multiple turbines, a 50 MWe power plant purpose-built for data center customers.
+1/5
+Cooled by liquid metal.
+The ideal nuclear coolant. Extreme thermal conductivity and high boiling point. Complete compatibility with structural steel. Optimal for future fuel-breeding and waste-burning.
+Why Sodium?
+100x
+2-5x
+882.9 °C
+more thermally conductive than water, molten salt, and gas.
+smaller vessels, increasing mass manufacturability and transportability.
+boiling point, unlocking non-pressurized vessels. This means simpler and safer systems.
+We use off-the-shelf fuel
+LEU
+Low-enriched uranium with <5% fissile U-235 or <8% for LEU+.
+Vetted supply chain. Produced
+at scale.
+HALEU
+A higher-enriched fuel that doesn't yet exist at commercial scale. Aalo will consider implementation as the supply chain expands.
+60,000 tons
+The problem
+The world’s existing nuclear fleet runs on low-enriched uranium. Aalo unlocks this supply chain for advanced reactors.
+With partners Urenco and GE Vernova, we are sticking to our design constraint of "no unobtanium."
+Specs
+LEU
+HALEU
+Reactors running on it today
+440
+0
+Annual production
+~62,500,000 kg
+~900 kg
+Cost per kg
+$3,500
+$30,000
+Commercial availability
+Today
+At least 5 years away
+Enrichment Levels
+Up to 5%
+Up to 20%
+Fuel Form
+Ceramic UO₂
+Often TRISO
+Hardware moving at the speed of AI.
+Aalo powers AI.
+AI accelerates Aalo.
+Site procurement. Permiting. Regulatory documentation. Engineering and design. Automated welding. Internal tooling. Organizational efficiency. AI speeds it all up, which accelerates the creation of smarter AI.
+Manufacturing
+We make 90% of the power plant ourselves.
+Most nuclear companies are design firms. We treat the factory as the product. The 10% we don't make comes from a supplier network in the US. No unobtainium, nothing on critical path that we don't control.
+Read more about our factory
+Built with the institutions that built nuclear.
+Become a Partner
+We are looking for partners who can also deliver NQA-1 components. Reach out to our Procurement Specialists to learn more.
+Energy without limits.
+Contact us:
+Become a Partner
+Work at Aalo
+Invest
+1.1
+Applications
+1.2
+Technology
+1.3
+Factory
+1.4
+Company
+1.5
+Updates
+2.1
+Contact
+2.2
+Careers
+2.3
+X
+2.4
+Linkedin
+2.5
+Legal
+We build mass-manufactured nuclear plants designed to power anything from a data center to a city - eventually achieving 3¢/kWh electricity.
+Thank you!
+Oops! Something went wrong while submitting the form.
+Aalo © 2026

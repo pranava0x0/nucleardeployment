@@ -36,6 +36,8 @@ tell your own breakage from inherited breakage otherwise.
 | `npm run data:llms` | Regenerates `public/llms.txt` from the data. |
 | `npm run data:prose` | Reads the built HTML and fails on model-register words or em-dashes. Add `--stats` for sentence length. |
 | `npm run data:check` | validate + llms sync + prose, in one pass. Run before every commit that touches data. |
+| `npm run data:cache` | Fetch every cited source once and store a readable snapshot under `data/sources/`. Add `-- --url <URL>` for a single new record, `-- --stale 90` to re-fetch anything older than 90 days. |
+| `npm run data:claims` | Check each record's figures, dates and names against its own cached source. Local store first, web only with `-- --web`. |
 
 ## Adding or updating a record
 
@@ -50,10 +52,17 @@ tell your own breakage from inherited breakage otherwise.
    is the failure mode that got furthest here: a source cited for Oklo's
    groundbreaking turned out to document a different event entirely, and it
    survived three review rounds.
-3. **Read the source and confirm it supports the exact visible claim.** A 200
-   and a real file are not proof. Record the read in
+3. **Cache the source, then read it.** `npm run data:cache -- --url <URL>` stores
+   a snapshot under `data/sources/`, which is committed on purpose: it is the
+   evidence, and it survives the page being rewritten. Then run
+   `npm run data:claims -- --company <slug>` and read anything it cannot confirm.
+   A 200 and a real file are not proof. Record the read in
    `data/research/link-check-history.jsonl` with a `content_check` field of
    `supports`, `partial`, or `does-not-support`.
+
+   `data:claims` reports *unconfirmed*, not *wrong*. Sources paraphrase, spell
+   numbers out, and put figures in images. Treat the list as a queue to read,
+   never as a verdict.
 4. **One fact per source.** If a record's label makes two claims, cite the
    source that carries both, or split the record. Five roster bases here cited a
    source that established only half of what they said.
@@ -89,8 +98,18 @@ hand-edit: that number went stale four separate times before the test existed.
 
 ## Known quirks
 
-- `federalregister.gov` 302-redirects plain fetches to an unblock page. Verify
-  those sources in a browser, not with `curl` or `WebFetch`.
+- `federalregister.gov` answers scripted fetches with a 200 and a "Request
+  Access" page, which is worse than a refusal because it caches clean and proves
+  nothing. `data:cache` now fetches its documented JSON API instead
+  (`/api/v1/documents/<number>.json`) and a wall detector refuses to store any
+  interstitial as a snapshot. If another host starts doing this, add its marker
+  to `WALL_MARKERS` in `scripts/lib/source-cache.mjs`.
+- `oklo.com/newsroom` is a JavaScript investor-relations page that blocks
+  scripted fetches, so Oklo's own releases never cache. Read them with a browser
+  or fetch tool and record the read in `link-check-history.jsonl`; that is the
+  record for those claims.
+- About sixteen sources sit behind bot walls with no API. Those need a browser
+  read, recorded in `link-check-history.jsonl`. `data:claims` lists them.
 - `gain.inl.gov` returns 403 to scripted fetches.
 - The dev server runs on port 3000, not the Vite default. `.claude/launch.json`
   is set for it.

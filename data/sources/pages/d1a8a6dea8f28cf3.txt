@@ -1,0 +1,140 @@
+Nuclear startup Last Energy raises $100M for its steel-encased micro reactor | TechCrunch
+–:–:–:–
+🚨 Flash Sale 🚨 Get $100 off your Disrupt 2026 ticket
+Get $400 off your Disrupt 2026 ticket: REGISTER NOW.
+Close
+TechCrunch Desktop Logo
+TechCrunch Mobile Logo
+Latest
+Startups
+Venture
+Apple
+Security
+AI
+Apps
+Disrupt 2026
+Events
+Podcasts
+Newsletters
+Search Submit
+Site Search Toggle
+Mega Menu Toggle
+Topics
+Latest
+AI
+Amazon
+Apps
+Biotech & Health
+Climate
+Cloud Computing
+Commerce
+Crypto
+Enterprise
+EVs
+Fintech
+Fundraising
+Gadgets
+Gaming
+Google
+Government & Policy
+Hardware
+Instagram
+Layoffs
+Media & Entertainment
+Meta
+Microsoft
+Privacy
+Robotics
+Security
+Social
+Space
+Startups
+TikTok
+Transportation
+Venture
+More from TechCrunch
+Staff
+Events
+Startup Battlefield
+StrictlyVC
+Newsletters
+Podcasts
+Videos
+Partner Content
+TechCrunch Brand Studio
+Crunchboard
+Contact Us
+Image Credits: Last Energy
+Climate
+Nuclear startup Last Energy raises $100M for its steel-encased micro reactor
+Tim De Chant
+5:00 AM PST · December 16, 2025
+After years in the wilderness, it’s a good time to be a nuclear startup.
+“For the first half a decade that I was telling people I was doing nuclear, I had to convince them, ‘Hey, here’s why nuclear is important,’” Bret Kugelmass, founder and CEO of Last Energy, told TechCrunch. “Now everyone just comes to us saying, ‘Oh yeah, of course nuclear is a key part of the solution.’ I’m like, okay, great, I’m glad everyone’s caught up now.”
+Last Energy is building small modular reactors — compact nuclear power plants that can be mass-manufactured to reduce costs. The company’s reactors are designed to produce 20 megawatts of electricity, enough to power roughly 15,000 homes.
+It has momentum. Last Energy just closed a $100 million Series C led by the Astera Institute with participation from AE Ventures, Galaxy Fund, Gigafund, JAM Fund, The Haskell Company, Ultranative, Woori Technology Investment Co., and others.
+The company joins a slew of nuclear startups that have raised funding in recent months, buoyed by data centers’ insatiable power demands. Google-backed X-energy raised $700 million last month, while Antares raised $96 million two weeks ago. And in August, Aalo Atomics raised $100 million to build its prototype reactor.
+What sets Last Energy apart from competitors is its approach: The company is using an old reactor design developed by the government decades ago. The initial design for the pressurized water reactor was built for the NS Savannah , the world’s first nuclear-powered merchant ship. That ship’s power plant was about one-tenth the size of Last Energy’s planned commercial reactor. Kugelmass said the company’s updated design should produce 20 megawatts of electricity.
+The company is starting smaller, though. First, Last Energy is building a 5-megawatt pilot reactor at a site it’s leasing from Texas A&M. The new funding will fully fund the pilot project and help the company start delivering its first commercial products, Kugelmass said. Last Energy hopes to turn on the pilot reactor next year, with its 20-megawatt commercial-scale unit entering production in 2028.
+Last Energy’s startup’s reactor isn’t designed to be serviced during its lifetime. Instead, Last Energy is permanently encasing each core in 1,000 tons of steel. Kugelmass estimates the metal will cost around $1 million. “Most people think concrete is cheaper,” he said. “But not when it’s nuclear-grade concrete.”
+The reactors will arrive on site fueled with six years’ worth of uranium. Apart from electrical and control connections, there are no other penetrations that break the steel wall. Heat from the fission reactions warms the steel, and water flowing through pipes on the outside harvests that heat to spin a steam turbine.
+When the reactor’s time is up, Last Energy will leave it on site, with the steel chamber serving as the waste cask, eliminating the need for separate disposal.
+The hope is that this approach, coupled with manufacturing advances, will drive down the price of nuclear power. Kugelmass wouldn’t commit to a price, instead pointing to other industries that have halved prices for every tenfold increase in production.
+“I don’t think it’s going to be that good in nuclear because there are always some extra fixed costs that you have in nuclear regarding some of the special regulations, but that’s the type of trend you can see,” he said. “We don’t think in ones and twos, we think in tens of thousands.”
+Topics
+Climate , data centers , Fundraising , nuclear fission , nuclear power , Startups
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Tim De Chant
+Senior Reporter, Climate
+Tim De Chant is a senior climate reporter at TechCrunch. He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor.
+De Chant is also a lecturer in MIT’s Graduate Program in Science Writing, and he was awarded a Knight Science Journalism Fellowship at MIT in 2018, during which time he studied climate technologies and explored new business models for journalism. He received his PhD in environmental science, policy, and management from the University of California, Berkeley, and his BA degree in environmental studies, English, and biology from St. Olaf College.
+You can contact or verify outreach from Tim by emailing tim.dechant@techcrunch.com .
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+Bending Spoons to buy Airtable for $1.28B
+Ivan Mehta
+Influencers draw backlash for attending OpenAI’s first luxury trip
+Dominic-Madori Davis
+Sequoia’s Shaun Maguire leads $1B round for nuclear startup Valar Atomics
+Julie Bort
+Malaysia is reportedly shutting down Balaji Srinivasan’s Network School
+Anthony Ha
+YouTuber Hank Green says his AI usage is ‘not healthy’
+Anthony Ha
+VC-backed startups commit more fraud, and researchers think they know why
+Dominic-Madori Davis
+WhatsApp is testing a new folder for messages from large businesses
+Ivan Mehta
+Loading the next article
+Error loading the next article
+X
+LinkedIn
+Facebook
+Instagram
+youTube
+Mastodon
+Threads
+Bluesky
+TechCrunch
+Staff
+Contact Us
+Advertise
+Crunchboard Jobs
+Site Map
+Terms of Service
+Privacy Policy
+RSS Terms of Use
+Code of Conduct
+OpenAI vs Apple
+Nous Research
+Space Data Centers
+Staya Nadella
+SpaceX Starship
+Tech Layoffs
+ChatGPT
+© 2026 TechCrunch Media LLC.
