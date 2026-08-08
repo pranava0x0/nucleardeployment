@@ -146,10 +146,17 @@ Every record names who reported it, in the order the methodology ranks them:
 ## Pages
 
 - https://pranava0x0.github.io/nucleardeployment/ - the race board
+- https://pranava0x0.github.io/nucleardeployment/updates - dated evidence events, newest first, plus every project's next gate
 - https://pranava0x0.github.io/nucleardeployment/methodology - roster rule, band rules, source hierarchy
 - https://pranava0x0.github.io/nucleardeployment/deployments - every tracked project record
 - https://pranava0x0.github.io/nucleardeployment/companies - every company
+- https://pranava0x0.github.io/nucleardeployment/map - tracked projects by region
 - https://pranava0x0.github.io/nucleardeployment/federal-action - executive orders and DOE programs
 - https://pranava0x0.github.io/nucleardeployment/capital - loans, awards, and cost shares
+
+## Machine feeds
+
+- https://pranava0x0.github.io/nucleardeployment/feed.xml - RSS feed of the dated evidence ledger
+- https://pranava0x0.github.io/nucleardeployment/sitemap.xml - every route
 
 Generated from app/data.ts by scripts/build-llms-txt.mjs. Do not edit by hand.

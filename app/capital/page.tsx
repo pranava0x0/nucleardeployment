@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { PageShell } from "../components/SiteHeader";
 import { capital, projects } from "../data";
+import { canonicalUrl } from "../site";
 
-export const metadata: Metadata = { title: "Capital + Supply Chain" };
+export const metadata: Metadata = {
+  title: "Capital + Supply Chain",
+  description: "Federal loans, cost shares, and financing for tracked U.S. nuclear projects, kept in separate frames, plus fuel and licensing dependencies.",
+  alternates: { canonical: canonicalUrl("/capital") },
+};
 
 export default function CapitalPage() {
   const dependencies = [

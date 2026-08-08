@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { capacityBands, dataAsOf, gigawattMWe, raceBoard, raceScaleMWe, raceTotals, type RaceRow } from "../data";
+import { RaceFilter } from "./RaceFilter";
 
 const mwe = (value: number) => value.toLocaleString("en-US");
 const trackPercent = (value: number) => Math.min(100, (value / raceScaleMWe) * 100);
@@ -46,33 +47,33 @@ export function RaceBar({ row, compact = false }: { row: RaceRow; compact?: bool
 export function RaceBoard() {
   const board = raceBoard();
   const totals = raceTotals();
-  const executedTotal = totals.filter((total) => total.band !== "framework").reduce((sum, total) => sum + total.mwe, 0);
-  const frameworkTotal = totals.find((total) => total.band === "framework")?.mwe ?? 0;
-  const announcedRatio = Math.round(frameworkTotal / executedTotal);
 
   return (
     <section className="section race-section" id="race">
-      <div className="section-head">
-        <h2>The race to a gigawatt</h2>
+      <div className="board-head">
+        <h2>The race board</h2>
         <p>
-          <b>{board.length} companies</b> building new-design reactors for U.S. deployment, ranked by the strongest
-          state their megawatts have actually reached. Tracked sample, as of {dataAsOf}.
+          {board.length} companies building new-design reactors for U.S. deployment, ranked by the strongest state
+          their megawatts have actually reached. Tracked sample, as of {dataAsOf}.
         </p>
       </div>
 
-      <p className="race-zero">
-        <b>0 MWe operational across all {board.length} entrants.</b> Every megawatt below sits in a leading
-        indicator: under construction, under review, under contract, or merely announced. {mwe(executedTotal)} MWe
-        rest on an executed action; {mwe(frameworkTotal)} MWe are announced and non-binding, about{" "}
-        {announcedRatio} times more.
-      </p>
+      <div className="race-key">
+        <RaceFilter total={board.length} />
+        <ul className="key-line" aria-label="Band key, strongest evidence first">
+          {capacityBands.map((band) => (
+            <li key={band.band}><span className={`legend-swatch band-${band.band}`} aria-hidden="true" />{band.label}</li>
+          ))}
+        </ul>
+        <a className="key-more" href="#race-legend">Full key ↓</a>
+      </div>
 
       <ol className="race-board">
         {board.map((row, index) => (
-          <li className="race-row" key={row.company.slug}>
+          <li className="race-row" key={row.company.slug} data-filter={row.filterText}>
             <div className="race-id">
               <span className="race-rank" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
-              <h3><Link href={`/companies/${row.company.slug}`}>{row.company.name}</Link></h3>
+              <h3><Link className="row-link" href={`/companies/${row.company.slug}`}>{row.company.name}</Link></h3>
               <p>{row.entrant.design} · {mwe(row.entrant.unitMWe)} MWe per unit · {row.entrant.lane}</p>
             </div>
             <RaceBar row={row} />
@@ -80,8 +81,11 @@ export function RaceBoard() {
           </li>
         ))}
       </ol>
+      <p className="race-no-match lane-empty" data-race-empty hidden>
+        No entrant matches that filter. Clear it to see all {board.length} companies.
+      </p>
 
-      <div className="race-legend">
+      <div className="race-legend" id="race-legend">
         <h3>How to read the bars</h3>
         <p>
           The track runs to {mwe(raceScaleMWe)} MWe. The vertical rule is one gigawatt. Each company gets two tracks:

@@ -38,7 +38,7 @@ const bannedPattern = new RegExp(`\\b(${BANNED.map(escapeForRegex).join("|")})\\
 const HEDGES = ["generally", "typically", "in most cases", "arguably", "somewhat", "fairly", "quite"];
 
 const data = await loadData();
-const paths = ["/", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
+const paths = ["/", "/updates", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
   ...data.raceEntrants.map((entrant) => `/companies/${entrant.companySlug}`)];
 
 const worker = (await import(new URL("../dist/server/index.js", import.meta.url).href + `?t=${Math.random()}`)).default;

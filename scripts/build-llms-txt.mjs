@@ -106,11 +106,18 @@ say();
 say("## Pages");
 say();
 say(`- ${page("/")} - the race board`);
+say(`- ${page("/updates")} - dated evidence events, newest first, plus every project's next gate`);
 say(`- ${page("/methodology")} - roster rule, band rules, source hierarchy`);
 say(`- ${page("/deployments")} - every tracked project record`);
 say(`- ${page("/companies")} - every company`);
+say(`- ${page("/map")} - tracked projects by region`);
 say(`- ${page("/federal-action")} - executive orders and DOE programs`);
 say(`- ${page("/capital")} - loans, awards, and cost shares`);
+say();
+say("## Machine feeds");
+say();
+say(`- ${page("/feed.xml")} - RSS feed of the dated evidence ledger`);
+say(`- ${page("/sitemap.xml")} - every route`);
 say();
 say("Generated from app/data.ts by scripts/build-llms-txt.mjs. Do not edit by hand.");
 

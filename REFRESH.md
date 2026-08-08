@@ -34,6 +34,7 @@ tell your own breakage from inherited breakage otherwise.
 | `npm run data:press` | Lists records citing trade press, grouped by company. These are the upgrade queue. |
 | `npm run data:links` | Fetches every source once, 2s per host, and appends the result to `data/research/link-check-history.jsonl`. Slow on purpose. |
 | `npm run data:llms` | Regenerates `public/llms.txt` from the data. |
+| `npm run data:seo` | Regenerates `public/sitemap.xml`, `public/robots.txt`, and `public/feed.xml` from the data. Run after any record change; `data:check` fails if they drift. |
 | `npm run data:prose` | Reads the built HTML and fails on model-register words or em-dashes. Add `--stats` for sentence length. |
 | `npm run data:check` | validate + llms sync + prose, in one pass. Run before every commit that touches data. |
 | `npm run data:cache` | Fetch every cited source once and store a readable snapshot under `data/sources/`. Add `-- --url <URL>` for a single new record, `-- --stale 90` to re-fetch anything older than 90 days. |

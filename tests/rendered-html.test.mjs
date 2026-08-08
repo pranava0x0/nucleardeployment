@@ -859,7 +859,7 @@ test("llms.txt is generated from the data and stays in sync", async () => {
 
 test("every page passes the accessibility checks a screen reader depends on", async () => {
   const dataModule = await import("../app/data.ts");
-  const paths = ["/", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
+  const paths = ["/", "/updates", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
     ...dataModule.raceEntrants.slice(0, 4).map((entrant) => `/companies/${entrant.companySlug}`)];
 
   for (const path of paths) {
@@ -1089,4 +1089,228 @@ test("today's criticality is recorded as proof, not capacity", async () => {
   const auth = dataModule.proofEvents.find((event) => event.companySlug === "oklo" && /startup authorization/.test(event.label));
   assert.doesNotMatch(auth.label, /not confirmed/, "the superseded status note was removed");
   assert.equal(dataModule.dataAsOf, "2026-08-06", "the dataset date reflects the newest record");
+});
+
+test("the homepage leads with four separate frames and a filterable board", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const dataModule = await import("../app/data.ts");
+  const raw = await (await render()).text();
+  const html = raw.replace(/<!--.*?-->/g, "");
+  const totals = dataModule.headlineTotals();
+
+  // The helper's frames, cross-checked against an independent sum over the
+  // claims themselves so a band-list edit in one place cannot drift the other.
+  const sumBands = (bands) => dataModule.capacityClaims
+    .filter((claim) => bands.includes(claim.band))
+    .reduce((total, claim) => total + claim.mwe, 0);
+  assert.equal(totals.operationalMWe, sumBands(["operational"]));
+  assert.equal(totals.buildingMWe, sumBands(["construction", "doe-authorized"]));
+  assert.equal(totals.executedMWe, sumBands(["operational", "construction", "doe-authorized", "review", "contracted"]));
+  assert.equal(totals.announcedMWe, sumBands(["framework"]));
+
+  // The strip renders each frame with its own label, and never a grand total.
+  const mwe = (value) => value.toLocaleString("en-US");
+  assert.match(html, new RegExp(`${mwe(totals.buildingMWe)}</b><span[^>]*>MWe being built`));
+  assert.match(html, new RegExp(`${mwe(totals.executedMWe)}</b><span[^>]*>MWe on executed actions`));
+  assert.match(html, new RegExp(`${mwe(totals.announcedMWe)}</b><span[^>]*>MWe announced, non-binding`));
+  assert.doesNotMatch(html, new RegExp(mwe(totals.executedMWe + totals.announcedMWe)), "executed and announced are never summed");
+
+  // Every row carries the filter haystack the client input matches against.
+  const board = dataModule.raceBoard();
+  const haystacks = [...html.matchAll(/data-filter="([^"]*)"/g)].map((match) => match[1]);
+  assert.equal(haystacks.length, board.length, "every board row is filterable");
+  for (const row of board) {
+    assert.ok(haystacks.some((value) => value.includes(row.company.name.toLowerCase())), `${row.company.name} is findable by name`);
+  }
+  // The no-match state ships in the page, hidden until the filter empties it.
+  assert.match(html, /data-race-empty[^>]*hidden|hidden[^>]*data-race-empty/);
+  assert.match(html, /No entrant matches that filter/);
+
+  // The hidden attribute must actually hide: a display rule on the row class
+  // would otherwise win. Same guard for closed <details> with styled bodies.
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  assert.match(css, /\[hidden\]\s*\{\s*display:\s*none\s*!important/, "the [hidden] rule ships");
+  assert.match(css, /details\.acc:not\(\[open\]\)\s*>\s*:not\(summary\)\s*\{\s*display:\s*none/, "closed accordions hide their bodies");
+
+  // The key sits above the rows: the legend line precedes the first race row.
+  assert.ok(html.indexOf("key-line") >= 0 && html.indexOf("race-row") >= 0, "key and rows both render");
+  assert.ok(html.indexOf("key-line") < html.indexOf("race-row"), "the band key renders before the first row");
+
+  // The reader's next steps are one tap away.
+  for (const target of ["/updates", "/feed.xml", "/llms.txt", "https://github.com/pranava0x0/nucleardeployment/issues"]) {
+    assert.ok(html.includes(`href="${target}"`), `the homepage links ${target}`);
+  }
+});
+
+test("the homepage surfaces the newest dated evidence and the nearest gates", async () => {
+  const dataModule = await import("../app/data.ts");
+  const raw = await (await render()).text();
+  const html = raw.replace(/<!--.*?-->/g, "");
+
+  const latest = dataModule.timeline().filter((entry) => entry.date).slice(0, 3);
+  assert.equal(latest.length, 3, "the dataset still has three dated events to show");
+  for (const entry of latest) {
+    assert.ok(html.includes(escapeHtml(entry.label)), `latest developments carries: ${entry.label.slice(0, 60)}`);
+    assert.ok(html.includes(entry.source), `the entry links its document: ${entry.source.slice(0, 60)}`);
+  }
+
+  const gates = [...dataModule.projects]
+    .filter((project) => project.stage < 7)
+    .sort((a, b) => b.stage - a.stage || b.latestDate.localeCompare(a.latestDate))
+    .slice(0, 4);
+  assert.equal(gates.length, 4, "four projects still sit below operational");
+  for (const project of gates) {
+    assert.ok(html.includes(escapeHtml(project.next)), `${project.name} states its next gate on the homepage`);
+    assert.ok(html.includes(escapeHtml(project.nextOwner)), `${project.name} names its gate owner`);
+  }
+});
+
+test("the updates page ledgers every evidence event and every next gate", async () => {
+  const dataModule = await import("../app/data.ts");
+  const raw = await (await render("/updates")).text();
+  const html = raw.replace(/<!--.*?-->/g, "");
+
+  const entries = dataModule.timeline();
+  assert.ok(entries.length > 50, "the merged timeline found the proof and capital ledgers");
+  for (const entry of entries) {
+    assert.ok(html.includes(escapeHtml(entry.label)), `the ledger carries: ${entry.label.slice(0, 60)}`);
+    assert.ok(html.includes(entry.source), `the ledger links: ${entry.source.slice(0, 60)}`);
+    // Every event's company resolves to a page the entry links to.
+    const company = dataModule.companies.find((item) => item.slug === entry.companySlug);
+    assert.ok(company, `${entry.companySlug} resolves to a company record`);
+  }
+
+  // Month groups exist for every distinct dated month, newest first.
+  const months = [...new Set(entries.filter((entry) => entry.date).map((entry) => entry.date.slice(0, 7)))];
+  assert.ok(months.length > 6, "the ledger spans multiple months");
+  for (const month of months) {
+    assert.ok(html.includes(`>${month}</h3>`), `the ledger groups ${month}`);
+  }
+  const sortedMonths = [...months].sort((a, b) => b.localeCompare(a));
+  assert.deepEqual(months, sortedMonths, "months arrive newest first");
+
+  // Undated events are a labeled group, never guessed into a month.
+  const undated = entries.filter((entry) => !entry.date);
+  if (undated.length > 0) {
+    assert.match(html, /No date on record/);
+    assert.match(html, /never guessed/);
+  }
+
+  // The full register: every tracked project, its next gate, its owner.
+  for (const project of dataModule.projects) {
+    assert.ok(html.includes(escapeHtml(project.next)), `${project.name} states its next gate`);
+    assert.ok(html.includes(escapeHtml(project.nextOwner)), `${project.name} names its owner`);
+  }
+});
+
+test("sitemap, robots, and feed cover every route and stay in sync", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const { execFile } = await import("node:child_process");
+  const { promisify } = await import("node:util");
+  const { fileURLToPath } = await import("node:url");
+  const dataModule = await import("../app/data.ts");
+
+  // The committed files regenerate byte-identical from the data.
+  // fileURLToPath, not .pathname: this checkout sits under a directory with a
+  // space in its name, and .pathname hands node a percent-encoded path.
+  await promisify(execFile)("node", [fileURLToPath(new URL("../scripts/build-seo.mjs", import.meta.url)), "--check"]);
+
+  const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
+  const base = "https://pranava0x0.github.io/nucleardeployment";
+  for (const route of ["/", "/updates/", "/deployments/", "/companies/", "/map/", "/federal-action/", "/capital/", "/methodology/"]) {
+    assert.ok(sitemap.includes(`<loc>${base}${route}</loc>`), `sitemap lists ${route}`);
+  }
+  for (const company of dataModule.companies) {
+    assert.ok(sitemap.includes(`${base}/companies/${company.slug}/`), `sitemap lists ${company.slug}`);
+  }
+  for (const project of dataModule.projects) {
+    assert.ok(sitemap.includes(`${base}/deployments/${project.slug}/`), `sitemap lists ${project.slug}`);
+  }
+  const urlCount = (sitemap.match(/<url>/g) ?? []).length;
+  assert.equal(urlCount, 8 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
+
+  const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
+  assert.match(robots, /User-agent: \*/);
+  assert.match(robots, /Allow: \//);
+  assert.ok(robots.includes(`Sitemap: ${base}/sitemap.xml`), "robots points at the sitemap");
+  assert.ok(robots.includes(`${base}/llms.txt`), "robots points agents at llms.txt");
+
+  const feed = await readFile(new URL("../public/feed.xml", import.meta.url), "utf8");
+  const dated = dataModule.timeline().filter((entry) => entry.date);
+  const itemCount = (feed.match(/<item>/g) ?? []).length;
+  assert.equal(itemCount, Math.min(50, dated.length), "the feed carries the capped dated ledger");
+  assert.doesNotMatch(feed, />Undated</, "undated events stay out of the feed");
+  // Duplicate guids collapse items in readers; every one must be unique.
+  const guids = [...feed.matchAll(/<guid[^>]*>([^<]+)<\/guid>/g)].map((match) => match[1]);
+  assert.equal(new Set(guids).size, guids.length, "feed guids are unique");
+  assert.equal(guids.length, itemCount, "every item carries a guid");
+  const pubDates = (feed.match(/<pubDate>/g) ?? []).length;
+  assert.equal(pubDates, itemCount, "every item carries a pubDate");
+  // Raw ampersands corrupt XML; only entities may follow one.
+  assert.doesNotMatch(feed, /&(?!amp;|lt;|gt;|quot;|apos;|#)/, "feed XML is escaped");
+  assert.doesNotMatch(sitemap, /&(?!amp;|lt;|gt;|quot;|apos;|#)/, "sitemap XML is escaped");
+
+  // The static files land in the build output like llms.txt does.
+  for (const name of ["sitemap.xml", "robots.txt", "feed.xml"]) {
+    const built = await readFile(new URL(`../dist/client/${name}`, import.meta.url), "utf8");
+    const committed = await readFile(new URL(`../public/${name}`, import.meta.url), "utf8");
+    assert.equal(built, committed, `the built ${name} matches the committed one`);
+  }
+});
+
+test("every page states a canonical and the lead pages carry structured data", async () => {
+  const dataModule = await import("../app/data.ts");
+  const pages = [
+    ["/", true],
+    ["/updates", true],
+    ["/methodology", false],
+    ["/companies", false],
+    ["/deployments", false],
+    ["/capital", false],
+    ["/federal-action", false],
+    ["/map", false],
+    [`/companies/${dataModule.raceEntrants[0].companySlug}`, true],
+    [`/deployments/${dataModule.projects[0].slug}`, true],
+  ];
+  for (const [path, expectsJsonLd] of pages) {
+    const raw = await (await render(path)).text();
+    assert.match(raw, /<link rel="canonical"/, `${path} states a canonical URL`);
+
+    const scripts = [...raw.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+    if (!expectsJsonLd) continue;
+    assert.ok(scripts.length > 0, `${path} carries structured data`);
+    for (const [, body] of scripts) {
+      const parsed = JSON.parse(body);
+      assert.ok(parsed["@context"] === "https://schema.org", `${path} structured data declares its context`);
+    }
+  }
+
+  // The homepage dataset block matches the data it describes.
+  const home = await (await render()).text();
+  const homeScripts = [...home.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+  assert.equal(homeScripts.length, 1, "the homepage carries one structured-data block");
+  const graph = JSON.parse(homeScripts[0][1])["@graph"];
+  const dataset = graph.find((node) => node["@type"] === "Dataset");
+  assert.ok(dataset, "the homepage declares the tracker as a Dataset");
+  assert.equal(dataset.dateModified, dataModule.dataAsOf, "the Dataset date matches the data");
+  const website = graph.find((node) => node["@type"] === "WebSite");
+  assert.ok(website, "the homepage declares the WebSite");
+
+  // Slug pages carry breadcrumbs that resolve to real routes.
+  const companyPage = await (await render(`/companies/${dataModule.raceEntrants[0].companySlug}`)).text();
+  const crumb = JSON.parse([...companyPage.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)][0][1]);
+  assert.equal(crumb["@type"], "BreadcrumbList");
+  assert.equal(crumb.itemListElement.length, 3);
+});
+
+test("the header and footer map the whole site", async () => {
+  const raw = await (await render()).text();
+  const html = raw.replace(/<!--.*?-->/g, "");
+  for (const route of ["/", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/methodology"]) {
+    assert.ok(html.includes(`href="${route}"`), `the navigation reaches ${route}`);
+  }
+  // The footer carries the credit and the code, per the footer rule.
+  assert.match(html, /Built by Pranava Raparla/);
+  assert.ok(html.includes("https://github.com/pranava0x0/nucleardeployment"), "the footer links the repository");
+  assert.ok(html.includes("https://www.pranavaraparla.com"), "the footer links the author");
 });

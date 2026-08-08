@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { PageShell } from "../components/SiteHeader";
 import { capacityBands, capacityClaims, dataAsOf, raceEntrants, raceTotals, stages, technologies } from "../data";
+import { canonicalUrl } from "../site";
 
-export const metadata: Metadata = { title: "Methodology" };
+export const metadata: Metadata = {
+  title: "Methodology",
+  description: "How the tracker decides what counts: the roster rule, the six evidence bands, the source hierarchy, deployment stages, and the current limits of the data.",
+  alternates: { canonical: canonicalUrl("/methodology") },
+};
 
 const definitions = [
   ["Announced", "A public statement. No site, binding contract, license, or finance implied."],

@@ -1977,6 +1977,9 @@ export type RaceRow = {
   strongestLine: string;
   unitsToGigawatt: number;
   ariaLabel: string;
+  /** Lowercase haystack the homepage filter matches against, precomputed here
+   *  so the client never receives the dataset itself. */
+  filterText: string;
 };
 
 const bandOrder = capacityBands.map((entry) => entry.band);
@@ -2030,6 +2033,7 @@ export function raceBoard(claims: CapacityClaim[] = capacityClaims): RaceRow[] {
       strongestLine,
       unitsToGigawatt: Math.ceil(gigawattMWe / entrant.unitMWe),
       ariaLabel,
+      filterText: `${company.name} ${entrant.design} ${entrant.lane} ${company.technology} ${strongestLine}`.toLowerCase(),
     };
   });
 
@@ -2059,6 +2063,71 @@ export function raceTotals(claims: CapacityClaim[] = capacityClaims) {
 
 export function entrantFor(companySlug: string) {
   return raceEntrants.find((entrant) => entrant.companySlug === companySlug) ?? null;
+}
+
+/**
+ * The four numbers the homepage and llms.txt lead with, derived in one place
+ * so the page and the machine file can never disagree. Executed and announced
+ * are separate frames and are never summed with each other.
+ */
+export function headlineTotals(claims: CapacityClaim[] = capacityClaims) {
+  const totals = raceTotals(claims);
+  const sum = (bands: CapacityBand[]) =>
+    totals.filter((entry) => bands.includes(entry.band)).reduce((total, entry) => total + entry.mwe, 0);
+  return {
+    operationalMWe: sum(["operational"]),
+    buildingMWe: sum(["construction", "doe-authorized"]),
+    executedMWe: sum(["operational", "construction", "doe-authorized", "review", "contracted"]),
+    announcedMWe: sum(["framework"]),
+  };
+}
+
+export type TimelineEntry = {
+  /** YYYY-MM or YYYY-MM-DD, or null when no source dates the event. Never guessed. */
+  date: string | null;
+  companySlug: string;
+  company: string;
+  kind: ProofEvent["kind"] | FundingEvent["kind"];
+  /** Which ledger the event came from. The two are never mixed into one frame. */
+  lane: "Proof" | "Capital";
+  label: string;
+  detail: string | null;
+  source: string;
+  verification: Verification;
+};
+
+/**
+ * Every dated evidence event on record, newest first: physical and licensing
+ * proof beside capital events, each carrying its own source and reporting
+ * tier. Capacity claims stay on the board; a claim is a state, not an event,
+ * and repeating it here would double-report the action that created it.
+ */
+export function timeline(): TimelineEntry[] {
+  const named = (slug: string) => companies.find((company) => company.slug === slug)?.name ?? slug;
+  return byDateDescending<TimelineEntry>([
+    ...proofEvents.map((event) => ({
+      date: event.date,
+      companySlug: event.companySlug,
+      company: named(event.companySlug),
+      kind: event.kind,
+      lane: "Proof" as const,
+      label: event.label,
+      detail: event.powerNote ?? null,
+      source: event.source,
+      verification: event.verification,
+    })),
+    ...fundingEvents.map((event) => ({
+      date: event.date,
+      companySlug: event.companySlug,
+      company: named(event.companySlug),
+      kind: event.kind,
+      lane: "Capital" as const,
+      label: event.amount,
+      detail: event.counterparty,
+      source: event.source,
+      verification: verificationForSource(event.source),
+    })),
+  ]);
 }
 
 /** Newest first. Undated records sort last rather than being dropped or guessed into place. */

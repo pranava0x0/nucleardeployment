@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { PageShell } from "../components/SiteHeader";
 import { federalActions, programs } from "../data";
+import { canonicalUrl } from "../site";
 
-export const metadata: Metadata = { title: "Federal Action" };
+export const metadata: Metadata = {
+  title: "Federal Action",
+  description: "The executive orders and DOE programs shaping U.S. nuclear deployment, with owners, deadlines, current status, and next actions.",
+  alternates: { canonical: canonicalUrl("/federal-action") },
+};
 
 export default function FederalActionPage() {
   return <PageShell><main id="main" className="inner-page"><header className="page-lead grid-bg"><h1>Federal action</h1><p>Four executive orders and DOE programs, with owners, deadlines, current status, and next actions.</p></header>
