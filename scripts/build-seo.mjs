@@ -36,24 +36,36 @@ const data = await loadData();
 
 // --- sitemap.xml -----------------------------------------------------------
 
+// lastmod is the real per-page change date (DESIGN.md 11.2), so a record page
+// moves only when one of its own records does. Aggregate routes render the
+// whole dataset and carry its date. Mixed-precision dates (YYYY-MM beside
+// YYYY-MM-DD) compare correctly as strings and are both valid W3C datetimes.
+const companyDates = new Map();
+const noteDate = (slug, date) => {
+  if (!date) return;
+  const prev = companyDates.get(slug);
+  if (!prev || date > prev) companyDates.set(slug, date);
+};
+for (const claim of data.capacityClaims) noteDate(claim.companySlug, claim.date);
+for (const event of data.fundingEvents) noteDate(event.companySlug, event.date);
+for (const event of data.proofEvents) noteDate(event.companySlug, event.date);
+for (const position of data.cashPositions) noteDate(position.companySlug, position.asOf);
+for (const target of data.statedTargets) noteDate(target.companySlug, target.statedDate);
+for (const project of data.projects) noteDate(project.companySlug, project.latestDate);
+
+/** [route, lastmod]. A null lastmod is omitted, never guessed. */
 const routes = [
-  "",
-  "/updates",
-  "/deployments",
-  "/companies",
-  "/map",
-  "/federal-action",
-  "/capital",
-  "/methodology",
-  ...data.companies.map((company) => `/companies/${company.slug}`),
-  ...data.projects.map((project) => `/deployments/${project.slug}`),
+  ...["", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/methodology"]
+    .map((route) => [route, data.dataAsOf]),
+  ...data.companies.map((company) => [`/companies/${company.slug}`, companyDates.get(company.slug) ?? null]),
+  ...data.projects.map((project) => [`/deployments/${project.slug}`, project.latestDate]),
 ];
 
 const sitemap = [
   `<?xml version="1.0" encoding="UTF-8"?>`,
   `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
-  ...routes.map((route) =>
-    `  <url><loc>${escapeXml(page(route))}</loc><lastmod>${data.dataAsOf}</lastmod></url>`),
+  ...routes.map(([route, lastmod]) =>
+    `  <url><loc>${escapeXml(page(route))}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}</url>`),
   `</urlset>`,
   ``,
 ].join("\n");

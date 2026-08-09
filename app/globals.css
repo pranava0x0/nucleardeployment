@@ -509,8 +509,10 @@ details.acc.section { padding-top: 22px; padding-bottom: 22px; }
   .method-link { margin-left: auto; }
   .masthead { padding: 26px 32px 20px; }
   .masthead h1 { font-size: clamp(30px, 4.4vw, 40px); }
-  /* The wrapped header (brand row plus nav row) stands ~110px tall here. */
+  /* The wrapped header (brand row plus nav row) stands ~110px tall here, so
+     both the sticky key and anchor landings clear it, not the 64px bar. */
   .race-key { top: 110px; }
+  [id] { scroll-margin-top: 122px; }
   .stat-strip { grid-template-columns: 1fr; gap: 8px; }
   .strip-tiles { grid-template-columns: repeat(2, 1fr); }
   .gate-list, .gate-list.full { grid-template-columns: repeat(2, 1fr); }
@@ -663,6 +665,9 @@ details.acc.section { padding-top: 22px; padding-bottom: 22px; }
     align-items: center;
   }
   .race-filter input { min-height: 44px; }
+  /* 16px stops iOS Safari zooming the viewport on focus (DESIGN.md); the
+     denser 14px stays for fine pointers. */
+  .race-filter input, .filters input, .filters select { font-size: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

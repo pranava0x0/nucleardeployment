@@ -1142,8 +1142,12 @@ test("the homepage leads with four separate frames and a filterable board", asyn
   assert.match(css, /\[hidden\]\s*\{\s*display:\s*none\s*!important/, "the [hidden] rule ships");
   assert.match(css, /details\.acc:not\(\[open\]\)\s*>\s*:not\(summary\)\s*\{\s*display:\s*none/, "closed accordions hide their bodies");
   // The dossier back link lands on #race; without scroll margin the sticky
-  // header would cover the very section the link promises.
+  // header would cover the very section the link promises. The wrapped tablet
+  // header stands ~110px, so that breakpoint needs its own clearance.
   assert.match(css, /\[id\]\s*\{\s*scroll-margin-top/, "anchor targets clear the sticky header");
+  assert.match(css, /\[id\]\s*\{\s*scroll-margin-top:\s*122px/, "anchor targets clear the wrapped tablet header");
+  // 16px on coarse pointers stops iOS Safari zooming the viewport on focus.
+  assert.match(css, /\.race-filter input, \.filters input, \.filters select \{ font-size: 16px/, "touch inputs hold 16px to suppress iOS focus zoom");
 
   // The key sits above the rows: the legend line precedes the first race row.
   assert.ok(html.indexOf("key-line") >= 0 && html.indexOf("race-row") >= 0, "key and rows both render");
@@ -1238,9 +1242,18 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
   }
   for (const project of dataModule.projects) {
     assert.ok(sitemap.includes(`${base}/deployments/${project.slug}/`), `sitemap lists ${project.slug}`);
+    // lastmod is the page's own record date, not a global stamp (DESIGN.md 11.2).
+    assert.ok(
+      sitemap.includes(`<loc>${base}/deployments/${project.slug}/</loc><lastmod>${project.latestDate}</lastmod>`),
+      `${project.slug} carries its own latest date as lastmod`,
+    );
   }
   const urlCount = (sitemap.match(/<url>/g) ?? []).length;
   assert.equal(urlCount, 8 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
+  const lastmods = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1]);
+  assert.ok(lastmods.length > 8, "sitemap states lastmod dates");
+  assert.ok(lastmods.every((date) => date <= dataModule.dataAsOf), "no page claims to be newer than the dataset");
+  assert.ok(lastmods.some((date) => date !== dataModule.dataAsOf), "record pages carry their own dates, not one global stamp");
 
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
   assert.match(robots, /User-agent: \*/);
