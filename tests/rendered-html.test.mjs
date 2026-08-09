@@ -846,6 +846,13 @@ test("llms.txt is generated from the data and stays in sync", async () => {
     const total = dataModule.raceTotals().find((entry) => entry.band === band.band);
     assert.ok(llms.includes(`**${band.label}** (${total.mwe.toLocaleString("en-US")} MWe`), `llms.txt carries the ${band.label} total`);
   }
+  // The headline lines come from the same helper the homepage strip renders,
+  // recomputed here so a generator that stops using it fails the moment the
+  // definitions diverge.
+  const headline = dataModule.headlineTotals();
+  assert.ok(llms.includes(`${headline.buildingMWe.toLocaleString("en-US")} MWe is physically under construction`), "llms.txt building figure matches headlineTotals");
+  assert.ok(llms.includes(`${headline.executedMWe.toLocaleString("en-US")} MWe rests on an executed action`), "llms.txt executed figure matches headlineTotals");
+  assert.ok(llms.includes(`${headline.announcedMWe.toLocaleString("en-US")} MWe has been announced without binding documents`), "llms.txt announced figure matches headlineTotals");
   for (const entrant of dataModule.raceEntrants) {
     const company = dataModule.companies.find((item) => item.slug === entrant.companySlug);
     assert.ok(llms.includes(company.name), `llms.txt lists ${company.name}`);
