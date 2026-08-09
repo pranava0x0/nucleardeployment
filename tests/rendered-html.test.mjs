@@ -396,6 +396,9 @@ test("every entrant dossier renders every lane, with explicit empty states", asy
     for (const lane of lanes) assert.ok(html.includes(lane), `${entrant.companySlug} renders the ${lane} lane`);
     assert.ok(html.includes(escapeHtml(entrant.design)), `${entrant.companySlug} shows its design`);
     assert.ok(html.includes(escapeHtml(entrant.rosterBasis)), `${entrant.companySlug} states why it is on the board`);
+    // UX-001: most readers arrive from the board, so the way back leads there.
+    assert.ok(html.includes(`href="/#race"`), `${entrant.companySlug} links back to the race board`);
+    assert.ok(html.includes(`href="/companies"`), `${entrant.companySlug} keeps the directory link`);
     // Derived, never hand-written.
     assert.ok(html.includes(`${dossier.row.unitsToGigawatt} × ${entrant.unitMWe.toLocaleString("en-US")} MWe`), `${entrant.companySlug} shows gigawatt math`);
     // A private company says so rather than rendering a blank cell.
@@ -1131,6 +1134,9 @@ test("the homepage leads with four separate frames and a filterable board", asyn
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
   assert.match(css, /\[hidden\]\s*\{\s*display:\s*none\s*!important/, "the [hidden] rule ships");
   assert.match(css, /details\.acc:not\(\[open\]\)\s*>\s*:not\(summary\)\s*\{\s*display:\s*none/, "closed accordions hide their bodies");
+  // The dossier back link lands on #race; without scroll margin the sticky
+  // header would cover the very section the link promises.
+  assert.match(css, /\[id\]\s*\{\s*scroll-margin-top/, "anchor targets clear the sticky header");
 
   // The key sits above the rows: the legend line precedes the first race row.
   assert.ok(html.indexOf("key-line") >= 0 && html.indexOf("race-row") >= 0, "key and rows both render");

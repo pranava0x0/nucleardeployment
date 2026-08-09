@@ -52,7 +52,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
   return <PageShell><JsonLd data={breadcrumbs} /><main id="main" className="inner-page company-page">
     <header className="project-hero grid-bg">
       <div>
-        <Link className="back-link" href="/companies">← All companies</Link>
+        <p className="back-links"><Link className="back-link" href="/#race">← Race board</Link><Link className="back-link" href="/companies">All companies</Link></p>
         <h1>{company.name}</h1>
         <p>{company.summary}</p>
         <p className="hero-meta">{company.role}</p>

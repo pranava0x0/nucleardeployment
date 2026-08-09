@@ -2,8 +2,6 @@
 
 ## Open
 
-- 2026-08-06 — UX-001 (open): The dossier's only way back is "← All companies", which goes to `/companies`. Most readers arrive from the race board on `/`, so the back link returns them somewhere they have never been, and getting back to their place on the board takes a second click or the browser button. Fix: label and target the back link by where the reader came from, or add a "back to the board" link beside it.
-- 2026-08-06 — UX-002 (open): A board row's only click target is the company name, roughly 100 to 170px wide inside a row about 90px tall. The rest of the row, including the bar a reader is looking at, is inert. Fix: make the whole row the link, keeping the name as the visible affordance.
 - 2026-08-06 — DATA-023 (open): Three Federal Register sources cached as a 1,180-byte "Request Access" page rather than the document, because the site answers scripted fetches with a 200 and a refusal notice. Fixed for Federal Register by fetching its documented JSON API, and a wall detector now refuses to store any interstitial as a snapshot. Sixteen other sources remain behind walls and need a browser read recorded in `link-check-history.jsonl`. Run `npm run data:claims` for the queue.
 
 - The dataset now covers 28 sourced U.S. projects, all 11 initial Reactor Pilot Program projects, 26 companies, and 18 race entrants, but it is not yet a complete U.S. or global census.
@@ -11,6 +9,9 @@
 - `npm audit` reports moderate transitive findings in the vinext/Next.js build chain. No high or critical findings remain after updating Vite, the Cloudflare Vite plugin, and Wrangler on 2026-07-17. Avoid `npm audit fix --force`; it proposes incompatible downgrades.
 
 ## Resolved
+
+- 2026-08-09 — UX-001: The dossier's only way back was "← All companies", which goes to `/companies`, while most readers arrive from the race board on `/`. Root cause: **UX gap**, the back link named the directory rather than where the reader came from. The hero now carries two links, "← Race board" to `/#race` and "All companies" to the directory. Guarded by the dossier test asserting both links on every entrant page.
+- 2026-08-09 — UX-002: A board row's only click target was the company name, roughly 100 to 170px wide inside a row about 90px tall, leaving the bar itself inert. Root cause: **UX gap**. Fixed 2026-08-08 with a stretched company link covering the whole row, keeping the name as the visible affordance; the filter test asserts every row still carries its dossier link.
 
 - 2026-08-06 — REVIEW-002: A post-merge review of PR #6 found 14 defects, all now fixed on one follow-up PR. The heaviest concentration was in the data scripts, which had merged with zero review rounds. Worst three: `check-links.mjs` classified any network failure as a dead link, so running offline would have written all 190 sources into an append-only audit file as dead; `--limit notanumber` produced NaN, checked zero links, and exited 0, so a typo in a CI step would have passed a link check that checked nothing; and `npm run data:check` was never wired into CI, leaving 129 of 190 sourced records with no automated validation despite the validator existing. Root causes: **code bug** (classification, argument parsing, rate-limit stamping, dead export, double loop), **schema/CI gap** (no CI step, unpinned deploy actions), and **display bug** (executed bar clipping past the track with no marker, progress printing above 100%, "1 companies" in published llms.txt). Every fix ships with a regression test, and all six sabotage mutations now fail. One guard was vacuous on the first attempt: reading the committed `llms.txt` could not see a change to its generator, so the test now runs the generator's own `--check`.
 

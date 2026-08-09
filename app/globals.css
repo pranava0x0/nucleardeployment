@@ -51,6 +51,8 @@ button, input, select { font: inherit; }
 .method-link { padding: 0 20px; display: grid; place-items: center; font: 750 12px/1 var(--font-mono); background: var(--accent); color: var(--on-accent); }
 
 main { min-height: calc(100vh - 64px); }
+/* Anchor targets land below the sticky header instead of underneath it. */
+[id] { scroll-margin-top: 76px; }
 .grid-bg { background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 40px 40px; }
 .masthead { padding: 24px max(32px, calc((100vw - 1280px) / 2)) 16px; border-bottom: 1px solid var(--border-strong); }
 .masthead h1 { max-width: 1000px; margin: 0 0 10px; font: 650 clamp(32px, 3.6vw, 48px)/1.05 var(--font-serif); letter-spacing: -.02em; }
@@ -190,6 +192,7 @@ h1, h2, h3, p { margin-top: 0; }
 .project-hero { min-height: 320px; display: grid; grid-template-columns: 1.3fr .7fr; gap: 32px; align-items: end; padding: 40px max(32px, calc((100vw - 1216px) / 2)); border-bottom: 1px solid var(--border-strong); }
 .project-hero > div:first-child { max-width: 780px; }
 .back-link { display: inline-block; margin-bottom: 20px; font: 700 14px var(--font-sans); }
+.back-links { display: flex; flex-wrap: wrap; gap: 0 18px; margin: 0; }
 .project-hero h1 { margin: 0 0 18px; font: 650 clamp(48px, 6vw, 82px)/.97 var(--font-serif); letter-spacing: -.02em; }
 .project-hero > div > p:not(.eyebrow) { max-width: 720px; font-size: 17px; line-height: 1.55; color: var(--ink-muted); }
 .status-line { display: flex; gap: 8px; margin-top: 18px; }
