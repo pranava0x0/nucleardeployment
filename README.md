@@ -8,7 +8,9 @@ The current release is a research-backed tracked set: 28 sourced projects and 26
 
 ## What is included
 
-- The race board: per-company capacity in six evidence bands, with a fixed one-gigawatt line on every bar
+- The race board: per-company capacity in six evidence bands, with a fixed one-gigawatt line on every bar, a type-to-narrow filter, and a sticky band key
+- A headline stat strip: operational, being built, on executed actions, and announced megawatts as four separate frames that are never summed
+- An updates page: every dated proof and capital event, newest first with sources, plus every project's next gate and owner, with an RSS feed
 - Company race dossiers: funding in separate frames, licensing, physical progress, pipeline, and company-stated targets beside the regulator-documented state
 - National overview and eight-stage deployment pipeline
 - Linked company names inside every active pipeline stage
@@ -47,10 +49,11 @@ npm run test:pages
 npm run data:check
 ```
 
-Validates every source, confirms `public/llms.txt` matches the data, and reads
-the built pages for model-register words. `npm run data:press` lists records
-still citing trade press; `npm run data:links` re-checks that every source
-resolves. The full procedure is in [REFRESH.md](REFRESH.md).
+Validates every source, confirms `public/llms.txt`, `public/sitemap.xml`,
+`public/robots.txt`, and `public/feed.xml` match the data, and reads the built
+pages for model-register words. `npm run data:press` lists records still citing
+trade press; `npm run data:links` re-checks that every source resolves. The
+full procedure is in [REFRESH.md](REFRESH.md).
 
 ## Publish
 

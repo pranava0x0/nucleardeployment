@@ -33,7 +33,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {/* Rendered here and hoisted by React so the href stays relative;
+            the metadata icons API would absolutize it against metadataBase. */}
+        <link rel="icon" href={`${basePath}/favicon.svg`} type="image/svg+xml" />
+        {children}
+      </body>
     </html>
   );
 }

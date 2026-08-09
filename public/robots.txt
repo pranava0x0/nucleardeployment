@@ -1,0 +1,8 @@
+# Deployment Core. Crawling is welcome; every page cites its sources.
+User-agent: *
+Allow: /
+
+Sitemap: https://pranava0x0.github.io/nucleardeployment/sitemap.xml
+
+# Machine-readable summary of the dataset, for agents:
+# https://pranava0x0.github.io/nucleardeployment/llms.txt

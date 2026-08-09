@@ -27,9 +27,8 @@ const page = (path = "") => `${SITE_URL}${BASE_PATH}${path}`;
 const plural = (count, one, many) => `${count} ${count === 1 ? one : many}`;
 
 const totals = data.raceTotals();
-const executed = totals.filter((entry) => entry.band !== "framework").reduce((sum, entry) => sum + entry.mwe, 0);
-const building = totals.filter((entry) => entry.band === "construction" || entry.band === "doe-authorized").reduce((sum, entry) => sum + entry.mwe, 0);
-const framework = totals.find((entry) => entry.band === "framework").mwe;
+/** The same helper the homepage strip renders, so the two cannot diverge. */
+const headline = data.headlineTotals();
 
 const lines = [];
 const say = (line = "") => lines.push(line);
@@ -57,11 +56,13 @@ say();
 
 say("## The headline numbers");
 say();
-say(`- No company has generated a commercial megawatt. Operational capacity is 0 MWe.`);
-say(`- ${mwe(building)} MWe is physically under construction.`);
-say(`- ${mwe(executed)} MWe rests on an executed action of any kind, including applications filed.`);
-say(`- ${mwe(framework)} MWe has been announced without binding documents.`);
-say(`- Announced capacity is about ${Math.round(framework / executed)}x everything executed, and about ${Math.round(framework / building)}x what is being built.`);
+say(headline.operationalMWe === 0
+  ? `- No company has generated a commercial megawatt. Operational capacity is 0 MWe.`
+  : `- ${mwe(headline.operationalMWe)} MWe is grid-connected and generating commercial power.`);
+say(`- ${mwe(headline.buildingMWe)} MWe is physically under construction.`);
+say(`- ${mwe(headline.executedMWe)} MWe rests on an executed action of any kind, including applications filed.`);
+say(`- ${mwe(headline.announcedMWe)} MWe has been announced without binding documents.`);
+say(`- Announced capacity is about ${Math.round(headline.announcedMWe / headline.executedMWe)}x everything executed, and about ${Math.round(headline.announcedMWe / headline.buildingMWe)}x what is being built.`);
 say();
 
 say("## Rules that govern the numbers");
@@ -106,11 +107,18 @@ say();
 say("## Pages");
 say();
 say(`- ${page("/")} - the race board`);
+say(`- ${page("/updates")} - dated evidence events, newest first, plus every project's next gate`);
 say(`- ${page("/methodology")} - roster rule, band rules, source hierarchy`);
 say(`- ${page("/deployments")} - every tracked project record`);
 say(`- ${page("/companies")} - every company`);
+say(`- ${page("/map")} - tracked projects by region`);
 say(`- ${page("/federal-action")} - executive orders and DOE programs`);
 say(`- ${page("/capital")} - loans, awards, and cost shares`);
+say();
+say("## Machine feeds");
+say();
+say(`- ${page("/feed.xml")} - RSS feed of the dated evidence ledger`);
+say(`- ${page("/sitemap.xml")} - every route`);
 say();
 say("Generated from app/data.ts by scripts/build-llms-txt.mjs. Do not edit by hand.");
 

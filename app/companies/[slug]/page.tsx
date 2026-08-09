@@ -4,13 +4,21 @@ import { notFound } from "next/navigation";
 import { PageShell } from "../../components/SiteHeader";
 import { RaceBar } from "../../components/RaceBoard";
 import { StageCore } from "../../components/StageCore";
+import { JsonLd } from "../../components/JsonLd";
 import { capacityBands, companies, dataAsOf, dossierFor, gigawattMWe, projects, stageLabels } from "../../data";
+import { absoluteUrl, canonicalUrl } from "../../site";
 
 export function generateStaticParams() { return companies.map(({ slug }) => ({ slug })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  return { title: companies.find((company) => company.slug === slug)?.name ?? "Company" };
+  const company = companies.find((item) => item.slug === slug);
+  if (!company) return { title: "Company" };
+  return {
+    title: company.name,
+    description: company.summary,
+    alternates: { canonical: canonicalUrl(`/companies/${slug}`) },
+  };
 }
 
 const mwe = (value: number) => value.toLocaleString("en-US");
@@ -31,10 +39,20 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
   // press reporting. Carry its actual basis rather than implying a regulator.
   const strongestBasis = [...new Set(dossier?.row?.strongest?.claims.map((claim) => claim.verification) ?? [])].join(", ");
 
-  return <PageShell><main id="main" className="inner-page company-page">
+  const breadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Deployment Core", item: absoluteUrl("/") },
+      { "@type": "ListItem", position: 2, name: "Companies", item: absoluteUrl("/companies") },
+      { "@type": "ListItem", position: 3, name: company.name, item: absoluteUrl(`/companies/${company.slug}`) },
+    ],
+  };
+
+  return <PageShell><JsonLd data={breadcrumbs} /><main id="main" className="inner-page company-page">
     <header className="project-hero grid-bg">
       <div>
-        <Link className="back-link" href="/companies">← All companies</Link>
+        <p className="back-links"><Link className="back-link" href="/#race">← Race board</Link><Link className="back-link" href="/companies">All companies</Link></p>
         <h1>{company.name}</h1>
         <p>{company.summary}</p>
         <p className="hero-meta">{company.role}</p>

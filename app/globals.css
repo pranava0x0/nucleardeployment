@@ -28,6 +28,9 @@
 }
 
 * { box-sizing: border-box; }
+/* A display rule on a class outranks the UA's [hidden] handling; this keeps
+   the attribute meaning what it says, filter-hidden board rows included. */
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 var(--font-sans); font-feature-settings: "tnum"; }
 a { color: inherit; text-decoration: none; }
@@ -48,15 +51,17 @@ button, input, select { font: inherit; }
 .method-link { padding: 0 20px; display: grid; place-items: center; font: 750 12px/1 var(--font-mono); background: var(--accent); color: var(--on-accent); }
 
 main { min-height: calc(100vh - 64px); }
+/* Anchor targets land below the sticky header instead of underneath it. */
+[id] { scroll-margin-top: 76px; }
 .grid-bg { background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 40px 40px; }
-.masthead { padding: 56px max(32px, calc((100vw - 1280px) / 2)) 40px; border-bottom: 1px solid var(--border-strong); }
-.masthead h1 { max-width: 1000px; margin: 0 0 24px; font: 650 clamp(38px, 5vw, 72px)/1.02 var(--font-serif); letter-spacing: -.025em; }
+.masthead { padding: 24px max(32px, calc((100vw - 1280px) / 2)) 16px; border-bottom: 1px solid var(--border-strong); }
+.masthead h1 { max-width: 1000px; margin: 0 0 10px; font: 650 clamp(32px, 3.6vw, 48px)/1.05 var(--font-serif); letter-spacing: -.02em; }
 .masthead-context { max-width: 740px; margin: 20px 0 0; font-size: 15px; line-height: 1.6; color: var(--ink-muted); border-left: 2px solid var(--border-strong); padding-left: 16px; }
 .masthead-context a { border-bottom: 1px solid var(--border-strong); }
 .live-dot { width: 8px; height: 8px; display: inline-block; margin-right: 8px; border-radius: 50%; background: var(--verified); box-shadow: 0 0 0 4px color-mix(in srgb, var(--verified) 18%, transparent); }
 h1, h2, h3, p { margin-top: 0; }
-.dek { max-width: 740px; font-size: 18px; line-height: 1.55; color: var(--ink-muted); }
-.hero-meta { margin: 18px 0 0 !important; font: 650 14px/1.4 var(--font-sans) !important; color: var(--ink-muted); }
+.dek { max-width: 740px; font-size: 16px; line-height: 1.5; color: var(--ink-muted); }
+.hero-meta { margin: 10px 0 0 !important; font: 650 13px/1.4 var(--font-sans) !important; color: var(--ink-muted); }
 .button { min-height: 46px; padding: 0 18px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--ink); font: 750 13px/1 var(--font-mono); text-transform: uppercase; transition: transform 120ms ease, background 120ms ease; }
 .button:hover { transform: translateY(-2px); }
 .button.primary { background: var(--accent); color: var(--on-accent); box-shadow: 4px 4px 0 var(--ink); }
@@ -187,6 +192,7 @@ h1, h2, h3, p { margin-top: 0; }
 .project-hero { min-height: 320px; display: grid; grid-template-columns: 1.3fr .7fr; gap: 32px; align-items: end; padding: 40px max(32px, calc((100vw - 1216px) / 2)); border-bottom: 1px solid var(--border-strong); }
 .project-hero > div:first-child { max-width: 780px; }
 .back-link { display: inline-block; margin-bottom: 20px; font: 700 14px var(--font-sans); }
+.back-links { display: flex; flex-wrap: wrap; gap: 0 18px; margin: 0; }
 .project-hero h1 { margin: 0 0 18px; font: 650 clamp(48px, 6vw, 82px)/.97 var(--font-serif); letter-spacing: -.02em; }
 .project-hero > div > p:not(.eyebrow) { max-width: 720px; font-size: 17px; line-height: 1.55; color: var(--ink-muted); }
 .status-line { display: flex; gap: 8px; margin-top: 18px; }
@@ -316,10 +322,12 @@ h1, h2, h3, p { margin-top: 0; }
 .limitations h2 { font: 600 38px var(--font-serif); }
 .limitations p { max-width: 840px; color: color-mix(in srgb, var(--white) 70%, transparent); line-height: 1.6; }
 
-footer { min-height: 72px; padding: 0 max(24px, calc((100vw - 1216px) / 2)); border-top: 1px solid var(--steel); display: flex; align-items: center; gap: 20px; background: var(--graphite); color: var(--white); }
+footer { min-height: 72px; padding: 14px max(24px, calc((100vw - 1216px) / 2)); border-top: 1px solid var(--steel); display: flex; align-items: center; flex-wrap: wrap; gap: 12px 20px; background: var(--graphite); color: var(--white); }
 footer b { font: 800 13px var(--font-mono); }
 footer span { color: color-mix(in srgb, var(--white) 68%, transparent); font-size: 13px; }
-footer a { margin-left: auto; font: 700 13px var(--font-mono); }
+footer nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+footer a { font: 700 13px var(--font-mono); }
+footer a:hover { color: var(--accent); }
 
 /* The race board. The gigawatt line is the only decorative device on it. */
 .race-section { border-bottom: 1px solid var(--border); }
@@ -327,7 +335,7 @@ footer a { margin-left: auto; font: 700 13px var(--font-mono); }
 .race-zero b { font-family: var(--font-mono); font-size: 15px; }
 
 .race-board { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--border-strong); }
-.race-row { display: grid; grid-template-columns: minmax(190px, 245px) minmax(0, 1fr) minmax(180px, 225px); gap: 22px; align-items: center; padding: 15px 0; border-top: 1px solid var(--border); }
+.race-row { display: grid; grid-template-columns: minmax(190px, 245px) minmax(0, 1fr) minmax(180px, 225px); gap: 22px; align-items: center; padding: 12px 0; border-top: 1px solid var(--border); }
 .race-row:first-child { border-top: 1px solid var(--border-strong); }
 .race-id { min-width: 0; display: grid; grid-template-columns: auto 1fr; gap: 0 10px; align-items: baseline; }
 .race-rank { grid-row: 1 / 3; font: 700 13px/1.2 var(--font-mono); color: var(--ink-muted); }
@@ -413,14 +421,101 @@ footer a { margin-left: auto; font: 700 13px var(--font-mono); }
 .band-total { font: 600 14px/1.3 var(--font-mono); color: var(--ink-muted); }
 .band-table p { grid-column: 2 / -1; margin: 0; font-size: 14px; line-height: 1.55; color: var(--ink-muted); }
 
+/* Headline stat strip. Four frames, four tiles, never one sum. The zero
+   sentence sits beside the tiles so the board starts inside the first screen. */
+.stat-strip { display: grid; grid-template-columns: minmax(230px, 320px) 1fr; gap: 14px; align-items: center; padding: 12px max(32px, calc((100vw - 1280px) / 2)); border-bottom: 1px solid var(--border-strong); background: var(--surface); }
+.strip-zero { margin: 0; font-size: 14px; line-height: 1.5; }
+.strip-zero b { font-family: var(--font-mono); font-size: 13px; }
+.strip-tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border-strong); }
+.strip-tiles > div { background: var(--surface); padding: 8px 12px; display: flex; flex-direction: column; gap: 3px; }
+.strip-tiles b { font: 700 24px/1 var(--font-mono); }
+.strip-tiles span { font: 750 12px/1.3 var(--font-mono); }
+.strip-tiles small { font: 500 12px/1.4 var(--font-sans); color: var(--ink-muted); }
+
+/* The board head stays slim so rows reach the first screen. */
+.race-section { padding-top: 12px; }
+.board-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 8px; }
+.board-head h2 { margin: 0; font: 700 15px/1.2 var(--font-mono); text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }
+.board-head p { margin: 0; font-size: 13px; line-height: 1.4; color: var(--ink-muted); }
+
+/* Sticky key: the filter and the encoding stay in reach for all 18 rows. */
+.race-key { position: sticky; top: 64px; z-index: 20; display: flex; align-items: center; gap: 8px 16px; flex-wrap: wrap; padding: 9px 0; background: var(--bg); border-top: 1px solid var(--border-strong); border-bottom: 1px solid var(--border-strong); }
+.race-filter { display: flex; align-items: center; gap: 8px; }
+.race-filter label { display: flex; align-items: center; gap: 8px; }
+.race-filter label > span { font: 750 12px/1 var(--font-mono); }
+.race-filter input { height: 38px; width: 200px; border: 1px solid var(--border-strong); border-radius: 0; background: var(--surface); padding: 0 10px; color: var(--ink); font-size: 14px; }
+.race-filter output { font: 650 12px/1.2 var(--font-mono); color: var(--ink-muted); white-space: nowrap; }
+.key-line { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 0; padding: 0; }
+.key-line li { display: inline-flex; align-items: center; gap: 6px; font: 650 12px/1.3 var(--font-mono); }
+.key-line .legend-swatch { width: 12px; height: 12px; }
+.key-more { margin-left: auto; font: 750 12px/1.2 var(--font-mono); border-bottom: 1px solid var(--ink); white-space: nowrap; }
+
+/* Whole board row opens the dossier; the company link stretches over it. */
+.race-row { position: relative; transition: background 90ms ease; }
+.race-row:hover { background: var(--surface); }
+.row-link::after { content: ""; position: absolute; inset: 0; }
+.race-no-match { margin: 14px 0 0; }
+.scale-note { padding-top: 20px; padding-bottom: 8px; }
+.scale-note .masthead-context { margin: 0; }
+
+/* Dated evidence entries, on the homepage strip and the updates ledger. */
+.update-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border-strong); }
+.update-list li { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.update-date { font: 650 13px/1.6 var(--font-mono); color: var(--ink-muted); }
+.update-body b { font: 650 15px/1.4 var(--font-sans); }
+.update-body b a { border-bottom: 1px solid var(--border-strong); }
+.update-body b a:hover { border-bottom-color: var(--ink); }
+.update-body p { margin: 4px 0 7px; font-size: 14px; line-height: 1.5; }
+.update-body > a { font: 600 13px/1 var(--font-mono); border-bottom: 1px solid var(--border-strong); }
+.ledger-month { margin-bottom: 28px; }
+.ledger-month h3 { margin: 0 0 6px; font: 700 15px/1.2 var(--font-mono); }
+.ledger-note { margin: 0 0 6px; font-size: 13px; line-height: 1.5; color: var(--ink-muted); }
+
+/* Next-gate register. */
+.gate-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border-strong); }
+.gate-list.full { grid-template-columns: repeat(3, 1fr); }
+.gate-list li { background: var(--surface); padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.gate-list li > a b { display: block; font: 650 17px/1.2 var(--font-serif); }
+.gate-list li > a:hover b { text-decoration: underline; }
+.gate-list li > a small { display: block; margin-top: 4px; font: 650 12px/1.3 var(--font-mono); color: var(--ink-muted); }
+.gate-list li > p { margin: 0; font-size: 13px; line-height: 1.5; flex: 1; }
+.gate-owner { font: 650 12px/1.4 var(--font-mono); color: var(--ink-muted); }
+
+/* Collapsed sections. The guard keeps a closed accordion actually closed even
+   though the bodies carry their own display rules. */
+details.acc summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 8px 14px; flex-wrap: wrap; }
+details.acc summary::-webkit-details-marker { display: none; }
+details.acc summary h2 { margin: 0; font: 700 clamp(24px, 2.6vw, 34px)/1.1 var(--font-serif); letter-spacing: -.01em; }
+.acc-note { font: 500 14px/1.5 var(--font-sans); color: var(--ink-muted); }
+.acc-marker { margin-left: auto; width: 38px; height: 38px; flex: none; display: grid; place-items: center; border: 1px solid currentColor; font: 650 20px/1 var(--font-mono); transition: transform 120ms ease; }
+details.acc[open] .acc-marker { transform: rotate(45deg); }
+details.acc > :not(summary) { margin-top: 18px; }
+details.acc:not([open]) > :not(summary) { display: none; }
+details.acc.section { padding-top: 22px; padding-bottom: 22px; }
+.split-section details.acc { padding-top: 26px; padding-bottom: 26px; }
+.acc-open-link { display: inline-block; margin-top: 16px; font: 750 13px/1.2 var(--font-mono); border-bottom: 1px solid currentColor; }
+
+/* The follow band. */
+.cta-band { display: flex; align-items: center; justify-content: space-between; gap: 20px 24px; flex-wrap: wrap; border-top: 1px solid var(--border-strong); }
+.cta-band h2 { margin: 0 0 6px; font: 700 clamp(24px, 2.6vw, 34px)/1.1 var(--font-serif); }
+.cta-band p { margin: 0; color: var(--ink-muted); font-size: 15px; line-height: 1.5; }
+.cta-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
+
 @media (max-width: 1023px) {
   .site-header { height: auto; min-height: 64px; flex-wrap: wrap; }
   .brand { width: auto; border-right: 0; }
   /* 45px so the 1px border does not eat into the 44px touch target. */
   .site-header nav { order: 3; width: 100%; flex-basis: 100%; height: 45px; border-top: 1px solid var(--border); }
   .method-link { margin-left: auto; }
-  .masthead { padding: 44px 32px 36px; }
-  .masthead h1 { font-size: clamp(36px, 5.6vw, 56px); }
+  .masthead { padding: 26px 32px 20px; }
+  .masthead h1 { font-size: clamp(30px, 4.4vw, 40px); }
+  /* The wrapped header (brand row plus nav row) stands ~110px tall here, so
+     both the sticky key and anchor landings clear it, not the 64px bar. */
+  .race-key { top: 110px; }
+  [id] { scroll-margin-top: 122px; }
+  .stat-strip { grid-template-columns: 1fr; gap: 8px; }
+  .strip-tiles { grid-template-columns: repeat(2, 1fr); }
+  .gate-list, .gate-list.full { grid-template-columns: repeat(2, 1fr); }
   .race-row { grid-template-columns: minmax(170px, 215px) minmax(0, 1fr); row-gap: 12px; }
   .race-state { grid-column: 1 / -1; }
   .identity-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -451,9 +546,31 @@ footer a { margin-left: auto; font: 700 13px var(--font-mono); }
   .site-header nav a { padding: 0 12px; }
   .pipeline { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; }
   .pipe-step { min-width: 230px; min-height: 160px; scroll-snap-align: start; }
-  .masthead { padding: 36px 20px 32px; }
-  .masthead h1 { font-size: 34px; }
+  .masthead { padding: 22px 20px 18px; }
+  .masthead h1 { font-size: 29px; }
   .masthead-context { padding-left: 12px; }
+  .stat-strip { padding: 10px 20px 12px; }
+  .strip-zero { font-size: 13px; }
+  /* The band rules live in the full legend below; the tile captions are the
+     one thing this width gives up to keep the first row near the first screen. */
+  .strip-tiles small { display: none; }
+  .strip-tiles b { font-size: 21px; }
+  .strip-tiles > div { padding: 8px 11px; }
+  /* The header scrolls away at this width, so the key sticks to the top edge. */
+  .race-key { top: 0; gap: 6px 12px; }
+  .race-filter { flex: 1 1 100%; }
+  .race-filter label { flex: 1; }
+  .race-filter input { flex: 1; width: auto; min-width: 0; }
+  .key-line { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; padding-bottom: 4px; }
+  .key-line li { white-space: nowrap; }
+  .board-head { display: block; }
+  .board-head p { margin-top: 4px; font-size: 12px; }
+  .race-row { row-gap: 6px; padding: 10px 0; }
+  .update-list li { grid-template-columns: 1fr; gap: 4px; padding: 12px 0; }
+  .gate-list, .gate-list.full { grid-template-columns: 1fr; }
+  .gate-list li { padding: 12px; }
+  .cta-links { justify-content: flex-start; }
+  .scale-note { padding: 0 20px 8px; }
   .race-row { grid-template-columns: minmax(0, 1fr); row-gap: 10px; }
   .race-state { grid-column: auto; }
   .race-legend dl { grid-template-columns: minmax(0, 1fr); }
@@ -524,6 +641,7 @@ footer a { margin-left: auto; font: 700 13px var(--font-mono); }
   .tech-table div { grid-template-columns: 1fr 1fr; }
   .tech-table p { grid-column: 1 / -1; }
   footer { padding: 24px 20px; align-items: flex-start; flex-direction: column; }
+  footer nav { margin-left: 0; }
   footer a { margin: 0; }
 }
 
@@ -538,11 +656,18 @@ footer a { margin-left: auto; font: 700 13px var(--font-mono); }
   .masthead-context a,
   .back-link,
   .company-summary a,
+  .update-body a,
+  .key-more,
+  .acc-open-link,
   footer a {
     min-height: 44px;
     display: inline-flex;
     align-items: center;
   }
+  .race-filter input { min-height: 44px; }
+  /* 16px stops iOS Safari zooming the viewport on focus (DESIGN.md); the
+     denser 14px stays for fine pointers. */
+  .race-filter input, .filters input, .filters select { font-size: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

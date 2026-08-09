@@ -18,11 +18,12 @@
     "data:press": "node scripts/validate-sources.mjs --press",
     "data:links": "node scripts/check-links.mjs",
     "data:llms": "node scripts/build-llms-txt.mjs",
+    "data:seo": "node scripts/build-seo.mjs",
     "data:prose": "node scripts/audit-prose.mjs",
-    "data:check": "node scripts/validate-sources.mjs && node scripts/build-llms-txt.mjs --check && node scripts/audit-prose.mjs",
+    "data:check": "node scripts/validate-sources.mjs && node scripts/build-llms-txt.mjs --check && node scripts/build-seo.mjs --check && node scripts/audit-prose.mjs",
     "data:cache": "node scripts/cache-sources.mjs",
     "data:claims": "node scripts/validate-claims.mjs",
-    "prebuild": "node scripts/build-llms-txt.mjs"
+    "prebuild": "node scripts/build-llms-txt.mjs && node scripts/build-seo.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

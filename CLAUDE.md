@@ -418,6 +418,47 @@ For a content/static site, default to a **cookieless, privacy-first** tool (no c
   words or fewer; the sentence beside it carries a digit" is grep-able, and
   it caught five real number-free claims that read fine to the eye.
 
+### 2026-08-09 session additions (expert info layer)
+
+- **React 19 renders `<script>` children raw, so JSON-LD needs no raw-HTML
+  injection prop.** `renderToStaticMarkup(<script>{json}</script>)` emits
+  quotes and ampersands unescaped (verified empirically against react-dom
+  19.2). Unicode-escape angle brackets in the JSON string (backslash-u003c) and
+  render it as a plain child; the security hook that blocks the raw-HTML
+  prop never enters the picture. A test should parse the emitted block back
+  to the object it came from.
+- **The Next metadata `icons` API absolutizes against `metadataBase`,** which
+  is `http://localhost` in the local build and trips any https-only link
+  test. A `<link rel="icon">` rendered in the layout body (React hoists it to
+  head) keeps the href relative in every build.
+- **The browser pane's hidden-tab trap has three more disguises:**
+  `innerWidth`/`innerHeight` report 0, a fragment URL loads without
+  performing its anchor scroll, and the first geometry read after
+  `preview_start` returns pre-CSS layout numbers (400px-tall rows) that a
+  later read contradicts. `document.visibilityState === "hidden"` is the
+  tell; front the tab, screenshot to force a paint, and only trust geometry
+  once two reads agree. Codified fix for anchors regardless of harness:
+  `[id] { scroll-margin-top: <header height> }` so a landed anchor clears the
+  sticky header.
+- **A generated-file `--check` belongs beside every new generator.**
+  `build-seo.mjs` (sitemap, robots, RSS) copied the llms.txt pattern:
+  production-default URLs, `--check` byte-compare wired into `data:check`,
+  and a feed guid that includes kind+label because two funding events can
+  share one source URL and date (an equity raise and its debt facility
+  announced together collapse in feed readers otherwise). A `--check` still
+  cannot see two generators diverging: it compares each file against its own
+  generator, so a second consumer computing the same figure independently
+  drifts invisibly. Route every consumer through one shared helper and have
+  a test recompute the shipped lines from that helper (Codex caught llms.txt
+  doing exactly this against `headlineTotals()`).
+- **Before shipping a surface class, grep the rules doc for it.** Two of
+  four PR #10 review findings (sitemap `lastmod` per-page, 16px iOS inputs)
+  were already written in DESIGN.md sections never loaded this session.
+  Shipping SEO means grepping DESIGN.md for `lastmod`/`sitemap`; shipping a
+  form control means grepping for `input`. Chrome that varies by breakpoint
+  (a sticky header that wraps at tablet) needs its dependents (anchor
+  `scroll-margin-top`) varied in the same media query, in the same edit.
+
 ---
 
 ## Influences

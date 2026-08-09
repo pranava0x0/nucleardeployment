@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageShell } from "../components/SiteHeader";
 import { companies, projects, stageLabels } from "../data";
+import { canonicalUrl } from "../site";
 
-export const metadata: Metadata = { title: "Companies" };
+export const metadata: Metadata = {
+  title: "Companies",
+  description: "Every tracked U.S. nuclear company: reactor developers, site sponsors, operators, and delivery partners, each linked to its sourced project records.",
+  alternates: { canonical: canonicalUrl("/companies") },
+};
 
 export default function CompaniesPage() {
   return <PageShell><main id="main" className="inner-page">

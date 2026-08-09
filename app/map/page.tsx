@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageShell } from "../components/SiteHeader";
 import { projects } from "../data";
+import { canonicalUrl } from "../site";
 
-export const metadata: Metadata = { title: "Locations" };
+export const metadata: Metadata = {
+  title: "Locations",
+  description: "Where tracked U.S. nuclear projects sit, grouped by region, with each project's stage and next step.",
+  alternates: { canonical: canonicalUrl("/map") },
+};
 
 export default function MapPage() {
   const regions = ["West", "Midwest", "South", "Northeast", "Undisclosed"];
