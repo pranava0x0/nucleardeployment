@@ -12,7 +12,7 @@ the per-company pipeline facts already in the three 2026-08-05 company packs.
   reactor class (FOAK / NOAK / actual / company target), the learning ladder
   (what 1→3, 5–10, 10+, ~30–50 units buy), per-company contract readiness for
   all 18 race entrants (model, government vehicle, commercial position, stated
-  cost, next gate), 17 in-use contracting mechanisms each with an executed
+  cost, next gate), 18 in-use contracting mechanisms each with an executed
   example plus 2 labeled proposals, the two live liability pools, 7
   underwriting institutions, 5 overrun records, and 6 siting facts.
 - `app/financing/page.tsx`: renders all of it in the site's existing ledger and
