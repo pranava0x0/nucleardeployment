@@ -1,0 +1,11 @@
+{
+  "url": "https://nuclearinnovationalliance.org/sites/default/files/2026-04/The%20Role%20of%20DOE%E2%80%99s%20Office%20of%20Energy%20Dominance%20Financing%20in%20U.S.%20Nuclear%20Energy%20Leadership%20-%20March%202026%20Update.pdf",
+  "title": "The Role of DOE's Office of Energy Dominance Financing in U.S. Nuclear Energy Leadership (March 2026 update)",
+  "publisher": "Nuclear Innovation Alliance",
+  "published_at": "2026-03",
+  "captured_at": "2026-08-10",
+  "capture_method": "curl download + PyMuPDF text extraction",
+  "page_count": 10,
+  "pdf_bytes": 486707,
+  "text_chars": 23931
+}

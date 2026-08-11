@@ -1,0 +1,135 @@
+Can they “Make Atoms Great Again”? How the federal government can support domestic advanced nuclear energy production and exports – Clean Air Task Force
+Skip to main content
+Menu
+About Us
+Show sub menu
+Meet Our Experts
+Board of Directors
+Interactive Timeline
+Our History &#038; Impact
+News & Media
+Careers
+Contact
+Our Work
+Show sub menu
+Advanced Nuclear
+Carbon Capture
+Electricity
+Energy Access
+Fusion Energy
+Hydrogen
+Infrastructure
+Land Systems
+Methane
+Power Plants
+Superhot Rock Geothermal
+Transportation
+The Latest
+Join Us
+Show sub menu
+Events
+Ways to Give
+Subscribe
+Make a Donation
+Donate
+Search
+U.S.
+Europe
+Africa
+MENA
+Policy
+Can they “Make Atoms Great Again”? How the federal government can support domestic advanced nuclear energy production and exports
+May 28, 2025
+Work Area: Advanced Nuclear
+Victor Ibarra
+This blog is part of a series that explores the federal policies and actions needed to deploy next-generation geothermal, sources of nuclear energy (both fission and fusion), and carbon capture and storage – technologies the Trump administration indicated as priorities on Earth Day. The policy brief highlighting these technologies can be found here .
+Momentum is rapidly growing for advanced nuclear energy in the U.S. At the opening remarks for the 2025 United States Regulatory Information Conference in March, U.S. Senator and Chairman for the Senate Environmental and Public Works Committee, Shelley Moore Capito, held up to the audience a gift from Nuclear Regulatory Commission (NRC) Chairman David Wright – a solid white hat with the bold words “MAKE ATOMS GREAT AGAIN.” And in April, the Trump administration stated its support for advanced nuclear as part of a larger energy strategy for America to lead globally “in both energy production and environmental innovation.” Just one month later, the Trump administration issued four executive orders declaring that “it is the policy of the United States to expedite and promote to the fullest possible extent the production and operation of nuclear energy to provide affordable, reliable, safe, and secure energy to the American people.” The administration’s move is in line with public opinion. The most recent polling suggests a lopsided majority of Americans favor new nuclear energy.
+CATF has long advocated for the advancement of nuclear energy as one of a suite of technologies critical to achieving a zero-emissions future at an affordable cost – and has been working specifically to transform the nuclear energy ecosystem to unlock economies of scale. Many of the policies in the orders are encouraging and are necessary to deploy new projects, but the federal government is still missing the mark on scaling advanced nuclear energy in the United States. In fact, Congress and the administration’s actions are misaligned with the administration’s stated goals of energy security, independence, and global leadership in nuclear technologies.
+If the administration and Congress are serious about regaining U.S. leadership in nuclear energy and quadrupling American nuclear energy capacity from 100 gigawatts to 400 gigawatts by 2050, they must provide sustained and enhanced support for incentives and deployment programs at several agencies, including tax credits for clean energy development and generation and multiple offices within the Department of Energy (DOE).
+Advanced nuclear energy can support American energy independence, provide reliable, affordable, and clean power, and create jobs.
+Advanced nuclear energy is uniquely positioned to meet growing U.S. electricity and energy demand driven by data centers, expanded manufacturing, and the electrification of transport, heating, and industry. State legislatures across the U.S. continue to recognize advanced nuclear energy’s unique ability to support grid reliability and decarbonization goals, with more than half of states across the country pushing supportive policies for advanced nuclear energy deployment. These policies include the formation of early-stage multi-state coalitions, programs for scaled labor and supply chain development, repeals of decades-old moratoria on new nuclear power plants, and funding for feasibility studies to help support siting projects, among others.
+This has sent a positive signal that has led to utility, industrial, and technology companies like Dow, Amazon, and Google signing commercial deals in Texas, Pennsylvania, and other states. Such agreements total nearly 17 gigawatts of additional U.S. nuclear capacity by 2040. The problem is very little of that capacity is currently under development, and industry alone is not able to overcome the economic barriers to reach efficient, cost-effective deployment. Meanwhile, Canada is leading G7 countries by providing financial support to Ontario Power Generation and moving forward with four advanced nuclear reactors that will create 18,000 Canadian jobs and add up to $500 million annually to Ontario’s economy. The U.S. nuclear industry is looking to the American government for strong and predictable leadership before undertaking new projects.
+Bolstering the domestic advanced nuclear energy sector requires preserving existing incentives and greater collaboration to scale nuclear energy deployment.
+A truly bold agenda would include:
+Enhancement of front-end cost reduction federal mechanisms. The tech-neutral clean electricity investment and production tax credits under sections 48E and 45Y are essential for first- and early-of-a-kind projects that are aiming for early-to-mid 2030s deployment. While House Republicans were able to improve tax credits for new nuclear in a final version of the budget reconciliation bill sent to the Senate, the December 31, 2028 commence construction deadline will inhibit most new project construction. These credits, including provisions allowing the transferability of credits, should be extended through 2040 to support grid scale deployment of advanced nuclear. The 45X advanced manufacturing credit should also be extended through 2040 to assist in manufacturing capabilities for new projects, and Foreign Entity of Concern provisions for all three credits should be made workable to accommodate a global nuclear supply chain where limited domestic capabilities exist. Additionally, Congress must protect and enhance authority for the DOE’s Loan Programs Office to enable sufficient staffing, institutional management, and funding to support new nuclear development, and allow for blended federal financing with other DOE grants. This is especially true if, as set forth in one of President Trump’s nuclear executive orders, the administration plans to deploy 10 large, advanced nuclear reactors with LPO support.
+Programs to support structured “orderbooks,” not isolated projects. While the administration’s plan for isolated project demonstrations across Department of Energy and Department of Defense sites, including the Generation III+ solicitation program, is exciting, it misses the core strategy required for scaling: replicating a standard plant design. Every successful nuclear buildout – domestically and globally – has involved deployment of multiple standardized units. A clear pipeline of projects sends a strong signal to scale up supply chains. Additionally, building out multiple units of the same design, thereby developing an orderbook of projects, enables cost reductions through replication and “learning by doing.” To achieve such cost reductions for advanced reactors, industry needs support for orderbooks, such as integrated project delivery (IPD) and risk management tools to lower up-front uncertainty from cost overruns. Congress can also expand existing DOE loan and grant programs to support orderbooks of advanced reactors.
+Create a federal cost overrun insurance facility and other options to de-risk early builds. A cost insurance mechanism should feature tiered risk-sharing between project sponsors, states, and the federal government to protect against cost overruns. Access to cost overrun insurance would be granted only if certain conditions are met, including competitive selection, proven integrated project delivery, payment of a premium, and state support via Public Utility Commission (or equivalent) tariffs, offtake commitments, or cost ladders. In addition to an insurance mechanism, complementary options could be considered, like a Federal Power Purchase Agreement that uses a “contract-for-differences&#8221; model or directly procures a portfolio of nuclear projects through Build-Own-Transfer agreements, could help absorb first-of-a-kind risk. The federal government could also act as a co-developer alongside state or private entities, which is a model that was successfully used to deploy UAE’s Barakah project, as well as the Palisades restart in Michigan.
+Scale the nuclear supply chain and make fuel available. Federal leadership is essential to help catalyze deployment of new reactors as supply chains mature. DOE and the national laboratory system can help centralize best practices in cost, project, and supply chain management; offer and support workforce training; and enable easier research and development through simplified Cooperative Research and Development Agreements (CRADAs). Additionally, uncertainty about fuel availability for new reactor projects poses a significant risk. The previous administration enabled short- and long-term fuel supply development opportunities for both low- and high-assay enriched uranium fuel cycles, and now, the Trump administration must ensure these investments are anchored. As the authorized agency to implement LEU and HALEU procurement, the Office of Nuclear Energy at DOE must be appropriately staffed and empowered to develop the necessary programs for unlocking advanced nuclear energy.
+Efficient and effective reactor licensing. Since the first Trump administration, the NRC has made progress towards a more modern regulatory organization by updating its regulations, optimizing its staffing, and implementing best practices to license new light water reactor and non-light water reactor technologies. Major pieces of legislation, including NEIMA in 2019 and the ADVANCE Act in 2024, have provided the NRC with specific legislative direction, additional hiring authority, and new statutory language to drive its modernization while maintaining its role as an independent agency focused on protecting the public and the environment. Now is not the time to undo years of regulatory reform through short-term cuts to NRC staffing or sudden reorganizations that will create long-term agency deficits, undermine the growing social license for nuclear energy, and harm interagency coordination with DOE, DOD, the U.S. Department of State, and other key agencies. Long-term modernization of the NRC, much like any critical infrastructure project, requires deliberate planning, continued investment, and robust oversight to make sure that both near-term and long-term licensing activities can be completed effectively, efficiently, and predictably. As part of ADVANCE Act implementation, the NRC is also updating regulatory processes that support rapid deployment of new nuclear energy based on reactor standardization and expedited environmental reviews. This should not be delayed by a wholesale review of NRC regulations.
+Overhaul of the U.S. nuclear technology export offering. To deliver on the administration’s vision for U.S. energy dominance, the federal government must sharpen America’s competitive edge by reaching competitive parity with other global exporters, fostering interagency collaboration, and strengthening the capabilities of key diplomatic and financial agencies. In addition to the Section 123 Agreements encouraged by the executive orders, this includes establishing a national interest account to prioritize advanced nuclear fission export projects through the U.S. Export-Import Bank (EXIM), raising its default cap, and modernizing EXIM’s mission to complement an international advanced nuclear fission deployment strategy. Raising the U.S. International Development Finance Corporation’s (DFC’s) contingent liability and loan size cap, as well as easing its country restrictions, would allow for a broader impact across the world. The administration’s call to accelerate the export of nuclear technologies comes on the heels of the reintroduction of the International Nuclear Energy Act (INEA) by the Senate, which would support the establishment of an office to coordinate on a secure and responsible civil nuclear export strategy, establish financing relationships, and promote regulatory harmonization, among many other things .
+A strong, wholesale change in spent fuel policy . This will require a bottom-up approach in which the federal government works with states and communities to identify conditions, locations, and timelines for establishing facilities to store Spent Nuclear Fuel (SNF). Multiple geologic repository pathways should be explored, including consolidated interim storage. This will build public trust and enable the long-term viability of high-level waste disposal, as seen in other SNF repository programs across the world.
+Scale the workforce necessary to support new nuclear deployment. To carry out the administration’s vision for reinvigorating the nuclear workforce, nuclear workforce development programs should be prioritized and coordinated between sufficiently funded and staffed Departments of Labor and Education and state governments. Each new nuclear project is not just a leap toward bolstering domestic carbon-free energy production, but also a powerful economic engine for job creation – employing thousands during construction and providing high-paying, long-term careers in communities nationwide. From reactor operators to cybersecurity specialists, welders to policy analysts, the nuclear workforce is as diverse as it is skilled, offering opportunities for veterans, tradespeople, and graduates alike.
+Now is the opportunity for the Trump administration and Congress to take meaningful action to bolster the U.S. advanced nuclear energy industry.
+Share this on:
+Share on LinkedIn
+Share on X/Twitter
+Share on Facebook
+View The Latest
+Previous Post
+CATF Statement: Federal government earns an “incomplete” on nuclear energy
+Related Posts
+Advanced nuclear energy supply chains
+The Opportunity Advanced nuclear energy is uniquely positioned to meet growing U.S. Advanced nuclear energy is uniquely positioned to meet growing U.S. energy demand, support American energy independence, provide reliable and affordable clean power, and create jobs. Fission reactors rely on several niche materials to operate efficiently and safely. Foreign Entity of Concern (“FEOC”) provisions for 48E, 45Y, and 45X tax credits should&#8230;
+Policy Impact
+October 10, 2025
+CATF applauds U.S. bipartisan leadership to preserve and expand American nuclear energy capacity
+WASHINGTON – With broad bipartisan support lawmakers in the U.S. House of Representatives today passed the Atomic Energy Advancement Act, marking an important step toward securing new policies to further enable advanced nuclear deployment in the 118th Congress. “Nuclear energy plays a critical role in decarbonization, particularly as global energy&#8230;
+News & Media , Policy
+February 28, 2024
+Stay in the know
+Sign up today to receive the latest content, news, and developments from CATF experts.
+" * " indicates required fields
+First Name *
+Last Name *
+Email Address *
+Organization
+Get in touch
+Contact Us
+CATF Headquarters
+114 State Street, 6th Floor
+Boston, MA 02109
+Email: [email&#160;protected]
+Operations and Development Processing
+809 W Riordan Road
+Suite 100-405
+Flagstaff, AZ 86001
+Europe Office
+Stationsplein 45 4th Floor
+3013 AK Rotterdam
+Netherlands
+About
+Who We Are
+Meet Our Experts
+News & Media
+Careers
+Resources
+Subscribe
+Visit CATF Action
+Our Work
+Advanced Nuclear Energy
+Carbon Capture
+Electricity
+Energy Access
+Fusion Energy
+Infrastructure Deployment
+Land Systems
+Power Plants
+Methane Pollution Prevention
+Hydrogen
+Superhot Rock Geothermal
+Transportation Decarbonization
+Support Our Work
+Support CATF’s work to safeguard against the worst impacts of climate change.
+Ways to Give
+© Copyright 2026 Clean Air Task Force. All Rights Reserved. Cookie Information | Privacy Policy
+Connect with us on LinkedIn
+Follow us on Twitter
+Follow us on Instagram
+Follow us on Facebook
+Follow us on YouTube
+&times;
+Attention
+You are leaving catf.us
+By clicking &#8220;continue&#8221; below, you will be directed to a website operated by a Clean Air Task Force 501(c)(4) entity. You will be redirected to catfaction.org.
+Continue to link
+Go Back

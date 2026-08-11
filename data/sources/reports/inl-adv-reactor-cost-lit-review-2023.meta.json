@@ -1,0 +1,11 @@
+{
+  "url": "https://gain.inl.gov/content/uploads/4/2024/11/INL-RPT-23-72972-Literature-Review-of-Adv-Reactor-Cost-Estimates.pdf",
+  "title": "Literature Review of Advanced Reactor Cost Estimates (INL/RPT-23-72972)",
+  "publisher": "Idaho National Laboratory",
+  "published_at": "2023",
+  "captured_at": "2026-08-10",
+  "capture_method": "curl download + PyMuPDF text extraction",
+  "page_count": 68,
+  "pdf_bytes": 1253324,
+  "text_chars": 153179
+}

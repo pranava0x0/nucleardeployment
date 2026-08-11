@@ -1,0 +1,360 @@
+--- PAGE 1 ---
+1 
+ 
+ 
+The Role of DOE’s Office of Energy 
+Dominance Financing in U.S. Nuclear 
+Energy Leadership 
+ 
+ 
+ 
+Author:   
+Dr. James Richards, NIA 
+ 
+ 
+April 2026 
+ 
+© 2025 Nuclear Innovation Alliance, All Rights Reserved  
+ 
+This report is available online at:  
+https://nuclearinnovationalliance.org/resources
+--- PAGE 2 ---
+2 
+ 
+Summary 
+Nuclear energy is an important technology for U.S. energy security and competitiveness, and 
+the U.S. Department of Energy (DOE) Office of Energy Dominance Financing (EDF) is 
+essential to nuclear energy’s success. By investing in early-stage projects, the EDF accelerates 
+technological advancement, attracts private capital, and ensures U.S. leadership in meeting 
+rapidly growing global energy demand, enhancing our economic competitiveness, 
+geopolitical influence and national security.  
+While the nuclear industry is seeing major investments, financing early mover projects 
+remains difficult. Private-sector lenders view early-stage commercial technologies as high risk, 
+and private investors focus on financial return and risk rather than policy imperatives such as 
+energy security. Thus, it can be challenging to raise adequate capital for early mover nuclear 
+energy projects. To realize nuclear energy deployment potential in the 2030s and beyond, it 
+is imperative to finance these projects now. The EDF plays the crucial role of financing early 
+mover projects to help bridge the gap between demonstrations and projects financeable 
+with private capital. 
+A robust nuclear industry remains crucial for national and energy security interests. China is 
+aggressively investing in nuclear energy and exporting their technology to countries that are 
+new to nuclear energy as a means of deepening their reliance on China. If the United States is 
+to compete on a global stage, there needs to be a strong domestic nuclear industry. 
+However, private investors are not incentivized to take these interests into account. Through 
+loans finalized by the Trump Administration in 2019, EDF was vital to the first deployment of a 
+new, U.S.-developed reactor type at the Vogtle plant in Georgia. These strategic early EDF 
+loans are helping the U.S. to compete with foreign state-backed nuclear companies by 
+unlocking private capital. 
+ EDF is now facilitating the restart of a retired reactor in Michigan, the first such project in the 
+country, as well as the restart of Three Mile Island Unit 1 at the Crane Clean Energy Center by 
+Constellation Energy Corporation. EDF also recently awarded Southern Company a new 
+$26.5b loan to uprate nuclear facilities and other electricity system upgrades. Current EDF 
+loan applications cover a broad range of nuclear energy innovations, including component 
+manufacturing, small modular and microreactor deployment, and fuel cycle improvements. 
+Funding a fraction of these projects could move whole subsets of the industry to maturity, 
+allowing the industry to access the private development capital it needs to be successful.  
+EDF’s extensive technological due diligence is more rigorous than what private lending 
+institutions, equity firms, and infrastructure funds typically commit, due to both technical 
+expertise and the resource commitment EDF can make to new technologies. Loan 
+commitments from EDF are viewed positively by many in the financial community because 
+the due diligence is completed by technical experts at the DOE. Thus, EDF has helped reduce 
+technological risk in funding projects.  
+While EDF’s impact on the nuclear industry has been large, it is important to note that this is 
+achieved with a relatively small amount of federal appropriations. The credit subsidy and 
+administrative expenses are the only aspect of an EDF loan that is paid through
+--- PAGE 3 ---
+3 
+ 
+appropriations. For example, $5 billion was appropriated in 2022 for credit subsidies under 
+the DOE loan office’s Energy Infrastructure Reinvestment program to enable lending authority 
+of $250 billion. The One Big Beautiful Bill Act reduced appropriations to $1 billion while 
+maintaining around $250 billion in lending authority. Even if this appropriated amount were 
+tripled, the appropriated amount would remain less than 1% of the total lending amount. 
+ 
+Introduction 
+Nuclear energy is an essential technology for meeting U.S. competitiveness, energy security 
+and climate goals. The nuclear industry is at a critical juncture as it moves from research and 
+development to demonstration projects and new reactor commercialization. During the early 
+part of this century, U.S. nuclear power largely maintained its status quo, with retirements of 
+some plants and uprates of others to increase their capacity.  A new wave of players and 
+novel nuclear technologies emerged in the late 2000s and 2010s. The first advanced light 
+water reactors in the U.S. have been put into service, conditions have become favorable for 
+uprating existing reactors and refurbishing and restarting retired reactors, and construction 
+activities are beginning for advanced non-light water reactor projects. The nuclear energy 
+industry is emerging from a period of stasis but still requires government action to leverage 
+private investment and encourage early movers in the private sector. 
+Burgeoning energy technology industries, workers, the financial community, and local 
+communities have benefited greatly from Office of Energy Dominance Financing (EDF) loans. 
+Nuclear energy projects have received loans under multiple presidential administrations that 
+have greatly improved U.S. energy and technology capabilities.  
+History of Office of Energy Dominance Financing 
+EDF was established in 2005 as the Loan Program Office to accelerate the development and 
+deployment of novel energy technologies through financial support for large-scale 
+infrastructure projects. EDF focuses on technologies that are on the cusp of 
+commercialization, providing them with access to capital that is not reasonably available in 
+private markets.  
+Since its inception, EDF has provided substantial financial support that has driven significant 
+technological advancement in the energy sector. EDF has provided over $30 billion in loans, 
+with a lower loss ratio than comparable private sector loans. 
+This debt financing has been instrumental in commercializing technologies such as advanced 
+geothermal energy across the western United States. A $98.5 million loan was awarded to 
+Blue Mountain Energy for their Humboldt County, NV site in 2010.1 This loan, which was paid 
+back in March 2022, was key to building an advanced geothermal plant and workforce to 
+operate it. In 2023, Fervo Energy demonstrated their horizontal advanced geothermal 
+technology at the Blue Mountain site, benefiting from the previous technology and workforce 
+development financed by EDF. Fervo has gone on to attract major commitments from 
+ 
+1 Blue Mountain EDF Page
+--- PAGE 4 ---
+4 
+ 
+Google, Southern California utilities, and others for their new large-scale facility. In 2025, 
+Fervo announced that they are funding their next facility entirely with private funds under a 
+traditional non-recourse project financing structure.  This is a major success for a technology 
+that was initially enabled by EDF.  
+The potential effectiveness and value of EDF financing can be illustrated by the history of how 
+EDF helped move solar and wind energy from financially risky investments to repeatable 
+projects funded almost entirely by private capital. In the early 2000s, there were very few 
+utility-scale solar projects and debt financing was difficult. Solar deployment at utility scale 
+requires a large amount of project capital. EDF gave several loans to wind and solar energy 
+projects when attracting private capital was difficult. Utility solar projects now have 20 times 
+more private capital investment than they did prior to the first EDF loan. Similarly, private 
+capital in utility-scale wind projects has more than doubled.    
+ 
+Figure 1: Follow-on private capital after EDF investment after the first EDF loans in wind and solar2 
+Nuclear power today is much like those earlier technologies: private project debt financing 
+would be challenging because of the perceived technical risk associated with first-of-a-kind 
+projects. Funding key projects and supply chain developments would have a profound 
+impact on nuclear energy deployments, much like it did for wind and solar energy. 
+EDF plays a catalytic role in the development of emerging technologies and creation of 
+thousands of jobs. EDF-funded projects have created 47,300 permanent jobs from 2010 to 
+20243 and kept critical manufacturing, construction, and heavy industry jobs in the United 
+States. These are direct jobs and do not account for the large follow-on effects in each 
+company and industry as technologies are commercialized.  
+ 
+2 Reproduced with info from slide 30 of Investing With EDF 
+3 See IMPLEMENTING PRESIDENT TRUMP’S ENERGY DOMINANCE AGENDA: Past and Future Role of the Loan 
+Programs Office for more info.
+--- PAGE 5 ---
+5 
+ 
+How EDF Works 
+EDF’s nuclear energy projects are generally funded out of the Title 17 Clean Energy 
+Financing program under one of its two categories: Title 1703 Innovative Energy or Title 1706 
+Energy Dominance Fund. Each loan application moves through the process outlined in Figure 
+2. 
+ 
+ 
+Figure 2: EDF application and award process4 
+Pre-application and Application & Review Part 1 focus on the eligibility and readiness of the 
+project. Innovative energy and innovative supply chain categories require the project to be 
+ready to be commercialized and have high potential for catalytic effect on the market. EDF 
+funding is specific to projects that are early in the commercialization phase, i.e., that are ready 
+for commercial deployment but because they have not yet been deployed, or deployments 
+have been very limited, are difficult to finance in private markets. EDF is able to do more in-
+depth technological due diligence (described further below) than is feasible for private 
+lenders, leveraging its unique access to DOE technical expertise. Utilizing this expertise to 
+assess the risk of these early-stage projects reduces economic uncertainty and paves the way 
+for private-sector financing of future projects.  
+Application & Review Part 2 is a rigorous technical and financial evaluation. EDF assesses 
+viability based on: 
+• 
+“The strength of the contractual terms of the eligible project (if commercially 
+reasonably available);  
+• 
+The forecast of noncontractual cash flows;  
+• 
+Cash sweeps or early payments and other structural enhancements;  
+ 
+4 Diagram reproduced from Getting to know LPO (EDF) document.
+--- PAGE 6 ---
+6 
+ 
+• 
+The projected financial strength of the borrower at the time of [financial] close and 
+throughout the loan term;  
+• 
+The financial strength of the investors and strategic partners of the borrower, if 
+applicable;  
+• 
+Appropriate attention to management of project risk, including through the 
+Community Benefits Plan; and  
+• 
+Other financial metrics and analyses that are relied on by the private lending 
+community and rating agencies”5 
+Applicants must prove to EDF that the project has financial backing, off-take, and capabilities 
+needed to repay the loan. This can be achieved through contractual off-take agreements such 
+as firm power purchase agreements (PPAs), credit ratings from financial institutions, and 
+contractual partnerships with entities for critical components and services.  
+In addition, applicants must go through a rigorous technical due diligence process. EDF 
+works with the applicant, ensuring that the project is at a sufficient technology readiness level, 
+the team has the technical capability to deliver, and the technical project assumptions are 
+sound. This technological due diligence is more rigorous than what lending institutions, 
+private equity, and infrastructure funds can accomplish. Approvals from EDF are viewed 
+positively by many in the financial community because the due diligence is completed by 
+technical experts at the DOE. A conditional commitment is only extended if the due diligence 
+process finds that the technical and financial risk is appropriate for the EDF program.  
+After a conditional commitment is awarded, financial terms are negotiated and set. The loans 
+awarded under EDF have an interest rate of the U.S. Treasury rate set at the time each loan 
+tranche is drawn, plus 0.375%, plus a risk-based adjustment informed by the credit rating of 
+the project6.  The maximum loan term is 30 years, with most loans of shorter duration. These 
+loans are secured, meaning that the DOE has a claim on assets in the event of loan defaults.  
+In addition, to offset the risk of these loans, EDF assesses a “credit subsidy cost,” which 
+depends on the due diligence process and is assessed individually for each loan.7 Historically, 
+the credit subsidy costs, and other fees collected by EDF, have more than offset any losses 
+that EDF has incurred. For example, by the end of FY23, EDF had $4.3 billion credit subsidy in 
+reserve, substantially higher than the realized losses of $1 billion. The credit subsidy has been 
+covered at least partially by appropriated funds since 2009.  
+The low appropriation amount when compared to loan authority also extends to more 
+recently appropriated funds. Congress appropriated $1 billion for credit subsidies within EDF 
+Title 1706 program to enable lending authority of $250 billion. Even if the appropriated 
+amount were tripled, it would remain less than 1% of the total lending amount. 
+The management of risk through the due diligence process and credit subsidy assessment, 
+combined with the appropriation of funds to pay for credit subsidy costs, enables the 
+government to leverage a small amount of appropriations to support a much larger amount 
+ 
+5 Criteria from 42 U.S. Code § 16512(d)(1)(B)  
+6 Pricing for LPO (EDF) Financing by Program 
+7 Understanding Credit Subsidy, Office of Energy Dominance Financing
+--- PAGE 7 ---
+7 
+ 
+of lending, greatly magnifying the impact of this public funding on the deployment of new, 
+innovative energy technologies.  
+Nuclear-Specific EDF Awards and Their Effects 
+This section will focus on two EDF loans within the nuclear industry; Vogtle units 3 and 4 
+construction and the Holtec Palisades restart. As of April 2026, other EDF nuclear loans 
+include the Crane Clean Energy Center restart and a financing package that includes uprates 
+to nuclear facilities in Alabama and Tennessee.  
+Vogtle Units 3 and 4: Reducing Cost, Enhancing Competitiveness 
+EDF provided loans totaling $12 billion to build Vogtle units 3 and 4 in Georgia, including 
+$3.7 billion awarded under the Trump Administration8. The loans served as an important 
+financing mechanism for getting the first Westinghouse AP1000 advanced light water 
+reactors built in the United States. 
+Vogtle 3 and 4 were the first two reactors of this type in the U.S. that, despite construction 
+cost overruns, have created tremendous opportunity within the local and regional economy. 
+The Vogtle project created 900 permanent jobs, as well as 9,000 onsite jobs during 
+construction, essentially creating an experienced local and regional nuclear workforce.9  
+Georgia now has two new large carbon-free electricity generators that can run reliably for 
+80+ years, stimulating economic development.10 Based on the experience at Vogtle and 
+other analysis, a hypothetical two-unit AP-1000 would be expected to increase GDP by over 
+$10b.11 
+In addition to its local and regional benefits, the financing to complete Vogtle had global 
+implications. China had already completed four AP1000 reactors by 2018 and started to build 
+their own modified design. The Vogtle project’s completion was crucial in moving the United 
+States toward competing with the China National Nuclear Corporation on a global stage. 
+Exports of nuclear energy technologies, which establish 100-year relationships, support not 
+only U.S. competitiveness but also long-term geopolitical relationships critical to U.S. foreign 
+policy objectives as well as leadership in nuclear non-proliferation and safety. Thus, the EDF 
+funds that enabled the completion of Vogtle also critically supported the U.S. capability for 
+nuclear energy export and long-term foreign policy objectives. 
+Cost reduction between Vogtle 3 and 4 also offers compelling evidence that EDF loans are 
+working as intended and derisking the technology for future investments. The reduction in 
+the time it took to achieve several key construction milestones from Vogtle Unit 3 to 4 is 
+shown in Figure 3. These duration reductions led to substantial savings on labor cost when 
+comparing the two units. 
+ 
+8 VOGTLE | Department of Energy 
+9 Vogtle Unit 4 Enters Commercial Service 
+10 Advanced Nuclear - Pathways to Commercial Liftoff 
+11 The Economic Impact of a Two-Unit Ap1000 Project in the United States
+--- PAGE 8 ---
+8 
+ 
+ 
+Figure 3: Reduction in time of key activities from Vogtle unit 3 to 412 
+The reductions in construction time and cost seen from Vogtle unit 3 to 4 were just the 
+beginning. The intent of an EDF loan is to help a technology achieve commercial success in 
+the future. The Vogtle project was able to identify key roadblocks and challenges in first-of-a-
+kind deployment. The demonstrated reduction in capital costs, combined with the 
+institutional knowledge of what it takes to complete a reactor, reduce the risk profile of 
+subsequent projects. Because of the “learning by doing” enabled by EDF, the risk profile of 
+new AP1000s will be much closer to what private financiers are comfortable with. 
+ 
+Figure 4: Vogtle cost versus early unit AP100013 
+ 
+12 Plot from Advanced Nuclear - Pathways to Commercial Liftoff 
+13 Plot from Advanced Nuclear - Pathways to Commercial Liftoff
+--- PAGE 9 ---
+9 
+ 
+Private capital markets do not incorporate the policy drivers of national energy security and 
+competitiveness, which made the Vogtle EDF loan an important tool for supporting U.S. 
+interests. Subsequent AP1000 projects will be less expensive and less risky, and thus more 
+financeable via private capital. 
+Holtec Palisades: First of a Kind Initiative That Can Be Replicated 
+While the Vogtle project has shown that EDF enabled cost reduction from one reactor build 
+to the next, the Holtec Palisades project has already shown the effects of EDF on follow-on 
+investment. Prior to Holtec Palisades, there were no announced projects to restart retired 
+nuclear reactors. Holtec applied for debt financing for their effort to restart the 800 MW 
+Palisades nuclear plant in Michigan. In September 2024, EDF awarded a $1.52 billion loan for 
+the project, which is expected to support or retain 600 jobs.14 Holtec is on track to bring the 
+facility online in 2026, just two years after the EDF loan’s close.  
+With electric load growing across the United States from AI data centers and onshoring of 
+manufacturing, Holtec Palisades is a timely project. This load growth could strain the country’s 
+current electricity capacity, which would dampen U.S. technology and manufacturing 
+competitiveness. Strategically funding a nuclear reactor restart is an example of using EDF to 
+bolster critical infrastructure required to drive the U.S. economy.  
+After Holtec Palisades was announced, Microsoft and Constellation announced plans to 
+restart Three Mile Island (TMI) Unit 1 and set up the Crane Clean Energy Center. Constellation 
+was later awarded an EDF loan to restart TMI unit 1. In addition, the CEO of NextEra Energy 
+stated that the company will be restarting the Duane Arnold Nuclear Plant in Iowa by 2029.15 
+These projects are examples of follow-on investment of the type that was derisked by the EDF 
+loan to Holtec. Other benefits of learning by doing, such as built-out supply chains or a more 
+experienced workforce, will also assist follow-on projects.  
+The investment by EDF has shown private investors that nuclear reactor restarts are a viable 
+pathway to quickly adding clean firm capacity. The Holtec Palisades financing provides an 
+example of how EDF financing can lead the way for further private-sector investment in 
+innovative energy solutions.  
+Recommendations  
+To enable nuclear energy project success, EDF requires three things: 
+• 
+Adequate funding (appropriations for both credit subsidies and administrative 
+expenses, as well as lending authorization); 
+• 
+Sufficient time (authorization and funding that is in place long enough to allow 
+multiple nuclear energy projects to proceed in series); and  
+• 
+Adequate staffing levels (to perform due diligence, establish appropriate loan terms, 
+monitor project progress, and administer loans).  
+ 
+14 HOLTEC PALISADES | Department of Energy 
+15 NRC shares Duane Arnold restart progress at public hearing -- ANS / Nuclear Newswire
+--- PAGE 10 ---
+10 
+ 
+Adequately funding Title 1703 and 1706 programs ensures that both new technologies and 
+infrastructure reinvestment projects can receive loans. Sufficient lending authority, on the 
+order of hundreds of billions of dollars, will allow for multiple projects and multiple 
+technologies. Since, for example, the Vogtle project loan guarantees were for $12b, the 
+Administration’s goal to start construction on ten new light water reactors by 203016 could 
+require around $100b in loan guarantees. Similarly, there must be sufficient appropriated 
+credit subsidy for EDF to lend to projects with different business models, such as in 
+restructured electricity markets or data center offtake agreements. A single large light water 
+reactor project could use over $1b in credit subsidy on its own. Thus, a set of these projects 
+would be unable to proceed without billions of dollars in appropriated credit subsidy. 
+Extending the lending authority and appropriation for credit subsidy into the 2030s 
+maximizes the effectiveness of EDF for the nuclear industry by funding both initial and follow-
+on projects. Funding a first-of-a-kind project will lead to greater interest but will not provide 
+sufficient confidence in the construction process and costs among private financiers. Funding 
+two to five projects is needed to provide commercial lenders with the confidence to support 
+an industry, to encourage supply chain investments, and to continue to engage the 
+workforce. This will all lead to an active industry that attracts substantial private investment. 
+Keeping lending authority and credit subsidy available into the 2030s is crucial for successful 
+commercialization and a robust nuclear industry. 
+EDF must also have adequate staffing to carry out its due diligence and loan disbursement 
+activities. Adequate appropriations for administrative expenses are critical, as several projects 
+will be seeking loans in the later 2020s. These appropriations help ensure that application 
+review, due diligence, and disbursement activities move quickly. 
+EDF is Essential to Nuclear Success  
+Overall, EDF's support of early-stage projects with catalytic capital and accessible debt is 
+crucial for the growth of the nuclear energy industry, as well as achieving national goals 
+related to industrial competitiveness, energy security, and national security. By strategically 
+funding early-stage projects, EDF is not only accelerating technological advancements, but 
+also creating a pathway for follow-on investment by the private sector. EDF plays a critical role 
+in bridging the gap between innovative projects and market viability, ensuring the United 
+States remains at the forefront of the global energy landscape. 
+ 
+16 President Trump’s nuclear executive orders in June 2025 set a goal to have 10 new large LWRs in 
+construction by 2030. See here for details: https://www.energy.gov/ne/articles/9-key-takeaways-president-
+trumps-executive-orders-nuclear-energy

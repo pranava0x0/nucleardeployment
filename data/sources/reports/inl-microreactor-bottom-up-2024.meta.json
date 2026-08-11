@@ -1,0 +1,11 @@
+{
+  "url": "https://gain.inl.gov/content/uploads/4/2025/03/2024-Document-INL-RPT-24-80433.pdf",
+  "title": "Technoeconomic Evaluation of Microreactor Using Detailed Bottom-up Estimate (INL/RPT-24-80433)",
+  "publisher": "Idaho National Laboratory",
+  "published_at": "2024",
+  "captured_at": "2026-08-10",
+  "capture_method": "curl download + PyMuPDF text extraction",
+  "page_count": 79,
+  "pdf_bytes": 3340900,
+  "text_chars": 159133
+}

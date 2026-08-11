@@ -1,0 +1,325 @@
+TerraPower’s Kemmerer 1 Enters Construction: Timeline of the Natrium Project’s Road to First Power
+Energy & Engineering Group:
+Topics
+Carbon Capture
+Coal
+Cybersecurity
+Data Centers
+Distributed Energy
+Energy Storage
+Environmental
+Gas
+Geothermal
+Hydro
+Hydrogen
+Legal & Regulatory
+Nuclear
+O&M
+Safety
+Smart Grid
+Solar
+Technology
+T&D
+Waste to Energy
+Water
+Wind
+Workforce
+Events
+Experience POWER
+Data Center POWER eXchange
+Industry Events
+POWER Awards
+Webinars
+Resources
+POWER Plant ID
+Why POWER?
+Videos
+Podcasts
+Newsletters
+White Papers
+BrandConnect
+Interactive Features
+Press Releases
+Blog
+Store
+Jobs
+Issues
+POWER Magazine
+POWER News
+RENEWABLE POWER Direct
+NUCLEAR POWER Direct
+T&#038;D POWER Direct
+GAS POWER Direct
+DATA CENTER POWER Direct
+FINANCIAL POWER Direct
+Archive
+POWER Plant ID
+Advertise
+Subscribe
+Subscribe
+E-Letter Signup
+Log In
+Search
+Topics
+Carbon Capture
+Coal
+Cybersecurity
+Data Centers
+Distributed Energy
+Energy Storage
+Environmental
+Gas
+Geothermal
+Hydro
+Hydrogen
+Legal & Regulatory
+Nuclear
+O&M
+Safety
+Smart Grid
+Solar
+Technology
+T&D
+Waste to Energy
+Water
+Wind
+Workforce
+Events & Awards
+Experience POWER
+Data Center POWER eXchange
+Industry Events
+POWER Awards
+Webinars
+Resources
+POWER Plant ID
+Why POWER?
+Videos
+Podcasts
+Newsletters
+White Papers
+BrandConnect
+Interactive Features
+Press Releases
+Blog
+Store
+Jobs
+Issues
+POWER Magazine
+POWER News
+RENEWABLE POWER Direct
+NUCLEAR POWER Direct
+T&#038;D POWER Direct
+GAS POWER Direct
+DATA CENTER POWER Direct
+FINANCIAL POWER Direct
+Archive
+About Us
+Advertise
+Membership
+About Us
+Privacy Policy, Terms &#038; Conditions
+Diversity, Equity, Inclusion &#038; Belonging
+Cookie Settings
+Accessibility
+Sign In
+Email or Username
+Password
+Forgot Password?
+Please contact our Customer Service Team if you are unable to log in at clientservices@accessintel.com
+or 1-888-707-5814.
+Home Nuclear TerraPower’s Kemmerer 1 Enters Construction: Timeline of the Natrium Project’s Road to First Power
+advanced nuclear
+TerraPower’s Kemmerer 1 Enters Construction: Timeline of the Natrium Project’s Road to First Power
+Sonal C. Patel
+Thursday, April 23, 2026
+SHARE:
+TerraPower&rsquo;s Natrium reactor at Kemmerer, Wyoming, reached official construction start on April 23, 2026. Here&rsquo;s a full timeline from ARDP selection to construction start.
+TerraPower on April 23, 2026, officially started construction on Kemmerer Unit 1, its flagship Natrium sodium-cooled fast reactor plant in Kemmerer, Wyoming&mdash;a milestone that marks the most consequential step yet in the U.S.&rsquo;s long and fitful effort to move advanced reactor designs from concept into commercial reality.
+The construction start follows the U.S. Nuclear Regulatory Commission&rsquo;s (NRC&rsquo;s) March 4, 2026, authorization of a Part 50 construction permit for Kemmerer Power Station Unit 1 &mdash;the first commercial reactor the agency has approved for construction in nearly a decade and the first approval for a commercial non&ndash;light water power reactor design in more than 40 years. It comes as Vogtle Units 3 and 4, the first new large U.S. reactors to be built and completed since the 1980s, begin operating in Georgia and reopen debate over how fast nuclear can scale in the U.S. power mix.
+While historic, Kemmerer 1 arrives in a different era, under a distinctly different set of pressures. The U.S. power sector is contending simultaneously with surging electricity demand from data centers and electrification, an aging generation fleet, and broad political agreement that advanced nuclear will likely be part of the country&rsquo;s long-term resource mix. Congress has responded with the Nuclear Energy Innovation and Modernization Act of 2019 and the ADVANCE Act of 2024 , both of which direct the NRC to establish a more flexible, risk-informed licensing framework for non&ndash;light-water technologies and to meet tighter deadlines for licensing decisions.
+Backed by founder and chairman Bill Gates and up to $2 billion in cost-shared federal support through the DOE&rsquo;s Advanced Reactor Demonstration Program (ARDP), TerraPower has designed Natrium to meet both grid needs and constructability requirements. The plant features a 345-MW sodium-cooled fast reactor with an integrated molten-salt energy storage system that can boost net electrical output to 500 MW when needed while maintaining constant reactor power. Its engineering, procurement, and construction contractor, Bechtel&mdash;which built Vogtle Units 3 and 4 and brings more than 70 years of nuclear construction experience&mdash;has described Natrium not as a one-off first-of-a-kind build but as an effort to establish &ldquo;a delivery approach designed for repeatability,&rdquo; aiming for nth-of-a-kind execution from the first unit.
+POWER has delivered in-depth reporting about the project since TerraPower&rsquo;s ARDP selection in 2020. The timeline below chronicles how Kemmerer 1 moved from concept and federal award through siting, licensing, and early works to the April 23 construction start&mdash;alongside the commercial agreements, supply chain buildout, and international partnerships that have taken shape in parallel.
+The Natrium system features a 345-MWe reactor and can be optimized for specific markets. For instance, its innovative thermal storage has the potential to boost the system&rsquo;s output to 500-MWe of power for more than five and a half hours when needed. Courtesy: TerraPower
+2020: ARDP Selection and Natrium&rsquo;s Public Debut
+September 2020&mdash;TerraPower and GEH Unveil Natrium
+TerraPower and GE Hitachi Nuclear Energy introduce the Natrium, describing a sodium-cooled fast reactor (SFR) developed under a joint development agreement that blends the best of TerraPower&rsquo;s Traveling Wave Reactor and GEH&rsquo;s PRISM technology&mdash;augmented with &ldquo;additional innovations and improvements&rdquo; to render it cost-competitive in U.S. and international markets (see original POWER feature ).
+October 2020&mdash;DOE Selects Natrium as an ARDP Flagship
+DOE selects TerraPower and GEH as one of two flagship awardees under its Advanced Reactor Demonstration Program (ARDP) &mdash;alongside X-energy&rsquo;s Xe-100 pebble-bed high-temperature gas reactor. Each is slated to receive $80 million in initial federal funding toward a plant to be operational within seven years, part of a planned $3.2 billion total ARDP investment contingent on Congressional appropriations. Dan Brouillette, energy secretary under the first Trump administration, cites two selection criteria: the novelty of the design and the management team&rsquo;s ability to execute on a 50-50 cost-shared basis on schedule. Separately, TerraPower announces a partnership with Centrus Energy&mdash;under a three-year, $115 million (80/20 cost-shared) contract&mdash;to demonstrate commercial-scale domestic HALEU production using 16 AC-100M centrifuges at the American Centrifuge Plant in Piketon, Ohio, by 2022. The effort underscores that no HALEU domestic supply yet exists.
+2021: Wyoming Siting Takes Shape
+June 2021&mdash;Wyoming Coal-to-Nuclear Siting Announced
+At a Cheyenne energy event attended by Wyoming Gov. Mark Gordon, Biden administration Energy Secretary Jennifer Granholm, TerraPower founder Bill Gates, and Sen. John Barrasso, TerraPower and PacifiCorp announce they are assessing four retiring coal plant sites in Wyoming&mdash;Naughton (Kemmerer), Wyodak (Gillette), Dave Johnston (Glenrock), and Jim Bridger (Rock Springs)&mdash;as candidates for the Natrium demonstration ( see more ). PacifiCorp President Gary Hoogeveen frames the opportunity as a chance to ensure &ldquo;a formerly productive coal generation site continues to produce reliable power,&rdquo; while Granholm tells the crowd: &ldquo;I have a feeling Wyoming won&rsquo;t be the only state in the country angling for one of these nuclear reactors once we&rsquo;ve seen it in action.&rdquo;
+November 16, 2021&mdash;Kemmerer Selected as Preferred Natrium Site
+TerraPower and PacifiCorp announce Kemmerer, Wyoming&mdash;near the retiring Naughton coal plant&mdash;as the preferred site for the Natrium demonstration, chosen from the four Wyoming candidates following an evaluation of community support, site characteristics, NRC licensability, infrastructure access, and grid needs ( see POWER coverage ). The 1,120-acre site sits between Wyoming&rsquo;s eastern wind resources and the Wasatch Front in Utah&mdash;a location Rocky Mountain Power President Gary Hoogeveen describes as &ldquo;perfect for grid support,&rdquo; positioned to absorb renewable intermittency and deliver the Natrium system&rsquo;s 500-MW peak output to major load centers. The Naughton plant&rsquo;s two remaining coal units are slated to retire in 2025, with Unit 3&mdash;converted to natural gas in 2019&mdash;remaining operational. The selection is subject to finalization of definitive agreements, applicable permitting, and licensing. TerraPower targets a mid-2023 NRC construction permit application and a 2028 commercial operation date in line with ARDP&rsquo;s Congressional mandate.
+November 2021&mdash;Site Details and Commercial Structure Outlined
+POWER &lsquo;s deeper coverage of the Kemmerer announcement reveals the project&rsquo;s full commercial and technical architecture ( see more ). CEO Chris Levesque pegs the all-in project cost at roughly $4 billion&mdash;50% DOE grant through ARDP, 50% private investment&mdash;and confirms that Rocky Mountain Power (PacifiCorp&rsquo;s Wyoming subsidiary) will own the plant as a commercial generating asset, with TerraPower building and holding ownership through construction before a potential transfer at commercial operation. PacifiCorp&rsquo;s 2021 IRP models the Natrium demonstration at a 92.5% capacity factor at 345-MW baseload, with the molten-salt storage system ramping output at 8% per minute across a range of roughly 100 to 500 MWe. The IRP&rsquo;s preferred portfolio envisions integrating an additional 1,000 MW of advanced nuclear resources by 2040 if the demonstration succeeds&mdash;the first time a U.S. utility formally embeds an advanced non-LWR reactor in a regulatory resource plan. Levesque identifies the project&rsquo;s two forward risks: the cost and complexity of a first-of-a-kind NRC licensing process and the absence of a domestic commercial-scale HALEU supply chain, noting that &ldquo;Natrium will run on HALEU for the life of the plant.&rdquo;
+An aerial rendering of the Natrium Kemmerer Unit 1 site shows the deliberate physical separation of the Energy Island&mdash;housing the molten-salt thermal storage tanks and turbine generation facilities&mdash;from the Nuclear Island, which contains the sodium-cooled fast reactor. The architectural decoupling allows construction and NRC licensing of each island to proceed on independent schedules. Courtesy: TerraPower
+2022: Financing and Fuel Infrastructure
+August 2022&mdash;TerraPower Closes $750 Million Fundraise
+TerraPower closes one of the largest advanced nuclear fundraises to date, securing a minimum of $750 million in equity co-led by South Korean conglomerate SK Inc. and SK Innovation&mdash;which together invest $250 million&mdash;and TerraPower founder Bill Gates. The raise, structured to support the 50% cost-share requirement of the ARDP award, also advances TerraPower&rsquo;s isotopes program alongside the Natrium demonstration.
+October 2022&mdash;Natrium Fuel Fabrication Facility Announced
+GEH subsidiary Global Nuclear Fuel&ndash;Americas (GNF-A) and TerraPower announce an agreement to build the Natrium Fuel Facility at GNF-A&rsquo;s existing nuclear fuel fabrication plant in Wilmington, North Carolina&mdash;one of only three such facilities in the U.S.&mdash;to produce the metallic uranium-zirconium HALEU fuel the Natrium SFR requires ( see POWER coverage ). The facility, representing a joint investment of more than $200 million through ARDP seeks to tackle the long-standing fuel hurdle. Commercial metallic HALEU fuel of this form is available only from the Russian state-owned enrichment firm TENEX.
+November 2022&mdash;Total 2022 Fundraising Reaches $830 Million
+TerraPower closes an additional $80 million, bringing total 2022 private capital to $830 million&mdash;the largest private raise among advanced nuclear companies to that point. New investors include ArcelorMittal, investing through its XCarb Innovation Fund, and Korea Shipbuilding and Offshore Engineering (KSOE), the intermediate holding company of Hyundai Heavy Industries Group&rsquo;s shipbuilding sector&mdash;an early signal of Korean industrial interest in Natrium&rsquo;s global supply chain.
+2023: Site Commitment and Supply Chain Buildout
+March 2023&mdash;PacifiCorp IRP Forecasts Two More Natrium Reactors
+PacifiCorp&rsquo;s 2023 Integrated Resource Plan formally forecasts a need for two additional Natrium units beyond Kemmerer 1&mdash;to come online by 2033&mdash;making it the first time a U.S. utility has embedded an advanced non-light water reactor as a core resource in a regulatory planning filing ( see more ). The plan signals that Natrium is being treated as a real commercial planning resource rather than a demonstration curiosity, and builds on the 2021 IRP&rsquo;s preferred portfolio, which envisioned integrating 1,000 MW of advanced nuclear resources by 2040.
+April 2023&mdash;SK, KHNP, and TerraPower Sign Strategic Collaboration
+Korea Hydro & Nuclear Power (KHNP)&mdash;owner and operator of South Korea&rsquo;s 25 nuclear power plants&mdash;and SK sign a strategic cooperation agreement with TerraPower to demonstrate and commercialize Natrium, with deployment ambitions in South Korea and globally ( see more ). SK and SK Innovation, which invested $250 million in TerraPower&rsquo;s August 2022 fundraise, deepen their stake through the deal. The announcement also confirms that Kemmerer 1&rsquo;s target completion date has shifted from 2028 to 2030&mdash;a slip attributed primarily to HALEU fuel availability concerns.
+July 2023&mdash;TerraPower and Centrus Expand HALEU Commercialization
+TerraPower and Centrus Energy expand their domestic HALEU commercialization partnership, building on the original Piketon, Ohio enrichment demonstration contract announced at ARDP selection. Centrus would begin limited HALEU production at Piketon in October 2023, producing roughly 900 kilograms by mid-2025&mdash;a meaningful but far-from-commercial-scale output that underscores the urgency of parallel fuel supply efforts, including the GNF-A fabrication facility.
+August 2023&mdash;Land Purchased; First Natrium Vendor Contracts Awarded
+TerraPower purchases the Kemmerer land parcel from PacifiCorp, converting the preferred site designation into a firm commitment ahead of the construction permit application. Earlier that month, TerraPower announces its first round of four Natrium vendor contracts&mdash;covering the engineering simulator (Western Service Corporation), metallic fuel casting furnace (James Fisher Technologies), Intermediate Heat Exchanger design (BWXT Canada), and Reactor Protection System (Curtiss-Wright)&mdash;beginning a domestic supply chain buildout that will expand through four additional procurement rounds by mid-2025.
+December 2023&mdash;International MOUs at COP28
+On the sidelines of COP28 in Dubai, TerraPower signs an MOU with the Emirates Nuclear Energy Corporation (ENEC) to explore Natrium deployment in the UAE, and separately announces a strategic supply chain agreement with the Korean province of Gyeongsangnam-Do&mdash;early markers of international commercial interest that will accelerate substantially through 2025 with UK regulatory submissions, a KBR global deployment alliance, and KHNP joining as a direct investor.
+2024: Application, Groundbreaking, and Supply Chain Acceleration
+February 2024&mdash;Second Natrium Vendor Contract Round Awarded
+TerraPower selects five suppliers for critical reactor systems: GERB Vibration Control Systems (seismic isolation equipment for the reactor support structure), Thermal Engineering International (Sodium-Salt Heat Exchanger), Hayward Tyler (Primary and Intermediate Sodium Pumps), Framatome U.S. Government Solutions (Ex-Vessel Fuel Handling Machine and Bottom Loading Transfer Cask), and Teledyne Brown Engineering (In-Vessel Transfer Machine for refueling operations).
+March 2024&mdash;TerraPower Submits Construction Permit Application
+US SFR Owner LLC (USO), a wholly owned TerraPower subsidiary, submits a construction permit application under 10 C.F.R. Part 50 for Kemmerer Power Station Unit 1, seeking authorization to build an 840-MWt, 345-MWe sodium-cooled fast reactor with a molten-salt energy storage system near the Naughton plant ( see more ). The filing reflects years of pre-application engagement with the NRC and establishes Kemmerer 1 as the first commercial non-LWR project to seek a Part 50 construction permit in the modern licensing era.
+May 2024&mdash;NRC Dockets Kemmerer 1 Construction Permit Application
+NRC staff formally accepts the Kemmerer 1 application for docketing on May 14, initiating one of the agency&rsquo;s first technology-inclusive, risk-informed licensing reviews for a commercial non-LWR and establishing the project as a test case for the Licensing Modernization Project methodology . In its initial schedule, the NRC projects completing the final safety evaluation by August 2026&mdash;a 27-month review timeline.
+May 2024&mdash;Framatome and TerraPower Announce HALEU Metallization Pilot
+TerraPower and Framatome announce an agreement to design and develop a HALEU metallization pilot line at Framatome&rsquo;s nuclear fuel manufacturing facility in Richland, Washington&mdash;already under construction at the time of the announcement ( see POWER coverage ). The pilot line will convert uranium oxide into metal form, a crucial deconversion step in producing Natrium&rsquo;s uranium-zirconium metallic fuel. The pilot will use natural or depleted uranium&mdash;not HALEU&mdash;to establish and verify the functioning design for a future full-scale HALEU metal production facility at Framatome, with testing targeted for early 2025. The effort adds a third track to TerraPower&rsquo;s domestic fuel supply chain strategy, alongside Centrus&rsquo;s HALEU enrichment work at Piketon and GNF-A&rsquo;s fabrication facility in Wilmington. By November 2025, Framatome and TerraPower announce the successful production of the first metallic uranium &ldquo;pucks&rdquo; at the Richland line&mdash;demonstrating the deconversion process is ready to scale toward HALEU.
+June 2024&mdash;Non-Nuclear Groundbreaking
+TerraPower breaks ground on the non-nuclear portion of Kemmerer 1 ( see more )&mdash;the first advanced nuclear reactor project in the Western Hemisphere to move from design into construction. EPC contractor Bechtel begins early works on the energy island and support infrastructure, including a Test and Fill Facility for full-scope sodium systems testing and the Kemmerer Training Center for operator training ahead of nuclear construction.
+August&ndash;October 2024&mdash;Site Infrastructure and Additional Contracts
+Sargent & Lundy is selected to design the Kemmerer Training Center; TerraPower secures a major support services contract covering site security, environmental monitoring, and emergency preparedness; and Premier Technology of Rigby, Idaho, is awarded a contract for Natrium equipment fabrication.
+October 30, 2024&mdash;TerraPower and ASP Isotopes Sign HALEU Term Sheet
+TerraPower executes a term sheet with South African firm ASP Isotopes Inc., which covers two commitments: a loan from TerraPower to partially finance construction of a HALEU enrichment facility at Pelindaba, South Africa, using ASP&rsquo;s proprietary aerodynamic separation process; and a long-term HALEU supply agreement under which TerraPower would purchase all HALEU produced at the facility over a 10-year period beginning in 2028&mdash;including a dedicated first-core supply agreement for Kemmerer 1&rsquo;s initial fuel loading. The deal adds a fourth track to TerraPower&rsquo;s fuel supply strategy&mdash;alongside Centrus (enrichment, Piketon), Framatome (metallization, Richland), and GNF-A (fabrication, Wilmington)&mdash;and represents TerraPower&rsquo;s first supply commitment from outside the U.S., in an allied country, explicitly designed to diversify away from Russian sources. CEO Chris Levesque calls it &ldquo;another example of our commitment and investments to commercialize HALEU production domestically and in allied countries.&rdquo;
+December 2024&mdash;Reactor Enclosure System Contracts Awarded
+TerraPower awards the major manufacturing contracts for the Natrium reactor enclosure system (RES) to four international suppliers: ENSA (Equipos Nucleares S.A.) for the reactor head; Doosan Enerbility for the core barrel, guard vessel, and internal supports; HD Hyundai for the reactor vessel; and Marmen for the rotating plug&mdash;all critical long-lead forgings and fabrications with multi-year manufacturing timelines.
+A rendering of the Kemmerer Training Center, designed by Sargent & Lundy and under construction since August 2025, shows the facility that will house full-scope plant simulators and prepare the roughly 250 permanent staff expected to operate Kemmerer Unit 1 ahead of its targeted 2030&ndash;2031 commercial operation date. Courtesy: TerraPower
+2025: Regulatory Milestones, Construction Preparation, and Commercial Expansion
+Throughout 2025, TerraPower closed out a critical 18-month procurement period, continued building Natrium&rsquo;s domestic and global supply chain, and secured additional private capital to sustain project momentum. On Feb. 13, 2025, a fourth vendor contract round&mdash;including Mirion Technologies for the Radiation Monitoring System and Nuclear Instrumentation System&mdash;completed 100% of long-lead procurements for Kemmerer 1. Curtiss-Wright separately secured contracts for the full-scope training simulator, distributed control system, and nuclear and energy island control systems. On March 11, 2025, TerraPower and HD Hyundai formalized a strategic manufacturing collaboration to build new global supply chain capacity for Natrium reactor components&mdash;a partnership that also positions the South Korean industrial conglomerate as a key fabricator of long-lead reactor hardware. And on July 9, 2025, a fifth contract round added three more domestic suppliers&mdash;including AVANTech LLC for sodium processing system modules&mdash;completing the reactor enclosure system supply chain. Construction also began on the Kemmerer Training Center in August.
+In June 2025, meanwhile, TerraPower closed a $650 million fundraising &mdash;bringing total private capital raised since 2022 to more than $2.2 billion&mdash;sustaining the 50/50 ARDP cost-share requirement through the construction phase.
+Jan. 14, 2025&mdash;Wyoming Issues First State Permit for a Commercial Advanced Nuclear Project
+The Wyoming Industrial Siting Council approves TerraPower&rsquo;s state construction and operating permit for Kemmerer Power Station Unit 1&mdash;the first such permit issued to a commercial-scale advanced nuclear project&mdash;covering all activities outside NRC jurisdiction, including the energy island&rsquo;s molten-salt storage tanks and turbines. The permit allows TerraPower to advance construction on the energy island and training center while the NRC&rsquo;s nuclear island review continues.
+January 2025&mdash;Sabey Data Centers Collaboration Announced
+TerraPower and Sabey Data Centers announce a strategic collaboration for the wide-scale deployment of Natrium&mdash;marking an early signal of the data center sector&rsquo;s demand for dedicated, advanced nuclear baseload capacity.
+February 2025&mdash;NRC Completes Draft Safety Evaluation Ahead of Schedule
+The NRC completes its draft safety evaluation for the Kemmerer 1 construction permit application one month ahead of schedule&mdash;a result of productive pre-application engagement between NRC staff and TerraPower&rsquo;s subsidiary US SFR Owner LLC&mdash;with the final safety evaluation at that point targeted for June 2026 ( see POWER coverage ). POWER notes that the Natrium design&rsquo;s emergency planning zone of just a quarter mile&mdash;enabled by its passive safety systems, low-pressure sodium coolant, and underground reactor configuration&mdash;represents a significant commercial siting advantage.
+March 11&ndash;13, 2025&mdash;HD Hyundai and KBR Global Alliances Formalized
+TerraPower and HD Hyundai formalize a strategic manufacturing collaboration to scale Natrium&rsquo;s global supply chain&mdash;with HD Hyundai&rsquo;s heavy industrial manufacturing capabilities positioned to support fabrication of key reactor components for both Kemmerer 1 and future commercial units. Two days later, TerraPower signs a global deployment alliance with KBR for project management and EPC support across U.S. construction and international markets.
+April 16&ndash;Oct. 28, 2025&mdash;Natrium Enters UK Regulatory Process
+In April, TerraPower submits a pre-application inquiry to the UK&rsquo;s Office for Nuclear Regulation (ONR) and Environment Agency (EA), initiating the Generic Design Assessment (GDA) process&mdash;the first step toward UK regulatory approval for Natrium deployment. By October 28, TerraPower advances to a formal GDA submission with KBR named as UK deployment partner&mdash;adding a second major regulatory jurisdiction to the Natrium program alongside the U.S. Part 50 process. In February 2026, the ONR and EA confirm acceptance of the Natrium design into GDA Stage 1.
+May 8, 2025&mdash;NRC Formalizes Energy Island Construction Exemption
+The NRC formally grants an exemption allowing TerraPower to construct the Natrium energy island while the nuclear island construction permit review continues&mdash;enabling physical progress on the molten-salt storage and turbine generation facilities in 2025.
+July 2, 2025&mdash;NRC Accelerates Permit Review from 26 to 19 Months
+The NRC notifies TerraPower that enhanced licensing practices&mdash;a core-team structure, integrated project schedule, and extensive regulatory audits&mdash;have shortened the construction permit review from 26 months to 19 months, setting a new target of Dec. 31, 2025, for both the final EIS and safety evaluation ( see POWER coverage).
+August&ndash;September 2025&mdash;Utah and Kansas Deployment Agreements
+TerraPower, the Utah Office of Energy Development, and Flagship Companies sign an MOU to explore siting a second commercial Natrium reactor in Utah ; TerraPower, Evergy, and the State of Kansas separately announce an agreement to explore Natrium deployment in Kansas.
+October 2025&mdash;NRC Issues Final Environmental Impact Statement
+The NRC issues NUREG-2268 &mdash;the first final EIS issued for a commercial advanced nuclear plant&mdash;clearing the last major environmental prerequisite for the construction permit decision.
+December 2025&mdash;NRC Completes Final Safety Evaluation
+The NRC staff completes its safety evaluation report for the Kemmerer 1 construction permit application&mdash;concluding the project meets all statutory and regulatory requirements for permit issuance and setting up an NRC Commission vote in early 2026 ( see POWER coverage ).
+Early 2026: Commercial Momentum, Licensing Firsts, and Construction
+Jan. 9, 2026&mdash;TerraPower and Meta Announce Agreement for Up to Eight Natrium Plants
+TerraPower and Meta announce an agreement for up to eight Natrium advanced nuclear plants to provide carbon-free baseload power for Meta&rsquo;s global data center fleet&mdash;the largest single commercial commitment in the Natrium program&rsquo;s history and a signal that hyperscale data center demand is now a primary driver of advanced nuclear deployment.
+Jan. 20, 2026&mdash;KHNP Joins TerraPower Investor Base
+Korea Hydro & Nuclear Power formally joins TerraPower&rsquo;s investor base &mdash;converting the 2023 strategic collaboration agreement into a direct equity stake and deepening the Korean industrial partnership that underpins both Natrium&rsquo;s global supply chain and its international deployment ambitions.
+Feb. 19, 2026&mdash;Natrium Accepted into UK GDA Stage 1
+The UK&rsquo;s Office for Nuclear Regulation and Environment Agency confirm acceptance of the Natrium design into the Generic Design Assessment Stage 1&mdash;completing the arc that began with TerraPower&rsquo;s April 2025 pre-application inquiry and establishing Natrium as the first sodium-cooled fast reactor to enter formal UK regulatory review.
+February 2026&mdash;TerraPower CEO Details &ldquo;Sprint to Execution&rdquo;
+In a special report, as part of partner content hosted by POWER , CEO Chris Levesque reveals to POWER the cultural shift required to move Natrium from engineering to industrial execution&mdash;from &ldquo;talking about Navier&ndash;Stokes equations to asking, &lsquo;How many tons of concrete do we need to pour per day?'&rdquo; The sprint to execution has required early discipline, standardized work packages, long-lead procurement, and tight regulatory engagement to maintain the credibility of the 2030&ndash;2031 commercial operation target, he says.
+March 4, 2026&mdash;NRC Unanimously Authorizes Construction Permit
+The NRC unanimously authorizes the Office of Nuclear Reactor Regulation to issue a Part 50 construction permit for Kemmerer Power Station Unit 1&mdash;completing an 18-month review that was originally scheduled for 27 months ( see POWER coverage). The decision is the first commercial reactor construction approval in nearly a decade and the first for a commercial non-light water reactor design in more than 50 years. Kemmerer 1 also becomes the first power reactor application to employ a fully risk-informed, performance-based licensing basis using the LMP methodology (NEI 18-04 / Regulatory Guide 1.233 ), and the permit reflects four exemptions&mdash;including provisions related to HALEU fuel handling and emergency core cooling analysis&mdash;that accommodate the Natrium design&rsquo;s departure from conventional LWR assumptions.
+March 25, 2026&mdash;TerraPower and SoftServe Integrate NVIDIA Omniverse for Digital Twin
+TerraPower and SoftServe announce the integration of NVIDIA Omniverse to create a digital twin engineering platform designed to compress Natrium siting and design timelines from years to months&mdash;positioning the technology as a tool for accelerating nth-of-a-kind deployments beyond Kemmerer 1.
+April 23, 2026&mdash;Official Construction Start; Bechtel Shifts to Field Execution
+TerraPower announces the official start of construction on Kemmerer Unit 1&mdash;calling it &ldquo;the culmination of years of innovation, rigorous engineering and disciplined site preparation&rdquo; and describing the plant as on track to be the first utility-scale advanced nuclear power plant in the United States. Bechtel, serving as EPC contractor, reports it is transitioning from early works into full field execution and frames Natrium&rsquo;s delivery model as designed for repeatable advanced reactor builds. The construction milestone is expected to mobilize roughly 1,600 workers, with approximately 250 permanent staff positions once the plant enters operation. TerraPower notes the project is advancing in parallel with broader commercial plans&mdash;including the Meta agreement and a second Natrium site in Utah.
+TerraPower and Bechtel construction personnel gather at the Kemmerer, Wyoming, site on April 23, 2026, marking the official start of construction on Kemmerer Unit 1&mdash;America&rsquo;s first utility-scale advanced nuclear power plant. The milestone is expected to mobilize roughly 1,600 workers over the construction period. Courtesy: TerraPower
+Toward 2031: From Construction to Operation
+US SFR Owner LLC has told the NRC it expects to complete construction by February 2031, before applying for a Class 103 operating license authorizing 40 years of operation under Part 50 ( see POWER coverage ). TerraPower continues to reference a 2030&ndash;2031 commercial operation target for Kemmerer 1, contingent on maintaining construction progress, securing adequate HALEU fuel supply&mdash;through partnerships with Centrus, Framatome, GNF-A, and ASP Isotopes&mdash;and completing the operating license phase of NRC review.
+&mdash; Sonal C. Patel is senior editor at POWER magazine ( @sonalcpatel , @POWERmagazine ).
+Tagged in:
+sodium-cooled fast reactor
+Kemmerer Unit 1
+NRC construction permit
+TerraPower
+molten salt energy storage
+advanced nuclear
+ARDP
+Natrium reactor
+Webinars
+July 9, 2025
+Creating Value from Data: Maximizing Plant Performance Through Real-Time Analytics
+Modern process industries are experiencing fluctuating market conditions and tight operational margins, leading chemical engineers to rely on real-time data to boost efficiency and reduce costs. Yet, many organizations are at different stages in their digital transformation journey. Some are just starting, while others are looking to optimize existing solutions. This webinar explores practical ways [&hellip;]
+REGISTER
+Sponsored by
+dataPARC
+June 16, 2025
+Smart MRO: Using Technology and Assessment to Enhance Power Plant Performance
+REGISTER
+Sponsored by
+RENTECH
+May 20, 2025
+How One Electric Utility Is Using AI and Extreme Weather Modeling to Make Critical Grid Decisions
+REGISTER
+Sponsored by
+technosylva
+Videos
+POWER Global Media
+archives + podcasts + webinars + e-letters + video + exclusive content + events + much more!
+For over 142 years, POWER has been the unwavering pillar of the power and energy industry, offering unparalleled insights on the latest trends, best practices, and news through our robust channels: print, digital media, and in-person events.
+Subscribe Now
+Trending
+Data Centers
+Texas Audit Could Delay 49.8 GW of Data Center Load, Cost Projects Up to $15 Billion, BNEF Warns
+Gas
+LS Power Acquiring 606-MW Texas Gas-Fired Plant From Constellation
+Trends
+Oklo’s Groves Becomes Fifth DOE Pilot Reactor to Reach Criticality, First on Private Land
+Legal & Regulatory
+Abbott Orders Full Audit of Texas Data Center Interconnection Queue, Threatens to Deny Grid Access
+Gas
+A Pioneering Approach to Building New Generation Resources
+Top Plant
+In the Thar Desert, Pakistan Proves Its Indigenous Coal Can Be a Reliable Power Resource
+O&M
+From 18 Forced Outages to Zero Missed Starts: How CPS Energy’s Arthur von Rosenberg Plant Rebuilt Its Reliability
+Gas
+Innovation Powers a Country’s Energy Transition
+Energy Security
+Speed as Strategy: Rabigh Reinforcement Delivers 1,179 MW on an Accelerated Timeline
+Recommended
+Nuclear
+Kemmerer 1 Breaks Ground: A Look at TerraPower’s Natrium Fast Reactor Nuclear Power Plant
+Legal & Regulatory
+A Historic First: NRC Clears TerraPower’s Natrium Nuclear Reactor for Construction
+Nuclear
+Kemmerer 1 Breaks Ground: A Look at TerraPower’s Natrium Fast Reactor Nuclear Power Plant
+Nuclear
+Coal Plant Site Unveiled for 500-MW Natrium Advanced Nuclear Pilot
+Nuclear
+TerraPower Eyes Utah for Second Commercial Natrium Reactor as AI Demand Reshapes Western Grid
+Nuclear
+Kemmerer 1—TerraPower’s Pioneering Fourth-Generation Nuclear Project—Hits Key NRC Milestone Ahead of Schedule
+From the Magazine
+Data Centers
+Is the Power Project Crunch Upending the Owner—EPC Model?
+Gas
+Rayburn Energy Station: A Cooperative’s Answer to Texas-Sized Risk
+Gas
+A Pioneering Approach to Building New Generation Resources
+Read the Full issue
+News & Technology for the Global Energy Industry
+POWER is at the forefront of the global power market, providing in-depth news and insight on the end-to-end electricity system and the ongoing energy transition. We strive to be the “go-to” resource for power professionals, offering a wealth of information on innovative business practices, sound safety measures, useful productivity enhancements, and much more.
+Upcoming
+Experience POWER
+Sept. 28—30, 2026
+Omni Shoreham Washington, D.C.
+Learn More
+About Power
+Advertise
+Membership
+About Us
+Privacy Policy, Terms &#038; Conditions
+Diversity, Equity, Inclusion &#038; Belonging
+Cookie Settings
+Accessibility
+Subscribe
+Membership
+Trends, best practices, and news through: print, digital media, and in-person events. Subscribe
+Newsletters
+Exclusive E-letters to POWER up your knowledge. Sign up
+© 2026 Access Intelligence, LLC - All Rights Reserved

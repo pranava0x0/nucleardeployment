@@ -1,0 +1,11 @@
+{
+  "url": "https://gain.inl.gov/content/uploads/4/2024/11/DOE-Advanced-Nuclear-Liftoff-Report.pdf",
+  "title": "Pathways to Commercial Liftoff: Advanced Nuclear (September 2024 update)",
+  "publisher": "U.S. Department of Energy",
+  "published_at": "2024-09",
+  "captured_at": "2026-08-10",
+  "capture_method": "curl download + PyMuPDF text extraction",
+  "page_count": 83,
+  "pdf_bytes": 2822278,
+  "text_chars": 285931
+}

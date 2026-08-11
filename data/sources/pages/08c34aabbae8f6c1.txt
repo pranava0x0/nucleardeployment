@@ -1,0 +1,92 @@
+Deep Fission and Endeavour announce strategic partnership - World Nuclear News
+About WNN
+&middot;
+Subscribe
+Home
+&middot;
+Energy & Environment
+&middot;
+New Nuclear
+&middot;
+Regulation & Safety
+&middot;
+Nuclear Policies
+&middot;
+Corporate
+&middot;
+Uranium & Fuel
+&middot;
+Waste & Recycling
+&middot;
+Podcasts & Features
+&middot;
+Fusion
+&middot;
+Country Index
+About WNN
+HOME / NEW NUCLEAR
+Deep Fission and Endeavour announce strategic partnership
+Wednesday, 8 January 2025
+California-based nuclear startup company Deep Fission, which is proposing to place microreactors deep underground, and Endeavour Energy LLC have committed to co-develop 2 GW of nuclear energy to power Endeavour's expanding portfolio of data centres. The first reactors are expected to be operational in 2029.
+(Image: Endeavour)
+Deep Fission aims to locate 15 MWe pressurised water reactors (PWRs) about one mile (1.6 km) underground in a 30-inch borehole. The reactor operates at the same pressure (160 atmospheres) as a standard PWR, and at the same core temperatures (about 315&deg;C). As with a standard PWR, the heat is transferred to a steam generator at depth to boil water, and the non-radioactive steam rises rapidly to the surface where a standard steam turbine converts the energy to its electricity.
+The company says its concept eliminates the need for large pressure vessels and containment structures, significantly reducing costs while enhancing safety, sustainability, and operational efficiency. It says this can be done using conventional low-enriched uranium fuel and an existing supply chain.
+Deep Fission is currently in pre-application engagement with the US Nuclear Regulatory Commission (NRC). The NRC has reviewed the conceptual design white paper. Deep Fission expects to submit site-specific applications in 2026. The first US reactors are expected to begin operation in 2029. Endeavour and Deep Fission are also engaged with other nuclear regulatory agencies and may begin international operations before 2029.
+Deep Fission said its collaboration with Endeavour "represents a major leap forward in deploying next-generation nuclear power to meet the growing demands of energy-intensive industries".
+"There is significant momentum for nuclear power right now, but the cost is still a challenge," said Elizabeth Muller, co-founder and CEO of Deep Fission. "Our technology not only ensures the highest levels of safety but also positions us to deliver zero-carbon continuous power at a cost of just 5-7 cents per kWh. The partnership between Deep Fission and Endeavour is a game-changer for data centre customers around the world."
+Endeavour Energy is a sustainable infrastructure company, specialising in data centre development, waterless cooling, microgrids, and renewable energy technologies. Its Edged data centre platform is a gigawatt-scale global network of ultra-efficient, waterless data centres.
+"We are constantly searching for technologies capable of supporting the unprecedented demands of AI and meeting green energy goals, but they have to be economically viable," said Jakob Carnemark, founder of Endeavour and Edged data centres. "Deep Fission's solution slashes the high costs and long timelines of surface-built nuclear projects, enhances safety, and delivers clean, reliable energy with high power density of more than 100 MW in a quarter acre. We're excited to play a pivotal role in advancing this transformative approach."
+Deep Fission was founded in 2023 by father-daughter team Elizabeth and Richard Muller, who also co-founded Deep Isolation in 2016 to develop the concept of placing canisters of radioactive waste hundreds of metres underground via a borehole.
+The agreement between Deep Fission and Endeavour follows several announcements by global tech giants related to nuclear energy.
+Microsoft announced in September it had signed a 20-year power purchase agreement with Constellation that will see Three Mile Island unit 1 restarted. Google announced in October it had agreed to purchase energy from Kairos Power under a deal that would support the first commercial deployment of its fluoride salt-cooled high-temperature advanced small modular reactors by 2030 and aim for a fleet totalling 500 MW of capacity by 2035. Amazon also announced a series of agreements that will see it taking a stake in advanced nuclear reactor developer X-energy and rolling out its Xe-100 advanced SMR initially at a project in Washington State. In December, US nuclear power plant developer Oklo signed a non-binding Master Power Agreement with data centre designer, builder and operator Switch to deploy 12 GW of Oklo Aurora powerhouse projects by 2044.
+Most Read
+Westinghouse and Amentum sign AP1000/AP300 collaboration agreements
+Tuesday, 4 August 2026
+China approves construction of eight more reactors
+Monday, 3 August 2026
+New Chinese reactors reach start-up milestones
+Monday, 3 August 2026
+Cameco announces IPO plan for Westinghouse
+Friday, 31 July 2026
+Podcasts & Features
+Podcast: Why is the World Nuclear Investment Guide needed?
+Podcasts & Features &middot; Friday, 31 July 2026
+Viewpoint: IAEA's non-proliferation safeguards and industry's role
+Podcasts & Features &middot; Friday, 24 July 2026
+All Podcasts & Features
+Related Information
+Nuclear Power in the USA
+Small Nuclear Power Reactors
+WNN is a public information service of
+World Nuclear Association.
+Related Topics
+New build &middot;
+Small Modular Reactors &middot;
+USA &middot;
+Related Links
+Deep Fission &middot;
+Endeavour &middot;
+Related Stories
+Deep Fission unveils underground reactor concept &middot;
+Keep me informed
+Energy & Environment
+New Nuclear
+Regulation & Safety
+Nuclear Policies
+Corporate
+Uranium & Fuel
+Waste & Recycling
+Podcast & Features
+Fusion
+Country Index
+Contact
+York House,
+23 Kingsway,
+London,
+WC2B 6UJ,
+United Kingdom
+editor@world-nuclear-news.org
++44 (0)20 7451 1520
+&copy; 2007-2026 World Nuclear Association, registered in England and Wales, number 01215741.
+Privacy Policy Cookies Policy
+Keep me informed
