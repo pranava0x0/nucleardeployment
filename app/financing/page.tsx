@@ -171,7 +171,7 @@ export default function FinancingPage() {
     </section>
 
     <section className="section" id="siting">
-      <div className="section-head"><h2>Siting, by class</h2><p>Why the three classes make different deals: the ground they need and the rules that size it. A DOE authorization on a federal site is site-specific and does not transfer to a commercial sale, which still requires an NRC license; the race board's bands keep the two apart.</p></div>
+      <div className="section-head"><h2>Siting, by class</h2><p>Why the three classes make different deals: the ground they need and the rules that size it. A DOE authorization on a federal site is site-specific and does not transfer to a commercial sale, which still requires an NRC license; the race board&rsquo;s bands keep the two apart.</p></div>
       <ul className="ledger wide">
         {sitingFacts.map((fact) => <li key={fact.fact.slice(0, 40)}>
           <span className="ledger-date">{fact.lane}</span>
