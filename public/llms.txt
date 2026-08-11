@@ -135,7 +135,7 @@ A megawatt sits in exactly one band, so the bands never double-count.
 Costs, contracts, and underwriters, every figure sourced and estimates kept
 apart from facts. FOAK is a first-of-a-kind unit; NOAK the nth after learning.
 - 13 cost benchmarks by reactor class, from Vogtle's $169/MWh actual to microreactor FOAK at $325/MWh.
-- 17 contracting mechanisms in use with executed examples, plus 3 pending intents and 2 proposals.
+- 15 contracting mechanisms in use with executed examples, plus 5 pending intents and 2 proposals.
 - 7 underwriting institutions and 2 pooled liability structures.
 - Full layer: https://pranava0x0.github.io/nucleardeployment/financing
 
