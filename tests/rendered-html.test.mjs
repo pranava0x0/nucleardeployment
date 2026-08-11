@@ -1252,7 +1252,15 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
   assert.equal(urlCount, 9 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
   const lastmods = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1]);
   assert.ok(lastmods.length > 8, "sitemap states lastmod dates");
-  assert.ok(lastmods.every((date) => date <= dataModule.dataAsOf), "no page claims to be newer than the dataset");
+  // The financing layer carries its own later stamp; everything else stays
+  // bounded by the race dataset's date.
+  const financingModule = await import("../app/financing-data.ts");
+  assert.ok(
+    sitemap.includes(`<loc>${base}/financing/</loc><lastmod>${financingModule.financingAsOf}</lastmod>`),
+    "the financing route carries the financing layer's own date, not the race dataset's",
+  );
+  assert.ok(financingModule.financingAsOf > dataModule.dataAsOf, "the financing stamp postdates the race dataset it sits beside");
+  assert.ok(lastmods.every((date) => date <= dataModule.dataAsOf || date === financingModule.financingAsOf), "no page claims a date newer than its own layer's stamp");
   assert.ok(lastmods.some((date) => date !== dataModule.dataAsOf), "record pages carry their own dates, not one global stamp");
 
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
@@ -1360,6 +1368,12 @@ test("the financing page renders every lane, company row, and labeled judgment",
   assert.ok(html.includes("$325/MWh"), "the microreactor FOAK estimate is on the page");
   assert.ok(html.includes("241% average overnight-cost overrun"), "the overrun history headline is on the page");
 
+  // The three mechanism lanes render, and a pending award never sits in the in-use group.
+  assert.ok(html.includes("Pending award, no executed contract"), "the pending-award lane renders");
+  const financingModule = financing;
+  assert.ok(financingModule.mechanisms.some((mechanism) => mechanism.status === "Pending award"),
+    "the dataset still exercises the pending-award case");
+
   // Every entrant gets a financing row with all five labeled lines.
   for (const row of financing.companyFinance) {
     const name = dataModule.companies.find((company) => company.slug === row.companySlug)?.name;
@@ -1408,9 +1422,15 @@ test("financing records keep source hygiene: https, real-or-null dates, paired c
     if (record.date != null) assert.match(record.date, /^\d{4}(-\d{2})?(-\d{2})?$/, `${record.date} is a real date`);
   }
   for (const row of financing.companyFinance) {
-    for (const source of [row.modelSource, row.governmentSource, row.commercialSource]) {
-      assert.match(source, /^https:\/\//, `${row.companySlug} sources are https`);
+    // Every government and commercial claim carries its own source; a row
+    // summarizing four deals under one link is the mis-citation Codex flagged.
+    assert.ok(row.government.length >= 1 && row.commercial.length >= 1,
+      `${row.companySlug} states at least one line per lane`);
+    for (const line of [...row.government, ...row.commercial]) {
+      assert.match(line.source, /^https:\/\//, `${row.companySlug} claim sources are https`);
+      assert.ok(line.text.length > 20, `${row.companySlug} claims are sentences, not fragments`);
     }
+    assert.match(row.modelSource, /^https:\/\//, `${row.companySlug} model source is https`);
     assert.equal(row.costClaim === null, row.costClaimSource === null,
       `${row.companySlug}: a cost claim and its source travel together`);
   }

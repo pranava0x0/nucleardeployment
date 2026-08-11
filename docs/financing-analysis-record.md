@@ -8,13 +8,16 @@ the per-company pipeline facts already in the three 2026-08-05 company packs.
 
 ## What shipped
 
-- `app/financing-data.ts`: eight sourced collections — cost benchmarks by
+- `app/financing-data.ts`: the sourced collections — cost benchmarks by
   reactor class (FOAK / NOAK / actual / company target), the learning ladder
   (what 1→3, 5–10, 10+, ~30–50 units buy), per-company contract readiness for
-  all 18 race entrants (model, government vehicle, commercial position, stated
-  cost, next gate), 18 in-use contracting mechanisms each with an executed
-  example plus 2 labeled proposals, the two live liability pools, 7
-  underwriting institutions, 5 overrun records, and 6 siting facts.
+  all 18 race entrants (model, then one sourced line per government vehicle and
+  per commercial deal, stated cost, next gate), a contracting-mechanism catalog
+  where every in-use entry carries an executed example and pending awards and
+  proposals sit in their own labeled lanes, the two live liability pools, the
+  underwriter directory, overrun history, and per-source siting facts. Counts
+  live in the generated `llms.txt`, not in this prose, after the mechanism
+  count drifted the day it was written.
 - `app/financing/page.tsx`: renders all of it in the site's existing ledger and
   definition-grid idioms, microreactors first. No new CSS, no client JS.
 - Six reports captured to `data/sources/reports/` as page-marked text with
@@ -90,6 +93,23 @@ the per-company pipeline facts already in the three 2026-08-05 company packs.
   a rotted capital-table URL stayed invisible until a funding record cited the
   same page and the cache guard tripped. All three are walked now; 328 sourced
   rows total.
+
+## What the Codex review caught (PR #11, round one)
+
+Four P2 findings, all reproduced before fixing, and three were one class: a
+row summarizing several deals under a single source link. Oklo's commercial
+line carried four agreements on the Meta URL; the microreactor siting row
+carried three companies' footprints on the eVinci article; and the same shape
+sat latent in seven more rows a sweep found once the class was named. The fix
+is structural, not editorial: `government` and `commercial` are now arrays of
+one-claim-one-source lines, compound siting facts are split per source, and
+the hygiene test enforces a source per line. The fourth finding: the Eielson
+Notice of Intent sat in the in-use mechanism lane whose intro promises an
+executed example, so mechanisms now carry a "Pending award" status with its
+own lane; and `/financing` inherited the race dataset's sitemap `lastmod`,
+which predated the page's own existence, so the layer now carries its own
+`financingAsOf` stamp in the sitemap and page header. The review finding was a
+sample; the grep found the class.
 
 ## Verified numbers
 

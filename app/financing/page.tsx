@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import Link from "next/link";
 import { PageShell } from "../components/SiteHeader";
-import { companies, dataAsOf, raceEntrants } from "../data";
+import { companies, raceEntrants } from "../data";
 import {
-  capturedReports, companyFinance, costBenchmarks, learningRungs, liabilityPools,
-  mechanisms, overrunRecords, sitingFacts, underwriters,
-  type FinanceLane,
+  capturedReports, companyFinance, costBenchmarks, financingAsOf, learningRungs,
+  liabilityPools, mechanisms, overrunRecords, sitingFacts, underwriters,
+  type FinanceLane, type SourcedLine,
 } from "../financing-data";
 import { canonicalUrl } from "../site";
 
@@ -34,13 +35,21 @@ export default function FinancingPage() {
   const entrantFor = (slug: string) => raceEntrants.find((entrant) => entrant.companySlug === slug);
   const financeByLane = (lane: string) =>
     companyFinance.filter((row) => entrantFor(row.companySlug)?.lane === lane);
-  const inUse = mechanisms.filter((mechanism) => mechanism.status === "In use");
-  const proposed = mechanisms.filter((mechanism) => mechanism.status === "Proposed");
+  const mechanismGroups: { status: (typeof mechanisms)[number]["status"]; heading: string }[] = [
+    { status: "In use", heading: "In use" },
+    { status: "Pending award", heading: "Pending award, no executed contract" },
+    { status: "Proposed", heading: "Proposed, not yet law or practice" },
+  ];
+  /** Each claim renders with its own source link, stacked inside the row. */
+  const sourcedLines = (lines: SourcedLine[]) => lines.map((line) => <Fragment key={line.source + line.text.slice(0, 24)}>
+    <b>{line.text}</b>
+    <a href={line.source} target="_blank" rel="noreferrer">Source ↗</a>
+  </Fragment>);
 
   return <PageShell><main id="main" className="inner-page financing-page">
     <header className="page-lead grid-bg">
       <h1>Financing</h1>
-      <p>What new nuclear costs by reactor class, what each tracked company still needs before a government or commercial contract can close, which contracting mechanisms are actually in use, and who underwrites the projects. As of {dataAsOf}.</p>
+      <p>What new nuclear costs by reactor class, what each tracked company still needs before a government or commercial contract can close, which contracting mechanisms are actually in use, and who underwrites the projects. As of {financingAsOf}.</p>
     </header>
 
     <section className="section" id="cost-ladder">
@@ -87,8 +96,8 @@ export default function FinancingPage() {
               <p className="frame-note">{entrant?.design} · {entrant?.unitMWe.toLocaleString("en-US")} MWe per unit · {entrant?.ticker ?? "Private"}</p>
               <ul className="ledger wide">
                 <li><span className="ledger-date">Model</span><b>{row.model}</b><a href={row.modelSource} target="_blank" rel="noreferrer">Source ↗</a></li>
-                <li><span className="ledger-date">Government</span><b>{row.government}</b><a href={row.governmentSource} target="_blank" rel="noreferrer">Source ↗</a></li>
-                <li><span className="ledger-date">Commercial</span><b>{row.commercial}</b><a href={row.commercialSource} target="_blank" rel="noreferrer">Source ↗</a></li>
+                <li><span className="ledger-date">Government</span>{sourcedLines(row.government)}</li>
+                <li><span className="ledger-date">Commercial</span>{sourcedLines(row.commercial)}</li>
                 <li><span className="ledger-date">Stated cost</span>{row.costClaim
                   ? <><b>{row.costClaim}</b>{row.costClaimSource && <a href={row.costClaimSource} target="_blank" rel="noreferrer">Source ↗</a>}</>
                   : <b>No price or cost target on record</b>}</li>
@@ -102,23 +111,23 @@ export default function FinancingPage() {
     </section>
 
     <section className="section" id="mechanisms">
-      <div className="section-head"><h2>Contracting mechanisms</h2><p>Every mechanism listed as in use has at least one executed example. Proposals are labeled as proposals.</p></div>
-      <h3 className="lane-sub">In use</h3>
-      <div className="definition-grid">
-        {inUse.map((mechanism) => <div key={mechanism.mechanism}>
-          <b>{mechanism.mechanism}</b>
-          <p>{mechanism.how}</p>
-          <p>{mechanism.example}{mechanism.date ? ` (${mechanism.date}.)` : ""} <a href={mechanism.source} target="_blank" rel="noreferrer">Source ↗</a></p>
-        </div>)}
-      </div>
-      <h3 className="lane-sub">Proposed, not yet law or practice</h3>
-      <div className="definition-grid">
-        {proposed.map((mechanism) => <div key={mechanism.mechanism}>
-          <b>{mechanism.mechanism}</b>
-          <p>{mechanism.how}</p>
-          <p>{mechanism.example}{mechanism.date ? ` (${mechanism.date}.)` : ""} <a href={mechanism.source} target="_blank" rel="noreferrer">Source ↗</a></p>
-        </div>)}
-      </div>
+      <div className="section-head"><h2>Contracting mechanisms</h2><p>Every mechanism listed as in use has at least one executed example. A pending award is a solicited or intended award with no executed contract; proposals are labeled as proposals.</p></div>
+      {mechanismGroups.map((group) => {
+        const rows = mechanisms.filter((mechanism) => mechanism.status === group.status);
+        // An empty lane renders nothing: a heading over an empty grid would be
+        // the empty legend slot the project's rules forbid.
+        if (!rows.length) return null;
+        return <div key={group.status}>
+          <h3 className="lane-sub">{group.heading}</h3>
+          <div className="definition-grid">
+            {rows.map((mechanism) => <div key={mechanism.mechanism}>
+              <b>{mechanism.mechanism}</b>
+              <p>{mechanism.how}</p>
+              <p>{mechanism.example}{mechanism.date ? ` (${mechanism.date}.)` : ""} <a href={mechanism.source} target="_blank" rel="noreferrer">Source ↗</a></p>
+            </div>)}
+          </div>
+        </div>;
+      })}
     </section>
 
     <section className="section" id="insurance">
@@ -158,7 +167,7 @@ export default function FinancingPage() {
     </section>
 
     <section className="section" id="siting">
-      <div className="section-head"><h2>Siting, by class</h2><p>Why the three classes make different deals: the ground they need and the rules that size it.</p></div>
+      <div className="section-head"><h2>Siting, by class</h2><p>Why the three classes make different deals: the ground they need and the rules that size it. A DOE authorization on a federal site is site-specific and does not transfer to a commercial sale, which still requires an NRC license; the race board's bands keep the two apart.</p></div>
       <ul className="ledger wide">
         {sitingFacts.map((fact) => <li key={fact.fact.slice(0, 40)}>
           <span className="ledger-date">{fact.lane}</span>

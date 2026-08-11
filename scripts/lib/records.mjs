@@ -93,8 +93,8 @@ export function sourcedRecords(data) {
   }
   for (const row of data.companyFinance) {
     push("finance.model", row.companySlug, row.model, row.modelSource);
-    push("finance.government", row.companySlug, row.government, row.governmentSource);
-    push("finance.commercial", row.companySlug, row.commercial, row.commercialSource);
+    for (const line of row.government) push("finance.government", row.companySlug, line.text, line.source);
+    for (const line of row.commercial) push("finance.commercial", row.companySlug, line.text, line.source);
     if (row.costClaimSource) push("finance.cost-claim", row.companySlug, row.costClaim, row.costClaimSource);
   }
   return rows;
