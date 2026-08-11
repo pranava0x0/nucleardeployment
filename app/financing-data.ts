@@ -38,7 +38,7 @@ export type ReportRef = {
 /** An estimate or actual, labeled with who published it and in what frame. */
 export type CostBenchmark = {
   lane: FinanceLane;
-  series: "FOAK" | "NOAK" | "Actual" | "Company target";
+  series: "FOAK" | "Early units" | "NOAK" | "Actual" | "Contract value" | "Company target";
   figure: string;
   scope: string;
   basis: string;
@@ -138,7 +138,7 @@ export const costBenchmarks: CostBenchmark[] = [
   },
   {
     lane: "Cross-class",
-    series: "FOAK",
+    series: "Early units",
     figure: "$61–122/MWh",
     scope: "New nuclear with the 30% 48E investment tax credit, on overnight capital of $7,000–20,000/kW and six-year construction. DOE labels the range early-of-a-kind, between FOAK and NOAK.",
     basis: "DOE Pathways to Commercial Liftoff: Advanced Nuclear",
@@ -215,9 +215,9 @@ export const costBenchmarks: CostBenchmark[] = [
   },
   {
     lane: "Microreactor",
-    series: "Actual",
-    figure: "~$300M",
-    scope: "The Project Pele prototype: a 1.5 MWe transportable unit built under a cost-type DOD contract. A government demonstration price, not a commercial one.",
+    series: "Contract value",
+    figure: "up to $300M",
+    scope: "The Project Pele prototype: a 1.5 MWe transportable unit under a cost-type DOD contract whose value depends on options selected. A contract ceiling, not an outturn cost.",
     basis: "DOD Strategic Capabilities Office award, reported by POWER",
     date: "2022-06",
     source: "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
@@ -404,7 +404,7 @@ export const companyFinance: CompanyFinance[] = [
       { text: "DOE Reactor Pilot Program: the PWR-5 pilot at Texas A&M-RELLIS has an approved preliminary safety analysis and awaits DOE authorization for fuel and criticality.", source: "https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026" },
     ],
     commercial: [
-      { text: "No named U.S. offtaker yet. The company controls a 200-acre Haskell County, Texas site for up to 30 units (600 MW) and has filed an ERCOT interconnection request.", source: "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/" },
+      { text: "A 200-acre Haskell County, Texas site plans up to 30 units (600 MW) for data-center customers in ERCOT, interconnection request filed, with the company saying offtaker news is still to come.", source: "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/" },
     ],
     costClaim: null,
     costClaimSource: null,
@@ -415,7 +415,7 @@ export const companyFinance: CompanyFinance[] = [
     model: "Borehole developer: emplaces PWR microreactors a mile underground in ~30-inch boreholes, with the water column and surrounding rock providing the passive safety case.",
     modelSource: "https://www.deepfission.com/technology",
     government: [
-      { text: "DOE Reactor Pilot Program selection, with the pilot sited at Parsons, Kansas; data-acquisition drilling underway. Not among the program's July 2026 criticalities.", source: "https://www.world-nuclear-news.org/articles/deep-fission-begins-drilling-first-data-acquisition-well" },
+      { text: "DOE Reactor Pilot Program selection, with the pilot sited at Parsons, Kansas and data-acquisition drilling underway.", source: "https://www.world-nuclear-news.org/articles/deep-fission-begins-drilling-first-data-acquisition-well" },
     ],
     commercial: [
       { text: "Endeavour framework to co-develop 2 GW for its data-center portfolio, targeting first reactors in 2029. Non-binding.", source: "https://www.world-nuclear-news.org/articles/deep-fission-and-endeavour-announce-strategic-partnership" },
@@ -443,7 +443,7 @@ export const companyFinance: CompanyFinance[] = [
     model: "Gigasite model: hundreds of reactors clustered on single industrial campuses selling grid-independent power, hydrogen, and clean hydrocarbon fuels.",
     modelSource: "https://www.valaratomics.com",
     government: [
-      { text: "DOE Reactor Pilot Program: Ward 250 reached criticality in Utah in June 2026, the only pilot reactor built outside a national laboratory. No NRC commercial licensing case is on file yet.", source: "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality" },
+      { text: "DOE Reactor Pilot Program: Ward 250 reached criticality in Utah in June 2026, the only pilot reactor built outside a national laboratory.", source: "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality" },
     ],
     commercial: [
       { text: "NVIDIA collaboration for a ~30 MW pilot AI data center in Emery County, Utah, paired with Ward 250. Non-binding.", source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia" },
@@ -593,7 +593,7 @@ export const companyFinance: CompanyFinance[] = [
     model: "Technology licensor: ENTRA1 Energy exclusively develops, finances, owns, and operates NuScale-powered plants; NuScale sells the licensed module.",
     modelSource: "https://www.nuscalepower.com/about/strategic-partners",
     government: [
-      { text: "No active federal build program. The DOE-backed CFPP terminated in November 2023 when subscription fell short.", source: "https://www.sec.gov/Archives/edgar/data/1822966/000182296623000256/uampsnuscalejointpressre.htm" },
+      { text: "The DOE-backed CFPP, the company's federal build program, terminated in November 2023 when subscription fell short.", source: "https://www.sec.gov/Archives/edgar/data/1822966/000182296623000256/uampsnuscalejointpressre.htm" },
     ],
     commercial: [
       { text: "ENTRA1 and TVA signed a collaborative agreement to deploy up to 6 GW across TVA's service region; non-binding.", source: "https://www.world-nuclear-news.org/articles/tva-entra1-energy-team-up-for-smr-deployment" },
@@ -609,7 +609,7 @@ export const companyFinance: CompanyFinance[] = [
     model: "Reactor vendor pairing DOE pilot agreements (Project TETRA reactor, Project TEFLA fuel salt) with the commercial IMSR400 product.",
     modelSource: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under",
     government: [
-      { text: "Two DOE Other Transaction Agreements executed under Executive Order 14301 pathways; the TETRA pilot missed the program's July 2026 criticality goal with no revised date public.", source: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under" },
+      { text: "Two DOE Other Transaction Agreements executed under Executive Order 14301 pathways: Project TETRA, the pilot reactor, and Project TEFLA, the fuel salt facility.", source: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under" },
     ],
     commercial: [
       { text: "Riot Platforms collaboration scoped up to 4 GW across data-center sites in Texas and Kentucky; an MOU-level collaboration, not an order.", source: "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/" },
@@ -751,10 +751,10 @@ export const mechanisms: FinancingMechanism[] = [
     source: "https://www.sizewellc.com/news-views/final-investment-decision-reached-for-sizewell-c-the-biggest-british-clean-energy-project-in-a-generation/",
   },
   {
-    status: "In use",
+    status: "Pending",
     mechanism: "Tax-credit monetization",
     how: "Tech-neutral 45Y/48E credits, transferable for cash, cover a large share of capital for reactors beginning construction by 2034, with a 10% adder in nuclear energy communities.",
-    example: "Nuclear survived the 2025 OBBBA phase-outs that hit wind and solar; transferability is maintained with restrictions.",
+    example: "Enacted, and nuclear survived the 2025 OBBBA phase-outs that hit wind and solar; a first claim awaits the first new reactor placed in service.",
     date: "2025-07",
     source: "https://www.congress.gov/crs-product/IN12719",
   },

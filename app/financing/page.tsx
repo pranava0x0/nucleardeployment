@@ -37,7 +37,7 @@ export default function FinancingPage() {
     companyFinance.filter((row) => entrantFor(row.companySlug)?.lane === lane);
   const mechanismGroups: { status: (typeof mechanisms)[number]["status"]; heading: string }[] = [
     { status: "In use", heading: "In use" },
-    { status: "Pending", heading: "Signed or stated intent, no executed contract" },
+    { status: "Pending", heading: "Available or pending, no executed instance" },
     { status: "Proposed", heading: "Proposed, not yet law or practice" },
   ];
   /** Each claim renders with its own source link, stacked inside the row. */
@@ -115,7 +115,7 @@ export default function FinancingPage() {
     </section>
 
     <section className="section" id="mechanisms">
-      <div className="section-head"><h2>Contracting mechanisms</h2><p>Every mechanism listed as in use has at least one executed example. Signed or stated intent with no executed contract sits in its own lane; proposals are labeled as proposals.</p></div>
+      <div className="section-head"><h2>Contracting mechanisms</h2><p>Every mechanism listed as in use has at least one executed example. Anything available, solicited, or signed as intent but never yet executed sits in its own lane; proposals are labeled as proposals.</p></div>
       {mechanismGroups.map((group) => {
         const rows = mechanisms.filter((mechanism) => mechanism.status === group.status);
         // An empty lane renders nothing: a heading over an empty grid would be

@@ -135,7 +135,7 @@ A megawatt sits in exactly one band, so the bands never double-count.
 Costs, contracts, and underwriters, every figure sourced and estimates kept
 apart from facts. FOAK is a first-of-a-kind unit; NOAK the nth after learning.
 - 13 cost benchmarks by reactor class, spanning completed-plant actuals, study estimates, and company targets.
-- 15 contracting mechanisms in use with executed examples, plus 5 pending intents and 2 proposals.
+- 14 contracting mechanisms in use with executed examples, plus 6 mechanisms available or pending without an executed instance, and 2 proposals.
 - 7 underwriting institutions and 2 pooled liability structures.
 - Full layer: https://pranava0x0.github.io/nucleardeployment/financing
 

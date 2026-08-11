@@ -93,7 +93,7 @@ say();
 say("Costs, contracts, and underwriters, every figure sourced and estimates kept");
 say("apart from facts. FOAK is a first-of-a-kind unit; NOAK the nth after learning.");
 say(`- ${plural(data.costBenchmarks.length, "cost benchmark", "cost benchmarks")} by reactor class, spanning completed-plant actuals, study estimates, and company targets.`);
-say(`- ${plural(data.mechanisms.filter((m) => m.status === "In use").length, "contracting mechanism", "contracting mechanisms")} in use with executed examples, plus ${plural(data.mechanisms.filter((m) => m.status === "Pending").length, "pending intent", "pending intents")} and ${plural(data.mechanisms.filter((m) => m.status === "Proposed").length, "proposal", "proposals")}.`);
+say(`- ${plural(data.mechanisms.filter((m) => m.status === "In use").length, "contracting mechanism", "contracting mechanisms")} in use with executed examples, plus ${plural(data.mechanisms.filter((m) => m.status === "Pending").length, "mechanism", "mechanisms")} available or pending without an executed instance, and ${plural(data.mechanisms.filter((m) => m.status === "Proposed").length, "proposal", "proposals")}.`);
 say(`- ${plural(data.underwriters.length, "underwriting institution", "underwriting institutions")} and ${plural(data.liabilityPools.length, "pooled liability structure", "pooled liability structures")}.`);
 say(`- Full layer: ${page("/financing")}`);
 say();

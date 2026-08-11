@@ -1369,7 +1369,7 @@ test("the financing page renders every lane, company row, and labeled judgment",
   assert.ok(html.includes("241% average overnight-cost overrun"), "the overrun history headline is on the page");
 
   // The three mechanism lanes render, and unexecuted intent never sits in the in-use group.
-  assert.ok(html.includes("Signed or stated intent, no executed contract"), "the pending lane renders");
+  assert.ok(html.includes("Available or pending, no executed instance"), "the pending lane renders");
   assert.ok(financing.mechanisms.some((mechanism) => mechanism.status === "Pending"),
     "the dataset still exercises the pending case");
 
