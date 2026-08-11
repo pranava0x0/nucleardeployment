@@ -1368,11 +1368,10 @@ test("the financing page renders every lane, company row, and labeled judgment",
   assert.ok(html.includes("$325/MWh"), "the microreactor FOAK estimate is on the page");
   assert.ok(html.includes("241% average overnight-cost overrun"), "the overrun history headline is on the page");
 
-  // The three mechanism lanes render, and a pending award never sits in the in-use group.
-  assert.ok(html.includes("Pending award, no executed contract"), "the pending-award lane renders");
-  const financingModule = financing;
-  assert.ok(financingModule.mechanisms.some((mechanism) => mechanism.status === "Pending award"),
-    "the dataset still exercises the pending-award case");
+  // The three mechanism lanes render, and unexecuted intent never sits in the in-use group.
+  assert.ok(html.includes("Signed or stated intent, no executed contract"), "the pending lane renders");
+  assert.ok(financing.mechanisms.some((mechanism) => mechanism.status === "Pending"),
+    "the dataset still exercises the pending case");
 
   // Every entrant gets a financing row with all five labeled lines.
   for (const row of financing.companyFinance) {
@@ -1394,6 +1393,12 @@ test("the financing page renders every lane, company row, and labeled judgment",
   const placeholderCount = html.split("No price or cost target on record").length - 1;
   assert.equal(placeholderCount, nullClaims, "every absent cost claim states its absence exactly once");
   assert.ok(nullClaims > 0 && nullClaims < rowCount, "the dataset exercises both the stated and absent cost-claim cases");
+
+  // An absence is the site's finding, never pinned on a source, in both directions.
+  const emptyCommercial = financing.companyFinance.filter((row) => row.commercial.length === 0).length;
+  const absenceCount = html.split("No commercial position on record. A research finding, not a sourced claim.").length - 1;
+  assert.equal(absenceCount, emptyCommercial, "every empty commercial lane states the research finding exactly once");
+  assert.ok(emptyCommercial > 0 && emptyCommercial < rowCount, "the dataset exercises both the sourced and absent commercial cases");
 
   // No chart library ships for this page either.
   assert.doesNotMatch(raw, /chart\.js|d3\.|recharts|plotly/i);
@@ -1424,8 +1429,9 @@ test("financing records keep source hygiene: https, real-or-null dates, paired c
   for (const row of financing.companyFinance) {
     // Every government and commercial claim carries its own source; a row
     // summarizing four deals under one link is the mis-citation Codex flagged.
-    assert.ok(row.government.length >= 1 && row.commercial.length >= 1,
-      `${row.companySlug} states at least one line per lane`);
+    // An empty commercial array is legitimate: it renders as an explicit
+    // research-finding state instead of pinning an absence on a source.
+    assert.ok(row.government.length >= 1, `${row.companySlug} states at least one government line`);
     for (const line of [...row.government, ...row.commercial]) {
       assert.match(line.source, /^https:\/\//, `${row.companySlug} claim sources are https`);
       assert.ok(line.text.length > 20, `${row.companySlug} claims are sentences, not fragments`);

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T04:39:37.551Z",
+  "updated_at": "2026-08-11T04:57:36.433Z",
   "sources": {
     "https://cib-bic.ca/en/medias/articles/cib-commits-970-million-towards-canadas-first-small-modular-reactor/": {
       "hash": "9bcc7b7df82ebae1",
@@ -18,35 +18,35 @@
     },
     "https://dspace.mit.edu/bitstream/handle/1721.1/133049/Jacopo's%20and%20Jessika's%20paper%20on%20nuclear%20cost%20Sep%202020.pdf": {
       "hash": "8e03d2e9fc21608e",
-      "fetched_at": "2026-08-11T04:39:30.653Z",
+      "fetched_at": "2026-08-11T04:57:31.984Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://energy-communities-alliance.squarespace.com/s/Holtec-Slides.pdf": {
       "hash": "b5a61f40af09c445",
-      "fetched_at": "2026-08-11T04:39:27.431Z",
+      "fetched_at": "2026-08-11T04:57:28.414Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://gain.inl.gov/content/uploads/4/2024/11/DOE-Advanced-Nuclear-Liftoff-Report.pdf": {
       "hash": "57d8ad3ab1b62337",
-      "fetched_at": "2026-08-11T04:39:28.046Z",
+      "fetched_at": "2026-08-11T04:57:29.303Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://gain.inl.gov/content/uploads/4/2024/11/INL-RPT-23-72972-Literature-Review-of-Adv-Reactor-Cost-Estimates.pdf": {
       "hash": "c4f9be65bc0b2113",
-      "fetched_at": "2026-08-11T04:39:35.016Z",
+      "fetched_at": "2026-08-11T04:57:35.655Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://gain.inl.gov/content/uploads/4/2025/03/2024-Document-INL-RPT-24-80433.pdf": {
       "hash": "7545f944429043a7",
-      "fetched_at": "2026-08-11T04:39:30.110Z",
+      "fetched_at": "2026-08-11T04:57:31.441Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
@@ -76,7 +76,7 @@
     },
     "https://inl.gov/news-release/national-reactor-innovation-center-announces-first-selections-for-nuclear-energy-launch-pad/": {
       "hash": "7fd0bdd565ce8ec7",
-      "fetched_at": "2026-08-11T04:39:27.269Z",
+      "fetched_at": "2026-08-11T04:57:28.268Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -139,7 +139,7 @@
     },
     "https://nuclearinnovationalliance.org/sites/default/files/2026-04/The%20Role%20of%20DOE%E2%80%99s%20Office%20of%20Energy%20Dominance%20Financing%20in%20U.S.%20Nuclear%20Energy%20Leadership%20-%20March%202026%20Update.pdf": {
       "hash": "502eb9e2c4634950",
-      "fetched_at": "2026-08-11T04:39:33.112Z",
+      "fetched_at": "2026-08-11T04:57:34.664Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
@@ -162,7 +162,7 @@
     },
     "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx": {
       "hash": "246dd6427b9555e8",
-      "fetched_at": "2026-08-11T04:38:00.823Z",
+      "fetched_at": "2026-08-11T04:56:01.997Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -185,7 +185,7 @@
     },
     "https://oklo.com/newsroom/news-details/2026/Oklos-Groves-Reactor-Achieves-First-Criticality-in-Under-a-Year/default.aspx": {
       "hash": "f1b960f1cd9ace8d",
-      "fetched_at": "2026-08-11T04:39:05.221Z",
+      "fetched_at": "2026-08-11T04:57:06.246Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -232,7 +232,7 @@
     },
     "https://techfundingnews.com/a-high-school-dropouts-nuclear-startup-just-landed-1b-from-sequoia-at-a-6b-valuation/": {
       "hash": "ed96ecaab5132b0e",
-      "fetched_at": "2026-08-11T04:38:23.458Z",
+      "fetched_at": "2026-08-11T04:56:24.446Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -286,7 +286,7 @@
     },
     "https://www.accessnewswire.com/newsroom/en/clean-technology/radiant-announces-equinix-preorder-and-deposits-for-20-kaleidos-microreactors-1061067": {
       "hash": "c30aa2c537969ff4",
-      "fetched_at": "2026-08-11T04:39:30.851Z",
+      "fetched_at": "2026-08-11T04:57:32.250Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -355,6 +355,14 @@
       "title": "Amazon investing in SMRs to deploy 5 GW by 2039 -- ANS / Nuclear Newswire",
       "bytes": 5488
     },
+    "https://www.army.mil/article/288903/army_announces_janus_program_for_next_generation_nuclear_energy": {
+      "hash": "70eeb9c6466279d9",
+      "fetched_at": "2026-08-11T04:57:33.521Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Army announces Janus Program for next-generation nuclear energy &#124; Article &#124; The United States Army",
+      "bytes": 5308
+    },
     "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors": {
       "hash": "f68abb8c2c225454",
       "fetched_at": "2026-08-06T18:27:59.686Z",
@@ -380,7 +388,7 @@
     },
     "https://www.bdlaw.com/publications/nrc-finalizes-new-optional-licensing-framework-for-advanced-reactors/": {
       "hash": "2ee10a98245590c1",
-      "fetched_at": "2026-08-11T04:39:33.176Z",
+      "fetched_at": "2026-08-11T04:57:35.414Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -395,42 +403,42 @@
     },
     "https://www.bloomberg.com/news/articles/2025-12-17/nuclear-startup-radiant-raises-300-million-for-small-reactors": {
       "hash": "f71a752f3d93f206",
-      "fetched_at": "2026-08-11T04:38:23.169Z",
+      "fetched_at": "2026-08-11T04:56:24.191Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.bloomberg.com/news/articles/2026-07-31/nuclear-tech-firm-westinghouse-files-confidentially-for-ipo": {
       "hash": "9ffd92ad72e9efd5",
-      "fetched_at": "2026-08-11T04:38:03.091Z",
+      "fetched_at": "2026-08-11T04:56:04.116Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.businesswire.com/news/home/20250820559252/en/Aalo-Atomics-Secures-$100-Million-in-Series-B-Funding-to-Build-Modular-Nuclear-Plants-Purpose-Built-for-Powering-AI-Data-Centers": {
       "hash": "cdb38eaf2c069cd3",
-      "fetched_at": "2026-08-11T04:38:23.095Z",
+      "fetched_at": "2026-08-11T04:56:24.121Z",
       "http_status": 0,
       "state": "unreachable",
       "note": "Could not fetch: TimeoutError"
     },
     "https://www.businesswire.com/news/home/20250910715287/en/Aalo-Atomics-Becomes-First-U.S.-Nuclear-Reactor-Company-with-a-Contract-for-Commercial-Delivery-of-Enriched-Uranium-Hits-Crucial-Next-Milestone-on-Path-to-2026-Startup": {
       "hash": "3a998634e6b98416",
-      "fetched_at": "2026-08-11T04:39:27.178Z",
+      "fetched_at": "2026-08-11T04:57:28.201Z",
       "http_status": 0,
       "state": "unreachable",
       "note": "Could not fetch: TimeoutError"
     },
     "https://www.businesswire.com/news/home/20251202017776/en/Antares-Raises-$96-Million-in-Series-B-Funding-to-Accelerate-Nuclear-Microreactor-Development": {
       "hash": "86b5b149d93aeed1",
-      "fetched_at": "2026-08-11T04:38:43.168Z",
+      "fetched_at": "2026-08-11T04:56:44.190Z",
       "http_status": 0,
       "state": "unreachable",
       "note": "Could not fetch: ETIMEDOUT"
     },
     "https://www.businesswire.com/news/home/20260514188075/en/Terrestrial-Energy-Reports-First-Quarter-2026-Results": {
       "hash": "e99bce68e50b1ac3",
-      "fetched_at": "2026-08-11T04:39:05.172Z",
+      "fetched_at": "2026-08-11T04:57:06.196Z",
       "http_status": 0,
       "state": "unreachable",
       "note": "Could not fetch: TimeoutError"
@@ -453,21 +461,21 @@
     },
     "https://www.congress.gov/crs-product/IF10821": {
       "hash": "fad6fea0a78fec7e",
-      "fetched_at": "2026-08-11T04:39:32.938Z",
+      "fetched_at": "2026-08-11T04:57:34.342Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.congress.gov/crs-product/IN12719": {
       "hash": "16c20b57ebf031fe",
-      "fetched_at": "2026-08-11T04:39:30.898Z",
+      "fetched_at": "2026-08-11T04:57:32.302Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.cooperative.com/programs-services/bts/documents/advisories/advisory-nuscale-and-uamps-end-smr-project-cfpp-dec-2023.pdf": {
       "hash": "78074bdb3b9a94cc",
-      "fetched_at": "2026-08-11T04:39:30.790Z",
+      "fetched_at": "2026-08-11T04:57:32.149Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
@@ -650,7 +658,7 @@
     },
     "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf": {
       "hash": "77f376c4a67fb2c5",
-      "fetched_at": "2026-08-11T04:39:27.560Z",
+      "fetched_at": "2026-08-11T04:57:28.552Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
@@ -755,7 +763,7 @@
     },
     "https://www.gurufocus.com/news/8922229/deep-fission-fisn-prices-ipo-at-16-raising-40-million": {
       "hash": "c7a01718f12b4a14",
-      "fetched_at": "2026-08-11T04:38:43.223Z",
+      "fetched_at": "2026-08-11T04:56:44.243Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -778,7 +786,7 @@
     },
     "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf": {
       "hash": "ba02deeb2d6b76ff",
-      "fetched_at": "2026-08-11T04:39:27.953Z",
+      "fetched_at": "2026-08-11T04:57:29.133Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
@@ -817,7 +825,7 @@
     },
     "https://www.nrc.gov/docs/ML2009/ML20097B839.pdf": {
       "hash": "35d0e74073a33e03",
-      "fetched_at": "2026-08-11T04:39:34.877Z",
+      "fetched_at": "2026-08-11T04:57:35.577Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
@@ -888,7 +896,7 @@
     },
     "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-054.pdf": {
       "hash": "f3590a2cefe80dfa",
-      "fetched_at": "2026-08-11T04:38:00.897Z",
+      "fetched_at": "2026-08-11T04:56:02.070Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
@@ -911,7 +919,7 @@
     },
     "https://www.nucnet.org/news/oklo-signs-nuclear-pre-agreement-with-data-company-equinix-4-2-2024": {
       "hash": "af32f1470f091d30",
-      "fetched_at": "2026-08-11T04:38:01.273Z",
+      "fetched_at": "2026-08-11T04:56:02.449Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -934,7 +942,7 @@
     },
     "https://www.nucnet.org/news/us-startup-last-energy-raises-usd40-million-for-ambitious-microreactor-project-8-5-2024": {
       "hash": "cd7ca7d5fcb1ae7a",
-      "fetched_at": "2026-08-11T04:38:43.266Z",
+      "fetched_at": "2026-08-11T04:56:44.283Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -1053,7 +1061,7 @@
     },
     "https://www.radiantnuclear.com/blog/series-c-close/": {
       "hash": "e73ab482b802c374",
-      "fetched_at": "2026-08-11T04:38:23.324Z",
+      "fetched_at": "2026-08-11T04:56:24.312Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -1084,28 +1092,28 @@
     },
     "https://www.sec.gov/Archives/edgar/data/0002104277/000119312526301023/d40440ds1.htm": {
       "hash": "7a430bdaf384935d",
-      "fetched_at": "2026-08-11T04:38:03.006Z",
+      "fetched_at": "2026-08-11T04:56:04.041Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000024/a2025annualreportmaster.htm": {
       "hash": "31f776db771eb1c7",
-      "fetched_at": "2026-08-11T04:39:32.983Z",
+      "fetched_at": "2026-08-11T04:57:34.399Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.sec.gov/Archives/edgar/data/1822966/000182296623000008/pressreleasenuscalereach.htm": {
       "hash": "b699b213e8f016e8",
-      "fetched_at": "2026-08-11T04:39:28.111Z",
+      "fetched_at": "2026-08-11T04:57:29.411Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.sec.gov/Archives/edgar/data/1822966/000182296623000256/uampsnuscalejointpressre.htm": {
       "hash": "1147414b5e1ecad7",
-      "fetched_at": "2026-08-11T04:39:36.179Z",
+      "fetched_at": "2026-08-11T04:57:36.433Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -1136,7 +1144,7 @@
     },
     "https://www.tatachemicals.com/upload/content_pdf/BWXT-Tata-LOI-12-December-2024.pdf": {
       "hash": "6c3101e86e05b83a",
-      "fetched_at": "2026-08-11T04:38:02.878Z",
+      "fetched_at": "2026-08-11T04:56:03.855Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
@@ -1191,7 +1199,7 @@
     },
     "https://www.tipranks.com/news/oklo-is-about-to-report-q2-earnings-heres-what-to-expect-from-the-nuclear-energy-stock": {
       "hash": "71a3b47f32e71c11",
-      "fetched_at": "2026-08-11T04:38:02.931Z",
+      "fetched_at": "2026-08-11T04:56:03.907Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -1235,6 +1243,14 @@
       "state": "stored",
       "title": "Washington nuclear facility will deploy 12 Amazon-funded SMRs | Utility Dive",
       "bytes": 11248
+    },
+    "https://www.valaratomics.com": {
+      "hash": "0b187afb5bb71f25",
+      "fetched_at": "2026-08-11T04:57:35.732Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "The New Atomic Age | Valar Atomics",
+      "bytes": 3411
     },
     "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia": {
       "hash": "af3298d0714bc2c9",
@@ -1339,6 +1355,14 @@
       "state": "stored",
       "title": "TVA, ENTRA1 Energy team up for SMR deployment - World Nuclear News",
       "bytes": 4825
+    },
+    "https://www.world-nuclear-news.org/articles/us-exim-bank-approves-loan-for-romanian-smr-project": {
+      "hash": "ac8c10d684042451",
+      "fetched_at": "2026-08-11T04:57:35.352Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "US Exim Bank approves loan for Romanian SMR project - World Nuclear News",
+      "bytes": 5727
     },
     "https://www.world-nuclear-news.org/Articles/Westinghouse-unveils-AP300-small-modular-reactor": {
       "hash": "1ea39c50034e1881",

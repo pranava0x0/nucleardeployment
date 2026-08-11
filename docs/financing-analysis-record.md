@@ -105,11 +105,27 @@ is structural, not editorial: `government` and `commercial` are now arrays of
 one-claim-one-source lines, compound siting facts are split per source, and
 the hygiene test enforces a source per line. The fourth finding: the Eielson
 Notice of Intent sat in the in-use mechanism lane whose intro promises an
-executed example, so mechanisms now carry a "Pending award" status with its
-own lane; and `/financing` inherited the race dataset's sitemap `lastmod`,
-which predated the page's own existence, so the layer now carries its own
-`financingAsOf` stamp in the sitemap and page header. The review finding was a
-sample; the grep found the class.
+executed example, so mechanisms gained a pending lane; and `/financing`
+inherited the race dataset's sitemap `lastmod`, which predated the page's own
+existence, so the layer now carries its own `financingAsOf` stamp in the
+sitemap and page header. The review finding was a sample; the grep found the
+class.
+
+Round two proved the first sweep stopped at the collection boundary: the same
+one-claim-one-source class lived on in mechanism examples (the prepayment row
+put the Equinix $25M on the Meta URL; the Diamondback LOI sat in the in-use
+lane), in underwriter commitments (EDF's row carried the $17.5B on the NIA
+report, which predates that announcement), and in absence claims (NANO's "no
+power customer" was pinned on an AFWERX release that never says it). The
+second sweep covered every prose-example field: mechanism examples are
+single-source with a "Pending" lane for signed or stated intent (Eielson,
+Janus, Diamondback), underwriter commitments are trimmed to their source,
+Vogtle's overrun history is split into a mid-build row (Eash-Gates) and an
+as-built row (Lazard), the ITC buffer became its own page-stamped overrun
+record, and an empty commercial lane now renders as an explicit research
+finding rather than a sourced claim, counted in both directions by the test.
+Lesson sharpened: sweeping "the class" means every field that pairs prose
+with one link, not just the collection the finding pointed at.
 
 ## Verified numbers
 

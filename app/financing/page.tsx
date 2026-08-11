@@ -37,7 +37,7 @@ export default function FinancingPage() {
     companyFinance.filter((row) => entrantFor(row.companySlug)?.lane === lane);
   const mechanismGroups: { status: (typeof mechanisms)[number]["status"]; heading: string }[] = [
     { status: "In use", heading: "In use" },
-    { status: "Pending award", heading: "Pending award, no executed contract" },
+    { status: "Pending", heading: "Signed or stated intent, no executed contract" },
     { status: "Proposed", heading: "Proposed, not yet law or practice" },
   ];
   /** Each claim renders with its own source link, stacked inside the row. */
@@ -96,8 +96,12 @@ export default function FinancingPage() {
               <p className="frame-note">{entrant?.design} · {entrant?.unitMWe.toLocaleString("en-US")} MWe per unit · {entrant?.ticker ?? "Private"}</p>
               <ul className="ledger wide">
                 <li><span className="ledger-date">Model</span><b>{row.model}</b><a href={row.modelSource} target="_blank" rel="noreferrer">Source ↗</a></li>
-                <li><span className="ledger-date">Government</span>{sourcedLines(row.government)}</li>
-                <li><span className="ledger-date">Commercial</span>{sourcedLines(row.commercial)}</li>
+                <li><span className="ledger-date">Government</span>{row.government.length
+                  ? sourcedLines(row.government)
+                  : <b>No government vehicle on record. A research finding, not a sourced claim.</b>}</li>
+                <li><span className="ledger-date">Commercial</span>{row.commercial.length
+                  ? sourcedLines(row.commercial)
+                  : <b>No commercial position on record. A research finding, not a sourced claim.</b>}</li>
                 <li><span className="ledger-date">Stated cost</span>{row.costClaim
                   ? <><b>{row.costClaim}</b>{row.costClaimSource && <a href={row.costClaimSource} target="_blank" rel="noreferrer">Source ↗</a>}</>
                   : <b>No price or cost target on record</b>}</li>
@@ -111,7 +115,7 @@ export default function FinancingPage() {
     </section>
 
     <section className="section" id="mechanisms">
-      <div className="section-head"><h2>Contracting mechanisms</h2><p>Every mechanism listed as in use has at least one executed example. A pending award is a solicited or intended award with no executed contract; proposals are labeled as proposals.</p></div>
+      <div className="section-head"><h2>Contracting mechanisms</h2><p>Every mechanism listed as in use has at least one executed example. Signed or stated intent with no executed contract sits in its own lane; proposals are labeled as proposals.</p></div>
       {mechanismGroups.map((group) => {
         const rows = mechanisms.filter((mechanism) => mechanism.status === group.status);
         // An empty lane renders nothing: a heading over an empty grid would be

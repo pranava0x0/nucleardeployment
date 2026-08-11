@@ -73,8 +73,8 @@ export type CompanyFinance = {
 };
 
 export type FinancingMechanism = {
-  /** "Pending award" covers a solicited or intended award with no executed contract. */
-  status: "In use" | "Pending award" | "Proposed";
+  /** "Pending" covers signed or stated intent with no executed contract. */
+  status: "In use" | "Pending" | "Proposed";
   mechanism: string;
   how: string;
   example: string;
@@ -178,7 +178,7 @@ export const costBenchmarks: CostBenchmark[] = [
     lane: "Grid-scale SMR",
     series: "Company target",
     figure: "$89/MWh",
-    scope: "The CFPP's updated target power price, January 2023, with Inflation Reduction Act support. The DOE-backed project terminated that November for lack of subscription.",
+    scope: "The CFPP's updated target power price, January 2023, with Inflation Reduction Act support; the project terminated later that year.",
     basis: "NuScale 8-K",
     date: "2023-01",
     source: "https://www.sec.gov/Archives/edgar/data/1822966/000182296623000008/pressreleasenuscalereach.htm",
@@ -273,7 +273,7 @@ export const learningRungs: LearningRung[] = [
   },
   {
     units: "~30–50 units",
-    effect: "Microreactors need a far deeper orderbook, roughly 30–50 reactors, before factory production pencils. Radiant's Oak Ridge factory targets 50 units a year against that math.",
+    effect: "Microreactors need a far deeper orderbook, roughly 30–50 reactors, before factory production pencils.",
     basis: "DOE Liftoff, p. 31",
     source: "https://gain.inl.gov/content/uploads/4/2024/11/DOE-Advanced-Nuclear-Liftoff-Report.pdf",
     report: { reportSlug: "doe-liftoff-advanced-nuclear-2024", page: 31, quote: "orderbook of ~30-50 reactors" },
@@ -297,12 +297,28 @@ export const overrunRecords: OverrunRecord[] = [
     report: { reportSlug: "eash-gates-2020-joule", page: 1, quote: "cost overrun of 241%" },
   },
   {
-    subject: "Vogtle 3&4",
-    figure: "$14B initial → ~$32.3B built",
-    note: "The 2020 study recorded $25B against the $14B initial estimate mid-build; Lazard's 2025 actuals assume ~$32.3B total capital for the completed 2.2 GW.",
+    subject: "Vogtle 3&4, mid-build",
+    figure: "$14B initial estimate → $25B by 2020",
+    note: "Nearly double the initial estimate with construction still underway, at $11,000/kW.",
+    date: "2020-11",
+    source: "https://dspace.mit.edu/bitstream/handle/1721.1/133049/Jacopo's%20and%20Jessika's%20paper%20on%20nuclear%20cost%20Sep%202020.pdf",
+    report: { reportSlug: "eash-gates-2020-joule", page: 1, quote: "almost twice as high as the initial estimate of $14B" },
+  },
+  {
+    subject: "Vogtle 3&4, as built",
+    figure: "~$32.3B total capital",
+    note: "Lazard's assumption for the completed 2.2 GW, the basis of its $169/MWh actual.",
     date: "2025-06",
     source: "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
     report: { reportSlug: "lazard-lcoe-june-2025", page: 8 },
+  },
+  {
+    subject: "The 48E buffer",
+    figure: "ITC pays 30-50% of capital regardless of budget",
+    note: "DOE's framing: because the investment tax credit applies to capital cost whatever the final bill, it functions as overrun insurance for the equity behind a project.",
+    date: "2024-09",
+    source: "https://gain.inl.gov/content/uploads/4/2024/11/DOE-Advanced-Nuclear-Liftoff-Report.pdf",
+    report: { reportSlug: "doe-liftoff-advanced-nuclear-2024", page: 35, quote: "the ITC applies 30-50% to capital cost regardless of initial budget" },
   },
   {
     subject: "V.C. Summer 2&3",
@@ -360,7 +376,7 @@ export const companyFinance: CompanyFinance[] = [
       { text: "The $17.5B conditional supply-chain commitment is scoped to AP1000 long-lead items, not to eVinci or AP300.", source: "https://info.westinghousenuclear.com/news/westinghouse-announces-department-of-energy-partnership-to-jumpstart-large-scale-nuclear-supply-chain" },
     ],
     commercial: [
-      { text: "The Saskatchewan Research Council is the first commercial eVinci customer, planning a pilot by 2029. No U.S. eVinci or AP300 customer is on record.", source: "https://www.powermag.com/westinghouse-secures-first-customer-for-evinci-nuclear-microreactor/" },
+      { text: "The Saskatchewan Research Council is the first commercial eVinci customer, planning a pilot by 2029.", source: "https://www.powermag.com/westinghouse-secures-first-customer-for-evinci-nuclear-microreactor/" },
     ],
     costClaim: null,
     costClaimSource: null,
@@ -410,7 +426,7 @@ export const companyFinance: CompanyFinance[] = [
   },
   {
     companySlug: "aalo-atomics",
-    model: "Vertically integrated for AI data centers: builds the reactor, its fuel assemblies, and the 50 MWe Aalo Pod plant product.",
+    model: "Vertically integrated for AI data centers: the Aalo-X reactor and the 50 MWe Aalo Pod plant product.",
     modelSource: "https://www.aalo.com/aalo-x",
     government: [
       { text: "DOE Reactor Pilot Program: its Critical Test Reactor reached criticality at INL on July 4, 2026, and Aalo-X proceeds under the same DOE authority.", source: "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal" },
@@ -424,8 +440,8 @@ export const companyFinance: CompanyFinance[] = [
   },
   {
     companySlug: "valar-atomics",
-    model: "Gigasite model: hundreds of reactors clustered on industrial campuses selling power, hydrogen, and synthetic fuels, funded by the lane's largest venture stack plus a $200M credit facility.",
-    modelSource: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia",
+    model: "Gigasite model: hundreds of reactors clustered on single industrial campuses selling grid-independent power, hydrogen, and clean hydrocarbon fuels.",
+    modelSource: "https://www.valaratomics.com",
     government: [
       { text: "DOE Reactor Pilot Program: Ward 250 reached criticality in Utah in June 2026, the only pilot reactor built outside a national laboratory. No NRC commercial licensing case is on file yet.", source: "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality" },
     ],
@@ -445,7 +461,7 @@ export const companyFinance: CompanyFinance[] = [
       { text: "One of three finalists for ANPI base assignments in Colorado and Montana; no award yet.", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
     ],
     commercial: [
-      { text: "No commercial offtake on record; the defense agreements are R&D-scoped with no disclosed megawatts.", source: "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/" },
+      { text: "The Air Force, Space Force, DIU, and NASA agreements are R&D-scoped, with no deployment megawatts or dollar figures disclosed.", source: "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/" },
     ],
     costClaim: null,
     costClaimSource: null,
@@ -458,24 +474,20 @@ export const companyFinance: CompanyFinance[] = [
     government: [
       { text: "AFWERX Direct-to-Phase-II contract (~$1.25M) to study a KRONOS system at Joint Base Anacostia-Bolling. A feasibility study, not a unit order.", source: "https://www.globenewswire.com/news-release/2025/09/09/3147107/0/en/FOR-IMMEDIATE-RELEASE-UPDATE-NANO-Nuclear-Awarded-AFWERX-Direct-to-Phase-II-Contract-for-KRONOS-MMR-RDT-E-at-Joint-Base-Anacostia-Bolling.html" },
     ],
-    commercial: [
-      { text: "No power customer on record.", source: "https://www.globenewswire.com/news-release/2025/09/09/3147107/0/en/FOR-IMMEDIATE-RELEASE-UPDATE-NANO-Nuclear-Awarded-AFWERX-Direct-to-Phase-II-Contract-for-KRONOS-MMR-RDT-E-at-Joint-Base-Anacostia-Bolling.html" },
-    ],
+    commercial: [],
     costClaim: null,
     costClaimSource: null,
     nextGate: "The KRONOS construction permit (~12-month NRC clock from May 2026) and a first paying customer beyond the feasibility study.",
   },
   {
     companySlug: "deployable-energy",
-    model: "Founder-funded nuclear-battery startup: 1 MWe Unity units aimed at behind-the-meter national-security, data-center, maritime, and remote industrial loads.",
+    model: "Nuclear-battery platform: 1 MWe Unity units aimed at behind-the-meter national-security, data-center, maritime, and remote industrial loads.",
     modelSource: "https://www.deployable.energy/post/deployable-energy-announces-unity-demonstration-reactor-achieves-criticality-at-idaho-national-labor",
     government: [
       { text: "Reactor Pilot Program criticality at INL on July 1, 2026, about 150 days from kickoff.", source: "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor" },
       { text: "One of the first four developers named to DOE's Nuclear Energy Launch Pad.", source: "https://inl.gov/news-release/national-reactor-innovation-center-announces-first-selections-for-nuclear-energy-launch-pad/" },
     ],
-    commercial: [
-      { text: "No customer contracts, MOUs, or LOIs on record.", source: "https://www.axios.com/local/houston/2026/04/29/houston-nuclear-startup-deployable-energy-idaho-reactor" },
-    ],
+    commercial: [],
     costClaim: null,
     costClaimSource: null,
     nextGate: "A first disclosed customer or program contract beyond the DOE pilot cohort.",
@@ -615,7 +627,7 @@ export const mechanisms: FinancingMechanism[] = [
     status: "In use",
     mechanism: "Milestone-based cost share",
     how: "The government pays fixed amounts only when named milestones complete, so overruns between milestones stay with the developer.",
-    example: "DOE/Kairos Technology Investment Agreement: $629M Hermes 1 project, DOE pays up to $303M against milestones. The $400M Gen III+ Tier 1 awards to Holtec and TVA use the same shape.",
+    example: "The DOE/Kairos Technology Investment Agreement: a $629M Hermes 1 project with DOE paying up to $303M against fixed milestones.",
     date: "2024-02",
     source: "https://www.powermag.com/doe-kairos-unveil-milestone-based-funding-agreement-for-advanced-nuclear-demonstration-project/",
   },
@@ -623,17 +635,9 @@ export const mechanisms: FinancingMechanism[] = [
     status: "In use",
     mechanism: "50/50 demonstration cost share",
     how: "DOE matches project spend up to a ceiling, halving the private capital a first unit needs.",
-    example: "ARDP: up to $2B for TerraPower's Natrium, up to $1.2B for X-energy's Xe-100 and fuel plant.",
+    example: "ARDP: X-energy's award of up to $1.2B at 50/50 to develop, license, build, and demonstrate the first Xe-100 plant and fuel facility.",
     date: "2020-10",
     source: "https://x-energy.com/news/x-energy-signs-department-of-energys-advanced-reactor-demonstration-program-ardp-cooperative-agreement/",
-  },
-  {
-    status: "Pending award",
-    mechanism: "Fixed-price power at a defense site",
-    how: "The developer finances, builds, owns, and operates; the government commits to buy power at a fixed price for decades, making the plant bankable without an equipment sale.",
-    example: "Air Force/DLA Notice of Intent to Award to Oklo: a 5 MW microreactor at Eielson AFB under a prospective 30-year arrangement, with contract negotiations pending NRC licensing. The Army's Janus Program solicits the same shape fleet-wide; no award has been made under either.",
-    date: "2025-06",
-    source: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
   },
   {
     status: "In use",
@@ -647,7 +651,7 @@ export const mechanisms: FinancingMechanism[] = [
     status: "In use",
     mechanism: "Order book with per-plant PPAs",
     how: "One master agreement commits a fleet; each plant closes its own PPA as it matures. The buyer gets optionality, the developer gets a book that supply chains can invest against.",
-    example: "Google-Kairos Master Plant Development Agreement: up to 500 MW by 2035, first deployment Hermes 2.",
+    example: "Google-Kairos Master Plant Development Agreement: up to 500 MW by 2035.",
     date: "2024-10",
     source: "https://www.kairospower.com/updates/google-and-kairos-power-partner-to-deploy-500-mw-of-clean-electricity-generation",
   },
@@ -663,9 +667,17 @@ export const mechanisms: FinancingMechanism[] = [
     status: "In use",
     mechanism: "Power prepayment",
     how: "The buyer prepays for future electricity, financing construction from the demand side without taking equity.",
-    example: "Meta-Oklo agreement for up to 1.2 GW in Ohio lets Meta prepay for power and fund development; Equinix prepaid Oklo $25M against up to 500 MWe with a right of first refusal.",
+    example: "The Meta-Oklo agreement for up to 1.2 GW in Ohio lets Meta prepay for power and fund project development.",
     date: "2026-01",
     source: "https://oklo.com/newsroom/news-details/2026/Oklo-Meta-Announce-Agreement-in-Support-of-1-2-GW-Nuclear-Energy-Development-in-Southern-Ohio/default.aspx",
+  },
+  {
+    status: "In use",
+    mechanism: "Prepayment for optionality",
+    how: "A deposit today buys first claim on capacity tomorrow: real money moves while the offtake itself stays unsigned.",
+    example: "Equinix prepaid Oklo $25M under a pre-agreement carrying a 36-month right of first refusal on up to 500 MWe; the offtake beyond the prepayment is non-binding.",
+    date: "2024-04",
+    source: "https://www.nucnet.org/news/oklo-signs-nuclear-pre-agreement-with-data-company-equinix-4-2-2024",
   },
   {
     status: "In use",
@@ -677,25 +689,17 @@ export const mechanisms: FinancingMechanism[] = [
   },
   {
     status: "In use",
-    mechanism: "Oil & gas offtake",
-    how: "Producers with remote, always-on load contract for behind-the-meter nuclear the way they contract field power today.",
-    example: "Oklo-Diamondback letter of intent: 50 MW over 20 years for Permian Basin operations.",
-    date: "2025-04",
-    source: "https://www.power-eng.com/nuclear/oklo-secures-up-to-750-mw-worth-of-new-data-center-partnerships/",
-  },
-  {
-    status: "In use",
-    mechanism: "Developer-owned merchant build",
-    how: "The developer finances its own site and sells into the market or under PPAs it originates, keeping control of price and pace.",
-    example: "Last Energy's Haskell County, Texas site: up to 30 PWR-20 units with an ERCOT interconnection request; its 34 Poland/UK PPAs are the executed version.",
-    date: "2025-04",
-    source: "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/",
+    mechanism: "Developer-owned build with PPAs",
+    how: "The developer finances, owns, and operates its own units and sells power under PPAs it originates, keeping control of price and pace.",
+    example: "Last Energy's 34 executed PPAs across Poland and the UK: 680 MW, roughly $18.9B in power sales.",
+    date: "2024-03",
+    source: "https://www.powermag.com/last-energy-secures-ppas-for-34-smr-nuclear-power-plants-in-poland-and-the-uk/",
   },
   {
     status: "In use",
     mechanism: "Exclusive commercialization partner",
     how: "A partner develops, finances, owns, and operates every plant; the reactor company stays a technology licensor.",
-    example: "ENTRA1 Energy for NuScale, positioned for up to $25B under the U.S.-Japan framework.",
+    example: "ENTRA1 Energy, NuScale's exclusive global commercial partner.",
     date: "2025-09",
     source: "https://www.nuscalepower.com/about/strategic-partners",
   },
@@ -727,7 +731,7 @@ export const mechanisms: FinancingMechanism[] = [
     status: "In use",
     mechanism: "Sovereign framework investment",
     how: "A trade framework routes allied capital into named reactor programs, adding a state balance sheet beside private ones.",
-    example: "The U.S.-Japan framework: up to $25B toward ENTRA1/NuScale deployments and up to $40B toward BWRX-300 builds in Tennessee and Alabama. The framework is executed government-to-government; the project documents under it are not.",
+    example: "The U.S.-Japan framework's up to $40B for BWRX-300 builds at unidentified Tennessee and Alabama sites. The framework is executed government-to-government; the project documents under it are not.",
     date: "2026-03",
     source: "https://www.ans.org/news/2026-03-25/article-7878/new-us-bwrx300-projects-get-japanese-investment/",
   },
@@ -743,17 +747,41 @@ export const mechanisms: FinancingMechanism[] = [
     status: "In use",
     mechanism: "Regulated asset base (UK)",
     how: "Consumers pay a regulated charge during construction, cutting financing costs by years of carry; the state co-invests and shares overrun risk.",
-    example: "Sizewell C: the first nuclear RAB, ~£38B, final investment decision July 2025 with the UK government as largest shareholder, then a £5B export-credit-backed debt raise at financial close.",
+    example: "Sizewell C: the first nuclear RAB, around \u00a338B, final investment decision July 2025 with the UK government as largest shareholder.",
     date: "2025-07",
     source: "https://www.sizewellc.com/news-views/final-investment-decision-reached-for-sizewell-c-the-biggest-british-clean-energy-project-in-a-generation/",
   },
   {
     status: "In use",
     mechanism: "Tax-credit monetization",
-    how: "Tech-neutral 45Y/48E credits, transferable for cash, cover a large share of capital for reactors beginning construction by 2034, with a 10% adder in nuclear energy communities. DOE notes the ITC pays out regardless of budget performance, so it absorbs overruns too.",
+    how: "Tech-neutral 45Y/48E credits, transferable for cash, cover a large share of capital for reactors beginning construction by 2034, with a 10% adder in nuclear energy communities.",
     example: "Nuclear survived the 2025 OBBBA phase-outs that hit wind and solar; transferability is maintained with restrictions.",
     date: "2025-07",
     source: "https://www.congress.gov/crs-product/IN12719",
+  },
+  {
+    status: "Pending",
+    mechanism: "Fixed-price power at a defense site",
+    how: "The developer finances, builds, owns, and operates; the government commits to buy power at a fixed price for decades, making the plant bankable without an equipment sale.",
+    example: "The Air Force/DLA Notice of Intent to Award to Oklo: a 5 MW microreactor at Eielson AFB under a prospective 30-year arrangement, with contract negotiations pending NRC licensing. No contract is executed.",
+    date: "2025-06",
+    source: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
+  },
+  {
+    status: "Pending",
+    mechanism: "Milestone-contracted installation power (Army)",
+    how: "The Army's Janus Program solicits commercially owned and operated microreactors on installations, paid against milestones.",
+    example: "Program announced October 2025 with site selection following; no vendor award named.",
+    date: "2025-10",
+    source: "https://www.army.mil/article/288903/army_announces_janus_program_for_next_generation_nuclear_energy",
+  },
+  {
+    status: "Pending",
+    mechanism: "Oil & gas offtake",
+    how: "Producers with remote, always-on load contract for behind-the-meter nuclear the way they contract field power today.",
+    example: "The Oklo-Diamondback letter of intent, 50 MW over 20 years for Permian Basin operations, is non-binding; no executed oil-and-gas offtake is on record.",
+    date: "2025-04",
+    source: "https://www.power-eng.com/nuclear/oklo-secures-up-to-750-mw-worth-of-new-data-center-partnerships/",
   },
   {
     status: "Proposed",
@@ -794,7 +822,7 @@ export const underwriters: Underwriter[] = [
   {
     name: "DOE Office of Energy Dominance Financing (ex-LPO)",
     role: "Federal lender bridging first-mover projects to private capital",
-    commitment: "Holds the $17.5B conditional commitment for AP1000 long-lead items; the Energy Infrastructure Reinvestment program keeps ~$250B lending authority after OBBBA cut its credit-subsidy appropriation from $5B to $1B; closed the Palisades restart loan and a $26.5B Southern Company loan.",
+    commitment: "The Energy Infrastructure Reinvestment program keeps ~$250B lending authority after OBBBA cut its credit-subsidy appropriation from $5B to $1B; recent nuclear actions include the Palisades and Crane restart loans and a $26.5B Southern Company loan.",
     date: "2026-03",
     source: "https://nuclearinnovationalliance.org/sites/default/files/2026-04/The%20Role%20of%20DOE%E2%80%99s%20Office%20of%20Energy%20Dominance%20Financing%20in%20U.S.%20Nuclear%20Energy%20Leadership%20-%20March%202026%20Update.pdf",
     report: { reportSlug: "nia-edf-nuclear-2026", page: 3, quote: "reduced appropriations to $1 billion while maintaining around $250 billion in lending authority" },
@@ -802,9 +830,9 @@ export const underwriters: Underwriter[] = [
   {
     name: "Export-Import Bank of the United States",
     role: "Export credit for U.S. reactor sales abroad",
-    commitment: "SMR Financing Toolkit; a $98M approved loan for Romania pre-project engineering and $3B letters of interest each for the Romania and Poland SMR programs.",
+    commitment: "A $98M approved loan for Romania's SMR pre-project engineering under the Engineering Multiplier Program, on top of earlier letters of interest of up to $3B (EXIM) and $1B (DFC) for the project's deployment.",
     date: "2024-10",
-    source: "https://www.exim.gov/policies/small-modular-reactor-financing",
+    source: "https://www.world-nuclear-news.org/articles/us-exim-bank-approves-loan-for-romanian-smr-project",
   },
   {
     name: "U.S. International Development Finance Corporation",
@@ -816,7 +844,7 @@ export const underwriters: Underwriter[] = [
   {
     name: "World Bank",
     role: "Multilateral finance, newly reopened to nuclear",
-    commitment: "Lifted its ban on financing nuclear on June 11, 2025 and signed an IAEA cooperation agreement on reactor planning, safety, and SMR feasibility for developing economies.",
+    commitment: "Lifted its decades-long ban on financing nuclear energy projects on June 11, 2025.",
     date: "2025-06",
     source: "https://www.world-nuclear-news.org/articles/world-bank-agrees-to-end-ban-on-funding-nuclear-energy",
   },
@@ -837,7 +865,7 @@ export const underwriters: Underwriter[] = [
   {
     name: "Venture debt lenders",
     role: "Credit for pre-revenue reactor developers, a first for the sector",
-    commitment: "Valar's $200M credit facility led by Erebor Bank with J.P. Morgan, Crescent Cove, and Hercules Capital; Antares carried $25M and $100M debt tranches inside its Series B and C rounds.",
+    commitment: "Valar's $200M credit facility, led by Erebor Bank as administrative agent with J.P. Morgan, Crescent Cove, and Hercules Capital, closed beside its Series B.",
     date: "2026-08",
     source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia",
   },
