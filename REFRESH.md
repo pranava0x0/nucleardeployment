@@ -7,12 +7,26 @@ Run every command from the repository root.
 
 ## The dataset in one paragraph
 
-Everything ships from `app/data.ts`. There is no database and no fetch at
-runtime. The file holds two layers: the older project records (`projects`,
-`companies`, `federalActions`, `programs`, `capital`) and the race layer
-(`raceEntrants`, `capacityClaims`, `fundingEvents`, `cashPositions`,
-`proofEvents`, `statedTargets`). `raceBoard()` and `raceTotals()` derive
-everything the pages show. No component computes its own totals.
+Everything ships from `app/data.ts` and `app/financing-data.ts`. There is no
+database and no fetch at runtime. `data.ts` holds two layers: the older project
+records (`projects`, `companies`, `federalActions`, `programs`, `capital`) and
+the race layer (`raceEntrants`, `capacityClaims`, `fundingEvents`,
+`cashPositions`, `proofEvents`, `statedTargets`). `financing-data.ts` holds the
+financing layer (`costBenchmarks`, `learningRungs`, `companyFinance`,
+`mechanisms`, `liabilityPools`, `underwriters`, `overrunRecords`,
+`sitingFacts`, `capturedReports`); `scripts/lib/records.mjs` merges both
+modules, so every validate / cache / claims / link command covers both.
+`raceBoard()` and `raceTotals()` derive everything the race pages show. No
+component computes its own totals.
+
+Report-backed financing figures cite a captured copy in
+`data/sources/reports/<slug>.txt` (page-marked text plus capture metadata; the
+PDFs live in gitignored `work/reports/`). A test verifies every cited page and
+verbatim quote, so refreshing a report means re-extracting the text with
+`--- PAGE N ---` markers and letting the quote test tell you what moved. When a
+cost benchmark's publisher revises (Lazard is annual; INL revises; the first
+Darlington or Kemmerer actuals will outrank every estimate), update the record
+and recapture rather than editing figures in place.
 
 ## Before you touch anything
 

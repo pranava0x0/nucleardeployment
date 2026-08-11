@@ -2,6 +2,8 @@
 
 ## Shipped beyond the first release
 
+- [x] Add the financing layer (2026-08-11, `jam/nuclear-financing-analysis-a02636`): `/financing` with cost benchmarks by reactor class (FOAK/NOAK/actual/target), a sourced learning ladder, per-entrant contract readiness (model, government vehicle, commercial position, stated cost, labeled next-gate judgment), 17 in-use contracting mechanisms with executed examples plus 2 proposals, Price-Anderson and NEIL pool records, 7 underwriters, overrun history, and siting-by-class; six reports captured to `data/sources/reports/` with page-stamped quote tests; context tables (`capital`, `federalActions`, `programs`) brought under source validation. Record in `docs/financing-analysis-record.md`.
+
 - [x] Add the expert information layer (2026-08-08, `jam/nuclear-info-platform-1891e1`): `/updates` evidence ledger merging proof and capital events with a month-grouped chronology and an every-project next-gate register; homepage stat strip, latest-developments strip, and next-gates preview, all derived from existing records; RSS feed, sitemap.xml, and robots.txt generated from the data with `--check` in `data:check`; per-page descriptions and production canonicals; JSON-LD (WebSite + Dataset on the homepage, breadcrumbs on slug pages); nav entries for Updates and Companies; footer site map with credit and correction CTA. Plan and persona analysis in `docs/plan-expert-info-platform.md`.
 - [x] Show company names inside the deployment pipeline.
 - [x] Add a sourced company directory and company detail pages linked to project records.
@@ -10,6 +12,14 @@
 - [x] Split reactor generation, scale, family, and operating role into separate project fields and filters.
 - [x] Add a machine-readable source registry plus append-only web-search and agent-run history.
 - [x] Replace the misleading schematic map with a regional location ledger until verified coordinates exist.
+
+## Financing layer follow-ups
+
+- Surface each company's financing row on its own dossier page (a "How it gets paid" lane linking back to `/financing`), so a reader landing on a company page sees the model without switching pages. Medium.
+- Re-add Holtec's advanced-to-date loan figure once the S-1 is browser-read and recorded (`DATA-026` in issues.md). Medium.
+- ARC Act is tracked as a proposal; when the bill moves (committee, floor, enactment) the mechanisms row and any new program it creates need updating. A freshness canary on congress.gov bill status would make that loud. Low.
+- The cost ladder ages fast: Lazard publishes annually, INL revises estimates, and the first Darlington/Kemmerer actuals will outrank every estimate on the page. Refresh the benchmarks when any of those land; `REFRESH.md` names the collections. Medium.
+- Microreactor lane could carry the INL literature-review's cross-design ranges (captured but uncited beyond context) if a reader asks for design-level granularity. Low.
 
 ## Race board follow-ups
 

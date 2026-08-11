@@ -348,4 +348,14 @@ That growth, files getting *slightly* more specific with each session's surprise
 
 ### Known harness quirks
 
+- **The browser pane's console buffer survives `console.clear()` and dev-server
+  restarts.** (2026-08-11) A fixed console error keeps appearing on every read
+  because the extension replays captured history for the tab. Verify a
+  console-error fix from a fresh tab (`tabs_create` → navigate → read), never
+  from the tab that saw the error. Cost of not knowing: one needless server
+  restart and three misleading reads.
+- **`sec.gov` 403s anonymous fetchers (WebFetch and the cache script) but
+  serves `curl` with a declared contact user agent.** (2026-08-11) For an EDGAR
+  document read, `curl -A "project name (email)"` works; record the read in
+  `link-check-history.jsonl` since the cache will still show the wall.
 - **The security-reminder hook blocks an edit *once per rule*, then allows it.** (2026-07) It substring-matches a handful of danger patterns (innerHTML assignment, dynamic-code evaluation, shell-out calls, Python object deserialization, …) anywhere in your `new_string`. On the first hit for a given **(file, rule)** pair it records the warning and exits 2 — the edit does **not** apply — but the key is saved *before* it blocks, so **the identical edit succeeds on retry.** Practical rules: (1) for real code, read the warning, confirm the code is actually safe (every interpolation `escapeHtml`'d, numeric, or a hardcoded constant), then **re-issue the same edit unchanged** — don't contort the code to dodge a substring, and don't conclude the tool is broken; (2) it matches **prose and comments too**, so a doc that merely *names* the patterns gets blocked once *per pattern named* — when writing docs, describe the patterns instead of spelling them literally. (Writing this very bullet tripped two different rules before landing.)

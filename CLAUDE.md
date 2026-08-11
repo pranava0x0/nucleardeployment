@@ -459,6 +459,51 @@ For a content/static site, default to a **cookieless, privacy-first** tool (no c
   (a sticky header that wraps at tablet) needs its dependents (anchor
   `scroll-margin-top`) varied in the same media query, in the same edit.
 
+### 2026-08-11 session additions (financing layer)
+
+- **The browser pane's console buffer survives `console.clear()` AND dev-server
+  restarts.** A fixed React error (duplicate key) kept appearing through a
+  server restart and three reads because the extension replays its captured
+  history; only a fresh tab (`tabs_create`) gave a clean buffer. Verify a
+  console-error fix from a new tab, never the old one. Fourth member of the
+  hidden-tab trap family.
+- **Chart figures in a PDF are unrecoverable from linearized text — position-parse
+  them.** Extracted text interleaves a chart's numbers across series with no
+  mapping ("61 67 69 63 122 90 119 99 57"); `fitz` `get_text("words")` with x/y
+  coordinates resolved both the Liftoff Figure 8 band ($61–122/MWh) and Lazard's
+  nuclear row ($141–220, $169) in one pass each. Never quote a chart value read
+  off linearized order.
+- **Quote-lock spans must dodge extraction glyph damage.** PDF text layers carry
+  ligatures ("ﬁrst" is U+FB01), soft hyphens ("45­60%"), and footnote digits
+  glued to figures ("$1696" is $169 + footnote 6). Pick verbatim spans that end
+  before the damaged region, normalize whitespace on both sides of the
+  comparison, and page-stamp against the captured copy's own markers.
+- **Never anchor a structural doc insertion on a line prefix.** An Edit anchored
+  on the first words of a list item split the line and duplicated two headings
+  in backlog.md. Anchor `old_string` on complete lines or heading boundaries,
+  and verify heading counts (`grep -c "^## "`) after any structural edit.
+- **A dataset date is derived from the newest record, never asserted.** Bumping
+  `dataAsOf` to the research date failed the suite's "date reflects the newest
+  record" rule, correctly: the financing layer added nothing dated later. A
+  capture date belongs beside the captured artifacts, not on the dataset stamp.
+- **A fixed collision class on one derived surface lives on in the others.**
+  PR #10 fixed source+date collisions in the RSS guid (kind+label); the same
+  Valar equity-plus-debt pair still collided in the homepage list key one PR
+  later. When a dedup/key scheme is fixed anywhere, grep every other keyed or
+  deduped rendering of the same records in the same pass — and guard the seam
+  with a source-level check, because React keys never reach the HTML.
+- **Walking only new tables hides rot in old ones.** `capital`,
+  `federalActions`, and `programs` cited sources outside `sourcedRecords()`, so
+  a rotted capital URL stayed invisible until a new record cited the same page
+  and the cache guard tripped. When adding a validation walker, sweep every
+  sourced collection, not just the ones you added.
+- **Agent retrospective: zero subagents, zero workflows, and that was right.**
+  The 2026-08-05 packs already held per-company pipeline facts; the gap was
+  landscape (costs, mechanisms, insurers, institutions), which ~25 inline
+  searches, 6 targeted fetches, and 6 PyMuPDF report captures answered for
+  roughly the cost of one fact-pack agent. When per-entity packs exist and are
+  days old, the research need is searches against the gaps, not re-delegation.
+
 ---
 
 ## Influences
