@@ -130,14 +130,23 @@ A megawatt sits in exactly one band, so the bands never double-count.
    - On the board because: DOE selected the eVinci for the first fueled microreactor experiments at the DOME test bed, the company's only documented U.S. reactor program. Source: https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed
    - Full record: https://pranava0x0.github.io/nucleardeployment/companies/westinghouse
 
+## Financing layer
+
+Costs, contracts, and underwriters, every figure sourced and estimates kept
+apart from facts. FOAK is a first-of-a-kind unit; NOAK the nth after learning.
+- 13 cost benchmarks by reactor class, spanning completed-plant actuals, study estimates, and company targets.
+- 14 contracting mechanisms in use with executed examples, plus 6 mechanisms available or pending without an executed instance, and 2 proposals.
+- 7 underwriting institutions and 2 pooled liability structures.
+- Full layer: https://pranava0x0.github.io/nucleardeployment/financing
+
 ## Where the evidence comes from
 
 Every record names who reported it, in the order the methodology ranks them:
 - Verified: 3 records
 - Government-reported: 11 records
 - Institution-reported: 1 records
-- Company-reported: 30 records
-- Press-reported: 18 records
+- Company-reported: 29 records
+- Press-reported: 19 records
 
 - Verified means the regulator's own record, such as a Federal Register notice.
 - Press-reported is a real source, but it is never the best one available when
@@ -153,6 +162,7 @@ Every record names who reported it, in the order the methodology ranks them:
 - https://pranava0x0.github.io/nucleardeployment/map - tracked projects by region
 - https://pranava0x0.github.io/nucleardeployment/federal-action - executive orders and DOE programs
 - https://pranava0x0.github.io/nucleardeployment/capital - loans, awards, and cost shares
+- https://pranava0x0.github.io/nucleardeployment/financing - costs by class, contracting mechanisms, insurance pools, underwriters
 
 ## Machine feeds
 

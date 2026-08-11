@@ -1,0 +1,330 @@
+Oklo’s microreactor project pipeline jumps 93% ahead of 2027 planned deployment | Utility Dive
+Skip to main content
+CONTINUE TO SITE ➞
+Don't miss tomorrow's electric utility industry news
+Let Utility Dive's free newsletter keep you informed, straight from your inbox.
+Daily Dive M-F
+Storage Weekly Every Tuesday
+Load Management Weekly Every Wednesday In partnership with
+Renewable Energy Weekly Every Thursday In partnership with
+By signing up to receive our newsletter, you agree to our
+Terms of Use and
+Privacy Policy . You can unsubscribe at anytime.
+Informa TechTarget
+|
+Smart Cities Dive
+Waste Dive
+Explore our brands
+An Informa TechTarget Publication
+Deep Dive
+Opinion
+Library
+Events
+Press Releases
+Topics
+Sign up
+Search
+Sign up
+Search
+People also ask
+Loading questions...
+Generation
+T&D
+Grid Reliability
+Electrification
+Load Management
+Renewables
+Storage
+DER
+Regs
+Corp News
+An article from
+Dive Brief
+Oklo’s microreactor project pipeline jumps 93% ahead of 2027 planned deployment
+Data centers account for 600 MW of Oklo’s roughly 1,350 MW in business currently under negotiation with customers, CEO Jacob DeWitte said on the company’s Q2 2024 earnings call.
+Published Aug. 15, 2024
+By
+Brian Martucci
+Share
+Copy link
+Email
+LinkedIn
+X/Twitter
+Facebook
+Print
+License
+Add us on Google
+Oklo Aurora Powerhouse reactor
+Tasos Katopodis via Getty Images
+Listen to the article
+7 min
+This audio is auto-generated. Please let us know if you have feedback .
+Dive Brief:
+Oklo has non-binding letters of intent for approximately 1,350 MW of microreactor capacity as of this month, a 93% increase from about 700 MW in July 2023, the company said Wednesday in its Q2 2024 earnings update . The company is working to convert these LOIs into power purchase agreements this year and next, it said.
+Notable recent LOIs include one in April to provide 50 MW of power for Diamondback Energy’s Permian Basin oil and gas operations and another in May to provide 100 MW of electricity for Wyoming Hyperscale’s data center operations, both over 20-year terms, the company said Wednesday in a shareholder letter . Oklo also has a “pre-agreement” to provide up to 500 MW of power to Equinix, a data center operator, the company said.
+A “build, own, operate” business model that avoids customer responsibility for power plant operation, a reactor design that can incorporate readily available components and a more efficient licensing approach contribute to Oklo’s appeal, cofounder and CEO Jacob DeWitte said on the company’s Wednesday earnings call.
+Dive Insight:
+Oklo ended the first half of 2024 with $294.6 million in cash and liquid securities, mostly proceeds from its reverse merger transaction, after spending $17 million in the period, according to the shareholder letter.
+Oklo expects to burn through $35 million to $40 million in cash for the full year, the company said.
+The July enactment of the ADVANCE Act is a significant tailwind for Oklo moving forward, and Oklo’s May debut on the New York Stock Exchange boosted prospective customers’ confidence in the company, DeWitte and Oklo Chief Financial Officer R. Craig Bealmear said on the call.
+“Jacob’s phone was ringing off the hook” after the NYSE listing, Bealmear said.
+Some 600 MW of Oklo’s non-binding agreements are with data center operators, which DeWitte described as a good fit for Oklo’s product mix. Its sodium-cooled fast fission reactor — dubbed Aurora — comes in 15-MW and 50-MW configurations, complementing the 10-MW to 20-MW and 35-MW to 50-MW “data halls” that operate as discrete computing units within hyperscale data centers, DeWitte said.
+Much of Oklo’s Aurora order book is for the 50-MW configuration, Bealmear said later on the call.
+The size match allows data center operators to pair new computing capacity with roughly equivalent electric generation instead of overbuilding the initial power supply with a single 500-MW to 1-GW reactor, DeWitte said. Multiple Aurora powerhouses on a single campus can provide backup power during refueling outages, he added.
+Oklo and its customers also stand to benefit from the company’s decision to pursue a faster, more efficient combined licensing process with the U.S. Nuclear Regulatory Commission, DeWitte said.
+Combined licensing rolls review of “the applicant’s qualifications, design safety, environmental impacts, operational programs, site safety, and verification of construction” into a single process, according to the NRC .
+Oklo’s approach is expected to reduce its initial licensing timeline by 50% to 85% relative to typical initial nuclear reactor license applications, according to the shareholder presentation. ADVANCE Act reforms may trim subsequent license application timelines to as little as six months, the shareholder letter said.
+“The reviews on the subsequent licenses only focus on things that have changed from the initial license,” DeWitte said.
+Oklo is in pre-application discussions with the NRC now and expects to file its first combined license application next year, with subsequent license applications to follow later in 2025, he said.
+Oklo has engaged with the NRC since 2016, longer than any other non-water-cooled advanced reactor company, according to the shareholder letter. The NRC in 2022 denied Oklo’s COL application for a smaller 1.5-MWe reactor design .
+Oklo is aiming to commission a commercial-scale Aurora reactor at Idaho National Laboratory in 2027, which would make it the first advanced nuclear reactor completed in the U.S., it said in the shareholder presentation.
+Oklo modeled its Aurora reactor design after the Experimental Breeder Reactor-II , which operated at INL from 1964 to 1994, DeWitte said.
+Oklo plans to build a demonstration-scale fuel fabrication facility at INL that will use material salvaged from EBR-II, it said in the shareholder letter. Oklo signed an agreement last year with Centrus to purchase U.S.-made high-assay, low-enriched uranium , or HALEU, from its Ohio enrichment facility, the only near-term domestic source of the material amid a federal ban on Russian uranium imports .
+Oklo expects its plants’ levelized electricity costs to range from $40/MWh to $90/MWh, according to its shareholder presentation. For comparison, the presentation showed the following DOE-estimated per-MWh cost ranges for competing clean, firm generation technologies: $63 to $99 for natural gas with carbon capture, $66 to $109 for non-Oklo advanced nuclear and $69 to $119 for renewables plus storage.
+The first 50-MW Aurora powerhouse could cost around $145 million, with lower costs for subsequent plants as economies of scale develop, Bealmear said.
+Oklo is evaluating the feasibility of a 100-MW to 200-MW reactor configuration, but the smaller versions are the company’s primary near-term focus, DeWitte said.
+Add us on Google
+Share
+Copy link
+Email
+LinkedIn
+X/Twitter
+Facebook
+Print
+License
+Filed Under:
+Generation,
+Corporate News
+Utility Dive news delivered to your inbox
+Get the free daily newsletter read by industry experts
+Email:
+Select Newsletter:
+Daily Dive
+M-F
+Select Newsletter:
+Storage Weekly
+Every Tuesday
+Select Newsletter:
+Load Management Weekly
+Every Wednesday
+Select Newsletter:
+Renewable Energy Weekly
+Every Thursday
+Select user consent:
+By signing up to receive our newsletter, you agree to our
+Terms of Use and
+Privacy Policy . You can unsubscribe at anytime.
+Sign up
+A valid email address is required.
+Please select at least one newsletter.
+Editors' picks
+Kevin Dietsch via Getty Images
+Former FERC officials concerned about Supreme Court Slaughter decision impacts
+&ldquo;Stripping those agencies of their independence will leave consumers exposed to the worst aspects of competitive markets without the protections of informed regulatory review,&rdquo; said former FERC Chair Jon Wellinghoff.
+By Herman K. Trabish •
+July 10, 2026
+Courtesy of GE Vernova
+GE Vernova gas turbine backlog climbs to 116 GW
+GE Vernova is taking reservations for 2031 deliveries now, said CEO Scott Strazik. He spoke of an increasingly diverse customer base, including data centers.
+By Brian Martucci •
+July 23, 2026
+Get the free newsletter
+Subscribe to Utility Dive for top news, trends & analysis
+Email:
+Select Newsletter:
+Daily Dive
+M-F
+Select Newsletter:
+Storage Weekly
+Every Tuesday
+Select Newsletter:
+Load Management Weekly
+Every Wednesday
+Select Newsletter:
+Renewable Energy Weekly
+Every Thursday
+Select user consent:
+By signing up to receive our newsletter, you agree to our
+Terms of Use and
+Privacy Policy . You can unsubscribe at anytime.
+Sign up
+A valid email address is required.
+Please select at least one newsletter.
+Take your knowledge further with
+Sign up for the free newsletter.
+Interested? Explore more of what has to offer.
+One-click newsletter signup
+You're all set
+Thanks for signing up!
+Please keep an eye out for a confirmation email from
+[email&#160;protected]
+To ensure we make it into your inbox regularly,
+add us to your allow list, mark us as a safe sender, or add us to your address book.
+Check out more from
+Most Popular
+PPL-Blackstone joint venture secures 5 GW of gas turbines for data centers in Pennsylvania
+Siemens’ gas turbine backlog nears 70 GW as company expands manufacturing
+Texas data center pause puts 20% of US pipeline at risk of delay: BNEF
+Facing an estimated 474 GW of interconnection requests, Texas hits pause on data centers
+Library resources
+Playbook
+How Energy Decision Intelligence is transforming utilities
+Custom content for
+Energy Exemplar
+Infographic
+Utility Procurement's Technology Paradox: Survey Insights
+Custom content for
+Veriforce
+Webinar - on demand
+When the Grid Goes Down, Will Your Finance Operations Hold Up?
+Custom content for
+SAP Concur
+View all
+Company Announcements
+View all
+| Post a press release
+What We're Reading
+Wall Street Journal
+China-Free Batteries Made From Salt Are Finally Here
+Reuters
+Hundreds of millions in grid deposits linger in uncertainty following Texas data center pause
+E&E News by POLITICO
+Newsom says wildfire liability ‘status quo doesn’t work,’ slams utility CEO bonuses
+View all
+Events
+View all
+| Promote an event
+Industry Intel
+Reducing Grid Strain With Automated Energy Management for EV Charging
+Webinar - on demand
+&bull;
+Provided by Amply
+Integrating Geospatial Data and Analytics Into Your Cloud Strategy: A Game Changer For Utilities
+Webinar - on demand
+&bull;
+Provided by Korem
+AI Can Build Your Field App. But Build It On What?
+Webinar - on demand
+&bull;
+Provided by Fulcrum
+Utility Dive news delivered to your inbox
+Get the free daily newsletter read by industry experts
+Email:
+Select Newsletter:
+Daily Dive
+M-F
+Select Newsletter:
+Storage Weekly
+Every Tuesday
+Select Newsletter:
+Load Management Weekly
+Every Wednesday
+Select Newsletter:
+Renewable Energy Weekly
+Every Thursday
+Select user consent:
+By signing up to receive our newsletter, you agree to our
+Terms of Use and
+Privacy Policy . You can unsubscribe at anytime.
+Sign up
+A valid email address is required.
+Please select at least one newsletter.
+Company Announcements
+View all
+| Post a press release
+Field Eagle Launches AI Predictive Maintenance for Utility Infrastructure Inspection Programs
+From Field Eagle
+August 10, 2026
+SitePath Intelligence Launches County-Level Permitting Intelligence Platform for Renewable Ene…
+From SitePath Intelligence
+August 10, 2026
+IMB Partners Completes a Growth Investment in Strategic Land Services
+From IMB Partners
+July 27, 2026
+Greg Chamberlain, Former Xcel Energy Executive, Named Utilen's Chief Strategy and Growth Offic…
+From Utilen
+July 27, 2026
+Editors' picks
+Kevin Dietsch via Getty Images
+Former FERC officials concerned about Supreme Court Slaughter decision impacts
+&ldquo;Stripping those agencies of their independence will leave consumers exposed to the worst aspects of competitive markets without the protections of informed regulatory review,&rdquo; said former FERC Chair Jon Wellinghoff.
+By Herman K. Trabish •
+July 10, 2026
+Courtesy of GE Vernova
+GE Vernova gas turbine backlog climbs to 116 GW
+GE Vernova is taking reservations for 2031 deliveries now, said CEO Scott Strazik. He spoke of an increasingly diverse customer base, including data centers.
+By Brian Martucci •
+July 23, 2026
+Latest in Generation
+Vistra supports Texas data center pause, execs say
+By Diana DiGangi
+PPL-Blackstone joint venture secures 5 GW of gas turbines for data centers in Pennsylvania
+By Ethan Howland
+Siemens’ gas turbine backlog nears 70 GW as company expands manufacturing
+By Emma Penrod
+Constellation CEO: Existing power plants are ‘bedrock’ in supplying data centers
+By Ethan Howland
+Explore
+About
+Editorial Team
+Contact Us
+Newsletter
+Purchase Licensing Rights
+Press Releases
+What We're Reading
+Reach our audience
+Advertising
+Post a press release
+Submit an opinion piece
+Promote an event
+Related Publications
+Smart Cities Dive
+Waste Dive
+This website is owned and operated by
+Informa TechTarget ,
+a global network that informs, influences and connects the world's technology buyers and sellers.
+&copy; 2025 TechTarget, Inc. or its subsidiaries. All rights reserved. An Informa PLC company.
+Privacy policy
+| Terms of use
+| Take down policy
+| Cookie Preferences / Do Not Sell
+Search
+Home
+Topics
+Generation
+T&D
+Grid Reliability
+Electrification
+Load Management
+Renewables
+Storage
+DER
+Regs
+Corp News
+Deep Dive
+Opinion
+Library
+Events
+Press Releases
+Get Utility Dive in your inbox
+The free newsletter covering the top industry headlines
+Email:
+Select Newsletter:
+Daily Dive
+M-F
+Select Newsletter:
+Storage Weekly
+Every Tuesday
+Select Newsletter:
+Load Management Weekly
+Every Wednesday
+Select Newsletter:
+Renewable Energy Weekly
+Every Thursday
+Select user consent:
+By signing up to receive our newsletter, you agree to our
+Terms of Use and
+Privacy Policy . You can unsubscribe at anytime.
+Sign up
+A valid email address is required.
+Please select at least one newsletter.

@@ -1,0 +1,434 @@
+PacifiCorp considers adding two more Natrium units to its generation mix by 2033 - Nuclear Engineering International
+NE
+Login
+Serving the nuclear industry since 1956
+Sections
+Home
+News
+Analysis
+New Build & Life Extension
+Advanced Reactors & Fusion
+Fuel & Fuel Cycle
+Safety & Security
+Equipment
+Business & Policy
+Regions
+Decommissioning & Waste Management
+Companies
+Company a-z
+Technical Papers
+Company Releases
+Videos
+Events
+Newsletters
+About us
+Nuclear Engineering International
+Contact Us
+Menu
+Search
+News
+Analysis
+Sections
+New Build & Life Extension
+Advanced Reactors & Fusion
+Fuel & Fuel Cycle
+Safety & Security
+Equipment
+Business & Policy
+Regions
+Decommissioning & Waste Management
+Latest
+Managing EPC contracting risk
+Beyond uranium enrichment
+A new nuclear security doctrine
+Companies
+Sections
+Company a-z
+Technical Papers
+Company Releases
+Videos
+Latest
+Managing EPC contracting risk
+Beyond uranium enrichment
+A new nuclear security doctrine
+Events
+Newsletters
+News
+PacifiCorp considers adding two more Natrium units to its generation mix by 2033
+US PacifiCorp, owner of the ageing Wyoming coal plant selected in 2021 as the future site for TerraPower’s Natrium reactor demonstration project, has released its 2023 Integrated Resource Plan (IRP). This considers the possible addition of two more Natrium units to the company’s generation resource mix by 2033, under certain circumstances. These could be sited in Utah near currently operating coal-fired facilities.
+traceyhonney
+April 14, 2023
+Share
+Copy Link
+Share on X
+Share on Linkedin
+Share on Facebook
+US PacifiCorp, owner of the ageing Wyoming coal plant selected in 2021 as the future site for TerraPower&rsquo;s Natrium reactor demonstration project, has released its 2023 Integrated Resource Plan (IRP). This considers the possible addition of two more Natrium units to the company&rsquo;s generation resource mix by 2033, under certain circumstances. These could be sited in Utah near currently operating coal-fired facilities.
+TerraPower&rsquo;s demonstration plant, planned for Kemmerer in Wyoming is intended to validate the design, construction, and operational features of the Natrium technology, developed in collaboration with GE Hitachi. The plant will feature a 345 MWe sodium-cooled fast reactor with a molten salt&ndash;based energy storage system. This could boost the reactor&rsquo;s output to 500 MWe when necessary to integrate with variable renewable energy sources.
+However, in December, TerraPower postponed the expected start date of its Kemmerer reactor by at least of two years. The company had originally hoped to commission the plant in 2028 using Russian-supplied high-assay low-enriched uranium (HALEU) fuel to get the demonstration unit up and running by 2028. The conflict in Ukraine, however, has made continuing Russian HALEU deliveries unlikely and the US has yet to develop its own supplies.
+&ldquo;The advanced nuclear resources that appear in the plan [IRP] represent a promising future for our employees and communities in rural Utah and Wyoming,&rdquo; stated Rick Link, senior vice president of resource planning, procurement & optimisation at PacifiCorp. &ldquo;As we transition to a net-zero energy future, it is important to leverage the experience, skills, and dedication of the communities that have supplied our energy needs for the past century.&rdquo; Chris Levesque, TerraPower&rsquo;s president & CEO said he was pleased with the additional Natrium units in the IRP and looked forward to continuing to work with PacifiCorp.
+However, overall advanced reactors play only a minor role in the 365-page IRP. The biennial long-term resource plan calls for a dramatic increase of nearly four times the company&rsquo;s current wind and solar resources to a total of 20,000 MW by 2032, in addition to 7,400 MW of energy storage by 2029. While the plan continues investments in innovative emissions-free technologies, including advanced nuclear and non-emitting peaking resources, their realisation will depend on wider developments.
+&ldquo;Our Integrated Resource Plan is designed to determine the lowest-cost options for customers, adjusting for risks, future customer needs, system reliability, market projections and changing technology,&rdquo; said Link. &ldquo;We depended a great deal on public involvement by utility regulators, customers and other stakeholder groups to develop this plan.&rdquo;
+The IRP says it was &ldquo;developed through comprehensive data analysis and computer modelling of the future needs of customers, together with an assessment of available resource types&rdquo; and &ldquo;yields a preferred portfolio of resources across a 20-year planning horizon&rdquo;. It &ldquo;selects the least-cost, least-risk resource types, which will become the basis for a future Request for Proposals, a competitive bidding process that will select specific projects for construction&rdquo;.
+It would appear that Pacificorp&rsquo;s inclusion of the Natrium technology is, to a large extent, dependent on government support. &ldquo;We&rsquo;re working with TerraPower, as part of a public-private partnership with the US Department of Energy [DOE], to support the development of advanced nuclear reactors with integrated salt storage projects near retiring coal plants.&rdquo; It continues: &ldquo;In the 2023 IRP, the NatriumTM demonstration project is envisioned for placement at the Naughton facility in Kemmerer, Wyoming. With recent federal legislation and studies on the opportunities of a coal-to-nuclear energy transition, TerraPower and PacifiCorp remain committed to bringing the Natrium technology to market for the benefit of grid reliability and stability and for energy-producing communities in Wyoming and Utah.&rdquo;
+It further notes that in October 2020 that DOE through its Advanced Reactor Demonstration Program (ARDP), had awarded TerraPower $80m in initial funding to demonstrate the Natrium technology. To date, Congress has appropriated $160m for the ARDP and DOE has committed additional funding in the coming years, subject to appropriations. In June 2021, PacifiCorp announced efforts with TerraPower and DOE &ldquo;to advance the NatriumTM demonstration project to be sited at a retiring coal plant near, Kemmerer, Wyoming&rdquo;.
+On October 2022, TerraPower and PacifiCorp announced a joint study to evaluate the feasibility of deploying up to five additional NatriumTM reactor and integrated energy storage systems in the PacifiCorp service territory by 2035. &ldquo;The joint study will evaluate, among other things, the potential for advanced reactors to be located near current fossil-fuelled generation sites, enabling PacifiCorp to repurpose existing generation and transmission assets for the benefit of its customers.&rdquo;
+The IRP specifies: &ldquo;With the passage of the Inflation Reduction Act, the bipartisan Infrastructure Investment and Jobs Act, and recent studies on the opportunities of a coal-to-nuclear energy transition, TerraPower and PacifiCorp remain committed to bringing the NatriumTM technology to market and providing reliability and stability to the grid as well as to energy producing communities.&rdquo;
+At the end of the report, the IRP looks at a number of different scenarios. The only one with a positive assessment of advanced nuclear is &ldquo;High CO2 prices with accelerated coal retirements&rdquo;. In this case, the Near-Term Resource Acquisition Strategy (2023-2032) will &ldquo;accelerate timing of new resource additions including an advanced nuclear resource from 2033 to 2032&rdquo;. The Long Term Resource Acquisition Strategy (2033-2042) envisages that, &ldquo;by 2042, new nuclear peaking capacity is increased by 500 MW&rdquo;.
+However, the &ldquo;No NatriumTM Advanced Nuclear Demonstration Project in 2030, and no other nuclear projects&rdquo; scenario offers a different perspective. The Near-Term Resource Acquisition Strategy (2023-2032) notes: &ldquo;Without the NatriumTM demonstration project, 289 MW of non-emitting peaking resource is added in 2030. In 2032 the second advanced nuclear plant is replaced by 303 MW of non-emitting peaking resource and 200 MW of four-hour battery storage.
+The Long Term Resource Acquisition Strategy (2033-2042) notes: &ldquo;Without the NatriumTM demonstration project, 289 MW of non-emitting peaking resource is added in 2030. In 2032 the second advanced nuclear plant is replaced by 303 MW of non-emitting peaking resource and 200 MW of four-hour battery storage. In 2033, 303 MW of non-emitting peaking resources and 200 MW of four-hour battery storage replace 500 MW of nuclear capacity.
+The IRP says scenario risk assessment &ldquo;pertains to abrupt or fundamental changes to variables that are appropriately handled by scenario analysis as opposed to representation by a statistical process or expected-value forecast&rdquo;. It adds: &ldquo;The single most important scenario risks of this type facing PacifiCorp continues to be government actions related to emissions and changes in load and transmission infrastructure&hellip;. The company&rsquo;s use of IRP sensitivity analysis covering different resource policy and cost assumptions also addresses the need for consideration of scenario risks for long-term resource planning. The extent to which future regulatory policy shifts do not align with PacifiCorp&rsquo;s resource investments determined to be prudent by state commissions is a risk borne by customers.
+Volume 2 of the IRP comprises more then 400 pages of appendices. The Appendix on regulatory compliance includes the following comment: &ldquo;Finally, we acknowledge the inherent complexities with the Natrium project and direct the Company to continue to assess the risks of technology viability and potential delays with Natrium and plan accordingly.&rdquo; While Natrium is anticipated to come online in the summer of 2030, the 2023 IRP &ldquo;includes two &lsquo;no nuclear&rsquo; variant studies &hellip; designed to inform alternative path analysis and potential costs and benefits. PacifiCorp continues to evaluate nuclear resources within the context of an evolving planning environment&rdquo;.
+Image courtesy of PacifiCorp
+Sign up for our weekly news round-up!
+Give your business an edge with our leading industry insights.
+Sign up
+Share
+Copy Link
+Share on X
+Share on Linkedin
+Share on Facebook
+Partner Content
+Roxtec
+WM Symposia
+Omniseal Solutions
+Tyne USA Inc
+More Relevant
+News
+Sogin takes military waste role
+News
+Akkuyu 1 nears first power
+News
+TAE, Black Moon eye He-3 fusion fuel
+News
+Criticality for Mochovce 4
+Sign up for our weekly news round-up!
+Give your business an edge with our leading industry insights.
+Give your business an edge with our leading industry insights.
+close
+close
+Sign up to the newsletter: In Brief
+Your corporate email address *
+First name *
+Last name *
+Company name *
+Job title *
+Industry *
+Academia & Education
+Aerospace, Defense &
+Security
+Agriculture
+Asset Management
+Automotive
+Banking & Payments
+Chemicals
+Construction
+Consumer
+Foodservice
+Government, trade bodies
+and NGOs
+Health & Fitness
+Hospitals & Healthcare
+HR, Staffing &
+Recruitment
+Insurance
+Investment Banking
+Legal Services
+Management Consulting
+Marketing & Advertising
+Media & Publishing
+Medical Devices
+Mining
+Oil & Gas
+Packaging
+Pharmaceuticals
+Power & Utilities
+Private Equity
+Real Estate
+Retail
+Sport
+Technology
+Telecom
+Transportation &
+Logistics
+Travel, Tourism &
+Hospitality
+Venture Capital
+Industry *
+Country *
+UK
+USA
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bonaire, Sint Eustatius and Saba
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+Brunei Darussalam
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos Islands
+Colombia
+Comoros
+Congo
+Democratic Republic of
+the Congo
+Cook Islands
+Costa Rica
+Côte d"Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern Territories
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Holy See
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+North Korea
+South Korea
+Kuwait
+Kyrgyzstan
+Lao
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libyan Arab Jamahiriya
+Liechtenstein
+Lithuania
+Luxembourg
+Macao
+Macedonia, The Former
+Yugoslav Republic of
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestinian Territory
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russian Federation
+Rwanda
+Saint Helena, Ascension and Tristan da Cunha
+Saint Kitts and Nevis
+Saint Lucia
+Saint Pierre and Miquelon
+Saint Vincent and The Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and The South
+Sandwich Islands
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syrian Arab Republic
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Timor-Leste
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+US Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Venezuela
+Vietnam
+British Virgin Islands
+US Virgin Islands
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+Kosovo
+Country *
+I would also like to subscribe to:
+Nuclear Engineering International Weekly Roundup
+I consent to Verdict Media Limited collecting my details provided via this form in accordance with Privacy Policy
+Subscribe
+Vist our Privacy Policy for more information about our services, how we may use, process and share your personal data, including information of
+your rights in respect of your personal data and how you can unsubscribe from future marketing communications. Our services are intended for corporate subscribers and you warrant that the email address submitted is your corporate email address.
+Thank you for subscribing
+View all newsletters from across the Progressive Media network.
+close
+Nuclear Engineering International
+About Us
+Advertise with us
+Contact Us
+Newsletters
+Privacy Policy
+Terms &#038; Conditions
+Sitemap
+Powered by
+&copy; GlobalData Plc 2026
+Lost Password Back &#x27F6;
+Login
+Register
+Get new password
+Lost Password?
+Login
+Registration is disabled.

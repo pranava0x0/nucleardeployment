@@ -1041,8 +1041,7 @@ test("llms.txt counts read as English", async () => {
 });
 
 test("the source cache is committed and refuses to store refusal pages", async () => {
-  const { readIndex, readCachedText, urlHash, looksLikeWall, apiUrlFor } = await import("../scripts/lib/source-cache.mjs");
-  const dataModule = await import("../app/data.ts");
+  const { readIndex, readCachedText, looksLikeWall, apiUrlFor } = await import("../scripts/lib/source-cache.mjs");
   const index = await readIndex();
 
   assert.ok(Object.keys(index.sources).length > 100, "the cache index covers the dataset");
@@ -1075,9 +1074,10 @@ test("the source cache is committed and refuses to store refusal pages", async (
   }
 
   // Every source the dataset cites has an index entry, so nothing is silently
-  // uncached after a record is added.
-  const { sourcedRecords } = await import("../scripts/lib/records.mjs");
-  const cited = new Set(sourcedRecords(dataModule).map((row) => row.source));
+  // uncached after a record is added. loadData merges the financing layer, so
+  // its sources are held to the same rule.
+  const { sourcedRecords, loadData } = await import("../scripts/lib/records.mjs");
+  const cited = new Set(sourcedRecords(await loadData()).map((row) => row.source));
   const missing = [...cited].filter((url) => !index.sources[url]);
   assert.deepEqual(missing, [], "every cited source is in the cache index; run npm run data:cache");
 });
@@ -1234,7 +1234,7 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
 
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   const base = "https://pranava0x0.github.io/nucleardeployment";
-  for (const route of ["/", "/updates/", "/deployments/", "/companies/", "/map/", "/federal-action/", "/capital/", "/methodology/"]) {
+  for (const route of ["/", "/updates/", "/deployments/", "/companies/", "/map/", "/federal-action/", "/capital/", "/financing/", "/methodology/"]) {
     assert.ok(sitemap.includes(`<loc>${base}${route}</loc>`), `sitemap lists ${route}`);
   }
   for (const company of dataModule.companies) {
@@ -1249,10 +1249,18 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
     );
   }
   const urlCount = (sitemap.match(/<url>/g) ?? []).length;
-  assert.equal(urlCount, 8 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
+  assert.equal(urlCount, 9 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
   const lastmods = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1]);
   assert.ok(lastmods.length > 8, "sitemap states lastmod dates");
-  assert.ok(lastmods.every((date) => date <= dataModule.dataAsOf), "no page claims to be newer than the dataset");
+  // The financing layer carries its own later stamp; everything else stays
+  // bounded by the race dataset's date.
+  const financingModule = await import("../app/financing-data.ts");
+  assert.ok(
+    sitemap.includes(`<loc>${base}/financing/</loc><lastmod>${financingModule.financingAsOf}</lastmod>`),
+    "the financing route carries the financing layer's own date, not the race dataset's",
+  );
+  assert.ok(financingModule.financingAsOf > dataModule.dataAsOf, "the financing stamp postdates the race dataset it sits beside");
+  assert.ok(lastmods.every((date) => date <= dataModule.dataAsOf || date === financingModule.financingAsOf), "no page claims a date newer than its own layer's stamp");
   assert.ok(lastmods.some((date) => date !== dataModule.dataAsOf), "record pages carry their own dates, not one global stamp");
 
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
@@ -1332,11 +1340,168 @@ test("every page states a canonical and the lead pages carry structured data", a
 test("the header and footer map the whole site", async () => {
   const raw = await (await render()).text();
   const html = raw.replace(/<!--.*?-->/g, "");
-  for (const route of ["/", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/methodology"]) {
+  for (const route of ["/", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/financing", "/methodology"]) {
     assert.ok(html.includes(`href="${route}"`), `the navigation reaches ${route}`);
   }
   // The footer carries the credit and the code, per the footer rule.
   assert.match(html, /Built by Pranava Raparla/);
   assert.ok(html.includes("https://github.com/pranava0x0/nucleardeployment"), "the footer links the repository");
   assert.ok(html.includes("https://www.pranavaraparla.com"), "the footer links the author");
+});
+
+test("the financing page renders every lane, company row, and labeled judgment", async () => {
+  const dataModule = await import("../app/data.ts");
+  const financing = await import("../app/financing-data.ts");
+  const raw = await (await render("/financing")).text();
+  const html = raw.replace(/<!--.*?-->/g, "").replace(/<script[\s\S]*?<\/script>/gi, "");
+
+  for (const heading of [
+    "The cost ladder", "What n units buy", "Company by company", "Contracting mechanisms",
+    "Pooled insurance and liability", "Who underwrites", "Cost overruns on the record",
+    "Siting, by class", "Captured reports",
+  ]) {
+    assert.ok(html.includes(heading), `the financing page carries "${heading}"`);
+  }
+
+  // Anchor figures from three different evidence classes, asserted as literal text.
+  assert.ok(html.includes("$169/MWh"), "the Vogtle actual is on the page");
+  assert.ok(html.includes("$325/MWh"), "the microreactor FOAK estimate is on the page");
+  assert.ok(html.includes("241% average overnight-cost overrun"), "the overrun history headline is on the page");
+
+  // The three mechanism lanes render, and unexecuted intent never sits in the in-use group.
+  assert.ok(html.includes("Available or pending, no executed instance"), "the pending lane renders");
+  assert.ok(financing.mechanisms.some((mechanism) => mechanism.status === "Pending"),
+    "the dataset still exercises the pending case");
+
+  // Every entrant gets a financing row with all five labeled lines.
+  for (const row of financing.companyFinance) {
+    const name = dataModule.companies.find((company) => company.slug === row.companySlug)?.name;
+    assert.ok(name && html.includes(name), `${row.companySlug} appears in the financing matrix`);
+  }
+  const rowCount = financing.companyFinance.length;
+  for (const label of ["Model", "Government", "Commercial", "Stated cost", "Next gate"]) {
+    const count = html.split(`>${label}</span>`).length - 1;
+    assert.equal(count, rowCount, `every company row carries a "${label}" line (${count} of ${rowCount})`);
+  }
+
+  // Judgments stay labeled as judgments, one per company row, nowhere else.
+  const judgmentCount = html.split("Site judgment, derived from the records above.").length - 1;
+  assert.equal(judgmentCount, rowCount, "every next gate is labeled as the site's judgment");
+
+  // A missing cost claim is an explicit statement, in both directions.
+  const nullClaims = financing.companyFinance.filter((row) => row.costClaim === null).length;
+  const placeholderCount = html.split("No price or cost target on record").length - 1;
+  assert.equal(placeholderCount, nullClaims, "every absent cost claim states its absence exactly once");
+  assert.ok(nullClaims > 0 && nullClaims < rowCount, "the dataset exercises both the stated and absent cost-claim cases");
+
+  // An absence is the site's finding, never pinned on a source, in both directions.
+  const emptyCommercial = financing.companyFinance.filter((row) => row.commercial.length === 0).length;
+  const absenceCount = html.split("No commercial position on record. A research finding, not a sourced claim.").length - 1;
+  assert.equal(absenceCount, emptyCommercial, "every empty commercial lane states the research finding exactly once");
+  assert.ok(emptyCommercial > 0 && emptyCommercial < rowCount, "the dataset exercises both the sourced and absent commercial cases");
+
+  // No chart library ships for this page either.
+  assert.doesNotMatch(raw, /chart\.js|d3\.|recharts|plotly/i);
+});
+
+test("the financing matrix covers the race roster exactly, lane by lane", async () => {
+  const dataModule = await import("../app/data.ts");
+  const financing = await import("../app/financing-data.ts");
+  const entrantSlugs = dataModule.raceEntrants.map((entrant) => entrant.companySlug).sort();
+  const financeSlugs = financing.companyFinance.map((row) => row.companySlug).sort();
+  assert.deepEqual(financeSlugs, entrantSlugs, "one financing row per race entrant, no extras and no gaps");
+  // The page renders only the two roster lanes; a lane rename in data.ts must fail here, not render an empty group.
+  const lanes = new Set(dataModule.raceEntrants.map((entrant) => entrant.lane));
+  assert.deepEqual([...lanes].sort(), ["Grid-scale SMR", "Microreactor"]);
+});
+
+test("financing records keep source hygiene: https, real-or-null dates, paired claims", async () => {
+  const financing = await import("../app/financing-data.ts");
+  const sourced = [
+    ...financing.costBenchmarks, ...financing.learningRungs.map((rung) => ({ ...rung, date: null })),
+    ...financing.overrunRecords, ...financing.mechanisms, ...financing.liabilityPools,
+    ...financing.underwriters, ...financing.sitingFacts.map((fact) => ({ ...fact, date: null })),
+  ];
+  for (const record of sourced) {
+    assert.match(record.source, /^https:\/\//, `${record.source} is https`);
+    if (record.date != null) assert.match(record.date, /^\d{4}(-\d{2})?(-\d{2})?$/, `${record.date} is a real date`);
+  }
+  for (const row of financing.companyFinance) {
+    // Every government and commercial claim carries its own source; a row
+    // summarizing four deals under one link is the mis-citation Codex flagged.
+    // An empty commercial array is legitimate: it renders as an explicit
+    // research-finding state instead of pinning an absence on a source.
+    assert.ok(row.government.length >= 1, `${row.companySlug} states at least one government line`);
+    for (const line of [...row.government, ...row.commercial]) {
+      assert.match(line.source, /^https:\/\//, `${row.companySlug} claim sources are https`);
+      assert.ok(line.text.length > 20, `${row.companySlug} claims are sentences, not fragments`);
+    }
+    assert.match(row.modelSource, /^https:\/\//, `${row.companySlug} model source is https`);
+    assert.equal(row.costClaim === null, row.costClaimSource === null,
+      `${row.companySlug}: a cost claim and its source travel together`);
+  }
+});
+
+test("every report-backed figure resolves to its captured page, quotes verbatim", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const financing = await import("../app/financing-data.ts");
+  const referenced = [
+    ...financing.costBenchmarks, ...financing.learningRungs, ...financing.overrunRecords,
+    ...financing.underwriters,
+  ].filter((record) => record.report);
+
+  assert.ok(referenced.length >= 10, "the report-backed records still exist");
+  const knownSlugs = new Set(financing.capturedReports.map((report) => report.slug));
+  const pagesBySlug = new Map();
+
+  for (const record of referenced) {
+    const { reportSlug, page, quote } = record.report;
+    assert.ok(knownSlugs.has(reportSlug), `${reportSlug} is listed in capturedReports`);
+    if (!pagesBySlug.has(reportSlug)) {
+      const text = await readFile(new URL(`../data/sources/reports/${reportSlug}.txt`, import.meta.url), "utf8");
+      const pages = new Map();
+      const chunks = text.split(/--- PAGE (\d+) ---/);
+      // split() yields [before, n1, text1, n2, text2, ...]; pair them up.
+      for (let index = 1; index < chunks.length; index += 2) {
+        pages.set(Number(chunks[index]), chunks[index + 1] ?? "");
+      }
+      const meta = JSON.parse(await readFile(new URL(`../data/sources/reports/${reportSlug}.meta.json`, import.meta.url), "utf8"));
+      assert.ok(meta.page_count > 0 && meta.url.startsWith("https://"), `${reportSlug} meta records capture provenance`);
+      pagesBySlug.set(reportSlug, { pages, pageCount: meta.page_count });
+    }
+    const { pages, pageCount } = pagesBySlug.get(reportSlug);
+    assert.ok(page >= 1 && page <= pageCount, `${reportSlug} p. ${page} exists (${pageCount} pages)`);
+    assert.ok(pages.has(page), `${reportSlug} captured text carries a page ${page} marker`);
+    if (quote) {
+      const normalized = pages.get(page).replace(/\s+/g, " ");
+      assert.ok(normalized.includes(quote.replace(/\s+/g, " ")),
+        `${reportSlug} p. ${page} carries the quote "${quote}"`);
+    }
+  }
+});
+
+test("timeline entries stay distinguishable under the list keys the pages use", async () => {
+  const dataModule = await import("../app/data.ts");
+  // Two funding events can share one source URL and date (an equity raise and
+  // its debt facility announced together); the homepage and updates lists key
+  // on source-date-label, so that triple must be unique. Valar's 2026-08 pair
+  // is the live case: same URL, same month, different labels.
+  const keys = dataModule.timeline().map((entry) => `${entry.source}-${entry.date}-${entry.label.slice(0, 24)}`);
+  const seen = new Set();
+  for (const key of keys) {
+    assert.ok(!seen.has(key), `duplicate timeline key: ${key}`);
+    seen.add(key);
+  }
+  const valarPair = dataModule.timeline().filter((entry) =>
+    entry.source === "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia");
+  assert.ok(valarPair.length >= 2, "the dataset still exercises the shared source-and-date case");
+
+  // The uniqueness above only protects the pages if they key on the triple.
+  // React keys never reach the HTML, so check the seam in the source itself.
+  const { readFile } = await import("node:fs/promises");
+  for (const path of ["../app/page.tsx", "../app/updates/page.tsx"]) {
+    const component = await readFile(new URL(path, import.meta.url), "utf8");
+    assert.ok(component.includes("${entry.source}-${entry.date}-${entry.label.slice(0, 24)}"),
+      `${path} keys its timeline list on source, date, and label`);
+  }
 });

@@ -11,6 +11,7 @@ const nav = [
   ["Locations", "/map"],
   ["Federal Action", "/federal-action"],
   ["Capital + Supply", "/capital"],
+  ["Financing", "/financing"],
   ["Methodology", "/methodology"],
 ];
 

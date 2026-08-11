@@ -1,0 +1,11 @@
+{
+  "url": "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
+  "title": "Lazard Levelized Cost of Energy+ (June 2025)",
+  "publisher": "Lazard",
+  "published_at": "2025-06",
+  "captured_at": "2026-08-10",
+  "capture_method": "curl download + PyMuPDF text extraction",
+  "page_count": 48,
+  "pdf_bytes": 1840877,
+  "text_chars": 92530
+}

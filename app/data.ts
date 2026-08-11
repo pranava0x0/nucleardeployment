@@ -9,16 +9,25 @@ export type Verification = "Verified" | "Government-reported" | "Institution-rep
 /** Source-host tiers for race records. A host in no list is press by default. */
 export const verificationHosts: { verification: Verification; hosts: string[] }[] = [
   { verification: "Verified", hosts: ["nrc.gov", "federalregister.gov", "sec.gov"] },
-  { verification: "Government-reported", hosts: ["energy.gov", "inl.gov", "gain.inl.gov", "nric.inl.gov", "army.mil", "eia.gov"] },
+  { verification: "Government-reported", hosts: [
+    "energy.gov", "inl.gov", "gain.inl.gov", "nric.inl.gov", "army.mil", "eia.gov",
+    // Financing layer: legislature, export credit, a state economic-development
+    // office, and Canada's crown infrastructure lender.
+    "congress.gov", "risch.senate.gov", "exim.gov", "tn.gov", "cib-bic.ca",
+  ] },
   // Universities and public institutions report on programs they host or
   // co-apply for. That is not the reactor company speaking.
-  { verification: "Institution-reported", hosts: ["npre.illinois.edu", "illinois.edu", "acu.edu", "tamu.edu"] },
+  { verification: "Institution-reported", hosts: ["npre.illinois.edu", "illinois.edu", "acu.edu", "tamu.edu", "dspace.mit.edu"] },
   { verification: "Company-reported", hosts: [
     "terrapower.com", "kairospower.com", "oklo.com", "x-energy.com", "holtecinternational.com",
     "nuscalepower.com", "aalo.com", "radiantnuclear.com", "valaratomics.com", "deepfission.com",
     "bwxt.com", "ir.terrestrialenergy.com", "info.westinghousenuclear.com", "gevernova.com",
     "tatachemicals.com", "switch.com", "riotplatforms.com", "deployable.energy", "georgiapower.com",
     "businesswire.com", "globenewswire.com", "prnewswire.com", "energy-communities-alliance.squarespace.com",
+    // Financing layer: counterparties and project companies speaking about
+    // their own deals, plus one more newswire.
+    "accessnewswire.com", "wolverinepowercooperative.com", "news.duke-energy.com",
+    "sizewellc.com", "osge.com", "bechtel.com", "nanonuclearenergy.com",
   ] },
   { verification: "Press-reported", hosts: [
     "world-nuclear-news.org", "ans.org", "nucnet.org", "powermag.com", "neimagazine.com",
@@ -1777,8 +1786,10 @@ export const capacityClaims: CapacityClaim[] = [
     label: "Endeavour Energy · partnership to co-develop capacity for a data-centre portfolio, first reactors stated 2029",
     binding: false,
     date: "2025-01",
-    source: "https://deepfission.com/deep-fission-and-endeavour-announce-strategic-partnership/",
-    verification: "Company-reported",
+    // The company's own announcement URL rotted (connection error, 2026-08-11);
+    // the WNN account of the same partnership carries the 2 GW figure and date.
+    source: "https://www.world-nuclear-news.org/articles/deep-fission-and-endeavour-announce-strategic-partnership",
+    verification: "Press-reported",
   },
   {
     companySlug: "last-energy",
@@ -1860,7 +1871,11 @@ export const fundingEvents: FundingEvent[] = [
   { companySlug: "x-energy", date: "2025-02", kind: "Venture equity", amount: "$700M Series C-1", counterparty: "Segra Capital, Jane Street, Ares Management", source: "https://x-energy.com/news/x-energy-closes-upsized-700-million-series-c-1-financing-round-to-accelerate-the-development-of-advanced-small-modular-nuclear-technology/" },
   { companySlug: "holtec", date: "2025-12", kind: "Federal award", amount: "$400M Tier 1 milestone-based cost share", counterparty: "DOE Gen III+ SMR Pathway to Deployment", source: "https://holtecinternational.com/hh-40-24/" },
   { companySlug: "holtec", date: "2026-07", kind: "Offering filed", amount: "Public S-1 filed; terms not priced", counterparty: "Nasdaq, targeting ticker HNUC", source: "https://www.sec.gov/Archives/edgar/data/0002104277/000119312526301023/d40440ds1.htm" },
-  { companySlug: "holtec", date: "2024-09", kind: "Federal loan", amount: "$1.52B loan guarantee for the existing 800 MW Palisades reactor, not the new units; $784.8M advanced as of 2026-03-31", counterparty: "DOE Loan Programs Office", source: "https://holtecinternational.com/2024/09/30/hh-39-17/" },
+  // Holtec's own announcement URL rotted (404, 2026-08-11); DOE's loan page
+  // carries the amount, borrower, and close date. The advanced-to-date figure
+  // the old record carried was never supported by a 2024 release and is
+  // dropped until a source that states it is cited.
+  { companySlug: "holtec", date: "2024-09", kind: "Federal loan", amount: "$1.52B loan to Holtec Palisades LLC for the existing 800 MW reactor, not the new units", counterparty: "DOE Loan Programs Office", source: "https://www.energy.gov/edf/palisades" },
   { companySlug: "gev-hitachi", date: "2025-12", kind: "Federal award", amount: "Up to $400M Tier 1 award to TVA for Clinch River", counterparty: "DOE Gen III+ SMR Pathway to Deployment", source: "https://www.ans.org/news/2025-12-03/article-7593/doe-selects-tva-and-holtec-for-smr-awards/" },
   { companySlug: "nuscale", date: "2022-05", kind: "IPO / listing", amount: "~$380M proceeds including a $235M PIPE", counterparty: "Spring Valley Acquisition Corp (NYSE)", source: "https://www.nuscalepower.com/press-releases/2022/nuscale-completes-merger-with-spring-valley" },
   { companySlug: "terrestrial-energy", date: "2025-10", kind: "IPO / listing", amount: "Over $292M gross including a $50M PIPE", counterparty: "HCM II Acquisition Corp (Nasdaq)", source: "https://www.barchart.com/story/news/35743041/terrestrial-energy-inc-completes-business-combination-with-hcm-ii-acquisition-corp" },
