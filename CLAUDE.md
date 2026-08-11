@@ -504,6 +504,25 @@ For a content/static site, default to a **cookieless, privacy-first** tool (no c
   roughly the cost of one fact-pack agent. When per-entity packs exist and are
   days old, the research need is searches against the gaps, not re-delegation.
 
+- **Budget the review loop: fix the class after round two, do not let the bot
+  enumerate it.** Six Codex rounds on one PR: rounds 1-2 exposed a structural
+  class (one source link covering several claims) and were load-bearing;
+  rounds 3-5 were the same standard applied to remaining rows, each real but
+  each a row I could have found myself by sweeping every prose-with-one-link
+  field after round two. The owner called it, correctly. Rule: when a round's
+  findings are instances of an already-named class rather than a new class,
+  stop re-requesting reviews, sweep the class exhaustively yourself, and merge.
+- **Never truncate a gate's output; print its exit code.** `npm run lint |
+  tail -1` reported green for two runs while eslint was failing: the one-line
+  tail swallowed the error block, and a lint failure merged to main and broke
+  CI. Same disease as gating a commit on a piped grep. Run the gate, echo
+  `$?`, and read the summary, never a one-line slice.
+- **A worktree under the repo root poisons root-relative lint ignores.**
+  eslint's `--ignore-pattern dist` does not cover
+  `.claude/worktrees/*/dist`, so linting from the main checkout scans the
+  worktree's build output (1.1MB of noise). Remove or ignore the worktree
+  before trusting a main-checkout lint run.
+
 ---
 
 ## Influences
