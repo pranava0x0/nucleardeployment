@@ -369,7 +369,7 @@ export const companyFinance: CompanyFinance[] = [
   },
   {
     companySlug: "westinghouse",
-    model: "Established vendor whose October 2025 U.S. government partnership adds $17.5B in coordinated financing and gives the government a claim on 20% of cash distributions above a $17.5B return threshold.",
+    model: "Established vendor whose October 2025 U.S. government partnership, an ~$80B deployment frame, gives the government a claim on 20% of cash distributions above a $17.5B return threshold.",
     modelSource: "https://natlawreview.com/article/us-government-announces-historic-80-billion-nuclear-partnership-westinghouse",
     government: [
       { text: "DOE selected eVinci for the first fueled microreactor experiments at the DOME test bed, with about $5M of support.", source: "https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed" },
@@ -454,15 +454,14 @@ export const companyFinance: CompanyFinance[] = [
   },
   {
     companySlug: "antares-nuclear",
-    model: "Defense-first microreactor maker with R&D agreements across the Air Force, Space Force, Defense Innovation Unit, and NASA.",
-    modelSource: "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/",
+    model: "Defense-first microreactor maker: the R1 targets military installations, with Mark-1 aimed at producing electricity in 2027 and installation deployment by 2028.",
+    modelSource: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/",
     government: [
       { text: "First Reactor Pilot Program criticality: Mark-0 at INL, June 2026, run with the U.S. Army.", source: "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors" },
       { text: "One of three finalists for ANPI base assignments in Colorado and Montana; no award yet.", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
+      { text: "Delivered an electrically heated prototype for testing at NASA's Marshall Space Flight Center, under a NASA program that uses Space Act Agreements in which companies own the reactors and sell the power.", source: "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/" },
     ],
-    commercial: [
-      { text: "The Air Force, Space Force, DIU, and NASA agreements are R&D-scoped, with no deployment megawatts or dollar figures disclosed.", source: "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/" },
-    ],
+    commercial: [],
     costClaim: null,
     costClaimSource: null,
     nextGate: "An ANPI base award against two competitors, then Mark-1 producing power.",
@@ -566,7 +565,7 @@ export const companyFinance: CompanyFinance[] = [
       { text: "$1.52B DOE loan to Holtec Palisades LLC covers the existing 800 MW reactor's restart, not the new units.", source: "https://www.energy.gov/edf/palisades" },
     ],
     commercial: [
-      { text: "The Wolverine/Hoosier PPA on restarted Palisades carries an expansion option covering up to two future SMR-300 units.", source: "https://www.wolverinepowercooperative.com/2023/09/12/holtec-international-and-wolverine-power-cooperative-sign-historic-agreement-for-restart-of-palisades-nuclear-power-plant/" },
+      { text: "The Wolverine/Hoosier PPA on restarted Palisades carries a contract expansion provision covering up to two SMR-300 units at the site.", source: "https://www.utilitydive.com/news/palisades-nuclear-holtec-wolverine-hoosier-power-purchase-ppa/693480/" },
       { text: "Holtec's own program timeline targets executing a PIONEER power contract in 2026; none is executed yet.", source: "https://energy-communities-alliance.squarespace.com/s/Holtec-Slides.pdf" },
     ],
     costClaim: null,
@@ -715,15 +714,15 @@ export const mechanisms: FinancingMechanism[] = [
     status: "In use",
     mechanism: "PPA with fleet-expansion option",
     how: "A power contract on an existing asset embeds an option on future units, giving the next reactor a buyer before it exists.",
-    example: "Wolverine and Hoosier's PPA on restarted Palisades includes an expansion provision covering up to two future SMR-300 units.",
+    example: "The Palisades PPA carries a contract expansion provision covering up to two SMR-300 units Holtec intends to build at the site.",
     date: "2023-09",
-    source: "https://www.wolverinepowercooperative.com/2023/09/12/holtec-international-and-wolverine-power-cooperative-sign-historic-agreement-for-restart-of-palisades-nuclear-power-plant/",
+    source: "https://www.utilitydive.com/news/palisades-nuclear-holtec-wolverine-hoosier-power-purchase-ppa/693480/",
   },
   {
     status: "In use",
     mechanism: "Government profit participation",
     how: "Federal financing support is exchanged for a share of upside above a return threshold, an equity-like claim without equity.",
-    example: "The U.S. government-Westinghouse partnership announced October 2025: $17.5B in coordinated financing, a conditional commitment, alongside a federal claim on 20% of cash distributions above a $17.5B threshold.",
+    example: "The U.S. government-Westinghouse partnership announced October 2025: an ~$80B deployment frame carrying a federal claim on 20% of cash distributions above a $17.5B return threshold.",
     date: "2025-10",
     source: "https://natlawreview.com/article/us-government-announces-historic-80-billion-nuclear-partnership-westinghouse",
   },
