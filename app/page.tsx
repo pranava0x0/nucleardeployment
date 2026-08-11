@@ -85,7 +85,7 @@ export default function Home() {
       <section className="section updates-strip">
         <div className="section-head"><h2>Latest developments</h2><Link href="/updates">All updates →</Link></div>
         <ol className="update-list">
-          {latest.map((entry) => <li key={`${entry.source}-${entry.date}`}>
+          {latest.map((entry) => <li key={`${entry.source}-${entry.date}-${entry.label.slice(0, 24)}`}>
             <span className="update-date">{entry.date}</span>
             <div className="update-body">
               <b><Link href={`/companies/${entry.companySlug}`}>{entry.company}</Link> · {entry.kind}</b>

@@ -55,7 +55,7 @@ for (const project of data.projects) noteDate(project.companySlug, project.lates
 
 /** [route, lastmod]. A null lastmod is omitted, never guessed. */
 const routes = [
-  ...["", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/methodology"]
+  ...["", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/financing", "/methodology"]
     .map((route) => [route, data.dataAsOf]),
   ...data.companies.map((company) => [`/companies/${company.slug}`, companyDates.get(company.slug) ?? null]),
   ...data.projects.map((project) => [`/deployments/${project.slug}`, project.latestDate]),
