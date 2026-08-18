@@ -8,12 +8,16 @@
 
 const DATA_URL = new URL("../../app/data.ts", import.meta.url);
 const FINANCING_URL = new URL("../../app/financing-data.ts", import.meta.url);
+const BD_URL = new URL("../../app/bd-data.ts", import.meta.url);
 
 export async function loadData() {
-  // One merged view: the race dataset and the financing layer validate on the
-  // same terms. Export names are disjoint between the two modules.
-  const [data, financing] = await Promise.all([import(DATA_URL.href), import(FINANCING_URL.href)]);
-  return { ...data, ...financing };
+  // One merged view: the race dataset, the financing layer, and the BD layer
+  // validate on the same terms. Export names are disjoint across the three
+  // modules; the BD module keeps a `bd` prefix on everything to guarantee it.
+  const [data, financing, bd] = await Promise.all([
+    import(DATA_URL.href), import(FINANCING_URL.href), import(BD_URL.href),
+  ]);
+  return { ...data, ...financing, ...bd };
 }
 
 /**
@@ -96,6 +100,22 @@ export function sourcedRecords(data) {
     for (const line of row.government) push("finance.government", row.companySlug, line.text, line.source);
     for (const line of row.commercial) push("finance.commercial", row.companySlug, line.text, line.source);
     if (row.costClaimSource) push("finance.cost-claim", row.companySlug, row.costClaim, row.costClaimSource);
+  }
+  // The BD layer. Buyer positions carry real buyer slugs; sector-plan
+  // evidence, signals, and the manufacturing path carry the pseudo-slug "bd".
+  for (const buyer of data.bdBuyers) {
+    for (const position of buyer.positions) {
+      push(`bd.position.${position.tier}`, buyer.slug, position.label, position.source, position.verification);
+    }
+  }
+  for (const plan of data.bdSectorPlans) {
+    for (const line of plan.evidence) push("bd.evidence", "bd", line.text, line.source);
+  }
+  for (const signal of data.bdSignals) {
+    push("bd.signal", "bd", `${signal.who}: ${signal.said}`, signal.source, signal.verification);
+  }
+  for (const rung of data.bdMicroPath) {
+    push("bd.micro-path", "bd", `${rung.step}: ${rung.evidence}`, rung.source);
   }
   return rows;
 }

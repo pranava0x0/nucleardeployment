@@ -1,0 +1,283 @@
+ExxonMobil Planning Large Gas-Fired Plant to Serve Data Centers
+Energy & Engineering Group:
+Topics
+Carbon Capture
+Coal
+Cybersecurity
+Data Centers
+Distributed Energy
+Energy Storage
+Environmental
+Gas
+Geothermal
+Hydro
+Hydrogen
+Legal & Regulatory
+Nuclear
+O&M
+Safety
+Smart Grid
+Solar
+Technology
+T&D
+Waste to Energy
+Water
+Wind
+Workforce
+Events
+Experience POWER
+Data Center POWER eXchange
+Industry Events
+POWER Awards
+Webinars
+Resources
+POWER Plant ID
+Why POWER?
+Videos
+Podcasts
+Newsletters
+White Papers
+BrandConnect
+Interactive Features
+Press Releases
+Blog
+Store
+Jobs
+Issues
+POWER Magazine
+POWER News
+RENEWABLE POWER Direct
+NUCLEAR POWER Direct
+T&#038;D POWER Direct
+GAS POWER Direct
+DATA CENTER POWER Direct
+FINANCIAL POWER Direct
+Archive
+POWER Plant ID
+Advertise
+Subscribe
+Subscribe
+E-Letter Signup
+Log In
+Search
+Topics
+Carbon Capture
+Coal
+Cybersecurity
+Data Centers
+Distributed Energy
+Energy Storage
+Environmental
+Gas
+Geothermal
+Hydro
+Hydrogen
+Legal & Regulatory
+Nuclear
+O&M
+Safety
+Smart Grid
+Solar
+Technology
+T&D
+Waste to Energy
+Water
+Wind
+Workforce
+Events & Awards
+Experience POWER
+Data Center POWER eXchange
+Industry Events
+POWER Awards
+Webinars
+Resources
+POWER Plant ID
+Why POWER?
+Videos
+Podcasts
+Newsletters
+White Papers
+BrandConnect
+Interactive Features
+Press Releases
+Blog
+Store
+Jobs
+Issues
+POWER Magazine
+POWER News
+RENEWABLE POWER Direct
+NUCLEAR POWER Direct
+T&#038;D POWER Direct
+GAS POWER Direct
+DATA CENTER POWER Direct
+FINANCIAL POWER Direct
+Archive
+About Us
+Advertise
+Membership
+About Us
+Privacy Policy, Terms &#038; Conditions
+Diversity, Equity, Inclusion &#038; Belonging
+Cookie Settings
+Accessibility
+Sign In
+Email or Username
+Password
+Forgot Password?
+Please contact our Customer Service Team if you are unable to log in at clientservices@accessintel.com
+or 1-888-707-5814.
+Home Data Centers ExxonMobil Planning Large Gas-Fired Plant to Serve Data Centers
+Data Centers
+ExxonMobil Planning Large Gas-Fired Plant to Serve Data Centers
+Darrell Proctor
+Wednesday, December 11, 2024
+SHARE:
+ExxonMobil is preparing to join the power generation business, seeing an opportunity to support the electricity supply for energy-intensive data centers.
+The company on Dec. 11 said it is designing what was referred to as a &ldquo;massive&rdquo; natural gas-fired power plant that would be dedicated to producing power for data centers. Reports said the facility could have generating capacity of more than 1,500 MW.
+Darren Woods, Exxon&rsquo;s chief executive, in a media call on Wednesday said, &ldquo;There are very few opportunities in the short term to power those data centers and do it in a way that at the same time minimizes, if not completely eliminates, the emissions.&rdquo; There currently are no U.S. natural gas-fired power plants with carbon capture technology, although NET Power on Monday said it would build gas-fired generation in California and utilize carbon capture.
+Electric utilities and power generators are scrambling to find ways to serve what&rsquo;s expected to be an exponential increase in energy demand from artificial intelligence and the high-tech sector. Natural gas, in part due to its lower cost, has emerged as a leading option for an industry looking for 24/7 electricity. Nuclear power also is being considered , along with renewable energy and energy storage . Some utilities also have said they expect to keep coal-fired power units online longer than expected to help meet increasing demand for electricity.
+Exxon said its gas-fired plant would have technology to capture more than 90% of the facility&rsquo;s emissions of carbon dioxide. The company said the project is still in the early stages of development. Exxon has built gas-fired plants previously, but only to serve the company&rsquo;s own operations.
+Houston, Texas-based ExxonMobil did not disclose the cost or the location of the new power plant but said it had secured land for the facility, and is talking with groups that would potentially buy the power. The company said it could have the plant ready for operation within the next five years. Exxon also said it would not seek to have the plant connected to the power grid, which could speed its permitting and construction process.
+In This Issue
+Full issue
+Hydrogen
+Siemens Energy Joins Forces for Bold 100% Hydrogen HL Gas Turbine Leap
+Energy Storage
+Report: More Records for U.S. Energy Storage Deployment
+Nuclear
+AtkinsRéalis Will Be Owner’s Engineer for Energy Northwest’s SMR
+Nuclear
+How Nuclear Power Could Help Decarbonize Industrial Steam Needs
+Trends
+Digitizing Distribution Substations Is Key to America’s Smart Grid Journey
+See more stories
+Data Centers
+ExxonMobil Planning Large Gas-Fired Plant to Serve Data Centers
+Gas
+NET Power and CRC Team to Deploy 1 GW of Carbon-Free Gas Power Plants in California
+Data Centers
+Google Invests in Partnership to Develop Energy Assets at Data Center Parks
+Nuclear
+Six Companies Tapped for $2.7 Billion LEU Push to Boost Domestic Nuclear Fuel Supply
+Gas
+Hundreds of New Gas-Fired Power Units Planned as U.S. Gas Output Soars
+Hydrogen
+Hydrogen For District Heating Part of German Research Project
+Renewables
+California Power Group in PPA With 384-MW Solar Project
+Distributed Energy
+DOE Earmarks $305 Million for Energy Storage in California Buildings
+Solar
+Avantus Signs PPA with Arizona Utility for 100-MW Solar Project
+Solar
+Best Practices for Mitigating Hail Damage to Solar Projects
+Connected Plant
+Why Power Companies Are Turning to Refurbished Parts for Plant System Upgrades
+T&D
+GE Vernova to Provide Grid-Stabilizing Technology for German Transmission System Operator
+Engineering
+EPRI Develops Power System Generic Models to Plan for an Increasingly Net-Zero Grid
+Renewables
+Study Finds 21 Regions with High Potential for the Development of Wind Farms in Cuba
+Gas
+Largest Pennsylvania Coal-Fired Plant Will Convert to Natural Gas
+Electrification
+C&#038;I Sector Must Diversify Power Sources to Lessen Costs, Supply Chain Risks
+Coal
+North Dakota Carbon Capture Project in Limbo After Canada Group’s Exit
+Dan Ammann, an Exxon executive involved in the company&rsquo;s low-carbon business, and the former president of General Motors, told The New York Times : &ldquo;We&rsquo;re being driven by the market demand here. It&rsquo;s low carbon, it&rsquo;s available on an accelerated timeline and it avoids all the grid interconnection challenges.&rdquo;
+Exxon is an oil and gas major. The company, which also Wednesday said it expects to increase its oil and gas production by about 18% from current levels by 2030, has said it plans to spend $30 billion to develop alternative energy resources and reduce emissions from its operations over the next few years.
+The company earlier this year said it is working with tech giant Intel to develop new liquid cooling technologies for data centers. The groups said they would partner to &ldquo;design, test, research, and co-develop energy-efficient cooling fluid solutions,&rdquo; which would be able to support systems built on chipmaker Intel&rsquo;s x86 architecture.
+The companies said the technology could help data center operators cut emissions from their facilities, and support more energy-efficient operations.
+&mdash; Darrell Proctor is a senior editor for POWER.
+Tagged in:
+exxon
+natural gas
+Texas
+power plant
+data centers
+ExxonMobil
+Webinars
+July 9, 2025
+Creating Value from Data: Maximizing Plant Performance Through Real-Time Analytics
+Modern process industries are experiencing fluctuating market conditions and tight operational margins, leading chemical engineers to rely on real-time data to boost efficiency and reduce costs. Yet, many organizations are at different stages in their digital transformation journey. Some are just starting, while others are looking to optimize existing solutions. This webinar explores practical ways [&hellip;]
+REGISTER
+Sponsored by
+dataPARC
+June 16, 2025
+Smart MRO: Using Technology and Assessment to Enhance Power Plant Performance
+REGISTER
+Sponsored by
+RENTECH
+May 20, 2025
+How One Electric Utility Is Using AI and Extreme Weather Modeling to Make Critical Grid Decisions
+REGISTER
+Sponsored by
+technosylva
+Videos
+POWER Global Media
+archives + podcasts + webinars + e-letters + video + exclusive content + events + much more!
+For over 142 years, POWER has been the unwavering pillar of the power and energy industry, offering unparalleled insights on the latest trends, best practices, and news through our robust channels: print, digital media, and in-person events.
+Subscribe Now
+Trending
+Fusion
+Fuse Touts &#8216;Highest’ Neutron Yield by Any Fusion Company
+Commentary
+3 GW Off PJM, Again: What NERC’s 2024 Investigation Already Told Us
+Data Centers
+More Data Center Operators Commit to Abbott’s Texas Standards as Power Companies Endorse ERCOT Batch Framework
+Data Centers
+Texas Audit Could Delay 49.8 GW of Data Center Load, Cost Projects Up to $15 Billion, BNEF Warns
+Gas
+LS Power Acquiring 606-MW Texas Gas-Fired Plant From Constellation
+Trends
+Oklo’s Groves Becomes Fifth DOE Pilot Reactor to Reach Criticality, First on Private Land
+Legal & Regulatory
+Abbott Orders Full Audit of Texas Data Center Interconnection Queue, Threatens to Deny Grid Access
+Gas
+A Pioneering Approach to Building New Generation Resources
+Top Plant
+In the Thar Desert, Pakistan Proves Its Indigenous Coal Can Be a Reliable Power Resource
+Recommended
+Legal & Regulatory
+Carbon Capture Key to EPA’s New Power Plant Emissions Rule
+Gas
+New Gas-Fired Plants Bring Needed Generation, Flexibility to the Power Sector
+Gas
+New Gas-Fired Plants Bring Needed Generation, Flexibility to the Power Sector
+Data Centers
+Generational Shift—Data Centers Bring Change to Energy Landscape
+Legal & Regulatory
+Carbon Capture Key to EPA’s New Power Plant Emissions Rule
+Gas
+Japan, Korea Groups Will Build 2.4-GW Gas-Fired Power Plant in Qatar
+From the Magazine
+Data Centers
+Is the Power Project Crunch Upending the Owner—EPC Model?
+Gas
+Rayburn Energy Station: A Cooperative’s Answer to Texas-Sized Risk
+Gas
+A Pioneering Approach to Building New Generation Resources
+Read the Full issue
+News & Technology for the Global Energy Industry
+POWER is at the forefront of the global power market, providing in-depth news and insight on the end-to-end electricity system and the ongoing energy transition. We strive to be the “go-to” resource for power professionals, offering a wealth of information on innovative business practices, sound safety measures, useful productivity enhancements, and much more.
+Upcoming
+Experience POWER
+Sept. 28—30, 2026
+Omni Shoreham Washington, D.C.
+Learn More
+About Power
+Advertise
+Membership
+About Us
+Privacy Policy, Terms &#038; Conditions
+Diversity, Equity, Inclusion &#038; Belonging
+Cookie Settings
+Accessibility
+Subscribe
+Membership
+Trends, best practices, and news through: print, digital media, and in-person events. Subscribe
+Newsletters
+Exclusive E-letters to POWER up your knowledge. Sign up
+© 2026 Access Intelligence, LLC - All Rights Reserved

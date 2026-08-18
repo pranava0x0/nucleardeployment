@@ -1,0 +1,287 @@
+DOE Launches UPRISE to Add 5 GW of Nuclear Capacity by 2029
+Energy & Engineering Group:
+Topics
+Carbon Capture
+Coal
+Cybersecurity
+Data Centers
+Distributed Energy
+Energy Storage
+Environmental
+Gas
+Geothermal
+Hydro
+Hydrogen
+Legal & Regulatory
+Nuclear
+O&M
+Safety
+Smart Grid
+Solar
+Technology
+T&D
+Waste to Energy
+Water
+Wind
+Workforce
+Events
+Experience POWER
+Data Center POWER eXchange
+Industry Events
+POWER Awards
+Webinars
+Resources
+POWER Plant ID
+Why POWER?
+Videos
+Podcasts
+Newsletters
+White Papers
+BrandConnect
+Interactive Features
+Press Releases
+Blog
+Store
+Jobs
+Issues
+POWER Magazine
+POWER News
+RENEWABLE POWER Direct
+NUCLEAR POWER Direct
+T&#038;D POWER Direct
+GAS POWER Direct
+DATA CENTER POWER Direct
+FINANCIAL POWER Direct
+Archive
+POWER Plant ID
+Advertise
+Subscribe
+Subscribe
+E-Letter Signup
+Log In
+Search
+Topics
+Carbon Capture
+Coal
+Cybersecurity
+Data Centers
+Distributed Energy
+Energy Storage
+Environmental
+Gas
+Geothermal
+Hydro
+Hydrogen
+Legal & Regulatory
+Nuclear
+O&M
+Safety
+Smart Grid
+Solar
+Technology
+T&D
+Waste to Energy
+Water
+Wind
+Workforce
+Events & Awards
+Experience POWER
+Data Center POWER eXchange
+Industry Events
+POWER Awards
+Webinars
+Resources
+POWER Plant ID
+Why POWER?
+Videos
+Podcasts
+Newsletters
+White Papers
+BrandConnect
+Interactive Features
+Press Releases
+Blog
+Store
+Jobs
+Issues
+POWER Magazine
+POWER News
+RENEWABLE POWER Direct
+NUCLEAR POWER Direct
+T&#038;D POWER Direct
+GAS POWER Direct
+DATA CENTER POWER Direct
+FINANCIAL POWER Direct
+Archive
+About Us
+Advertise
+Membership
+About Us
+Privacy Policy, Terms &#038; Conditions
+Diversity, Equity, Inclusion &#038; Belonging
+Cookie Settings
+Accessibility
+Sign In
+Email or Username
+Password
+Forgot Password?
+Please contact our Customer Service Team if you are unable to log in at clientservices@accessintel.com
+or 1-888-707-5814.
+Home Nuclear DOE Unveils Initiative to Add 5 GW of Nuclear Capacity Through Uprates and Restarts
+Nuclear
+DOE Unveils Initiative to Add 5 GW of Nuclear Capacity Through Uprates and Restarts
+Sonal C. Patel
+Thursday, March 12, 2026
+SHARE:
+The U.S. Department of Energy (DOE) has launched a new initiative to increase U.S. nuclear generating capacity&mdash;targeting 2.5 GW of additional nuclear capacity by 2027 and 5 GW by 2029&mdash;by expanding output from operating reactors, restarting dormant facilities, and extending the lifespans of plants already on the grid.
+The Utility Power Reactor Incremental Scaling Effort&mdash;UPRISE&mdash; unveiled on March 12 , will focus on power uprates at operating plants, license renewals, restarts of dormant facilities, including projects such as the Palisades Nuclear Plant in Michigan, the Crane Clean Energy Center in Pennsylvania, and others, and plant efficiency optimization, including through advanced fuel technologies.
+The DOE plans to carry out that work through targeted technical support to owners and the Nuclear Regulatory Commission (NRC), new &ldquo;matchmaking&rdquo; workshops that pair plants with large end&#8209;users, and expanded use of its federal loan authority to de&#8209;risk uprate and restart investment decisions.
+The Office of Nuclear Energy said the measure aligns with a White House directive, formalized through executive orders signed in May 2025, to quadruple U.S. nuclear generating capacity from roughly 100 GW today to 400 GW by 2050. U.S. utilities currently operate 94 commercial reactors at 54 sites with nearly 97 GWe of net generating capacity, and nuclear power supplies about 19%&ndash;20% of U.S. electricity.
+DOE officials on Thursday described UPRISE as a response to surging electricity demand driven by industrial electrification and the rapid expansion of artificial intelligence data centers, which are projected to significantly increase U.S. power consumption over the coming decade. &ldquo;UPRISE aims to make a significant contribution to the effort by targeting the most cost-effective and immediate methods to significantly increase nuclear energy capacity,&rdquo; the DOE wrote in a milestone update.
+&ldquo;This will be a resurgence for America&rsquo;s nuclear fleet,&rdquo; said Dr. Rian Bahran, DOE&rsquo;s Deputy Assistant Secretary for Nuclear Energy. &ldquo;Through UPRISE, the Department will work with industry to surpass the President&rsquo;s goal of 5 GW of domestic nuclear energy expansion by 2030.&rdquo;
+In This Issue
+Full issue
+Fusion
+OpenAI in Talks with Helion to Secure Fusion Energy
+Nuclear
+Nuclear Sprint: DOE and Industry Race to Meet Trump’s Target
+Nuclear
+GE Vernova, Hitachi Exploring SMR Deployment in Southeast Asia
+Nuclear
+DOE Unveils Initiative to Add 5 GW of Nuclear Capacity Through Uprates and Restarts
+Commentary
+Why Nuclear Power Is Most Viable Option for Data Centers
+See more stories
+Nuclear
+Aerospace Offers an Unlikely Playbook for the Nuclear Energy Industry in 2026
+Legal & Regulatory
+A Historic First: NRC Clears TerraPower’s Natrium Nuclear Reactor for Construction
+Nuclear
+Building Now For What Comes Later: How Nuclear Fits Into the Grid’s Next Decade
+Commentary
+Beyond Reactors: The Full Fuel Cycle Investment Needed for a Nuclear Future
+advanced nuclear
+China’s Advanced Nuclear Efforts Are Pushing Frontiers
+Nuclear
+Russia’s Rosatom Will Continue Foreign Nuclear Power Plant Projects Despite UK Sanctions
+Fusion
+NRC Proposes First Dedicated Regulatory Framework for Commercial Fusion Machines
+Finance
+Southern Co. Lands Largest Loan in DOE History—$26.5B for Gas, Nuclear, and Grid Projects
+Nuclear
+Romania’s Coal-to-NuScale SMR Conversion Secures FID, Moves Into Implementation with Caveats
+Fastest Pathway: Uprates and Restarts
+The measure aligns with industry interest, as reported by the Nuclear Energy Institute (NEI) in its Future of Nuclear Power survey, released in September 2025. NEI reported that more than 95% of the 95 units it surveyed expect to operate for at least 80 years, and that more than 73% of U.S. sites have some level of interest or planning for power uprates. The survey also found that about 48% of sites are pursuing at least one &ldquo;enabling&rdquo; change&mdash;risk&#8209;informed LOCA (updating loss&#8209;of&#8209;coolant accident analyses to free up safety margin for uprates and longer cycles), extended fuel cycles using conventional fuel, or extended fuel cycles using accident&#8209;tolerant fuel&mdash;slated mainly for the 2026&ndash;2034 period.
+Notably, NEI concluded that uprates, restarts, longer cycles, and other output increases together could add over 8 GWe of new carbon&#8209;free nuclear capacity over the coming decade.
+The Nuclear Energy Institute&rsquo;s (NEI&rsquo;s) 2025 Future of Nuclear Power survey estimates more than 8 GWe of potential additional nuclear capacity from the existing fleet this decade, driven primarily by power uprates, plant restarts, fuel&#8209;cycle extensions, and other output increases. Courtesy: Nuclear Energy Institute (NEI), The Future of Nuclear Power 2025 Survey.
+Bahran, who oversees the DOE&rsquo;s nuclear reactor activities, called uprates and restarts &ldquo;the fastest pathway to getting gigawatts on the grid&rdquo; on the way to the 400&#8209;GW goal. In an interview with POWER , he said the DOE believes it has &ldquo;a very strong and clear understanding of what the ceiling is for uprates and restarts,&rdquo; and of &ldquo;what we think industry is going to accomplish on their own versus if we actually work together to try to accelerate.&rdquo; He put the incremental gain from federal engagement&mdash;the &ldquo;delta&rdquo; between those two cases&mdash;at &ldquo;more than a gigawatt by 2027&rdquo; and &ldquo;certainly more than a gigawatt by 2029,&rdquo; compared with what utilities would otherwise do on their own over that period.
+The agency said the initiative will follow a three-pronged near-term approach. First, it will establish the business case by examining supply chain readiness. Second, it will assess plant equipment to increase power output or implement upgrades. Third, it will validate economic models to support investment decisions for projects. The effort will also support research to streamline regulatory processes, advance nuclear fuel technologies, and strengthen the workforce needed for future nuclear deployments.
+Later this year, the Office of Nuclear Energy and the Office of Energy Dominance Financing (EDF) will convene matchmaking workshops to facilitate agreements between nuclear plant owners and end users.
+EDF has more than $289 billion in available loan authority and can provide up to 80% financing for eligible project costs associated with nuclear uprates. The DOE noted its loan program&rsquo;s role in completing Vogtle Units 3 and 4 and its ongoing support for the restarts of the Palisades Nuclear Plant and the Crane Clean Energy Center . Bahran said DOE is also watching Duane Arnold in Iowa as a restart candidate. He declined to identify any additional sites beyond those already public, though he noted that lessons learned at Palisades and Crane will inform how future restart prospects are evaluated.
+Palisades is backed by a DOE loan guarantee of up to $1.52 billion to return the 800&#8209;MW unit to service; Holtec is targeting power production in 2026 under the plant&rsquo;s renewed operating license. Crane&mdash;formerly Three Mile Island&#8209;1&mdash;has a $1 billion DOE loan to support Constellation&rsquo;s roughly $1.6 billion restart of the 835&#8209;MW unit; the plant could be back online as soon as 2027 under a long&#8209;term power contract with Microsoft. Duane Arnold in Iowa is also advancing as a restart candidate; NextEra and Google announced a 25&#8209;year power purchase agreement in October 2025 to support the restart of the roughly 600&#8209;MW plant by 2029, in a project expected to cost more than $1.6 billion.
+Asked who those &ldquo;end users&rdquo; are, Bahran said DOE and EDF are looking at &ldquo;all of the above,&rdquo; including hyperscalers, industrial co&#8209;locators, a newly formed industrial consortium that includes oil and gas companies, and utilities. He noted that hyperscalers &ldquo;are certainly willing to pay a premium for [levelized cost of electricity],&rdquo; which tends to move them to &ldquo;the top of the list&rdquo; when the DOE runs its techno&#8209;economic analysis of allowable costs for uprates and restarts. At the same time, he emphasized that &ldquo;other industrial users also are interested and would benefit.&rdquo; He said EDF&rsquo;s loan authority is large and that the office is &ldquo;all in on figuring out how to use their full authorities to fund anybody who wants to put uprates,&rdquo; adding that matchmaking workshops will focus on helping owners build the business case and shorten project timelines.
+A Coming Wave of Nuclear Uprates
+Industry has typically spearheaded power uprates at the nation&rsquo;s nuclear power plants. The NRC recognizes three categories. Measurement uncertainty recapture (MUR) uprates, the smallest, typically recover less than 2% of additional power by using more precise feedwater flow instruments to reduce the safety margin baked into the original license. Stretch power uprates&mdash;typically up to 7%&mdash;adjust instrumentation setpoints and operating procedures but stop short of major hardware changes. Extended power uprates are the most capital-intensive, raising output by up to 20% through significant modifications to turbines, condensate pumps, main generators, and transformers.
+Bahran said UPRISE is looking at &ldquo;all of them&rdquo; and that the DOE has grouped the opportunity into three buckets to make the program more legible beyond technical specialists: balance-of-plant and operational improvements; &ldquo;plant physical upgrades that require license amendments&rdquo;; and restarts. &ldquo;Those are our kind of three buckets,&rdquo; he said. &ldquo;And again, I think we need to do all of the above, and we think we can accelerate all of them.&rdquo;
+The NRC has issued 65 stretch power uprate approvals and cleared 21 sites (34 units) for extended power uprates since 1998. However, in its September survey, NEI said 21 sites reported planning or interest in extended power uprates, up from 17 in 2024 and 11 in 2023. Across all uprate categories&mdash;along with component-level output increases that typically do not require NRC review&mdash;73% of surveyed sites indicated some level of interest or planning, totaling more than 5 GWe in combined estimated capacity. The NEI&rsquo;s analysis of NRC submittal dates shows the pipeline peaking in 2027 and 2028, each year carrying eight anticipated applications.
+NRC data suggests a sizable uprate wave is already underway. The regulatory body&rsquo;s &ldquo;expected applications&rdquo; list identifies about 30 planned uprates through 2030&mdash;10 MUR uprates, two stretch power uprates, and 18 extended power uprates&mdash;including three applications in 2026, 16 in 2027, and eight in 2028, along with additional cases in 2029 and 2030. Those projects, combined, represent roughly 2.5 GWe/7,694 MWth of potential new capacity if all are approved and implemented.
+The NRC&rsquo;s own backgrounder notes that, historically, 171 approved uprates have already added about 8.5 GWe of electric capacity to the U.S. grid&mdash;the equivalent of roughly eight large reactors&mdash;at a fraction of the cost of new&#8209;build. For current reviews, the agency has set internal targets of 12 months for extended power uprates, nine months for stretch uprates, and six months for MUR uprates.
+U.S. Nuclear Regulatory Commission (NRC)&ndash;licensed power uprates at U.S. reactors have added about 8.5 GWe of cumulative capacity since 2000, based on NRC data and projections for uprate submittals through 2032. Source: NRC (Jan. 2025)
+NRC, AI Tools, and What to Watch Next
+On the regulatory side, Bahran said that UPRISE will build on existing work between the DOE&rsquo;s Light Water Reactor Sustainability Program and the NRC. The DOE has been helping the NRC &ldquo;not just streamline, but even do things like use [artificial intelligence (AI)] to help accelerate how they do licensing for upgrades,&rdquo; he said, describing it as a &ldquo;special kind of unique government&#8209;to&#8209;government relationship&rdquo; under which DOE can provide tools and technical advice. &ldquo;Here, what we&rsquo;re looking to do is really just accelerate that type of work,&rdquo; he said, adding that industry will participate through joint workshops and other engagements.
+He also stressed that UPRISE is not solely about relieving NRC constraints. Engineering schedule and bandwidth at utilities, long&#8209;lead equipment procurement, staffing, and investment decisions are &ldquo;one of the bottlenecks for accelerating uprates and restarts,&rdquo; he said. The DOE is &ldquo;trying to break down what it takes to go from &lsquo;there&rsquo;s margin here&rsquo; to gigawatts on the grid&rdquo;&mdash;from the owner&rsquo;s initial investment decision through engineering, licensing, and ordering long&#8209;lead components&mdash;because &ldquo;for all this to come together and to come together quickly, it&rsquo;s going to require all of us to be focused and engaged.&rdquo;
+On fuel, Bahran said DOE&rsquo;s initial UPRISE capacity targets do not assume a contribution from accident&#8209;tolerant fuel (ATF) or higher&#8209;enrichment LEU deployments. &ldquo;ATF is not part of our, for example, 2027 targets,&rdquo; he said, adding that DOE expects advanced fuel to matter &ldquo;more like the 2030s.&rdquo; He said UPRISE is intended to be &ldquo;an accelerant&rdquo; that creates momentum for teams working on ATF and high&#8209;enrichment LEU so they can &ldquo;jump in&rdquo; as those technologies mature, but &ldquo;they&rsquo;re not part of our initial&rdquo; goals.
+The DOE described UPRISE as a supply chain catalyst as well as a capacity program, stating the initiative will &ldquo;invigorate the domestic supply chains required for both upgrading existing plants and the build-out of future nuclear plants.&rdquo; The Light Water Reactor Sustainability Program at Idaho National Laboratory, which supports operational efficiency and life extension research for the existing fleet, will serve as a primary DOE resource underpinning the effort, the agency said.
+For owners and vendors weighing whether to staff up around UPRISE now, Bahran pointed to &ldquo;active, important work streams&rdquo; already underway&mdash;including supply&#8209;chain readiness assessments, safety&#8209;margin analyses, and techno&#8209;economic work on business cases&mdash;that utilities and NRC staff &ldquo;know and recognize.&rdquo; The DOE plans to accelerate those efforts and &ldquo;quickly build&rdquo; a series of matchmaking workshops that bring together utilities and off&#8209;takers that have been directed to pay for their own power needs to protect ratepayers. Updates on those convenings will be a key signal that UPRISE is moving from target to execution, he said.
+&mdash; Sonal Patel is a POWER senior editor ( @sonalcpatel , @POWERmagazine ).
+Tagged in:
+uprates
+UPRISE
+DOE
+nuclear
+NRC
+restarts
+capacity
+Webinars
+July 9, 2025
+Creating Value from Data: Maximizing Plant Performance Through Real-Time Analytics
+Modern process industries are experiencing fluctuating market conditions and tight operational margins, leading chemical engineers to rely on real-time data to boost efficiency and reduce costs. Yet, many organizations are at different stages in their digital transformation journey. Some are just starting, while others are looking to optimize existing solutions. This webinar explores practical ways [&hellip;]
+REGISTER
+Sponsored by
+dataPARC
+June 16, 2025
+Smart MRO: Using Technology and Assessment to Enhance Power Plant Performance
+REGISTER
+Sponsored by
+RENTECH
+May 20, 2025
+How One Electric Utility Is Using AI and Extreme Weather Modeling to Make Critical Grid Decisions
+REGISTER
+Sponsored by
+technosylva
+Videos
+POWER Global Media
+archives + podcasts + webinars + e-letters + video + exclusive content + events + much more!
+For over 142 years, POWER has been the unwavering pillar of the power and energy industry, offering unparalleled insights on the latest trends, best practices, and news through our robust channels: print, digital media, and in-person events.
+Subscribe Now
+Trending
+Data Centers
+Texas 2.5-GW Gas-Plus-Nuclear Project Proceeds to Engineering, Licensing Phase
+Fusion
+Fuse Touts &#8216;Highest’ Neutron Yield by Any Fusion Company
+Commentary
+3 GW Off PJM, Again: What NERC’s 2024 Investigation Already Told Us
+Commentary
+Alarm Bells Are Sounding for the Grid: Answering Them Takes More Than Megawatts
+Data Centers
+More Data Center Operators Commit to Abbott’s Texas Standards as Power Companies Endorse ERCOT Batch Framework
+Gas
+LS Power Acquiring 606-MW Texas Gas-Fired Plant From Constellation
+Legal & Regulatory
+Abbott Orders Full Audit of Texas Data Center Interconnection Queue, Threatens to Deny Grid Access
+Gas
+A Pioneering Approach to Building New Generation Resources
+Top Plant
+In the Thar Desert, Pakistan Proves Its Indigenous Coal Can Be a Reliable Power Resource
+Recommended
+Nuclear
+Duke Energy’s Robinson Nuclear Plant Gets NRC Approval to Operate Until 2050
+Nuclear
+DOE Finalizes $1.52B Palisades Loan for First-Ever U.S. Nuclear Plant Recommissioning
+Trends
+NRC Accepts COLA for Fermi America’s Behemoth Four-Unit AP1000 Nuclear Plant in Texas
+Nuclear
+Nuclear Sprint: DOE and Industry Race to Meet Trump’s Target
+Nuclear
+DOE Awards Civil Nuclear Credits to Diablo Canyon
+Nuclear
+DOE Awards Civil Nuclear Credits to Diablo Canyon
+From the Magazine
+Data Centers
+Is the Power Project Crunch Upending the Owner—EPC Model?
+Gas
+Rayburn Energy Station: A Cooperative’s Answer to Texas-Sized Risk
+Gas
+A Pioneering Approach to Building New Generation Resources
+Read the Full issue
+News & Technology for the Global Energy Industry
+POWER is at the forefront of the global power market, providing in-depth news and insight on the end-to-end electricity system and the ongoing energy transition. We strive to be the “go-to” resource for power professionals, offering a wealth of information on innovative business practices, sound safety measures, useful productivity enhancements, and much more.
+Upcoming
+Experience POWER
+Sept. 28—30, 2026
+Omni Shoreham Washington, D.C.
+Learn More
+About Power
+Advertise
+Membership
+About Us
+Privacy Policy, Terms &#038; Conditions
+Diversity, Equity, Inclusion &#038; Belonging
+Cookie Settings
+Accessibility
+Subscribe
+Membership
+Trends, best practices, and news through: print, digital media, and in-person events. Subscribe
+Newsletters
+Exclusive E-letters to POWER up your knowledge. Sign up
+© 2026 Access Intelligence, LLC - All Rights Reserved

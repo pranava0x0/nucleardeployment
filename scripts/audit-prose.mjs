@@ -38,7 +38,9 @@ const bannedPattern = new RegExp(`\\b(${BANNED.map(escapeForRegex).join("|")})\\
 const HEDGES = ["generally", "typically", "in most cases", "arguably", "somewhat", "fairly", "quite"];
 
 const data = await loadData();
-const paths = ["/", "/updates", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
+// The financing page was missing from this sweep from its first release; it
+// and the BD page are listed now so every layer's prose gets linted.
+const paths = ["/", "/updates", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map", "/financing", "/bd",
   ...data.raceEntrants.map((entrant) => `/companies/${entrant.companySlug}`)];
 
 const worker = (await import(new URL("../dist/server/index.js", import.meta.url).href + `?t=${Math.random()}`)).default;

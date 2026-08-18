@@ -1,0 +1,148 @@
+These Microreactors Could Bring Nuclear Power to Remote Areas - IEEE Spectrum
+IEEE.org IEEE Xplore IEEE Standards IEEE Job Site More Sites
+Sign In Join IEEE
+Two Nuclear Microreactors Reach Milestone
+Share FOR THE TECHNOLOGY INSIDER
+Search:
+Explore by topic Aerospace AI Biomedical Climate Tech Computing Consumer Electronics Energy History of Technology Robotics Semiconductors Telecommunications Transportation
+IEEE Spectrum
+FOR THE TECHNOLOGY INSIDER
+Topics
+Aerospace AI Biomedical Climate Tech Computing Consumer Electronics Energy History of Technology Robotics Semiconductors Telecommunications Transportation
+Sections
+Features News Opinion Careers DIY Engineering Resources
+More
+Newsletters Special Reports Collections Explainers Top Programming Languages Robots Guide ↗ IEEE Job Site ↗
+For IEEE Members
+Current Issue Magazine Archive The Institute The Institute Archive
+For IEEE Members
+Current Issue Magazine Archive The Institute The Institute Archive
+IEEE Spectrum
+About Us Contact Us Reprints & Permissions ↗ Advertising ↗
+Follow IEEE Spectrum
+Support IEEE Spectrum
+IEEE Spectrum is the flagship publication of the IEEE — the world’s largest professional organization devoted to engineering and applied sciences. Our articles, videos, and infographics inform our readers about developments in technology, engineering, and science.
+Subscribe
+About IEEE Contact & Support Accessibility Nondiscrimination Policy Terms IEEE Privacy Policy Cookie Preferences Ad Privacy Options
+© Copyright 2026 IEEE — All rights reserved. A public charity, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+Enjoy more free content and benefits by creating an account
+Saving articles to read later requires an IEEE Spectrum account
+The Institute content is only available for members
+Downloading full PDF issues is exclusive for IEEE Members
+Downloading this e-book is exclusive for IEEE Members
+Access to
+Spectrum
+'s Digital Edition is exclusive for IEEE Members
+Following topics is a feature exclusive for IEEE Members
+Adding your response to an article requires an IEEE Spectrum account
+Create an account to access more content and features on
+IEEE Spectrum
+, including the ability to save articles to read later, download Spectrum Collections, and participate in
+conversations with readers and editors. For more exclusive content and features, consider
+Joining IEEE
+.
+Join the world’s largest professional organization devoted to engineering and applied sciences and get access to
+all of Spectrum’s articles, archives, PDF downloads, and other benefits.
+Learn more about IEEE →
+Join the world’s largest professional organization devoted to engineering and applied sciences and get access to
+this e-book plus all of
+IEEE Spectrum’s
+articles, archives, PDF downloads, and other benefits.
+Learn more about IEEE →
+CREATE AN ACCOUNT SIGN IN
+JOIN IEEE SIGN IN
+Close Access Thousands of Articles — Completely Free
+Create an account and get exclusive content and features:
+Save articles, download collections,
+and
+post comments
+— all free! For full access and benefits,
+subscribe
+to Spectrum .
+CREATE AN ACCOUNT SIGN IN
+Energy News Climate Tech Climate Change
+Two Nuclear Microreactors Reach Milestone
+Westinghouse and Radiant are developing some of the world’s smallest reactors
+Shannon Cuthrell
+09 Jan 2025
+4 min read
+Shannon Cuthrell is a freelance journalist covering business and technology.
+Westinghouse’s eVinci microreactor, a cross-section of which is shown here, is one of two microreactors that will be tested by the U.S. Department of Energy.
+Westinghouse Electric Company
+Funding for two new microreactors could bring reliable nuclear power to remote locations. Westinghouse secured US $3 million for its eVinci microreactor, and Radiant Industries received $2 million for its Kaleidos microreactor, both in November from the U.S. Department of Energy ( DOE ).
+The funding will help the companies ready the technology for testing at the DOE’s Demonstration of Microreactor Experiments (DOME)—the first microreactor testbed in the United States . DOME is currently under construction at Idaho National Laboratory’s Materials and Fuels Complex in Blackfoot, Idaho, and is expected to be completed in 2026. The companies must conduct an analysis, called detailed engineering and experiment planning (DEEP), before running fueled experiments at the testbed.
+The eVinci and Kaleidos microreactors both run on uranium-based tristructural isotropic ( TRISO) particles , which the DOE calls the “most robust nuclear fuel on earth” because it cannot melt inside a high-temperature reactor. Each poppy-seed-size particle of uranium , carbon, and oxygen is encased in protective carbon and ceramic layers engineered to withstand extreme temperatures.
+The microreactors differ in their cooling mechanisms, with El Segundo, Calif.–based Radiant choosing a helium gas coolant, and Cranberry Township, Pa.–based Westinghouse using a passive heat pipe system .
+The DOE chose the companies based on the merit of their proposals and the maturity of their reactor designs, says a DOE spokesperson. “It was a competitive process,” the spokesperson says. “Companies first had to have an approved safety design strategy and must have submitted a conceptual safety design report to be eligible for Phase II DEEP funding. Both companies were selected due to their successful completion of these milestones and their subsequent readiness to begin the DEEP process.”
+What are nuclear microreactors?
+As the name suggests, microreactors produce less power than conventional nuclear reactors do, generating 50 megawatts or less, compared with 1 gigawatt from full-size plants. A modular layout, reliable power supply, and simple installation make microreactors a potentially attractive source of energy for remote locations that lack traditional infrastructure. Unlike larger reactors, microreactors don’t require water-based cooling systems.
+Like small modular reactors (SMRs), which deliver up to 300 MW, microreactors offer a smaller footprint, more automated operation, and less maintenance than full-scale plants. While SMRs are suitable for integration into large power grids , microreactors may be best suited for microgrids or off-grid rural sites, military bases, mining operations, or even future lunar installations.
+Microreactors’ versatility is unmatched due to their portability, rapid deployment, and reliable zero-carbon energy output, says American Nuclear Society CEO Craig Piercy . “Microreactors offer significant advantages over diesel generators and batteries , which demand constant refueling and recharging,” he says. “As a portable, clean-energy solution, microreactors could revolutionize disaster recovery efforts in hurricane-hit areas and bolster resupply efforts for military outposts.”
+The fuel cycle of a microreactor lasts longer than that of a conventional nuclear reactor , which must be refueled every one and a half to two years . eVinci is designed to produce 5 MW for eight years, and Kaleidos is designed to output 1.2 MW for five or more years .
+Leah Crider , Westinghouse’s vice president for the eVinci project, cites an example where this capability could have provided critical emergency power: In November 2012, a severe storm hit Nome, Alaska, leaving the port community ice-bound and unable to receive the scheduled winter fuel delivery for the local diesel power plant. Weeks later, the U.S. Coast Guard finally penetrated hundreds of kilometers of sea ice to reach the town of 3,500 residents. A microreactor there could have easily substituted for the diesel plant.
+“We can provide clean, constant, and reliable energy,” says Crider. “It’s essentially a battery [supplying] 5 MW of electricity for eight years without changing fuel. That’s really a game-changing option.”
+The eVinci will be cooled by a passive heat-pipe system. Westinghouse Electric Company
+Westinghouse’s heat-pipe-cooled microreactor
+The eVinci’s passive heat-pipe-cooled design uses hundreds of alkali metal pipes to transfer heat from the graphite core. This mitigates coolant losses and other risks from elevated system pressures. To convert heat from the reactor into electricity, the microreactor employs the open-air Brayton cycle, which is also used by jet engines and gas turbines .
+“eVinci’s design doesn’t rely on water to cool the reactor, it’s not pressurized, and there’s no gas that can leak out, which drives down complexity and makes for a great safety case,” Crider says. Westinghouse engineers recently heated the 3.6-meter-long pipes to more than 800 °C.
+Last year, Westinghouse became the first microreactor developer to secure approval from the U.S. Nuclear Regulatory Commission (NRC) for its instrumentation and control platform. The NRC also accepted its principal design criteria. These topical reports lay the foundation for how eVinci will be licensed, Crider says.
+“For a trailblazing reactor design that’s not similar to the current light-water-reactor operating suite, it’s important to know that this path forward is acceptable to regulators,” she says.
+- YouTube www.youtube.com
+Once eVinci hits the market, units will be factory assembled and shipped to customers in containers. Westinghouse recently tested this capability with a 14,500-kilogram demonstration unit at its new 8,100-square-meter facility near Pittsburgh, where the company will produce about 400 heat pipes for the test reactor destined for Idaho’s DOME.
+“This was an important demonstration because we were able to get all the components from our supply chain, assemble it vertically, and ship it to Pennsylvania,” Crider says.
+eVinci is already attracting industry interest, with the first announced customer being Canada’s Saskatchewan Research Council . Westinghouse is also exploring new applications, like a floating nuclear power plant in partnership with Core Power and a scaled-down version called AstroVinci to power moon bases and satellites per two U.S. government contracts.
+Westinghouse and Radiant are now working to finalize their preliminary documented safety analyses, a key step before they can demonstrate their test units at Idaho’s DOME. Both companies aim to commercialize their microreactors by about 2030, which will require a license from the NRC. In the mean time, DOME testing will provide critical operational data to support potential regulatory approval.
+From Your Site Articles
+The Future of Fission Reactors May Be Small ›
+First U.S. Commercial Small Nuclear Reactor Axed ›
+Why China Is Building a Thorium Molten-Salt Reactor ›
+Microreactor Testbed Seeks Nuclear Power Experiments - IEEE Spectrum ›
+DOE's Advanced Nuclear Reactor Site 90-Day Challenge - IEEE Spectrum ›
+Related Articles Around the Web
+Microreactors - Idaho National Laboratory ›
+nuclear microreactor small modular reactors nuclear energy climate tech advanced nuclear plants climate change
+Shannon Cuthrell Shannon Cuthrell is a freelance journalist covering business and technology topics. Her byline appears in a variety of outlets, from local newspapers and magazines to technical trade publications.
+The Conversation (10)
+Trevannon Burgess 17 Jan, 2025
+M
+I think the killer apps for these reactors is:
+1: The Moon, Mars, and Outer Space (Safety is no an issue)
+2: Ocean liners and cargo ships (ship motion might be a problem)
+Land based locations can use renewables
+0
+Replies
+Hide replies
+Show More Replies
+Alex Espinoza 04 Mar, 2026
+M
+This will be a game changer for Some countries such as Brazil, Venezuela... Mining app, Rural areas, I love it.
+0
+Replies
+Hide replies
+Show More Replies
+Ian Joyner 27 Jan, 2025
+INDV
+In Australia, for remote locations, renewables of solar and small wind farms that could all be packed up and easily move would be the much better option.
+0
+Replies
+Hide replies
+Show More Replies
+Robotics News Humanoid Robots
+Is Shipyard Welding the Right First Job for Humanoid Robots?
+5h
+5 min read
+Computing Semiconductors Transportation Consumer Electronics Climate Change Sponsored Article
+Identifying the Root Cause of Electronics Failures With Simulation Apps
+03 Aug 2026
+6 min read
+AI News Computing
+AI Used to Verify Toughest Mathematics Proof Yet
+7h
+3 min read
+Related Stories
+Aerospace News
+These Nuclear Batteries Could Support Future Lunar Bases
+Energy News Climate Tech Climate Change
+Puerto Rico Upgrades Remote Microgrid With Clean Hydrogen
+Energy News Climate Tech Climate Change
+Underwater Kites Harvest Power From Slow-Moving Tides
