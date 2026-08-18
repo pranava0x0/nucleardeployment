@@ -13,6 +13,33 @@
 - [x] Add a machine-readable source registry plus append-only web-search and agent-run history.
 - [x] Replace the misleading schematic map with a regional location ledger until verified coordinates exist.
 
+## BD layer follow-ups
+
+- Derive `audit-prose.mjs`'s path list from the SEO route list instead of a
+  second hardcoded array, so a new page cannot ship unlinted (TEST-005's
+  durable fix). Medium.
+- Browser-read the two bot-walled BD sources (Standard Nuclear 8-K on sec.gov,
+  Radiant's factory blog) and record the reads (DATA-027). Medium.
+- Texas fund award caps ($12.5M development / $120M construction) and the
+  unfunded completion bonus are reported by law-firm summaries but absent from
+  the cited ANS piece; source them from TANEO's own program documents and add
+  the caps back to the record. Medium.
+- The IEEE Spectrum remote-economics figures (village diesel ¢/kWh, eVinci
+  first-unit estimate, the Bruce Power mine study) need a fetchable source
+  before the remote sector plan can carry numbers again; candidates: the NEI
+  report underlying the band, an Alaska Energy Authority rate report, or the
+  CEEPR paper's own tables. Medium.
+- Utah's state nuclear program (Operation Gigawatt) has no row; add it with
+  primary sourcing beside NYPA and Texas. Low.
+- Anthropic's grid-cost pledge needs a dated primary source before a frontier-
+  lab row ships for it. Low.
+- The oil-sands study's reported conclusion (SMRs not viable for SAGD under
+  current market conditions) is only carried by a partisan blog; add the
+  conclusion if Cenovus's own report or trade press publishes it. Low.
+- Cross-link each BD buyer position to the company dossier of the vendor it
+  names (Oklo, X-energy, Kairos, and the rest), mirroring the financing
+  layer's dossier links. Low.
+
 ## Financing layer follow-ups
 
 - Surface each company's financing row on its own dossier page (a "How it gets paid" lane linking back to `/financing`), so a reader landing on a company page sees the model without switching pages. Medium.

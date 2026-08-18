@@ -7,15 +7,25 @@ Run every command from the repository root.
 
 ## The dataset in one paragraph
 
-Everything ships from `app/data.ts` and `app/financing-data.ts`. There is no
-database and no fetch at runtime. `data.ts` holds two layers: the older project
-records (`projects`, `companies`, `federalActions`, `programs`, `capital`) and
-the race layer (`raceEntrants`, `capacityClaims`, `fundingEvents`,
-`cashPositions`, `proofEvents`, `statedTargets`). `financing-data.ts` holds the
-financing layer (`costBenchmarks`, `learningRungs`, `companyFinance`,
-`mechanisms`, `liabilityPools`, `underwriters`, `overrunRecords`,
-`sitingFacts`, `capturedReports`); `scripts/lib/records.mjs` merges both
-modules, so every validate / cache / claims / link command covers both.
+Everything ships from `app/data.ts`, `app/financing-data.ts`, and
+`app/bd-data.ts`. There is no database and no fetch at runtime. `data.ts` holds
+two layers: the older project records (`projects`, `companies`,
+`federalActions`, `programs`, `capital`) and the race layer (`raceEntrants`,
+`capacityClaims`, `fundingEvents`, `cashPositions`, `proofEvents`,
+`statedTargets`). `financing-data.ts` holds the financing layer
+(`costBenchmarks`, `learningRungs`, `companyFinance`, `mechanisms`,
+`liabilityPools`, `underwriters`, `overrunRecords`, `sitingFacts`,
+`capturedReports`). `bd-data.ts` holds the BD layer (`bdBuyers` with per-class
+positions on a six-rung tier ladder, `bdSectorPlans`, `bdSignals`,
+`bdMicroPath`), every export prefixed `bd` so the merged namespace stays
+disjoint, with its own `bdAsOf` stamp that the sitemap and page carry.
+`scripts/lib/records.mjs` merges all three modules, so every validate / cache /
+claims / link command covers them; a BD buyer position's `verification` label
+is checked against its source host the same way race records are. BD sector
+plans keep theses, plays, and watch items as labeled site judgment; only
+evidence lines carry sources, and a label must say only what its cached source
+supports (the 2026-08-17 snapshot audit in `docs/research/bd-landscape.md`
+lists eight claims that failed that check and how they were trimmed).
 `raceBoard()` and `raceTotals()` derive everything the race pages show. No
 component computes its own totals.
 
