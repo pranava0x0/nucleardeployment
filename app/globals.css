@@ -686,6 +686,7 @@ details.acc-sub[open] .acc-marker { transform: rotate(45deg); }
   .update-body a,
   .key-more,
   .acc-open-link,
+  .page-subnav a,
   footer a {
     min-height: 44px;
     display: inline-flex;
