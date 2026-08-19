@@ -39,6 +39,39 @@
 - Cross-link each BD buyer position to the company dossier of the vendor it
   names (Oklo, X-energy, Kairos, and the rest), mirroring the financing
   layer's dossier links. Low.
+- Browser-read the Guam source (postguam.com, blocked at HTTP 429) and record
+  the read (DATA-030). Medium.
+- Revisit Guam if DOD gives the territory's government an official
+  notification; the current position is a lawmaker/CDLO exchange, not a
+  program. Revisit Diego Garcia and Kwajalein Atoll only if a live
+  program, contract, or solicitation names either site; both were checked
+  this pass and found to rest on a killed 2012 DARPA concept and a 2018
+  Army report, not a current opportunity. Low.
+- Puerto Rico's C.P. 1092 passed the House 2026-06-15 and moved to the
+  Senate; add the Senate outcome (passed, amended, or died in committee)
+  once known. Low.
+- Verify CNMI Senate Joint Resolution 24-05 (advanced nuclear tech on
+  Saipan/Tinian/Rota, tied to Project Janus) against a directly-read primary
+  or press source, not a search-engine summary — every candidate source
+  (nminewsservice.com, cnmileg.net) 403'd on two separate direct-fetch
+  attempts. Ship as a Guam-style "Stated interest" position once read.
+  Medium.
+- Lithuania's Altra-SGE-GE Vernova Hitachi BWRX-300 MOU shipped with
+  `date: null` because no directly-fetched source stated the signing date
+  (only the neimagazine.com publish date, 2026-03-04, is confirmed); nucnet.org
+  and altra.lt both 403'd. Pin the exact date once one of those sources is
+  reachable. Low.
+- Browser-read the two bot-walled sources behind SK Innovation's TerraPower
+  term sheet (UPI, mbiz.heraldcorp.com both 403'd) to corroborate the
+  WNN-sourced record already shipped. Low.
+
+## UI follow-ups
+
+- The BD and financing pages now use nested `.acc-sub` accordions and a
+  jump-to sub-nav (see UI-007 in issues.md); the deployments, federal-action,
+  capital, and updates pages were not audited this pass for the same
+  scroll-length problem. Check their rendered length and apply the same
+  pattern if any has grown long enough to warrant it. Medium.
 
 ## Financing layer follow-ups
 
