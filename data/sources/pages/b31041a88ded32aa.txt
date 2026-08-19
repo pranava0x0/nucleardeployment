@@ -1,0 +1,141 @@
+World Bank Group, IAEA Formalize Partnership to Collaborate on Nuclear Energy for Development
+false
+Home
+https://www.worldbank.org/ext/en/home
+News
+https://www.worldbank.org/ext/en/news
+Press Release
+https://www.worldbank.org/en/news/all?displayconttype_exact=Press+Release&#x26;lang_exact=English
+World Bank Group, IAEA Formalize Partnership to Collaborate on Nuclear Energy for Development
+https://www.worldbank.org/en/news/press-release/2025/06/26/world-bank-group-iaea-formalize-partnership-to-collaborate-on-nuclear-energy-for-development
+col-xs-12
+col-sm-12
+col-md-1
+col-lg-1
+col-xs-12
+col-sm-12
+col-md-8
+col-lg-8
+jcrtitle
+World Bank Group, IAEA Formalize Partnership to Collaborate on Nuclear Energy for Development
+jcrpagetitle
+World Bank Group, IAEA Formalize Partnership to Collaborate on Nuclear Energy for Development
+jcrnavtitle
+World Bank Group, IAEA Formalize Partnership to Collaborate on Nuclear Energy for Development
+jcrdescription
+The World Bank Group and the International Atomic Energy Agency (IAEA) sealed an agreement to work together to support the safe, secure and responsible use of nuclear energy in developing countries. The partnership agreement formalizes multiple engagements between the two institutions over the last year, and marks the World Bank Group’s first concrete step to reengage with nuclear power in decades.
+jcrimage
+https://delivery-p136806-e1377785.adobeaemcloud.com/adobe/assets/urn:aaid:aem:bcd7e4d4-a970-415f-87df-a7ba7800ee4a/as/WBG-Logo.jpg
+content-type
+Press Release
+writer
+000515163
+first-appeared-in
+2025-06-26
+expert-id
+000182072
+press-release-no
+2025/085/EXC
+keyframe-img
+https://delivery-p136806-e1377785.adobeaemcloud.com/adobe/assets/urn:aaid:aem:bcd7e4d4-a970-415f-87df-a7ba7800ee4a/as/WBG-Logo.jpg
+related-project-id
+https://live.worldbank.org/en/event/2025/mou-international-atomic-energy-agency-iaea
+result
+false
+content-date
+June 26, 2025
+col-xs-12
+col-sm-12
+col-md-3
+col-lg-3
+sec-spacing
+section-none
+sec-spacing-bottom
+section-xlarge
+style
+default
+col-xs-12
+col-sm-12
+col-md-1
+col-lg-1
+col-xs-12
+col-sm-12
+col-md-7
+col-lg-7
+add-style
+font-medium
+lp-body-content
+PARIS, June 26, 2025 —The World Bank Group and the International Atomic Energy Agency (IAEA) sealed an agreement today to work together to support the safe, secure and responsible use of nuclear energy in developing countries. The partnership agreement, signed by World Bank Group President Ajay Banga and IAEA Director General Rafael Mariano Grossi, formalizes multiple engagements between the two institutions over the last year, and marks the World Bank Group’s first concrete step to reengage with nuclear power in decades.
+The agreement also reflects a new, broader approach by the World Bank Group to electrification—one that prioritizes accessibility, affordability, and reliability, while managing emissions responsibly. With electricity demand in developing countries expected to more than double by 2035, this approach aims to help countries deliver the energy people need by enabling pathways that best fit their national context, including development objectives and Nationally Determined Contributions.
+Nuclear energy provides continuous baseload power, enhancing grid stability and resilience. Reliable baseload electricity is essential for job-generating sectors such as infrastructure, agribusiness, healthcare, tourism, and manufacturing. Nuclear power is also a source of high-skilled employment and stimulates investment across the broader economy. In addition, it can adjust to changes in electricity demand and support frequency regulation, enabling greater integration of variable renewable energy sources.
+"Jobs need electricity. So do factories, hospitals, schools, and water systems. And as demand surges—with AI and development alike—we must help countries deliver reliable, affordable power. That’s why we’re embracing nuclear energy as part of the solution—and reembracing it as part of the mix the World Bank Group can offer developing countries to achieve their ambitions. Importantly, nuclear delivers baseload power, which is essential to building modern economies,” said World Bank Group President Ajay Banga. “Our partnership with the IAEA marks an important step, and I’m grateful to Rafael for his personal commitment and leadership in making this possible. Together, we’ll deepen our expertise, support countries that choose nuclear, and ensure that safety, security, and sustainability guide every step forward."
+“Today’s agreement is a milestone and the result of a year of joint work since President Ajay Banga kindly invited me to the World Bank Group Executive Board in Washington in June of last year,” IAEA Director General Rafael Mariano Grossi said. “This landmark partnership, yet another sign of the world’s return to realism on nuclear power, opens the door for other multilateral development banks and private investors to consider nuclear as a viable tool for energy security and sustainable prosperity. Together, we can help more people build a better future.”
+Under the memorandum of understanding signed today, the IAEA will work with the World Bank Group in three key areas:
+Build knowledge related to the nuclear field: Expand the World Bank Group’s understanding of nuclear safety, security, safeguards, energy planning, new technologies, fuel cycles, reactor lifecycles, and waste management.
+Extend the lifespan of existing nuclear power plants: Support developing countries in safely extending the life of existing nuclear reactors-one of the most cost-effective sources of low-carbon power-as many global reactors near the end of their original 40-year design life.
+Advance SMRs: Accelerate the development of small modular reactors (SMRs), which offer flexible deployment, lower upfront costs, and potential for wide adoption in developing economies.
+Thirty-one countries currently operate nuclear power plants, which combined produce about 9% of the world’s electricity, amounting to almost a quarter of all low-carbon power globally. More than 30 other countries, most of them in the developing world, are considering or already embarking on the introduction of nuclear power and are working with the IAEA to develop the necessary infrastructure to do so safely, securely and sustainably.
+“SMRs have great potential to cleanly and reliably power progress and fight poverty, but financing remains a roadblock,” Director General Grossi said. “Today’s agreement is a crucial first step to clearing that path.”
+Contacts
+World Bank Group
+dyoung7@worldbankgroup.org
++ 1 (202) 473-4691
+International Atomic Energy Agency
+j.r.donovan@iaea.org
++43 699 165 22443
+About The World Bank
+The World Bank Group has a bold vision: to create a world free of poverty on a livable planet. In more than 100 countries, the World Bank Group provides financing, advice, and innovative solutions that improve lives by creating jobs, strengthening economic growth, and confronting the most urgent global challenges. For more information, please visit www.worldbank.org , www.miga.org , and www.ifc.org .
+col-xs-12
+col-sm-12
+col-md-1
+col-lg-1
+col-xs-12
+col-sm-12
+col-md-3
+col-lg-3
+add-style
+RELATED
+lp-heading-bottom-medium
+Remarks by Ajay Banga
+https://www.worldbank.org/en/news/speech/2025/06/26/remarks-by-world-bank-group-president-ajay-banga-at-the-signing-of-a-partnership-agreement-with-iaea
+World Bank Live: World Bank Group, IAEA Formalize Partnership to Collaborate on Nuclear Energy for Development
+https://live.worldbank.org/en/event/2025/mou-international-atomic-energy-agency-iaea
+sec-spacing
+section-none
+sec-spacing-bottom
+section-padding-between
+style
+default
+OMBC
+Online Media Briefing Center (OMBC) news for accredited journalists
+Sign In
+https://media.worldbank.org/
+Register
+https://media.worldbank.org/user/register
+secondary
+white-btn
+sec-spacing
+section-none
+sec-spacing-bottom
+section-padding-between
+sec-swoosh
+sec-swoosh-type12
+style
+default, lp-signup-wrapper, border-radius-medium, bg-primary-blue-80, heading-v1
+sec-inside-container
+true
+everything
+https://webapi.worldbank.org/aemsite/everything/search
+true
+{"facets":[],"orderby":"contentDate desc","select":"*","searchFields":"*","search":"*","filter":"contentType eq 'Press Release'","top":20,"skip":0}
+3
+no
+yes
+no
+whats_news
+sec-spacing
+section-none
+sec-spacing-bottom
+section-padding-between
+style
+default, bg-neutrals-15-gradient

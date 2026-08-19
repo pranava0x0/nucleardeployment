@@ -1234,7 +1234,7 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
 
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   const base = "https://pranava0x0.github.io/nucleardeployment";
-  for (const route of ["/", "/updates/", "/deployments/", "/companies/", "/map/", "/federal-action/", "/capital/", "/financing/", "/methodology/"]) {
+  for (const route of ["/", "/updates/", "/deployments/", "/companies/", "/map/", "/federal-action/", "/capital/", "/financing/", "/bd/", "/methodology/"]) {
     assert.ok(sitemap.includes(`<loc>${base}${route}</loc>`), `sitemap lists ${route}`);
   }
   for (const company of dataModule.companies) {
@@ -1249,18 +1249,25 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
     );
   }
   const urlCount = (sitemap.match(/<url>/g) ?? []).length;
-  assert.equal(urlCount, 9 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
+  assert.equal(urlCount, 10 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
   const lastmods = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1]);
   assert.ok(lastmods.length > 8, "sitemap states lastmod dates");
-  // The financing layer carries its own later stamp; everything else stays
-  // bounded by the race dataset's date.
+  // The financing and BD layers carry their own later stamps; everything else
+  // stays bounded by the race dataset's date.
   const financingModule = await import("../app/financing-data.ts");
+  const bdModule = await import("../app/bd-data.ts");
   assert.ok(
     sitemap.includes(`<loc>${base}/financing/</loc><lastmod>${financingModule.financingAsOf}</lastmod>`),
     "the financing route carries the financing layer's own date, not the race dataset's",
   );
+  assert.ok(
+    sitemap.includes(`<loc>${base}/bd/</loc><lastmod>${bdModule.bdAsOf}</lastmod>`),
+    "the BD route carries the BD layer's own date, not the race dataset's",
+  );
   assert.ok(financingModule.financingAsOf > dataModule.dataAsOf, "the financing stamp postdates the race dataset it sits beside");
-  assert.ok(lastmods.every((date) => date <= dataModule.dataAsOf || date === financingModule.financingAsOf), "no page claims a date newer than its own layer's stamp");
+  assert.ok(bdModule.bdAsOf > financingModule.financingAsOf, "the BD stamp postdates the financing layer it sits beside");
+  const layerStamps = new Set([financingModule.financingAsOf, bdModule.bdAsOf]);
+  assert.ok(lastmods.every((date) => date <= dataModule.dataAsOf || layerStamps.has(date)), "no page claims a date newer than its own layer's stamp");
   assert.ok(lastmods.some((date) => date !== dataModule.dataAsOf), "record pages carry their own dates, not one global stamp");
 
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
@@ -1340,7 +1347,7 @@ test("every page states a canonical and the lead pages carry structured data", a
 test("the header and footer map the whole site", async () => {
   const raw = await (await render()).text();
   const html = raw.replace(/<!--.*?-->/g, "");
-  for (const route of ["/", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/financing", "/methodology"]) {
+  for (const route of ["/", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/financing", "/bd", "/methodology"]) {
     assert.ok(html.includes(`href="${route}"`), `the navigation reaches ${route}`);
   }
   // The footer carries the credit and the code, per the footer rule.
@@ -1503,5 +1510,122 @@ test("timeline entries stay distinguishable under the list keys the pages use", 
     const component = await readFile(new URL(path, import.meta.url), "utf8");
     assert.ok(component.includes("${entry.source}-${entry.date}-${entry.label.slice(0, 24)}"),
       `${path} keys its timeline list on source, date, and label`);
+  }
+});
+
+test("the BD page renders the matrix, every buyer, and labeled judgment", async () => {
+  const bd = await import("../app/bd-data.ts");
+  const raw = await (await render("/bd")).text();
+  // Entities are decoded before matching: buyer and sector names carry "&",
+  // which React renders as &amp;.
+  const html = raw.replace(/<!--.*?-->/g, "").replace(/<script[\s\S]*?<\/script>/gi, "")
+    .replace(/&amp;/g, "&").replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"');
+
+  // The extraction can't pass vacuously: the collections must be populated
+  // before any count below means anything.
+  assert.ok(bd.bdBuyers.length > 0 && bd.bdSectorPlans.length > 0 && bd.bdSignals.length > 0 && bd.bdMicroPath.length > 0,
+    "the BD collections are populated");
+
+  for (const heading of [
+    "The demand matrix", "Positions on the record", "Sector plans",
+    "The microreactor cadence question", "On the record", "What this page does not claim",
+  ]) {
+    assert.ok(html.includes(heading), `the BD page carries "${heading}"`);
+  }
+
+  // Every buyer renders in the matrix (row header) and the ledger (anchor).
+  for (const buyer of bd.bdBuyers) {
+    assert.ok(html.includes(`#buyer-${buyer.slug}`), `${buyer.slug} has a matrix link`);
+    assert.ok(html.includes(`id="buyer-${buyer.slug}"`), `${buyer.slug} has a ledger anchor`);
+    assert.ok(html.includes(buyer.name), `${buyer.name} appears on the page`);
+  }
+
+  // Every sector renders, and every sector holds at least one buyer and one
+  // plan: the one-example-per-enum rule, both directions.
+  for (const sector of bd.bdSectors) {
+    assert.ok(html.includes(sector), `sector "${sector}" renders`);
+    assert.ok(bd.bdBuyers.some((buyer) => buyer.sector === sector), `sector "${sector}" has a buyer`);
+  }
+  assert.deepEqual(
+    bd.bdSectorPlans.map((plan) => plan.sector).sort(),
+    [...bd.bdSectors].sort(),
+    "exactly one plan per sector, no extras and no gaps",
+  );
+
+  // The matrix shows one chip per populated buyer-class pair, no more. Scoped
+  // to the matrix table itself: the compact tier legend below it reuses the
+  // same chip styling on purpose and would otherwise inflate this count.
+  const expectedChips = bd.bdBuyers.reduce(
+    (count, buyer) => count + new Set(buyer.positions.map((position) => position.class)).size, 0);
+  const matrixTable = html.match(/<table class="bd-matrix">[\s\S]*?<\/table>/)?.[0];
+  assert.ok(matrixTable, "the matrix table renders");
+  const chipCount = matrixTable.split('class="bd-chip').length - 1;
+  assert.equal(chipCount, expectedChips, `the matrix renders ${expectedChips} chips (${chipCount} found)`);
+
+  // The strongest tier wins the cell: Amazon holds Executed, Equity, and
+  // Framework positions in one class, and its single chip must read EXEC.
+  const amazonRow = html.match(/#buyer-amazon">Amazon<\/a><\/th>([\s\S]*?)<\/tr>/);
+  assert.ok(amazonRow, "the Amazon matrix row renders");
+  assert.equal(amazonRow[1].split('class="bd-chip').length - 1, 1, "Amazon's positions collapse to one class cell");
+  assert.ok(amazonRow[1].includes(">EXEC<"), "Amazon's cell shows its strongest tier, not its weakest");
+
+  // Every position renders with its source; so do evidence lines, signals,
+  // and path rungs. Nothing else on the page emits that link text.
+  const expectedSources = bd.bdBuyers.reduce((count, buyer) => count + buyer.positions.length, 0)
+    + bd.bdSectorPlans.reduce((count, plan) => count + plan.evidence.length, 0)
+    + bd.bdSignals.length + bd.bdMicroPath.length;
+  const sourceCount = html.split("Source ↗").length - 1;
+  assert.equal(sourceCount, expectedSources, `every sourced BD record renders exactly one source link (${sourceCount} of ${expectedSources})`);
+
+  // Judgment stays labeled, once per plan plus the sequencing read.
+  assert.equal(html.split("Thesis · site judgment").length - 1, bd.bdSectorPlans.length, "every plan labels its thesis as judgment");
+  assert.equal(html.split("Watch · site judgment").length - 1, bd.bdSectorPlans.length, "every plan labels its watch item as judgment");
+  assert.equal(html.split("Sequencing · site judgment").length - 1, 1, "the cadence sequencing is labeled as judgment");
+
+  // A null date is an explicit statement, and the dataset exercises it.
+  const nullDated = bd.bdSignals.filter((signal) => signal.date === null).length
+    + bd.bdMicroPath.filter((rung) => rung.date === null).length;
+  assert.ok(nullDated > 0, "the dataset exercises the undated case");
+  assert.equal(html.split("Date not stated").length - 1, nullDated, "every undated record states so exactly once");
+
+  // The tier ladder itself is exercised end to end: every rung has at least
+  // one live position, so no legend row describes nothing.
+  for (const entry of bd.bdTiers) {
+    assert.ok(bd.bdBuyers.some((buyer) => buyer.positions.some((position) => position.tier === entry.tier)),
+      `tier "${entry.tier}" has at least one position`);
+    assert.ok(html.includes(entry.meaning), `the legend explains "${entry.tier}"`);
+  }
+  for (const cls of bd.bdClasses) {
+    assert.ok(bd.bdBuyers.some((buyer) => buyer.positions.some((position) => position.class === cls)),
+      `class "${cls}" has at least one position`);
+  }
+
+  // No chart library ships for this page either.
+  assert.doesNotMatch(raw, /chart\.js|d3\.|recharts|plotly/i);
+});
+
+test("BD records keep source hygiene: https, real-or-null dates, matching tiers", async () => {
+  const dataModule = await import("../app/data.ts");
+  const bd = await import("../app/bd-data.ts");
+
+  const slugs = bd.bdBuyers.map((buyer) => buyer.slug);
+  assert.equal(new Set(slugs).size, slugs.length, "buyer slugs are unique");
+
+  const positions = bd.bdBuyers.flatMap((buyer) => buyer.positions);
+  for (const record of [...positions, ...bd.bdSignals]) {
+    assert.match(record.source, /^https:\/\//, `${record.source} is https`);
+    if (record.date != null) assert.match(record.date, /^\d{4}(-\d{2})?(-\d{2})?$/, `${record.date} is a real date`);
+    // The stated reporting basis must match the source host, the same rule
+    // the race records are held to.
+    assert.equal(record.verification, dataModule.verificationForSource(record.source),
+      `${record.source} is labeled ${record.verification}`);
+  }
+  for (const record of [...bd.bdSectorPlans.flatMap((plan) => plan.evidence), ...bd.bdMicroPath]) {
+    assert.match(record.source, /^https:\/\//, `${record.source} is https`);
+  }
+
+  // Dates never predate the actions they describe or outrun the layer stamp.
+  for (const record of [...positions, ...bd.bdSignals, ...bd.bdMicroPath]) {
+    if (record.date != null) assert.ok(record.date <= bd.bdAsOf, `${record.date} does not postdate the layer stamp`);
   }
 });

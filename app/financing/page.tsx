@@ -52,13 +52,29 @@ export default function FinancingPage() {
       <p>What new nuclear costs by reactor class, what each tracked company still needs before a government or commercial contract can close, which contracting mechanisms are actually in use, and who underwrites the projects. As of {financingAsOf}.</p>
     </header>
 
+    <nav className="page-subnav" aria-label="Sections on this page">
+      <a href="#cost-ladder">Cost ladder</a>
+      <a href="#learning">What n units buy</a>
+      <a href="#companies">Company by company</a>
+      <a href="#mechanisms">Mechanisms</a>
+      <a href="#insurance">Insurance</a>
+      <a href="#underwriters">Underwriters</a>
+      <a href="#overruns">Overruns</a>
+      <a href="#siting">Siting</a>
+      <a href="#captured-reports">Captured reports</a>
+    </nav>
+
     <section className="section" id="cost-ladder">
       <div className="section-head"><h2>The cost ladder</h2><p>Estimates, targets, and the few actuals, grouped by reactor class. Figures sit in different frames and years; they are shown, never averaged, summed, or converted across frames.</p></div>
       {laneOrder.map((lane) => {
         const rows = costBenchmarks.filter((benchmark) => benchmark.lane === lane);
         if (!rows.length) return null;
-        return <div key={lane}>
-          <h3 className="lane-sub">{lane} · {laneNotes[lane]}</h3>
+        return <details className="acc-sub" key={lane}>
+          <summary>
+            <span className="lane-sub">{lane}</span>
+            <span className="acc-note">{laneNotes[lane]}</span>
+            <span className="acc-marker" aria-hidden="true">+</span>
+          </summary>
           <ul className="ledger wide">
             {rows.map((benchmark) => <li key={`${benchmark.figure}-${benchmark.basis}`}>
               <span className="ledger-date">{benchmark.series}{benchmark.date ? ` · ${benchmark.date}` : ""}</span>
@@ -67,13 +83,18 @@ export default function FinancingPage() {
               <a href={benchmark.source} target="_blank" rel="noreferrer">Source ↗</a>
             </li>)}
           </ul>
-        </div>;
+        </details>;
       })}
       <p className="data-note">FOAK is a first-of-a-kind unit; NOAK is the nth of a kind after learning. A company target is the company&rsquo;s own number, printed as such. No figure here is the site&rsquo;s estimate.</p>
     </section>
 
-    <section className="section" id="learning">
-      <div className="section-head"><h2>What n units buy</h2><p>The sourced learning ladder: how costs are expected to move from unit 1 to a fleet, and the historical caution that they have not always moved down.</p></div>
+    <details className="section acc" id="learning">
+      <summary>
+        <h2>What n units buy</h2>
+        <span className="acc-note">The sourced learning ladder, unit 1 to a fleet</span>
+        <span className="acc-marker" aria-hidden="true">+</span>
+      </summary>
+      <p className="data-note">How costs are expected to move from unit 1 to a fleet, and the historical caution that they have not always moved down.</p>
       <ul className="ledger wide">
         {learningRungs.map((rung) => <li key={rung.units}>
           <span className="ledger-date">{rung.units}</span>
@@ -82,12 +103,16 @@ export default function FinancingPage() {
           <a href={rung.source} target="_blank" rel="noreferrer">Source ↗</a>
         </li>)}
       </ul>
-    </section>
+    </details>
 
     <section className="section" id="companies">
       <div className="section-head"><h2>Company by company</h2><p>How each entrant gets paid, its strongest government vehicle, its strongest commercial position, and any stated price. Model, government, and commercial rows are sourced facts; the next gate is this site&rsquo;s judgment of the event that would move the row.</p></div>
-      {["Microreactor", "Grid-scale SMR"].map((lane) => <div key={lane}>
-        <h3 className="lane-sub">{lane} lane</h3>
+      {["Microreactor", "Grid-scale SMR"].map((lane) => <details className="acc-sub" key={lane}>
+        <summary>
+          <span className="lane-sub">{lane} lane</span>
+          <span className="acc-note">{financeByLane(lane).length} companies</span>
+          <span className="acc-marker" aria-hidden="true">+</span>
+        </summary>
         <div className="frame-grid">
           {financeByLane(lane).map((row) => {
             const entrant = entrantFor(row.companySlug);
@@ -110,7 +135,7 @@ export default function FinancingPage() {
             </article>;
           })}
         </div>
-      </div>)}
+      </details>)}
       <p className="data-note">Deal details, dates, and megawatts for every agreement named here live on each company&rsquo;s <Link href="/companies">dossier page</Link>, with the race board&rsquo;s binding and non-binding lanes kept apart.</p>
     </section>
 
@@ -121,8 +146,12 @@ export default function FinancingPage() {
         // An empty lane renders nothing: a heading over an empty grid would be
         // the empty legend slot the project's rules forbid.
         if (!rows.length) return null;
-        return <div key={group.status}>
-          <h3 className="lane-sub">{group.heading}</h3>
+        return <details className="acc-sub" key={group.status}>
+          <summary>
+            <span className="lane-sub">{group.heading}</span>
+            <span className="acc-note">{rows.length} {rows.length === 1 ? "mechanism" : "mechanisms"}</span>
+            <span className="acc-marker" aria-hidden="true">+</span>
+          </summary>
           <div className="definition-grid">
             {rows.map((mechanism) => <div key={mechanism.mechanism}>
               <b>{mechanism.mechanism}</b>
@@ -130,12 +159,17 @@ export default function FinancingPage() {
               <p>{mechanism.example}{mechanism.date ? ` (${mechanism.date}.)` : ""} <a href={mechanism.source} target="_blank" rel="noreferrer">Source ↗</a></p>
             </div>)}
           </div>
-        </div>;
+        </details>;
       })}
     </section>
 
-    <section className="section" id="insurance">
-      <div className="section-head"><h2>Pooled insurance and liability</h2><p>Nuclear liability and property risk are already mutualized across the U.S. fleet. New reactors join these pools; overrun insurance is the layer that does not exist yet.</p></div>
+    <details className="section acc" id="insurance">
+      <summary>
+        <h2>Pooled insurance and liability</h2>
+        <span className="acc-note">New reactors join existing fleet pools; overrun insurance is the layer that does not exist yet</span>
+        <span className="acc-marker" aria-hidden="true">+</span>
+      </summary>
+      <p className="data-note">Nuclear liability and property risk are already mutualized across the U.S. fleet. New reactors join these pools; overrun insurance is the layer that does not exist yet.</p>
       <ul className="ledger wide">
         {liabilityPools.map((pool) => <li key={pool.name}>
           <span className="ledger-date">{pool.date ?? "Date not stated"}</span>
@@ -144,10 +178,15 @@ export default function FinancingPage() {
           <a href={pool.source} target="_blank" rel="noreferrer">Source ↗</a>
         </li>)}
       </ul>
-    </section>
+    </details>
 
-    <section className="section" id="underwriters">
-      <div className="section-head"><h2>Who underwrites</h2><p>The institutions with money on or near the table, and the size of what each has committed or signaled.</p></div>
+    <details className="section acc" id="underwriters">
+      <summary>
+        <h2>Who underwrites</h2>
+        <span className="acc-note">{underwriters.length} institutions with money on or near the table</span>
+        <span className="acc-marker" aria-hidden="true">+</span>
+      </summary>
+      <p className="data-note">The institutions with money on or near the table, and the size of what each has committed or signaled.</p>
       <ul className="ledger wide">
         {underwriters.map((underwriter) => <li key={underwriter.name}>
           <span className="ledger-date">{underwriter.date ?? "Date not stated"}</span>
@@ -156,10 +195,15 @@ export default function FinancingPage() {
           <a href={underwriter.source} target="_blank" rel="noreferrer">Source ↗</a>
         </li>)}
       </ul>
-    </section>
+    </details>
 
-    <section className="section" id="overruns">
-      <div className="section-head"><h2>Cost overruns on the record</h2><p>The history a lender prices against. Each row states its own frame; the figures are not comparable to each other.</p></div>
+    <details className="section acc" id="overruns">
+      <summary>
+        <h2>Cost overruns on the record</h2>
+        <span className="acc-note">The history a lender prices against</span>
+        <span className="acc-marker" aria-hidden="true">+</span>
+      </summary>
+      <p className="data-note">Each row states its own frame; the figures are not comparable to each other.</p>
       <ul className="ledger wide">
         {overrunRecords.map((record) => <li key={record.subject}>
           <span className="ledger-date">{record.subject}</span>
@@ -168,10 +212,15 @@ export default function FinancingPage() {
           <a href={record.source} target="_blank" rel="noreferrer">Source ↗</a>
         </li>)}
       </ul>
-    </section>
+    </details>
 
-    <section className="section" id="siting">
-      <div className="section-head"><h2>Siting, by class</h2><p>Why the three classes make different deals: the ground they need and the rules that size it. A DOE authorization on a federal site is site-specific and does not transfer to a commercial sale, which still requires an NRC license; the race board&rsquo;s bands keep the two apart.</p></div>
+    <details className="section acc" id="siting">
+      <summary>
+        <h2>Siting, by class</h2>
+        <span className="acc-note">Why the three classes make different deals</span>
+        <span className="acc-marker" aria-hidden="true">+</span>
+      </summary>
+      <p className="data-note">The ground each class needs and the rules that size it. A DOE authorization on a federal site is site-specific and does not transfer to a commercial sale, which still requires an NRC license; the race board&rsquo;s bands keep the two apart.</p>
       <ul className="ledger wide">
         {sitingFacts.map((fact) => <li key={fact.fact.slice(0, 40)}>
           <span className="ledger-date">{fact.lane}</span>
@@ -179,10 +228,14 @@ export default function FinancingPage() {
           <a href={fact.source} target="_blank" rel="noreferrer">Source ↗</a>
         </li>)}
       </ul>
-    </section>
+    </details>
 
-    <section className="section limitations" id="captured-reports">
-      <h2>Captured reports</h2>
+    <details className="section limitations acc" id="captured-reports">
+      <summary>
+        <h2>Captured reports</h2>
+        <span className="acc-note">{capturedReports.length} original documents</span>
+        <span className="acc-marker" aria-hidden="true">+</span>
+      </summary>
       <p>Figures citing a &ldquo;captured copy&rdquo; are backed by report text archived in the repository on 2026-08-10, page-stamped so each quote is checkable against the page that carries it. The links below are the original documents.</p>
       <ul className="ledger">
         {capturedReports.map((report) => <li key={report.slug}>
@@ -190,6 +243,6 @@ export default function FinancingPage() {
           <a href={report.url} target="_blank" rel="noreferrer">Original ↗</a>
         </li>)}
       </ul>
-    </section>
+    </details>
   </main></PageShell>;
 }

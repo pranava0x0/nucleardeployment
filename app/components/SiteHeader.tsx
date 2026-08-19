@@ -12,6 +12,7 @@ const nav = [
   ["Federal Action", "/federal-action"],
   ["Capital + Supply", "/capital"],
   ["Financing", "/financing"],
+  ["BD", "/bd"],
   ["Methodology", "/methodology"],
 ];
 

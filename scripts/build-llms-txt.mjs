@@ -98,6 +98,16 @@ say(`- ${plural(data.underwriters.length, "underwriting institution", "underwrit
 say(`- Full layer: ${page("/financing")}`);
 say();
 
+say("## BD layer");
+say();
+say("Who buys new nuclear, by reactor class and sector, on a ladder that keeps");
+say("executed deals, equity stakes, prepayments, frameworks, programs, and");
+say("statements apart. Sector plans are the site's labeled judgment.");
+say(`- ${plural(data.bdBuyers.length, "tracked buyer", "tracked buyers")} across ${plural(data.bdSectors.length, "sector", "sectors")}, holding ${plural(data.bdBuyers.reduce((count, buyer) => count + buyer.positions.length, 0), "sourced position", "sourced positions")}.`);
+say(`- ${plural(data.bdMicroPath.length, "documented rung", "documented rungs")} on the path from microreactor criticalities to a factory cadence.`);
+say(`- Full layer: ${page("/bd")}`);
+say();
+
 say("## Where the evidence comes from");
 say();
 const tiers = {};
@@ -125,6 +135,7 @@ say(`- ${page("/map")} - tracked projects by region`);
 say(`- ${page("/federal-action")} - executive orders and DOE programs`);
 say(`- ${page("/capital")} - loans, awards, and cost shares`);
 say(`- ${page("/financing")} - costs by class, contracting mechanisms, insurance pools, underwriters`);
+say(`- ${page("/bd")} - buyers by sector and reactor class, sector BD plans, the microreactor cadence path`);
 say();
 say("## Machine feeds");
 say();

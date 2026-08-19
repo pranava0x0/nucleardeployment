@@ -1,0 +1,136 @@
+Nuclear is ready now -- ANS / Nuclear Newswire
+Topics
+Advanced Reactors
+Advocacy
+Conferences
+Decontamination & Decommissioning
+Education
+Environmental Remediation
+Fuel
+Fusion
+Industry
+International
+Isotopes & Radiation
+Nonproliferation
+Nuclear History
+People
+Policy
+Power & Operations
+Research & Applications
+Security
+Standards
+Supply Chain
+Transportation
+Waste Management
+Webinars
+Workforce
+Sources
+Nuclear News
+Radwaste Solutions
+ANS News
+ANS Nuclear Cafe
+Sponsored Content
+Press Releases
+Sign Up
+Buyers Guide
+Access Online Buyers Guide
+Manage/Create Company Listings
+Advertise in Buyers Guides
+Advertise
+Headlines
+For You
+Study mapping U-10Zr porosity informs metallic fuel design
+August 17, 2026, 12:28PM
+Supplier Showcase focus: MUR DVR
+August 17, 2026, 11:37AM
+Diablo Canyon receives partial Civil Nuclear Credit payment
+August 17, 2026, 9:36AM
+A message from Gutor
+GUTOR 80: UPS, Battery Charger, & Inverter Solutions for Nuclear Applications, Built to ASME NQA-1
+X-energy, TerraPower share updates on advanced reactor projects
+August 17, 2026, 7:11AM
+Front-end nuclear fuel supply cooperation: Turning allied interdependence into strategic advantage
+August 14, 2026, 4:04PM
+New measurement of diamond phase change could mean increased ICF energy gain
+August 14, 2026, 2:10PM
+A message from Studsvik
+Transforming Nuclear Fuel Management with Intelligent Automation
+Cleanup work progresses with pump removal at Hanford Tank Farms
+August 14, 2026, 9:56AM
+For personalized headlines, please log in/create an account .
+Latest Issue &mdash; Aug 2026
+Latest Issue &mdash; Jan 2026
+Ageing nuclear assets don't have to mean higher maintenance costs. Discover how HVTS® cladding helps extend the life of PWR secondary system components, reduce outage duration, support ALARA principles, and protect against FAC, erosion-corrosion and other degradation mechanisms. Learn more.
+Learn More
+Industry
+Nuclear is ready now
+July 16, 2026, 11:49AM
+Nuclear News Michael Goff
+Michael Goff
+I don’t think we’ve ever had a busier year in the Office of Nuclear Energy, and it’s probably been decades since we’ve had this much momentum within the overall U.S. nuclear industry.
+President Trump and Energy Secretary Wright have made very clear the important role that nuclear must play in meeting our energy needs, and that’s well demonstrated by the four executive orders that the president signed [more than] 375 days ago. In nuclear, we’re now talking about days, not years.
+Those EOs set a goal for the United States to quadruple the amount of nuclear that we have. We need to go from the 94 reactors that we have operating right now, which generate roughly 100 gigawatts of electricity, to 400 gigawatts by 2050.
+Michael Goff, principal deputy assistant secretary for the U.S. Department of Energy’s Office of Nuclear Energy, spoke on June 1 during the opening plenary of the 2026 ANS Annual Conference in Denver, Colo., and his remarks have been adapted and updated for publication. In the weeks since, Goff traveled to Idaho and Utah to witness progress by reactor developers that have received DOE authorization to operate test reactors.
+A lot of us thought that might be too ambitious, but I hope to convince you now that by working together, we can meet these goals. So specifically, what are we doing in the DOE?
+Our base programs continually move nuclear energy forward. Luckily, we’ve had very strong bipartisan support in nuclear, and a good, stable budget.
+First, we want to maintain the existing fleet, and we’ve done that very successfully, especially through the long-running Light Water Reactor Sustainability Program. We’ve successfully demonstrated we can go from 60 to 80 years—and we don’t look at 80 as being the end. By making sure that the existing fleet continues to run and that we maximize production through uprates, we can minimize the new capacity additions required before 2050.
+Second, we need to deploy more nuclear, and we have been working to derisk the deployment of first-of-a-kind reactors through long-running projects that take advantage of public-private partnerships. One of our Advanced Reactor Demonstration Program demo awardees, TerraPower, received the first construction permit for a commercial Gen IV reactor from the Nuclear Regulatory Commission. X-energy’s TX-1 facility, currently under construction, is the first commercial-scale fuel fabrication facility in the United States focused on high-assay low-enriched uranium fuel to receive NRC approval. We also were very happy to make awards through our Generation III+ Small Modular Reactor program to TVA to further the deployment of GE Vernova Hitachi’s BWRX-300 in Tennessee and to Holtec to support deployment of their SMR-300 in Michigan.
+Long-running programs like the Gateway for Accelerated Innovation in Nuclear and the National Reactor Innovation Center are continuing to work with industry. This year, we accelerated by more than six months the readiness of the NRIC Demonstration of Microreactor Experiments test bed. When we started about a year ago, we realized DOME would not be ready until the end of this year. We made a concerted effort with industry, and as of April, DOME was ready for Radiant to come in and demonstrate their technology.
+The third area we want to focus on is a sustainable fuel cycle at both the front and back ends to make sure that we have the supply needed for both advanced reactors and the existing fleet. We also want to make sure that we have capabilities to finally close the fuel cycle.
+And finally, we want to increase and strengthen international partnerships, working with our allies and partners to make sure that they have technology from the United States to meet their energy needs. If we’re not exporting our technologies, then we’re concerned about who will be setting the standard for safety, security, and nonproliferation around the world.
+DOE leaders visited Idaho National Laboratory on June 25 to meet with Reactor Pilot Program and Nuclear Energy Launch Pad participants and tour reactor demonstration projects. Pictured are (from left) Under Secretary of Energy Kyle Haustveit, DOE Idaho Operations Office Manager Bob Boston, INL Director John Wagner, Secretary of Energy Chris Wright, Assistant Secretary of Nuclear Energy Ted Garrish, Deputy Assistant Secretary of Nuclear Reactors Rian Bahran, and Principal Deputy Assistant Secretary of Nuclear Energy Mike Goff. (Photo: DOE)
+The purpose of the May 2025 EOs was to expedite and promote, to the fullest extent possible, the production and operation of nuclear energy. There were four executive orders. One focused on support of national security activities, another on ­ensuring the strength of the nuclear industrial base and workforce. The final two were on reforming regulatory processes at the NRC and at the DOE.
+We reformed our processes in the record time of 90 days while continuing to emphasize safety standards. We reformed those processes by removing unnecessary transactional approvals and redundancies covered by other agencies, like the U.S. Environmental Protection Agency or Occupational Health and Safety Administration.
+We removed certain specific requirements for the private companies we work with, especially in security areas. We used to tell a company, “here’s a requirement” and “here’s how you have to meet that requirement.” But we’re an innovation organization—we should be able to let companies and the contractors come up with ways to meet the requirements.
+One program set up in the EOs that’s been a major focus is the Reactor Pilot Program, with the goal of having at least three reactors critical by July 4. I’ll be frank here: When I first read that, I said, “That’s a bit aggressive. We might want to consider a later date there.” Luckily, I was overruled. We went with that goal, and I’m glad we did.
+Reactor Pilot Program Participants
+(announced August 2025)
+Aalo Atomics —Aalo-X, INL, 10-MWe sodium thermal reactor (Aalo-X zero-power criticality on July 4)
+Antares Nuclear —R1/Mark-0, INL, 200–300-kWe sodium heat pipe reactor (Mark-0 zero-power criticality on June 4)
+Deep Fission —Gravity Reactor, Parsons, Kan., 25-MWe pressurized water reactor
+Last Energy —PWR-5, Texas A&M RELLIS Campus, 5-MWe pressurized water reactor
+Natura Resources —MSR-1, Abilene, Texas, 1-MWt molten salt reactor
+Oklo Isotopes (formerly Atomic Alchemy) —VIPR, Lockhart, Texas, 15-MWt water-cooled pool-type reactor
+Oklo —Aurora, INL, 75-MWe sodium fast reactor
+Oklo —Pluto, site TBD, 60-MWt plutonium-fueled sodium fast reactor
+Radiant Industries —Kaleidos, INL, 3.5-MWt high temperature gas reactor
+Terrestrial Energy —TETRA, Texas A&M RELLIS Campus, 200-MW molten salt reactor
+Valar Atomics —Ward 250, Emery County, Utah,
+~250-kWt high temperature gas reactor (zero-power criticality June 18)
+Nuclear Energy Launch Pad Reactor Participants (announced April 2026)
+Deployable Energy —Unity, INL, 1-MWe high temperature gas reactor (zero-power criticality July 1)
+NuCube —NuSun, site TBD, 1.3 or 15-MWe heat pipe reactor
+Radiant Industries —(also a Reactor Pilot Program participant, see above)
+On August 12, 2025, we accepted 11 reactor projects into that pilot program. At that point, they had 326 days to try to meet that July 4 deadline. It is now clear we are going to have multiple reactors critical [see sidebar on previous page], and I’m not sure I would’ve thought that back then.
+I want to thank the NRC, the Naval Nuclear Propulsion Program, the National Nuclear Security Administration, and the Office of Environmental Management. Throughout this process, they provided staff to work with us as part of our authorization process. This allowed NRC staff to gain familiarity with the designs and safety bases, to enable these activities to be leveraged for future commercial licensing to achieve greater efficiency in the transition from DOE authorization to NRC licensing.
+We want to sustain this opportunity for industry and expand it beyond just reactors and fuel fabrication to cover the whole fuel cycle. Under our Launch Pad, companies can apply to use DOE authorization anywhere in the United States—it doesn’t have to be on a DOE site—to develop and derisk their technologies.
+We’ve had a lot of focus on nuclear to support AI, and we’re also moving forward to make sure AI can support nuclear. We’re very happy that the DOE’s ambitious AI initiative, the Genesis Mission, has a major focus on nuclear energy activities. We’ve also put out a request for information for co-location of data centers and energy generation on DOE sites, hopefully looking at using nuclear to power them.
+This year we stood up our Utility Power Reactor Incremental Scaling Effort—UPRISE—initiative with ambitious targets to get additional gigawatts from the existing fleet. We also need to make sure that we have the fuel supply to support both the existing fleet and advanced reactors. This January, $2.7 billion in awards were granted for three companies to establish enrichment capabilities for both low-enriched uranium and HALEU. In the meantime, the DOE has made a number of conditional commitments for its HALEU inventory.
+We’re also working to make our excess plutonium available for industry if they can use that in a safe and secure manner to fuel their advanced reactors. We have identified nearly 20 tons of excess plutonium, and we’ve gotten a very good response from industry on wanting to use that material.
+On January 28, we put out a solicitation to see which states are interested in hosting a Nuclear Lifecycle Innovation Campus, to which we received a phenomenal response. More than 20 states responded, so I am optimistic we will completely close the fuel cycle.
+This is a very exciting time. The one message I want to leave with you is that nuclear is ready now . We need to put away our preconceived notions that nuclear takes too long. We’re building demonstration reactors—microreactors—and successfully putting them in operation in less than a year.
+We also have to put away the preconceived notion that we can only do this with large amounts of government support. Government support is important, but we really just need to make sure that we have an environment that will foster innovation to move forward on these technologies.
+And we definitely need to put away the preconceived notion that Gen IV technology is for the future—the future is now.
+This is nuclear’s time. We have hurdles to overcome, but I’m optimistic we can do this. I’m looking forward to working with you as we move forward.
+Share:
+LinkedIn Twitter Facebook Email
+Receive Nuclear News Daily
+Join ANS Today
+Donate Today
+Advancing nuclear science and technology for the benefit of humanity
+Advertising Opportunities
+Navigating Nuclear
+Contact Us
+Facebook
+Twitter
+LinkedIn
+Instagram
+YouTube
+Pinterest
+Nuclear Newswire
+Email Lists
+&copy; Copyright 2026 American Nuclear Society
+Privacy Policy
+Terms of Use
+Invoices
+Media

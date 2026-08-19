@@ -1,0 +1,324 @@
+A high school dropout&#039;s nuclear startup just landed $1B from Sequoia at a $6B valuation — TFN
+Latest
+UK
+Europe
+US
+VC News
+Interviews
+Partner Content
+AI News
+PREMIUM
+Subscribe TFN for Daily News Alerts
+Email address:
+By clicking submit, you agree to share your email address with TFN to receive marketing, updates, and other emails from the site owner. Use the unsubscribe link in the emails to opt out at any time.
+Leave this field empty if you&#039;re human:
+Categories
+Acquisition News
+Africa Tech News
+Agtech News
+AI News
+App News
+Asia Tech News
+Australia Tech News
+Autonomous News
+Batterytech News
+Biotech News
+Blockchain News
+Blog
+BNPL News
+Business Wire
+Canada Tech News
+Challenger Bank News
+Climate Tech News
+Cloud News
+Covid-19 News
+Crypto News
+Cybersecurity News
+Deeptech News
+Defence Tech
+Diversity News
+Ecommerce News
+Editor&#039;s Pick
+Edtech News
+Electric News
+Europe Tech News
+Female Funding
+Femtech News
+Fintech News
+Foodtech News
+Funding News
+Gadgets News
+Gaming News
+Guest Post
+Healthtech News
+HRtech News
+India Tech News
+Interviews
+Israel Tech News
+Latest News
+Marketplace News
+Medtech News
+Middle East Tech News
+Mobility News
+news 2
+NFT News
+Other news
+Partner Spotlight
+Podcast
+Popular now
+Premium
+Robotics News
+SaaS News
+Social Media News
+Spacetech News
+Sponsored
+Startups News
+Sustainable News
+TFN Partner Content
+Top Feature
+Top Funding Rounds
+Top News
+Top Stories
+Traveltech News
+UK Tech News
+Unicorns
+US Tech News
+VC News
+VR and AR News
+WEB3 News
+Wellbeing News
+Latest
+UK
+Europe
+US
+VC News
+Interviews
+Partner Content
+AI News
+PREMIUM
+Gadgets
+August 17, 2026
+Gen Z-founded Terra Industries extends seed round to $52M, opens London office
+by Abhinaya Prabhu
+August 17, 2026
+Ex-Fluidstack growth lead lands $1.2M pre-seed to bring AI creators to B2B marketing
+by Sofia Chesnokova
+August 17, 2026
+Stripe reportedly buys OpenRouter for $7B, 5x its May valuation
+by Abhinaya Prabhu
+August 17, 2026
+Higgsfield raises $400M from Goldman Sachs, DST Global at $5.4B valuation
+by Abhinaya Prabhu
+August 17, 2026
+Sarsia led Birdsview’s €3.7M round to give engineers X-ray vision through concrete
+by Sofia Chesnokova
+NEWSLETTER
+Email address:
+By clicking submit, you agree to share your email address with TFN to receive marketing, updates, and other emails from the site owner. Use the unsubscribe link in the emails to opt out at any time.
+Leave this field empty if you&#039;re human:
+The Latest
+Gen Z-founded Terra Industries extends seed round to $52M, opens London office
+Africa Tech News
+Defence Tech
+Funding News
+Latest News
+Top Stories
+Unicorns
+by Abhinaya Prabhu
+August 17, 2026
+3 minute read
+Ex-Fluidstack growth lead lands $1.2M pre-seed to bring AI creators to B2B marketing
+AI News
+Europe Tech News
+Female Funding
+Funding News
+Latest News
+Popular now
+Startups News
+Top News
+Top Stories
+US Tech News
+by Sofia Chesnokova
+August 17, 2026
+3 minute read
+Stripe reportedly buys OpenRouter for $7B, 5x its May valuation
+Acquisition News
+Fintech News
+Latest News
+Startups News
+Top Stories
+US Tech News
+by Abhinaya Prabhu
+August 17, 2026
+3 minute read
+Higgsfield raises $400M from Goldman Sachs, DST Global at $5.4B valuation
+AI News
+Funding News
+Latest News
+Top Funding Rounds
+Top Stories
+Unicorns
+US Tech News
+by Abhinaya Prabhu
+August 17, 2026
+2 minute read
+Yoni Assia
+X
+WWDC
+workertech
+women in tech
+Woman in Tech
+Wise
+wireless charging
+WhatsApp
+Wellbeing
+AI News
+Editor's Pick
+Funding News
+Latest News
+Top Funding Rounds
+Top Stories
+Unicorns
+US Tech News
+A high school dropout’s nuclear startup just landed $1B from Sequoia at a $6B valuation
+by Abhinaya Prabhu
+August 4, 2026
+3 minute read
+Image credits: Isaiah Taylor/LinkedIn
+Total
+0
+Shares
+0
+0
+0
+0
+Valar Atomics has raised $1 billion in Series B funding, led by Sequoia Capital, tripling its April mark.
+Shaun Maguire joined the board days after Valar’s reactor powered an Nvidia chip.
+Valar added a $200M credit facility, bringing new financing to $1.2B for mass production
+Artificial intelligence is fuelling an unprecedented surge in electricity demand, pushing investors beyond chips and data centres towards the energy systems that will power the next generation of computing.
+That shift has helped Valar Atomics and it has secured a $1 billion Series B led by Sequoia Capital , valuing the nuclear startup at $6 billion. This tripled the $2 billion valuation it carried after its $450 million round in April 2026, which Tech Funding News reported at the time .
+Apandion, Atreides Management, Conviction, Dream Ventures, HOF Capital, Point72, Riot Ventures, Snowpoint Ventures and Valor Equity Partners also participated in the round. Alongside the equity financing, the company also announced a $200 million credit facility led by Erebor Bank, with J.P. Morgan, Crescent Cove and Hercules Capital participating.
+Sequoia partner Shaun Maguire joined Valar’s board. The timing follows directly from Valar’s own milestones: on June 18, its Ward 250 reactor reached self-sustaining criticality, and a week later it generated electricity to power an Nvidia Blackwell chip in a live demonstration — the first time an advanced reactor has directly powered AI infrastructure.
+“One reactor can be built as a project. A fleet requires manufacturing. &#8220;It took two years to complete the NOVA core. It took seven months to take Ward 250 critical”, said founder Isaiah Taylor .
+From high school dropout to Sequoia’s board table
+Taylor dropped out of high school at 16 and founded Valar Atomics in 2023 in California. His pitch was that nuclear energy’s problem was never physics but that every plant gets built as a one-off.
+Earlier backers include Palmer Luckey, Palantir’s Shyam Sankar and Lockheed Martin board member John Donovan, who joined a $130 million round in November 2025 led by Snowpoint Ventures.
+The startup builds small, high-temperature gas-cooled reactors designed for factory production rather than custom construction. It’s also building its own fuel supply rather than buying from outside vendors.
+“We will construct it ourselves in labs placed alongside the very reactors that same fuel will run,” Taylor added.
+Within its first few years, Valar developed its Ward Zero prototype and achieved cold criticality in testing of its NOVA reactor core, in coordination with Los Alamos National Laboratory. The company was also selected for key U.S. Department of Energy pilot initiatives aimed at advancing nuclear reactor deployment and the commercial supply chains for high-assay low-enriched uranium fuel.
+Moving beyond initial core testing, Valar reached self-sustaining criticality on its Ward-series prototype systems and demonstrated integrated power conversion to run high-density compute workloads.
+AI is accelerating the nuclear race
+Valar isn’t the only nuclear startup pulling in nine-figure checks this year. Antares raised $470 million for reactors intended for military bases, X-energy raised $1 billion through its IPO, and Last Energy closed $100 million in funding for reactors pitched directly at data centres.
+Valar’s $1 billion is larger than all three combined — a sign of how far ahead of its peers Sequoia is willing to price a company that still operates a single working reactor.
+Where Antares, X-energy and Last Energy sell reactor hardware and buy fuel elsewhere, Valar wants to own both ends of the chain. That’s either the thing that makes it defensible or the thing that makes it slower to scale — hard to say which yet, and Valar’s own timeline is the only evidence either way so far: two years to build the NOVA core, seven months to take Ward 250 critical.
+The new funding will help Valar scale manufacturing capacity, expand its fuel production capabilities, and transition from building demonstration prototypes to producing fleets of reactors designed for AI infrastructure and heavy industrial applications.
+AI
+funding
+news
+top funding rounds
+Unicorns
+US
+Total
+0
+Shares
+Share
+0
+Tweet
+0
+Share
+0
+Share
+0
+EDITOR'S PICK
+a16z leads $40M Vals AI round at $400M valuation to test AI on real-world tasks
+Databricks jumps to $190B valuation with $5B round, six months after hitting $134B
+Exclusive: OpenAI and xAI insiders back Lemma’s $2.3M pre-seed to catch AI agents failing in production
+TFN Prime
+7 European defence tech startups to watch, according to top VCs
+Venture capital can help decarbonise infrastructure, but it cannot fund it alone
+Entrepreneurship ‘favours the privileged’ – why the rise of the million-dollar solo founder isn’t as fair as it looks
+Tech Talks With TFN
+Related Posts
+Read More
+2 minute read
+Female Funding
+Funding News
+Latest News
+Popular now
+Startups News
+Top Funding Rounds
+Top News
+Top Stories
+UK Tech News
+US Tech News
+VC News
+&#8216;CAA for startups’ Entrepreneurs First lands $200M, $16B portfolio at unicorn status
+San Francisco-based Entrepreneurs First has raised $200 million in fresh capital from a group of technology founders, investors,&hellip;
+by Vignesh R
+March 13, 2026
+Read More
+2 minute read
+Acquisition News
+Latest News
+Startups News
+Top Stories
+UK Tech News
+Flusso, developer of world’s smallest air velocity sensor acquired for £28M
+A Cambridge-based flow sensing company Flusso has just been jointly acquired for £28 million by a company and&hellip;
+by Editorial Team
+August 18, 2022
+Read More
+2 minute read
+Europe Tech News
+Funding News
+Latest News
+Startups News
+Top Stories
+Nuventura’s eco-friendly switchgear tech lands €25M investment for a sustainable future
+Nuventura, a Berlin-based provider of SF6-free, medium-voltage (MV) gas-insulated switchgear (GIS) technologies, has snapped €25 million in Series&hellip;
+by Abhinaya Prabhu
+September 5, 2023
+Read More
+3 minute read
+Europe Tech News
+Funding News
+Latest News
+Startups News
+Sustainable News
+Top Stories
+Estonian startup Bisly bags €6.2M for next-gen smart building solutions
+Bisly, an Estonian startup providing next-gen smart building automation solutions has closed a Series A funding round totaling&hellip;
+by Abhinaya Prabhu
+June 19, 2024
+2K
+15K
+1K
+0
+About TFN
+Unicorns
+Disclaimer
+Terms of Use
+Privacy Policy
+Popular now
+Contact us
+Top Funding Rounds
+Email address:
+By clicking submit, you agree to share your email address with TFN to receive marketing, updates, and other emails from the site owner. Use the unsubscribe link in the emails to opt out at any time.
+Leave this field empty if you&#039;re human:
+©
+Stock images by
+Depositphotos
+© 2026 Tech Funding News - All rights reserved.
+Total
+0
+Share
+0
+0
+0
+0
+Get daily funding news briefings in the tech world delivered right to your inbox.
+Enter Your Email
+Email
+Subscribe
+join our newsletter. thank you
+×

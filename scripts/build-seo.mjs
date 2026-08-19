@@ -57,9 +57,11 @@ for (const project of data.projects) noteDate(project.companySlug, project.lates
 const routes = [
   ...["", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/methodology"]
     .map((route) => [route, data.dataAsOf]),
-  // The financing layer carries its own stamp: it was assembled after the race
-  // dataset's date, and a lastmod predating the page's existence lies to crawlers.
+  // The financing and BD layers carry their own stamps: each was assembled
+  // after the race dataset's date, and a lastmod predating the page's
+  // existence lies to crawlers.
   ["/financing", data.financingAsOf],
+  ["/bd", data.bdAsOf],
   ...data.companies.map((company) => [`/companies/${company.slug}`, companyDates.get(company.slug) ?? null]),
   ...data.projects.map((project) => [`/deployments/${project.slug}`, project.latestDate]),
 ];

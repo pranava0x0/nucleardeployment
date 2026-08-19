@@ -14,10 +14,14 @@ export const verificationHosts: { verification: Verification; hosts: string[] }[
     // Financing layer: legislature, export credit, a state economic-development
     // office, and Canada's crown infrastructure lender.
     "congress.gov", "risch.senate.gov", "exim.gov", "tn.gov", "cib-bic.ca",
+    // BD layer: the White House, two state governments, a state power
+    // authority, and an allied national government.
+    "whitehouse.gov", "gov.alaska.gov", "nypa.gov", "gov.uk",
   ] },
   // Universities and public institutions report on programs they host or
   // co-apply for. That is not the reactor company speaking.
-  { verification: "Institution-reported", hosts: ["npre.illinois.edu", "illinois.edu", "acu.edu", "tamu.edu", "dspace.mit.edu"] },
+  // BD layer adds a multilateral lender and an MIT research center.
+  { verification: "Institution-reported", hosts: ["npre.illinois.edu", "illinois.edu", "acu.edu", "tamu.edu", "dspace.mit.edu", "worldbank.org", "ceepr.mit.edu"] },
   { verification: "Company-reported", hosts: [
     "terrapower.com", "kairospower.com", "oklo.com", "x-energy.com", "holtecinternational.com",
     "nuscalepower.com", "aalo.com", "radiantnuclear.com", "valaratomics.com", "deepfission.com",
@@ -28,6 +32,8 @@ export const verificationHosts: { verification: Verification; hosts: string[] }[
     // their own deals, plus one more newswire.
     "accessnewswire.com", "wolverinepowercooperative.com", "news.duke-energy.com",
     "sizewellc.com", "osge.com", "bechtel.com", "nanonuclearenergy.com",
+    // BD layer: buyers and vendors speaking about their own deals.
+    "constellationenergy.com", "newsroom.nexteraenergy.com", "group.vattenfall.com",
   ] },
   { verification: "Press-reported", hosts: [
     "world-nuclear-news.org", "ans.org", "nucnet.org", "powermag.com", "neimagazine.com",
@@ -35,6 +41,8 @@ export const verificationHosts: { verification: Verification; hosts: string[] }[
     "power-eng.com", "news.spacconference.com", "barchart.com", "oodaloop.com",
     "rdworldonline.com", "thebreakthrough.org", "esgtoday.com", "spacenews.com",
     "datacenterdynamics.com", "fortune.com", "sltrib.com", "axios.com",
+    // BD layer: business press and a professional-society journal.
+    "cnbc.com", "jpt.spe.org",
   ] },
 ];
 

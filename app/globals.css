@@ -495,6 +495,33 @@ details.acc.section { padding-top: 22px; padding-bottom: 22px; }
 .split-section details.acc { padding-top: 26px; padding-bottom: 26px; }
 .acc-open-link { display: inline-block; margin-top: 16px; font: 750 13px/1.2 var(--font-mono); border-bottom: 1px solid currentColor; }
 
+/* Jump links under a page's lead header, so a long ledger-heavy page (BD,
+   financing) doesn't require scrolling blind to find a section. */
+.page-subnav { display: flex; flex-wrap: wrap; gap: 8px 10px; padding: 14px max(32px, calc((100vw - 1216px) / 2)); border-bottom: 1px solid var(--border-strong); background: var(--surface-2); }
+.page-subnav a { font: 650 12px/1 var(--font-mono); text-transform: uppercase; letter-spacing: .04em; padding: 8px 12px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--ink); }
+.page-subnav a:hover { background: var(--steel); color: var(--white); border-color: var(--steel); }
+
+/* Nested accordions: a group inside a section that stays visible (a sector, a
+   lane, a status), collapsed by default so a ledger-of-ledgers page doesn't
+   dump every group open at once. Lighter weight than .acc, which is sized
+   for a full h2 section. */
+details.acc-sub { border: 1px solid var(--border); margin: 0 0 14px; background: var(--surface); }
+details.acc-sub:last-child { margin-bottom: 0; }
+details.acc-sub summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 8px 14px; flex-wrap: wrap; padding: 12px 16px; }
+details.acc-sub summary::-webkit-details-marker { display: none; }
+details.acc-sub summary .lane-sub { margin: 0; }
+details.acc-sub[open] summary { border-bottom: 1px solid var(--border); }
+details.acc-sub > :not(summary) { padding: 18px 16px; }
+details.acc-sub:not([open]) > :not(summary) { display: none; }
+details.acc-sub .acc-marker { width: 28px; height: 28px; font-size: 16px; }
+details.acc-sub[open] .acc-marker { transform: rotate(45deg); }
+
+/* The tier legend, compacted to a single scannable strip of the same chips
+   the matrix uses; the full definitions sit behind the acc-sub toggle below
+   it, not in six always-open cards. */
+.bd-legend-compact { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; }
+.bd-legend-compact .bd-chip { cursor: default; }
+
 /* The follow band. */
 .cta-band { display: flex; align-items: center; justify-content: space-between; gap: 20px 24px; flex-wrap: wrap; border-top: 1px solid var(--border-strong); }
 .cta-band h2 { margin: 0 0 6px; font: 700 clamp(24px, 2.6vw, 34px)/1.1 var(--font-serif); }
@@ -659,12 +686,20 @@ details.acc.section { padding-top: 22px; padding-bottom: 22px; }
   .update-body a,
   .key-more,
   .acc-open-link,
+  .page-subnav a,
+  .bd-matrix tbody th[scope="row"] a,
   footer a {
     min-height: 44px;
     display: inline-flex;
     align-items: center;
   }
   .race-filter input { min-height: 44px; }
+  /* The top-level .acc summary has no padding of its own; its clickable
+     height is driven by the taller of the heading text and this marker, so
+     raising the marker raises the whole toggle. Nested .acc-sub markers keep
+     their own smaller, always-on override below, since that summary is
+     already tall enough from its own padding. */
+  .acc-marker { width: 44px; height: 44px; }
   /* 16px stops iOS Safari zooming the viewport on focus (DESIGN.md); the
      denser 14px stays for fine pointers. */
   .race-filter input, .filters input, .filters select { font-size: 16px; }
@@ -672,4 +707,37 @@ details.acc.section { padding-top: 22px; padding-bottom: 22px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
+
+/* BD: the demand matrix, position ledgers, and sector plans. */
+.bd-matrix-scroll { overflow-x: auto; border: 1px solid var(--border-strong); background: var(--surface); }
+.bd-matrix { width: 100%; min-width: 780px; border-collapse: collapse; }
+.bd-matrix thead th { background: var(--graphite); color: var(--white); font: 700 12px/1.3 var(--font-mono); text-transform: uppercase; letter-spacing: .04em; text-align: left; padding: 13px 14px; }
+.bd-matrix td, .bd-matrix tbody th[scope="row"] { border-top: 1px solid var(--border); padding: 9px 14px; text-align: left; }
+.bd-matrix tbody th[scope="row"] { font: 600 14px/1.4 var(--font-sans); }
+.bd-matrix tbody th[scope="row"] a { border-bottom: 1px solid var(--border-strong); }
+.bd-matrix tbody th[scope="row"] a:hover { border-bottom-color: var(--ink); }
+.bd-sector-row th { background: var(--surface-2); font: 700 12px/1.2 var(--font-mono); text-transform: uppercase; letter-spacing: .05em; text-align: left; padding: 8px 14px; border-top: 1px solid var(--border-strong); }
+.bd-chip { display: inline-flex; align-items: center; font: 750 12px/1 var(--font-mono); letter-spacing: .04em; padding: 5px 8px; border: 1px solid var(--border-strong); background: var(--surface); }
+.bd-chip.tier-0 { background: var(--verified); color: var(--white); border-color: var(--verified); }
+.bd-chip.tier-1 { background: var(--steel); color: var(--white); border-color: var(--steel); }
+.bd-chip.tier-2 { background: var(--accent-deep); color: var(--white); border-color: var(--accent-deep); }
+.bd-chip.tier-4 { border-style: dashed; }
+.bd-chip.tier-5 { border-style: dotted; color: var(--ink-muted); }
+.bd-legend { margin-top: 20px; }
+.bd-plan { margin: 0 0 36px; }
+.bd-plan:last-of-type { margin-bottom: 0; }
+.bd-plan .definition-grid { margin-top: 16px; }
+.bd-thesis, .bd-watch { max-width: 840px; margin: 0 0 16px; font-size: 15px; line-height: 1.65; }
+.bd-watch { margin: 16px 0 0; }
+.bd-label { display: block; font: 700 12px/1.2 var(--font-mono); text-transform: uppercase; letter-spacing: .05em; color: var(--ink-muted); margin-bottom: 5px; }
+
+@media (max-width: 639px) {
+  .bd-legend { grid-template-columns: 1fr; }
+}
+
+@media (pointer: coarse) {
+  /* Scoped to the matrix's clickable chips, not the compact legend strip's
+     decorative (aria-hidden) spans, which stay small on purpose. */
+  .bd-matrix .bd-chip { min-height: 44px; padding: 8px 10px; }
 }

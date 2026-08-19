@@ -1,0 +1,106 @@
+The Value of Nuclear Microreactors in Providing Heat and Electricity to Alaskan Communities - CEEPR
+Associates Login
+MIT Access
+Username or Email
+Password
+Remember Me
+Lost your password?
+Publications
+Working Papers
+Other Publications
+Events
+Research Workshops
+Seminars and Webinars
+Other Events
+People
+Leadership, Staff, and Students
+MIT Faculty And Researchers
+External Faculty And Researchers
+CEEPR Alumni And Former Visitors
+Roosevelt Project
+About The Project
+Project Team
+Publications
+Phase 2 Case Studies
+Phase 3 Case Studies
+Roosevelt Mapping
+About
+History
+Impact
+Research
+Projects
+Opportunities
+Support
+– Associates
+– Support Us
+Contact Us
+News
+News Archive
+Newsletter
+Associates Login
+Home
+Publications
+Working Papers
+Other Publications
+Events
+Research Workshops
+Seminars and Webinars
+Other Events
+People
+Leadership, Staff, and Students
+MIT Faculty And Researchers
+External Faculty And Researchers
+CEEPR Alumni And Former Visitors
+Roosevelt Project
+About The Project
+Project Team
+Publications
+Phase 2 Case Studies
+Phase 3 Case Studies
+Interactive Mapping Tool
+About
+History
+Our Impact
+Research
+Projects
+Opportunities
+Support
+– Associates
+– Support Us
+Contact Us
+News
+Newsletter
+climate change households investment finance and risk management natural gas nuclear publication valuation and accounting
+The Value of Nuclear Microreactors in Providing Heat and Electricity to Alaskan Communities
+Ruaridh Macdonald and John E. Parsons
+November 2021
+We evaluated the system cost of providing electricity and heat to serve the load profiles of two types of Alaskan communities, and calculated the cost efficiency of including a nuclear microreactor in the generation portfolio. We employed a capacity expansion and dispatch model augmented to co-optimize heat and electricity generation. Since microreactor designs are still in development and the eventual capital and O&M costs are speculative, our strategy was to explore the outcomes across a wide range of capital costs, and find the range in which a microreactor is included in the least-cost portfolio and the range in which it is not. We call the boundary between the two the capital cost ceiling.
+We have identified the microreactor capital cost ceiling under a range of assumptions and scenarios. This includes two different load profiles—one reflective of demand across Alaska’s Railbelt communities, and one reflective of demand at a remote Alaskan mine and neighbouring community. We assessed the impact of natural gas fuel availability, whether a community had a district heating network, future reductions in the capital cost of renewables, the price of fossil fuels, and, last-but-not-least, the need to reduce systemwide emissions.
+Three factors appear to play a dominant role in setting the capital cost ceiling and answering whether a microreactor is likely to be a cost-efficient addition to the system. One of these is the availability of natural gas. Natural gas is a much cheaper source of energy than diesel fuel, and therefore the microreactor capital cost ceiling is significantly lower in communities where it is available. Most communities in the Alaskan Railbelt have access to natural gas, while few, if any, of the other communities do.
+The second factor is the size of the heat load and the accessibility of a district heating network. In our results, the capital cost ceiling was much higher in scenarios where a microreactor’s waste heat was highly utilized. Communities in the Alaskan Railbelt have higher heat loads and select ones have accessible district heating networks, which facilitated the use of microreactor waste heat, and set the capital cost ceiling high. In contrast, a remote community anchored by a mine has a relatively smaller heat load, which would set the capital cost ceiling lower.
+The third, and overwhelmingly most important factor, is the goal of emission reductions. Any modest emissions reduction target dramatically raised the capital cost ceiling for a microreactor, reflecting that the microreactor is very cost-efficient among low carbon options when heat and electricity are considered together. This conclusion holds broadly across both load profiles. We focused on CO 2 emissions. However, we are aware that certain Railbelt communities face a critical need to reduce particulates and other criteria pollutants. Recognizing this would further boost the competitiveness of a microreactor.
+Full Paper Research Brief
+Support
+MIT is a 501(c)(3) institution and gifts or donations made to MIT CEEPR are tax-deductible within the limitations of US federal income tax laws.
+Support CEEPR
+Menu
+Publications
+Events
+People
+Roosevelt Project
+About
+News
+MIT’s Accessibility Policy
+Contact
+MIT Center for Energy and Environmental Policy Research
+Massachusetts Institute of Technology
+77 Massachusetts Avenue, E19-411
+Cambridge, MA 02139-4307
+Tel: 617-253-3551
+Fax: 617-253-9845
+Email: ceepr@mit.edu
+Directions
+Subscribe to our Newsletter
+This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+AFFILIATIONS
+MIT CEEPR is jointly sponsored by:
