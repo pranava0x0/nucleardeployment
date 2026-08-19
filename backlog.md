@@ -65,6 +65,13 @@
   term sheet (UPI, mbiz.heraldcorp.com both 403'd) to corroborate the
   WNN-sourced record already shipped. Low.
 
+## BD layer follow-ups (continued)
+
+- Add a test that greps BD position labels for "funded study" (and similar
+  category words already named in a tier's own `meaning` text) and asserts
+  they carry that tier, catching the class of mis-tier REVIEW-006 fixed
+  once rather than relying on a future reviewer to spot each instance. Low.
+
 ## UI follow-ups
 
 - The BD and financing pages now use nested `.acc-sub` accordions and a

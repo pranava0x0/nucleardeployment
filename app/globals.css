@@ -687,12 +687,19 @@ details.acc-sub[open] .acc-marker { transform: rotate(45deg); }
   .key-more,
   .acc-open-link,
   .page-subnav a,
+  .bd-matrix tbody th[scope="row"] a,
   footer a {
     min-height: 44px;
     display: inline-flex;
     align-items: center;
   }
   .race-filter input { min-height: 44px; }
+  /* The top-level .acc summary has no padding of its own; its clickable
+     height is driven by the taller of the heading text and this marker, so
+     raising the marker raises the whole toggle. Nested .acc-sub markers keep
+     their own smaller, always-on override below, since that summary is
+     already tall enough from its own padding. */
+  .acc-marker { width: 44px; height: 44px; }
   /* 16px stops iOS Safari zooming the viewport on focus (DESIGN.md); the
      denser 14px stays for fine pointers. */
   .race-filter input, .filters input, .filters select { font-size: 16px; }

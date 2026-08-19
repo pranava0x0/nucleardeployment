@@ -356,7 +356,7 @@ export const bdBuyers: BdBuyer[] = [
     slug: "openai",
     name: "OpenAI",
     sector: "Frontier AI labs",
-    note: "The one lab with a documented reactor-company tie, unwound to permit a purchase.",
+    note: "OpenAI itself holds no Oklo stake; only its CEO's personal chairmanship, now ended, connects the two.",
     positions: [
       {
         class: "Grid-scale SMR",
@@ -956,7 +956,7 @@ export const bdBuyers: BdBuyer[] = [
     positions: [
       {
         class: "Any class",
-        tier: "Program / solicitation",
+        tier: "Stated interest",
         label: "DOE's Idaho National Laboratory funded and reviewed a preliminary feasibility study by the Nuclear Alternative Project, concluding SMRs and microreactors could supply zero-emission, hurricane-resilient baseload power cost-competitive with the mobile gas units and combined-cycle turbines PREPA proposed for its fleet replacement.",
         date: "2020-05",
         source: "https://www.world-nuclear-news.org/Articles/Small-reactors-feasible-in-Puerto-Rico,-study-conc",
