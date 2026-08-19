@@ -523,6 +523,71 @@ For a content/static site, default to a **cookieless, privacy-first** tool (no c
   worktree's build output (1.1MB of noise). Remove or ignore the worktree
   before trusting a main-checkout lint run.
 
+### 2026-08-19 session additions (BD remote-locations research, accordion UI, first-ever PR for the BD layer)
+
+- **A person's board seat at company B is not company A's position, even
+  when company A employs that person and the article is about them.** Two
+  BD buyer rows in the same file made the identical mistake: OpenAI tiered
+  `Equity / board` on a CNBC piece that documents only Sam Altman's
+  personal Oklo chairmanship via his own SPAC, and Liberty Energy tiered
+  the same on a TechCrunch piece whose only Liberty *corporate* investment
+  is in a different company (Fervo, geothermal) — the CEO's board seat was
+  personal. Neither survived a direct re-read of its own source. This is a
+  distinct conflation from source-mismatch: the URL is correct and does
+  support a claim, just not the claim attached to the buyer's name. When a
+  roster/BD-style record's evidence is "person X, who is also
+  CEO/founder/exec of company Y, did Z," re-read for whether Z belongs to X
+  or to Y before assigning it to Y.
+- **A categorical field's own definition text is a spec — grep the dataset
+  against it, not just against sourcing.** The BD tier ladder's `meaning`
+  field for its weakest rung reads "a public statement or funded study,
+  with no instrument behind it," naming "a funded study" as that tier's
+  textbook example. A record literally describing a DOE-funded feasibility
+  study was nonetheless tiered one rung stronger, contradicting the
+  ladder's own words, and it took a second review round to catch (the
+  bot's first pass focused on sourcing accuracy, not definitional
+  consistency). When a taxonomy names an example in its own definition,
+  that phrase is greppable: search shipped labels for it and check every
+  hit landed in the tier that names it.
+- **A shared CSS class used in two visually different contexts needs its
+  touch-target audit to check every context, not just the one in the
+  current diff.** `.acc-marker` sizes the toggle icon for both a full-page
+  `<details>` accordion (no summary padding of its own — the marker's
+  height *is* the clickable height) and a smaller nested `.acc-sub`
+  variant (tall enough already from its own padding). Fixing the new
+  `.acc-sub` usages' touch target in one pass left the pre-existing
+  top-level `.acc` usages still short; a second Codex round caught it.
+  Before calling a touch-target fix done, list every selector that resolves
+  to the shared class/component, not just the ones the diff added.
+- **Converting a section's `<p>` intro into a one-line accordion summary
+  note is exactly the transformation that silently drops a caveat — audit
+  for it every time, not just once.** Collapsing several financing-page
+  sections into `<details>` accordions this session compressed five
+  explanatory paragraphs into short `.acc-note` spans and nearly discarded
+  two load-bearing methodology sentences (the DOE/NRC siting distinction,
+  "figures are not comparable to each other") along with three milder
+  ones. Caught before commit by re-reading the diff specifically for
+  dropped prose, not by any test. Concrete instance of "progressive
+  disclosure hides depth, not the answer" (DESIGN.md): the fix is to keep
+  the full sentence inside the accordion body as its own `<p>`, and shrink
+  only the always-visible summary label.
+- **A branch's un-pushed, never-PR'd commits are "zero review rounds" no
+  matter how old they are or how much later work sits on top.** This PR
+  was the first ever opened for a BD buyer-data layer whose first two
+  commits had been sitting locally for two days across earlier sessions.
+  Codex's first pass found five real P2s inside those old commits, not
+  just in the new session's diff — sharpens the existing "code that
+  shipped with zero review rounds is where the bugs are" entry above: age
+  and later activity on a branch are not review, only a pushed PR is.
+- **Two Codex rounds is a normal outcome for one PR, not a sign the first
+  fix pass was sloppy — poll again after pushing round-1 fixes rather than
+  treating one clean-looking round as done.** Round 1 found five findings
+  across sourcing, dates, and touch targets; round 2, run only after
+  round-1's fixes were pushed, found three more, one of which (the tier-
+  ladder contradiction above) only became visible once the surrounding
+  data had already been corrected once. Budget for a second poll cycle by
+  default on any PR carrying real data or design changes.
+
 ---
 
 ## Influences
