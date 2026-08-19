@@ -988,8 +988,8 @@ export const bdBuyers: BdBuyer[] = [
       },
       {
         class: "Any class",
-        tier: "Program / solicitation",
-        label: "The full Puerto Rico House of Representatives passed C.P. 1092, advancing it to the Senate; the bill keeps the island's 100%-renewable-by-2050 goal but permits evaluating nuclear as a low-emission complementary technology under NRC supervision, and directs the University of Puerto Rico to build nuclear-engineering academic programs.",
+        tier: "Stated interest",
+        label: "The full Puerto Rico House of Representatives passed C.P. 1092, advancing it to the Senate; the bill keeps the island's 100%-renewable-by-2050 goal but permits evaluating nuclear as a low-emission complementary technology under NRC supervision, and directs the University of Puerto Rico to build nuclear-engineering academic programs. Still a bill, not law: no funded program exists until the Senate and governor act.",
         date: "2026-06",
         source: "https://www.metro.pr/noticias/2026/06/15/camara-aprueba-medida-que-incorpora-la-energia-nuclear-a-la-politica-publica-energetica-de-puerto-rico/",
         verification: "Press-reported",
