@@ -31,6 +31,15 @@ export default function BdPage() {
       <p>Who buys new nuclear, by reactor class: the executed deals, equity stakes, prepayments, frameworks, and government programs on the record, and what it takes to sell into each sector. Buyer positions are sourced facts; sector plans are this site&rsquo;s judgment, labeled as such. As of {bdAsOf}.</p>
     </header>
 
+    <nav className="page-subnav" aria-label="Sections on this page">
+      <a href="#matrix">Demand matrix</a>
+      <a href="#positions">Positions ({bdBuyers.length})</a>
+      <a href="#sector-plans">Sector plans</a>
+      <a href="#micro-path">Cadence</a>
+      <a href="#signals">On the record</a>
+      <a href="#bd-limits">Limits</a>
+    </nav>
+
     <section className="section" id="matrix">
       <div className="section-head"><h2>The demand matrix</h2><p>Each cell shows the strongest position a buyer holds in a reactor class, on a ladder that keeps contracts, stakes, moved money, frameworks, programs, and statements apart. Details and sources sit in the ledger below; the matrix answers only who touches what.</p></div>
       <div className="bd-matrix-scroll">
@@ -61,22 +70,35 @@ export default function BdPage() {
           })}
         </table>
       </div>
-      <div className="definition-grid bd-legend">
-        {bdTiers.map((entry) => <div key={entry.tier}>
-          <b>{entry.short} · {entry.tier}</b>
-          <p>{entry.meaning}</p>
-        </div>)}
-      </div>
+      <p className="bd-legend-compact" aria-hidden="true">
+        {bdTiers.map((entry, i) => <span key={entry.tier} className={`bd-chip tier-${i}`} title={`${entry.tier}: ${entry.meaning}`}>{entry.short}</span>)}
+      </p>
+      <details className="acc-sub bd-legend-acc">
+        <summary>
+          <span className="lane-sub">What each tier means</span>
+          <span className="acc-marker" aria-hidden="true">+</span>
+        </summary>
+        <div className="definition-grid bd-legend">
+          {bdTiers.map((entry) => <div key={entry.tier}>
+            <b>{entry.short} · {entry.tier}</b>
+            <p>{entry.meaning}</p>
+          </div>)}
+        </div>
+      </details>
       <p className="data-note">Ladder rungs are never collapsed: a letter of intent is not a contract, a program is not an order, and a statement is not a commitment. &ldquo;Any class&rdquo; holds positions that create demand without picking a reactor size.</p>
     </section>
 
     <section className="section" id="positions">
-      <div className="section-head"><h2>Positions on the record</h2><p>Every position behind the matrix, with its date and source. Figures stay inside their own claims and are never summed across rows.</p></div>
+      <div className="section-head"><h2>Positions on the record</h2><p>Every position behind the matrix, with its date and source. Figures stay inside their own claims and are never summed across rows. Open a sector to read its buyers, or follow a chip from the matrix above to jump straight to one.</p></div>
       {bdSectors.map((sector) => {
         const rows = buyersIn(sector);
         if (!rows.length) return null;
-        return <div key={sector}>
-          <h3 className="lane-sub">{sector}</h3>
+        return <details className="acc-sub" key={sector}>
+          <summary>
+            <span className="lane-sub">{sector}</span>
+            <span className="acc-note">{rows.length} {rows.length === 1 ? "buyer" : "buyers"}</span>
+            <span className="acc-marker" aria-hidden="true">+</span>
+          </summary>
           <div className="frame-grid">
             {rows.map((buyer) => <article key={buyer.slug} id={`buyer-${buyer.slug}`}>
               <h3>{buyer.name}</h3>
@@ -90,15 +112,19 @@ export default function BdPage() {
               </ul>
             </article>)}
           </div>
-        </div>;
+        </details>;
       })}
       <p className="data-note">Costs by reactor class, contracting mechanisms, and underwriters live on the <Link href="/financing">financing page</Link>; per-company deal histories live on each <Link href="/companies">company dossier</Link>.</p>
     </section>
 
     <section className="section" id="sector-plans">
       <div className="section-head"><h2>Sector plans</h2><p>The site&rsquo;s business-development read of each sector. Evidence lines carry their own sources; the thesis, plays, and watch item in each plan are judgment derived from the records on this page, not sourced claims.</p></div>
-      {bdSectorPlans.map((plan) => <article className="bd-plan" key={plan.sector}>
-        <h3 className="lane-sub">{plan.sector}</h3>
+      {bdSectorPlans.map((plan) => <details className="acc-sub bd-plan" key={plan.sector}>
+        <summary>
+          <span className="lane-sub">{plan.sector}</span>
+          <span className="acc-note">{plan.plays.length} plays</span>
+          <span className="acc-marker" aria-hidden="true">+</span>
+        </summary>
         <p className="bd-thesis"><span className="bd-label">Thesis · site judgment</span>{plan.thesis}</p>
         <ul className="ledger wide">
           {plan.evidence.map((line) => <li key={line.source + line.text.slice(0, 24)}>
@@ -114,11 +140,15 @@ export default function BdPage() {
           </div>)}
         </div>
         <p className="bd-watch"><span className="bd-label">Watch · site judgment</span>{plan.watch}</p>
-      </article>)}
+      </details>)}
     </section>
 
-    <section className="section" id="micro-path">
-      <div className="section-head"><h2>The microreactor cadence question</h2><p>Could microreactors ship at 10 to 20 units a year from 2028 onward? The documented rungs, in sequence, from proven physics to a factory rate.</p></div>
+    <details className="section acc" id="micro-path">
+      <summary>
+        <h2>The microreactor cadence question</h2>
+        <span className="acc-note">Could microreactors ship at 10 to 20 units a year from 2028 onward?</span>
+        <span className="acc-marker" aria-hidden="true">+</span>
+      </summary>
       <ul className="ledger wide">
         {bdMicroPath.map((rung, index) => <li key={rung.step}>
           <span className="ledger-date">{index + 1}. {rung.date ?? "Date not stated"}</span>
@@ -128,10 +158,14 @@ export default function BdPage() {
         </li>)}
       </ul>
       <p className="bd-watch"><span className="bd-label">Sequencing · site judgment</span>{bdMicroPathJudgment}</p>
-    </section>
+    </details>
 
-    <section className="section" id="signals">
-      <div className="section-head"><h2>On the record</h2><p>What the officials, executives, and manufacturers behind these positions have said, paraphrased, with the report that carries each statement.</p></div>
+    <details className="section acc" id="signals">
+      <summary>
+        <h2>On the record</h2>
+        <span className="acc-note">What the officials, executives, and manufacturers behind these positions have said</span>
+        <span className="acc-marker" aria-hidden="true">+</span>
+      </summary>
       <ul className="ledger wide">
         {bdSignals.map((signal) => <li key={signal.who + signal.source}>
           <span className="ledger-date">{signal.date ?? "Date not stated"}</span>
@@ -140,7 +174,7 @@ export default function BdPage() {
           <a href={signal.source} target="_blank" rel="noreferrer">Source ↗</a>
         </li>)}
       </ul>
-    </section>
+    </details>
 
     <section className="section limitations" id="bd-limits">
       <h2>What this page does not claim</h2>

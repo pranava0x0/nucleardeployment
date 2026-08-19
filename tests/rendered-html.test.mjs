@@ -1552,10 +1552,14 @@ test("the BD page renders the matrix, every buyer, and labeled judgment", async 
     "exactly one plan per sector, no extras and no gaps",
   );
 
-  // The matrix shows one chip per populated buyer-class pair, no more.
+  // The matrix shows one chip per populated buyer-class pair, no more. Scoped
+  // to the matrix table itself: the compact tier legend below it reuses the
+  // same chip styling on purpose and would otherwise inflate this count.
   const expectedChips = bd.bdBuyers.reduce(
     (count, buyer) => count + new Set(buyer.positions.map((position) => position.class)).size, 0);
-  const chipCount = html.split('class="bd-chip').length - 1;
+  const matrixTable = html.match(/<table class="bd-matrix">[\s\S]*?<\/table>/)?.[0];
+  assert.ok(matrixTable, "the matrix table renders");
+  const chipCount = matrixTable.split('class="bd-chip').length - 1;
   assert.equal(chipCount, expectedChips, `the matrix renders ${expectedChips} chips (${chipCount} found)`);
 
   // The strongest tier wins the cell: Amazon holds Executed, Equity, and
