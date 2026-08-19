@@ -730,5 +730,7 @@ details.acc-sub[open] .acc-marker { transform: rotate(45deg); }
 }
 
 @media (pointer: coarse) {
-  .bd-chip { min-height: 32px; padding: 8px 10px; }
+  /* Scoped to the matrix's clickable chips, not the compact legend strip's
+     decorative (aria-hidden) spans, which stay small on purpose. */
+  .bd-matrix .bd-chip { min-height: 44px; padding: 8px 10px; }
 }

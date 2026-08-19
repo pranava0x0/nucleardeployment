@@ -360,8 +360,8 @@ export const bdBuyers: BdBuyer[] = [
     positions: [
       {
         class: "Grid-scale SMR",
-        tier: "Equity / board",
-        label: "Sam Altman took Oklo public through a merger with his AltC Acquisition Corp in May 2024, then stepped down as chairman in April 2025, giving Oklo more flexibility to explore partnerships with OpenAI and other hyperscalers.",
+        tier: "Stated interest",
+        label: "Sam Altman personally took Oklo public through a merger with his AltC Acquisition Corp in May 2024 and chaired its board; he stepped down in April 2025, reported as freeing Oklo to explore partnerships with OpenAI and other hyperscalers. OpenAI itself has never held equity, a board seat, or any documented agreement with Oklo.",
         date: "2025-04",
         source: "https://www.cnbc.com/2025/04/22/sam-altman-steps-down-as-oklo-chair-freeing-nuclear-company-up-to-work-with-more-ai-companies.html",
         verification: "Press-reported",
@@ -380,25 +380,9 @@ export const bdBuyers: BdBuyer[] = [
         class: "Grid-scale SMR",
         tier: "Framework / LOI",
         label: "Nonbinding letter of intent with Oklo toward a 20-year agreement for 50 MW near Midland, Texas for Permian Basin operations.",
-        date: "2025-04",
+        date: "2024-04",
         source: "https://oklo.com/newsroom/news-details/2024/Oklo-Signs-LOI-to-Supply-50-Megawatts-of-Power-to-Diamondback-Energy/default.aspx",
         verification: "Company-reported",
-      },
-    ],
-  },
-  {
-    slug: "liberty-energy",
-    name: "Liberty Energy",
-    sector: "Oil & gas",
-    note: "Oilfield-services capital that bought reactor equity before the offtake market existed.",
-    positions: [
-      {
-        class: "Grid-scale SMR",
-        tier: "Equity / board",
-        label: "Liberty Energy CEO Chris Wright sat on Oklo's board at his November 2024 nomination as Secretary of Energy, one of the nuclear and geothermal startup investments made from the oilfield-services company.",
-        date: "2024-11",
-        source: "https://techcrunch.com/2024/11/18/trumps-pro-fracking-energy-secretary-pick-has-also-invested-in-geothermal-and-nuclear-startups",
-        verification: "Press-reported",
       },
     ],
   },
@@ -1083,7 +1067,7 @@ export const bdSectorPlans: BdSectorPlan[] = [
     ],
     plays: [
       { move: "Sell to the landlord, not the tenant.", why: "Crusoe, Switch, and Equinix hold the reactor positions; the labs hold the compute contracts. The buyer of record is whoever owns the building." },
-      { move: "Watch governance before offtake.", why: "The one documented lab tie ran through equity and a board seat for a decade before any supply talk; the step-down is what made a purchase possible." },
+      { move: "Watch governance before offtake.", why: "The one documented lab connection ran through its CEO's personal chairmanship for a decade before any supply talk, not a corporate stake; the step-down is what made a purchase possible." },
       { move: "Price the brand.", why: "A lab-branded nuclear PPA carries announcement value for both sides beyond the electrons; the hyperscaler restart deals set the precedent for headline pricing." },
     ],
     watch: "An executed OpenAI-Oklo supply agreement would be the first direct lab offtake on record; the April 2025 step-down exists to permit exactly that.",
@@ -1107,7 +1091,6 @@ export const bdSectorPlans: BdSectorPlan[] = [
     ],
     plays: [
       { move: "Target Permian-class electrification.", why: "The Diamondback template (50 MW, 20 years, behind the meter) matches field load that currently runs on wellhead gas and diesel, priced far above grid power." },
-      { move: "Recruit O&G capital even where offtake stalls.", why: "Liberty Energy's Oklo board seat and startup investments preceded any purchase; producer balance sheets understand decade-long, capital-heavy energy projects." },
       { move: "Treat the majors as partners and rivals, not buyers.", why: "Exxon and Chevron are building competing gas supply, but they also hold the sites, water, and interconnection queues that nuclear projects need." },
       { move: "Keep oil sands on the long list.", why: "The steam load is real and studied at C$26.7M depth, but no project has advanced; it prices as a post-FOAK market, not a first market." },
     ],
@@ -1150,7 +1133,11 @@ export const bdSectorPlans: BdSectorPlan[] = [
         source: "https://www.sec.gov/Archives/edgar/data/0002086716/000162828026056936/cohen_boardxappointmentxpr.htm",
       },
       {
-        text: "The Air Force finalized which ANPI developer goes to which base in April 2026 (Radiant to Buckley, Westinghouse to Malmstrom, Antares to JBSA), while Guam's government says it has received no official DOD notification of a reactor site despite lawmakers citing roughly $400M reportedly set aside for two island installations.",
+        text: "The Air Force finalized which ANPI developer goes to which base in April 2026: Radiant to Buckley, Westinghouse to Malmstrom, Antares to JBSA.",
+        source: "https://www.powermag.com/air-force-anpi-picks-put-radiant-antares-westinghouse-on-track-for-first-on%E2%80%91base-microreactors-by-2028/",
+      },
+      {
+        text: "Guam's government says it has received no official DOD notification of a reactor site, despite lawmakers citing roughly $400M reportedly set aside for two island installations.",
         source: "https://www.postguam.com/news/local/lawmakers-want-answers-about-micro-nuclear-reactors-on-guam/article_88cb2824-85aa-4c5c-8dd7-e6ac6cdd2b76.html",
       },
     ],

@@ -59,8 +59,13 @@ line against its source before re-citing it elsewhere.
 
 ## Oil and gas
 
-- Liberty Energy invested $10M in Oklo in 2023; CEO Chris Wright sat on
-  Oklo's board and was nominated Secretary of Energy in November 2024.
+- Liberty Energy CEO Chris Wright personally sat on Oklo's board and was
+  nominated Secretary of Energy in November 2024; the only Liberty Energy
+  corporate investment the source names is in geothermal company Fervo, not
+  Oklo. A PR-review bot on the first BD-layer PR (2026-08-19) caught the
+  shipped record conflating Wright's personal board seat with a Liberty
+  Energy corporate position; the buyer row was removed rather than
+  retitled, since no genuine Liberty Energy-Oklo instrument exists to ship.
   [press]
   <https://techcrunch.com/2024/11/18/trumps-pro-fracking-energy-secretary-pick-has-also-invested-in-geothermal-and-nuclear-startups>
 - Alberta committed C$7M to a Cenovus-led C$26.7M feasibility study of SMRs
