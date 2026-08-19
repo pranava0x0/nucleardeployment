@@ -33,7 +33,7 @@ export const verificationHosts: { verification: Verification; hosts: string[] }[
     "accessnewswire.com", "wolverinepowercooperative.com", "news.duke-energy.com",
     "sizewellc.com", "osge.com", "bechtel.com", "nanonuclearenergy.com",
     // BD layer: buyers and vendors speaking about their own deals.
-    "constellationenergy.com", "newsroom.nexteraenergy.com",
+    "constellationenergy.com", "newsroom.nexteraenergy.com", "group.vattenfall.com",
   ] },
   { verification: "Press-reported", hosts: [
     "world-nuclear-news.org", "ans.org", "nucnet.org", "powermag.com", "neimagazine.com",

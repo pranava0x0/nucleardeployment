@@ -107,13 +107,24 @@ line against its source before re-citing it elsewhere.
   effective 2026-08-12; at DOE he coordinated nuclear deployment policy with
   the White House, NRC, and NASA. [verified]
   <https://www.sec.gov/Archives/edgar/data/0002086716/000162828026056936/cohen_boardxappointmentxpr.htm>
-- Already tracked: Project Pele ($300M ceiling, BWXT); Radiant ANPI delivery
-  agreement (36-month deadline) with Antares and Westinghouse competing for
-  Colorado and Montana base assignments; Air Force/DLA Eielson notice of
-  intent (Oklo, 5 MW, 30-year fixed price); Army Janus Program (2025-10);
-  EO 14299 (Army-regulated reactor on an installation by 2028-09-30); NANO
-  AFWERX study at Joint Base Anacostia-Bolling; Antares NASA Marshall
-  prototype; DOE Reactor Pilot Program, DOME, and Launch Pad.
+- The Air Force finalized ANPI vendor-to-base assignments 2026-04-22: Radiant
+  (Kaleidos, 1 MWe) to Buckley Space Force Base, CO; Westinghouse (eVinci) to
+  Malmstrom AFB, MT; Antares (R1, 200-300 kW) to Joint Base San Antonio, TX;
+  Radiant and Antares target 2028 delivery. [press]
+  <https://www.powermag.com/air-force-anpi-picks-put-radiant-antares-westinghouse-on-track-for-first-on‑base-microreactors-by-2028/>
+- The Army named nine Janus candidate installations 2025-11-20 after on-site
+  assessment: Fort Benning GA, Fort Bragg NC, Fort Campbell KY, Fort Drum NY,
+  Fort Hood TX, Fort Wainwright AK, Holston Army Ammunition Plant TN, Joint
+  Base Lewis-McChord WA, Redstone Arsenal AL. Fort Wainwright is a net power
+  importer since its coal cogeneration plant stopped exporting. DIU opened an
+  area-of-interest solicitation the same week; final site count and vendor
+  award are still undetermined. [press]
+  <https://www.world-nuclear-news.org/articles/us-army-names-potential-microreactor-sites>
+- Already tracked: Project Pele ($300M ceiling, BWXT); Air Force/DLA Eielson
+  notice of intent (Oklo, 5 MW, 30-year fixed price); Army Janus Program
+  solicitation (2025-10); EO 14299 (Army-regulated reactor on an installation
+  by 2028-09-30); NANO AFWERX study at Joint Base Anacostia-Bolling; Antares
+  NASA Marshall prototype; DOE Reactor Pilot Program, DOME, and Launch Pad.
 
 ## States and power authorities
 
@@ -158,6 +169,20 @@ line against its source before re-citing it elsewhere.
   advanced light-water SMR, with a subsidiary company to own and operate
   it. [press]
   <https://www.nucnet.org/news/african-nation-signs-agreement-for-nuscale-12-module-nuclear-power-plant-8-5-2024>
+- Meralco PowerGen and Ultra Safe Nuclear Corporation signed a cooperation
+  agreement 2023-11-16 at the APEC Leaders' Summit, witnessed by President
+  Marcos, for a four-month pre-feasibility study of USNC's 15 MWe / 45 MWt
+  Micro-Modular Reactor (TRISO fuel, HTGR, 40-year licensed life); Meralco
+  holds an option to pursue a full feasibility study on the results. [press]
+  <https://world-nuclear-news.org/Articles/Philippines-considers-deploying-USNC-microreactors>
+- The U.S.-Philippines 123 Agreement (civil nuclear cooperation) was
+  formalized in November 2023 and took effect July 2024. USTDA committed
+  $2.7M to Meralco PowerGen in February 2026 for a technical review of U.S.
+  SMR designs and an implementation roadmap, alongside an SMR control-room
+  simulator program and a university nuclear-engineering curriculum
+  partnership; the Philippines' stated target is 1,200 MW of nuclear online
+  by 2032, 2,400 MW by 2035, 4,800 MW by 2050. [press]
+  <https://www.world-nuclear-news.org/articles/us-touts-smr-designs-to-the-philippines>
 - Already tracked: U.S.-Japan framework (up to $40B, BWRX-300, Tennessee and
   Alabama); OPG Darlington four-unit program (C$20.9B approved); RoPower
   Romania final investment decision (462 MWe); Saskatchewan Research Council
@@ -181,9 +206,88 @@ line against its source before re-citing it elsewhere.
   supplying both heat and electricity as the value case against diesel.
   [institution]
   <https://ceepr.mit.edu/workingpaper/the-value-of-nuclear-microreactors-in-providing-heat-and-electricity-to-alaskan-communities/>
+- DOE's Idaho National Laboratory funded and reviewed the Nuclear Alternative
+  Project's preliminary feasibility study for Puerto Rico (started 2019-10,
+  released 2020-05): SMRs/microreactors could supply zero-emission,
+  hurricane-resilient baseload cost-competitive with PREPA's proposed mobile
+  gas and combined-cycle fleet replacement. [press]
+  <https://www.world-nuclear-news.org/Articles/Small-reactors-feasible-in-Puerto-Rico,-study-conc>
+- Puerto Rico's Proyecto de la Cámara 1092 (pending as of a 2026-05-22 House
+  Economic Development Commission hearing) would amend the island's energy
+  policy act to direct evaluation of SMR deployment; the Puerto Rico Energy
+  Bureau's president testified in support. [press]
+  <https://www.ans.org/news/article-8091/ansuprm-student-section-advocates-for-puerto-rican-nuclear/>
+- Guam: senators say DOD has flagged the concept since roughly 2024 and cite
+  ~$400M reportedly set aside for two Guam installations (per Sen. Telo
+  Taitague), but the Community Defense Liaison Office says the territory's
+  government has received no official DOD notification as of the May 2026
+  briefing. No confirmed program; shipped as a stated-interest position, not
+  a program. [press]
+  <https://www.postguam.com/news/local/lawmakers-want-answers-about-micro-nuclear-reactors-on-guam/article_88cb2824-85aa-4c5c-8dd7-e6ac6cdd2b76.html>
 - Already tracked: NEI's 2019 estimate that FOAK microreactors generate at
   $0.14-0.41/kWh, overlapping remote diesel; the Eielson AFB arrangement as
   the defense-remote template.
+
+## Remote-location and allied-buyer research pass (2026-08-17, agent fan-out)
+
+Three parallel research agents (US territories; Indo-Pacific allies; European
+and remote-base allies) plus follow-up verification found new, currently-live
+positions. Every claim below was independently re-fetched from a primary or
+press source before shipping; nothing shipped from an agent's search-summary
+reconstruction alone.
+
+- Puerto Rico's C.P. 1092 passed the full House 2026-06-15 and moved to the
+  Senate; verified directly against metro.pr (not just the agent's summary).
+  <https://www.metro.pr/noticias/2026/06/15/camara-aprueba-medida-que-incorpora-la-energia-nuclear-a-la-politica-publica-energetica-de-puerto-rico/>
+- Guam: the FY2026 NDAA (signed 2025-12-21) requires DOD to give Congress and
+  Guam's governor at least one year's notice before placing any nuclear
+  reactor on the island. One agent-supplied search summary said "180 days";
+  a direct fetch of postguam.com's own June 2026 follow-up article settled
+  it as "at least one year," which is what shipped. [press]
+  <https://www.postguam.com/news/local/congress-nuclear-reactor-push-alarms-locals/article_a63b9661-5cca-43a3-9fae-e06ab5682477.html>
+- South Korea: SK Innovation (TerraPower's second-largest shareholder since
+  a 2023 equity round) and TerraPower signed an August 2026 term sheet
+  toward Korea's first commercial Natrium plant, verified against WNN after
+  the agent's two primary-source links (UPI, mbiz.heraldcorp.com) both
+  403'd. [press] <https://www.world-nuclear-news.org/articles/terrapower-expands-cooperation-with-korean-partners>
+  Also shipped: Nano Nuclear-DS Dansuk non-binding MOU for the KRONOS MMR,
+  2026-01-13, verified directly against barchart.com. [press]
+  <https://www.barchart.com/story/news/37017636/nano-nuclear-energy-signs-mou-with-ds-dansuk-to-advance-micro-modular-reactor-deployment-in-south-korea>
+- Nordic/Baltic/Balkan BWRX-300 pipeline, all verified against company or
+  WNN primary text: Vattenfall's Värö Peninsula down-select to GE Vernova
+  and Rolls-Royce SMR finalists (2025-08); GE Vernova Hitachi-Fortum
+  early-works agreement covering Finland and Sweden (2025-07); Norsk
+  Kjernekraft-Aecon cooperation across ten Norwegian sites (2025-11);
+  Altra-SGE-GE Vernova Hitachi MOU to assess Lithuania (exact signing date
+  unconfirmed by any source this session could fetch directly, so the
+  shipped record carries `date: null`); USTDA-BEH Bulgaria prefeasibility
+  grant (2024-12); Westinghouse-JAVYS Slovakia AP1000/AP300 MOU (2023-07).
+  <https://group.vattenfall.com/press-and-media/newsroom/2025/vattenfall-selects-suppliers-on-the-journey-towards-new-nuclear-power/>
+  <https://www.gevernova.com/news/press-releases/ge-vernova-hitachi-nuclear-energy-fortum-agreement-deployment-bwrx-300-small-modular-reactor-finland-sweden>
+  <https://www.world-nuclear-news.org/articles/aecon-and-norsk-kjernekraft-to-promote-smrs-in-norway>
+  <https://www.neimagazine.com/news/lithuania-considers-smr-technology/>
+  <https://www.world-nuclear-news.org/articles/us-grant-agreements-to-support-bulgarian-nuclear-projects>
+  <https://info.westinghousenuclear.com/news/westinghouse-ap300-smr-ap1000-interest-in-europe-slovakia-deployment-discussions>
+- Not shipped, checked and killed: US Virgin Islands and American Samoa have
+  no nuclear/SMR activity on record (confirmed dead ends). Taiwan, Australia
+  (civil nuclear is statutorily banned; AUKUS is submarine propulsion, out
+  of scope), the COFA states (Palau/Marshall Islands/FSM, whose real energy
+  transition is solar-battery microgrids, not nuclear), New Zealand,
+  Thailand, and Singapore all returned policy statements or third-country
+  vendor ties with no US-vendor buyer position to ship. Falkland Islands,
+  Gibraltar, Iceland, and Gulf-state remote/military bases (Al Udeid,
+  Bahrain) returned zero nuclear content. Czech Republic's Rolls-Royce SMR
+  deal is real but the vendor is UK, not US, so it falls outside this page's
+  criterion.
+- Not shipped, needs a verified primary read before it can ship: CNMI Senate
+  Joint Resolution 24-05 (expressing support for studying SMR/microreactor
+  deployment on Saipan, Tinian, and Rota, explicitly tied to the Army's
+  Project Janus and EO 14299). Two independent search passes and a second
+  session's direct-fetch attempts both hit 403 on every candidate source
+  (nminewsservice.com twice, cnmileg.net's own agenda PDF did not carry the
+  resolution text). The resolution's existence is corroborated by multiple
+  independent mentions, but no session has read primary text directly.
+  Backlogged, not fabricated from snippets.
 
 ## Manufacturing rate: the path to 10-20 microreactors a year
 
@@ -222,6 +326,15 @@ line against its source before re-citing it elsewhere.
   pinned to a dated primary source in this pass; no Anthropic row ships.
 - The INL feature story quoting Rian Bahran is behind a WAF (403); his
   UPRISE statements are cited to POWER instead.
+- Remote-location research pass (2026-08-17): Diego Garcia and Kwajalein
+  Atoll both surface in searches as Pentagon microreactor candidates, but the
+  only sourced basis is a DARPA program concept from 2012 (killed for lack of
+  funding that year) and a 2018 Army report; no live program, contract, or
+  solicitation names either site today. Not shipped. Andersen AFB, Guam was
+  checked against the Pacific Deterrence Initiative FY2026/FY2027 budget
+  documents; those fund missile-defense infrastructure, not reactors, so the
+  Guam position ships as a lawmaker/CDLO exchange (postguam.com), not a DOD
+  program.
 
 ## Corrections from the cached-snapshot audit (2026-08-17)
 

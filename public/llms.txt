@@ -144,7 +144,7 @@ apart from facts. FOAK is a first-of-a-kind unit; NOAK the nth after learning.
 Who buys new nuclear, by reactor class and sector, on a ladder that keeps
 executed deals, equity stakes, prepayments, frameworks, programs, and
 statements apart. Sector plans are the site's labeled judgment.
-- 35 tracked buyers across 8 sectors, holding 52 sourced positions.
+- 44 tracked buyers across 8 sectors, holding 69 sourced positions.
 - 8 documented rungs on the path from microreactor criticalities to a factory cadence.
 - Full layer: https://pranava0x0.github.io/nucleardeployment/bd
 
