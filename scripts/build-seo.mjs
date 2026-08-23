@@ -36,6 +36,32 @@ const data = await loadData();
 
 // --- sitemap.xml -----------------------------------------------------------
 
+// lastmod tracks the newest event date behind a page, which usually is a real
+// content-change signal but can run backward: correcting a stale record to
+// cite an *earlier*, more accurate event (2026-08-23: Aurora-INL's stage was
+// frozen on a January snapshot, fixed against a September groundbreaking
+// already documented elsewhere in this file) moves the visible date back
+// even though the page content changed today. A regressing lastmod tells
+// crawlers the page is now older than what they last saw and skip
+// recrawling exactly the page that just changed. Floor every date at the
+// currently-committed sitemap's own lastmod for that URL, so a correction
+// can only hold the date steady or advance it, never move it backward.
+let previousLastmod = new Map();
+try {
+  const committed = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
+  for (const match of committed.matchAll(/<loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod>/g)) {
+    previousLastmod.set(match[1], match[2]);
+  }
+} catch {
+  // No committed sitemap yet (first run): nothing to floor against.
+}
+const notBefore = (url, lastmod) => {
+  const floor = previousLastmod.get(url);
+  if (!floor) return lastmod;
+  if (!lastmod) return floor;
+  return lastmod > floor ? lastmod : floor;
+};
+
 // lastmod is the real per-page change date (DESIGN.md 11.2), so a record page
 // moves only when one of its own records does. Aggregate routes render the
 // whole dataset and carry its date. Mixed-precision dates (YYYY-MM beside
@@ -69,8 +95,11 @@ const routes = [
 const sitemap = [
   `<?xml version="1.0" encoding="UTF-8"?>`,
   `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
-  ...routes.map(([route, lastmod]) =>
-    `  <url><loc>${escapeXml(page(route))}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}</url>`),
+  ...routes.map(([route, lastmod]) => {
+    const url = page(route);
+    const floored = notBefore(url, lastmod);
+    return `  <url><loc>${escapeXml(url)}</loc>${floored ? `<lastmod>${floored}</lastmod>` : ""}</url>`;
+  }),
   `</urlset>`,
   ``,
 ].join("\n");

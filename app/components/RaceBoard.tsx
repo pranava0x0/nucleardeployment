@@ -93,7 +93,11 @@ export function RaceBoard() {
           <li className="race-board-more">
             <details>
               <summary>Show all {board.length} companies ↓</summary>
-              <ol className="race-board-rest">
+              {/* The visible rank badge is aria-hidden (a screen reader gets the
+                  real rank from the list position instead), so the native <ol>
+                  numbering has to actually continue from the visible list's end,
+                  not restart at 1 for ranks 7-18. */}
+              <ol className="race-board-rest" start={VISIBLE_ROWS + 1}>
                 {rest.map((row, index) => <RaceRowItem row={row} index={VISIBLE_ROWS + index} key={row.company.slug} />)}
               </ol>
             </details>

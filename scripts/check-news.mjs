@@ -52,6 +52,12 @@ const AGGREGATOR_HOSTS = new Set([
   "techfundingnews.com", "theaiworld.org", "interestingengineering.com", "manilatimes.net",
   "utilitydive.com", "ans.org", "nucnet.org", "neimagazine.com", "barchart.com",
   "gov.uk", "postguam.com", "spacconference.com", "thebreakthrough.org", "illinois.edu",
+  // A senator's own site and a state agency's whole-of-department feed: real
+  // organizations, but not any tracked company's own channel, same class as
+  // gov.uk above. Found by Codex reviewing the same PR this list was added
+  // in, watching risch.senate.gov (cited for a federal-policy quote) and
+  // tn.gov (cited for one state economic-development announcement).
+  "senate.gov", "tn.gov",
 ]);
 
 const isAggregator = (host) => [...AGGREGATOR_HOSTS].some((suffix) => host === suffix || host.endsWith(`.${suffix}`));
@@ -183,7 +189,10 @@ for (const [position, root] of roots.entries()) {
       state = "thin";
     } else {
       hash = createHash("sha256").update(text).digest("hex").slice(0, 16);
-      state = !previous ? "first" : hash === previous.hash ? "unchanged" : "changed";
+      // A previously blocked/failed/thin root is persisted with no hash: its
+      // first successful fetch is a baseline, not a "change", even though
+      // `previous` exists. Check for a usable hash, not just an entry.
+      state = !previous?.hash ? "first" : hash === previous.hash ? "unchanged" : "changed";
     }
   }
 

@@ -28,6 +28,11 @@ export function RaceFilter({ total }: { total: number }) {
   const openBeforeFilter = useRef(new WeakMap<HTMLDetailsElement, boolean>());
 
   const apply = (value: string) => {
+    // Capture a fresh baseline at the start of every filtering session (the
+    // query going from empty to non-empty), not just once ever: a stale
+    // capture from an earlier session would restore the wrong state if the
+    // reader manually opened or closed the section in between two searches.
+    const startingNewSession = query.trim() === "" && value.trim() !== "";
     setQuery(value);
     const rows = document.querySelectorAll<HTMLElement>("[data-filter]");
     const empty = document.querySelector<HTMLElement>("[data-race-empty]");
@@ -39,7 +44,9 @@ export function RaceFilter({ total }: { total: number }) {
       if (hit) visible += 1;
       const details = row.closest("details");
       if (!details) return;
-      if (!openBeforeFilter.current.has(details)) openBeforeFilter.current.set(details, details.open);
+      if (startingNewSession || !openBeforeFilter.current.has(details)) {
+        openBeforeFilter.current.set(details, details.open);
+      }
       if (hit && needle) details.open = true;
       else if (!needle) details.open = openBeforeFilter.current.get(details) ?? false;
     });

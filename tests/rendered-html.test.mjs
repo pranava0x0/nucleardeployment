@@ -81,6 +81,13 @@ test("the homepage leads with catch-up, news, and gates before the full race boa
   const { readFile } = await import("node:fs/promises");
   const filterSource = await readFile(new URL("../app/components/RaceFilter.tsx", import.meta.url), "utf8");
   assert.match(filterSource, /closest\("details"\)/, "a filter match opens its <details> ancestor");
+  // A WeakMap that captures a <details>'s state once and never refreshes it
+  // restores the wrong value across a second filtering session (filter,
+  // clear, manually open the section by hand, filter and clear again: a
+  // stale captured "closed" snaps it shut even though the reader just
+  // opened it). Codex found this on PR #14; the baseline must be recaptured
+  // at the start of each session, not held forever after the first one.
+  assert.match(filterSource, /startingNewSession/, "the saved <details> state is recaptured at the start of each new filtering session");
 });
 
 test("the homepage race board states its zero and gives every entrant a row", async () => {
@@ -1056,7 +1063,7 @@ test("the news watch list is derived from cited sources and excludes wire-servic
   // 2026-08-23 review of the initially-derived list, same failure shape as
   // the wire services above even though none of these are multi-company
   // aggregators in the ordinary sense.
-  for (const unrelated of ["spacconference.com", "thebreakthrough.org", "illinois.edu", "gov.uk", "postguam.com"]) {
+  for (const unrelated of ["spacconference.com", "thebreakthrough.org", "illinois.edu", "gov.uk", "postguam.com", "senate.gov", "tn.gov"]) {
     assert.doesNotMatch(stdout, new RegExp(unrelated.replace(".", "\\.")), `${unrelated} is filtered out of the watch list`);
   }
 });
@@ -1072,6 +1079,13 @@ test("the news watch script fails loud when every root is blocked, not just when
   const source = await readFile(new URL("../scripts/check-news.mjs", import.meta.url), "utf8");
   assert.match(source, /tally\.blocked \+ tally\.failed/, "the failure threshold counts blocked roots, not only failed ones");
   assert.match(source, /observed === 0/, "an all-blocked or all-thin run with zero pages actually observed fails loud even below the ratio threshold");
+  // A blocked/failed/thin root is persisted with no hash. Its first
+  // successful fetch is a baseline, not a "change" — but `!previous` is
+  // true only for a root with literally no prior entry, so a root that
+  // previously failed (and so has a `previous` with no `hash`) would read
+  // as "changed" the moment it recovers, inventing drift where there was
+  // no baseline to compare against. Codex found this on PR #14.
+  assert.match(source, /!previous\?\.hash/, "recovery from a no-hash state is treated as a first observation, not a change");
 });
 
 test("a company past a gigawatt is reported, not silently clipped", async () => {
@@ -1384,11 +1398,15 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
   }
   for (const project of dataModule.projects) {
     assert.ok(sitemap.includes(`${base}/deployments/${project.slug}/`), `sitemap lists ${project.slug}`);
-    // lastmod is the page's own record date, not a global stamp (DESIGN.md 11.2).
-    assert.ok(
-      sitemap.includes(`<loc>${base}/deployments/${project.slug}/</loc><lastmod>${project.latestDate}</lastmod>`),
-      `${project.slug} carries its own latest date as lastmod`,
-    );
+    // lastmod is the page's own record date, not a global stamp (DESIGN.md
+    // 11.2) — floored at the previously-committed value, though, so a
+    // correction that moves a project's latestDate earlier (2026-08-23:
+    // Aurora-INL's stage fix) can't regress the sitemap date and tell
+    // crawlers a just-edited page is now older than what they last saw.
+    // lastmod is therefore >= latestDate, not necessarily equal to it.
+    const match = sitemap.match(new RegExp(`<loc>${base}/deployments/${project.slug}/</loc><lastmod>([^<]+)</lastmod>`));
+    assert.ok(match, `${project.slug} carries a lastmod`);
+    assert.ok(match[1] >= project.latestDate, `${project.slug}'s lastmod (${match[1]}) never regresses behind its latestDate (${project.latestDate})`);
   }
   const urlCount = (sitemap.match(/<url>/g) ?? []).length;
   assert.equal(urlCount, 10 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
@@ -1409,7 +1427,16 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
   assert.ok(financingModule.financingAsOf > dataModule.dataAsOf, "the financing stamp postdates the race dataset it sits beside");
   assert.ok(bdModule.bdAsOf > financingModule.financingAsOf, "the BD stamp postdates the financing layer it sits beside");
   const layerStamps = new Set([financingModule.financingAsOf, bdModule.bdAsOf]);
-  assert.ok(lastmods.every((date) => date <= dataModule.dataAsOf || layerStamps.has(date)), "no page claims a date newer than its own layer's stamp");
+  // A floored lastmod (build-seo.mjs's notBefore) is allowed past its layer's
+  // stamp: it names the date a specific record was corrected, not a claim
+  // about when the dataset overall last advanced. dataAsOf correctly did not
+  // move for the 2026-08-23 Aurora-INL fix, since the newest documented
+  // event behind it is still 2025-09; only the sitemap floor did.
+  const flooredExceptions = new Set(["2026-08-23"]);
+  assert.ok(
+    lastmods.every((date) => date <= dataModule.dataAsOf || layerStamps.has(date) || flooredExceptions.has(date)),
+    "no page claims a date newer than its own layer's stamp, except a known floored correction",
+  );
   assert.ok(lastmods.some((date) => date !== dataModule.dataAsOf), "record pages carry their own dates, not one global stamp");
 
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
@@ -1438,6 +1465,42 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
     const built = await readFile(new URL(`../dist/client/${name}`, import.meta.url), "utf8");
     const committed = await readFile(new URL(`../public/${name}`, import.meta.url), "utf8");
     assert.equal(built, committed, `the built ${name} matches the committed one`);
+  }
+});
+
+test("a sitemap lastmod never regresses behind what was already committed", async () => {
+  // Codex found this on PR #14: correcting a stale record to cite an
+  // earlier, more accurate event moved its lastmod backward, and a crawler
+  // reads a regressed date as "this page is now older than what I last
+  // saw" and skips recrawling exactly the page that just changed. Prove the
+  // floor by sabotage: seed a future-dated lastmod for a real URL, rerun
+  // the generator, and confirm it held rather than reverting to the data's
+  // own (earlier) date. Backs up and restores the real committed file so
+  // this test cannot corrupt it if a later assertion throws.
+  const { readFile, writeFile } = await import("node:fs/promises");
+  const { execFile } = await import("node:child_process");
+  const { promisify } = await import("node:util");
+  const { fileURLToPath } = await import("node:url");
+  const run = promisify(execFile);
+  const sitemapPath = new URL("../public/sitemap.xml", import.meta.url);
+  const generator = fileURLToPath(new URL("../scripts/build-seo.mjs", import.meta.url));
+
+  const original = await readFile(sitemapPath, "utf8");
+  const url = "https://pranava0x0.github.io/nucleardeployment/deployments/oklo-aurora-pilot/";
+  const targetLine = original.split("\n").find((line) => line.includes(`<loc>${url}</loc>`));
+  assert.ok(targetLine, "the sitemap already lists the URL this test seeds a future date on");
+
+  try {
+    const seeded = original.replace(targetLine, `  <url><loc>${url}</loc><lastmod>2099-01-01</lastmod></url>`);
+    await writeFile(sitemapPath, seeded);
+    await run("node", [generator]);
+    const regenerated = await readFile(sitemapPath, "utf8");
+    assert.match(regenerated, /oklo-aurora-pilot\/<\/loc><lastmod>2099-01-01<\/lastmod>/, "a future-dated committed lastmod holds rather than reverting to the (earlier) derived date");
+  } finally {
+    await writeFile(sitemapPath, original);
+    await run("node", [generator]);
+    const restored = await readFile(sitemapPath, "utf8");
+    assert.equal(restored, original, "the real committed sitemap is restored byte-for-byte after the sabotage");
   }
 });
 
