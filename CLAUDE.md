@@ -588,6 +588,68 @@ For a content/static site, default to a **cookieless, privacy-first** tool (no c
   data had already been corrected once. Budget for a second poll cycle by
   default on any PR carrying real data or design changes.
 
+### 2026-08-23 session additions (AI-writing/UX review pass, homepage toplines reorg, four-angle review of the resulting PR)
+
+- **A test that substring-searches a block of source for a banned/allowed
+  term can be tripped by a comment that merely names the term while
+  explaining why it's excluded.** Adding a "why" comment next to a
+  linter's exclusion list ("X was tried and removed, same reasoning as Y")
+  spelled the excluded word in quotes, which a naive
+  `text.includes('"word"')` assertion can't distinguish from a real array
+  entry. Parse the actual structured entries (a regex over the literal
+  `["term", "reason"]` shape, or the real AST) and check membership in
+  that parsed set, not a raw substring search over the whole block. Same
+  failure shape as "a test that reads a generated file cannot see a
+  change to its generator" above: the check was validating the wrong
+  layer.
+- **An attribute selector must target the element that actually carries
+  the attribute, not a wrapping element.** `.wrapper[open] .toggle {
+  display: none }` silently never matches when `open` is set on a
+  `<details>` nested inside `.wrapper`, not on `.wrapper` itself — the
+  rule parses fine, ships fine, and just never fires. The bug reads
+  exactly like the `[hidden]`-trap and `<details>`-collapse-trap entries
+  in DESIGN.md § 12, and deserves the same reflex: when styling by a
+  native toggle attribute, write the selector as `.wrapper details[open]
+  .toggle`, scoped to the element the browser actually sets it on, and
+  verify by reading `element.open` in a live page rather than trusting
+  the selector reads correctly.
+- **A JS-driven auto-open of a collapsed `<details>` on a filter match
+  needs save/restore, not just open-on-match.** Forcing `details.open =
+  true` when a search matches a row inside a collapsed section, with no
+  code path that ever sets it back to `false`, permanently defeats the
+  section's own default (a "top 6, show all 18" board stayed fully
+  expanded for the rest of the session after one matching search and a
+  cleared query) — the same class the Git-discipline "write save/restore,
+  never an unconditional reset" entry already names, just in DOM state
+  instead of a suppression flag. Capture the prior state the first time a
+  filter interaction touches the element, force-open only while a match
+  is active, and restore the captured state (not a hardcoded `false`) once
+  the query empties, so a reader who opened it by hand before typing
+  doesn't get it snapped shut either.
+- **A review agent's specific evidence (an exact byte count, a quoted
+  excerpt) can be wrong even when its general finding is directionally
+  real — verify the cited example itself, not just that a byte count
+  matches.** A review flagged two newsroom pages as "client-rendered,
+  zero headlines" with byte counts that matched exactly; fetching both
+  directly showed one genuinely was menu-only, the other had real dated
+  headlines starting further into the same byte range the reviewer had
+  only skimmed the first few hundred characters of. The general concern
+  (a hashed newsroom snapshot might be nav-only) was worth fixing either
+  way; the specific example needed its own re-fetch to know which claim
+  was true. Sharpens "a review finding is a sample, not a bug report" —
+  the sample can itself misfire on the exact instance it names.
+- **Concurrent background agents sharing this session's browser tool can
+  hijack or close a tab you were using.** Mid-session, a tab opened for
+  the site's own dev-server preview got navigated away to an unrelated
+  domain (a different background research agent's own browsing), and a
+  second tab later reported "no longer open" between two calls — neither
+  was anything this session's own code did. Fifth member of the
+  hidden-tab-trap family: when background agents are running and might
+  touch the browser, open a fresh tab for your own verification work
+  rather than assuming a tab from three tool calls ago is still yours or
+  still on the URL you left it at, and re-navigate before trusting any
+  read.
+
 ---
 
 ## Influences
