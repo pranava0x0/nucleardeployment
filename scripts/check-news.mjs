@@ -255,7 +255,13 @@ if (thinRoots.length > 0) {
   for (const root of thinRoots) console.log(`   ${root}  (${[...rootsToOwners.get(root)].join(", ")})`);
 }
 
-if (tally.failed > roots.length / 2) {
-  console.error("\nMost fetches failed. Network looks down; re-run rather than trusting this pass.");
+// A run where every root came back blocked (401/403/429, a wall page) looks
+// identical to a healthy one if only network-level failures gate the exit
+// code: tally.blocked isn't tally.failed, so this passed with zero pages
+// actually observed. Both are "checked nothing useful"; fail on either.
+const observed = tally.unchanged + tally.changed + tally.first;
+const unobserved = tally.blocked + tally.failed;
+if (unobserved > roots.length / 2 || (roots.length > 0 && observed === 0)) {
+  console.error(`\n${unobserved} of ${roots.length} root(s) blocked or failed, ${observed} actually observed. Network or a bot wall, not real drift data; re-run rather than trusting this pass.`);
   process.exit(2);
 }

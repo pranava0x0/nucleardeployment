@@ -1061,6 +1061,19 @@ test("the news watch list is derived from cited sources and excludes wire-servic
   }
 });
 
+test("the news watch script fails loud when every root is blocked, not just when fetches error", async () => {
+  // A run where every host answers 403 looks identical to a healthy one if
+  // only network-level failures gate the exit code: a wall response
+  // increments a separate counter from a thrown fetch, so a "most fetches
+  // failed" check that only reads the failed counter passes at 0 real pages
+  // observed. Reported by Codex on PR #14; fixed to also fail when nothing
+  // was actually observed, regardless of which counter absorbed the misses.
+  const { readFile } = await import("node:fs/promises");
+  const source = await readFile(new URL("../scripts/check-news.mjs", import.meta.url), "utf8");
+  assert.match(source, /tally\.blocked \+ tally\.failed/, "the failure threshold counts blocked roots, not only failed ones");
+  assert.match(source, /observed === 0/, "an all-blocked or all-thin run with zero pages actually observed fails loud even below the ratio threshold");
+});
+
 test("a company past a gigawatt is reported, not silently clipped", async () => {
   const dataModule = await import("../app/data.ts");
   // No entrant currently exceeds the track, so assert both directions: the
