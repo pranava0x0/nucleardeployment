@@ -416,7 +416,7 @@ export const projects: Project[] = [
     region: "West",
     technology: "Fast microreactor",
     generation: "Gen IV",
-    scale: "Grid-scale SMR",
+    scale: "SMR",
     family: "SFR",
     reactorRole: "Demonstration power",
     capacity: "75 MWe maximum (Aurora design)",
