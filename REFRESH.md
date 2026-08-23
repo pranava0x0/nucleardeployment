@@ -44,8 +44,17 @@ and recapture rather than editing figures in place.
 npm ci
 npm run build
 npm test
+npm run test:pages
 npm run data:validate
 ```
+
+Both `npm test` and `npm run test:pages` matter, not just one: `test` builds
+with `vinext build`, `test:pages` builds with `next build` (the path CI's
+GitHub Pages job actually uses) and runs a real `tsc` type check that
+`vinext build` does not. A change to `app/data.ts` that types clean under
+`vinext build` can still fail CI on a type error `vinext build` never
+surfaces locally (2026-08-23: a `scale` field used the race-entrant lane
+vocabulary instead of `ScaleClass`'s own, narrower enum).
 
 If `data:validate` reports errors before you start, fix those first. You cannot
 tell your own breakage from inherited breakage otherwise.
