@@ -13,6 +13,7 @@ async function render(path = "/") {
 }
 
 test("server-renders the evidence-led homepage", async () => {
+  const dataModule = await import("../app/data.ts");
   const response = await render();
   assert.equal(response.status, 200);
   const html = await response.text();
@@ -22,7 +23,11 @@ test("server-renders the evidence-led homepage", async () => {
   assert.match(html, /brand\/reactor-velocity-mark\.png/);
   assert.match(html, /Exploring the idea/);
   assert.match(html, /Work or fuel at the site/);
-  assert.match(html, /15 projects/);
+  // Derived from stageCounts(), not hardcoded: a project's stage moving (as
+  // one did after a 2026-08-23 staleness fix) must not silently desync this
+  // assertion from what the page actually renders.
+  const development = dataModule.stageCounts().find((entry) => entry.label === "Development");
+  assert.match(html, new RegExp(`${development.count} projects`), "the Development stage card states its true count");
   assert.match(html, /TerraPower/);
   assert.match(html, /Kairos Power/);
   assert.doesNotMatch(html, /Announcement is not deployment/);
@@ -47,6 +52,17 @@ test("the homepage leads with catch-up, news, and gates before the full race boa
   const catchUp = html.slice(html.indexOf('class="catchup-list"'), html.indexOf("</ul>", html.indexOf('class="catchup-list"')));
   assert.doesNotMatch(catchUp, /undefined|null/, "the catch-up strip has no unresolved value");
   assert.equal((catchUp.match(/<li>/g) ?? []).length, 4, "the catch-up strip has one line per section");
+  // This is the first visible content on the page. Every claim on this site
+  // traces to a source, and the strip is no exception: three of its four
+  // lines are freestanding claims (not just a preview of a fuller sourced
+  // section below), so they carry their own citation link.
+  assert.equal((catchUp.match(/class="catchup-source"/g) ?? []).length, 3, "news, federal, and capital lines carry a source link");
+  // Picks the true latest item per lane, not array position: EO 14302 sorts
+  // after 14299-14301 by number, and the federal-tracker jump link still
+  // points at the section, not at any one EO.
+  const eoNumbers = [...catchUp.matchAll(/EO (\d+)/g)].map(([, n]) => Number(n));
+  assert.ok(eoNumbers.length > 0, "an EO number appears in the strip");
+  assert.ok(eoNumbers[0] >= 14300, "the strip picks the highest (most recent) EO number, not the first array entry");
 
   // Only the first VISIBLE_ROWS render before the show-all toggle; every
   // entrant still has a row somewhere, most of them inside the collapsed tail.
@@ -1033,6 +1049,16 @@ test("the news watch list is derived from cited sources and excludes wire-servic
   for (const aggregator of ["businesswire.com", "bloomberg.com", "tipranks.com", "ans.org", "utilitydive.com", "neimagazine.com"]) {
     assert.doesNotMatch(stdout, new RegExp(aggregator.replace(".", "\\.")), `${aggregator} is filtered out of the watch list`);
   }
+  // A real organization's own page still isn't the tracked company's own
+  // newsroom (a SPAC-news wire that happened to cover an IPO, a university's
+  // general feed for one grant, a think tank's press page for one quote,
+  // a national government's whole-of-government feed): found in a
+  // 2026-08-23 review of the initially-derived list, same failure shape as
+  // the wire services above even though none of these are multi-company
+  // aggregators in the ordinary sense.
+  for (const unrelated of ["spacconference.com", "thebreakthrough.org", "illinois.edu", "gov.uk", "postguam.com"]) {
+    assert.doesNotMatch(stdout, new RegExp(unrelated.replace(".", "\\.")), `${unrelated} is filtered out of the watch list`);
+  }
 });
 
 test("a company past a gigawatt is reported, not silently clipped", async () => {
@@ -1067,19 +1093,26 @@ test("the prose linter matches whole words", async () => {
   assert.match(audit, /\\\\b\(\$\{BANNED/, "the pattern is anchored on word boundaries");
   const banned = audit.slice(audit.indexOf("const BANNED = ["), audit.indexOf("];", audit.indexOf("const BANNED = [")));
   assert.ok(banned.length > 100, "the banned list was located");
-  for (const word of ['"realm"', '"not only"']) {
-    assert.ok(!banned.includes(word), `${word} is not a hard failure`);
+  // Parse the actual [term, reason] entries, not a raw substring search over
+  // the block: a substring check can't tell an array entry from a comment
+  // that merely *names* the excluded word while explaining why it's excluded
+  // (exactly the comments this file carries for realm/landscape/comprehensive),
+  // and a false trip there would hide a real regression the next time this
+  // test is touched.
+  const entries = [...banned.matchAll(/\["([^"]+)",\s*"([^"]+)"\]/g)];
+  assert.ok(entries.length > 30, `most banned entries were parsed as [term, reason] pairs (found ${entries.length})`);
+  const terms = new Set(entries.map(([, term]) => term));
+  for (const word of ["realm", "not only", "comprehensive"]) {
+    assert.ok(!terms.has(word), `"${word}" is not a hard failure (real collisions: e.g. CTBT, CERCLA)`);
   }
-  for (const word of ['"delve"', '"seamless"', '"leverage"', '"myriad"', '"boasts"', '"showcases"', '"comprehensive"', '"imagine"', '"crucial"']) {
-    assert.ok(banned.includes(word), `${word} is still banned`);
+  for (const word of ["delve", "seamless", "leverage", "myriad", "boasts", "showcases", "imagine", "crucial"]) {
+    assert.ok(terms.has(word), `"${word}" is still banned`);
   }
   // Every banned entry carries a reason, not just a term: this is a
   // source-cited site, so a banned word gets the same "why" a banned claim
   // would. A stray one-string entry (no comma, no reason) fails silently at
   // runtime (destructuring [term] leaves reason undefined) rather than
   // loudly, so this is worth asserting directly.
-  const entries = [...banned.matchAll(/\["([^"]+)",\s*"([^"]+)"\]/g)];
-  assert.ok(entries.length > 30, `most banned entries were parsed as [term, reason] pairs (found ${entries.length})`);
   for (const [, term, reason] of entries) {
     assert.ok(reason.length > 15, `"${term}"'s reason is a real sentence, not a stub`);
   }

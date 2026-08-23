@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 /**
  * Narrows the server-rendered board without shipping the dataset to the
@@ -19,6 +19,13 @@ import { useState } from "react";
 export function RaceFilter({ total }: { total: number }) {
   const [query, setQuery] = useState("");
   const [matches, setMatches] = useState(total);
+  // Save/restore, never an unconditional reset: force-opening on a match and
+  // leaving it open once the query clears would silently defeat the board's
+  // 6-row default for the rest of the session. Remember each <details>'s
+  // state from before the filter first touched it, and restore that state
+  // (not just "closed") once the query empties, so a reader who opened it by
+  // hand before typing doesn't get it snapped shut on them either.
+  const openBeforeFilter = useRef(new WeakMap<HTMLDetailsElement, boolean>());
 
   const apply = (value: string) => {
     setQuery(value);
@@ -30,7 +37,11 @@ export function RaceFilter({ total }: { total: number }) {
       const hit = !needle || (row.dataset.filter ?? "").includes(needle);
       row.hidden = !hit;
       if (hit) visible += 1;
-      if (hit && needle) row.closest("details")?.setAttribute("open", "");
+      const details = row.closest("details");
+      if (!details) return;
+      if (!openBeforeFilter.current.has(details)) openBeforeFilter.current.set(details, details.open);
+      if (hit && needle) details.open = true;
+      else if (!needle) details.open = openBeforeFilter.current.get(details) ?? false;
     });
     if (empty) empty.hidden = visible > 0;
     setMatches(visible);

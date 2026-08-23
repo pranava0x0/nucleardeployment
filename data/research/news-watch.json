@@ -1,21 +1,25 @@
 {
-  "updated_at": "2026-08-23T15:09:19.952Z",
+  "updated_at": "2026-08-23T17:07:25.793Z",
   "roots": {
     "https://group.vattenfall.com/press-and-media/newsroom/": {
+      "state": "unchanged",
       "hash": "603e2836fcfff576",
       "title": "Press and media - Vattenfall",
       "bytes": 6603,
-      "checked_at": "2026-08-23T15:09:09.680Z",
+      "checked_at": "2026-08-23T17:07:13.788Z",
+      "last_ok_at": "2026-08-23T17:07:13.788Z",
       "changed_at": "2026-08-23T15:09:09.688Z",
       "owners": [
         "finland-sweden"
       ]
     },
     "https://info.westinghousenuclear.com/news/": {
+      "state": "unchanged",
       "hash": "740e917d97a60016",
       "title": "News | Westinghouse Nuclear",
       "bytes": 5034,
-      "checked_at": "2026-08-23T15:09:09.860Z",
+      "checked_at": "2026-08-23T17:07:13.956Z",
+      "last_ok_at": "2026-08-23T17:07:13.956Z",
       "changed_at": "2026-08-23T15:09:09.860Z",
       "owners": [
         "westinghouse",
@@ -23,10 +27,12 @@
       ]
     },
     "https://news.duke-energy.com/": {
+      "state": "unchanged",
       "hash": "846edf3cf1a0fcff",
       "title": "Home | Duke Energy | News Center",
       "bytes": 4055,
-      "checked_at": "2026-08-23T15:09:10.047Z",
+      "checked_at": "2026-08-23T17:07:14.187Z",
+      "last_ok_at": "2026-08-23T17:07:14.187Z",
       "changed_at": "2026-08-23T15:09:10.047Z",
       "owners": [
         "financing",
@@ -34,61 +40,56 @@
         "nucor"
       ]
     },
-    "https://news.spacconference.com/": {
-      "hash": "22b92ced7763cad2",
-      "title": "DealFlow's SPAC News",
-      "bytes": 3266,
-      "checked_at": "2026-08-23T15:09:10.213Z",
-      "changed_at": "2026-08-23T15:09:10.213Z",
-      "owners": [
-        "oklo"
-      ]
-    },
     "https://newsroom.nexteraenergy.com/": {
+      "state": "unchanged",
       "hash": "3de2f2c52d374df7",
       "title": "NextEra Energy Newsroom - NextEra Energy first-quarter 2022 financial results available on company's website",
       "bytes": 5361,
-      "checked_at": "2026-08-23T15:09:10.382Z",
+      "checked_at": "2026-08-23T17:07:14.273Z",
+      "last_ok_at": "2026-08-23T17:07:14.273Z",
       "changed_at": "2026-08-23T15:09:10.382Z",
       "owners": [
         "google"
       ]
     },
-    "https://npre.illinois.edu/news/": {
-      "hash": "8eb4685c90d37c27",
-      "title": "News | Nuclear, Plasma & Radiological Engineering | Illinois",
-      "bytes": 3450,
-      "checked_at": "2026-08-23T15:09:11.219Z",
-      "changed_at": "2026-08-23T15:09:11.219Z",
+    "https://oklo.com/newsroom/": {
+      "state": "blocked",
+      "checked_at": "2026-08-23T17:07:14.421Z",
+      "first_seen_failing_at": "2026-08-23T17:07:14.421Z",
       "owners": [
-        "nano-nuclear"
+        "oklo",
+        "financing",
+        "meta",
+        "diamondback"
       ]
     },
-    "https://thebreakthrough.org/press/": {
-      "hash": "437302632cfd2903",
-      "title": "Press Landing | The Breakthrough Institute",
-      "bytes": 8415,
-      "checked_at": "2026-08-23T15:09:11.909Z",
-      "changed_at": "2026-08-23T15:09:11.909Z",
+    "https://world-nuclear.org/net-zero-nuclear/news/": {
+      "state": "failed",
+      "checked_at": "2026-08-23T17:07:14.962Z",
+      "first_seen_failing_at": "2026-08-23T17:07:14.962Z",
       "owners": [
-        "terrapower"
+        "financing"
       ]
     },
     "https://www.bechtel.com/press-releases/": {
+      "state": "unchanged",
       "hash": "336af69770a77807",
       "title": "Press Releases Archives - Bechtel",
       "bytes": 13464,
-      "checked_at": "2026-08-23T15:09:12.712Z",
+      "checked_at": "2026-08-23T17:07:15.097Z",
+      "last_ok_at": "2026-08-23T17:07:15.097Z",
       "changed_at": "2026-08-23T15:09:12.712Z",
       "owners": [
         "gev-hitachi"
       ]
     },
     "https://www.constellationenergy.com/news/": {
+      "state": "unchanged",
       "hash": "54dd0e14cff0bd8a",
       "title": "Newsroom | Constellation Energy",
       "bytes": 4897,
-      "checked_at": "2026-08-23T15:09:12.904Z",
+      "checked_at": "2026-08-23T17:07:15.347Z",
+      "last_ok_at": "2026-08-23T17:07:15.347Z",
       "changed_at": "2026-08-23T15:09:12.904Z",
       "owners": [
         "microsoft",
@@ -96,52 +97,57 @@
       ]
     },
     "https://www.deepfission.com/pr-media-kit/press-releases/": {
+      "state": "unchanged",
       "hash": "e2b10aec74fb95ee",
       "title": "Press Releases :: Deep Fission, Inc. (FISN)",
       "bytes": 2389,
-      "checked_at": "2026-08-23T15:09:13.241Z",
+      "checked_at": "2026-08-23T17:07:15.856Z",
+      "last_ok_at": "2026-08-23T17:07:15.856Z",
       "changed_at": "2026-08-23T15:09:13.241Z",
       "owners": [
         "deep-fission"
       ]
     },
+    "https://www.georgiapower.com/news-hub/press-releases/": {
+      "state": "blocked",
+      "checked_at": "2026-08-23T17:07:16.067Z",
+      "first_seen_failing_at": "2026-08-23T17:07:16.067Z",
+      "owners": [
+        "georgia-power"
+      ]
+    },
     "https://www.gevernova.com/news/": {
+      "state": "unchanged",
       "hash": "b21aebbde411e7d6",
       "title": "The Current | GE Vernova News",
       "bytes": 7633,
-      "checked_at": "2026-08-23T15:09:13.723Z",
+      "checked_at": "2026-08-23T17:07:16.429Z",
+      "last_ok_at": "2026-08-23T17:07:16.429Z",
       "changed_at": "2026-08-23T15:09:13.723Z",
       "owners": [
         "poland",
         "finland-sweden"
       ]
     },
-    "https://www.gov.uk/government/news/": {
-      "hash": "0d17add77d4ea924",
-      "title": "News and communications - GOV.UK",
-      "bytes": 32302,
-      "checked_at": "2026-08-23T15:09:14.005Z",
-      "changed_at": "2026-08-23T15:09:14.005Z",
-      "owners": [
-        "united-kingdom",
-        "bd"
-      ]
-    },
     "https://www.lazard.com/media/": {
+      "state": "unchanged",
       "hash": "01c42857da523d5d",
       "title": "About Lazard | Mission, Locations, History and More | Lazard",
       "bytes": 6311,
-      "checked_at": "2026-08-23T15:09:14.311Z",
+      "checked_at": "2026-08-23T17:07:16.740Z",
+      "last_ok_at": "2026-08-23T17:07:16.740Z",
       "changed_at": "2026-08-23T15:09:14.311Z",
       "owners": [
         "financing"
       ]
     },
     "https://www.nuscalepower.com/press-releases/": {
+      "state": "unchanged",
       "hash": "aca0e7854417c442",
       "title": "Press Releases | NuScale Power",
       "bytes": 3361,
-      "checked_at": "2026-08-23T15:09:14.510Z",
+      "checked_at": "2026-08-23T17:07:16.912Z",
+      "last_ok_at": "2026-08-23T17:07:16.912Z",
       "changed_at": "2026-08-23T15:09:14.510Z",
       "owners": [
         "nuscale",
@@ -149,24 +155,15 @@
       ]
     },
     "https://www.nypa.gov/News/": {
+      "state": "unchanged",
       "hash": "93171b2a217e67d2",
       "title": "Newsroom",
       "bytes": 2547,
-      "checked_at": "2026-08-23T15:09:14.713Z",
+      "checked_at": "2026-08-23T17:07:17.175Z",
+      "last_ok_at": "2026-08-23T17:07:17.175Z",
       "changed_at": "2026-08-23T15:09:14.713Z",
       "owners": [
         "nypa",
-        "bd"
-      ]
-    },
-    "https://www.postguam.com/news/": {
-      "hash": "7f596b5bcc5e528c",
-      "title": "News | postguam.com",
-      "bytes": 18497,
-      "checked_at": "2026-08-23T15:09:14.866Z",
-      "changed_at": "2026-08-23T15:09:14.866Z",
-      "owners": [
-        "guam",
         "bd"
       ]
     },
@@ -174,37 +171,53 @@
       "hash": "c78a61219a19ba1b",
       "title": "Newsletter Signup - Senator James Risch",
       "bytes": 2167,
-      "checked_at": "2026-08-23T15:09:15.648Z",
+      "checked_at": "2026-08-23T17:07:21.755Z",
       "changed_at": "2026-08-23T15:09:15.648Z",
       "owners": [
         "financing"
-      ]
+      ],
+      "state": "thin",
+      "first_seen_failing_at": "2026-08-23T17:07:21.755Z"
     },
     "https://www.tn.gov/ecd/news/": {
+      "state": "unchanged",
       "hash": "d9ccb7e08049f522",
       "title": "News | TNECD - Tennessee",
       "bytes": 8069,
-      "checked_at": "2026-08-23T15:09:17.262Z",
+      "checked_at": "2026-08-23T17:07:23.435Z",
+      "last_ok_at": "2026-08-23T17:07:23.435Z",
       "changed_at": "2026-08-23T15:09:17.262Z",
       "owners": [
         "radiant-industries"
       ]
     },
+    "https://www.worldbank.org/en/news/": {
+      "state": "failed",
+      "checked_at": "2026-08-23T17:07:23.519Z",
+      "first_seen_failing_at": "2026-08-23T17:07:23.519Z",
+      "owners": [
+        "world-bank"
+      ]
+    },
     "https://x-energy.com/media/": {
+      "state": "unchanged",
       "hash": "9affbab4c6686a3b",
       "title": "X-energy — Advanced Nuclear Reactor & Fuel Design Engineering",
       "bytes": 3111,
-      "checked_at": "2026-08-23T15:09:17.871Z",
+      "checked_at": "2026-08-23T17:07:23.702Z",
+      "last_ok_at": "2026-08-23T17:07:23.702Z",
       "changed_at": "2026-08-23T15:09:17.871Z",
       "owners": [
         "amazon"
       ]
     },
     "https://x-energy.com/news/": {
+      "state": "unchanged",
       "hash": "b0d08a17808f1804",
       "title": "News - X-energy",
       "bytes": 2579,
-      "checked_at": "2026-08-23T15:09:19.952Z",
+      "checked_at": "2026-08-23T17:07:25.793Z",
+      "last_ok_at": "2026-08-23T17:07:25.793Z",
       "changed_at": "2026-08-23T15:09:19.952Z",
       "owners": [
         "x-energy",

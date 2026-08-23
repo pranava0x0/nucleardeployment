@@ -34,6 +34,9 @@ import { loadData } from "./lib/records.mjs";
  * legitimate sentence. "landscape" was considered and left out for the same
  * reason: too common in ordinary energy-policy prose ("the financing
  * landscape") to ban outright, unlike the much rarer "tapestry" or "beacon".
+ * "comprehensive" was added then removed the same way, caught by a 2026-08-23
+ * review: a nuclear/regulatory site plausibly cites the Comprehensive
+ * Nuclear-Test-Ban Treaty or CERCLA by name, and there was no escape hatch.
  * Matched on word boundaries, so "underscore" does not fire inside a longer
  * word.
  */
@@ -70,7 +73,12 @@ const BANNED = [
   // whose entire premise is that magnitude is always countable.
   ["myriad", "vague-quantity filler; if the count is knowable, this site can state the number"],
   ["plethora", "same defect as myriad, more ornate"],
-  ["comprehensive", "unfalsifiable completeness claim; this site labels its counts 'tracked sample' precisely because 'comprehensive' can't be verified"],
+  // "comprehensive" was tried and removed for the same reason as the two
+  // excluded words named in this file's header comment: a nuclear/regulatory
+  // site plausibly cites the Comprehensive Nuclear-Test-Ban Treaty or CERCLA
+  // (Comprehensive Environmental Response, Compensation, and Liability Act)
+  // by name, and a hard failure with no escape hatch would block a real
+  // statute or treaty title.
   ["multifaceted", "asserts complexity without naming any of the facets"],
   ["unwavering", "unfalsifiable commitment claim with no observable referent"],
   ["beacon", "spatial-metaphor cliché from the same ornamental family as tapestry"],
@@ -105,14 +113,24 @@ const bannedReasons = new Map(BANNED.map(([term, reason]) => [term.toLowerCase()
  */
 const STRUCTURAL_TELLS = [
   {
-    label: "negative-parallelism filler (\"not just X, it's/but Y\")",
+    // Scoped to "it's/it is", not a bare "but": "not just Vogtle, but Summer"
+    // and "not just built, but licensed" are ordinary scope-widening English
+    // a nuclear-regulatory site writes constantly. "not just X, it's Y" is
+    // the actual tell (restating one claim as a bigger one for rhetorical
+    // weight); "but" alone caught both and had no escape hatch, same failure
+    // this file's own header warns against ("realm", "not only").
+    label: "negative-parallelism filler (\"not just X, it's Y\")",
     reason: "restates one claim as a bigger one for rhetorical weight instead of citing a second fact; the standard tell across every AI-writing checklist",
-    pattern: /\bnot just [a-z][^.!?]{0,60}?,?\s+(it'?s|but)\b/i,
+    pattern: /\bnot just [a-z][^.!?]{0,60}?,?\s+it'?s\b/i,
   },
   {
+    // "observers"/"analysts" bare have real uses on a regulatory site ("IAEA
+    // observers", "NRC observers note the docket is incomplete") and no
+    // escape hatch; scoped to the actual weasel phrase, an unnamed plural
+    // standing in for a citation.
     label: "weasel attribution (unnamed plural source)",
     reason: "invents plural sourcing for what is usually one claim; this site names the specific document or it doesn't ship the claim",
-    pattern: /\b(industry reports|industry observers|observers|analysts) (suggest|say|argue|note|believe)\b/i,
+    pattern: /\b(industry reports|industry observers) (suggest|say|argue|note|believe)\b/i,
   },
   {
     label: "leftover model artifact",

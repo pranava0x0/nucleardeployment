@@ -26,6 +26,12 @@ export default function Home() {
     .sort((a, b) => b.stage - a.stage || b.latestDate.localeCompare(a.latestDate))
     .slice(0, 4);
   const vogtle = projects.find((project) => project.slug === "vogtle-3-4");
+  // The "Catch up" strip picks the most recent item in each lane, not
+  // whatever happens to sit first in the source array. EOs are numbered
+  // strictly sequentially by signing date, so the highest number is the
+  // newest; capital instruments carry their own date field directly.
+  const latestFederalAction = [...federalActions].sort((a, b) => Number(b.eo.replace(/\D/g, "")) - Number(a.eo.replace(/\D/g, "")))[0];
+  const latestCapital = [...capital].sort((a, b) => b.date.localeCompare(a.date))[0];
 
   const structured = {
     "@context": "https://schema.org",
@@ -76,20 +82,23 @@ export default function Home() {
         <div className="section-head"><h2>Catch up</h2></div>
         <ul className="catchup-list">
           {latest[0] && <li>
-            <b>{latest[0].company} · {latest[0].kind}</b> {latest[0].label}
-            <a href="#updates">Latest developments →</a>
+            <b>{latest[0].date} · {latest[0].company} · {latest[0].kind}</b> {latest[0].label}
+            <a className="catchup-source" href={latest[0].source} target="_blank" rel="noreferrer">{latest[0].verification} source ↗</a>
+            <Link href="#updates">Latest developments →</Link>
           </li>}
           {gates[0] && <li>
             <b>Next gate: {gates[0].name}</b> {gates[0].next}
-            <a href="#gates">Every project&rsquo;s gate →</a>
+            <Link href="#gates">Every project&rsquo;s gate →</Link>
           </li>}
-          {federalActions[0] && <li>
-            <b>{federalActions[0].eo}</b> {federalActions[0].title} &middot; {federalActions[0].status}
-            <a href="/federal-action">Federal tracker →</a>
+          {latestFederalAction && <li>
+            <b>{latestFederalAction.eo}</b> {latestFederalAction.title} &middot; {latestFederalAction.status}
+            <a className="catchup-source" href={latestFederalAction.source} target="_blank" rel="noreferrer">Source ↗</a>
+            <Link href="/federal-action">Federal tracker →</Link>
           </li>}
-          {capital[0] && <li>
-            <b>{capital[0].amount}</b> {capital[0].name} &middot; {capital[0].status}
-            <a href="/capital">Capital stack →</a>
+          {latestCapital && <li>
+            <b>{latestCapital.date} · {latestCapital.amount}</b> {latestCapital.name} &middot; {latestCapital.status}
+            <a className="catchup-source" href={latestCapital.source} target="_blank" rel="noreferrer">Source ↗</a>
+            <Link href="/capital">Capital stack →</Link>
           </li>}
         </ul>
       </section>

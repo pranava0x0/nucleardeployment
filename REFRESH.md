@@ -162,7 +162,20 @@ go read that newsroom; it does not mean add a record. `--list` prints the
 derived roots without fetching, worth a periodic skim since the derivation is
 a heuristic and can pick up a page that is not actually the right company's
 own newsroom (it has, at least once: a general SPAC-news site that happened to
-carry Oklo's listing announcement).
+carry Oklo's listing announcement; `AGGREGATOR_HOSTS` grew to cover that class
+of miss, not just wire services, after a 2026-08-23 review).
+
+A page whose extracted text is short or carries no plausible dated headline
+reports `thin` instead of `unchanged`: hashing a client-rendered shell or a
+menu-only stub would report silence as fact when the run never actually saw
+the content. `thin` roots are still persisted (so the state is visible in the
+committed file) but excluded from "changed"/"unchanged" semantics; the run's
+output names them and suggests finding the site's own RSS/JSON feed instead.
+A root that 403s or 404s is persisted too, with `first_seen_failing_at`, so a
+newsroom that has been blocked for a month reads as exactly that in the
+committed file rather than a fresh `checked_at` beside a stale hash. Roots no
+longer derived (a citation was edited or removed) are pruned on every run, so
+the committed file never drifts from what the script currently watches.
 
 ## What this refresh does not do
 

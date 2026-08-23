@@ -49,11 +49,11 @@ const VISIBLE_ROWS = 6;
 
 function RaceRowItem({ row, index }: { row: RaceRow; index: number }) {
   return (
-    <li className="race-row" key={row.company.slug} data-filter={row.filterText}>
+    <li className="race-row" data-filter={row.filterText}>
       <div className="race-id">
         <span className="race-rank" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
         <h3><Link className="row-link" href={`/companies/${row.company.slug}`}>{row.company.name}</Link></h3>
-        <p>{row.entrant.design} · {row.entrant.unitMWe.toLocaleString("en-US")} MWe per unit · {row.entrant.lane}</p>
+        <p>{row.entrant.design} · {mwe(row.entrant.unitMWe)} MWe per unit · {row.entrant.lane}</p>
       </div>
       <RaceBar row={row} />
       <p className="race-state">{row.strongestLine}</p>

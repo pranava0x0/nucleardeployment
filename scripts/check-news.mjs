@@ -30,19 +30,31 @@ const argv = process.argv.slice(2);
 const listOnly = argv.includes("--list");
 
 /**
- * Wire services and multi-company aggregators whose front page changes
- * constantly regardless of whether a tracked company did anything: watching
+ * Hosts whose news/press page is not the tracked company's own channel, so
+ * watching it answers the wrong question. Two different failure shapes share
+ * this list: wire services and multi-company aggregators whose front page
+ * changes constantly regardless of what any tracked company did (watching
  * one would report "changed" almost every run and teach a reader to ignore
- * this script's output. Includes every low-quality aggregator host already
- * named in backlog.md's press-upgrade queue, plus the general newswires and
- * trade press that showed up deriving the initial watch list.
+ * this script's output), and a real but unrelated organization's own page
+ * that a citation merely happened to route through (a SPAC-news wire for an
+ * IPO announcement, a university's general news feed for one grant, a think
+ * tank's press page for one quote) — both report "unchanged" forever without
+ * ever telling a reader anything about the company they're attributed to.
+ * Matched by suffix, not exact host, so a subdomain of a listed domain is
+ * caught too. Includes every low-quality aggregator host already named in
+ * backlog.md's press-upgrade queue, the general newswires and trade press
+ * found deriving the initial watch list, and the unrelated-organization
+ * hosts a 2026-08-23 review found in that same derivation.
  */
 const AGGREGATOR_HOSTS = new Set([
   "businesswire.com", "accessnewswire.com", "prnewswire.com", "globenewswire.com",
   "bloomberg.com", "tipranks.com", "stocktitan.net", "gurufocus.com", "premieralts.com",
   "techfundingnews.com", "theaiworld.org", "interestingengineering.com", "manilatimes.net",
   "utilitydive.com", "ans.org", "nucnet.org", "neimagazine.com", "barchart.com",
+  "gov.uk", "postguam.com", "spacconference.com", "thebreakthrough.org", "illinois.edu",
 ]);
+
+const isAggregator = (host) => [...AGGREGATOR_HOSTS].some((suffix) => host === suffix || host.endsWith(`.${suffix}`));
 
 /**
  * Truncate an already-cited URL down to the newsroom index it lives under.
@@ -59,7 +71,7 @@ function watchRootFor(url) {
     return null;
   }
   const host = parsed.hostname.replace(/^www\./, "");
-  if (AGGREGATOR_HOSTS.has(host)) return null;
+  if (isAggregator(host)) return null;
   if (/^(newsroom|press|news|media)\./i.test(parsed.hostname)) {
     return `${parsed.protocol}//${parsed.hostname}/`;
   }
@@ -67,6 +79,19 @@ function watchRootFor(url) {
   const at = segments.findIndex((segment) => /^(newsroom|press-releases|pressroom|press|news|media|announcements)$/i.test(segment));
   if (at === -1) return null;
   return `${parsed.protocol}//${parsed.hostname}/${segments.slice(0, at + 1).join("/")}/`;
+}
+
+/**
+ * A page whose extracted text is short or carries no plausible dated
+ * headline is very likely a client-rendered shell (the listing loads via JS
+ * after the initial HTML) or a menu-only stub: hashing it "detects drift" in
+ * bytes that were never the actual content. Reported as its own state, never
+ * folded into "unchanged", so a reader doesn't mistake silence for a fact
+ * this script was never actually able to observe.
+ */
+function looksThin(text) {
+  if (text.length < 1200) return true;
+  return !/\b20[12]\d\b/.test(text);
 }
 
 async function readWatchIndex() {
@@ -110,8 +135,9 @@ if (listOnly) {
 
 const watchIndex = await readWatchIndex();
 const lastHit = new Map();
-const tally = { changed: 0, unchanged: 0, first: 0, blocked: 0, failed: 0 };
+const tally = { changed: 0, unchanged: 0, first: 0, thin: 0, blocked: 0, failed: 0 };
 const changedRoots = [];
+const thinRoots = [];
 
 for (const [position, root] of roots.entries()) {
   const host = hostOf(root);
@@ -153,6 +179,8 @@ for (const [position, root] of roots.entries()) {
     const wall = looksLikeWall(text);
     if (wall) {
       state = "blocked";
+    } else if (looksThin(text)) {
+      state = "thin";
     } else {
       hash = createHash("sha256").update(text).digest("hex").slice(0, 16);
       state = !previous ? "first" : hash === previous.hash ? "unchanged" : "changed";
@@ -161,28 +189,56 @@ for (const [position, root] of roots.entries()) {
 
   tally[state] += 1;
   if (state === "changed") changedRoots.push(root);
+  if (state === "thin") thinRoots.push(root);
 
-  if (state === "first" || state === "changed") {
+  const now = new Date().toISOString();
+  if (state === "first" || state === "changed" || state === "unchanged") {
     watchIndex.roots[root] = {
+      state,
       hash,
       title: titleOf(html),
       bytes: text.length,
-      checked_at: new Date().toISOString(),
-      changed_at: new Date().toISOString(),
+      checked_at: now,
+      last_ok_at: now,
+      changed_at: state === "unchanged" ? (previous?.changed_at ?? now) : now,
       owners: [...rootsToOwners.get(root)],
     };
-  } else if (previous) {
-    watchIndex.roots[root] = { ...previous, checked_at: new Date().toISOString() };
+  } else {
+    // Blocked, failed, and thin roots are persisted too, not dropped: a
+    // silently-vanished entry would be re-derived as "first" forever, with
+    // no memory that it has never once produced a usable hash. `last_ok_at`
+    // (only ever set on the branch above) stays untouched here, so a reader
+    // of the committed file can tell "checked, unchanged" from "has been
+    // failing since <date>", instead of a fresh `checked_at` next to a stale
+    // hash implying more confidence than the run actually earned.
+    watchIndex.roots[root] = {
+      ...previous,
+      state,
+      checked_at: now,
+      // Absent on a success (that branch writes a fresh object with no such
+      // field), so a recovery clears the streak; carried forward here so a
+      // continuing failure keeps its original start date instead of resetting
+      // it every run.
+      first_seen_failing_at: previous?.first_seen_failing_at ?? now,
+      owners: [...rootsToOwners.get(root)],
+    };
   }
 
-  const mark = { unchanged: "same", changed: "NEW ", first: "init", blocked: "wall", failed: "FAIL" }[state];
+  const mark = { unchanged: "same", changed: "NEW ", first: "init", thin: "thin", blocked: "wall", failed: "FAIL" }[state];
   console.log(`${String(position + 1).padStart(3)}/${roots.length}  ${mark}  ${String(status || "-").padEnd(4)} ${root}`);
+}
+
+// Prune roots no longer derived (a citation was edited or removed) so the
+// committed file never drifts from what this run actually watches.
+const currentRoots = new Set(roots);
+for (const root of Object.keys(watchIndex.roots)) {
+  if (!currentRoots.has(root)) delete watchIndex.roots[root];
 }
 
 watchIndex.updated_at = new Date().toISOString();
 await writeWatchIndex(watchIndex);
 
-console.log(`\nunchanged ${tally.unchanged} · changed ${tally.changed} · first check ${tally.first} · blocked ${tally.blocked} · failed ${tally.failed}`);
+console.log(`\nunchanged ${tally.unchanged} · changed ${tally.changed} · first check ${tally.first} · thin ${tally.thin} · blocked ${tally.blocked} · failed ${tally.failed}`);
 
 if (changedRoots.length > 0) {
   console.log("\nChanged since last check, go read these for anything worth a new record:");
@@ -190,6 +246,13 @@ if (changedRoots.length > 0) {
   console.log("\nThis script only detects drift. Add a record the normal way: find the primary");
   console.log("document, npm run data:cache -- --url <URL>, npm run data:claims, then edit");
   console.log("app/data.ts / financing-data.ts / bd-data.ts by hand. See REFRESH.md.");
+}
+
+if (thinRoots.length > 0) {
+  console.log("\nThin (short or no dated headline found), likely client-rendered or a menu-only");
+  console.log("stub: 'unchanged' here is not trustworthy signal. Read these in a browser instead,");
+  console.log("or find the site's own RSS/JSON feed and point --url at that going forward:");
+  for (const root of thinRoots) console.log(`   ${root}  (${[...rootsToOwners.get(root)].join(", ")})`);
 }
 
 if (tally.failed > roots.length / 2) {
