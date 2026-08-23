@@ -72,17 +72,29 @@ export default function Home() {
         </div>
       </section>
 
-      <RaceBoard />
-
-      <section className="section scale-note">
-        <p className="masthead-context">
-          For scale: the most recent new American nuclear capacity was {vogtle?.capacity} at Vogtle Units 3 and 4, the
-          first two U.S. AP1000 units, finished in {vogtle?.latestDate}. Every company on the board is trying to do it
-          smaller and faster. <a href={vogtle?.source} target="_blank" rel="noreferrer">{vogtle?.sourceLabel} ↗</a>
-        </p>
+      <section className="section catchup-strip" aria-label="Catch up">
+        <div className="section-head"><h2>Catch up</h2></div>
+        <ul className="catchup-list">
+          {latest[0] && <li>
+            <b>{latest[0].company} · {latest[0].kind}</b> {latest[0].label}
+            <a href="#updates">Latest developments →</a>
+          </li>}
+          {gates[0] && <li>
+            <b>Next gate: {gates[0].name}</b> {gates[0].next}
+            <a href="#gates">Every project&rsquo;s gate →</a>
+          </li>}
+          {federalActions[0] && <li>
+            <b>{federalActions[0].eo}</b> {federalActions[0].title} &middot; {federalActions[0].status}
+            <a href="/federal-action">Federal tracker →</a>
+          </li>}
+          {capital[0] && <li>
+            <b>{capital[0].amount}</b> {capital[0].name} &middot; {capital[0].status}
+            <a href="/capital">Capital stack →</a>
+          </li>}
+        </ul>
       </section>
 
-      <section className="section updates-strip">
+      <section className="section updates-strip" id="updates">
         <div className="section-head"><h2>Latest developments</h2><Link href="/updates">All updates →</Link></div>
         <ol className="update-list">
           {latest.map((entry) => <li key={`${entry.source}-${entry.date}-${entry.label.slice(0, 24)}`}>
@@ -96,7 +108,7 @@ export default function Home() {
         </ol>
       </section>
 
-      <section className="section gates-section">
+      <section className="section gates-section" id="gates">
         <div className="section-head"><h2>Next gates</h2><Link href="/updates#gates">Every project&rsquo;s next gate →</Link></div>
         <ol className="gate-list">
           {gates.map((project) => <li key={project.slug}>
@@ -105,6 +117,16 @@ export default function Home() {
             <span className="gate-owner">Owner · {project.nextOwner}</span>
           </li>)}
         </ol>
+      </section>
+
+      <RaceBoard />
+
+      <section className="section scale-note">
+        <p className="masthead-context">
+          For scale: the most recent new American nuclear capacity was {vogtle?.capacity} at Vogtle Units 3 and 4, the
+          first two U.S. AP1000 units, finished in {vogtle?.latestDate}. Every company on the board is trying to do it
+          smaller and faster. <a href={vogtle?.source} target="_blank" rel="noreferrer">{vogtle?.sourceLabel} ↗</a>
+        </p>
       </section>
 
       <details className="section acc pipeline-section" id="pipeline">

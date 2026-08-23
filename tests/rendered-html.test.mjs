@@ -32,6 +32,41 @@ test("server-renders the evidence-led homepage", async () => {
   assert.doesNotMatch(html, /core-readout|hero-core|class="orbit/);
 });
 
+test("the homepage leads with catch-up, news, and gates before the full race board, and trims the board", async () => {
+  const dataModule = await import("../app/data.ts");
+  const raw = await (await render()).text();
+  const html = raw.replace(/<!--.*?-->/g, "");
+  const board = dataModule.raceBoard();
+
+  // Toplines and news arrive before the 18-row table, not after it.
+  const order = ["Catch up", "Latest developments", "Next gates", "The race board"].map((marker) => html.indexOf(`>${marker}<`));
+  assert.ok(order.every((at) => at >= 0), "every section marker was found");
+  assert.ok(order.every((at, i) => i === 0 || at > order[i - 1]), "catch-up, news, and gates precede the race board");
+
+  // The catch-up strip carries real content, not a blank or an unresolved value.
+  const catchUp = html.slice(html.indexOf('class="catchup-list"'), html.indexOf("</ul>", html.indexOf('class="catchup-list"')));
+  assert.doesNotMatch(catchUp, /undefined|null/, "the catch-up strip has no unresolved value");
+  assert.equal((catchUp.match(/<li>/g) ?? []).length, 4, "the catch-up strip has one line per section");
+
+  // Only the first VISIBLE_ROWS render before the show-all toggle; every
+  // entrant still has a row somewhere, most of them inside the collapsed tail.
+  const marker = `Show all ${board.length} companies`;
+  assert.ok(html.includes(marker), "the show-all toggle names the true entrant count");
+  const [beforeToggle] = html.split(marker);
+  const visibleRowCount = (beforeToggle.match(/class="race-row"/g) ?? []).length;
+  assert.equal(visibleRowCount, 6, "exactly six rows render before the show-all toggle");
+  const totalRowCount = (html.match(/class="race-row"/g) ?? []).length;
+  assert.equal(totalRowCount, board.length, "every entrant still has a row, most inside the collapsed tail");
+
+  // The collapsed tail is a native <details>, which hides its content
+  // natively when closed; a filter match there needs to open it explicitly,
+  // or the match toggles "visible" and still renders nothing (DESIGN.md
+  // section 12.3's <details>-collapse trap).
+  const { readFile } = await import("node:fs/promises");
+  const filterSource = await readFile(new URL("../app/components/RaceFilter.tsx", import.meta.url), "utf8");
+  assert.match(filterSource, /closest\("details"\)/, "a filter match opens its <details> ancestor");
+});
+
 test("the homepage race board states its zero and gives every entrant a row", async () => {
   const dataModule = await import("../app/data.ts");
   const raw = await (await render()).text();
@@ -978,6 +1013,28 @@ test("the link checker refuses a bad --limit instead of checking nothing", async
   assert.match(stdout, /5 unique source URL\(s\)/);
 });
 
+test("the news watch list is derived from cited sources and excludes wire-service aggregators", async () => {
+  const { execFile } = await import("node:child_process");
+  const { promisify } = await import("node:util");
+  const { fileURLToPath } = await import("node:url");
+  const run = promisify(execFile);
+  const script = fileURLToPath(new URL("../scripts/check-news.mjs", import.meta.url));
+
+  // --list only derives the watch roots from already-cited URLs; it fetches nothing.
+  const { stdout } = await run(process.execPath, [script, "--list"]);
+  assert.match(stdout, /watch root\(s\) derived from \d+ sourced records/);
+  // A real, single-organization newsroom this dataset cites should surface.
+  assert.match(stdout, /oklo\.com\/newsroom/);
+  assert.match(stdout, /x-energy\.com\/news/);
+  // A wire service or multi-company aggregator's front page churns regardless
+  // of what any tracked company did, so watching it would report "changed" on
+  // nearly every run. None of backlog.md's named low-quality aggregators, and
+  // none of the general newswires found deriving the list, should appear.
+  for (const aggregator of ["businesswire.com", "bloomberg.com", "tipranks.com", "ans.org", "utilitydive.com", "neimagazine.com"]) {
+    assert.doesNotMatch(stdout, new RegExp(aggregator.replace(".", "\\.")), `${aggregator} is filtered out of the watch list`);
+  }
+});
+
 test("a company past a gigawatt is reported, not silently clipped", async () => {
   const dataModule = await import("../app/data.ts");
   // No entrant currently exceeds the track, so assert both directions: the
@@ -1013,9 +1070,48 @@ test("the prose linter matches whole words", async () => {
   for (const word of ['"realm"', '"not only"']) {
     assert.ok(!banned.includes(word), `${word} is not a hard failure`);
   }
-  for (const word of ['"delve"', '"seamless"', '"leverage"']) {
+  for (const word of ['"delve"', '"seamless"', '"leverage"', '"myriad"', '"boasts"', '"showcases"', '"comprehensive"', '"imagine"', '"crucial"']) {
     assert.ok(banned.includes(word), `${word} is still banned`);
   }
+  // Every banned entry carries a reason, not just a term: this is a
+  // source-cited site, so a banned word gets the same "why" a banned claim
+  // would. A stray one-string entry (no comma, no reason) fails silently at
+  // runtime (destructuring [term] leaves reason undefined) rather than
+  // loudly, so this is worth asserting directly.
+  const entries = [...banned.matchAll(/\["([^"]+)",\s*"([^"]+)"\]/g)];
+  assert.ok(entries.length > 30, `most banned entries were parsed as [term, reason] pairs (found ${entries.length})`);
+  for (const [, term, reason] of entries) {
+    assert.ok(reason.length > 15, `"${term}"'s reason is a real sentence, not a stub`);
+  }
+});
+
+test("the structural-tell patterns fire on a crafted example and not on clean, sourced prose", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const audit = await readFile(new URL("../scripts/audit-prose.mjs", import.meta.url), "utf8");
+  const block = audit.slice(audit.indexOf("const STRUCTURAL_TELLS"), audit.indexOf("];", audit.indexOf("const STRUCTURAL_TELLS")));
+  // Pull the real regex literals out of the source rather than re-typing them
+  // here, so a future edit to the pattern is what this test exercises, not a
+  // hand-copied stand-in that could silently drift from the shipped rule.
+  const literals = [...block.matchAll(/pattern:\s*\/((?:\\.|[^/\\])*)\/([a-z]*)/g)];
+  assert.equal(literals.length, 6, "all six structural-tell patterns were located in the source");
+  const patterns = literals.map(([, body, flags]) => new RegExp(body, flags));
+  // Every tell carries a reason too, same rule as the banned words above.
+  const reasons = [...block.matchAll(/reason:\s*"([^"]+)"/g)].map(([, reason]) => reason);
+  assert.equal(reasons.length, 6, "every structural tell has a reason");
+  for (const reason of reasons) assert.ok(reason.length > 15, "the reason is a real sentence, not a stub");
+
+  const bad = [
+    "The program is not just a subsidy, it's a foothold for future contracts.",
+    "Industry reports suggest the schedule will slip into next year.",
+    "See the earlier analysis [cite: 12] for the full breakdown.",
+    "The catch? Nobody has actually closed a contract yet.",
+    "The **key finding** is that no unit has finished construction.",
+    "The reactor reached criticality \u{1F389} for the first time.",
+  ];
+  patterns.forEach((pattern, i) => assert.match(bad[i], pattern, `structural tell ${i} fires on its crafted example`));
+
+  const clean = "The program funds a 25-year PPA and a $200M credit facility, both executed and sourced.";
+  patterns.forEach((pattern) => assert.doesNotMatch(clean, pattern, "a clean, cited sentence trips no structural tell"));
 });
 
 test("llms.txt counts read as English", async () => {

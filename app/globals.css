@@ -337,6 +337,20 @@ footer a:hover { color: var(--accent); }
 .race-board { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--border-strong); }
 .race-row { display: grid; grid-template-columns: minmax(190px, 245px) minmax(0, 1fr) minmax(180px, 225px); gap: 22px; align-items: center; padding: 12px 0; border-top: 1px solid var(--border); }
 .race-row:first-child { border-top: 1px solid var(--border-strong); }
+/* The tail past VISIBLE_ROWS sits inside a native <details>, which hides its
+   own content when closed with no CSS needed. Only the toggle needs styling. */
+.race-board-more summary { list-style: none; cursor: pointer; padding: 12px 0; font: 750 13px/1.2 var(--font-mono); text-transform: uppercase; letter-spacing: .04em; border-bottom: 1px solid currentColor; display: inline-block; }
+.race-board-more summary::-webkit-details-marker { display: none; }
+.race-board-more[open] summary { display: none; }
+.race-board-rest { list-style: none; margin: 0; padding: 0; }
+
+/* Catch up: a terse, Axios-style bullet list of one item per section, sitting
+   above the full race board and news so a reader hits the week's toplines
+   before any table. Deliberately plain text, no card chrome. */
+.catchup-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border-strong); }
+.catchup-list li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 13px 0; border-bottom: 1px solid var(--border); font-size: 14px; line-height: 1.5; }
+.catchup-list b { font: 650 14px/1.4 var(--font-sans); }
+.catchup-list a { margin-left: auto; font: 750 12px/1.1 var(--font-mono); text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; border-bottom: 1px solid currentColor; }
 .race-id { min-width: 0; display: grid; grid-template-columns: auto 1fr; gap: 0 10px; align-items: baseline; }
 .race-rank { grid-row: 1 / 3; font: 700 13px/1.2 var(--font-mono); color: var(--ink-muted); }
 .race-id h3 { margin: 0; font: 650 19px/1.2 var(--font-serif); letter-spacing: -.01em; }
@@ -686,6 +700,8 @@ details.acc-sub[open] .acc-marker { transform: rotate(45deg); }
   .update-body a,
   .key-more,
   .acc-open-link,
+  .race-board-more summary,
+  .catchup-list a,
   .page-subnav a,
   .bd-matrix tbody th[scope="row"] a,
   footer a {

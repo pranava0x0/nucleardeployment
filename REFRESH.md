@@ -63,6 +63,7 @@ tell your own breakage from inherited breakage otherwise.
 | `npm run data:check` | validate + llms sync + prose, in one pass. Run before every commit that touches data. |
 | `npm run data:cache` | Fetch every cited source once and store a readable snapshot under `data/sources/`. Add `-- --url <URL>` for a single new record, `-- --stale 90` to re-fetch anything older than 90 days. |
 | `npm run data:claims` | Check each record's figures, dates and names against its own cached source. Local store first, web only with `-- --web`. |
+| `npm run data:news` | Freshness canary for "Latest developments": re-fetches every newsroom this dataset already cites and reports which ones changed since the last run. Detection only, see below. Add `-- --list` to print the derived watch list without fetching anything. |
 
 ## Adding or updating a record
 
@@ -143,9 +144,32 @@ hand-edit: that number went stale four separate times before the test existed.
   document inside an RSC payload in a `<script>`. Strip comments before matching
   copy and strip scripts before counting occurrences.
 
+## Checking for news (`npm run data:news`)
+
+Run this whenever you want to know whether anything worth a new "Latest
+developments" record has happened. It derives a watch list by truncating URLs
+this dataset already cites down to their newsroom index (a `newsroom.`
+subdomain, or a `/newsroom//press//news/` path segment), skipping wire
+services and multi-company aggregators (`AGGREGATOR_HOSTS` in
+`scripts/check-news.mjs`, seeded from the low-quality-aggregator list in
+`backlog.md`) since their front pages churn regardless of what any tracked
+company did. It never invents a URL: every watch root comes from a page a
+person already opened and cited.
+
+Each run hashes the fetched text and compares it against the hash from the
+last run, committed in `data/research/news-watch.json`. A "changed" line means
+go read that newsroom; it does not mean add a record. `--list` prints the
+derived roots without fetching, worth a periodic skim since the derivation is
+a heuristic and can pick up a page that is not actually the right company's
+own newsroom (it has, at least once: a general SPAC-news site that happened to
+carry Oklo's listing announcement).
+
 ## What this refresh does not do
 
-There is no scheduled job and no scraper. Sources are read by a person or an
-agent, one at a time, because the whole product is the claim that a human
-checked each number against its document. Automating the fetch would be easy;
-automating the judgement is what the site exists to avoid.
+There is no scheduled job and no scraper that writes to the dataset. Sources
+are read by a person or an agent, one at a time, because the whole product is
+the claim that a human checked each number against its document.
+`npm run data:news` finds where to look; it is a detector, not an ingester,
+and it never touches `app/data.ts`, `financing-data.ts`, or `bd-data.ts`.
+Automating the fetch would be easy; automating the judgement is what the site
+exists to avoid.

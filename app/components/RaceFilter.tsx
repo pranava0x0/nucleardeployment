@@ -9,6 +9,12 @@ import { useState } from "react";
  * live count. The rows are server-component output that never re-renders, so
  * direct DOM writes cannot fight React. With JavaScript off, every row simply
  * stays visible.
+ *
+ * The bottom rows sit inside a closed `<details>` (see RaceBoard's "show
+ * all"). Setting `hidden = false` on a match there is not enough: a closed
+ * `<details>` hides its content natively regardless of the `hidden`
+ * attribute on a descendant, so a match past the fold would toggle visible
+ * and still render nothing. A matching row opens its `<details>` ancestor.
  */
 export function RaceFilter({ total }: { total: number }) {
   const [query, setQuery] = useState("");
@@ -24,6 +30,7 @@ export function RaceFilter({ total }: { total: number }) {
       const hit = !needle || (row.dataset.filter ?? "").includes(needle);
       row.hidden = !hit;
       if (hit) visible += 1;
+      if (hit && needle) row.closest("details")?.setAttribute("open", "");
     });
     if (empty) empty.hidden = visible > 0;
     setMatches(visible);
