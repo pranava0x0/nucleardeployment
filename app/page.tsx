@@ -26,6 +26,12 @@ export default function Home() {
     .sort((a, b) => b.stage - a.stage || b.latestDate.localeCompare(a.latestDate))
     .slice(0, 4);
   const vogtle = projects.find((project) => project.slug === "vogtle-3-4");
+  // The "Catch up" strip picks the most recent item in each lane, not
+  // whatever happens to sit first in the source array. EOs are numbered
+  // strictly sequentially by signing date, so the highest number is the
+  // newest; capital instruments carry their own date field directly.
+  const latestFederalAction = [...federalActions].sort((a, b) => Number(b.eo.replace(/\D/g, "")) - Number(a.eo.replace(/\D/g, "")))[0];
+  const latestCapital = [...capital].sort((a, b) => b.date.localeCompare(a.date))[0];
 
   const structured = {
     "@context": "https://schema.org",
@@ -72,17 +78,32 @@ export default function Home() {
         </div>
       </section>
 
-      <RaceBoard />
-
-      <section className="section scale-note">
-        <p className="masthead-context">
-          For scale: the most recent new American nuclear capacity was {vogtle?.capacity} at Vogtle Units 3 and 4, the
-          first two U.S. AP1000 units, finished in {vogtle?.latestDate}. Every company on the board is trying to do it
-          smaller and faster. <a href={vogtle?.source} target="_blank" rel="noreferrer">{vogtle?.sourceLabel} ↗</a>
-        </p>
+      <section className="section catchup-strip" aria-label="Catch up">
+        <div className="section-head"><h2>Catch up</h2></div>
+        <ul className="catchup-list">
+          {latest[0] && <li>
+            <b>{latest[0].date} · {latest[0].company} · {latest[0].kind}</b> {latest[0].label}
+            <a className="catchup-source" href={latest[0].source} target="_blank" rel="noreferrer">{latest[0].verification} source ↗</a>
+            <Link href="#updates">Latest developments →</Link>
+          </li>}
+          {gates[0] && <li>
+            <b>Next gate: {gates[0].name}</b> {gates[0].next}
+            <Link href="#gates">Every project&rsquo;s gate →</Link>
+          </li>}
+          {latestFederalAction && <li>
+            <b>{latestFederalAction.eo}</b> {latestFederalAction.title} &middot; {latestFederalAction.status}
+            <a className="catchup-source" href={latestFederalAction.source} target="_blank" rel="noreferrer">Source ↗</a>
+            <Link href="/federal-action">Federal tracker →</Link>
+          </li>}
+          {latestCapital && <li>
+            <b>{latestCapital.date} · {latestCapital.amount}</b> {latestCapital.name} &middot; {latestCapital.status}
+            <a className="catchup-source" href={latestCapital.source} target="_blank" rel="noreferrer">Source ↗</a>
+            <Link href="/capital">Capital stack →</Link>
+          </li>}
+        </ul>
       </section>
 
-      <section className="section updates-strip">
+      <section className="section updates-strip" id="updates">
         <div className="section-head"><h2>Latest developments</h2><Link href="/updates">All updates →</Link></div>
         <ol className="update-list">
           {latest.map((entry) => <li key={`${entry.source}-${entry.date}-${entry.label.slice(0, 24)}`}>
@@ -96,7 +117,7 @@ export default function Home() {
         </ol>
       </section>
 
-      <section className="section gates-section">
+      <section className="section gates-section" id="gates">
         <div className="section-head"><h2>Next gates</h2><Link href="/updates#gates">Every project&rsquo;s next gate →</Link></div>
         <ol className="gate-list">
           {gates.map((project) => <li key={project.slug}>
@@ -105,6 +126,16 @@ export default function Home() {
             <span className="gate-owner">Owner · {project.nextOwner}</span>
           </li>)}
         </ol>
+      </section>
+
+      <RaceBoard />
+
+      <section className="section scale-note">
+        <p className="masthead-context">
+          For scale: the most recent new American nuclear capacity was {vogtle?.capacity} at Vogtle Units 3 and 4, the
+          first two U.S. AP1000 units, finished in {vogtle?.latestDate}. Every company on the board is trying to do it
+          smaller and faster. <a href={vogtle?.source} target="_blank" rel="noreferrer">{vogtle?.sourceLabel} ↗</a>
+        </p>
       </section>
 
       <details className="section acc pipeline-section" id="pipeline">

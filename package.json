@@ -17,6 +17,7 @@
     "data:validate": "node scripts/validate-sources.mjs",
     "data:press": "node scripts/validate-sources.mjs --press",
     "data:links": "node scripts/check-links.mjs",
+    "data:news": "node scripts/check-news.mjs",
     "data:llms": "node scripts/build-llms-txt.mjs",
     "data:seo": "node scripts/build-seo.mjs",
     "data:prose": "node scripts/audit-prose.mjs",

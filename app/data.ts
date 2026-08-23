@@ -416,23 +416,32 @@ export const projects: Project[] = [
     region: "West",
     technology: "Fast microreactor",
     generation: "Gen IV",
-    scale: "Microreactor",
+    scale: "SMR",
     family: "SFR",
-    reactorRole: "Research / test",
-    capacity: "Not disclosed for pilot",
-    stage: 3,
-    stageLabel: "Development commitment",
-    status: "DOE pilot development",
-    summary: "One of two Oklo projects selected through DOE's Reactor Pilot Program.",
-    latest: "DOE identified the Aurora reactor at Idaho National Laboratory in its contractor variance package.",
-    latestDate: "2026-01",
-    next: "Complete DOE authorization, site work, construction, fuel readiness, and critical testing.",
-    nextOwner: "Oklo and DOE Idaho Operations",
-    blocker: "DOE authorization, fuel fabrication, construction, and test readiness",
-    confidence: "Medium",
-    verification: "Government-reported",
-    source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
-    sourceLabel: "DOE contractor variance package",
+    reactorRole: "Demonstration power",
+    capacity: "75 MWe maximum (Aurora design)",
+    stage: 6,
+    stageLabel: "Physical deployment",
+    status: "Construction underway",
+    summary: "Oklo's first Aurora powerhouse at Idaho National Laboratory, under DOE's Reactor Pilot Program pathway.",
+    // Stage advanced from 3 (Development) to 6 (Physical) and scale from
+    // Microreactor to Grid-scale SMR: the record was frozen at its January
+    // 2026 DOE-variance-package snapshot after groundbreaking, construction,
+    // and the 75 MWe design scale-up were already documented in this file's
+    // own capacityClaims and fundingEvents rows, contradicting the "Not
+    // disclosed for pilot" capacity and "Complete ... construction" next
+    // step shown on the same company dossier. Found in a 2026-08-23 domain
+    // review; corrected against evidence already in this file, not new
+    // sourcing.
+    latest: "Broke ground on the first Aurora powerhouse; DOE's Reactor Pilot Program authorization covers construction, and the separate NRC combined license remains under review.",
+    latestDate: "2025-09",
+    next: "Complete construction, load fuel, and reach initial criticality; the NRC combined license is a separate track toward commercial operation.",
+    nextOwner: "Oklo, DOE Idaho Operations, and NRC",
+    blocker: "Construction completion, fuel readiness, and the separate NRC combined license",
+    confidence: "High",
+    verification: "Company-reported",
+    source: "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx",
+    sourceLabel: "Oklo groundbreaking release",
     programs: ["Reactor Pilot Program"],
   },
   {

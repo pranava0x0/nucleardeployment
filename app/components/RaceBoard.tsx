@@ -44,9 +44,28 @@ export function RaceBar({ row, compact = false }: { row: RaceRow; compact?: bool
   );
 }
 
+/** Rows shown before the "show all" toggle. Past this, a reader wants a specific company, which the filter already answers. */
+const VISIBLE_ROWS = 6;
+
+function RaceRowItem({ row, index }: { row: RaceRow; index: number }) {
+  return (
+    <li className="race-row" data-filter={row.filterText}>
+      <div className="race-id">
+        <span className="race-rank" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+        <h3><Link className="row-link" href={`/companies/${row.company.slug}`}>{row.company.name}</Link></h3>
+        <p>{row.entrant.design} · {mwe(row.entrant.unitMWe)} MWe per unit · {row.entrant.lane}</p>
+      </div>
+      <RaceBar row={row} />
+      <p className="race-state">{row.strongestLine}</p>
+    </li>
+  );
+}
+
 export function RaceBoard() {
   const board = raceBoard();
   const totals = raceTotals();
+  const visible = board.slice(0, VISIBLE_ROWS);
+  const rest = board.slice(VISIBLE_ROWS);
 
   return (
     <section className="section race-section" id="race">
@@ -69,17 +88,21 @@ export function RaceBoard() {
       </div>
 
       <ol className="race-board">
-        {board.map((row, index) => (
-          <li className="race-row" key={row.company.slug} data-filter={row.filterText}>
-            <div className="race-id">
-              <span className="race-rank" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
-              <h3><Link className="row-link" href={`/companies/${row.company.slug}`}>{row.company.name}</Link></h3>
-              <p>{row.entrant.design} · {mwe(row.entrant.unitMWe)} MWe per unit · {row.entrant.lane}</p>
-            </div>
-            <RaceBar row={row} />
-            <p className="race-state">{row.strongestLine}</p>
+        {visible.map((row, index) => <RaceRowItem row={row} index={index} key={row.company.slug} />)}
+        {rest.length > 0 && (
+          <li className="race-board-more">
+            <details>
+              <summary>Show all {board.length} companies ↓</summary>
+              {/* The visible rank badge is aria-hidden (a screen reader gets the
+                  real rank from the list position instead), so the native <ol>
+                  numbering has to actually continue from the visible list's end,
+                  not restart at 1 for ranks 7-18. */}
+              <ol className="race-board-rest" start={VISIBLE_ROWS + 1}>
+                {rest.map((row, index) => <RaceRowItem row={row} index={VISIBLE_ROWS + index} key={row.company.slug} />)}
+              </ol>
+            </details>
           </li>
-        ))}
+        )}
       </ol>
       <p className="race-no-match lane-empty" data-race-empty hidden>
         No entrant matches that filter. Clear it to see all {board.length} companies.

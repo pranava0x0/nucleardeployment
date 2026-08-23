@@ -314,6 +314,7 @@ These apply to any project that surfaces data, claims, or content from external 
 - **Lowercase prose, uppercase labels.** Eyebrows, KPI labels, table heads, outline-pill text are uppercase with `0.04–0.14em` tracking; everything else sentence case.
 - **AI-generated content is visibly distinguished**: a 3px accent left-border plus a model-credit meta line. The reader should never confuse primary data with generated narrative.
 - **Borrow design *values*, never imitate a brand.** Take the useful values from a reference publication (high-contrast type, disciplined grids, rule lines, source trails, calm authority), not its masthead, logo, proprietary fonts, or furniture that implies you *are* them. The first screen is the tool, not a marketing page.
+- **A digest/preview strip is not exempt from per-claim sourcing just because the fuller, sourced version sits one section below it.** A "catch up" strip built to surface toplines above the fold restated the same day's news event that "Latest developments" already sourced two sections down, but dropped the date and citation link doing it — the first visible claim on the page was, for a moment, undated and unsourced on a site whose entire premise is that every visible claim traces to a document. The strip's link to the fuller section is not a substitute: a reader who never scrolls past the strip has already read an unsourced claim. Carry the date and a compact source link into the digest line itself (2026-08-23).
 
 ### 11.1 Voice: write like a person, not a model
 

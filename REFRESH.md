@@ -44,8 +44,17 @@ and recapture rather than editing figures in place.
 npm ci
 npm run build
 npm test
+npm run test:pages
 npm run data:validate
 ```
+
+Both `npm test` and `npm run test:pages` matter, not just one: `test` builds
+with `vinext build`, `test:pages` builds with `next build` (the path CI's
+GitHub Pages job actually uses) and runs a real `tsc` type check that
+`vinext build` does not. A change to `app/data.ts` that types clean under
+`vinext build` can still fail CI on a type error `vinext build` never
+surfaces locally (2026-08-23: a `scale` field used the race-entrant lane
+vocabulary instead of `ScaleClass`'s own, narrower enum).
 
 If `data:validate` reports errors before you start, fix those first. You cannot
 tell your own breakage from inherited breakage otherwise.
@@ -63,6 +72,7 @@ tell your own breakage from inherited breakage otherwise.
 | `npm run data:check` | validate + llms sync + prose, in one pass. Run before every commit that touches data. |
 | `npm run data:cache` | Fetch every cited source once and store a readable snapshot under `data/sources/`. Add `-- --url <URL>` for a single new record, `-- --stale 90` to re-fetch anything older than 90 days. |
 | `npm run data:claims` | Check each record's figures, dates and names against its own cached source. Local store first, web only with `-- --web`. |
+| `npm run data:news` | Freshness canary for "Latest developments": re-fetches every newsroom this dataset already cites and reports which ones changed since the last run. Detection only, see below. Add `-- --list` to print the derived watch list without fetching anything. |
 
 ## Adding or updating a record
 
@@ -143,9 +153,45 @@ hand-edit: that number went stale four separate times before the test existed.
   document inside an RSC payload in a `<script>`. Strip comments before matching
   copy and strip scripts before counting occurrences.
 
+## Checking for news (`npm run data:news`)
+
+Run this whenever you want to know whether anything worth a new "Latest
+developments" record has happened. It derives a watch list by truncating URLs
+this dataset already cites down to their newsroom index (a `newsroom.`
+subdomain, or a `/newsroom//press//news/` path segment), skipping wire
+services and multi-company aggregators (`AGGREGATOR_HOSTS` in
+`scripts/check-news.mjs`, seeded from the low-quality-aggregator list in
+`backlog.md`) since their front pages churn regardless of what any tracked
+company did. It never invents a URL: every watch root comes from a page a
+person already opened and cited.
+
+Each run hashes the fetched text and compares it against the hash from the
+last run, committed in `data/research/news-watch.json`. A "changed" line means
+go read that newsroom; it does not mean add a record. `--list` prints the
+derived roots without fetching, worth a periodic skim since the derivation is
+a heuristic and can pick up a page that is not actually the right company's
+own newsroom (it has, at least once: a general SPAC-news site that happened to
+carry Oklo's listing announcement; `AGGREGATOR_HOSTS` grew to cover that class
+of miss, not just wire services, after a 2026-08-23 review).
+
+A page whose extracted text is short or carries no plausible dated headline
+reports `thin` instead of `unchanged`: hashing a client-rendered shell or a
+menu-only stub would report silence as fact when the run never actually saw
+the content. `thin` roots are still persisted (so the state is visible in the
+committed file) but excluded from "changed"/"unchanged" semantics; the run's
+output names them and suggests finding the site's own RSS/JSON feed instead.
+A root that 403s or 404s is persisted too, with `first_seen_failing_at`, so a
+newsroom that has been blocked for a month reads as exactly that in the
+committed file rather than a fresh `checked_at` beside a stale hash. Roots no
+longer derived (a citation was edited or removed) are pruned on every run, so
+the committed file never drifts from what the script currently watches.
+
 ## What this refresh does not do
 
-There is no scheduled job and no scraper. Sources are read by a person or an
-agent, one at a time, because the whole product is the claim that a human
-checked each number against its document. Automating the fetch would be easy;
-automating the judgement is what the site exists to avoid.
+There is no scheduled job and no scraper that writes to the dataset. Sources
+are read by a person or an agent, one at a time, because the whole product is
+the claim that a human checked each number against its document.
+`npm run data:news` finds where to look; it is a detector, not an ingester,
+and it never touches `app/data.ts`, `financing-data.ts`, or `bd-data.ts`.
+Automating the fetch would be easy; automating the judgement is what the site
+exists to avoid.

@@ -13,6 +13,7 @@ async function render(path = "/") {
 }
 
 test("server-renders the evidence-led homepage", async () => {
+  const dataModule = await import("../app/data.ts");
   const response = await render();
   assert.equal(response.status, 200);
   const html = await response.text();
@@ -22,7 +23,11 @@ test("server-renders the evidence-led homepage", async () => {
   assert.match(html, /brand\/reactor-velocity-mark\.png/);
   assert.match(html, /Exploring the idea/);
   assert.match(html, /Work or fuel at the site/);
-  assert.match(html, /15 projects/);
+  // Derived from stageCounts(), not hardcoded: a project's stage moving (as
+  // one did after a 2026-08-23 staleness fix) must not silently desync this
+  // assertion from what the page actually renders.
+  const development = dataModule.stageCounts().find((entry) => entry.label === "Development");
+  assert.match(html, new RegExp(`${development.count} projects`), "the Development stage card states its true count");
   assert.match(html, /TerraPower/);
   assert.match(html, /Kairos Power/);
   assert.doesNotMatch(html, /Announcement is not deployment/);
@@ -30,6 +35,59 @@ test("server-renders the evidence-led homepage", async () => {
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
   // The retired orbit hero must not leave markup or styles behind.
   assert.doesNotMatch(html, /core-readout|hero-core|class="orbit/);
+});
+
+test("the homepage leads with catch-up, news, and gates before the full race board, and trims the board", async () => {
+  const dataModule = await import("../app/data.ts");
+  const raw = await (await render()).text();
+  const html = raw.replace(/<!--.*?-->/g, "");
+  const board = dataModule.raceBoard();
+
+  // Toplines and news arrive before the 18-row table, not after it.
+  const order = ["Catch up", "Latest developments", "Next gates", "The race board"].map((marker) => html.indexOf(`>${marker}<`));
+  assert.ok(order.every((at) => at >= 0), "every section marker was found");
+  assert.ok(order.every((at, i) => i === 0 || at > order[i - 1]), "catch-up, news, and gates precede the race board");
+
+  // The catch-up strip carries real content, not a blank or an unresolved value.
+  const catchUp = html.slice(html.indexOf('class="catchup-list"'), html.indexOf("</ul>", html.indexOf('class="catchup-list"')));
+  assert.doesNotMatch(catchUp, /undefined|null/, "the catch-up strip has no unresolved value");
+  assert.equal((catchUp.match(/<li>/g) ?? []).length, 4, "the catch-up strip has one line per section");
+  // This is the first visible content on the page. Every claim on this site
+  // traces to a source, and the strip is no exception: three of its four
+  // lines are freestanding claims (not just a preview of a fuller sourced
+  // section below), so they carry their own citation link.
+  assert.equal((catchUp.match(/class="catchup-source"/g) ?? []).length, 3, "news, federal, and capital lines carry a source link");
+  // Picks the true latest item per lane, not array position: EO 14302 sorts
+  // after 14299-14301 by number, and the federal-tracker jump link still
+  // points at the section, not at any one EO.
+  const eoNumbers = [...catchUp.matchAll(/EO (\d+)/g)].map(([, n]) => Number(n));
+  assert.ok(eoNumbers.length > 0, "an EO number appears in the strip");
+  assert.ok(eoNumbers[0] >= 14300, "the strip picks the highest (most recent) EO number, not the first array entry");
+
+  // Only the first VISIBLE_ROWS render before the show-all toggle; every
+  // entrant still has a row somewhere, most of them inside the collapsed tail.
+  const marker = `Show all ${board.length} companies`;
+  assert.ok(html.includes(marker), "the show-all toggle names the true entrant count");
+  const [beforeToggle] = html.split(marker);
+  const visibleRowCount = (beforeToggle.match(/class="race-row"/g) ?? []).length;
+  assert.equal(visibleRowCount, 6, "exactly six rows render before the show-all toggle");
+  const totalRowCount = (html.match(/class="race-row"/g) ?? []).length;
+  assert.equal(totalRowCount, board.length, "every entrant still has a row, most inside the collapsed tail");
+
+  // The collapsed tail is a native <details>, which hides its content
+  // natively when closed; a filter match there needs to open it explicitly,
+  // or the match toggles "visible" and still renders nothing (DESIGN.md
+  // section 12.3's <details>-collapse trap).
+  const { readFile } = await import("node:fs/promises");
+  const filterSource = await readFile(new URL("../app/components/RaceFilter.tsx", import.meta.url), "utf8");
+  assert.match(filterSource, /closest\("details"\)/, "a filter match opens its <details> ancestor");
+  // A WeakMap that captures a <details>'s state once and never refreshes it
+  // restores the wrong value across a second filtering session (filter,
+  // clear, manually open the section by hand, filter and clear again: a
+  // stale captured "closed" snaps it shut even though the reader just
+  // opened it). Codex found this on PR #14; the baseline must be recaptured
+  // at the start of each session, not held forever after the first one.
+  assert.match(filterSource, /startingNewSession/, "the saved <details> state is recaptured at the start of each new filtering session");
 });
 
 test("the homepage race board states its zero and gives every entrant a row", async () => {
@@ -978,6 +1036,58 @@ test("the link checker refuses a bad --limit instead of checking nothing", async
   assert.match(stdout, /5 unique source URL\(s\)/);
 });
 
+test("the news watch list is derived from cited sources and excludes wire-service aggregators", async () => {
+  const { execFile } = await import("node:child_process");
+  const { promisify } = await import("node:util");
+  const { fileURLToPath } = await import("node:url");
+  const run = promisify(execFile);
+  const script = fileURLToPath(new URL("../scripts/check-news.mjs", import.meta.url));
+
+  // --list only derives the watch roots from already-cited URLs; it fetches nothing.
+  const { stdout } = await run(process.execPath, [script, "--list"]);
+  assert.match(stdout, /watch root\(s\) derived from \d+ sourced records/);
+  // A real, single-organization newsroom this dataset cites should surface.
+  assert.match(stdout, /oklo\.com\/newsroom/);
+  assert.match(stdout, /x-energy\.com\/news/);
+  // A wire service or multi-company aggregator's front page churns regardless
+  // of what any tracked company did, so watching it would report "changed" on
+  // nearly every run. None of backlog.md's named low-quality aggregators, and
+  // none of the general newswires found deriving the list, should appear.
+  for (const aggregator of ["businesswire.com", "bloomberg.com", "tipranks.com", "ans.org", "utilitydive.com", "neimagazine.com"]) {
+    assert.doesNotMatch(stdout, new RegExp(aggregator.replace(".", "\\.")), `${aggregator} is filtered out of the watch list`);
+  }
+  // A real organization's own page still isn't the tracked company's own
+  // newsroom (a SPAC-news wire that happened to cover an IPO, a university's
+  // general feed for one grant, a think tank's press page for one quote,
+  // a national government's whole-of-government feed): found in a
+  // 2026-08-23 review of the initially-derived list, same failure shape as
+  // the wire services above even though none of these are multi-company
+  // aggregators in the ordinary sense.
+  for (const unrelated of ["spacconference.com", "thebreakthrough.org", "illinois.edu", "gov.uk", "postguam.com", "senate.gov", "tn.gov"]) {
+    assert.doesNotMatch(stdout, new RegExp(unrelated.replace(".", "\\.")), `${unrelated} is filtered out of the watch list`);
+  }
+});
+
+test("the news watch script fails loud when every root is blocked, not just when fetches error", async () => {
+  // A run where every host answers 403 looks identical to a healthy one if
+  // only network-level failures gate the exit code: a wall response
+  // increments a separate counter from a thrown fetch, so a "most fetches
+  // failed" check that only reads the failed counter passes at 0 real pages
+  // observed. Reported by Codex on PR #14; fixed to also fail when nothing
+  // was actually observed, regardless of which counter absorbed the misses.
+  const { readFile } = await import("node:fs/promises");
+  const source = await readFile(new URL("../scripts/check-news.mjs", import.meta.url), "utf8");
+  assert.match(source, /tally\.blocked \+ tally\.failed/, "the failure threshold counts blocked roots, not only failed ones");
+  assert.match(source, /observed === 0/, "an all-blocked or all-thin run with zero pages actually observed fails loud even below the ratio threshold");
+  // A blocked/failed/thin root is persisted with no hash. Its first
+  // successful fetch is a baseline, not a "change" — but `!previous` is
+  // true only for a root with literally no prior entry, so a root that
+  // previously failed (and so has a `previous` with no `hash`) would read
+  // as "changed" the moment it recovers, inventing drift where there was
+  // no baseline to compare against. Codex found this on PR #14.
+  assert.match(source, /!previous\?\.hash/, "recovery from a no-hash state is treated as a first observation, not a change");
+});
+
 test("a company past a gigawatt is reported, not silently clipped", async () => {
   const dataModule = await import("../app/data.ts");
   // No entrant currently exceeds the track, so assert both directions: the
@@ -1010,12 +1120,58 @@ test("the prose linter matches whole words", async () => {
   assert.match(audit, /\\\\b\(\$\{BANNED/, "the pattern is anchored on word boundaries");
   const banned = audit.slice(audit.indexOf("const BANNED = ["), audit.indexOf("];", audit.indexOf("const BANNED = [")));
   assert.ok(banned.length > 100, "the banned list was located");
-  for (const word of ['"realm"', '"not only"']) {
-    assert.ok(!banned.includes(word), `${word} is not a hard failure`);
+  // Parse the actual [term, reason] entries, not a raw substring search over
+  // the block: a substring check can't tell an array entry from a comment
+  // that merely *names* the excluded word while explaining why it's excluded
+  // (exactly the comments this file carries for realm/landscape/comprehensive),
+  // and a false trip there would hide a real regression the next time this
+  // test is touched.
+  const entries = [...banned.matchAll(/\["([^"]+)",\s*"([^"]+)"\]/g)];
+  assert.ok(entries.length > 30, `most banned entries were parsed as [term, reason] pairs (found ${entries.length})`);
+  const terms = new Set(entries.map(([, term]) => term));
+  for (const word of ["realm", "not only", "comprehensive"]) {
+    assert.ok(!terms.has(word), `"${word}" is not a hard failure (real collisions: e.g. CTBT, CERCLA)`);
   }
-  for (const word of ['"delve"', '"seamless"', '"leverage"']) {
-    assert.ok(banned.includes(word), `${word} is still banned`);
+  for (const word of ["delve", "seamless", "leverage", "myriad", "boasts", "showcases", "imagine", "crucial"]) {
+    assert.ok(terms.has(word), `"${word}" is still banned`);
   }
+  // Every banned entry carries a reason, not just a term: this is a
+  // source-cited site, so a banned word gets the same "why" a banned claim
+  // would. A stray one-string entry (no comma, no reason) fails silently at
+  // runtime (destructuring [term] leaves reason undefined) rather than
+  // loudly, so this is worth asserting directly.
+  for (const [, term, reason] of entries) {
+    assert.ok(reason.length > 15, `"${term}"'s reason is a real sentence, not a stub`);
+  }
+});
+
+test("the structural-tell patterns fire on a crafted example and not on clean, sourced prose", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const audit = await readFile(new URL("../scripts/audit-prose.mjs", import.meta.url), "utf8");
+  const block = audit.slice(audit.indexOf("const STRUCTURAL_TELLS"), audit.indexOf("];", audit.indexOf("const STRUCTURAL_TELLS")));
+  // Pull the real regex literals out of the source rather than re-typing them
+  // here, so a future edit to the pattern is what this test exercises, not a
+  // hand-copied stand-in that could silently drift from the shipped rule.
+  const literals = [...block.matchAll(/pattern:\s*\/((?:\\.|[^/\\])*)\/([a-z]*)/g)];
+  assert.equal(literals.length, 6, "all six structural-tell patterns were located in the source");
+  const patterns = literals.map(([, body, flags]) => new RegExp(body, flags));
+  // Every tell carries a reason too, same rule as the banned words above.
+  const reasons = [...block.matchAll(/reason:\s*"([^"]+)"/g)].map(([, reason]) => reason);
+  assert.equal(reasons.length, 6, "every structural tell has a reason");
+  for (const reason of reasons) assert.ok(reason.length > 15, "the reason is a real sentence, not a stub");
+
+  const bad = [
+    "The program is not just a subsidy, it's a foothold for future contracts.",
+    "Industry reports suggest the schedule will slip into next year.",
+    "See the earlier analysis [cite: 12] for the full breakdown.",
+    "The catch? Nobody has actually closed a contract yet.",
+    "The **key finding** is that no unit has finished construction.",
+    "The reactor reached criticality \u{1F389} for the first time.",
+  ];
+  patterns.forEach((pattern, i) => assert.match(bad[i], pattern, `structural tell ${i} fires on its crafted example`));
+
+  const clean = "The program funds a 25-year PPA and a $200M credit facility, both executed and sourced.";
+  patterns.forEach((pattern) => assert.doesNotMatch(clean, pattern, "a clean, cited sentence trips no structural tell"));
 });
 
 test("llms.txt counts read as English", async () => {
@@ -1242,11 +1398,15 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
   }
   for (const project of dataModule.projects) {
     assert.ok(sitemap.includes(`${base}/deployments/${project.slug}/`), `sitemap lists ${project.slug}`);
-    // lastmod is the page's own record date, not a global stamp (DESIGN.md 11.2).
-    assert.ok(
-      sitemap.includes(`<loc>${base}/deployments/${project.slug}/</loc><lastmod>${project.latestDate}</lastmod>`),
-      `${project.slug} carries its own latest date as lastmod`,
-    );
+    // lastmod is the page's own record date, not a global stamp (DESIGN.md
+    // 11.2) — floored at the previously-committed value, though, so a
+    // correction that moves a project's latestDate earlier (2026-08-23:
+    // Aurora-INL's stage fix) can't regress the sitemap date and tell
+    // crawlers a just-edited page is now older than what they last saw.
+    // lastmod is therefore >= latestDate, not necessarily equal to it.
+    const match = sitemap.match(new RegExp(`<loc>${base}/deployments/${project.slug}/</loc><lastmod>([^<]+)</lastmod>`));
+    assert.ok(match, `${project.slug} carries a lastmod`);
+    assert.ok(match[1] >= project.latestDate, `${project.slug}'s lastmod (${match[1]}) never regresses behind its latestDate (${project.latestDate})`);
   }
   const urlCount = (sitemap.match(/<url>/g) ?? []).length;
   assert.equal(urlCount, 10 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
@@ -1267,7 +1427,16 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
   assert.ok(financingModule.financingAsOf > dataModule.dataAsOf, "the financing stamp postdates the race dataset it sits beside");
   assert.ok(bdModule.bdAsOf > financingModule.financingAsOf, "the BD stamp postdates the financing layer it sits beside");
   const layerStamps = new Set([financingModule.financingAsOf, bdModule.bdAsOf]);
-  assert.ok(lastmods.every((date) => date <= dataModule.dataAsOf || layerStamps.has(date)), "no page claims a date newer than its own layer's stamp");
+  // A floored lastmod (build-seo.mjs's notBefore) is allowed past its layer's
+  // stamp: it names the date a specific record was corrected, not a claim
+  // about when the dataset overall last advanced. dataAsOf correctly did not
+  // move for the 2026-08-23 Aurora-INL fix, since the newest documented
+  // event behind it is still 2025-09; only the sitemap floor did.
+  const flooredExceptions = new Set(["2026-08-23"]);
+  assert.ok(
+    lastmods.every((date) => date <= dataModule.dataAsOf || layerStamps.has(date) || flooredExceptions.has(date)),
+    "no page claims a date newer than its own layer's stamp, except a known floored correction",
+  );
   assert.ok(lastmods.some((date) => date !== dataModule.dataAsOf), "record pages carry their own dates, not one global stamp");
 
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
@@ -1296,6 +1465,42 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
     const built = await readFile(new URL(`../dist/client/${name}`, import.meta.url), "utf8");
     const committed = await readFile(new URL(`../public/${name}`, import.meta.url), "utf8");
     assert.equal(built, committed, `the built ${name} matches the committed one`);
+  }
+});
+
+test("a sitemap lastmod never regresses behind what was already committed", async () => {
+  // Codex found this on PR #14: correcting a stale record to cite an
+  // earlier, more accurate event moved its lastmod backward, and a crawler
+  // reads a regressed date as "this page is now older than what I last
+  // saw" and skips recrawling exactly the page that just changed. Prove the
+  // floor by sabotage: seed a future-dated lastmod for a real URL, rerun
+  // the generator, and confirm it held rather than reverting to the data's
+  // own (earlier) date. Backs up and restores the real committed file so
+  // this test cannot corrupt it if a later assertion throws.
+  const { readFile, writeFile } = await import("node:fs/promises");
+  const { execFile } = await import("node:child_process");
+  const { promisify } = await import("node:util");
+  const { fileURLToPath } = await import("node:url");
+  const run = promisify(execFile);
+  const sitemapPath = new URL("../public/sitemap.xml", import.meta.url);
+  const generator = fileURLToPath(new URL("../scripts/build-seo.mjs", import.meta.url));
+
+  const original = await readFile(sitemapPath, "utf8");
+  const url = "https://pranava0x0.github.io/nucleardeployment/deployments/oklo-aurora-pilot/";
+  const targetLine = original.split("\n").find((line) => line.includes(`<loc>${url}</loc>`));
+  assert.ok(targetLine, "the sitemap already lists the URL this test seeds a future date on");
+
+  try {
+    const seeded = original.replace(targetLine, `  <url><loc>${url}</loc><lastmod>2099-01-01</lastmod></url>`);
+    await writeFile(sitemapPath, seeded);
+    await run("node", [generator]);
+    const regenerated = await readFile(sitemapPath, "utf8");
+    assert.match(regenerated, /oklo-aurora-pilot\/<\/loc><lastmod>2099-01-01<\/lastmod>/, "a future-dated committed lastmod holds rather than reverting to the (earlier) derived date");
+  } finally {
+    await writeFile(sitemapPath, original);
+    await run("node", [generator]);
+    const restored = await readFile(sitemapPath, "utf8");
+    assert.equal(restored, original, "the real committed sitemap is restored byte-for-byte after the sabotage");
   }
 });
 
