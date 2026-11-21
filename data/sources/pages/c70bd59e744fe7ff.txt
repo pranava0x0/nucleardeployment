@@ -4,15 +4,17 @@ Search
 Energy Science Military Health Transportation Space Innovation Culture AI & Robotics
 News Videos Podcasts
 Photo Stories Webinars Quiz
-Newsletters From daily news and career tips to monthly insights on AI, sustainability, software, and more—pick what matters and get it in your inbox.
+Newsletters Pick the engineering stories that matter and get them in your inbox.
+Future of Flight Presented by A three-part series on how General Atomics is building uncrewed aircraft that see, think, and act as part of one connected force.
 Access expert insights, exclusive content, and a deeper dive into engineering and innovation all with fewer ads or a completely ad-free experience.
 Columns Case Studies
 Research Interviews
 Engineers Directory
 About Us Advertise Contact FAQ All Rights Reserved, IE Media, Inc.
 Follow Us On
-NEWS VIDEOS ENERGY SCIENCE MILITARY HEALTH TRANSPORTATION SPACE INNOVATION CULTURE
+NEWS AI & ROBOTICS ENERGY SPACE INNOVATION MILITARY FUTURE OF FLIGHT
 Search
+Future of Flight
 Categories Energy Science Military Health Transportation Space Innovation Culture AI & Robotics
 News Videos Podcasts Photo Stories Webinars Quiz
 Newsletters From daily news and career tips to monthly insights on AI, sustainability, software, and more—pick what matters and get it in your inbox.
@@ -24,10 +26,15 @@ About Us Advertise
 Contact FAQ
 Follow Us On
 All Rights Reserved, IE Media, Inc.
+Black Friday: 50% off your first year of IE+
+Ends in 10 days
+Get IE+ for $20.99
+Black Friday · Ends in 10 days 10d
+Get 50% off IE+
 Energy
 World’s first underground nuclear borehole drilling starts for US firm’s Gravity reactor
 The startup’s design replaces massive surface containment by leveraging natural geology.
-Read Next: Four cryogenic reactor fueling technologies to unlock continuous fusion power in US By Aman Tripathi
+Read Next: 7 realistic solutions that could help US data centers manage electricity demand By Aman Tripathi
 Energy Mar 12, 2026 07:18 AM EST
 By Aman Tripathi
 Mar 12, 2026 07:18 AM EST
@@ -45,11 +52,11 @@ The startup’s proprietary design eliminates the need for massive surface conta
 By placing the reactor at the bottom of a deep borehole, the design achieves two major engineering breakthroughs.
 More from Energy
 See All
-Energy China’s 1,200 MW nuclear reactor unit successfully completes cold test milestone
-Energy Four cryogenic reactor fueling technologies to unlock continuous fusion power in US
-Energy 97.9% efficiency, 1,000+ cycles: New sodium-ion battery tech skips mechanical cooling
-Energy DOE launches supercomputing effort to recycle 95,000 metric tons of used nuclear fuel
-Energy Lunar helium-3 eyed as fuel for 50-MWe next-gen US fusion plant planned for 2031
+Energy 7 realistic solutions that could help US data centers manage electricity demand
+Energy US firm advances maritime nuclear batteries with two-week generator demonstration
+Energy 11x higher capacity and 400% swelling drive push for flexible silicon battery interfaces
+Energy World’s first certified BESS made from old EV batteries debuts with 500-kWh capacity
+Energy 500 MWe molten salt reactor paired with nuclear fuel-recycling technology in new deal
 At a depth of one mile, the column of water above the reactor naturally provides the 160 atmospheres of pressure required for operation. This automatically removes the need for expensive surface pressure vessels.
 In addition to this, the surrounding bedrock provides billions of tons of natural shielding and containment. This, in turn, significantly reduces the project’s surface footprint and enhances security.
 “Each Gravity Reactor is installed one mile underground, where surrounding geology provides passive shielding and natural containment, reducing the need for above-ground megastructures,” explained the company.
@@ -60,7 +67,6 @@ The modular nature of the system allows for significant scalability. While a sin
 The project is part of the Department of Energy’s (DOE) Reactor Pilot Program, which aims to see advanced reactors achieve criticality by July 4, 2026. Plus, Deep Fission estimates its approach can slash nuclear plant construction costs by up to 80 percent.
 “By leveraging established supply chains and techniques, Deep Fission estimates this approach can reduce construction costs by approximately 70–80 percent compared to traditional nuclear plants,” Deep Fission highlighted.
 The three-well program will provide the subsurface data necessary to inform final engineering designs and regulatory planning as Deep Fission moves toward full commercialization.
-Recommended Articles
 Get the latest in engineering, tech, space & science - delivered daily to your inbox.
 Sign up for free
 By subscribing, you agree to our Terms of Use and Policies
@@ -70,20 +76,25 @@ Subscribe to
 Today!
 Access to exclusive content, expert insights and a deeper dive into engineering and tech. No ads, no limits.
 Explore Now!
+Offer ends December 1
+Black Friday Offer
+50% off your first year of IE+
+$20.99 first year Regular price $41.99
+Get IE+ for $20.99 Renews at $41.99/year after the first year. Cancel anytime.
 By Aman Tripathi
 An active and versatile journalist and news editor. He has covered regular and breaking news for several leading publications and news media, including The Hindu, Economic Times, Tomorrow Makers, and many more. Aman holds expertise in politics, travel, and tech news, especially in AI, advanced algorithms, and blockchain, with a strong curiosity about all things that fall under science and tech.
 TRENDING LATEST
-1 Four cryogenic reactor fueling technologies to unlock continuous fusion power in US
-2 97.9% efficiency, 1,000+ cycles: New sodium-ion battery tech skips mechanical cooling
-3 Meta's Muse Code uses Muse Spark 1.2 in a 1,000+ tool-call GPU optimization test
-4 DOE launches supercomputing effort to recycle 95,000 metric tons of used nuclear fuel
-5 Lunar helium-3 eyed as fuel for 50-MWe next-gen US fusion plant planned for 2031
+1 7 realistic solutions that could help US data centers manage electricity demand
+2 Chery’s V25 launches in China with 15-minute charging from 30% to 80%, uses 33.67-kwh battery
+3 US firm advances maritime nuclear batteries with two-week generator demonstration
+4 China’s laser mosquito killer locks on in 3 milliseconds, zaps 30 bugs a second
+5 FBI and US agricultural agency hit by cyberattacks targeting sensitive government data
 TRENDING LATEST
-1 Four cryogenic reactor fueling technologies to unlock continuous fusion power in US
-2 97.9% efficiency, 1,000+ cycles: New sodium-ion battery tech skips mechanical cooling
-3 Meta's Muse Code uses Muse Spark 1.2 in a 1,000+ tool-call GPU optimization test
-4 DOE launches supercomputing effort to recycle 95,000 metric tons of used nuclear fuel
-5 Lunar helium-3 eyed as fuel for 50-MWe next-gen US fusion plant planned for 2031
+1 7 realistic solutions that could help US data centers manage electricity demand
+2 Chery’s V25 launches in China with 15-minute charging from 30% to 80%, uses 33.67-kwh battery
+3 US firm advances maritime nuclear batteries with two-week generator demonstration
+4 China’s laser mosquito killer locks on in 3 milliseconds, zaps 30 bugs a second
+5 FBI and US agricultural agency hit by cyberattacks targeting sensitive government data
 Search
 Premium
 INNOVATION
@@ -128,7 +139,7 @@ About Us Advertise Contact Us Subscription Policies Site Map
 Energy Science Military Health Transportation Space Innovation Culture News Videos Podcasts Photo Stories Webinars Engineers Directory IE+ Premium Columns Case Studies Research Interviews
 Newsletters IE Academy IE Awards About Us Advertise Contact Us Subscription Policies Site Map
 Privacy Policy | AI and Ethics | Editorial Policy | Terms of Services | Do Not Sell My Personal Information | Privacy Manager
-© Copyright 2025 | IE Media, Inc. | All Rights Reserved
+© Copyright 2026 | IE Media, Inc. | All Rights Reserved
 Privacy Policy | AI and Ethics | Editorial Policy | Terms of Services
 Do Not Sell My Personal Information | Privacy Manager
-© Copyright 2025 | IE Media, Inc. | All Rights Reserved
+© Copyright 2026 | IE Media, Inc. | All Rights Reserved

@@ -95,7 +95,7 @@ Facebook
 Print
 License
 Filed Under:
-Generation,
+Generation ,
 Corporate News
 Utility Dive news delivered to your inbox
 Get the free daily newsletter read by industry experts
@@ -120,16 +120,16 @@ Sign up
 A valid email address is required.
 Please select at least one newsletter.
 Editors' picks
-Getty Images
-PJM board proposes backstop capacity auction, data center curtailment plans
-FERC&rsquo;s response to the proposals will likely &ldquo;influence utility capital investment, data center development timelines and the allocation of reliability risks and costs,&rdquo; ClearView Energy Partners said.
-By Ethan Howland •
-Updated July 28, 2026
-Justin Sullivan/Getty Images via Getty Images
-DOE mulls changes to Biden-era transformer rule, raising utility concerns
-Utility associations supported the 2024 efficiency requirements for distribution transformers and oppose their repeal. The rule may threaten national security, DOE says.
-By Robert Walton •
-July 29, 2026
+Mario Tama via Getty Images
+Power system plans to meet large-load demand miss near-term solutions: analysts
+Major work by regional planners is focused on flexible access to existing transmission. Some say greater emphasis on advanced transmission technologies can quickly and cost-effectively create room for new large loads.
+By Herman K. Trabish •
+Oct. 8, 2026
+Eric Lee/Getty Images via Getty Images
+NextEra’s $4M Trump ballroom donation muddies Dominion merger debate, watchdogs say
+The donation, which advocates called &ldquo;problematic&rdquo; and &ldquo;convenient&rdquo; for the company, comes to light as federal regulators chosen by President Donald Trump consider whether to allow NextEra to merge with Dominion Energy.
+By Robert Walton and Meris Lutz •
+Oct. 16, 2026
 Get the free newsletter
 Subscribe to Utility Dive for top news, trends & analysis
 Email:
@@ -164,47 +164,47 @@ To ensure we make it into your inbox regularly,
 add us to your allow list, mark us as a safe sender, or add us to your address book.
 Check out more from
 Most Popular
-Facing an estimated 474 GW of interconnection requests, Texas hits pause on data centers
-Battery-eligible New Jersey VPP program begins to take shape
-$700M microgrid bill has state energy office, electrical manufacturer support
-AEP secures 13 GW of gas turbines as generation ‘central’ to growth plans
+PJM urged to delay base capacity auction until data centers cut from forecast
+New York state is short electric resources beginning 2033: ISO
+Permitting reform bill heads to House as Democratic divisions persist
+DOE-funded transmission projects could boost East-West transfer capacity 440%
 Library resources
 Webinar - on demand
-When the Grid Goes Down, Will Your Finance Operations Hold Up?
-Custom content for
-SAP Concur
-Playbook
-What Utilities Can Learn from Virtual Power Plant Pioneers
-Custom content for
-Kraken Technologies
-Playbook
-Why Utilities Need a Modern Communication Intelligence Layer
+Why Better Customer Communication Matters More Than Ever
 Custom content for
 Convey
+Playbook
+How Utilities Can Measure and Earn Customer Trust
+Custom content for
+Pariveda
+Webinar - on demand
+Moving Beyond Financial Data: Connecting Financial Results to Business Drivers and Context
+Custom content for
+Incorta
 View all
 Company Announcements
 View all
 | Post a press release
 What We're Reading
 Bloomberg
-NextEra–Dominion Merger Faces Intervention From Virginia Governor Spanberger
+Republican Lawmakers Urge EPA to Reinstate $7B Solar Program
 Reuters
-RWE says it reached $1.22B deal to cancel US offshore wind leases and invest in gas
-Canary Media
-Trump is blocking billions of dollars of grants that would fix the grid
+US DOJ antitrust division closes probe of NextEra Energy’s acquisition of Dominion Energy
+The New York Times
+How the War in Iran Will Remake the Global Energy Order
 View all
 Events
 View all
 | Promote an event
 Industry Intel
-Integrating Geospatial Data and Analytics Into Your Cloud Strategy: A Game Changer For Utilities
+The New Rate Case for Gas AMI
 Webinar - on demand
 &bull;
-Provided by Korem
-How to leverage new satellite technology for smarter post-disaster utility and transportation management
+Provided by Sensus
+The Cost of AI-Powered Software Development: How to Scale AI Without Losing Control of Costs
 Webinar - on demand
 &bull;
-Provided by ICEYE
+Provided by EPAM
 Reducing Grid Strain With Automated Energy Management for EV Charging
 Webinar - on demand
 &bull;
@@ -234,38 +234,38 @@ Please select at least one newsletter.
 Company Announcements
 View all
 | Post a press release
-FYLD Appoints Sonam Kala as Vice President of Strategy and Growth to Help Infrastructure Organ…
-From FYLD
-August 06, 2026
-Lucasys Tax Repairs Now Available on SAP® Store
-From Lucasys Inc
-August 05, 2026
-CHESSA Announces Goldi America as Title Sponsor of the 2026 Energize Summit
-From Chesapeake Solar and Storage Association (CHESSA)
-July 30, 2026
-IESO Nova Scotia Opens Competitive Procurement Process for Critical Electricity Generation Cap…
-From IESO Nova Scotia
-July 28, 2026
+Leaders from TECO Energy and CPS Energy Join BlastPoint Roundtable on Putting Customer Persona…
+From BlastPoint
+November 14, 2026
+Silicon Valley Disposition to auction off advanced test equipment and precision instrumentatio…
+From Silicon Valley Disposition
+November 12, 2026
+Polesaver Rot-Guards Add 20 Years to Wooden Utility Pole Life
+From Polesaver
+November 09, 2026
+Nuvation Energy Introduces North American-Made G5 Plus Battery Management System with 64-Chann…
+From Nuvation Energy
+November 05, 2026
 Editors' picks
+Melissa Sue Gerrits via Getty Images
+Top electric power sector and utility conferences in 2027
+Utility Dive&rsquo;s curated list of notable events where energy professionals will gather to exchange ideas, demonstrate novel approaches and network for a new era of grid modernization.
+By Meris Lutz •
+Oct. 6, 2026
 Getty Images
-PJM board proposes backstop capacity auction, data center curtailment plans
-FERC&rsquo;s response to the proposals will likely &ldquo;influence utility capital investment, data center development timelines and the allocation of reliability risks and costs,&rdquo; ClearView Energy Partners said.
-By Ethan Howland •
-Updated July 28, 2026
-Justin Sullivan/Getty Images via Getty Images
-DOE mulls changes to Biden-era transformer rule, raising utility concerns
-Utility associations supported the 2024 efficiency requirements for distribution transformers and oppose their repeal. The rule may threaten national security, DOE says.
+Reliability standards for AI data centers, crypto miners move closer to adoption
+NERC&rsquo;s Board of Trustees on Monday voted to adopt reliability standards for AI data centers and other computational loads. The proposed rules now go to the Federal Energy Regulatory Commission for approval.
 By Robert Walton •
-July 29, 2026
+Updated Oct. 27, 2026
 Latest in Generation
-NRG nears 1.2-GW hyperscaler deal amid Texas data center pause
-By Brian Martucci
-Duke Energy to issue $10B in equity to capture gas generation growth opportunity
-By Emma Penrod
-PSEG offers data center supply proposals in PJM’s bilateral contracting process
+Market reforms bolster grid, may lower costs this winter: FERC
 By Ethan Howland
-Southern Co. contracted large load rises to 17 GW
-By Meris Lutz
+Google signs 50-MW superhot geothermal PPA with Quaise Energy
+By Marlene Wilden
+PJM urged to delay base capacity auction until data centers cut from forecast
+By Ethan Howland
+Fuel constraints could challenge grid this winter, despite resource improvements: NERC
+By Robert Walton
 Explore
 About
 Editorial Team
@@ -285,7 +285,7 @@ Waste Dive
 This website is owned and operated by
 Informa TechTarget ,
 a global network that informs, influences and connects the world's technology buyers and sellers.
-&copy; 2025 TechTarget, Inc. or its subsidiaries. All rights reserved. An Informa PLC company.
+&copy; 2026 TechTarget, Inc. or its subsidiaries. All rights reserved. An Informa PLC company.
 Privacy policy
 | Terms of use
 | Take down policy

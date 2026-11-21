@@ -1,7 +1,5 @@
 Terrestrial Energy and Texas A&M reach agreement on reactor siting -- ANS / Nuclear Newswire
 Topics
-Advanced Reactors
-Advocacy
 Conferences
 Decontamination & Decommissioning
 Education
@@ -11,6 +9,7 @@ Fusion
 Industry
 International
 Isotopes & Radiation
+New Reactors
 Nonproliferation
 Nuclear History
 People
@@ -39,32 +38,31 @@ Advertise in Buyers Guides
 Advertise
 Headlines
 For You
-North Anna power plant seeks ESP renewal
-August 6, 2026, 12:32PM
-Industry Update—August 2026
-August 6, 2026, 9:31AM
-Ontario invests in medical radioisotope production at McMaster
-August 6, 2026, 7:03AM
-A message from Gutor
-GUTOR 80: UPS, Battery Charger, & Inverter Solutions for Nuclear Applications, Built to ASME NQA-1
-Holtec moves forward on Oyster Creek, looks to Gulf South
-August 5, 2026, 3:06PM
-Westinghouse updates: AP1000 potential, IPO, Amentum partnership
-August 5, 2026, 12:33PM
-Knoxville’s nuclear workshop opens with a full house and a long to-do list
-August 5, 2026, 10:10AM
-A message from Studsvik
-Transforming Nuclear Fuel Management with Intelligent Automation
-Uranium prices steady as EIA releases annual market report
-August 5, 2026, 7:12AM
+Building nuclear’s next-gen workforce
+November 20, 2026, 3:03 pm
+Pacific Fusion receives N.M. radioactive materials license
+November 20, 2026, 1:39 pm
+Comments close soon on PRM for fuel reprocessing plants
+November 20, 2026, 12:10 pm
+New York’s 5-GW nuclear master plan
+November 20, 2026, 9:29 am
+ANS panel discusses fusion optimism and reality
+November 20, 2026, 7:32 am
+Newcleo’s planned Savannah River MOX fuel fabrication plant gets Curio support
+November 19, 2026, 3:17 pm
+Fusion Innovation Bootcamp: Addressing workforce needs with unique educational opportunities
+November 19, 2026, 11:46 am
+IAEA, Grossi give updates on Ukraine, Iran, North Korea, nuclear power growth projections
+November 19, 2026, 9:32 am
 For personalized headlines, please log in/create an account .
-Latest Issue &mdash; Aug 2026
-Latest Issue &mdash; Jan 2026
-Ageing nuclear assets don't have to mean higher maintenance costs. Discover how HVTS® cladding helps extend the life of PWR secondary system components, reduce outage duration, support ALARA principles, and protect against FAC, erosion-corrosion and other degradation mechanisms. Learn more.
+Latest Issue &mdash; Nov 2026
+Latest Issue &mdash; Fall / Buyers Guide
+A message from Westinghouse Electric Company LLC
+Unleash Your Organizational Superpower Through Talent Development
 Learn More
-Advanced Reactors
+New Reactors
 Terrestrial Energy and Texas A&M reach agreement on reactor siting
-June 23, 2026, 7:06AM
+June 23, 2026, 7:06 am
 Nuclear News
 The Texas A&M–RELLIS Energy Proving Ground, in Bryan, Texas. (Photo: TAMUS)
 Terrestrial Energy has signed ground lease and research agreements with the Texas A&M University System (TAMUS) to exclusively use about 77 acres of land at the Texas A&M–RELLIS campus, in Bryan, Texas, for development of the company’s Integral Molten Salt Reactor (IMSR). The agreements give Terrestrial Energy control of the site and provide support for completion of site characterization work, environmental evaluations, and testing and research activities related to the IMSR.
@@ -83,46 +81,46 @@ imsr integral molten salt reactor rellis small modular reactors smr tamu tamus t
 Share:
 LinkedIn Twitter Facebook Email
 Related Articles
-Long Beach is first port to partner with MARAD on maritime reactors
-July 28, 2026, 9:14AM
+Oklo roundup: Groves-1 plans, Centrus contract, Aurora concrete
+November 16, 2026, 9:31 am
 Nuclear News
-The Department of Transportation’s Maritime Administration has signed a first-of-a-kind memorandum of cooperation (MOC) with the Port of Long Beach, in southern California, to advance the...
-Texas A&M welcomes uranium conversion research
-July 22, 2026, 6:57AM
+Over the past week, reactor developer Oklo has informed the public of several developments through a string of press releases, social media posts, and its third quarter financial results...
+INL and Purdue University collaborate on construction demonstration
+November 9, 2026, 7:58 am
 Nuclear News
-The Texas A&M Engineering Experiment Station (TEES) has signed a research agreement with Quantum Leap Energy (QLE) “to advance and de-risk the commercial production of high-purity...
-Sizewell B gets 20-year life extension; SMR agreements signed around the world
-July 13, 2026, 10:48AM
+A newly announced collaboration between Idaho National Laboratory’s National Reactor Innovation Center (NRIC) and Purdue University’s Applied Research Institute (PARI) will focus on...
+AtkinsRéalis, Turkey eye nuclear plant; Darlington-1 hits delay
+November 16, 2026, 6:30 am
 Nuclear News
-Sizewell B, on the Suffolk coast of England, has been granted a 20-year life extension. The nuclear power plant, which began operating in 1995, will now remain in operation until 2055....
-The deadline arrives: Checking in on the Reactor Pilot Program
-July 2, 2026, 3:56PM
+This past week saw Canada’s nuclear energy ambitions inside and outside its borders make the headlines, with news coming out of Turkey and closer to home at Darlington....
+NRC issues construction permit for Dow/X-energy Long Mott project
+November 10, 2026, 3:00 pm
 Nuclear News
-On May 23, 2025, President Trump signed Executive Order 14301, “Reforming Nuclear Reactor Testing at the DOE,” which instructed the Department of Energy to create a Reactor Pilot Program...
-Palisades: Restart projects, Holtec IPO, lawsuit dismissal—but no restart date
-July 8, 2026, 9:28AM
+The Nuclear Regulatory Commission has approved Dow’s construction permit application for its Long Mott Generating Station in Seadrift, Texas, which would include four X-energy Xe-100...
+Antares, Last Energy, and Radiant hit DOE authorization milestones
+November 2, 2026, 3:25 pm
 Nuclear News
-The ongoing work to restart Holtec’s Palisades nuclear power plant, which last operated in 2022, has transitioned out of large-scale projects and into smaller activities, plant owner and...
-NEA: “Transformative scenario” is needed to reach COP28 goal by 2050
-July 8, 2026, 7:17AM
+The month of October saw three of the original Reactor Pilot Program companies hit a handful of milestones as each pursues Department of Energy authorization for the operation of various...
+How will midterm results impact nuclear energy?
+November 9, 2026, 3:10 pm
 Nuclear News
-In 2023, more than 20 countries at the World Climate Action Summit of the 28th Conference of the Parties to the U.N. Framework Convention on Climate Change (COP28) set the goal of tripling...
-Polish company SGE hopes to deploy 14 BWRX-300 reactors in U.K.
-July 7, 2026, 7:14AM
+In the wake of last Tuesday’s midterm elections and sweeping victories for Democrats across several levels of government, Nuclear News is probing how the results could impact those in and...
+NRC hosts FERC for joint meeting on nuclear generation, grid reliability
+October 23, 2026, 3:09 pm
 Nuclear News
-Synthos Green Energy, a development and investment company headquartered in Warsaw, Poland, has announced a proposal to deploy 14 GE Vernova Hitachi Nuclear Energy BWRX-300 small modular...
-Holtec and EDF submit proposal to deploy SMR-300 at Cottam, Nottinghamshire
-June 29, 2026, 7:13AM
+Twenty years ago, the Federal Energy Regulatory Commission and the Nuclear Regulatory Commission held their first joint meeting, spurred by the 2003 Northeast blackout during which, among...
+Oklo announces plans for Groves-2
+October 15, 2026, 3:47 pm
 Nuclear News
-Jupiter, Fla.–headquartered Holtec International has announced that it and London-based EDF Energy have jointly submitted a proposal to the government of the United Kingdom for deployment of...
-Elementl plans Ohio nuclear plant; Oklo, Centrus sign Ohio-centered LOI
-June 22, 2026, 7:10AM
+This week, Oklo revealed the details of the next chapter of its Groves project. Those plans will build on the company’s previous progress through the Department of Energy’s Reactor Pilot...
+Fermi America, Blue Energy make strides in Texas
+October 9, 2026, 2:05 pm
 Nuclear News
-Nuclear project developer Elementl Power announced on June 18 its plans to build a nuclear power plant in southeast Ohio with a planned capacity of up to 1.5 GW.Elementl already has a reactor...
-A flurry of nuclear developments in Sweden—state aid, SMR selections, legislation
-June 18, 2026, 12:20PM
+A draft environmental impact statement is now complete for Fermi America’s plan to construct and operate four AP1000 reactors at its Project Matador Advanced Energy and Intelligence Campus...
+NRC reviews LAR on Palisades fuel loading incident, as Pioneer SMR application advances
+October 8, 2026, 4:18 pm
 Nuclear News
-Within the span of two weeks, three Swedish companies—Blykalla, Studsvik, and Nordic Baseload Power—submitted applications to their country’s government for state aid for their...
+The Nuclear Regulatory Commission is reviewing a license amendment request (LAR) Holtec submitted in the aftermath of a fuel loading incident that has paused some of the restart work at the...
 Receive Nuclear News Daily
 Join ANS Today
 Donate Today

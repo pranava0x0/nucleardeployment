@@ -1,7 +1,5 @@
 Amazon investing in SMRs to deploy 5 GW by 2039 -- ANS / Nuclear Newswire
 Topics
-Advanced Reactors
-Advocacy
 Conferences
 Decontamination & Decommissioning
 Education
@@ -11,6 +9,7 @@ Fusion
 Industry
 International
 Isotopes & Radiation
+New Reactors
 Nonproliferation
 Nuclear History
 People
@@ -39,76 +38,75 @@ Advertise in Buyers Guides
 Advertise
 Headlines
 For You
-North Anna power plant seeks ESP renewal
-August 6, 2026, 12:32PM
-Industry Update—August 2026
-August 6, 2026, 9:31AM
-Ontario invests in medical radioisotope production at McMaster
-August 6, 2026, 7:03AM
-A message from Gutor
-GUTOR 80: UPS, Battery Charger, & Inverter Solutions for Nuclear Applications, Built to ASME NQA-1
-Holtec moves forward on Oyster Creek, looks to Gulf South
-August 5, 2026, 3:06PM
-Westinghouse updates: AP1000 potential, IPO, Amentum partnership
-August 5, 2026, 12:33PM
-Knoxville’s nuclear workshop opens with a full house and a long to-do list
-August 5, 2026, 10:10AM
-A message from Studsvik
-Transforming Nuclear Fuel Management with Intelligent Automation
-Uranium prices steady as EIA releases annual market report
-August 5, 2026, 7:12AM
+Building nuclear’s next-gen workforce
+November 20, 2026, 3:03 pm
+Pacific Fusion receives N.M. radioactive materials license
+November 20, 2026, 1:39 pm
+Comments close soon on PRM for fuel reprocessing plants
+November 20, 2026, 12:10 pm
+New York’s 5-GW nuclear master plan
+November 20, 2026, 9:29 am
+ANS panel discusses fusion optimism and reality
+November 20, 2026, 7:32 am
+Newcleo’s planned Savannah River MOX fuel fabrication plant gets Curio support
+November 19, 2026, 3:17 pm
+Fusion Innovation Bootcamp: Addressing workforce needs with unique educational opportunities
+November 19, 2026, 11:46 am
+IAEA, Grossi give updates on Ukraine, Iran, North Korea, nuclear power growth projections
+November 19, 2026, 9:32 am
 For personalized headlines, please log in/create an account .
-Latest Issue &mdash; Aug 2026
-Latest Issue &mdash; Jan 2026
-Ageing nuclear assets don't have to mean higher maintenance costs. Discover how HVTS® cladding helps extend the life of PWR secondary system components, reduce outage duration, support ALARA principles, and protect against FAC, erosion-corrosion and other degradation mechanisms. Learn more.
+Latest Issue &mdash; Nov 2026
+Latest Issue &mdash; Fall / Buyers Guide
+A message from Westinghouse Electric Company LLC
+Unleash Your Organizational Superpower Through Talent Development
 Learn More
-Advanced Reactors
+New Reactors
 Amazon investing in SMRs to deploy 5 GW by 2039
-October 16, 2024, 4:36PM
+October 16, 2024, 4:36 pm
 Nuclear News
 Tech giant Amazon announced Wednesday new partnerships with Dominion Energy and X-energy to develop and deploy 5 gigawatts of nuclear energy to power needs across the country over the next 15 years.
 To continue reading, log in or create a free account !
 Related Articles
-The Ratepayer Protection Pledge: Who’s signed on?
-July 29, 2026, 4:09PM
+New York picks 10 finalists for upstate new nuclear project
+November 16, 2026, 11:54 am
 Nuclear News
-In March, seven tech companies and hyperscalers signed on to President Trump's Ratepayer Protection Pledge, a voluntary agreement stating that, in the pursuit of data center growth,...
-NRC, FEMA talk emergency preparedness for Crane restart
-July 30, 2026, 1:54PM
+The New York Power Authority has picked 10 finalists to support the state’s plans to build a new nuclear power plant in upstate New York that would produce at least 1 GW of new nuclear...
+AtkinsRéalis, Turkey eye nuclear plant; Darlington-1 hits delay
+November 16, 2026, 6:30 am
 Nuclear News
-The Nuclear Regulatory Commission held its latest public meeting in central Pennsylvania on Tuesday to provide an update the progress being made to restart the Crane nuclear power plant...
-Long Beach is first port to partner with MARAD on maritime reactors
-July 28, 2026, 9:14AM
+This past week saw Canada’s nuclear energy ambitions inside and outside its borders make the headlines, with news coming out of Turkey and closer to home at Darlington....
+Constellation Q3 updates: New Peak+, uprates, restart, midterm elections
+November 12, 2026, 3:25 pm
 Nuclear News
-The Department of Transportation’s Maritime Administration has signed a first-of-a-kind memorandum of cooperation (MOC) with the Port of Long Beach, in southern California, to advance the...
-Private-sector data center plans advance for Paducah and Savannah River sites
-July 31, 2026, 9:44AM
+Constellation has signed a 270-MW agreement with a customer that would link support for clean energy resources like nuclear to other new power generation resources.This agreement under...
+Constellation to get up to $5B DOE loan for planned uprates
+October 27, 2026, 7:02 pm
 Nuclear News
-The Department of Energy has announced two partnership agreements to construct AI data centers combined with energy infrastructure at DOE sites. This week, agency announced a partnership with...
-Developers, officials talk advanced reactor outlook with NRC
-July 22, 2026, 5:17PM
+Constellation has a conditional loan agreement of up to $5 billion in place with the Department of Energy’s Office of Energy Dominance Financing to support uprate projects at eight nuclear...
+NRC issues construction permit for Dow/X-energy Long Mott project
+November 10, 2026, 3:00 pm
 Nuclear News
-The public had a rare opportunity Tuesday morning when the Nuclear Regulatory Commission gathered leaders from the Department of Energy, the Canadian Nuclear Safety Commission, TerraPower,...
-NRC accepts Ginna SLR application as Constellation seeks 20-year extension
-July 21, 2026, 7:27AM
+The Nuclear Regulatory Commission has approved Dow’s construction permit application for its Long Mott Generating Station in Seadrift, Texas, which would include four X-energy Xe-100...
+INL and Purdue University collaborate on construction demonstration
+November 9, 2026, 7:58 am
 Nuclear News
-The Nuclear Regulatory Commission has accepted Constellation’s subsequent license renewal application to extend operations at the Ginna nuclear power plant by another 20 years.If approved,...
-New grant to fund continued construction of TRISO-X fuel facilities
-July 17, 2026, 1:06PM
+A newly announced collaboration between Idaho National Laboratory’s National Reactor Innovation Center (NRIC) and Purdue University’s Applied Research Institute (PARI) will focus on...
+Salem power plant planning 200-MW uprate
+November 5, 2026, 3:32 pm
 Nuclear News
-X-energy subsidiary TRISO-X has received an economic development grant valued at $11 million from Tennessee’s Nuclear Energy Supply Chain Investment Fund, which was established in 2023 to...
-NEA: “Transformative scenario” is needed to reach COP28 goal by 2050
-July 8, 2026, 7:17AM
+The Salem nuclear power plant is expected to get a 200-MW uprate, executives from PSEG, the co-owners and operators of the Hancocks Bridge, N.J., facility, said in the utility’s recent third...
+Walsh, industry reps discuss “American energy hub” at Oak Ridge cleanup site
+October 29, 2026, 12:36 pm
 Nuclear News
-In 2023, more than 20 countries at the World Climate Action Summit of the 28th Conference of the Parties to the U.N. Framework Convention on Climate Change (COP28) set the goal of tripling...
-Polish company SGE hopes to deploy 14 BWRX-300 reactors in U.K.
-July 7, 2026, 7:14AM
+On October 27, Tim Walsh, assistant secretary for the Department of Energy’s Office of Environmental Management, gathered with industry representatives at the former site of the Oak Ridge...
+Amazon, AEP, X-energy explore SMR feasibility in Indiana
+October 19, 2026, 4:33 pm
 Nuclear News
-Synthos Green Energy, a development and investment company headquartered in Warsaw, Poland, has announced a proposal to deploy 14 GE Vernova Hitachi Nuclear Energy BWRX-300 small modular...
-Sizewell B gets 20-year life extension; SMR agreements signed around the world
-July 13, 2026, 10:48AM
+Amazon, American Electric Power, and X-energy are partnering up to potentially bring a 960-MW nuclear power plant to western Indiana as the state’s first commercial nuclear generation.The...
+NRC hosts FERC for joint meeting on nuclear generation, grid reliability
+October 23, 2026, 3:09 pm
 Nuclear News
-Sizewell B, on the Suffolk coast of England, has been granted a 20-year life extension. The nuclear power plant, which began operating in 1995, will now remain in operation until 2055....
+Twenty years ago, the Federal Energy Regulatory Commission and the Nuclear Regulatory Commission held their first joint meeting, spurred by the 2003 Northeast blackout during which, among...
 Receive Nuclear News Daily
 Join ANS Today
 Donate Today

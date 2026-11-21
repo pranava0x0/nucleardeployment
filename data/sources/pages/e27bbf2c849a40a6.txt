@@ -1,0 +1,124 @@
+Federal Register, Volume 91 Issue 191 (Monday, October 5, 2026)
+[Federal Register Volume 91, Number 191 (Monday, October 5, 2026)]
+[Notices]
+[Pages 63311-63312]
+From the Federal Register Online via the Government Publishing Office [ www.gpo.gov ]
+[FR Doc No: 2026-20345]
+=======================================================================
+-----------------------------------------------------------------------
+NUCLEAR REGULATORY COMMISSION
+[Docket No. 50-615; NRC-2024-0146]
+Tennessee Valley Authority; Clinch River Nuclear Unit 1;
+Construction Permit and Record of Decision
+AGENCY: Nuclear Regulatory Commission.
+ACTION: Notice; issuance.
+-----------------------------------------------------------------------
+SUMMARY: The U.S. Nuclear Regulatory Commission (NRC or the Commission)
+is providing notice of the issuance of Construction Permit (CP) No.
+CPAR-2 to Tennessee Valley Authority (TVA) for the Clinch River Nuclear
+Unit 1 reactor facility and the associated record of decision (ROD).
+DATES: The Construction Permit No. CPAR-2 was issued on September 28,
+2026.
+ADDRESSES: Please refer to Docket ID NRC-2024-0146 when contacting the
+NRC about the availability of information for this action. You may
+obtain publicly available information related to this action by any of
+the following methods:
+Federal Rulemaking Website: Go to https://www.regulations.gov and search for Docket ID NRC-2024-0146. Address
+questions about Docket IDs in Regulations.gov to Bridget Curran;
+telephone: 301-415-1003; email: [email&#160;protected] . For technical
+questions, contact the individual(s) listed in the FOR FURTHER
+INFORMATION CONTACT section of this document.
+NRC's Agencywide Documents Access and Management System
+(ADAMS): You may obtain publicly available documents online in the
+ADAMS Public Documents collection at https://www.nrc.gov/reading-rm/adams.html . To begin the search, select ``Begin ADAMS Public Search.''
+For problems with ADAMS, please contact the NRC's Public Document Room
+(PDR) reference staff at 1-800-397-4209, at 301-415-4737, or by email
+to [email&#160;protected] . For the convenience of the reader,
+instructions about obtaining materials referenced in this document are
+provided in the ``Availability of Documents'' section.
+NRC's PDR: The PDR, where you may examine and order copies
+of publicly available documents, is open by appointment. To make an
+appointment to visit the PDR, please send an email to
+[email&#160;protected] or call 1-800-397-4209 or 301-415-4737, between 8
+a.m. and 4 p.m. eastern time (ET), Monday through Friday, except
+Federal holidays.
+FOR FURTHER INFORMATION CONTACT: Ricky Vivanco, Office of Advanced
+Reactors, U.S. Nuclear Regulatory Commission, Washington, DC 20555-
+0001; telephone: 301-415-0021; email: [email&#160;protected] .
+SUPPLEMENTARY INFORMATION:
+I. Introduction
+Under section 2.106 of title 10 of the Code of Federal Regulations
+(10 CFR), ``Notice of issuance,'' the NRC is providing notice of the
+issuance of CP No. CPAR-2 to TVA and issuance of the ROD under 10 CFR
+51.102, ``Requirement to provide a record of decision; preparation.''
+The CP, which is immediately effective, authorizes TVA to construct a
+power reactor facility in Roane County, Tennessee, as described in the
+CP application. With respect to the CP application filed by TVA, the
+NRC found that the applicable standards and requirements of the Atomic
+Energy Act of 1954, as amended, and the Commission's regulations have
+been met. The NRC found that any required notifications to other
+agencies or bodies have been duly made and that, among other things,
+there is reasonable assurance that the activities authorized
+[[Page 63312]]
+by the permit will be conducted in compliance with the rules and
+regulations of the Commission, that safety questions will be
+satisfactorily resolved by the completion of construction, and that,
+taking into consideration siting criteria, the proposed facility can be
+constructed and operated at the proposed location without undue risk to
+public health and safety, subject to the conditions listed in the CP.
+Furthermore, the NRC found that the licensee, TVA, is technically and
+financially qualified to construct the facility, and that issuance of
+the CP will not be inimical to the common defense and security or to
+the health and safety of the public. The NRC further found that the
+conditions in the early site permit (ESP-006), with the exception of
+those listed in the CP, had been met. Finally, the NRC found that
+issuance of the CP was in accordance with subpart A, ``National
+Environmental Policy Act--Regulations Implementing Section 102(2),'' of
+10 CFR part 51, ``Environmental Protection Regulations for Domestic
+Licensing and Related Regulatory Functions,'' and that all applicable
+requirements had been satisfied.
+Accordingly, the immediately effective CP was issued on September
+28, 2026.
+II. Further Information
+The NRC staff prepared a Safety Evaluation (SE) and Supplemental
+Environmental Impact Statement (SEIS) which document the staff's
+evaluation of the CP application and its findings. The NRC staff also
+prepared the ROD that incorporates by reference the materials contained
+in the SEIS. In accordance with 10 CFR 2.390, ``Public inspections,
+exemptions, requests for withholding,'' of the NRC's ``Agency Rules of
+Practice and Procedure,'' details with respect to this action,
+including the SE, SEIS, the ROD, and accompanying documentation
+included in the CP package, are available online in the ADAMS Public
+Documents collection at https://www.nrc.gov/reading-rm/adams.html . From
+this site, persons can access the NRC's ADAMS, which provides text and
+image files of NRC's public documents.
+III. Availability of Documents
+The documents identified in the following table are available to
+interested persons through ADAMS.
+------------------------------------------------------------------------
+Document description ADAMS accession No.
+------------------------------------------------------------------------
+Construction Permit No. CPAR-2, dated September ML26243A056.
+28, 2026.
+Record of Decision, dated September 28, 2026.... ML26245A346.
+Safety Evaluation Related to the Tennessee ML26168A505.
+Valley Authority Construction Permit
+Application for Clinch River Nuclear Unit 1,
+dated June 24, 2026.
+Supplement to NUREG-2226, ``Supplemental ML26035A285.
+Environmental Impact Statement for a
+Construction Permit at the Clinch River Nuclear
+Site,'' dated April 1, 2026.
+TVA Construction Permit Application ML26119A628 (Package).
+Documentation, dated April 2026.
+Tennessee Valley Authority, Clinch River Nuclear ML19352D868.
+Site, Early Site Permit No. ESP-006, dated
+December 19, 2019.
+------------------------------------------------------------------------
+Authority: 42 U.S.C. 2011 et seq.
+Dated: October 1, 2026.
+For the Nuclear Regulatory Commission.
+Jeremy Bowen,
+Director, Office of Advanced Reactors.
+[FR Doc. 2026-20345 Filed 10-2-26; 8:45 am]
+BILLING CODE 7590-01-P

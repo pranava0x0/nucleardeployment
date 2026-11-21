@@ -1,8 +1,9 @@
 {
   "url": "https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality",
-  "fetched_at": "2026-08-06T18:26:18.529Z",
+  "fetched_via": "https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality",
+  "fetched_at": "2026-11-21T22:17:04.521Z",
   "http_status": 200,
-  "content_type": "text/html; charset=UTF-8",
-  "bytes": 9305,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 9445,
   "title": "Department of Energy Celebrates First Advanced Reactor Criticality | Department of Energy"
 }

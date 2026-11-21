@@ -1,7 +1,5 @@
 Radiant signs contract on microreactors for the military -- ANS / Nuclear Newswire
 Topics
-Advanced Reactors
-Advocacy
 Conferences
 Decontamination & Decommissioning
 Education
@@ -11,6 +9,7 @@ Fusion
 Industry
 International
 Isotopes & Radiation
+New Reactors
 Nonproliferation
 Nuclear History
 People
@@ -39,86 +38,76 @@ Advertise in Buyers Guides
 Advertise
 Headlines
 For You
-North Anna power plant seeks ESP renewal
-August 6, 2026, 12:32PM
-Industry Update—August 2026
-August 6, 2026, 9:31AM
-Ontario invests in medical radioisotope production at McMaster
-August 6, 2026, 7:03AM
-A message from Gutor
-GUTOR 80: UPS, Battery Charger, & Inverter Solutions for Nuclear Applications, Built to ASME NQA-1
-Holtec moves forward on Oyster Creek, looks to Gulf South
-August 5, 2026, 3:06PM
-Westinghouse updates: AP1000 potential, IPO, Amentum partnership
-August 5, 2026, 12:33PM
-Knoxville’s nuclear workshop opens with a full house and a long to-do list
-August 5, 2026, 10:10AM
-A message from Studsvik
-Transforming Nuclear Fuel Management with Intelligent Automation
-Uranium prices steady as EIA releases annual market report
-August 5, 2026, 7:12AM
+Building nuclear’s next-gen workforce
+November 20, 2026, 3:03 pm
+Pacific Fusion receives N.M. radioactive materials license
+November 20, 2026, 1:39 pm
+Comments close soon on PRM for fuel reprocessing plants
+November 20, 2026, 12:10 pm
+New York’s 5-GW nuclear master plan
+November 20, 2026, 9:29 am
+ANS panel discusses fusion optimism and reality
+November 20, 2026, 7:32 am
+Newcleo’s planned Savannah River MOX fuel fabrication plant gets Curio support
+November 19, 2026, 3:17 pm
+Fusion Innovation Bootcamp: Addressing workforce needs with unique educational opportunities
+November 19, 2026, 11:46 am
+IAEA, Grossi give updates on Ukraine, Iran, North Korea, nuclear power growth projections
+November 19, 2026, 9:32 am
 For personalized headlines, please log in/create an account .
-Latest Issue &mdash; Aug 2026
-Latest Issue &mdash; Jan 2026
-Ageing nuclear assets don't have to mean higher maintenance costs. Discover how HVTS® cladding helps extend the life of PWR secondary system components, reduce outage duration, support ALARA principles, and protect against FAC, erosion-corrosion and other degradation mechanisms. Learn more.
+Latest Issue &mdash; Nov 2026
+Latest Issue &mdash; Fall / Buyers Guide
+A message from Westinghouse Electric Company LLC
+Unleash Your Organizational Superpower Through Talent Development
 Learn More
-Advanced Reactors
+New Reactors
 Radiant signs contract on microreactors for the military
-August 14, 2025, 7:03AM
+August 14, 2025, 7:03 am
 Nuclear News
 Image: DIU
 California-based microreactor developer Radiant Industries has announced the signing of what it calls “the first-ever agreement” to deliver a mass-manufactured nuclear microreactor to a U.S. military base. The contract was signed with the Department of Defense’s Defense Innovation Unit (DIU) and the U.S. Air Force as part of the Advanced Nuclear Power for Installations (ANPI) program.
-ANPI for energy dominance: The DIU, air force, and army launched ANPI earlier this year to “allow for the design and build of fixed on-site microreactor nuclear power systems on select military installations to support global operations across land, air, sea, space, and cyberspace.” Andrew Higier, the DIU energy portfolio director, said at the time, “Microreactors on installations are a critical first step in delivering energy dominance to the Force.”
-He continued, “The U.S. and the DOD must maintain the advantage and leverage the best-of-breed nuclear technology for our national security.”
-Other companies selected by the DOD that are eligible to provide commercially available microreactor technology at various DOD installations include Antares Nuclear, BWXT Advanced Technologies, General Atomics Electromagnetic Systems, Kairos Power, Oklo, Westinghouse Government Services, and X-energy.
-Kaleidos testing: Radiant, which was founded in 2020, is developing portable mass-produced nuclear microreactors. Its first reactor, known as Kaleidos, is a 1-MW “failsafe microreactor that can be transported anywhere power is needed.” The company plans to test it in 2026 and begin initial customer deployments in 2028. Radiant’s goal is to eventually mass produce its portable microreactors.
-Next year’s testing of Kaleidos will occur at Idaho National Laboratory’s DOME ( Demonstration of Microreactor Experiments ) facility. Kaleidos will be the first new design of a U.S. nuclear reactor to be tested at DOME in almost 50 years.
-Deployment in three years: Radiant founder and CEO Doug Bernauer commented on the new contract signing, saying, “In 36 months, Kaleidos reactors will arrive via truck and within 48 hours plug in, power on, and provide resilient, cybersecure power to our nation’s air force for years without refueling.” A statement from the company added that “Radiant is eager to continue to work with DIU, Department of Defense leadership, Congress, and the President to deliver Kaleidos” within that timeframe.
-Tags:
-advanced nuclear power for installations air force army defense innovation unit demonstration of microreactor experiments department of defense inl kaleidos microreactor radiant
-Share:
-LinkedIn Twitter Facebook Email
+To continue reading, log in or create a free account !
 Related Articles
-LANL’s ZiaCore microreactor reaches criticality
-August 3, 2026, 12:43PM
+Antares, Last Energy, and Radiant hit DOE authorization milestones
+November 2, 2026, 3:25 pm
 Nuclear News
-Last week, Los Alamos National Laboratory announced that its ZiaCore microreactor was brought to zero-power criticality at high temperatures in April through May of this year during four weeks...
-ARC partners with INL for first reactor deployment
-July 31, 2026, 7:41AM
+The month of October saw three of the original Reactor Pilot Program companies hit a handful of milestones as each pursues Department of Energy authorization for the operation of various...
+INL and Purdue University collaborate on construction demonstration
+November 9, 2026, 7:58 am
 Nuclear News
-Earlier this week, ARC Clean Technology announced that it has entered into a Strategic Partnership Project agreement with Battelle Energy Alliance—the management and operating contractor of...
-NASA and Radiant selected to receive HALEU
-July 27, 2026, 12:19PM
+A newly announced collaboration between Idaho National Laboratory’s National Reactor Innovation Center (NRIC) and Purdue University’s Applied Research Institute (PARI) will focus on...
+Radiant Industries chosen for naval station deployment
+October 23, 2026, 1:32 pm
 Nuclear News
-Last week, the Department of Energy announced a conditional commitment to provide high-assay low-enriched uranium to NASA for its Space Reactor-1 Freedom rocket and to Radiant Industries for...
-Developers, officials talk advanced reactor outlook with NRC
-July 22, 2026, 5:17PM
+On Wednesday, the Department of the Navy announced that it has selected Radiant Industries to design, build, and deliver a “prototype microreactor power plant” featuring the company’s...
+DOE’s ARPA-E selects eight transuranic fuel development projects
+October 29, 2026, 4:21 pm
 Nuclear News
-The public had a rare opportunity Tuesday morning when the Nuclear Regulatory Commission gathered leaders from the Department of Energy, the Canadian Nuclear Safety Commission, TerraPower,...
-$40M investment to spur new nuclear developments in Idaho and Wyoming
-July 21, 2026, 4:09PM
+The Department of Energy’s Advanced Research Projects Agency–Energy (ARPA-E) division has chosen eight research projects to receive funding as part of its High-Performance Optimized...
+Walsh, industry reps discuss “American energy hub” at Oak Ridge cleanup site
+October 29, 2026, 12:36 pm
 Nuclear News
-On Monday, the U.S. Department of Commerce announced that its Economic Development Administration (EDA) intends to award $31 million to the Intermountain-West Nuclear Energy Corridor (INEC)...
-The human factor in licensing and operating the next generation of nuclear plants
-July 17, 2026, 4:17PM
-Nuclear News Stephanie Morrow and Niav Hughes Green
-As human factors specialists working at the intersection of human performance and nuclear operations, we are witnessing one of the nuclear sector’s most significant transitions in decades....
-Researchers demonstrate remote real-time adjustment of PUR-1 reactor
-July 15, 2026, 9:33AM
+On October 27, Tim Walsh, assistant secretary for the Department of Energy’s Office of Environmental Management, gathered with industry representatives at the former site of the Oak Ridge...
+Study finds silicon in unirradiated TRISO particles
+October 28, 2026, 10:32 am
 Nuclear News
-The remote, automatic, real-time adjustment of a research reactor’s power by a geographically distributed control system has been reported by researchers from Idaho National Laboratory, the...
-Mark Peters: Building on a strong foundation
-July 10, 2026, 3:09PM
-Nuclear News Lucas Geiger
-Summer at the American Nuclear Society carries with it a sense of renewed momentum as the incoming president takes office and starts making plans for the year ahead. This has been particularly...
-Defense used fuel recycling project advances to partner selection phase
-July 10, 2026, 10:33AM
+Researchers at the University of Western Ontario in Canada analyzed TRISO particles and found small regions of silicon in the unirradiated fuel, raising questions about its impact on fuel...
+Molten salt–fueled reactor experiment approved for DOE cost-shared funding
+October 15, 2026, 1:30 pm
 Nuclear News
-The quest of the Department of Energy’s Office of Environmental Management to find a private-sector partner to design, build, and operate a commercial-scale facility to recycle...
-ICYMI: Counting up INL’s reactors
-July 10, 2026, 7:10AM
+Yesterday, Southern Company and Core Power announced that the Department of Energy approved cost-shared funding through the Advanced Reactor Demonstration Program (ARDP) for an accelerated...
+Deployable Energy next in line for testing in NRIC’s DOME
+October 2, 2026, 11:11 am
 Nuclear News
-Over the past two weeks, in the “Trivia Tuesday” and “Throwback Thursday” sections of Nuclear News Daily, we have dug into the story of Idaho National Laboratory’s official list of...
+On Wednesday, Idaho National Laboratory announced that start-up Deployable Energy is next in line to test its reactor design in the Demonstration of Microreactor Experiments (DOME) test bed at...
+Nano Nuclear seeks to build front-end capabilities with Radnostix assets
+October 6, 2026, 7:14 am
+Nuclear News
+Nano Nuclear is continuing its efforts to establish itself in multiple sectors of the nuclear energy industry. On October 1, the company, which is perhaps best known for its efforts to deploy...
+Industry and INL collaborate to test new varieties of TRISO fuel
+September 18, 2026, 3:01 pm
+Nuclear News Cory Hatch
+In the 1950s, nuclear scientists set out to design a different kind of nuclear fuel.Instead of relying primarily on reactor systems and large containment domes to prevent the release of...
 Receive Nuclear News Daily
 Join ANS Today
 Donate Today

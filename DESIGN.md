@@ -554,3 +554,17 @@ Decisions made by *omission*:
 - **Scope the 44px touch floor to `@media (pointer: coarse)`,** and use a
   descendant selector. A `>` child selector missed a link nested one level deeper
   and left it at 24px on touch. Measure at 375px rather than reading the rule.
+
+## November 2026 refresh
+
+The site now uses cool paper surfaces against a navy national brief. The brand
+and source date occupy one row, with a separate 48px navigation row and an
+underlined current-page state. The headline, capacity frames, and race board
+form one comparison flow; sources and event dates stay visible. A filled pale
+blue segment with a dark border represents an issued NRC construction permit
+without documented physical work. It is distinct from the open review band
+and the solid construction band. The board gains reactor-class filtering and
+announcement sorting; evidence remains the default. Dossiers link their
+business model and financing gate to the landscape. Typography favors readable
+sentence case and numeric alignment over repeated uppercase labels. The navy,
+blue, orange, square corners, and system fonts remain the identity.

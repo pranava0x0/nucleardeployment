@@ -100,3 +100,27 @@
 - 2026-07-17 — DATA-001: The tracker omitted the DOE Reactor Pilot Program roster and the July 4 criticality outcome. Added all 11 initial pilot projects, the Unity Launch Pad experiment, 15 company records, and explicit government-reported versus company-reported evidence labels.
 - 2026-07-17 — BUG-001: The development page showed a runtime overlay because Vite's generated dependency cache referenced the removed starter package `react-loading-skeleton`. Added a cache-integrity regression test, cleared only the generated Vite cache, and restarted the server. Verified all routes in the browser with no fresh console errors at tablet, mobile, and desktop sizes.
 - 2026-07-17: starter dependency set included vulnerable Vite 8.0.13 and older Cloudflare tooling. Updated to Vite 8.1.5, `@cloudflare/vite-plugin` 1.45.1, and Wrangler 4.112.0; high-severity audit count fell from 6 to 0.
+
+
+- 2026-11-21 — REFRESH-001 (fixed): Long Mott and Clinch River still read as
+  permit applications after issued NRC construction permits. The absent
+  permitted band encouraged treating an approval as construction. Restored
+  the band, migrated 620 MWe, updated linked descriptions, and added tests
+  proving permits are included in executed actions and excluded from builds.
+- 2026-11-21 — REFRESH-002 (fixed): Groves' August criticality appeared in the
+  race timeline while its project record still described a January variance
+  package. Updated the project to company-reported low-power criticality,
+  kept it at zero commercial MWe, and retained the original event date.
+- 2026-11-21 — REFRESH-003 (fixed): Oklo's listing record used a proposed
+  $645M maximum rather than the approximately $306M gross received at close.
+  Replaced the failed secondary citation with the company closing release;
+  the regression test checks the received-proceeds wording.
+- 2026-11-21 — BUILD-001 (fixed): Lint scanned generated output in a nested
+  worktree; Pages type checks picked up untracked dump scripts. Scoped the
+  ignores without changing or deleting those files. Pages and lint pass.
+- 2026-11-21 — SOURCE-001 (known gap): Four Business Wire captures timed out;
+  44 cited sources block scripted fetches. These are access failures, not
+  negative findings. The original 2025 Lazard report URL returns 404; its
+  previously captured, page-marked text remains quote-checked. The new 2026
+  report is separately captured and visually verified. Full inventory and
+  content-read coverage: `data/research/refresh-2026-11-21.json`.

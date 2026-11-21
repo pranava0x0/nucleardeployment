@@ -1,8 +1,9 @@
 {
   "url": "https://www.utilitydive.com/news/washington-nuclear-facility-smrs-cascade-amazon-modular/802967/",
-  "fetched_at": "2026-08-06T18:26:19.315Z",
+  "fetched_via": "https://www.utilitydive.com/news/washington-nuclear-facility-smrs-cascade-amazon-modular/802967/",
+  "fetched_at": "2026-11-21T22:17:05.648Z",
   "http_status": 200,
   "content_type": "text/html; charset=utf-8",
-  "bytes": 11248,
+  "bytes": 11396,
   "title": "Washington nuclear facility will deploy 12 Amazon-funded SMRs | Utility Dive"
 }

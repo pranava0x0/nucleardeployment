@@ -49,7 +49,7 @@ const VISIBLE_ROWS = 6;
 
 function RaceRowItem({ row, index }: { row: RaceRow; index: number }) {
   return (
-    <li className="race-row" data-filter={row.filterText}>
+    <li className="race-row" data-filter={row.filterText} data-lane={row.entrant.lane} data-order={index} data-announced={row.frameworkMWe}>
       <div className="race-id">
         <span className="race-rank" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
         <h3><Link className="row-link" href={`/companies/${row.company.slug}`}>{row.company.name}</Link></h3>
@@ -72,8 +72,7 @@ export function RaceBoard() {
       <div className="board-head">
         <h2>The race board</h2>
         <p>
-          {board.length} companies building new-design reactors for U.S. deployment, ranked by the strongest state
-          their megawatts have actually reached. Tracked sample, as of {dataAsOf}.
+          {board.length} entrants · Tracked sample, as of {dataAsOf}. Ranked by strongest documented capacity.
         </p>
       </div>
 
@@ -84,10 +83,10 @@ export function RaceBoard() {
             <li key={band.band}><span className={`legend-swatch band-${band.band}`} aria-hidden="true" />{band.label}</li>
           ))}
         </ul>
-        <a className="key-more" href="#race-legend">Full key ↓</a>
+        <a className="key-more" href="#race-legend">Band definitions</a>
       </div>
 
-      <ol className="race-board">
+      <ol className="race-board" data-race-board>
         {visible.map((row, index) => <RaceRowItem row={row} index={index} key={row.company.slug} />)}
         {rest.length > 0 && (
           <li className="race-board-more">

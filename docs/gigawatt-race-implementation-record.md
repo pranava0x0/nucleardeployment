@@ -188,3 +188,7 @@ than the behavior. Worth re-running the mutation pass on any new guard here.
   12 px. A third now checks every `var()` resolves to a declared token, because
   an undefined custom property fails silently at paint.
 - `:focus-visible` does not fire for programmatic `.focus()`. See `uat.md`.
+
+## Current snapshot · reviewed 2026-11-21
+
+The refreshed records carry 40,045 MWe announced, 680 MWe under review, 620 MWe permitted, and 336 MWe contracted. Physical builds total 470 MWe. On the refreshed denominators, announcements are **19 to one** against all 2,106 MWe on executed actions and **85 to one** against physical builds. Long Mott and Clinch River migrated to permitted; Hermes 2 now uses the company's current 50 MWe rating and its framework remainder fell by 30 MWe, preserving the 500 MWe whole. Pioneer uses the NRC's approximately 340 MWe per unit. The original implementation snapshot above is historical.

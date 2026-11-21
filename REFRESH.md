@@ -41,7 +41,6 @@ and recapture rather than editing figures in place.
 ## Before you touch anything
 
 ```bash
-npm ci
 npm run build
 npm test
 npm run test:pages
@@ -55,6 +54,9 @@ GitHub Pages job actually uses) and runs a real `tsc` type check that
 `vinext build` can still fail CI on a type error `vinext build` never
 surfaces locally (2026-08-23: a `scale` field used the race-entrant lane
 vocabulary instead of `ScaleClass`'s own, narrower enum).
+
+Reuse installed dependencies when the lockfile is unchanged. If dependencies
+are missing, refresh `security.md` and the advisory index before `npm ci`.
 
 If `data:validate` reports errors before you start, fix those first. You cannot
 tell your own breakage from inherited breakage otherwise.
@@ -139,15 +141,17 @@ hand-edit: that number went stale four separate times before the test existed.
   (`/api/v1/documents/<number>.json`) and a wall detector refuses to store any
   interstitial as a snapshot. If another host starts doing this, add its marker
   to `WALL_MARKERS` in `scripts/lib/source-cache.mjs`.
-- `oklo.com/newsroom` is a JavaScript investor-relations page that blocks
-  scripted fetches, so Oklo's own releases never cache. Read them with a browser
-  or fetch tool and record the read in `link-check-history.jsonl`; that is the
-  record for those claims.
-- About sixteen sources sit behind bot walls with no API. Those need a browser
-  read, recorded in `link-check-history.jsonl`. `data:claims` lists them.
+- Oklo migrated many releases from `/newsroom/news-details/.../default.aspx`
+  to static `/newsroom/<slug>` pages. The November 2026 capture follows those
+  redirects successfully. Copy the final URL from the actual page for new reads.
+- The November 2026 inventory has 44 blocked sources, 11 PDF/binary sources,
+  four timeouts, and one unavailable historical Lazard URL. See the dated
+  refresh manifest rather than assuming these are empty results. Captured
+  report quotations have their own deterministic checks.
 - `gain.inl.gov` returns 403 to scripted fetches.
-- The dev server runs on port 3000, not the Vite default. `.claude/launch.json`
-  is set for it.
+- The default dev port is 3000. If another project is listening on IPv4 there,
+  use `npm run dev -- --port 4317` and the exact printed localhost URL. Assert
+  18 `.race-row` elements before screenshots; an HTTP 200 may be another app.
 - Tests import `dist/server/index.js`, so `npm run build` must run first.
 - React splits interpolated text with `<!-- -->` markers and mirrors the whole
   document inside an RSC payload in a `<script>`. Strip comments before matching
@@ -195,3 +199,30 @@ the claim that a human checked each number against its document.
 and it never touches `app/data.ts`, `financing-data.ts`, or `bd-data.ts`.
 Automating the fetch would be easy; automating the judgement is what the site
 exists to avoid.
+
+
+## Learned patterns
+
+- 2026-11-21: Restore `permitted` when a construction permit is issued but
+  physical nuclear work is not documented. Migrate the existing claim, retain
+  the historical source, keep permitted MWe out of `buildingMWe`, and include
+  them in `executedMWe`. The independent frame test guards both definitions.
+- 2026-11-21: Reconcile project records, roster descriptions, race claims,
+  buyer positions, and finance gates together. Groves had a criticality event
+  while its project record still described a pre-authorization reactor; Long
+  Mott and Clinch River carried superseded permit-review language in several
+  layers. A source-cache fetch alone cannot find these contradictions.
+- 2026-11-21: Preserve prior cash observations and sort balances newest first.
+  A milestone contract ceiling is not cash received or equity raised. Oklo's
+  listing closes at approximately $306M gross, not its proposed $645M maximum.
+- 2026-11-21: Lazard's current edition is July 2026, version 19.0, with the
+  nuclear range on PDF page 7. Fetch with a browser user agent if needed,
+  visually verify the chart, and recapture page-marked text plus accurate
+  metadata. The 2025 edition remains historical; its original URL now 404s.
+- 2026-11-21: The nested `.claude/worktrees` output polluted lint and local
+  `_dump_*.mts` files polluted Pages type checks. Exclude those scratch paths
+  from the relevant gates without deleting the user's files or worktrees.
+- 2026-11-21: The native browser was unavailable on a locked Mac. The explicit
+  headless fallback in AGENTS.md worked with an already-installed Playwright
+  package and cached browser; no installation was needed. Wait for hydration
+  before interaction, test tablet first, and verify DOM counts before capture.

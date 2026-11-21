@@ -16,7 +16,7 @@ import type { Verification } from "./data";
  * reason financingAsOf is: this layer was assembled and verified later, and
  * its page and sitemap entry carry this date instead.
  */
-export const bdAsOf = "2026-08-17";
+export const bdAsOf = "2026-11-21";
 
 /**
  * Buyer-facing reactor classes. "Any class" holds positions that create
@@ -188,6 +188,7 @@ export const bdBuyers: BdBuyer[] = [
     sector: "Hyperscalers & data centers",
     note: "The deepest SMR position: equity, a funded first phase, and a 5 GW frame.",
     positions: [
+      {"class": "Grid-scale SMR", "tier": "Framework / LOI", "label": "X-energy reports a joint development agreement with AEP for feasibility work on a proposed 960 MWe project in Indiana. Included within the broader Amazon-supported pipeline; no additional capacity is added to the race board.", "date": "2026-11-12", "source": "https://investors.x-energy.com/news-releases/news-release-details/x-energy-reports-third-quarter-2026-results", "verification": "Company-reported"},
       {
         class: "Grid-scale SMR",
         tier: "Equity / board",
@@ -413,10 +414,10 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Grid-scale SMR",
         tier: "Executed",
-        label: "Joint development with X-energy at Seadrift, Texas: the four-module Long Mott project (4 × 80 MWe) is in NRC construction-permit review after the environmental review closed with no significant impact found.",
-        date: "2026-05",
-        source: "https://x-energy.com/news/nrc-issues-environmental-assessment-with-finding-of-no-significant-impact-for-dow-and-x-energys-propsed-advanced-nuclear-project-in-texas/",
-        verification: "Company-reported",
+        label: "NRC issued the construction permit for four Xe-100 reactors at Dow's Seadrift site on November 9, 2026; operating licensing remains separate.",
+        date: "2026-11-09",
+        source: "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
+        verification: "Verified",
       },
     ],
   },
@@ -508,10 +509,11 @@ export const bdBuyers: BdBuyer[] = [
     sector: "Federal & defense",
     note: "A program of record plus an executive-order deadline on the calendar.",
     positions: [
+      {"tier": "Executed", "label": "Army selected five Janus vendor/site pairings: Antares at Fort Bragg, BWXT at Fort Campbell, General Atomics at Fort Hood, Radiant at Fort Benning, and Westinghouse at Fort Drum. Up to $2.2B across the program is paid against technical milestones, not on selection.", "date": "2026-08-26", "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors", "verification": "Government-reported", "class": "Microreactor"},
       {
         class: "Microreactor",
         tier: "Program / solicitation",
-        label: "The Janus Program solicits commercially owned and operated microreactors on Army installations, paid against milestones; site selection follows, with no vendor award named.",
+        label: "The Janus Program solicits commercially owned and operated microreactors on Army installations, paid against milestones; site selection follows, at the program launch, before the August 2026 vendor selections.",
         date: "2025-10",
         source: "https://www.army.mil/article/288903/army_announces_janus_program_for_next_generation_nuclear_energy",
         verification: "Government-reported",
@@ -519,7 +521,7 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Microreactor",
         tier: "Program / solicitation",
-        label: "Named nine candidate Janus installations after on-site assessment, including Fort Wainwright, Alaska, a net power importer since its coal cogeneration plant stopped exporting; DIU opened an area-of-interest solicitation for industry technical proposals, with final site count and vendor awards still to be determined.",
+        label: "Named nine candidate Janus installations after on-site assessment, including Fort Wainwright, Alaska, a net power importer since its coal cogeneration plant stopped exporting; DIU opened an area-of-interest solicitation for industry technical proposals, before the August 2026 selection of five initial vendor/site pairings.",
         date: "2025-11",
         source: "https://www.world-nuclear-news.org/articles/us-army-names-potential-microreactor-sites",
         verification: "Press-reported",
@@ -593,9 +595,9 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Grid-scale SMR",
         tier: "Executed",
-        label: "Clinch River Unit 1 (BWRX-300) construction-permit application under NRC review, with the safety evaluation complete and a mandatory hearing noticed for August 2026.",
-        date: "2026-07",
-        source: "https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing",
+        label: "NRC issued construction permit CPAR-2 for Clinch River Unit 1 on September 28, 2026; operation still requires a separate license.",
+        date: "2026-09-28",
+        source: "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
         verification: "Verified",
       },
       {
@@ -1101,8 +1103,8 @@ export const bdSectorPlans: BdSectorPlan[] = [
     thesis: "Industrial buyers purchase steam and reliability, not just electrons, and both live deals put the reactor inside the fence at an existing plant. An international industrial buyer can also carry a U.S. vendor into an allied market.",
     evidence: [
       {
-        text: "Dow's Long Mott project pairs four Xe-100 modules with the Seadrift chemical site for electricity and process heat, under NRC construction-permit review.",
-        source: "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/long-mott",
+        text: "NRC issued a construction permit for four Xe-100 reactors at Dow's Seadrift site on November 9, 2026; the project will supply industrial steam and electricity.",
+        source: "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
       },
       {
         text: "The only executed microreactor PPA book anywhere is industrial: 34 Last Energy contracts across Poland and the UK totaling 680 MW.",
@@ -1114,7 +1116,7 @@ export const bdSectorPlans: BdSectorPlan[] = [
       { move: "Use the anchor-tariff shape for buyers who will not own.", why: "The Duke MOU structure lets industrial load fund clean-firm generation through a regulated utility without taking project risk directly." },
       { move: "Let one conglomerate open one country.", why: "Tata's Wyoming letter of intent shows the deal flow can run through a foreign industrial buyer to a U.S. site, and the same relationship travels home." },
     ],
-    watch: "The Long Mott construction-permit decision, with the NRC safety decision targeted for November 2026. The first industrial-host permit sets the regulatory clock every later fence-line project will be priced against.",
+    watch: "Long Mott construction execution, fuel delivery, and operating licensing after the November 2026 construction permit. Later industrial-host projects still need their own approvals.",
   },
   {
     sector: "Federal & defense",

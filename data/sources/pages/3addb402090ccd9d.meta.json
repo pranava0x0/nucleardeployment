@@ -1,8 +1,9 @@
 {
   "url": "https://www.world-nuclear-news.org/articles/deep-fission-begins-drilling-first-data-acquisition-well",
-  "fetched_at": "2026-08-06T18:26:10.312Z",
+  "fetched_via": "https://www.world-nuclear-news.org/articles/deep-fission-begins-drilling-first-data-acquisition-well",
+  "fetched_at": "2026-11-21T22:16:54.264Z",
   "http_status": 200,
   "content_type": "text/html; charset=utf-8",
-  "bytes": 5135,
+  "bytes": 5109,
   "title": "Deep Fission begins drilling first data acquisition well - World Nuclear News"
 }

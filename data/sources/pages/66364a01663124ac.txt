@@ -232,6 +232,7 @@ Toward 2031: From Construction to Operation
 US SFR Owner LLC has told the NRC it expects to complete construction by February 2031, before applying for a Class 103 operating license authorizing 40 years of operation under Part 50 ( see POWER coverage ). TerraPower continues to reference a 2030&ndash;2031 commercial operation target for Kemmerer 1, contingent on maintaining construction progress, securing adequate HALEU fuel supply&mdash;through partnerships with Centrus, Framatome, GNF-A, and ASP Isotopes&mdash;and completing the operating license phase of NRC review.
 &mdash; Sonal C. Patel is senior editor at POWER magazine ( @sonalcpatel , @POWERmagazine ).
 Tagged in:
+Natrium reactor
 sodium-cooled fast reactor
 Kemmerer Unit 1
 NRC construction permit
@@ -239,7 +240,6 @@ TerraPower
 molten salt energy storage
 advanced nuclear
 ARDP
-Natrium reactor
 Webinars
 July 9, 2025
 Creating Value from Data: Maximizing Plant Performance Through Real-Time Analytics
@@ -258,55 +258,59 @@ REGISTER
 Sponsored by
 technosylva
 Videos
-POWER Global Media
+This video is provided by YouTube (Google). To watch it, please accept marketing cookies. Your IP address and browser information will be shared with Google.
+Manage cookie preferences
+Sonal Patel on Data Center POWER eXchange 2026
 archives + podcasts + webinars + e-letters + video + exclusive content + events + much more!
 For over 142 years, POWER has been the unwavering pillar of the power and energy industry, offering unparalleled insights on the latest trends, best practices, and news through our robust channels: print, digital media, and in-person events.
 Subscribe Now
 Trending
-Data Centers
-Texas Audit Could Delay 49.8 GW of Data Center Load, Cost Projects Up to $15 Billion, BNEF Warns
+Power
+Appalachian Power Investing Nearly $25 Billion For Gas and Coal Power Plants
+Geothermal
+DOE’s ARPA-E Announces Up to $30 Million to Advance Geothermal Projects in SUPERHOT Program
 Gas
-LS Power Acquiring 606-MW Texas Gas-Fired Plant From Constellation
-Trends
-Oklo’s Groves Becomes Fifth DOE Pilot Reactor to Reach Criticality, First on Private Land
-Legal & Regulatory
-Abbott Orders Full Audit of Texas Data Center Interconnection Queue, Threatens to Deny Grid Access
+GE Vernova Advances Hydrogen Capabilities for Aeroderivative Gas Turbines with New Milestones
+Commentary
+The Midterm Elections Opened a Bipartisan Path on Nuclear Waste
+Solar
+True Recycling: The Key to Solar Circularity
 Gas
-A Pioneering Approach to Building New Generation Resources
-Top Plant
-In the Thar Desert, Pakistan Proves Its Indigenous Coal Can Be a Reliable Power Resource
-O&M
-From 18 Forced Outages to Zero Missed Starts: How CPS Energy’s Arthur von Rosenberg Plant Rebuilt Its Reliability
+LS Power Buying Nearly 5 GW of Gas-Fired Generation From NRG in $4-Billion Deal
+Instrumentation & Controls
+Trusted Control Is the Foundation for AI in Power Generation
 Gas
-Innovation Powers a Country’s Energy Transition
-Energy Security
-Speed as Strategy: Rabigh Reinforcement Delivers 1,179 MW on an Accelerated Timeline
+Groups Cancel $1-Billion Gas-Fired Power Plant Project in Wisconsin
+The POWER Interview
+Data Centers, Affordability, and the Ballot Box: What the 2026 Midterms Mean for the Power Industry
 Recommended
 Nuclear
 Kemmerer 1 Breaks Ground: A Look at TerraPower’s Natrium Fast Reactor Nuclear Power Plant
-Legal & Regulatory
-A Historic First: NRC Clears TerraPower’s Natrium Nuclear Reactor for Construction
+Nuclear
+Framatome, TerraPower to Develop HALEU Deconversion Pilot Line
+Nuclear
+Nuclear Fuel Facility Unveiled for Natrium Fast Reactor Demonstration
+Nuclear
+Framatome, TerraPower to Develop HALEU Deconversion Pilot Line
 Nuclear
 Kemmerer 1 Breaks Ground: A Look at TerraPower’s Natrium Fast Reactor Nuclear Power Plant
 Nuclear
-Coal Plant Site Unveiled for 500-MW Natrium Advanced Nuclear Pilot
-Nuclear
-TerraPower Eyes Utah for Second Commercial Natrium Reactor as AI Demand Reshapes Western Grid
-Nuclear
 Kemmerer 1—TerraPower’s Pioneering Fourth-Generation Nuclear Project—Hits Key NRC Milestone Ahead of Schedule
 From the Magazine
-Data Centers
-Is the Power Project Crunch Upending the Owner—EPC Model?
 Gas
-Rayburn Energy Station: A Cooperative’s Answer to Texas-Sized Risk
-Gas
-A Pioneering Approach to Building New Generation Resources
+Parr Station Modernization Writes the Next Chapter in a Century of Reinvention
+Top Plant
+WA Parish Integrates Thermal Evaporation to Tackle FGD Wastewater
+Top Plant
+A Greener Grid: Florida Facility Turning Hydrogen into Power
 Read the Full issue
 News & Technology for the Global Energy Industry
 POWER is at the forefront of the global power market, providing in-depth news and insight on the end-to-end electricity system and the ongoing energy transition. We strive to be the “go-to” resource for power professionals, offering a wealth of information on innovative business practices, sound safety measures, useful productivity enhancements, and much more.
+This video is provided by YouTube (Google). To watch it, please accept marketing cookies. Your IP address and browser information will be shared with Google.
+Manage cookie preferences
 Upcoming
 Experience POWER
-Sept. 28—30, 2026
+Sept. 7-10, 2027
 Omni Shoreham Washington, D.C.
 Learn More
 About Power

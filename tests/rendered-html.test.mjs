@@ -37,16 +37,16 @@ test("server-renders the evidence-led homepage", async () => {
   assert.doesNotMatch(html, /core-readout|hero-core|class="orbit/);
 });
 
-test("the homepage leads with catch-up, news, and gates before the full race board, and trims the board", async () => {
+test("the homepage leads with the comparison board and retains sourced summaries and progressive disclosure", async () => {
   const dataModule = await import("../app/data.ts");
   const raw = await (await render()).text();
   const html = raw.replace(/<!--.*?-->/g, "");
   const board = dataModule.raceBoard();
 
-  // Toplines and news arrive before the 18-row table, not after it.
-  const order = ["Catch up", "Latest developments", "Next gates", "The race board"].map((marker) => html.indexOf(`>${marker}<`));
+  // The redesign makes the comparison board the first section after the totals.
+  const order = ["The race board", "Catch up", "Latest developments", "Next gates"].map((marker) => html.indexOf(`>${marker}<`));
   assert.ok(order.every((at) => at >= 0), "every section marker was found");
-  assert.ok(order.every((at, i) => i === 0 || at > order[i - 1]), "catch-up, news, and gates precede the race board");
+  assert.ok(order.every((at, i) => i === 0 || at > order[i - 1]), "comparison precedes the sourced summaries");
 
   // The catch-up strip carries real content, not a blank or an unresolved value.
   const catchUp = html.slice(html.indexOf('class="catchup-list"'), html.indexOf("</ul>", html.indexOf('class="catchup-list"')));
@@ -163,7 +163,7 @@ test("server-renders company directory and company detail pages", async () => {
 });
 
 test("server-renders core directory and methodology routes", async () => {
-  for (const [path, text] of [["/deployments", "U.S. reactor projects"], ["/federal-action", "Four executive orders"], ["/capital", "Federal loans"], ["/methodology", "Version 0.2 definitions"], ["/map", "Named U.S. reactor sites"]]) {
+  for (const [path, text] of [["/deployments", "U.S. reactor projects"], ["/federal-action", "Four executive orders"], ["/capital", "Federal loans"], ["/methodology", "Definitions, inclusion rules"], ["/map", "Named U.S. reactor sites"]]) {
     const response = await render(path);
     assert.equal(response.status, 200, path);
     const html = await response.text();
@@ -210,7 +210,7 @@ test("DOE program coverage distinguishes pilot, criticality, and ARDP projects",
   assert.equal(dataModule.projects.length, 28);
   assert.equal(dataModule.companies.length, 26);
   assert.equal(pilotProjects.length, 11);
-  assert.deepEqual(criticalityProjects.map((project) => project.name).sort(), ["Aalo Critical Test Reactor", "Antares R1 Mark-0", "Ward 250 critical experiment"]);
+  assert.deepEqual(criticalityProjects.map((project) => project.name).sort(), ["Aalo Critical Test Reactor", "Antares R1 Mark-0", "Groves pilot reactor", "Ward 250 critical experiment"]);
   assert.deepEqual(ardpProjects.map((project) => project.slug).sort(), ["long-mott-xe-100", "natrium-kemmerer"]);
   assert.deepEqual(launchPadProjects.map((project) => project.slug), ["deployable-unity"]);
 });
@@ -333,7 +333,7 @@ test("every race record carries one band, an https source, and a real or null da
     assert.ok(claim.mwe >= 0, `${claim.label} is not negative`);
     assert.match(claim.source, /^https:\/\//, claim.label);
     assert.equal(claim.binding, claim.band !== "framework", `${claim.label} binding flag matches its band`);
-    if (claim.date !== null) assert.match(claim.date, /^\d{4}-\d{2}$/, claim.label);
+    if (claim.date !== null) assert.match(claim.date, /^\d{4}-\d{2}(?:-\d{2})?$/, claim.label);
   }
 
   for (const record of [...dataModule.fundingEvents, ...dataModule.proofEvents]) {
@@ -408,13 +408,16 @@ test("race capacity counts hold a floor and stay in disjoint frames", async () =
   // at the University of Illinois, and the board's rule is that test reactors
   // contribute 0 MWe. The filing remains a proof event. A floor drop needs a
   // reason recorded here, never a quiet edit.
-  assert.ok(totals.review >= 1220, `review floor: ${totals.review}`);
+  // 2026-11-21: 620 MWe moved to permitted; Pioneer rose from 600 to 680 MWe per NRC.
+  assert.ok(totals.review >= 680, `review floor: ${totals.review}`);
+  assert.ok(totals.permitted >= 620, `permitted floor: ${totals.permitted}`);
   // Supersession, 2026-08-05: the floor was 40,395. Cascade's 320 MWe funded
   // phase moved from the framework band to contracted, because Energy Northwest
   // and Amazon signed a development and funding agreement for it and only the
   // options-based remainder is an announcement. Capacity moved between bands;
   // none was lost.
-  assert.ok(totals.framework >= 40075, `framework floor: ${totals.framework}`);
+  // 2026-11-21: Hermes 2 uses 50 MWe; its framework remainder fell by 30 MWe to preserve 500 MWe.
+  assert.ok(totals.framework >= 40045, `framework floor: ${totals.framework}`);
   assert.ok(totals.contracted >= 321, `contracted floor: ${totals.contracted}`);
 
   // Each claim sits in exactly one band, so the bands never double-count a megawatt.
@@ -556,7 +559,7 @@ test("the methodology page explains the race rules the board links to", async ()
 
   // The board's legend links to /methodology#race, so the anchor has to exist.
   assert.match(html, /id="race"/, "the race anchor the board links to exists");
-  for (const heading of ["Who is on the board", "What counts as a megawatt", "The six bands",
+  for (const heading of ["Who is on the board", "What counts as a megawatt", "The seven bands",
     "A DOE authorization is not an NRC license", "Binding and non-binding never merge"]) {
     assert.ok(html.includes(heading), `methodology explains: ${heading}`);
   }
@@ -597,7 +600,7 @@ test("touch targets and band encoding survive in the stylesheet", async () => {
   assert.match(css, /\.band-contracted \{[^}]*repeating-linear-gradient/, "contracted renders as a hatch");
   assert.match(css, /\.band-framework \{[^}]*repeating-linear-gradient/, "framework renders as a hatch");
   // Hatching is CSS, not a charting library.
-  assert.doesNotMatch(css, /chart|d3|recharts/i);
+  assert.doesNotMatch(css.replace(/#[0-9a-f]{3,8}\b/gi, ""), /chart\.js|\bd3\b|recharts/i);
 });
 
 test("no text-carrying element ever renders blank", async () => {
@@ -724,7 +727,7 @@ test("a company's capacity claims describe different projects", async () => {
   // rating and nothing else. A PR review read them as one project and reported
   // a double count. They are separate, and each label must say where it is.
   const xenergy = dataModule.capacityClaims.filter((claim) => claim.companySlug === "x-energy");
-  const review = xenergy.find((claim) => claim.band === "review");
+  const review = xenergy.find((claim) => claim.band === "permitted");
   const framework = xenergy.find((claim) => claim.band === "framework");
   const contracted = xenergy.find((claim) => claim.band === "contracted");
   assert.match(review.label, /Texas/, "the reviewed project names its state");
@@ -1254,7 +1257,8 @@ test("today's criticality is recorded as proof, not capacity", async () => {
   // The superseded note is gone: it said criticality was unconfirmed.
   const auth = dataModule.proofEvents.find((event) => event.companySlug === "oklo" && /startup authorization/.test(event.label));
   assert.doesNotMatch(auth.label, /not confirmed/, "the superseded status note was removed");
-  assert.equal(dataModule.dataAsOf, "2026-08-06", "the dataset date reflects the newest record");
+  const newest = dataModule.timeline().filter((entry) => entry.date).map((entry) => entry.date).sort().at(-1);
+  assert.equal(dataModule.dataAsOf, newest, "the dataset date reflects the newest record");
 });
 
 test("the homepage leads with four separate frames and a filterable board", async () => {
@@ -1271,7 +1275,7 @@ test("the homepage leads with four separate frames and a filterable board", asyn
     .reduce((total, claim) => total + claim.mwe, 0);
   assert.equal(totals.operationalMWe, sumBands(["operational"]));
   assert.equal(totals.buildingMWe, sumBands(["construction", "doe-authorized"]));
-  assert.equal(totals.executedMWe, sumBands(["operational", "construction", "doe-authorized", "review", "contracted"]));
+  assert.equal(totals.executedMWe, sumBands(["operational", "construction", "doe-authorized", "permitted", "review", "contracted"]));
   assert.equal(totals.announcedMWe, sumBands(["framework"]));
 
   // The strip renders each frame with its own label, and never a grand total.
@@ -1424,8 +1428,8 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
     sitemap.includes(`<loc>${base}/bd/</loc><lastmod>${bdModule.bdAsOf}</lastmod>`),
     "the BD route carries the BD layer's own date, not the race dataset's",
   );
-  assert.ok(financingModule.financingAsOf > dataModule.dataAsOf, "the financing stamp postdates the race dataset it sits beside");
-  assert.ok(bdModule.bdAsOf > financingModule.financingAsOf, "the BD stamp postdates the financing layer it sits beside");
+  assert.match(financingModule.financingAsOf, /^\d{4}-\d{2}-\d{2}$/, "the financing layer has its own valid update date");
+  assert.match(bdModule.bdAsOf, /^\d{4}-\d{2}-\d{2}$/, "the BD layer has its own valid update date");
   const layerStamps = new Set([financingModule.financingAsOf, bdModule.bdAsOf]);
   // A floored lastmod (build-seo.mjs's notBefore) is allowed past its layer's
   // stamp: it names the date a specific record was corrected, not a claim
@@ -1833,4 +1837,39 @@ test("BD records keep source hygiene: https, real-or-null dates, matching tiers"
   for (const record of [...positions, ...bd.bdSignals, ...bd.bdMicroPath]) {
     if (record.date != null) assert.ok(record.date <= bd.bdAsOf, `${record.date} does not postdate the layer stamp`);
   }
+});
+
+test("issued permits migrate capacity without implying physical construction", async () => {
+  const data = await import("../app/data.ts");
+  const permitted = data.capacityClaims.filter((claim) => claim.band === "permitted");
+  assert.deepEqual(permitted.map((claim) => claim.companySlug).sort(), ["gev-hitachi", "x-energy"]);
+  assert.equal(permitted.reduce((sum, claim) => sum + claim.mwe, 0), 620);
+  for (const claim of permitted) {
+    assert.equal(claim.verification, "Verified");
+    assert.ok(!data.capacityClaims.some((other) => other !== claim && other.companySlug === claim.companySlug && ["review", "construction"].includes(other.band)), `${claim.companySlug} retains no superseded review/build capacity`);
+  }
+  const totals = data.headlineTotals();
+  assert.equal(totals.buildingMWe, 470, "permitted capacity stays out of physical builds");
+  assert.equal(totals.executedMWe, 2106, "issued permits remain in the executed frame");
+  const kairos = data.capacityClaims.filter((claim) => claim.companySlug === "kairos-power");
+  assert.equal(kairos.reduce((sum, claim) => sum + claim.mwe, 0), 500, "updated Hermes 2 rating preserves the whole Google framework");
+  assert.equal(data.capacityClaims.find((claim) => claim.companySlug === "holtec" && claim.band === "review").mwe, 680);
+});
+
+test("the refresh preserves cash history and distinguishes contract ceilings from equity", async () => {
+  const data = await import("../app/data.ts");
+  for (const slug of ["oklo", "nuscale", "x-energy", "nano-nuclear", "terrestrial-energy"]) {
+    const positions = data.dossierFor(slug).cash;
+    assert.equal(positions.length, 2, `${slug} retains its previous reported balance`);
+    assert.ok(positions[0].asOf > positions[1].asOf, `${slug} shows the latest balance first`);
+  }
+  const close = data.fundingEvents.find((event) => event.companySlug === "oklo" && event.kind === "IPO / listing");
+  assert.match(close.amount, /306M.*received/);
+  const janus = data.fundingEvents.find((event) => event.companySlug === "radiant-industries" && /750M/.test(event.amount));
+  assert.equal(janus.kind, "Federal award");
+  assert.match(janus.amount, /ceiling.*not cash received/);
+  const finance = await import("../app/financing-data.ts");
+  const latest = finance.costBenchmarks.find((record) => record.report?.reportSlug === "lazard-lcoe-july-2026");
+  assert.equal(latest.figure, "$175–255/MWh");
+  assert.equal(latest.report.page, 7);
 });

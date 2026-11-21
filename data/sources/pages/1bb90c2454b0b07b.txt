@@ -10,135 +10,291 @@ A lock (
 Lock
 Locked padlock
 ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
-Header Menu
-FAQ
-Agreement States
-Facility Locator
-What&#039;s New
-Site Help
-Index A-Z
-Contact Us
-Email Updates
-What&#039;s New
-Menu
-Report a Safety Concern
-Search
-Search
-Nuclear Reactors
-Nuclear Reactors
-Power Reactors
-Operating Reactors
-Operator Licensing
-Research and Test Reactors
-New Reactors
-Research Activities
-Divider
-Nuclear Reactor Quick Links
-Nuclear Materials
-Nuclear Materials
-Types of Nuclear Materials
-Uranium Recovery
-Material Environmental Reviews
+A new keyword search will reset all filters below. You can further limit keyword search results with tags.
+U.S. NRC
+Nuclear Regulatory Commission
+Search Results
+A new keyword search will reset all filters below. You can further limit keyword search results with tags.
+Facilities & Safety
+Facilities & Safety
+NRC oversees the safety of nuclear reactors, materials, and waste facilities nationwide.
+Reactors, Facilities, Sites
+Facility Finder
 Fuel Cycle Facilities
-Materials Transportation
-National Materials Program
-Medical, Industrial, & Academic Uses
-SCP Portals
-Divider
-Nuclear Materials Quick Links
-Radioactive Waste
-Radioactive Waste
-Decommissioning of Nuclear Facilities
-Uranium Mill Tailings
-Abandoned Uranium Mine Waste Remediation
-Storage of Spent Nuclear Fuel
-Low-Level Waste
-Low-Level Waste Disposal
-Transportation of Spent Nuclear Fuel
-Waste Incidental to Reprocessing
-High-Level Waste Disposal
-Research Activities
-High-Level Waste
-Divider
-Radioactive Waste Quick Links
-Nuclear Security
-Nuclear Security
-Domestic Safeguards
-Required Reporting for Clearance Holders
-Criminal History & Firearms Checks
-Information Security
-Insider Threat Program for Licensees
-Contact Us
-Radioactive Material Security
+Operating Reactors
+Non-Power Facilities
+Decommissioning
+Safety & Security
+Report a Safety or Security Concern
 Cybersecurity
-Public Meetings & Involvement
-Public Meetings & Involvement
-The NRC Approach to Open Government
-Documents for Comments
-Subscribe to E-mail Updates
-About Meetings Open to the Public
+Radioactive Material Security
+Safety Culture
+Nuclear Security
+Domestic Safeguards Oversight
+Radiation & Waste
+Nuclear Waste Types
+Types of Nuclear Materials
+Materials Transportation
+Storage of Spent Nuclear Fuel
+Protection
+Radiation Protection
+Fire Protection
+Regulation & Legislation
+Regulations & Legislation
+Covers the laws establishing the NRC, its 10 CFR regulations, and the rulemaking process, including petitions, public comment, and Federal Register notices.
+Regulations
+How We Regulate
+Regulations (NRC, 10 CFR)
+Governing Legislation
+Legislation
+State & Tribal Programs
+National Materials Program
+Effectiveness, Efficiency, and Timeliness Initiatives that Support Unleashing American Energy
+Rulemaking
+Planned Rulemaking Activities - Rules
+Rulemaking Documents
+The NRC Rulemaking Process
+Guidance
+Regulatory Guides (by Division)
+Documents & Reports
+Documents & Reports
+Access NRC reports, ADAMS documents, Commission communications, data and research tools, plus forms, public submissions, and comment periods.
+Reports
+Inspection Reports for Operating Power Reactors
+Reports Associated with Events
+Fact Sheets & Brochures
+Inspection Manual
+NUREG-Series Publications
+Public Dashboards
+Research Information Letters
+Communications
+Congressional Documents
+Generic Communications
+Data & Tools
+State Communications Portal
 NRC Information Quality Guidelines
-Really Simple Syndication (RSS) Feeds
-Conferences & Symposia
-Divider
-Commission Schedule
-Adjudications (Hearings)
-NRC Rules and Petitions
-Public Meeting Schedule
-Adjudicatory Submissions
-NRC Library
-NRC Library
-Basic References
-FOIA & Privacy Act
-FAQ Index
+Forms & Submissions
+Forms (NRC)
+Petition for Rulemaking Dockets
+Documents
 Document Collections
-Photos & Videos
-Get Copies of Documents
 ADAMS Public Documents
-Records Management
-Withholding of Sensitive Information
-Public Document Room
-Training Courses
-Controlled Unclassified Information Program (CUI)
-LSN Library
-Divider
-Electronic Hearing Docket
+Get Copies of Documents
+Documents for Comment
+Search ADAMS
+NRC's public document library
+Licensing & Applications
+Licensing & Applications
+Covers NRC&#039;s licensing process for facilities, materials, and reactor operators, plus tools for tracking, submitting, and reviewing applications.
+Facility Licensing
+New Reactor Licensing
+Operating Reactor Licensing
+Fuel Cycle Facility Licensing
+Status of Initial License Renewal Applications and Industry Initiatives
+Operator Licensing
+About Operator Licensing
+Licensing Process for Operators
+Examination Schedule and Results
+Electronic Submittals Application
+Materials Licensing
+Licensing
+Materials License Process
+Tools
+National Source Tracking System
+Public Involvement in Licensing
+Web-Based Licensing (WBL) System
+License Verification System (LVS)
+Education & Regulatory Research
+Education & Regulatory Research
+Explore NRC&#039;s regulatory research programs, staff training and apprenticeship pathways, and public education resources on nuclear science.
+Regulatory Research
+Research Activities
+Training & Development
+Nuclear Regulator Apprenticeship Network
+Technical Training
+Education
+Basic References
+Glossary
+The Student Corner
+History 101
+Public Meetings & Hearings
+Public Meetings & Hearings
+Find NRC&#039;s public meeting schedules, adjudicatory hearings, meeting archives, and conferences such as the RIC and RAMP events.
+Meetings
+Public Meeting Schedule
+Commission Meeting Schedule
+Meeting Archives
+Adjudications (Hearings)
+Commission Meeting Webcast Information
+Conferences
+Conferences & Symposia
 About NRC
+About NRC
+Learn about NRC&#039;s leadership, priorities, and news, how to work with or contact the agency, and key legal and privacy resources.
 About NRC
 The Commission
-Radiation Protection
-Alternative Dispute Resolution Programs
 Organization & Functions
-Fire Protection
-Privacy Program
-NRC Mission
-Artificial Intelligence
-Safety Culture
-Civil Rights Program
-Governing Legislation
-How We Regulate
-Contact Us
-Plans, Budget, & Performance
-Emergency Preparedness & Response
-Career Opportunities
-Locations
-Enforcement
-Contracting Opportunities
-History
-International Programs
-Small Businesses
+News Releases
+Top Priorities
+Plans, Budgets, & Performance
 Leadership Model
+International Programs
+NRC Background
+Opportunities
+Get Involved
+Career Opportunities
+Contracting Opportunities
+Contact Us
+For Developers
+Resources
+Privacy Policy
+Site Disclaimer
+Whistleblower Protection
+eBilling
+Facilities & Safety
+Facilities & Safety
+NRC oversees the safety of nuclear reactors, materials, and waste facilities nationwide.
+Reactors, Facilities, Sites
+Facility Finder
+Fuel Cycle Facilities
+Operating Reactors
+Non-Power Facilities
+Decommissioning
+Safety & Security
+Report a Safety or Security Concern
+Cybersecurity
+Radioactive Material Security
+Safety Culture
+Nuclear Security
+Domestic Safeguards Oversight
+Radiation & Waste
+Nuclear Waste Types
+Types of Nuclear Materials
+Materials Transportation
+Storage of Spent Nuclear Fuel
+Protection
+Radiation Protection
+Fire Protection
+Regulations & Legislation
+Regulations & Legislation
+Covers the laws establishing the NRC, its 10 CFR regulations, and the rulemaking process, including petitions, public comment, and Federal Register notices.
+Regulations
+How We Regulate
+Regulations (NRC, 10 CFR)
+Governing Legislation
+Legislation
 State & Tribal Programs
-Grant Opportunities
-Values
-Direction-Setting & Policymaking
-Generic Schedules
+National Materials Program
+Effectiveness, Efficiency, and Timeliness Initiatives that Support Unleashing American Energy
+Rulemaking
+Planned Rulemaking Activities - Rules
+Rulemaking Documents
+The NRC Rulemaking Process
+Guidance
+Regulatory Guides (by Division)
+Documents & Reports
+Documents & Reports
+Access NRC reports, ADAMS documents, Commission communications, data and research tools, plus forms, public submissions, and comment periods.
+Reports
+Inspection Reports for Operating Power Reactors
+Reports Associated with Events
+Fact Sheets & Brochures
+Inspection Manual
+NUREG-Series Publications
+Public Dashboards
+Research Information Letters
+Communications
+Congressional Documents
+Generic Communications
+Data & Tools
+State Communications Portal
+NRC Information Quality Guidelines
+Forms & Submissions
+Forms (NRC)
+Petition for Rulemaking Dockets
+Documents
+Document Collections
+ADAMS Public Documents
+Get Copies of Documents
+Documents for Comment
+Search ADAMS
+NRC's public document library
+Licensing & Applications
+Licensing & Applications
+Covers NRC&#039;s licensing process for facilities, materials, and reactor operators, plus tools for tracking, submitting, and reviewing applications.
+Facility Licensing
+New Reactor Licensing
+Operating Reactor Licensing
+Fuel Cycle Facility Licensing
+Status of Initial License Renewal Applications and Industry Initiatives
+Operator Licensing
+About Operator Licensing
+Licensing Process for Operators
+Examination Schedule and Results
+Electronic Submittals Application
+Materials Licensing
+Licensing
+Materials License Process
+Tools
+National Source Tracking System
+Public Involvement in Licensing
+Web-Based Licensing (WBL) System
+License Verification System (LVS)
+Education & Regulatory Research
+Education & Regulatory Research
+Explore NRC&#039;s regulatory research programs, staff training and apprenticeship pathways, and public education resources on nuclear science.
+Regulatory Research
 Research Activities
+Training & Development
+Nuclear Regulator Apprenticeship Network
+Technical Training
+Education
+Basic References
+Glossary
+The Student Corner
+History 101
+Public Meetings & Hearings
+Public Meetings & Hearings
+Find NRC&#039;s public meeting schedules, adjudicatory hearings, meeting archives, and conferences such as the RIC and RAMP events.
+Meetings
+Public Meeting Schedule
+Commission Meeting Schedule
+Meeting Archives
+Adjudications (Hearings)
+Commission Meeting Webcast Information
+Conferences
+Conferences & Symposia
+About NRC
+About NRC
+Learn about NRC&#039;s leadership, priorities, and news, how to work with or contact the agency, and key legal and privacy resources.
+About NRC
+The Commission
+Organization & Functions
+News Releases
+Top Priorities
+Plans, Budgets, & Performance
+Leadership Model
+International Programs
+NRC Background
+Opportunities
+Get Involved
+Career Opportunities
+Contracting Opportunities
+Contact Us
+For Developers
+Resources
+Privacy Policy
+Site Disclaimer
+Whistleblower Protection
+eBilling
 Breadcrumb
 Home
-Facility Locator
+Facilities & Safety
+Facility Finder
 Operating Nuclear Power Reactors (by Location or Name)
 Christopher M. Crane Clean Energy Center
+Christopher M. Crane Clean Energy Center
+Operating Nuclear Power Reactors (by Location or Name)
 Christopher M. Crane Clean Energy Center
 Location: Middletown, PA (10 miles SE of Harrisburg, PA) in Region I
 Operator: Constellation Energy Generation, LLC
@@ -188,7 +344,7 @@ ADAMS Accession No. Document Date Other Information
 Pre-Submittal Meeting ML25220A290 08/18/2025
 Submittal ML25212A076 07/31/2025
 Acceptance Review ML25247A220 09/04/2025
-RAI Letter RAIs will be issued as needed for this action.
+RAI Letter ML26271A044 09/25/2026 RAIs will be issued as needed for this action.
 RAI Response
 Final Documentation
 Estimated Completion Date as included in acceptance review
@@ -199,7 +355,10 @@ Submittal ML25300A118 10/24/2025
 Acceptance Review ML25337A113 12/02/2025
 Supplement ML26021A039 01/21/2026
 RAI Letter ML26152A160 05/29/2026 RAIs will be issued as needed for this action.
-RAI Response ML26188A153 06/29/2026
+RAI Response ML26188A153
+ML26216A035
+06/29/2026
+07/29/2026
 Final Documentation
 Estimated Completion Date as included in acceptance review
 Request to Reinstate the Emergency Plan to Support Resumption of Power Operations
@@ -210,8 +369,8 @@ ML25293A010
 10/21/2025
 Submittal ML25304A097 10/31/2025
 Acceptance Review ML25345A391 12/09/2025
-RAI Letter RAIs will be issued as needed for this action.
-RAI Response
+RAI Letter ML26267A189 09/18/2026 RAIs will be issued as needed for this action.
+RAI Response ML26275A162 10/02/2026
 Final Documentation
 Estimated Completion Date as included in acceptance review
 During the course of the review of the initial suite of licensing actions necessary to support the return of the CCEC to a power operations licensing basis, the NRC issued a letter to CEG informing the licensee of estimated NRC staff hours and completion dates for the licensing actions outlined above, including time required by the NRC staff to complete its review of the environmental impacts from the proposed licensing actions. The letter is available for public review at ADAMS Accession No. ML25345A027 .
@@ -236,7 +395,7 @@ Submittal: Constellation submitted an Environmental Report ( ML25303A292 ) to su
 Acceptance: In a letter ( ML25345A027 ), the NRC communicated the hours and schedule estimates for the CCEC environmental review. January 7, 2026
 Draft Environmental Assessment and FONSI: The NRC issued a draft EA and draft FONSI ( ML26120A058 ). June 3, 2026
 Public Comment on Draft Environmental Assessment and FONSI: The NRC is providing the opportunity for public comment on the draft EA. 30 days from publication in the Federal Register , ending July 8, 2026
-Final Environmental Assessment and FONSI: The NRC will consider all relevant comments received during the comment period in the development of the final EA and FONSI. The NRC will notice issuance of the final EA and FONSI in the Federal Register. September 2026 (projected)
+Final Environmental Assessment and FONSI: The NRC considered all relevant comments received in the development of the final EA and FONSI. The NRC issued the final EA and FONSI ( ML26231A018 ) on September 18, 2026. September 18, 2026
 Contacts
 Kevin Folk ( Kevin.Folk@nrc.gov )
 Ashley Waldron, ( Ashley.Waldron@nrc.gov )
@@ -251,10 +410,14 @@ January 27, 2026 - Decommissioning Inspection Report 05000289/2025001 and Restar
 January 27, 2026 - Plant Reference Simulator Inspection Report 05000289/2025010
 February 3, 2026 - Restart Inspection Activity Plan for Christopher M. Crane Clean Energy Center
 March 4, 2026 - Security Restart Inspection Report 05000289/2026401
+August 11, 2026 - Decommissioning Inspection Report 05000289/2026001 and Restart Inspection Report 05000289/2026001
 Previous NRC inspection reports from the operational period for TMI-1, covering the year 2000 through the shutdown date of September 26, 2019, have been made available for reference on the Search Inspection Reports For Operating Power Reactors tool and filtering for "Three Mile Island 1 (289)", using the “Site/Plant Selection” option. Note that these inspection reports do not cover the decommissioning activities completed to date at the site.
 To sign up to receive NRC correspondence related to the CCEC decommissioning, potential restart, and inspection activities join the CCEC listserv distribution by filling out the Operating Reactor Correspondence form with your email information.
 Public Meetings
 The NRC will engage in several pre-submittal interactions with the CCEC staff on various topics related to the potential for restart, and will continue to host public meetings related to the potential for the CCEC to resume power operations throughout the project.
+July 31/August 6, 2025, Public Outreach Meeting notice , presentation , and summary .
+February 19, 2026, Public Outreach Meeting notice, presentations, and summary.
+July 28, 2026, Public Outreach Meeting notice, presentations, and summary .
 Continue to check the NRC Public Meeting Page for information on any additional meetings on the CCEC Restart Project and associated actions.
 Additional Activities
 On October 23, 2024 , Constellation provided notice to the NRC of its intent to pursue subsequent license renewal as governed by 10 CFR 54, “Requirements for Renewal of Operating Licenses for Nuclear Power Plants.” According to the notice, Constellation plans to submit an application for a second renewed operating license for the CCEC during the first quarter of 2029. Additional information regarding the NRC’s subsequent license renewal process can be found on the NRC’s public website under the Reactor License Renewal heading.
@@ -266,8 +429,7 @@ On June 27, 2025 , Constellation submitted a license amendment request to revise
 On July 31, 2025 , Constellation requested recission of two previous exemptions that allow Constellation to use the Decommissioning Trust Fund (DTF) for spent fuel management and site restoration activities, and for disbursements to be made from the DTF for those purposes without prior notice to the NRC. Rescinding the exemptions will reinstate the requirements in place when the unit was in operation.
 For additional questions please use the NRC’s newly established email address for topics specifically concerning the potential restart of the CCEC, which is CraneEnergyRestartProject@nrc.gov . Correspondence sent to this address will be routed to the appropriate NRC program office as needed, including the Office of Public Affairs.
 Operating
-Plant Information
-NRC Employee Contacts
+Plant Information NRC Employee Contacts
 Reactor Status Report (Daily)
 Reactor Event Notification
 Safety Performance Summary
@@ -279,8 +441,7 @@ Enforcement Actions
 Sr. Public Affairs Officer:
 Scott Burnell - 301-415-8204
 Sr. Resident Inspector, Resident Inspector, Project Manager
-Key Documents
-Related Information
+Key Documents Related Information
 License Renewal
 Plant Operating License
 Plant Environmental Report
@@ -318,51 +479,32 @@ Site-Specific Decommissioning Cost Estimate (DCE)
 For information on the potential restart of the Christopher M. Crane Clean Energy Cente r, please see the “Potential Restart” dropdown.
 4.0 Estimated Date for Closure
 Calendar year 2079
-Page Last Reviewed/Updated Thursday, July 30, 2026
-Page Last Reviewed/Updated Thursday, July 30, 2026
+Page Last Reviewed/Updated Thursday, October 08, 2026
 Return to top
-Home
-News Releases
-Event Reports
-Adams
-Open Gov
-Digital Government
-The Student Corner
-Photos & Videos
-For Developers
+Nuclear Regulatory Commission
+Contact Us
+301-415-7000
+OPA.resource@nrc.gov
+To report a safety concern, call 301-816-5100
 About Us
-Strategic Plan
+License Fees
 Budget & Performance
 Agency Financial Report
-License Fees
 History of the NRC
 Career Opportunities
 NRC Ethics
 Agency Status
 Contact Us
-Popular Documents
-Info Digest
-Fact Sheets & Brochures
-Forms
-Electronic Submittals Application
-Adjudicatory Submissions
-NRC Reports - NUREG
-NRC Regulations - 10-CFR
-Inspection Reports
-Plain Writing
-Enforcement Actions
-Rulemaking
-Glossary
-Stay Connected
-Footer Bottom
+Strategic Plan
+Resources
 Regulations.gov
 USA.gov
 FOIA
 Whistleblower Protection
-No Fear EEO
+No Fear Act Data
 Inspector General
-Site Map
 Accessibility
 Privacy Policy
 Site Disclaimer
 For Employees
+Data

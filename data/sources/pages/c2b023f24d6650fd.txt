@@ -195,13 +195,13 @@ The DOE described UPRISE as a supply chain catalyst as well as a capacity progra
 For owners and vendors weighing whether to staff up around UPRISE now, Bahran pointed to &ldquo;active, important work streams&rdquo; already underway&mdash;including supply&#8209;chain readiness assessments, safety&#8209;margin analyses, and techno&#8209;economic work on business cases&mdash;that utilities and NRC staff &ldquo;know and recognize.&rdquo; The DOE plans to accelerate those efforts and &ldquo;quickly build&rdquo; a series of matchmaking workshops that bring together utilities and off&#8209;takers that have been directed to pay for their own power needs to protect ratepayers. Updates on those convenings will be a key signal that UPRISE is moving from target to execution, he said.
 &mdash; Sonal Patel is a POWER senior editor ( @sonalcpatel , @POWERmagazine ).
 Tagged in:
-uprates
-UPRISE
 DOE
 nuclear
 NRC
 restarts
 capacity
+uprates
+UPRISE
 Webinars
 July 9, 2025
 Creating Value from Data: Maximizing Plant Performance Through Real-Time Analytics
@@ -220,55 +220,59 @@ REGISTER
 Sponsored by
 technosylva
 Videos
-POWER Global Media
+This video is provided by YouTube (Google). To watch it, please accept marketing cookies. Your IP address and browser information will be shared with Google.
+Manage cookie preferences
+Sonal Patel on Data Center POWER eXchange 2026
 archives + podcasts + webinars + e-letters + video + exclusive content + events + much more!
 For over 142 years, POWER has been the unwavering pillar of the power and energy industry, offering unparalleled insights on the latest trends, best practices, and news through our robust channels: print, digital media, and in-person events.
 Subscribe Now
 Trending
-Data Centers
-Texas 2.5-GW Gas-Plus-Nuclear Project Proceeds to Engineering, Licensing Phase
-Fusion
-Fuse Touts &#8216;Highest’ Neutron Yield by Any Fusion Company
-Commentary
-3 GW Off PJM, Again: What NERC’s 2024 Investigation Already Told Us
-Commentary
-Alarm Bells Are Sounding for the Grid: Answering Them Takes More Than Megawatts
-Data Centers
-More Data Center Operators Commit to Abbott’s Texas Standards as Power Companies Endorse ERCOT Batch Framework
+Energy Storage
+U.S. Exceeds 200 GWh of Installed Energy Storage Capacity
+Renewables
+Solar’s Growth Continues Despite Sometimes Dark Skies
+Power
+Appalachian Power Investing Nearly $25 Billion For Gas and Coal Power Plants
+Geothermal
+DOE’s ARPA-E Announces Up to $30 Million to Advance Geothermal Projects in SUPERHOT Program
 Gas
-LS Power Acquiring 606-MW Texas Gas-Fired Plant From Constellation
-Legal & Regulatory
-Abbott Orders Full Audit of Texas Data Center Interconnection Queue, Threatens to Deny Grid Access
+GE Vernova Advances Hydrogen Capabilities for Aeroderivative Gas Turbines with New Milestones
+Solar
+True Recycling: The Key to Solar Circularity
 Gas
-A Pioneering Approach to Building New Generation Resources
-Top Plant
-In the Thar Desert, Pakistan Proves Its Indigenous Coal Can Be a Reliable Power Resource
+LS Power Buying Nearly 5 GW of Gas-Fired Generation From NRG in $4-Billion Deal
+Instrumentation & Controls
+Trusted Control Is the Foundation for AI in Power Generation
+Gas
+Groups Cancel $1-Billion Gas-Fired Power Plant Project in Wisconsin
 Recommended
+Nuclear
+DOE Offers Constellation Up to $5B Loan for 1.1 GW of Nuclear Uprates at Eight Plants
+Nuclear
+Vistra in Line for $4.2B DOE Loan Package to Uprate Nuclear Plants in Ohio and Pennsylvania
 Nuclear
 Duke Energy’s Robinson Nuclear Plant Gets NRC Approval to Operate Until 2050
 Nuclear
 DOE Finalizes $1.52B Palisades Loan for First-Ever U.S. Nuclear Plant Recommissioning
-Trends
-NRC Accepts COLA for Fermi America’s Behemoth Four-Unit AP1000 Nuclear Plant in Texas
+Nuclear
+Google Deal Backs 890 MW of Constellation Nuclear Uprates at 11 PJM Reactors
 Nuclear
 Nuclear Sprint: DOE and Industry Race to Meet Trump’s Target
-Nuclear
-DOE Awards Civil Nuclear Credits to Diablo Canyon
-Nuclear
-DOE Awards Civil Nuclear Credits to Diablo Canyon
 From the Magazine
-Data Centers
-Is the Power Project Crunch Upending the Owner—EPC Model?
-Gas
-Rayburn Energy Station: A Cooperative’s Answer to Texas-Sized Risk
-Gas
-A Pioneering Approach to Building New Generation Resources
+Renewables
+Solar’s Growth Continues Despite Sometimes Dark Skies
+Renewables
+By Land, By Sea, Wind Operators See Growth Opportunities
+T&D
+The Fastest New Capacity Is the Grid You Already Have
 Read the Full issue
 News & Technology for the Global Energy Industry
 POWER is at the forefront of the global power market, providing in-depth news and insight on the end-to-end electricity system and the ongoing energy transition. We strive to be the “go-to” resource for power professionals, offering a wealth of information on innovative business practices, sound safety measures, useful productivity enhancements, and much more.
+This video is provided by YouTube (Google). To watch it, please accept marketing cookies. Your IP address and browser information will be shared with Google.
+Manage cookie preferences
 Upcoming
 Experience POWER
-Sept. 28—30, 2026
+Sept. 7-10, 2027
 Omni Shoreham Washington, D.C.
 Learn More
 About Power

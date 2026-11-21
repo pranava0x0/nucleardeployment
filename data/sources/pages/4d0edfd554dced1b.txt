@@ -86,29 +86,34 @@ Oklo’s first Aurora powerhouse is targeted for deployment in 2027 at the Idaho
 The company plans to build its second and third plants in southern Ohio, on land owned by the Southern Ohio Diversification Initiative (SODI). Earlier this year, Oklo entered into land agreements with SODI, which built on the companies’ initial agreement from May 2023.
 News Nuclear
 Must View
-Listening, integrating and scaling: How SENS is positioning for growth in critical power
-Olen Scott, Chief Commercial Officer at Stored Energy Systems (SENS), discusses reliability challenges in data centers and why factory-integrated solutions are superior to multi-vendor approaches.
-News Onsite Power #POWERGEN News
-Langley Holdings Power Solutions enables a new era of data center connectivity and growth
-At POWERGEN 2026, Anthony Langley, CEO of Langley Holdings, discussed power demands that are being driven by AI, highlighting the need for onsite solutions.
-Gas News
+The U.S. gas turbine fleet may have a lot left on the table
+With new turbines years away, Turbine Logic’s Chris Perullo previews his POWERGEN 2027 analysis showing the existing fleet could add as much as 600 TWh a year through maintenance and upgrades.
+Combined Cycle Gas Gas Turbines News #POWERGEN News #Turbine Logic
+After decades away, Ansaldo Energia bets on speed and flexibility in the U.S.
+Stefano Gianatti, executive vice president of thermal new units, discusses the Pacifico Energy order, gas turbine delivery pressures and the company’s plans for a long-term U.S. presence.
+Business Gas Turbines News #Ansaldo Energia
 More News
-PJM accepts over 700 generation projects in new &#8216;first-ready, first-served’ queue
-PJM Interconnection hasw announced 715 new generation projects, capable of over 200 gigawatts, qualified for study under a reformed interconnection process.
-5 min read
-Energy Storage Gas News Renewables #PJM
-Federal government to turn a Kentucky uranium plant into an AI data center and gas power complex
-The U.S. Department of Energy is partnering with Brookfield Asset Management to develop a $100 billion AI data center and power plant at the Paducah Gaseous Diffusion Plant in Kentucky, creating thousands of jobs.
-4 min read
-Batteries Energy Storage Gas News
-What is ‘superhot’ geothermal? Deep rock to baseload power, explained
-Co-founder of Quaise Energy, Matt Houde, explains how his company is tackling the challenges of scaling superhot geothermal energy, which promises 24/7 baseload power.
-5 min read
-Geothermal News Renewables
-New gas analyzer technologies simplify emissions monitoring systems
-Versatile sensor designs increase the type of measurement technologies available in a single analyzer, reducing cost and operational complexity, writes contributor Dr. Beth Livingstone.
-10 min read
-Environmental and Emissions Gas News O&M
+The U.S. gas turbine fleet may have a lot left on the table
+With new turbines years away, Turbine Logic’s Chris Perullo previews his POWERGEN 2027 analysis showing the existing fleet could add as much as 600 TWh a year through maintenance and upgrades.
+3 min read
+Combined Cycle Gas Gas Turbines News #POWERGEN News #Turbine Logic
+Virtual
+On Demand
+Beyond Temperature Control: Solving Steam Turbine Bypass Challenges in Modern Power Plants
+As power plants adapt to support changing grid demands, steam turbine bypass systems are being asked to do more than ever before. Addressing high pressure drops, rapid thermal transients, strict noise requirements, fast actuator response, and precise temperature control plays a critical role in protecting plant assets and maintaining availability. Join Emerson experts Rob&hellip;
+Register Now
+First turbine delivery completed at largest natural gas plant under construction in the U.S.
+Homer City Generation completed the delivery of two GE Vernova turbines to the Homer City Energy Campus in September 2026, marking progress toward a 4.5 GW gas plant for data centers.
+3 min read
+Business Gas Gas Turbines News #GE Vernova
+Appalachian Power to invest almost $25B in new gas, coal uprates
+Appalachian Power is investing $17 billion in new natural gas generation and $7.5 billion to upgrade coal plants in West Virginia, creating 2,150 jobs by 2031, as announced by Governor Morrisey.
+2 min read
+Coal Gas News
+TVA retains Mike Skaggs as CEO, promotes Tom Rice to president
+TVA is retaining Mike Skaggs as CEO and promoting Tom Rice to president as the utility restructures leadership amid rising electricity demand and a $13 billion capital investment program.
+3 min read
+News People #IRP #MIKE SKAGGS #NRC #PRESIDENT #SMR #TENNESSEE VALLEY #TOM RICE #TVA
 Factor This Power Engineering
 About
 Advertising

@@ -18,7 +18,7 @@ export type FinanceLane = "Microreactor" | "Grid-scale SMR" | "Large LWR" | "Cro
  * suite derives from the newest race record; this layer was assembled and
  * verified later, and its page and sitemap entry carry this date instead.
  */
-export const financingAsOf = "2026-08-11";
+export const financingAsOf = "2026-11-21";
 
 /** One claim, one source that supports exactly that claim. */
 export type SourcedLine = {
@@ -129,12 +129,12 @@ export const costBenchmarks: CostBenchmark[] = [
   {
     lane: "Large LWR",
     series: "FOAK",
-    figure: "$141–220/MWh",
-    scope: "U.S. new-build nuclear range, unsubsidized.",
-    basis: "Lazard LCOE+ estimate",
-    date: "2025-06",
-    source: "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
-    report: { reportSlug: "lazard-lcoe-june-2025", page: 8 },
+    figure: "$175–255/MWh",
+    scope: "Unsubsidized U.S. nuclear LCOE modeled from publicly available Vogtle 3&4 capital costs, including 0–30% learning between units, in Lazard's July 2026 analysis. An estimate, not an observed electricity tariff.",
+    basis: "Lazard LCOE+ version 19.0 estimate",
+    date: "2026-07",
+    source: "https://www.lazard.com/media/kcfconhf/lazards-lcoeplus_vf.pdf",
+    report: { reportSlug: "lazard-lcoe-july-2026", page: 7 },
   },
   {
     lane: "Cross-class",
@@ -354,11 +354,12 @@ export const overrunRecords: OverrunRecord[] = [
 export const companyFinance: CompanyFinance[] = [
   {
     companySlug: "radiant-industries",
-    model: "Factory product company: sells mass-produced Kaleidos units from a Tennessee factory targeting 50 reactors a year from 2028.",
-    modelSource: "https://www.tn.gov/ecd/news/2025/10/13/radiant-selects-tennessee-to-build-world-s-first-mass-produced-nuclear-generator-factory.html",
+    model: "Factory product company: initial commercial reactors are planned for assembly in El Segundo and delivery from 2028; the Oak Ridge campus provides fueling and high-volume manufacturing.",
+    modelSource: "https://radiantnuclear.com/news/radiant-expands-manufacturing",
     government: [
+      {"text": "Up to $750M binding Janus agreement for 15 Kaleidos units; a milestone contract ceiling, not equity or cash received.", "source": "https://www.radiantnuclear.com/news/radiant-wins-750m-janus-army-contract"},
       { text: "First ANPI delivery agreement with the Defense Innovation Unit and Department of the Air Force: deliver a mass-manufactured unit to a base within 36 months of the August 2025 signing.", source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/" },
-      { text: "The specific base is still being competed against Antares and Westinghouse.", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
+      { text: "Army selected Radiant for Fort Benning under Janus; its separate Air Force and Navy selections are also now named.", source: "https://radiantnuclear.com/news/radiant-expands-manufacturing" },
     ],
     commercial: [
       { text: "Equinix signed a preorder with deposits for 20 Kaleidos units in August 2025, the first commercial microreactor preorder on record.", source: "https://www.accessnewswire.com/newsroom/en/clean-technology/radiant-announces-equinix-preorder-and-deposits-for-20-kaleidos-microreactors-1061067" },
@@ -372,6 +373,7 @@ export const companyFinance: CompanyFinance[] = [
     model: "Established vendor whose October 2025 U.S. government partnership, an ~$80B deployment frame, gives the government a claim on 20% of cash distributions above a $17.5B return threshold.",
     modelSource: "https://natlawreview.com/article/us-government-announces-historic-80-billion-nuclear-partnership-westinghouse",
     government: [
+      {"text": "Army selected Westinghouse Government Services for Janus at Fort Drum; selection does not establish reactor operation.", "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors"},
       { text: "DOE selected eVinci for the first fueled microreactor experiments at the DOME test bed, with about $5M of support.", source: "https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed" },
       { text: "The $17.5B conditional supply-chain commitment is scoped to AP1000 long-lead items, not to eVinci or AP300.", source: "https://info.westinghousenuclear.com/news/westinghouse-announces-department-of-energy-partnership-to-jumpstart-large-scale-nuclear-supply-chain" },
     ],
@@ -387,6 +389,7 @@ export const companyFinance: CompanyFinance[] = [
     model: "Government prime and manufacturer: cost-type defense contracts like the roughly $300M Project Pele prototype.",
     modelSource: "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
     government: [
+      {"text": "Army selected BWXT for the Janus project at Fort Campbell; site authorization and milestone delivery remain.", "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors"},
       { text: "Prime contractor for Project Pele, the DOD Strategic Capabilities Office transportable microreactor being assembled at INL under a cost-type contract worth up to $300M.", source: "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/" },
     ],
     commercial: [
@@ -401,7 +404,7 @@ export const companyFinance: CompanyFinance[] = [
     model: "Developer-owner: builds, owns, and operates PWR-20 units and sells the power. Its 34 executed PPAs in Poland and the UK (680 MW, ~$18.9B in power sales) are the model working outside the U.S.",
     modelSource: "https://www.powermag.com/last-energy-secures-ppas-for-34-smr-nuclear-power-plants-in-poland-and-the-uk/",
     government: [
-      { text: "DOE Reactor Pilot Program: the PWR-5 pilot at Texas A&M-RELLIS has an approved preliminary safety analysis and awaits DOE authorization for fuel and criticality.", source: "https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026" },
+      { text: "DOE approved the PWR-5 documented safety analysis on October 7, 2026; readiness review and startup authorization remain.", source: "https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis" },
     ],
     commercial: [
       { text: "A 200-acre Haskell County, Texas site plans up to 30 units (600 MW) for data-center customers in ERCOT, interconnection request filed, with the company saying offtaker news is still to come.", source: "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/" },
@@ -458,13 +461,13 @@ export const companyFinance: CompanyFinance[] = [
     modelSource: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/",
     government: [
       { text: "First Reactor Pilot Program criticality: Mark-0 at INL, June 2026, run with the U.S. Army.", source: "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors" },
-      { text: "One of three finalists for ANPI base assignments in Colorado and Montana; no award yet.", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
+      { text: "Army selected Antares for Fort Bragg under Janus on August 26, 2026. The separate Air Force program has its own procurement history.", source: "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors" },
       { text: "Delivered an electrically heated prototype for testing at NASA's Marshall Space Flight Center, under a NASA program that uses Space Act Agreements in which companies own the reactors and sell the power.", source: "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/" },
     ],
     commercial: [],
     costClaim: null,
     costClaimSource: null,
-    nextGate: "An ANPI base award against two competitors, then Mark-1 producing power.",
+    nextGate: "Janus site authorization and milestone delivery at Fort Bragg, then a power-producing demonstration.",
   },
   {
     companySlug: "nano-nuclear",
@@ -538,7 +541,7 @@ export const companyFinance: CompanyFinance[] = [
     ],
     costClaim: null,
     costClaimSource: null,
-    nextGate: "Hermes 2 operating, then the first commercial 140 MWe plant order under the Google agreement.",
+    nextGate: "Hermes 2 operating, then delivery of the company-stated 75 MWe commercial reactor fleet in paired configurations.",
   },
   {
     companySlug: "x-energy",
@@ -550,11 +553,11 @@ export const companyFinance: CompanyFinance[] = [
     commercial: [
       { text: "Amazon framework targets bringing more than 5 GW of Xe-100 projects online by 2039.", source: "https://www.ans.org/news/article-6480/amazon-investing-in-smrs-to-deploy-5gw-by-2039/" },
       { text: "Energy Northwest's Cascade facility carries a funded 320 MWe first phase under Amazon's development-and-funding agreement.", source: "https://www.utilitydive.com/news/washington-nuclear-facility-smrs-cascade-amazon-modular/802967/" },
-      { text: "Dow's Long Mott plant in Texas cleared its NRC environmental review with a finding of no significant impact.", source: "https://x-energy.com/news/nrc-issues-environmental-assessment-with-finding-of-no-significant-impact-for-dow-and-x-energys-propsed-advanced-nuclear-project-in-texas/" },
+      { text: "NRC issued the construction permit for Dow's four-reactor Long Mott plant on November 9, 2026; a separate operating license remains necessary.", source: "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99" },
     ],
     costClaim: null,
     costClaimSource: null,
-    nextGate: "The Long Mott construction permit, with NRC's safety review targeted for November 2026.",
+    nextGate: "Long Mott construction execution, fuel supply, and a separate operating license; final investment decisions remain project-specific.",
   },
   {
     companySlug: "holtec",
@@ -577,6 +580,7 @@ export const companyFinance: CompanyFinance[] = [
     model: "Reactor vendor to utility self-builders: the utility owns and builds while GVH supplies the BWRX-300 design inside the integrated project team.",
     modelSource: "https://www.bechtel.com/press-releases/tva-bechtel-sargent-lundy-and-ge-hitachi-plan-initial-construction-and-design-for-potential-clinch-river-smr/",
     government: [
+      {"text": "NRC issued the Clinch River Unit 1 construction permit on September 28, 2026; operating licensing is separate.", "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm"},
       { text: "DOE's $400M Tier 1 award flows to TVA to accelerate the Clinch River BWRX-300.", source: "https://www.ans.org/news/2025-12-03/article-7593/doe-selects-tva-and-holtec-for-smr-awards/" },
       { text: "The U.S.-Japan framework earmarks up to $40B for BWRX-300 builds at unidentified Tennessee and Alabama sites.", source: "https://www.ans.org/news/2026-03-25/article-7878/new-us-bwrx300-projects-get-japanese-investment/" },
     ],
@@ -586,7 +590,7 @@ export const companyFinance: CompanyFinance[] = [
     ],
     costClaim: "Darlington: C$7.7B first unit including shared systems; C$20.9B for four units (2024 dollars)",
     costClaimSource: "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/",
-    nextGate: "The Clinch River permit decision after the August 2026 mandatory hearing; Darlington Unit 1 completion sets the design's real cost.",
+    nextGate: "Clinch River construction and separate operating licensing after the September 2026 construction permit; Darlington completion tests the cost estimates.",
   },
   {
     companySlug: "nuscale",
@@ -609,6 +613,7 @@ export const companyFinance: CompanyFinance[] = [
     model: "Reactor vendor pairing DOE pilot agreements (Project TETRA reactor, Project TEFLA fuel salt) with the commercial IMSR400 product.",
     modelSource: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under",
     government: [
+      {"text": "Selected as Ameresco's nuclear technology supplier at Aberdeen Proving Ground, reported November 10, 2026.", "source": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-reports-third-quarter-2026-results"},
       { text: "Two DOE Other Transaction Agreements executed under Executive Order 14301 pathways: Project TETRA, the pilot reactor, and Project TEFLA, the fuel salt facility.", source: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under" },
     ],
     commercial: [
@@ -925,6 +930,7 @@ export const sitingFacts: SitingFact[] = [
 
 /** Captured reports backing the page's figures, listed for the reader. */
 export const capturedReports: { slug: string; title: string; url: string }[] = [
+  { slug: "lazard-lcoe-july-2026", title: "Lazard, Levelized Cost of Energy+ (July 2026)", url: "https://www.lazard.com/media/kcfconhf/lazards-lcoeplus_vf.pdf" },
   { slug: "doe-liftoff-advanced-nuclear-2024", title: "DOE Pathways to Commercial Liftoff: Advanced Nuclear (Sept 2024)", url: "https://gain.inl.gov/content/uploads/4/2024/11/DOE-Advanced-Nuclear-Liftoff-Report.pdf" },
   { slug: "inl-microreactor-bottom-up-2024", title: "INL, Technoeconomic Evaluation of Microreactor Using Detailed Bottom-up Estimate", url: "https://gain.inl.gov/content/uploads/4/2025/03/2024-Document-INL-RPT-24-80433.pdf" },
   { slug: "inl-adv-reactor-cost-lit-review-2023", title: "INL, Literature Review of Advanced Reactor Cost Estimates", url: "https://gain.inl.gov/content/uploads/4/2024/11/INL-RPT-23-72972-Literature-Review-of-Adv-Reactor-Cost-Estimates.pdf" },

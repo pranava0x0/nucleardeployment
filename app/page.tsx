@@ -3,7 +3,7 @@ import Link from "next/link";
 import { PageShell } from "./components/SiteHeader";
 import { RaceBoard } from "./components/RaceBoard";
 import { JsonLd } from "./components/JsonLd";
-import { capital, dataAsOf, federalActions, headlineTotals, projects, raceEntrants, stageCounts, timeline } from "./data";
+import { capital, dataAsOf, federalActions, headlineTotals, projects, raceEntrants, reviewedAsOf, stageCounts, timeline } from "./data";
 import { absoluteFileUrl, absoluteUrl, authorUrl, canonicalUrl, repoUrl, sitePath } from "./site";
 
 export const metadata: Metadata = {
@@ -63,20 +63,30 @@ export default function Home() {
     <JsonLd data={structured} />
     <main id="main">
       <section className="masthead grid-bg">
-        <h1>{raceEntrants.length} companies are racing to put a gigawatt of new nuclear on the American grid.</h1>
-        <p className="dek">None of them has generated a commercial megawatt yet. This is where each one stands, measured in evidence rather than announcements.</p>
-        <p className="hero-meta"><span className="live-dot" /> Data as of {dataAsOf} · {raceEntrants.length} race entrants · {projects.length} sourced projects</p>
+        <div className="brief-heading">
+          <h1>The state of<br />American nuclear.</h1>
+          <p className="dek">{raceEntrants.length} companies racing to put a gigawatt on the U.S. grid. Track their permits, projects, capital, and customers.</p>
+          <p className="hero-meta">Tracked U.S. sample · {projects.length} sourced projects · Reviewed {reviewedAsOf}</p>
+        </div>
+        <aside className="brief-note" aria-label="Current deployment brief">
+          <span className="brief-date">Source update · {dataAsOf}</span>
+          <p><b>{mwe(totals.operationalMWe)} MWe</b> commercial generation across the race entrants.</p>
+          <p>Long Mott and Clinch River now hold construction permits. Their next gates are physical delivery and separate operating licenses.</p>
+          <Link href="/updates">Read the latest developments</Link>
+        </aside>
       </section>
 
       <section className="stat-strip" aria-label="Headline megawatt totals">
-        <p className="strip-zero"><b>{mwe(totals.operationalMWe)} MWe operational across all {raceEntrants.length} entrants.</b> Each figure below is a separate frame. They are never added together.</p>
+        <p className="strip-zero"><b>{mwe(totals.operationalMWe)} MWe operational across all {raceEntrants.length} entrants.</b> Capacity frames overlap. Read each on its own.</p>
         <div className="strip-tiles">
           <div><b>{mwe(totals.operationalMWe)}</b><span>MWe operational</span><small>Grid-connected commercial power</small></div>
           <div><b>{mwe(totals.buildingMWe)}</b><span>MWe being built</span><small>NRC-permitted or DOE-authorized, work documented</small></div>
-          <div><b>{mwe(totals.executedMWe)}</b><span>MWe on executed actions</span><small>Everything documented, applications included</small></div>
+          <div><b>{mwe(totals.executedMWe)}</b><span>MWe on executed actions</span><small>Includes permits, applications, and funded contracts</small></div>
           <div><b>{mwe(totals.announcedMWe)}</b><span>MWe announced, non-binding</span><small>MOU, LOI, or target. No binding documents</small></div>
         </div>
       </section>
+
+      <RaceBoard />
 
       <section className="section catchup-strip" aria-label="Catch up">
         <div className="section-head"><h2>Catch up</h2></div>
@@ -128,13 +138,10 @@ export default function Home() {
         </ol>
       </section>
 
-      <RaceBoard />
-
       <section className="section scale-note">
         <p className="masthead-context">
           For scale: the most recent new American nuclear capacity was {vogtle?.capacity} at Vogtle Units 3 and 4, the
-          first two U.S. AP1000 units, finished in {vogtle?.latestDate}. Every company on the board is trying to do it
-          smaller and faster. <a href={vogtle?.source} target="_blank" rel="noreferrer">{vogtle?.sourceLabel} ↗</a>
+          first two U.S. AP1000 units, finished in {vogtle?.latestDate}. The board tracks smaller new-design reactors; Vogtle is the completed large-reactor reference. <a href={vogtle?.source} target="_blank" rel="noreferrer">{vogtle?.sourceLabel} ↗</a>
         </p>
       </section>
 

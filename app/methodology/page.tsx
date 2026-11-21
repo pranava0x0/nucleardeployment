@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { PageShell } from "../components/SiteHeader";
-import { capacityBands, capacityClaims, dataAsOf, raceEntrants, raceTotals, stages, technologies } from "../data";
+import { capacityBands, capacityClaims, dataAsOf, reviewedAsOf, raceEntrants, raceTotals, stages, technologies } from "../data";
 import { canonicalUrl } from "../site";
 
 export const metadata: Metadata = {
   title: "Methodology",
-  description: "How the tracker decides what counts: the roster rule, the six evidence bands, the source hierarchy, deployment stages, and the current limits of the data.",
+  description: "How the tracker decides what counts: the roster rule, the seven evidence bands, the source hierarchy, deployment stages, and the current limits of the data.",
   alternates: { canonical: canonicalUrl("/methodology") },
 };
 
@@ -28,7 +28,7 @@ export default function MethodologyPage() {
   const buildingRatio = Math.round(frameworkTotal / buildingTotal);
   // Derived, so the sentence cannot drift from the dataset it describes.
   const biggestFramework = [...capacityClaims].filter((claim) => claim.band === "framework").sort((a, b) => b.mwe - a.mwe)[0];
-  return <PageShell><main id="main" className="inner-page methodology-page"><header className="page-lead grid-bg"><h1>Methodology</h1><p>Version 0.2 definitions, inclusion rules, source hierarchy, deployment stages, and technology taxonomy.</p></header>
+  return <PageShell><main id="main" className="inner-page methodology-page"><header className="page-lead grid-bg"><h1>Methodology</h1><p>Definitions, inclusion rules, source hierarchy, deployment stages, and technology taxonomy. Reviewed {reviewedAsOf}.</p></header>
     <section className="section method-grid"><article><h2>Inclusion rule</h2><p>A project needs a named developer, identifiable site or program, current milestone, next gate, and direct source. Early projects may enter with government or company reporting, but the label must say so.</p></article><article><h2>Source hierarchy</h2><ol><li>Regulator decisions and dockets</li><li>Statutes, executive orders, agency awards</li><li>Executed company or utility disclosures</li><li>High-quality third-party reporting</li></ol></article><article><h2>Schedule confidence</h2><p>High means completed evidence or a regulator-controlled step. Medium means an announced target with active work. Low means dependencies, finance, licensing, or site remain unresolved.</p></article></section>
     <section className="section race-method" id="race">
       <div className="section-head"><h2>The race to a gigawatt</h2><p>How the board decides who is ahead, and what each bar is allowed to claim.</p></div>
@@ -49,7 +49,7 @@ export default function MethodologyPage() {
       </article>
 
       <article className="method-note">
-        <h3>The six bands</h3>
+        <h3>The seven bands</h3>
         <p>Each megawatt sits in exactly one band, the strongest state its evidence supports, so the bands never double-count. Bands are never added across frames, and announced megawatts never affect the ranking.</p>
         <div className="band-table">
           {capacityBands.map((band) => {

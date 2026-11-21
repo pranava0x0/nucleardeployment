@@ -97,71 +97,30 @@ Partner Content
 AI News
 PREMIUM
 Gadgets
-August 17, 2026
-Gen Z-founded Terra Industries extends seed round to $52M, opens London office
-by Abhinaya Prabhu
-August 17, 2026
-Ex-Fluidstack growth lead lands $1.2M pre-seed to bring AI creators to B2B marketing
+November 20, 2026
+Why fintech startups raising in 2026 build fiat on/off-ramps into their products
+by Editorial team
+November 20, 2026
+The tax challenges of building a startup from abroad as a US citizen
+by Editorial team
+November 20, 2026
+Anthropic lists at $1.8T: Did Europe’s VCs avoid a bubble or miss a major opportunity?
 by Sofia Chesnokova
-August 17, 2026
-Stripe reportedly buys OpenRouter for $7B, 5x its May valuation
+November 20, 2026
+These VCs won the most from Anthropic’s $81.3B IPO
 by Abhinaya Prabhu
-August 17, 2026
-Higgsfield raises $400M from Goldman Sachs, DST Global at $5.4B valuation
-by Abhinaya Prabhu
-August 17, 2026
-Sarsia led Birdsview’s €3.7M round to give engineers X-ray vision through concrete
+November 20, 2026
+TFN at Slush 2026: Sovereign space, AI roll-ups and the new moat for European startups
 by Sofia Chesnokova
 NEWSLETTER
 Email address:
 By clicking submit, you agree to share your email address with TFN to receive marketing, updates, and other emails from the site owner. Use the unsubscribe link in the emails to opt out at any time.
 Leave this field empty if you&#039;re human:
 The Latest
-Gen Z-founded Terra Industries extends seed round to $52M, opens London office
-Africa Tech News
-Defence Tech
-Funding News
-Latest News
-Top Stories
-Unicorns
-by Abhinaya Prabhu
-August 17, 2026
-3 minute read
-Ex-Fluidstack growth lead lands $1.2M pre-seed to bring AI creators to B2B marketing
-AI News
-Europe Tech News
-Female Funding
-Funding News
-Latest News
-Popular now
-Startups News
-Top News
-Top Stories
-US Tech News
-by Sofia Chesnokova
-August 17, 2026
-3 minute read
-Stripe reportedly buys OpenRouter for $7B, 5x its May valuation
-Acquisition News
-Fintech News
-Latest News
-Startups News
-Top Stories
-US Tech News
-by Abhinaya Prabhu
-August 17, 2026
-3 minute read
-Higgsfield raises $400M from Goldman Sachs, DST Global at $5.4B valuation
-AI News
-Funding News
-Latest News
-Top Funding Rounds
-Top Stories
-Unicorns
-US Tech News
-by Abhinaya Prabhu
-August 17, 2026
-2 minute read
+Why fintech startups raising in 2026 build fiat on/off-ramps into their products
+The tax challenges of building a startup from abroad as a US citizen
+Anthropic lists at $1.8T: Did Europe’s VCs avoid a bubble or miss a major opportunity?
+These VCs won the most from Anthropic’s $81.3B IPO
 Yoni Assia
 X
 WWDC
@@ -230,18 +189,48 @@ Share
 Share
 0
 EDITOR'S PICK
-a16z leads $40M Vals AI round at $400M valuation to test AI on real-world tasks
-Databricks jumps to $190B valuation with $5B round, six months after hitting $134B
-Exclusive: OpenAI and xAI insiders back Lemma’s $2.3M pre-seed to catch AI agents failing in production
+DeepMind spinout Isomorphic Labs lands $5B Series C to take AI-designed medicines into the clinic
+Supercell, Wolt, and PlanGrid founders back Stoa’s $3.9M pre-seed to bring AI to construction sites
+OpenAI reportedly raises $15B at $1.25T valuation as Anthropic IPO approaches
 TFN Prime
-7 European defence tech startups to watch, according to top VCs
-Venture capital can help decarbonise infrastructure, but it cannot fund it alone
-Entrepreneurship ‘favours the privileged’ – why the rise of the million-dollar solo founder isn’t as fair as it looks
+Anthropic lists at $1.8T: Did Europe’s VCs avoid a bubble or miss a major opportunity?
+15 Nordic startups to watch, according to top VCs
+One deal is hiding the real story of Europe’s $2.7B robotics boom
 Tech Talks With TFN
 Related Posts
 Read More
-2 minute read
-Female Funding
+AI News
+Funding News
+Latest News
+Top News
+Top Stories
+UK Tech News
+Canva of Audio: Y Combinator &#038; Steven Bartlett back $3M round of this GenAI podcast disruptor
+Wondercraft, a company pioneering AI-powered audio content, has secured $3 million in seed funding to expand its &#8220;Canva&hellip;
+by Vivek Chhetri
+Read More
+AI News
+Funding News
+Latest News
+Popular now
+Startups News
+Top Funding Rounds
+Top News
+Top Stories
+Unicorns
+US Tech News
+Ex-OpenAI execs raise $200M at $1B valuation for AI materials science startup backed by a16z
+Andreessen Horowitz (a16z) is set to lead a $200 million financing round for Periodic Labs, a newly formed&hellip;
+by Abhinaya Prabhu
+Read More
+Europe Tech News
+Latest News
+Top Stories
+In Spotlight: Whispp, Dutch AI startup dedicated to giving millions their voices back
+If you’re lucky, your voice is probably something you take for granted. But imagine the difficulties you would&hellip;
+by Jason Matthews
+Read More
+Deeptech News
 Funding News
 Latest News
 Popular now
@@ -250,47 +239,10 @@ Top Funding Rounds
 Top News
 Top Stories
 UK Tech News
-US Tech News
-VC News
-&#8216;CAA for startups’ Entrepreneurs First lands $200M, $16B portfolio at unicorn status
-San Francisco-based Entrepreneurs First has raised $200 million in fresh capital from a group of technology founders, investors,&hellip;
-by Vignesh R
-March 13, 2026
-Read More
-2 minute read
-Acquisition News
-Latest News
-Startups News
-Top Stories
-UK Tech News
-Flusso, developer of world’s smallest air velocity sensor acquired for £28M
-A Cambridge-based flow sensing company Flusso has just been jointly acquired for £28 million by a company and&hellip;
-by Editorial Team
-August 18, 2022
-Read More
-2 minute read
-Europe Tech News
-Funding News
-Latest News
-Startups News
-Top Stories
-Nuventura’s eco-friendly switchgear tech lands €25M investment for a sustainable future
-Nuventura, a Berlin-based provider of SF6-free, medium-voltage (MV) gas-insulated switchgear (GIS) technologies, has snapped €25 million in Series&hellip;
-by Abhinaya Prabhu
-September 5, 2023
-Read More
-3 minute read
-Europe Tech News
-Funding News
-Latest News
-Startups News
-Sustainable News
-Top Stories
-Estonian startup Bisly bags €6.2M for next-gen smart building solutions
-Bisly, an Estonian startup providing next-gen smart building automation solutions has closed a Series A funding round totaling&hellip;
-by Abhinaya Prabhu
-June 19, 2024
-2K
+DCVC and Kembara lead $160M round for Quantum Motion to build quantum computers on everyday silicon chips
+Quantum Motion, a UK quantum computing company founded by researchers from Oxford University and University College London, has&hellip;
+by Sofia Chesnokova
+3K
 15K
 1K
 0

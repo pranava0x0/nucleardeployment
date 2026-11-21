@@ -179,16 +179,73 @@ As POWER has reported , the project is backed by a six-year alliance among OPG, 
 The Tennessee Valley Authority (TVA) in January 2025 formed a similar alliance with Bechtel, Sargent & Lundy, and GE Hitachi to spearhead the initial planning and design phases for a potential BWRX-300 SMR at its Clinch River Nuclear site in Oak Ridge, Tennessee. TVA in April submitted the first portion of its construction permit application to the U.S. Nuclear Regulatory Commission, including an environmental report and general administrative details. The utility plans to file a Preliminary Safety Analysis Report by June, and the NRC has initiated an acceptance review of the submittal.
 &mdash; Sonal Patel is a POWER senior editor ( @sonalcpatel , @POWERmagazine ).
 Tagged in:
-smr
-grid-scale SMR
-OPG
-Ontario energy
 GE Hitachi
 nuclear power
 darlington
 BWRX-300
 Small Modular Reactor
 Canadian Nuclear Safety Commission
+smr
+grid-scale SMR
+OPG
+Ontario energy
+Sept. 28—30, 2026
+Washington, D.C.
+Register Now
+Explore this topic and more &mdash; live at Experience POWER. The power industry's most urgent decisions are being made right now. Be in the room where they happen.
+View Conference Program
+September 30, 2026 – 11:00 am-11:45 am
+Inside the Issues: How Industry Associations Are Helping Members Navigate a Changing Energy Landscape
+Few moments have placed more pressure on the U.S. power sector than the one we’re in now—surging load growth, an evolving generation mix, mounting reliability concerns, rising costs, and a regulatory environment in flux. But those pressures look very different depending on where you sit on the grid.
+In this session, executives from several of the industry’s most influential associations share what’s at the top of their members’ agendas, the challenges keeping their members up at night, and the work their organizations are doing to help meet those challenges head-on.
+Attendees will leave with a clearer picture of how different segments of the power sector are approaching today’s defining issues, and where their priorities align, diverge, and intersect.
+Speaking–
+Mark W. Menezes (United States Energy Association (USEA), President & Chief Executive Officer)
+Tom Falcone (Large Public Power Council (LPPC), President)
+Jim Matheson (National Rural Electric Cooperative Association (NRECA), CEO)
+Rich Powell (Corporate Energy Buyers Association (CEBA), CEO)
+September 30, 2026 – 9:00 am-9:45 am
+Fitness for Service 2.0
+Few moments have placed more pressure on the U.S. power sector than the one we’re in now—surging load growth, an evolving generation mix, mounting reliability concerns, rising costs, and a regulatory environment in flux. But those pressures look very different depending on where you sit on the grid.
+In this session, executives from several of the industry’s most influential associations share what’s at the top of their members’ agendas, the challenges keeping their members up at night, and the work their organizations are doing to help meet those challenges head-on.
+Attendees will leave with a clearer picture of how different segments of the power sector are approaching today’s defining issues, and where their priorities align, diverge, and intersect.
+Speaking–
+John Siefert, Ph.D., (EPRI Electric Power Research Institute, Area Manager, Generation Materials)
+September 30, 2026 – 8:00 am-8:45 am
+Industry Outlook: Power Company Executives on Challenges, Trends, and the Path Forward
+This executive panel brings together leaders from across the power sector for an in-depth discussion of the issues shaping the industry today. The discussion may explore current trends in generation, transmission, and distribution, along with the regulatory environment, supply chain pressures, demand growth, and workforce considerations influencing strategic decisions. The session will offer attendees a direct view into how utilities are adapting their planning, operations, and investment priorities to meet a rapidly evolving landscape.
+Speaking–
+Darrell Proctor (POWER magazine, Senior Editor POWER magazine)
+Ed Gray (PSE&G, Vice President - Asset Management and Planning)
+Amber Perry (Pepco, Vice President & Region President)
+Brandon Martin (Dominion Energy, Inc., Director of Generation Development - Energy Storage, Reliability and Resiliency)
+September 29, 2026 – 4:00 pm-4:45 pm
+Women in Power: Leading Change from the Inside
+Women are driving innovation and transformation across the power sector. This panel highlights how diverse leadership strengthens organizational resilience, fosters inclusive practices, and fuels progress in a rapidly evolving industry. Hear from trailblazers as they share strategies for recruiting women into energy roles, advancing careers, and breaking barriers. Whether you&#039;re new to the field or a seasoned professional, this session offers insights to empower your journey and build a more inclusive energy future.
+Speaking–
+Wayshalee Patel B.S.ChE, MBA, P.E. (Sargent & Lundy, VP, Environmental Technologies, Licensing and Permitting)
+Lou Martinez Sancho Ph.D., MBB (Westinghouse Electric Company LLC, Chief Technology Officer)
+Roberta Zwier (LS Power, Vice President, Site Development & Permitting)
+Anne Moon (Sargent & Lundy, Vice President Grid)
+Ruth Prideaux (Dominion Energy, Inc., Director Renewable Energy)
+Grace Vanderhei (Constellation, Nuclear Engineer)
+September 29, 2026 – 4:00 pm-4:45 pm
+State Policy + Regulatory Opportunities for Speed to Power
+Across the country, state policymakers and regulators are taking proactive steps to meet the challenge of load growth. What are the policies, regulatory strategies, and state programs that have worked for responding to growth while keeping costs low for ratepayers?
+Speaking–
+Nick Montoni Ph.D. (NC Clean Energy Technology Center, Senior Program Director - Policy and Markets)
+Brian Watts (Pew Charitable Trusts, Officer, Data and Research)
+Caitlin Flanagan (NC Clean Energy Technology Center, Policy Analyst)
+Arjun Krishnaswami (Federation of American Scientists, Sr. Advisor, Clean Energy)
+September 29, 2026 – 2:30 pm-3:15 pm
+Building the Bench: Strategies for Powering the Next-Generation Workforce
+This session will explore a framework for achieving development and operational excellence in the workforce of the future.
+Speaking–
+Laura Heller (Council for Adult and Experiential Learning (CAEL), Vice President of Industry Coalitions)
+Michelle Ray (Tennessee Valley Authority, Vice President of Generation Technical Support)
+Jamie Choate (Tennessee Valley Authority, Director, Workforce Strategy & Enablement (WS&E))
+Naeem Turner-Bandele, PhD, MBA (Latimer Enterprises LLC, Founder and CEO)
+DeAnna C. Myers, MSLOC (Sargent & Lundy, Vice President, Director of Learning & Organizational Change)
 Webinars
 July 9, 2025
 Creating Value from Data: Maximizing Plant Performance Through Real-Time Analytics
@@ -207,34 +264,34 @@ REGISTER
 Sponsored by
 technosylva
 Videos
-POWER Global Media
+This video is provided by YouTube (Google). To watch it, please accept marketing cookies. Your IP address and browser information will be shared with Google.
+Manage cookie preferences
+Sonal Patel on Data Center POWER eXchange 2026
 archives + podcasts + webinars + e-letters + video + exclusive content + events + much more!
 For over 142 years, POWER has been the unwavering pillar of the power and energy industry, offering unparalleled insights on the latest trends, best practices, and news through our robust channels: print, digital media, and in-person events.
 Subscribe Now
 Trending
-Data Centers
-Texas Audit Could Delay 49.8 GW of Data Center Load, Cost Projects Up to $15 Billion, BNEF Warns
+Energy Storage
+U.S. Exceeds 200 GWh of Installed Energy Storage Capacity
+Renewables
+Solar’s Growth Continues Despite Sometimes Dark Skies
+Power
+Appalachian Power Investing Nearly $25 Billion For Gas and Coal Power Plants
+Geothermal
+DOE’s ARPA-E Announces Up to $30 Million to Advance Geothermal Projects in SUPERHOT Program
 Gas
-LS Power Acquiring 606-MW Texas Gas-Fired Plant From Constellation
-Trends
-Oklo’s Groves Becomes Fifth DOE Pilot Reactor to Reach Criticality, First on Private Land
-Legal & Regulatory
-Abbott Orders Full Audit of Texas Data Center Interconnection Queue, Threatens to Deny Grid Access
+GE Vernova Advances Hydrogen Capabilities for Aeroderivative Gas Turbines with New Milestones
+Solar
+True Recycling: The Key to Solar Circularity
 Gas
-A Pioneering Approach to Building New Generation Resources
-Top Plant
-In the Thar Desert, Pakistan Proves Its Indigenous Coal Can Be a Reliable Power Resource
-O&M
-From 18 Forced Outages to Zero Missed Starts: How CPS Energy’s Arthur von Rosenberg Plant Rebuilt Its Reliability
+LS Power Buying Nearly 5 GW of Gas-Fired Generation From NRG in $4-Billion Deal
+Instrumentation & Controls
+Trusted Control Is the Foundation for AI in Power Generation
 Gas
-Innovation Powers a Country’s Energy Transition
-Energy Security
-Speed as Strategy: Rabigh Reinforcement Delivers 1,179 MW on an Accelerated Timeline
+Groups Cancel $1-Billion Gas-Fired Power Plant Project in Wisconsin
 Recommended
 Nuclear
 Darlington Nuclear Plant Will Get a BWRX-300 SMR as GE Hitachi Bags Lucrative OPG Selection
-Nuclear
-Canada Approves First Grid-Scale SMR Construction at Darlington
 Nuclear
 SaskPower Picks SMR Technology for First Two Potential Nuclear Units
 Nuclear
@@ -242,20 +299,24 @@ Canada’s OPG and Czech Republic’s ČEZ Partner to Advance SMR and Other Nucl
 Nuclear
 Canada Bank Group Pledges Millions Toward Nuclear Power Project
 Nuclear
-Darlington Nuclear Plant Will Get a BWRX-300 SMR as GE Hitachi Bags Lucrative OPG Selection
+Canada Approves First Grid-Scale SMR Construction at Darlington
+Nuclear
+SaskPower Picks SMR Technology for First Two Potential Nuclear Units
 From the Magazine
-Data Centers
-Is the Power Project Crunch Upending the Owner—EPC Model?
-Gas
-Rayburn Energy Station: A Cooperative’s Answer to Texas-Sized Risk
-Gas
-A Pioneering Approach to Building New Generation Resources
+Renewables
+Solar’s Growth Continues Despite Sometimes Dark Skies
+Renewables
+By Land, By Sea, Wind Operators See Growth Opportunities
+T&D
+The Fastest New Capacity Is the Grid You Already Have
 Read the Full issue
 News & Technology for the Global Energy Industry
 POWER is at the forefront of the global power market, providing in-depth news and insight on the end-to-end electricity system and the ongoing energy transition. We strive to be the “go-to” resource for power professionals, offering a wealth of information on innovative business practices, sound safety measures, useful productivity enhancements, and much more.
+This video is provided by YouTube (Google). To watch it, please accept marketing cookies. Your IP address and browser information will be shared with Google.
+Manage cookie preferences
 Upcoming
 Experience POWER
-Sept. 28—30, 2026
+Sept. 7-10, 2027
 Omni Shoreham Washington, D.C.
 Learn More
 About Power

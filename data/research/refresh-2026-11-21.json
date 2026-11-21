@@ -1,0 +1,518 @@
+{
+  "reviewed_at": "2026-11-21",
+  "baseline": {
+    "entrants": 18,
+    "projects": 28,
+    "source_records": 463
+  },
+  "current": {
+    "entrants": 18,
+    "projects": 28,
+    "source_records": 490,
+    "unique_citations": 227,
+    "totals": {
+      "operationalMWe": 0,
+      "buildingMWe": 470,
+      "executedMWe": 2106,
+      "announcedMWe": 40045
+    }
+  },
+  "coverage": {
+    "stored": 167,
+    "blocked": 44,
+    "not-text": 11,
+    "unreachable": 4,
+    "error": 1
+  },
+  "source_checks": [
+    {
+      "url": "https://www.kairospower.com/iterative-development",
+      "published_at": null,
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "entrant.rosterSource",
+          "entity": "kairos-power",
+          "label": "Hermes 2 holds the first NRC construction permit for a power-producing Gen IV reactor and is under construction."
+        },
+        {
+          "kind": "claim.construction",
+          "entity": "kairos-power",
+          "label": "Hermes 2, Oak Ridge, Tennessee · company-stated 50 MWe plant output; NRC construction permits issued and groundbreaking documented. Replaces the earlier 20 MWe account."
+        },
+        {
+          "kind": "claim.framework",
+          "entity": "kairos-power",
+          "label": "Google · remaining 450 MWe of the up-to-500 MWe master development agreement after the separately counted 50 MWe Hermes 2 plant"
+        },
+        {
+          "kind": "target",
+          "entity": "kairos-power",
+          "label": "First six commercial 75 MWe reactors (450 MWe) delivered by 2035 under the Google agreement"
+        },
+        {
+          "kind": "project",
+          "entity": "kairos-power",
+          "label": "Hermes 2"
+        },
+        {
+          "kind": "company",
+          "entity": "kairos-power",
+          "label": "Kairos Power"
+        }
+      ]
+    },
+    {
+      "url": "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
+      "published_at": "2026-11-09",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "entrant.rosterSource",
+          "entity": "x-energy",
+          "label": "NRC issued the Long Mott construction permit for four Xe-100 reactors on November 9, 2026."
+        },
+        {
+          "kind": "claim.permitted",
+          "entity": "x-energy",
+          "label": "Long Mott, Seadrift, Texas · four Xe-100 modules, 320 MWe design capacity; NRC construction permit issued November 9, 2026. Separate operating license required."
+        },
+        {
+          "kind": "proof.Permit / authorization",
+          "entity": "x-energy",
+          "label": "NRC issued the Long Mott construction permit; a separate operating license is required before fuel loading or operation"
+        },
+        {
+          "kind": "project",
+          "entity": "x-energy",
+          "label": "Long Mott · Xe-100"
+        },
+        {
+          "kind": "company",
+          "entity": "x-energy",
+          "label": "X-energy"
+        },
+        {
+          "kind": "finance.commercial",
+          "entity": "x-energy",
+          "label": "NRC issued the construction permit for Dow's four-reactor Long Mott plant on November 9, 2026; a separate operating license remains necessary."
+        },
+        {
+          "kind": "bd.position.Executed",
+          "entity": "dow",
+          "label": "NRC issued the construction permit for four Xe-100 reactors at Dow's Seadrift site on November 9, 2026; operating licensing remains separate."
+        },
+        {
+          "kind": "bd.evidence",
+          "entity": "bd",
+          "label": "NRC issued a construction permit for four Xe-100 reactors at Dow's Seadrift site on November 9, 2026; the project will supply industrial steam and electricity."
+        }
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
+      "published_at": "2026-10-05",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "entrant.rosterSource",
+          "entity": "gev-hitachi",
+          "label": "NRC issued construction permit CPAR-2 for TVA's Clinch River Unit 1 BWRX-300 on September 28, 2026."
+        },
+        {
+          "kind": "claim.permitted",
+          "entity": "gev-hitachi",
+          "label": "Clinch River Unit 1, Tennessee · 300 MWe BWRX-300; construction permit CPAR-2 issued September 28, 2026. Physical nuclear work not yet documented here."
+        },
+        {
+          "kind": "proof.Permit / authorization",
+          "entity": "gev-hitachi",
+          "label": "NRC issued Clinch River Unit 1 construction permit CPAR-2"
+        },
+        {
+          "kind": "project",
+          "entity": "tva",
+          "label": "Clinch River · BWRX-300"
+        },
+        {
+          "kind": "company",
+          "entity": "gev-hitachi",
+          "label": "GE Vernova Hitachi"
+        },
+        {
+          "kind": "finance.government",
+          "entity": "gev-hitachi",
+          "label": "NRC issued the Clinch River Unit 1 construction permit on September 28, 2026; operating licensing is separate."
+        },
+        {
+          "kind": "bd.position.Executed",
+          "entity": "tva",
+          "label": "NRC issued construction permit CPAR-2 for Clinch River Unit 1 on September 28, 2026; operation still requires a separate license."
+        }
+      ]
+    },
+    {
+      "url": "https://www.radiantnuclear.com/news/radiant-wins-750m-janus-army-contract",
+      "published_at": "2026-08-26",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "claim.contracted",
+          "entity": "radiant-industries",
+          "label": "Army Janus fleet · binding agreement for 15 one-MWe Kaleidos units, up to $750M subject to milestones; separate from the earlier Air Force delivery agreement"
+        },
+        {
+          "kind": "funding.Federal award",
+          "entity": "radiant-industries",
+          "label": "Up to $750M Janus contract ceiling, subject to milestones; not cash received"
+        },
+        {
+          "kind": "finance.government",
+          "entity": "radiant-industries",
+          "label": "Up to $750M binding Janus agreement for 15 Kaleidos units; a milestone contract ceiling, not equity or cash received."
+        }
+      ]
+    },
+    {
+      "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-008.pdf",
+      "published_at": "2026-01-13",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "PDF chart/content read; report captured where cited",
+      "claims": [
+        {
+          "kind": "claim.review",
+          "entity": "holtec",
+          "label": "PIONEER 1&2, Palisades site, Michigan · two approximately 340 MWe units per NRC; phased construction-permit application under review"
+        }
+      ]
+    },
+    {
+      "url": "https://oklo.com/newsroom/oklo-inc-begins-trading-on-the-new-york-stock-exchange",
+      "published_at": "2024-05-10",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "funding.IPO / listing",
+          "entity": "oklo",
+          "label": "Approximately $306M gross transaction proceeds received at the AltC combination close"
+        }
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026071319/oklo-20260930.htm",
+      "published_at": null,
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "cash",
+          "entity": "oklo",
+          "label": "$3,130.8M cash, equivalents and marketable debt securities; restricted cash excluded"
+        }
+      ]
+    },
+    {
+      "url": "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-third-quarter-2026-results",
+      "published_at": "2026-11-05",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "cash",
+          "entity": "nuscale",
+          "label": "$1.9B cash, equivalents, and short- and long-term investments"
+        },
+        {
+          "kind": "proof.Program selection / agreement",
+          "entity": "nuscale",
+          "label": "NuScale signed a Doosan agreement for fabrication of upper reactor coolant system components; no U.S. power-plant construction is established"
+        }
+      ]
+    },
+    {
+      "url": "https://investors.x-energy.com/news-releases/news-release-details/x-energy-reports-third-quarter-2026-results",
+      "published_at": "2026-11-12",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "cash",
+          "entity": "x-energy",
+          "label": "$1,805.5M total liquidity: cash and short- and long-term investments; no debt"
+        },
+        {
+          "kind": "proof.Fuel milestone",
+          "entity": "x-energy",
+          "label": "Reported TX-1 fuel-facility shell completed in Q3 2026; interior buildout, equipment installation, and supporting facilities remain"
+        },
+        {
+          "kind": "bd.position.Framework / LOI",
+          "entity": "amazon",
+          "label": "X-energy reports a joint development agreement with AEP for feasibility work on a proposed 960 MWe project in Indiana. Included within the broader Amazon-supported pipeline; no additional capacity is added to the race board."
+        }
+      ]
+    },
+    {
+      "url": "https://ir.nanonuclearenergy.com/node/8816/html",
+      "published_at": null,
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "cash",
+          "entity": "nano-nuclear",
+          "label": "$580.0M total liquidity: $298.5M cash and equivalents plus $281.5M short-term investments"
+        }
+      ]
+    },
+    {
+      "url": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-reports-third-quarter-2026-results",
+      "published_at": "2026-11-10",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "cash",
+          "entity": "terrestrial-energy",
+          "label": "$276.3M cash, equivalents and short-term investments; no debt"
+        },
+        {
+          "kind": "proof.Program selection / agreement",
+          "entity": "terrestrial-energy",
+          "label": "Selected as advanced nuclear technology supplier for Ameresco at Aberdeen Proving Ground; no plant capacity or operating authorization established"
+        },
+        {
+          "kind": "finance.government",
+          "entity": "terrestrial-energy",
+          "label": "Selected as Ameresco's nuclear technology supplier at Aberdeen Proving Ground, reported November 10, 2026."
+        }
+      ]
+    },
+    {
+      "url": "https://www.radiantnuclear.com/news/radiant-secure-doe-approval-for-full-power-operations",
+      "published_at": "2026-10-29",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "proof.Permit / authorization",
+          "entity": "radiant-industries",
+          "label": "DOE approved the Kaleidos documented safety analysis; readiness review and startup authorization remain before nuclear operations"
+        }
+      ]
+    },
+    {
+      "url": "https://radiantnuclear.com/news/radiant-expands-manufacturing",
+      "published_at": "2026-11-19",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "proof.Test program",
+          "entity": "radiant-industries",
+          "label": "Kaleidos remains in DOE readiness review at DOME ahead of the planned full-power test campaign"
+        },
+        {
+          "kind": "target",
+          "entity": "radiant-industries",
+          "label": "Factory-scale manufacturing and first customer deliveries beginning 2028"
+        },
+        {
+          "kind": "project",
+          "entity": "radiant-industries",
+          "label": "Kaleidos · DOME test"
+        },
+        {
+          "kind": "project",
+          "entity": "radiant-industries",
+          "label": "Kaleidos + RiPPer pilot"
+        },
+        {
+          "kind": "finance.model",
+          "entity": "radiant-industries",
+          "label": "Factory product company: initial commercial reactors are planned for assembly in El Segundo and delivery from 2028; the Oak Ridge campus provides fueling and high-volume manufacturing."
+        },
+        {
+          "kind": "finance.government",
+          "entity": "radiant-industries",
+          "label": "Army selected Radiant for Fort Benning under Janus; its separate Air Force and Navy selections are also now named."
+        }
+      ]
+    },
+    {
+      "url": "https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis",
+      "published_at": "2026-10-07",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "proof.Permit / authorization",
+          "entity": "last-energy",
+          "label": "DOE approved the PWR-5 documented safety analysis; readiness review and startup authorization remain"
+        },
+        {
+          "kind": "project",
+          "entity": "last-energy",
+          "label": "PWR-5 pilot reactor"
+        },
+        {
+          "kind": "finance.government",
+          "entity": "last-energy",
+          "label": "DOE approved the PWR-5 documented safety analysis on October 7, 2026; readiness review and startup authorization remain."
+        }
+      ]
+    },
+    {
+      "url": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors",
+      "published_at": "2026-08-26",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "proof.Program selection / agreement",
+          "entity": "antares-nuclear",
+          "label": "Antares selected for Army Janus vendor and installation pairing at Fort Bragg, North Carolina; payments depend on technical milestones"
+        },
+        {
+          "kind": "proof.Program selection / agreement",
+          "entity": "bwxt",
+          "label": "BWXT selected for Army Janus vendor and installation pairing at Fort Campbell, Kentucky; payments depend on technical milestones"
+        },
+        {
+          "kind": "proof.Program selection / agreement",
+          "entity": "westinghouse",
+          "label": "Westinghouse selected for Army Janus vendor and installation pairing at Fort Drum, New York; payments depend on technical milestones"
+        },
+        {
+          "kind": "proof.Program selection / agreement",
+          "entity": "radiant-industries",
+          "label": "Radiant selected for Army Janus vendor and installation pairing at Fort Benning, Georgia; payments depend on technical milestones"
+        },
+        {
+          "kind": "finance.government",
+          "entity": "westinghouse",
+          "label": "Army selected Westinghouse Government Services for Janus at Fort Drum; selection does not establish reactor operation."
+        },
+        {
+          "kind": "finance.government",
+          "entity": "bwxt",
+          "label": "Army selected BWXT for the Janus project at Fort Campbell; site authorization and milestone delivery remain."
+        },
+        {
+          "kind": "finance.government",
+          "entity": "antares-nuclear",
+          "label": "Army selected Antares for Fort Bragg under Janus on August 26, 2026. The separate Air Force program has its own procurement history."
+        },
+        {
+          "kind": "bd.position.Executed",
+          "entity": "army",
+          "label": "Army selected five Janus vendor/site pairings: Antares at Fort Bragg, BWXT at Fort Campbell, General Atomics at Fort Hood, Radiant at Fort Benning, and Westinghouse at Fort Drum. Up to $2.2B across the program is paid against technical milestones, not on selection."
+        }
+      ]
+    },
+    {
+      "url": "https://oklo.com/newsroom/oklos-groves-reactor-achieves-first-criticality-in-under-a-year",
+      "published_at": "2026-08-06",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "source page read",
+      "claims": [
+        {
+          "kind": "project",
+          "entity": "atomic-alchemy",
+          "label": "Groves pilot reactor"
+        }
+      ]
+    },
+    {
+      "url": "https://www.lazard.com/media/kcfconhf/lazards-lcoeplus_vf.pdf",
+      "published_at": "2026-07-13",
+      "captured_at": "2026-11-21",
+      "content_check": "supports",
+      "method": "PDF chart/content read; report captured where cited",
+      "claims": [
+        {
+          "kind": "finance.benchmark",
+          "entity": "financing",
+          "label": "$175–255/MWh (Large LWR FOAK)"
+        },
+        {
+          "kind": "finance.report",
+          "entity": "financing",
+          "label": "Lazard, Levelized Cost of Energy+ (July 2026)"
+        }
+      ]
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://www.businesswire.com/news/home/20250820559252/en/Aalo-Atomics-Secures-$100-Million-in-Series-B-Funding-to-Build-Modular-Nuclear-Plants-Purpose-Built-for-Powering-AI-Data-Centers",
+      "state": "unreachable",
+      "status": 0,
+      "note": "Could not fetch: TimeoutError"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20251202017776/en/Antares-Raises-$96-Million-in-Series-B-Funding-to-Accelerate-Nuclear-Microreactor-Development",
+      "state": "unreachable",
+      "status": 0,
+      "note": "Could not fetch: TimeoutError"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260514188075/en/Terrestrial-Energy-Reports-First-Quarter-2026-Results",
+      "state": "unreachable",
+      "status": 0,
+      "note": "Could not fetch: TimeoutError"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20250910715287/en/Aalo-Atomics-Becomes-First-U.S.-Nuclear-Reactor-Company-with-a-Contract-for-Commercial-Delivery-of-Enriched-Uranium-Hits-Crucial-Next-Milestone-on-Path-to-2026-Startup",
+      "state": "unreachable",
+      "status": 0,
+      "note": "Could not fetch: TimeoutError"
+    },
+    {
+      "url": "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
+      "state": "error",
+      "status": 404,
+      "note": "Could not fetch: 404"
+    }
+  ],
+  "mechanical_claim_check": {
+    "checked": 490,
+    "counts": {
+      "supported": 226,
+      "unconfirmed": 139,
+      "blocked": 46,
+      "not-text": 31,
+      "no-terms": 37,
+      "uncached": 11
+    },
+    "meaning": "Term-presence triage only; not an accuracy verdict. PDF report quotations are tested separately."
+  },
+  "limits": [
+    "Historical citations were fetched or classified, not all independently re-proven; 139 mechanical term mismatches remain a review queue.",
+    "44 sources refuse scripted access; 11 are PDF/binary sources, including quote-checked captured reports.",
+    "Four Business Wire requests timed out. The original 2025 Lazard URL returns 404; its dated captured text and quote checks remain available.",
+    "General Atomics Janus selection is recorded in the buyer ledger; no design rating or capacity is inferred.",
+    "No national census, global totals, or retrospective stage history is implied."
+  ]
+}

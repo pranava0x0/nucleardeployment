@@ -174,6 +174,8 @@ The DOD&rsquo;s selection of BWXT&rsquo;s proposed design over X-energy&rsquo;s 
 &ldquo;We are on a mission to design, build and test new nuclear technology to protect the environment while providing power, and we are thrilled with this competitively bid award after years of hard work by our design and engineering team,&rdquo; said Joe Miller, BWXT Advanced Technologies LLC president. &ldquo;The entire nuclear industry recognizes that advanced reactors are an important step forward to support growing power needs and significant carbon reduction imperatives.&rdquo;
 &mdash; Sonal Patel is a POWER senior associate editor ( @sonalcpatel , @POWERmagazine ).
 Tagged in:
+Project Pele
+microreactor
 nuclear
 HTGR
 SCO
@@ -181,8 +183,6 @@ advanced nuclear
 defense microreactor
 BWXT
 DOD
-Project Pele
-microreactor
 Webinars
 July 9, 2025
 Creating Value from Data: Maximizing Plant Performance Through Real-Time Analytics
@@ -201,54 +201,57 @@ REGISTER
 Sponsored by
 technosylva
 Videos
-POWER Global Media
+This video is provided by YouTube (Google). To watch it, please accept marketing cookies. Your IP address and browser information will be shared with Google.
+Manage cookie preferences
+Sonal Patel on Data Center POWER eXchange 2026
 archives + podcasts + webinars + e-letters + video + exclusive content + events + much more!
 For over 142 years, POWER has been the unwavering pillar of the power and energy industry, offering unparalleled insights on the latest trends, best practices, and news through our robust channels: print, digital media, and in-person events.
 Subscribe Now
 Trending
-Data Centers
-Texas Audit Could Delay 49.8 GW of Data Center Load, Cost Projects Up to $15 Billion, BNEF Warns
+Power
+Appalachian Power Investing Nearly $25 Billion For Gas and Coal Power Plants
+Geothermal
+DOE’s ARPA-E Announces Up to $30 Million to Advance Geothermal Projects in SUPERHOT Program
 Gas
-LS Power Acquiring 606-MW Texas Gas-Fired Plant From Constellation
-Trends
-Oklo’s Groves Becomes Fifth DOE Pilot Reactor to Reach Criticality, First on Private Land
-Legal & Regulatory
-Abbott Orders Full Audit of Texas Data Center Interconnection Queue, Threatens to Deny Grid Access
+GE Vernova Advances Hydrogen Capabilities for Aeroderivative Gas Turbines with New Milestones
+Commentary
+The Midterm Elections Opened a Bipartisan Path on Nuclear Waste
+Solar
+True Recycling: The Key to Solar Circularity
 Gas
-A Pioneering Approach to Building New Generation Resources
-Top Plant
-In the Thar Desert, Pakistan Proves Its Indigenous Coal Can Be a Reliable Power Resource
-O&M
-From 18 Forced Outages to Zero Missed Starts: How CPS Energy’s Arthur von Rosenberg Plant Rebuilt Its Reliability
+LS Power Buying Nearly 5 GW of Gas-Fired Generation From NRG in $4-Billion Deal
+Instrumentation & Controls
+Trusted Control Is the Foundation for AI in Power Generation
 Gas
-Innovation Powers a Country’s Energy Transition
-Energy Security
-Speed as Strategy: Rabigh Reinforcement Delivers 1,179 MW on an Accelerated Timeline
+Groups Cancel $1-Billion Gas-Fired Power Plant Project in Wisconsin
+The POWER Interview
+Data Centers, Affordability, and the Ballot Box: What the 2026 Midterms Mean for the Power Industry
 Recommended
+Nuclear
+Green Light for Project Pele, Defense Department’s Mobile Nuclear Microreactor Demonstration
 Nuclear
 Green Light for Project Pele, Defense Department’s Mobile Nuclear Microreactor Demonstration
 Project Pele, DOD’s HTGR Mobile Nuclear Microreactor, Breaks Ground
 Nuclear
-Green Light for Project Pele, Defense Department’s Mobile Nuclear Microreactor Demonstration
-Nuclear
 DOD Advances X-Energy Mobile Nuclear Microreactor as Second Project Pele Design
-Nuclear
-Antares Mark-0 Becomes First Advanced Nuclear Reactor to Achieve Criticality Under DOE Pilot Program
 Trends
 Nuclear Cogeneration Gains Momentum in Wyoming with New Microreactor Partnership
+BWXT Initiates NRC Pre-Application Process for HEU Enrichment Facility in Erwin, Tennessee
 From the Magazine
-Data Centers
-Is the Power Project Crunch Upending the Owner—EPC Model?
 Gas
-Rayburn Energy Station: A Cooperative’s Answer to Texas-Sized Risk
-Gas
-A Pioneering Approach to Building New Generation Resources
+Parr Station Modernization Writes the Next Chapter in a Century of Reinvention
+Top Plant
+WA Parish Integrates Thermal Evaporation to Tackle FGD Wastewater
+Top Plant
+A Greener Grid: Florida Facility Turning Hydrogen into Power
 Read the Full issue
 News & Technology for the Global Energy Industry
 POWER is at the forefront of the global power market, providing in-depth news and insight on the end-to-end electricity system and the ongoing energy transition. We strive to be the “go-to” resource for power professionals, offering a wealth of information on innovative business practices, sound safety measures, useful productivity enhancements, and much more.
+This video is provided by YouTube (Google). To watch it, please accept marketing cookies. Your IP address and browser information will be shared with Google.
+Manage cookie preferences
 Upcoming
 Experience POWER
-Sept. 28—30, 2026
+Sept. 7-10, 2027
 Omni Shoreham Washington, D.C.
 Learn More
 About Power

@@ -15,26 +15,27 @@ Site Development
 Parsons
 Regulatory
 FAQ
-PR + Media Kit
+Newsroom
+Overview
 Press Releases
-Media Kit
+Featured Stories
+Media Assets
 Events
+Presentations
+In the Media
+Email Alerts
 Investors
 IR Overview
-News & Events
-Company Information
-Financial Results
 Stock Data
 SEC Filings
-Regulatory
 Governance
 Careers
 Careers Overview
 Internship Program
 Contact Us
 Site Announcement
-Liz Muller to present at Canaccord Genuity’s 46th Annual Growth Conference
-Register for the Webcast
+Sign up today and receive company updates straight to your inbox
+SIGN UP FOR DEEP FISSION EMAILS TODAY
 Technology
 Deep Fission Gravity™ Nuclear Reactor
 Established Nuclear Technology, Deployed in a New Way.
@@ -58,41 +59,31 @@ Deep Fission is designed to use readily available low-enriched uranium (LEU) fue
 Read more
 Adaptable Energy Designed to Meet Any Demand
 Our modular reactors are engineered for flexible deployment across a wide range of environments, from industrial hubs to remote locations. Each environment provides dependable and scalable power while supporting industries, communities, and critical infrastructure.
-Tech & Energy
-Commercial/Industrial
-Military/Remote Locations
-Tech & Energy
-Up to 100 reactors on one single site for hyperscale data centers and large power plants.
-Power Output: 300 MWe - 1.5+ GWe
-Borehole Reactors: 20-100+
-Fuel and Refueling: Low Enriched Uranium (LEU) using four standard pressurized water reactor (PWR) fuel assemblies
-Cooling: Water
-Containment: Geological isolation at depth naturally provides operational pressures, enhances safety, and protects the public; no large, above-ground containment structures needed
-Spent Fuel Storage: Conventional spent fuel handling; passive, reliable cooling; secure, long-term pool storage and management
-Construction Schedule: Estimated six months per reactor
-Commercial/Industrial
-We power large commercial or industrial operations and data centers
-Power Output: 150 MWe - 285 MWe
-Borehole Reactors: 10-19
-Fuel and Refueling: Low Enriched Uranium (LEU) using four standard pressurized water reactor (PWR) fuel assemblies
-Cooling: Water
-Containment: Geological isolation at depth naturally provides operational pressures, enhances safety, and protects the public; no large, above-ground containment structures needed
-Spent Fuel Storage: Conventional spent fuel handling; passive, reliable cooling; secure, long-term pool storage and management
-Construction Schedule: Estimated six months per reactor
-Military/Remote Locations
-We power remote military locations or small commercial operations.
-Power Output: 15 MWe - 135 MWe
-Borehole Reactors: 1-9+
-Fuel and Refueling: Low Enriched Uranium (LEU) using four standard pressurized water reactor (PWR) fuel assemblies
-Cooling: Water
-Containment: Geological isolation at depth naturally provides operational pressures, enhances safety, and protects the public; no large, above-ground containment structures needed
-Spent Fuel Storage: Conventional spent fuel handling; passive, reliable cooling; secure, long-term pool storage and management
-Construction Schedule: Estimated six months per reactor
+First of a Kind
+Nth of a Kind
+First of a Kind
+For the initial 2x2 configuration:
+Commercialization Role: Initial commercial deployment configuration, subject to additional development and regulatory approval
+Target Development Time: Approximately 1 year
+Target Output Per Reactor: Up to approximately 8 MWe
+Number of Fuel Assemblies: 4 per reactor
+Target Design Life: Greater than 40 years
+Target Refueling Interval: Approximately 6 years
+Design Objective: Initial commercial deployment
+Nth of a Kind
+For the future 3x3 configuration:
+Commercialization Role: Future larger-scale configuration, subject to additional development and regulatory approval
+Target Development Time: Approximately 2 years
+Target Output Per Reactor: Up to approximately 15 MWe
+Number of Fuel Assemblies: 9 per reactor
+Target Design Life: Greater than 40 years
+Target Refueling Interval: Approximately 7-10 years
+Design Objective: Increased output and improved unit economics
 Engineering Simplicity for an Energetic Impact
 Each component that makes up our technology has been purposely engineered to build one of the most impactful solutions in nuclear power to date.
 Read Our FAQ
 A Simple Design for Advanced Nuclear Energy
-Follow a step-by-step explanation of the Gravity Nuclear Reactor™ as Jason Pottorf, Director of Thermal Hydraulics, demonstrates fuel loading, coolant circulation, and heat transfer using a detailed scale model of the underground reactor system.
+Follow a step-by-step explanation of the Gravity™ Nuclear Reactor as Jason Pottorf, Director of Thermal Hydraulics, demonstrates fuel loading, coolant circulation, and heat transfer using a detailed scale model of the underground reactor system.
 Underground Advantages for Above Ground Success
 Scalable Power
 Each reactor delivers up to 15 MWe of reliable power, with modular scalability that can expand with additional boreholes to meet growing energy demands.
