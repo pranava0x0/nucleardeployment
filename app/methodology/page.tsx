@@ -50,7 +50,7 @@ export default function MethodologyPage() {
 
       <article className="method-note">
         <h3>The seven bands</h3>
-        <p>Each megawatt sits in exactly one band, the strongest state its evidence supports, so the bands never double-count. Bands are never added across frames, and announced megawatts never affect the ranking.</p>
+        <p>Each megawatt sits in exactly one band, the strongest state its evidence supports, so the bands never double-count. Bands are never added across frames, and announced megawatts never affect the default evidence ranking.</p>
         <div className="band-table">
           {capacityBands.map((band) => {
             const total = totals.find((entry) => entry.band === band.band);

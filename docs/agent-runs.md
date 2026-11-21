@@ -12,4 +12,4 @@
 Future subagent or workflow runs append one row. Web searches belong in `data/research/search-history.jsonl`.
 
 | 2026-11-21 | Refresh data correctness review | Independent Codex subagent | Yes | No actionable findings; capacity frames and cash history checked against cached evidence | Not measured | Bounded independent diff review was appropriate; bulk snapshots excluded |
-| 2026-11-21 | Refresh controls/error-handling review | Independent Codex subagent | Yes | Found dark-surface focus contrast regression; confirmed and fixed | Not measured | Independent static review complemented direct browser UAT; no UI agent used |
+| 2026-11-21 | Refresh controls/error-handling review | Independent Codex subagent | Yes | Found dark-surface focus contrast regression; confirmed the fix in a bounded follow-up | Not measured | Independent static review complemented direct browser UAT; no UI agent used |

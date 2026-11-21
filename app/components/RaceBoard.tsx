@@ -112,7 +112,7 @@ export function RaceBoard() {
         <p>
           The track runs to {mwe(raceScaleMWe)} MWe. The vertical rule is one gigawatt. Each company gets two tracks:
           megawatts backed by an executed action on top, announced and non-binding megawatts on the fainter track below.
-          The two are never added together, and announced megawatts never change the ranking.
+          The two are never added together. The default order follows the strongest documented action; use Sort by to compare announced capacity.
         </p>
         <dl>
           {capacityBands.map((band) => {
