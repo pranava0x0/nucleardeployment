@@ -124,3 +124,12 @@
   previously captured, page-marked text remains quote-checked. The new 2026
   report is separately captured and visually verified. Full inventory and
   content-read coverage: `data/research/refresh-2026-11-21.json`.
+
+- 2026-11-21 — REFRESH-004 (fixed): Independent controls review identified
+  a 2.37:1 keyboard-focus outline on the redesigned dark surfaces. Added a
+  bright focus override, extended token-contrast checks, and checked actual
+  keyboard focus in the browser.
+- 2026-11-21 — REFRESH-005 (fixed): Integration of the collapsed board made
+  the tablet control grid keep an intrinsic minimum wider than its column.
+  Used a zero minimum grid track and shrinkable labels. Browser checks at
+  768px, 1280px and 375px confirm no page overflow.

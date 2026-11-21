@@ -568,3 +568,7 @@ announcement sorting; evidence remains the default. Dossiers link their
 business model and financing gate to the landscape. Typography favors readable
 sentence case and numeric alignment over repeated uppercase labels. The navy,
 blue, orange, square corners, and system fonts remain the identity.
+
+Keyboard focus uses deep blue on light surfaces and the bright accent on navy
+surfaces. The native six-row board disclosure remains available; active
+filters or alternate sorting expand it, then restore its previous open state.

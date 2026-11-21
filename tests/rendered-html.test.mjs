@@ -271,13 +271,14 @@ test("text and semantic token pairs meet WCAG AA contrast", async () => {
   const root = css.match(/:root\s*\{([\s\S]*?)\}/)?.[1] ?? "";
   const tokens = Object.fromEntries([...root.matchAll(/--([\w-]+):\s*(#[0-9a-f]{6})/gi)].map((match) => [match[1], match[2]]));
   const pairs = [
+    ["accent", "graphite"], // Keyboard focus on dark surfaces.
+    ["blue", "surface"], // Keyboard focus on light surfaces.
     ["ink", "bg"],
     ["ink", "surface"],
     ["ink-muted", "bg"],
     ["on-accent", "accent"],
     ["on-signal", "signal"],
     ["white", "graphite"],
-    ["accent", "graphite"],
   ];
   const luminance = (hex) => {
     const channels = hex.slice(1).match(/../g).map((value) => Number.parseInt(value, 16) / 255);
