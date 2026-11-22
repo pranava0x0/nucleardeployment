@@ -1,8 +1,9 @@
 {
   "url": "https://npre.illinois.edu/news/stories/imdp-cpa",
-  "fetched_at": "2026-08-06T18:26:04.633Z",
+  "fetched_via": "https://npre.illinois.edu/news/stories/imdp-cpa",
+  "fetched_at": "2026-11-21T22:16:48.260Z",
   "http_status": 200,
   "content_type": "text/html",
-  "bytes": 8593,
+  "bytes": 8596,
   "title": "Illinois Microreactor Demonstration Project submits construction permit application, marking major milestone in deployment of research reactor | Nuclear, Plasma & Radiological Engineering | Illinois"
 }

@@ -190,16 +190,16 @@ Westinghouse is also working with both regulators&mdash;the NRC and the CNSC&mda
 &mdash; Sonal Patel is a POWER senior associate editor ( @sonalcpatel , @POWERmagazine ).
 Updated (Nov. 27): Adds details about project cost and SRC&rsquo;s role in the project.
 Tagged in:
+nuclear
+Sasketchewan
+technology
+Canada
 Westinghouse
 Saskatchewan Research Council
 licensing
 advanced nuclear
 eVinci
 microreactor
-nuclear
-Sasketchewan
-technology
-Canada
 Webinars
 July 9, 2025
 Creating Value from Data: Maximizing Plant Performance Through Real-Time Analytics
@@ -218,55 +218,59 @@ REGISTER
 Sponsored by
 technosylva
 Videos
-POWER Global Media
+This video is provided by YouTube (Google). To watch it, please accept marketing cookies. Your IP address and browser information will be shared with Google.
+Manage cookie preferences
+Sonal Patel on Data Center POWER eXchange 2026
 archives + podcasts + webinars + e-letters + video + exclusive content + events + much more!
 For over 142 years, POWER has been the unwavering pillar of the power and energy industry, offering unparalleled insights on the latest trends, best practices, and news through our robust channels: print, digital media, and in-person events.
 Subscribe Now
 Trending
 Power
-Chinese Government Approves Eight New Nuclear Units as Major Reactor Buildout Continues
-Data Centers
-Aalo, Crusoe Plan 2027 INL Demonstration Pairing Nuclear Power and AI Data Center Load
-Trends
-Holtec Targets 2036 for 1.36-GW SMR-300 Project at Oyster Creek
-Fusion
-Commonwealth Fusion Systems Raises Another $1 Billion as Work on Commercial Power Plant Continues
+Appalachian Power Investing Nearly $25 Billion For Gas and Coal Power Plants
+Geothermal
+DOE’s ARPA-E Announces Up to $30 Million to Advance Geothermal Projects in SUPERHOT Program
+Gas
+GE Vernova Advances Hydrogen Capabilities for Aeroderivative Gas Turbines with New Milestones
 Commentary
-The Hidden Biases in Utility Resource Modeling That Stack the Deck Against Clean Energy
-Data Centers
-Brookfield, NextEra to Develop $100B Data Center Campus at DOE’s Paducah Site, Paired With 4.6 GW of Dedicated Generation
-Legal & Regulatory
-Five States Emerge as Finalists for DOE’s Nuclear Lifecycle Innovation Campuses
-Nuclear
-Microsoft’s $60 Million Genesis Mission Commitment Puts Nuclear AI at the Center
-Energy Storage
-Viridi BESS Installed at Oak Ridge Lab as Part of Grid Technology Research
+The Midterm Elections Opened a Bipartisan Path on Nuclear Waste
+Solar
+True Recycling: The Key to Solar Circularity
+Gas
+LS Power Buying Nearly 5 GW of Gas-Fired Generation From NRG in $4-Billion Deal
+Instrumentation & Controls
+Trusted Control Is the Foundation for AI in Power Generation
+Gas
+Groups Cancel $1-Billion Gas-Fired Power Plant Project in Wisconsin
+The POWER Interview
+Data Centers, Affordability, and the Ballot Box: What the 2026 Midterms Mean for the Power Industry
 Recommended
+Trends
+Prodigy and Westinghouse Targeting Launch of eVinci Floating Nuclear Plant in Canada by 2030
 Trends
 Prodigy and Westinghouse Targeting Launch of eVinci Floating Nuclear Plant in Canada by 2030
 News
 How Microreactors Could Change the Nuclear Power Industry (and the World)
-Trends
-Prodigy and Westinghouse Targeting Launch of eVinci Floating Nuclear Plant in Canada by 2030
 Nuclear
 Westinghouse, Radiant Secure $5M for Microreactor Tests at INL’s Pioneering DOME Testbed
-Nuclear
-Westinghouse, CORE POWER Partner for Floating Nuclear Power Plants
 News
 Bagging DOE Support, Westinghouse Eyes Demonstration for Nuclear Micro-reactor by 2022
+News
+DOE Picks Nuclear Designs for First Microreactor Experiments at INL’s New Test Bed
 From the Magazine
-Data Centers
-Is the Power Project Crunch Upending the Owner—EPC Model?
 Gas
-Rayburn Energy Station: A Cooperative’s Answer to Texas-Sized Risk
-Gas
-A Pioneering Approach to Building New Generation Resources
+Parr Station Modernization Writes the Next Chapter in a Century of Reinvention
+Top Plant
+WA Parish Integrates Thermal Evaporation to Tackle FGD Wastewater
+Top Plant
+A Greener Grid: Florida Facility Turning Hydrogen into Power
 Read the Full issue
 News & Technology for the Global Energy Industry
 POWER is at the forefront of the global power market, providing in-depth news and insight on the end-to-end electricity system and the ongoing energy transition. We strive to be the “go-to” resource for power professionals, offering a wealth of information on innovative business practices, sound safety measures, useful productivity enhancements, and much more.
+This video is provided by YouTube (Google). To watch it, please accept marketing cookies. Your IP address and browser information will be shared with Google.
+Manage cookie preferences
 Upcoming
 Experience POWER
-Sept. 28—30, 2026
+Sept. 7-10, 2027
 Omni Shoreham Washington, D.C.
 Learn More
 About Power

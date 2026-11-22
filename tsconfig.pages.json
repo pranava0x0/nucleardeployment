@@ -7,6 +7,8 @@
     "worker",
     "examples",
     "dist",
-    ".vinext"
+    ".vinext",
+    ".claude",
+    "_dump_*.mts"
   ]
 }

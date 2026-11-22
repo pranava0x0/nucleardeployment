@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { companyFinance } from "../../financing-data";
 import { PageShell } from "../../components/SiteHeader";
 import { RaceBar } from "../../components/RaceBoard";
 import { StageCore } from "../../components/StageCore";
@@ -35,6 +36,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
   const highestStage = companyProjects.length ? Math.max(...companyProjects.map((project) => project.stage)) : null;
   const reactorClasses = [...new Set(companyProjects.map((project) => `${project.generation} · ${project.scale}`))].join(" / ");
   const dossier = dossierFor(slug);
+  const finance = companyFinance.find((row) => row.companySlug === slug);
   // The strongest state can rest on a regulator record, a company release, or
   // press reporting. Carry its actual basis rather than implying a regulator.
   const strongestBasis = [...new Set(dossier?.row?.strongest?.claims.map((claim) => claim.verification) ?? [])].join(", ");
@@ -52,7 +54,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
   return <PageShell><JsonLd data={breadcrumbs} /><main id="main" className="inner-page company-page">
     <header className="project-hero grid-bg">
       <div>
-        <p className="back-links"><Link className="back-link" href="/#race">← Race board</Link><Link className="back-link" href="/companies">All companies</Link></p>
+        <p className="back-links"><Link className="back-link" href="/#race">Race board</Link><Link className="back-link" href="/companies">All companies</Link></p>
         <h1>{company.name}</h1>
         <p>{company.summary}</p>
         <p className="hero-meta">{company.role}</p>
@@ -86,9 +88,14 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
         <a href={dossier.entrant.rosterSource} target="_blank" rel="noreferrer">Source ↗</a></p>
     </section>}
 
+    {finance && <section className="section dossier-finance">
+      <div className="section-head"><h2>How it gets paid</h2><Link href="/financing">Financing landscape</Link></div>
+      <div className="finance-brief"><div><p>{finance.model}</p><a href={finance.modelSource} target="_blank" rel="noreferrer">Business model source</a></div><div><h3>Next financing gate</h3><p>{finance.nextGate}</p><span className="frame-note">Site assessment · based on the sourced financing record</span></div></div>
+    </section>}
+
     {dossier && <>
       <section className="section dossier-lane">
-        <div className="section-head"><h2>Funding</h2><p>Three frames, never added together.</p></div>
+        <div className="section-head"><h2>Funding</h2><p>Equity, awards, borrowing, and filings in separate frames.</p></div>
         <div className="frame-grid">
           {dossier.funding.map((frame) => <article key={frame.frame}>
             <h3>{frame.frame}</h3>

@@ -10,169 +10,302 @@ A lock (
 Lock
 Locked padlock
 ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
-Header Menu
-FAQ
-Agreement States
-Facility Locator
-What&#039;s New
-Site Help
-Index A-Z
-Contact Us
-Email Updates
-What&#039;s New
-Menu
-Report a Safety Concern
-Search
-Search
-Nuclear Reactors
-Nuclear Reactors
-Power Reactors
-Operating Reactors
-Operator Licensing
-Research and Test Reactors
-New Reactors
-Research Activities
-Divider
-Nuclear Reactor Quick Links
-Nuclear Materials
-Nuclear Materials
-Types of Nuclear Materials
-Uranium Recovery
-Material Environmental Reviews
+A new keyword search will reset all filters below. You can further limit keyword search results with tags.
+U.S. NRC
+Nuclear Regulatory Commission
+Search Results
+A new keyword search will reset all filters below. You can further limit keyword search results with tags.
+Facilities & Safety
+Facilities & Safety
+NRC oversees the safety of nuclear reactors, materials, and waste facilities nationwide.
+Reactors, Facilities, Sites
+Facility Finder
 Fuel Cycle Facilities
-Materials Transportation
-National Materials Program
-Medical, Industrial, & Academic Uses
-SCP Portals
-Divider
-Nuclear Materials Quick Links
-Radioactive Waste
-Radioactive Waste
-Decommissioning of Nuclear Facilities
-Uranium Mill Tailings
-Abandoned Uranium Mine Waste Remediation
-Storage of Spent Nuclear Fuel
-Low-Level Waste
-Low-Level Waste Disposal
-Transportation of Spent Nuclear Fuel
-Waste Incidental to Reprocessing
-High-Level Waste Disposal
-Research Activities
-High-Level Waste
-Divider
-Radioactive Waste Quick Links
-Nuclear Security
-Nuclear Security
-Domestic Safeguards
-Required Reporting for Clearance Holders
-Criminal History & Firearms Checks
-Information Security
-Insider Threat Program for Licensees
-Contact Us
-Radioactive Material Security
+Operating Reactors
+Non-Power Facilities
+Decommissioning
+Safety & Security
+Report a Safety or Security Concern
 Cybersecurity
-Public Meetings & Involvement
-Public Meetings & Involvement
-The NRC Approach to Open Government
-Documents for Comments
-Subscribe to E-mail Updates
-About Meetings Open to the Public
+Radioactive Material Security
+Safety Culture
+Nuclear Security
+Domestic Safeguards Oversight
+Radiation & Waste
+Nuclear Waste Types
+Types of Nuclear Materials
+Materials Transportation
+Storage of Spent Nuclear Fuel
+Protection
+Radiation Protection
+Fire Protection
+Regulation & Legislation
+Regulations & Legislation
+Covers the laws establishing the NRC, its 10 CFR regulations, and the rulemaking process, including petitions, public comment, and Federal Register notices.
+Regulations
+How We Regulate
+Regulations (NRC, 10 CFR)
+Governing Legislation
+Legislation
+State & Tribal Programs
+National Materials Program
+Effectiveness, Efficiency, and Timeliness Initiatives that Support Unleashing American Energy
+Rulemaking
+Planned Rulemaking Activities - Rules
+Rulemaking Documents
+The NRC Rulemaking Process
+Guidance
+Regulatory Guides (by Division)
+Documents & Reports
+Documents & Reports
+Access NRC reports, ADAMS documents, Commission communications, data and research tools, plus forms, public submissions, and comment periods.
+Reports
+Inspection Reports for Operating Power Reactors
+Reports Associated with Events
+Fact Sheets & Brochures
+Inspection Manual
+NUREG-Series Publications
+Public Dashboards
+Research Information Letters
+Communications
+Congressional Documents
+Generic Communications
+Data & Tools
+State Communications Portal
 NRC Information Quality Guidelines
-Really Simple Syndication (RSS) Feeds
-Conferences & Symposia
-Divider
-Commission Schedule
-Adjudications (Hearings)
-NRC Rules and Petitions
-Public Meeting Schedule
-Adjudicatory Submissions
-NRC Library
-NRC Library
-Basic References
-FOIA & Privacy Act
-FAQ Index
+Forms & Submissions
+Forms (NRC)
+Petition for Rulemaking Dockets
+Documents
 Document Collections
-Photos & Videos
-Get Copies of Documents
 ADAMS Public Documents
-Records Management
-Withholding of Sensitive Information
-Public Document Room
-Training Courses
-Controlled Unclassified Information Program (CUI)
-LSN Library
-Divider
-Electronic Hearing Docket
+Get Copies of Documents
+Documents for Comment
+Search ADAMS
+NRC's public document library
+Licensing & Applications
+Licensing & Applications
+Covers NRC&#039;s licensing process for facilities, materials, and reactor operators, plus tools for tracking, submitting, and reviewing applications.
+Facility Licensing
+New Reactor Licensing
+Operating Reactor Licensing
+Fuel Cycle Facility Licensing
+Status of Initial License Renewal Applications and Industry Initiatives
+Operator Licensing
+About Operator Licensing
+Licensing Process for Operators
+Examination Schedule and Results
+Electronic Submittals Application
+Materials Licensing
+Licensing
+Materials License Process
+Tools
+National Source Tracking System
+Public Involvement in Licensing
+Web-Based Licensing (WBL) System
+License Verification System (LVS)
+Education & Regulatory Research
+Education & Regulatory Research
+Explore NRC&#039;s regulatory research programs, staff training and apprenticeship pathways, and public education resources on nuclear science.
+Regulatory Research
+Research Activities
+Training & Development
+Nuclear Regulator Apprenticeship Network
+Technical Training
+Education
+Basic References
+Glossary
+The Student Corner
+History 101
+Public Meetings & Hearings
+Public Meetings & Hearings
+Find NRC&#039;s public meeting schedules, adjudicatory hearings, meeting archives, and conferences such as the RIC and RAMP events.
+Meetings
+Public Meeting Schedule
+Commission Meeting Schedule
+Meeting Archives
+Adjudications (Hearings)
+Commission Meeting Webcast Information
+Conferences
+Conferences & Symposia
 About NRC
+About NRC
+Learn about NRC&#039;s leadership, priorities, and news, how to work with or contact the agency, and key legal and privacy resources.
 About NRC
 The Commission
-Radiation Protection
-Alternative Dispute Resolution Programs
 Organization & Functions
-Fire Protection
-Privacy Program
-NRC Mission
-Artificial Intelligence
-Safety Culture
-Civil Rights Program
-Governing Legislation
-How We Regulate
-Contact Us
-Plans, Budget, & Performance
-Emergency Preparedness & Response
-Career Opportunities
-Locations
-Enforcement
-Contracting Opportunities
-History
-International Programs
-Small Businesses
+News Releases
+Top Priorities
+Plans, Budgets, & Performance
 Leadership Model
+International Programs
+NRC Background
+Opportunities
+Get Involved
+Career Opportunities
+Contracting Opportunities
+Contact Us
+For Developers
+Resources
+Privacy Policy
+Site Disclaimer
+Whistleblower Protection
+eBilling
+Facilities & Safety
+Facilities & Safety
+NRC oversees the safety of nuclear reactors, materials, and waste facilities nationwide.
+Reactors, Facilities, Sites
+Facility Finder
+Fuel Cycle Facilities
+Operating Reactors
+Non-Power Facilities
+Decommissioning
+Safety & Security
+Report a Safety or Security Concern
+Cybersecurity
+Radioactive Material Security
+Safety Culture
+Nuclear Security
+Domestic Safeguards Oversight
+Radiation & Waste
+Nuclear Waste Types
+Types of Nuclear Materials
+Materials Transportation
+Storage of Spent Nuclear Fuel
+Protection
+Radiation Protection
+Fire Protection
+Regulations & Legislation
+Regulations & Legislation
+Covers the laws establishing the NRC, its 10 CFR regulations, and the rulemaking process, including petitions, public comment, and Federal Register notices.
+Regulations
+How We Regulate
+Regulations (NRC, 10 CFR)
+Governing Legislation
+Legislation
 State & Tribal Programs
-Grant Opportunities
-Values
-Direction-Setting & Policymaking
-Generic Schedules
+National Materials Program
+Effectiveness, Efficiency, and Timeliness Initiatives that Support Unleashing American Energy
+Rulemaking
+Planned Rulemaking Activities - Rules
+Rulemaking Documents
+The NRC Rulemaking Process
+Guidance
+Regulatory Guides (by Division)
+Documents & Reports
+Documents & Reports
+Access NRC reports, ADAMS documents, Commission communications, data and research tools, plus forms, public submissions, and comment periods.
+Reports
+Inspection Reports for Operating Power Reactors
+Reports Associated with Events
+Fact Sheets & Brochures
+Inspection Manual
+NUREG-Series Publications
+Public Dashboards
+Research Information Letters
+Communications
+Congressional Documents
+Generic Communications
+Data & Tools
+State Communications Portal
+NRC Information Quality Guidelines
+Forms & Submissions
+Forms (NRC)
+Petition for Rulemaking Dockets
+Documents
+Document Collections
+ADAMS Public Documents
+Get Copies of Documents
+Documents for Comment
+Search ADAMS
+NRC's public document library
+Licensing & Applications
+Licensing & Applications
+Covers NRC&#039;s licensing process for facilities, materials, and reactor operators, plus tools for tracking, submitting, and reviewing applications.
+Facility Licensing
+New Reactor Licensing
+Operating Reactor Licensing
+Fuel Cycle Facility Licensing
+Status of Initial License Renewal Applications and Industry Initiatives
+Operator Licensing
+About Operator Licensing
+Licensing Process for Operators
+Examination Schedule and Results
+Electronic Submittals Application
+Materials Licensing
+Licensing
+Materials License Process
+Tools
+National Source Tracking System
+Public Involvement in Licensing
+Web-Based Licensing (WBL) System
+License Verification System (LVS)
+Education & Regulatory Research
+Education & Regulatory Research
+Explore NRC&#039;s regulatory research programs, staff training and apprenticeship pathways, and public education resources on nuclear science.
+Regulatory Research
 Research Activities
+Training & Development
+Nuclear Regulator Apprenticeship Network
+Technical Training
+Education
+Basic References
+Glossary
+The Student Corner
+History 101
+Public Meetings & Hearings
+Public Meetings & Hearings
+Find NRC&#039;s public meeting schedules, adjudicatory hearings, meeting archives, and conferences such as the RIC and RAMP events.
+Meetings
+Public Meeting Schedule
+Commission Meeting Schedule
+Meeting Archives
+Adjudications (Hearings)
+Commission Meeting Webcast Information
+Conferences
+Conferences & Symposia
+About NRC
+About NRC
+Learn about NRC&#039;s leadership, priorities, and news, how to work with or contact the agency, and key legal and privacy resources.
+About NRC
+The Commission
+Organization & Functions
+News Releases
+Top Priorities
+Plans, Budgets, & Performance
+Leadership Model
+International Programs
+NRC Background
+Opportunities
+Get Involved
+Career Opportunities
+Contracting Opportunities
+Contact Us
+For Developers
+Resources
+Privacy Policy
+Site Disclaimer
+Whistleblower Protection
+eBilling
 Breadcrumb
 Home
-Nuclear Reactors
-New Reactors
+Licensing & Applications
+New Reactor Licensing
 Advanced Reactors
 Who We&#039;re Working With
 Advanced Reactor Application Projects
 University of Illinois Urbana-Champaign – KRONOS Micro Modular Reactor (KRONOS MMR™)
-Section Navigation
-Navigation
-Eden Radioisotopes, LLC – Eden Isotope Production Complex
-Pioneer Units 1 and 2 Limited Work Authorization Application
 University of Illinois Urbana-Champaign – KRONOS Micro Modular Reactor (KRONOS MMR™)
-Long Mott Energy, LLC
-TVA Clinch River CPA
-Image
-Spotlight
-Choose a section
-The Commission
-Executive Order 14300 and ADVANCE Act
-NRC Reorganization
-Plant Restarts
-Artificial Intelligence
-Advanced Reactors
-Tribal Liaison Program
-New Fuel Cycle Facility Applicants
-Materials License Application Portal
-Materials Prospective Applicant and Pre-application Engagement Resources
-OIG Hotline
-Rulemaking Activity
-Commission Documents
+Advanced Reactor Application Projects
 University of Illinois Urbana-Champaign – KRONOS Micro Modular Reactor (KRONOS MMR™)
+U. of I. KRONOS MMR Application Documents
 Image
 Who: University of Illinois Urbana-Champaign
 What: Application for a construction permit for a research reactor
 When: March 31, 2026 (date of application submittal)
 Where: Champaign County, Illinois
 Website: https://npre.illinois.edu/about/illinois-microreactor-project
-Dashboard: Under Development
+Dashboard: University of Illinois Urbana-Champaign KRONOS Micro Modular Reactor
 On this page:
 Project Overview
 Key Milestones
@@ -209,51 +342,32 @@ Safety Project Manager Ed Helvenston
 Environmental Project Manager Bill Burris
 301-415-1621
 Public Affairs Officer Public Affairs Officer
-Page Last Reviewed/Updated Wednesday, July 22, 2026
-Page Last Reviewed/Updated Wednesday, July 22, 2026
+Page Last Reviewed/Updated Monday, September 14, 2026
 Return to top
-Home
-News Releases
-Event Reports
-Adams
-Open Gov
-Digital Government
-The Student Corner
-Photos & Videos
-For Developers
+Nuclear Regulatory Commission
+Contact Us
+301-415-7000
+OPA.resource@nrc.gov
+To report a safety concern, call 301-816-5100
 About Us
-Strategic Plan
+License Fees
 Budget & Performance
 Agency Financial Report
-License Fees
 History of the NRC
 Career Opportunities
 NRC Ethics
 Agency Status
 Contact Us
-Popular Documents
-Info Digest
-Fact Sheets & Brochures
-Forms
-Electronic Submittals Application
-Adjudicatory Submissions
-NRC Reports - NUREG
-NRC Regulations - 10-CFR
-Inspection Reports
-Plain Writing
-Enforcement Actions
-Rulemaking
-Glossary
-Stay Connected
-Footer Bottom
+Strategic Plan
+Resources
 Regulations.gov
 USA.gov
 FOIA
 Whistleblower Protection
-No Fear EEO
+No Fear Act Data
 Inspector General
-Site Map
 Accessibility
 Privacy Policy
 Site Disclaimer
 For Employees
+Data

@@ -1,7 +1,5 @@
 ANS-UPRM Student Section advocates for Puerto Rican nuclear -- ANS / Nuclear Newswire
 Topics
-Advanced Reactors
-Advocacy
 Conferences
 Decontamination & Decommissioning
 Education
@@ -11,6 +9,7 @@ Fusion
 Industry
 International
 Isotopes & Radiation
+New Reactors
 Nonproliferation
 Nuclear History
 People
@@ -39,32 +38,31 @@ Advertise in Buyers Guides
 Advertise
 Headlines
 For You
-Study mapping U-10Zr porosity informs metallic fuel design
-August 17, 2026, 12:28PM
-Supplier Showcase focus: MUR DVR
-August 17, 2026, 11:37AM
-Diablo Canyon receives partial Civil Nuclear Credit payment
-August 17, 2026, 9:36AM
-A message from Gutor
-GUTOR 80: UPS, Battery Charger, & Inverter Solutions for Nuclear Applications, Built to ASME NQA-1
-X-energy, TerraPower share updates on advanced reactor projects
-August 17, 2026, 7:11AM
-Front-end nuclear fuel supply cooperation: Turning allied interdependence into strategic advantage
-August 14, 2026, 4:04PM
-New measurement of diamond phase change could mean increased ICF energy gain
-August 14, 2026, 2:10PM
-A message from Studsvik
-Transforming Nuclear Fuel Management with Intelligent Automation
-Cleanup work progresses with pump removal at Hanford Tank Farms
-August 14, 2026, 9:56AM
+Building nuclear’s next-gen workforce
+November 20, 2026, 3:03 pm
+Pacific Fusion receives N.M. radioactive materials license
+November 20, 2026, 1:39 pm
+Comments close soon on PRM for fuel reprocessing plants
+November 20, 2026, 12:10 pm
+New York’s 5-GW nuclear master plan
+November 20, 2026, 9:29 am
+ANS panel discusses fusion optimism and reality
+November 20, 2026, 7:32 am
+Newcleo’s planned Savannah River MOX fuel fabrication plant gets Curio support
+November 19, 2026, 3:17 pm
+Fusion Innovation Bootcamp: Addressing workforce needs with unique educational opportunities
+November 19, 2026, 11:46 am
+IAEA, Grossi give updates on Ukraine, Iran, North Korea, nuclear power growth projections
+November 19, 2026, 9:32 am
 For personalized headlines, please log in/create an account .
-Latest Issue &mdash; Aug 2026
-Latest Issue &mdash; Jan 2026
-Ageing nuclear assets don't have to mean higher maintenance costs. Discover how HVTS® cladding helps extend the life of PWR secondary system components, reduce outage duration, support ALARA principles, and protect against FAC, erosion-corrosion and other degradation mechanisms. Learn more.
+Latest Issue &mdash; Nov 2026
+Latest Issue &mdash; Fall / Buyers Guide
+A message from Westinghouse Electric Company LLC
+Unleash Your Organizational Superpower Through Talent Development
 Learn More
 Policy
 ANS-UPRM Student Section advocates for Puerto Rican nuclear
-June 3, 2026, 1:04PM
+June 3, 2026, 1:04 pm
 Nuclear News
 ANS-UPRM President Francisco Paravisini Domenech (center left) with legislators, Professor Carlos Marín, and heads from First American Nuclear and Zap Energy after a recent public hearing in Puerto Rico’s House of Representatives. (Photo: ANS-UPRM)
 The American Nuclear Society Student Section at the University of Puerto Rico–Mayagüez (ANS-UPRM) recently testified in the Puerto Rican House of Representatives on the opportunities nuclear power could provide for the island. Specifically, section president Francisco Paravisini Domenech advocated for the passage of Proyecto de la Cámara 1092, which would direct the Puerto Rican government to evaluate the deployment of small modular reactors, among other low-carbon technologies. (A Proyecto de la Cámara, or Chamber Project, is akin to a House bill.)
@@ -80,31 +78,31 @@ Share:
 LinkedIn Twitter Facebook Email
 Related Articles
 ANS approves formation of six student sections, one local section
-June 11, 2026, 7:10AM
+June 11, 2026, 7:10 am
 ANS News
 Last week at the American Nuclear Society’s Annual Conference in Denver, Colo., the ANS Board of Directors approved the creation of six new ANS student sections and one new local section....
 Exploring pros and cons of nuclear in Puerto Rico
-October 23, 2024, 3:00PM
+October 23, 2024, 3:00 pm
 ANS Nuclear Cafe
 An article on the Huffington Post examines the prospects for re-establishing nuclear energy in Puerto Rico, uncovering a mix of positive and negative attitudes toward nuclear power in the U.S....
 ANS and its student groups respond to Hurricane Fiona in Puerto Rico
-October 11, 2022, 7:04AM
+October 11, 2022, 7:04 am
 ANS News
 Hurricane Fiona slammed into Puerto Rico on September 18 with powerful winds and massive amounts of rain, resulting in mudslides, flooding, loss of power and water, wrecked homes and...
 ANS Naval Academy student section hosts dinner, receives landmark
-April 12, 2022, 12:00PM
+April 12, 2022, 12:00 pm
 ANS News
 The Naval Academy ANS student section, with support from the Washington, D.C., local section, held its semiannual dinner on March 29 in Annapolis, Md. The event was attended by more than 100...
 White House appointee sees advanced nuclear option for Puerto Rico
-July 16, 2020, 12:43PM
+July 16, 2020, 12:43 pm
 Nuclear News
 All energy sources, including small modular reactors, are being considered to meet Puerto Rico’s energy needs, U.S. Coast Guard Rear Admiral Peter J. Brown said on July 15 during the second...
 Making the case for advanced reactors in Puerto Rico
-June 23, 2020, 10:03AM
+June 23, 2020, 10:03 am
 Nuclear News
 The ANS Young Members Group and the Gateway for Accelerated Innovation in Nuclear (GAIN) on June 18 presented a webinar on the rapidly developing prospects for advanced nuclear in Puerto Rico....
 Study: Advanced reactors a good fit for Puerto Rico
-May 27, 2020, 10:10AM
+May 27, 2020, 10:10 am
 Nuclear News
 The Nuclear Alternative Project (NAP), a nonprofit group supporting the use of advanced reactors in Puerto Rico, has released the findings of a preliminary feasibility study undertaken to...
 Receive Nuclear News Daily

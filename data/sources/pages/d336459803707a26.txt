@@ -101,7 +101,6 @@ We are providing technical assistance for a Ukraine SMR licensing gap analysis a
 About STCU
 State Scientific and Technical Center for Nuclear and Radiation Safety Licensing
 We are collaborating with Ukraine’s State Scientific and Technical Center for Nuclear and Radiation Safety (SSTC NRS) on the regulatory and design gaps between the U.S. and Ukraine processes for the licensing, construction, and operation of a plant powered by NuScale SMR technology. The U.S. Department of Energy (DOE) is also funding an independent review of our Safety Analysis Report (SAR) to be conducted by the SSTC NRS.
-About SSTC NRS
 Xcel Energy Inc. Plant Operations
 We are exploring the feasibility of Xcel Energy serving as a plant operator at facilities powered by NuScale technology. While we do not yet have a formal operating agreement, we are examining the potential for Xcel Energy to become our preferred operational services provider.
 About Xcel Energy

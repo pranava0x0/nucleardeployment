@@ -38,9 +38,9 @@ This is some text inside of a div block.
 Search
 Search
 Search
+News
 Kairos Power Breaks Ground on Hermes 2 Demonstration Plant
 April 17, 2026
-News
 OAK RIDGE, Tenn. – Today, Kairos Power broke ground on the Hermes 2 Demonstration Plant in Oak Ridge, Tenn. – the company’s first commercial-scale reactor and the first-ever power-producing Gen IV reactor to receive a construction permit from the Nuclear Regulatory Commission (NRC).
 Hermes 2 is Kairos Power’s first deployment under its landmark deal with Google to develop an advanced reactor fleet. The plant will supply up to 50 megawatts of clean electricity to the Tennessee Valley Authority (TVA) grid, helping to decarbonize Google data centers in Tennessee and Alabama.
 Through Kairos Power’s iterative development approach, Hermes 2 will build on lessons learned from the Hermes Low-Power Demonstration Reactor (Hermes 1), which commenced nuclear construction at the same site last year. The Hermes series will be the first fluoride salt-cooled high-temperature reactors (KP-FHRs) ever built, incorporating proven nuclear technologies that originated in Oak Ridge—including TRISO coated particle fuel and Flibe molten fluoride salt coolant—which simplify the reactor’s design, lower capital costs, and yield robust inherent safety.

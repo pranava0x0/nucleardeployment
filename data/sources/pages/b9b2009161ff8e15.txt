@@ -9,6 +9,7 @@ Switch MOD
 OPTIMIZE YOUR NETWORK
 Switch Connect
 The CORE Cooperative
+RESPONSIBLE BY DESIGN ®
 SUSTAINABLE BY DESIGN ®
 GALLERY
 Photos
@@ -76,7 +77,6 @@ Switch GRAND RAPIDS
 Switch ATLANTA
 CONTACT
 Contact Us
-Request a Tour
 Request a Quote
 Channel Partner
 Sales Log In
@@ -219,6 +219,14 @@ Used to monitor number of Google Analytics server requests
 __utma
 ID used to identify users and sessions
 2 years after last activity
+Toggle Recaptcha Recaptcha
+Google reCAPTCHA helps protect websites from spam and abuse by verifying user interactions through challenges.
+Name
+Description
+Duration
+_GRECAPTCHA
+Google reCAPTCHA sets a necessary cookie (_GRECAPTCHA) when executed for the purpose of providing its risk analysis.
+179 days
 Toggle Vimeo Vimeo
 Vimeo is a video hosting platform for high-quality content, ideal for creators and businesses to showcase their work.
 Service URL: vimeo.com (opens in a new window)
@@ -248,39 +256,96 @@ Service URL: www.facebook.com (opens in a new window)
 Name
 Description
 Duration
-_fbc
-Used to track the last session visit.
-12 months
-_fbp
-Used to track the user across multiple sessions.
-3 months
 fr
 Used to track the user across multiple sessions.
 3 months
+_fbp
+Used to track the user across multiple sessions.
+3 months
+_fbc
+Used to track the last session visit.
+12 months
+Toggle Google Ads Google Ads
+Google Ads is an online advertising platform that enables businesses to create targeted ads displayed on Google search results and partner sites.
+Service URL: policies.google.com (opens in a new window)
+Name
+Description
+Duration
+FPGCLAW
+Google uses cookies for advertising, including serving and rendering ads, personalizing ads (depending on your ad settings at g.co/adsettings), limiting the number of times an ad is shown to a user, muting ads you have chosen to stop seeing, and measuring the effectiveness of ads.
+90 Days
+FPGCLGB
+Google uses cookies for advertising, including serving and rendering ads, personalizing ads (depending on your ad settings at g.co/adsettings), limiting the number of times an ad is shown to a user, muting ads you have chosen to stop seeing, and measuring the effectiveness of ads.
+90 Days
+_gac_gb_
+Google uses cookies for advertising, including serving and rendering ads, personalizing ads (depending on your ad settings at g.co/adsettings), limiting the number of times an ad is shown to a user, muting ads you have chosen to stop seeing, and measuring the effectiveness of ads.
+90 Days
+_gcl_gb
+Google uses cookies for advertising, including serving and rendering ads, personalizing ads (depending on your ad settings at g.co/adsettings), limiting the number of times an ad is shown to a user, muting ads you have chosen to stop seeing, and measuring the effectiveness of ads.
+90 Days
+_gcl_gs
+Google uses cookies for advertising, including serving and rendering ads, personalizing ads (depending on your ad settings at g.co/adsettings), limiting the number of times an ad is shown to a user, muting ads you have chosen to stop seeing, and measuring the effectiveness of ads.
+90 Days
+_gcl_aw
+Google uses cookies for advertising, including serving and rendering ads, personalizing ads (depending on your ad settings at g.co/adsettings), limiting the number of times an ad is shown to a user, muting ads you have chosen to stop seeing, and measuring the effectiveness of ads.
+90 Days
+Conversion
+Google uses cookies for advertising, including serving and rendering ads, personalizing ads (depending on your ad settings at g.co/adsettings), limiting the number of times an ad is shown to a user, muting ads you have chosen to stop seeing, and measuring the effectiveness of ads.
+90 days
+__Secure-3PSID
+Targeting cookie. Used to profile the interests of website visitors and display relevant and personalised Google ads.
+2 years
+__Secure-1PAPISID
+Targeting cookie. Used to create a user profile and display relevant and personalised Google Ads to the user.
+2 years
+__Secure-1PSIDTS
+Targeting cookie. Used to create a user profile and display relevant and personalised Google Ads to the user.
+2 years
+__Secure-3PSIDTS
+Targeting cookie. Used to create a user profile and display relevant and personalised Google Ads to the user.
+2 years
+__Secure-3PSIDCC
+Targeting cookie. Used to create a user profile and display relevant and personalised Google Ads to the user.
+2 years
+ADS_VISITOR_ID
+Cookie required to use the options and on-site web services
+2 months
+AEC
+AEC cookies ensure that requests within a browsing session are made by the user, and not by other sites. These cookies prevent malicious sites from acting on behalf of a user without that user's knowledge.
+6 months
+__Secure-3PAPISID
+Profiles the interests of website visitors to serve relevant and personalised ads through retargeting.
+2 years
+__Secure-1PSIDCC
+Targeting cookie. Used to create a user profile and display relevant and personalised Google Ads to the user.
+2 years
+__Secure-1PSID
+Targeting cookie. Used to create a user profile and display relevant and personalised Google Ads to the user.
+2 years
 Toggle LinkedIn Insight LinkedIn Insight
 LinkedIn Insight is a web analytics service that tracks and reports website traffic.
 Service URL: www.linkedin.com (opens in a new window)
 Name
 Description
 Duration
-li_oatml
-Used for identifying LinkedIn Members for advertising and analytics.
+li_fat_id
+Used for member indirect identifier for conversion tracking.
 30 days
 li_sugr
 Used to make a probabilistic match of a user's identity.
 90 days
-li_fat_id
-Used for member indirect identifier for conversion tracking.
+li_oatml
+Used for identifying LinkedIn Members for advertising and analytics.
 30 days
 lang
 Used to remember language settings.
 Session
-lidc
-Used for routing and session management.
-24 hours
 liap
 Used for authentication of LinkedIn members.
 90 days
+lidc
+Used for routing and session management.
+24 hours
 Toggle X (formerly Twitter) Pixel X (formerly Twitter) Pixel
 X Pixel enables businesses to track user interactions and optimize ad performance on the X platform effectively.
 Service URL: x.com (opens in a new window)
@@ -290,14 +355,14 @@ Duration
 external_referer
 Our Website uses X buttons to allow our visitors to follow our promotional X feeds, and sometimes embed feeds on our Website.
 2 years
-guest_id
-This cookie is set by X to identify and track the website visitor. Registers if a users is signed in the X platform and collects information about ad preferences.
-2 years
 personalization_id
 Unique value with which users can be identified by X. Collected information is used to be personalize X services, including X trends, stories, ads and suggestions.
 2 years
+guest_id
+This cookie is set by X to identify and track the website visitor. Registers if a users is signed in the X platform and collects information about ad preferences.
+2 years
 Toggle Cookie Policy Cookie Policy
-You can find more information in our Cookie Policy and .
+You can find more information in our Cookie Policy and Privacy Policy .
 I understand GPC will be overwritten and want to allow this site to sell or share my personal information anyway
 Accept All Close
 Save and Close

@@ -1,7 +1,5 @@
 Nuclear is ready now -- ANS / Nuclear Newswire
 Topics
-Advanced Reactors
-Advocacy
 Conferences
 Decontamination & Decommissioning
 Education
@@ -11,6 +9,7 @@ Fusion
 Industry
 International
 Isotopes & Radiation
+New Reactors
 Nonproliferation
 Nuclear History
 People
@@ -39,32 +38,31 @@ Advertise in Buyers Guides
 Advertise
 Headlines
 For You
-Study mapping U-10Zr porosity informs metallic fuel design
-August 17, 2026, 12:28PM
-Supplier Showcase focus: MUR DVR
-August 17, 2026, 11:37AM
-Diablo Canyon receives partial Civil Nuclear Credit payment
-August 17, 2026, 9:36AM
-A message from Gutor
-GUTOR 80: UPS, Battery Charger, & Inverter Solutions for Nuclear Applications, Built to ASME NQA-1
-X-energy, TerraPower share updates on advanced reactor projects
-August 17, 2026, 7:11AM
-Front-end nuclear fuel supply cooperation: Turning allied interdependence into strategic advantage
-August 14, 2026, 4:04PM
-New measurement of diamond phase change could mean increased ICF energy gain
-August 14, 2026, 2:10PM
-A message from Studsvik
-Transforming Nuclear Fuel Management with Intelligent Automation
-Cleanup work progresses with pump removal at Hanford Tank Farms
-August 14, 2026, 9:56AM
+Building nuclear’s next-gen workforce
+November 20, 2026, 3:03 pm
+Pacific Fusion receives N.M. radioactive materials license
+November 20, 2026, 1:39 pm
+Comments close soon on PRM for fuel reprocessing plants
+November 20, 2026, 12:10 pm
+New York’s 5-GW nuclear master plan
+November 20, 2026, 9:29 am
+ANS panel discusses fusion optimism and reality
+November 20, 2026, 7:32 am
+Newcleo’s planned Savannah River MOX fuel fabrication plant gets Curio support
+November 19, 2026, 3:17 pm
+Fusion Innovation Bootcamp: Addressing workforce needs with unique educational opportunities
+November 19, 2026, 11:46 am
+IAEA, Grossi give updates on Ukraine, Iran, North Korea, nuclear power growth projections
+November 19, 2026, 9:32 am
 For personalized headlines, please log in/create an account .
-Latest Issue &mdash; Aug 2026
-Latest Issue &mdash; Jan 2026
-Ageing nuclear assets don't have to mean higher maintenance costs. Discover how HVTS® cladding helps extend the life of PWR secondary system components, reduce outage duration, support ALARA principles, and protect against FAC, erosion-corrosion and other degradation mechanisms. Learn more.
+Latest Issue &mdash; Nov 2026
+Latest Issue &mdash; Fall / Buyers Guide
+A message from Westinghouse Electric Company LLC
+Unleash Your Organizational Superpower Through Talent Development
 Learn More
 Industry
 Nuclear is ready now
-July 16, 2026, 11:49AM
+July 16, 2026, 11:49 am
 Nuclear News Michael Goff
 Michael Goff
 I don’t think we’ve ever had a busier year in the Office of Nuclear Energy, and it’s probably been decades since we’ve had this much momentum within the overall U.S. nuclear industry.

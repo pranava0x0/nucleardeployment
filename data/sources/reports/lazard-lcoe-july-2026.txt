@@ -1,0 +1,3421 @@
+--- PAGE 1 ---
+L E V E L I Z E D  C O S T  O F  E N E R G Y +
+J u l y  2 0 2 6
+--- PAGE 2 ---
+Table of Contents
+C O N F I D E N T I A L
+EXECUTIVE SUMMARY
+LAZARD’S LEVELIZED COST OF ENERGY ANALYSIS—VERSION 19.0
+Cost of Firming Intermittency
+LAZARD’S LEVELIZED COST OF STORAGE ANALYSIS—VERSION 11.0
+APPENDIX
+LCOE v19.0
+Cost of Firming Intermittency
+LCOS v11.0
+Scope of Lazard’s LCOE+
+I
+II
+III
+IV
+3
+5
+19
+23
+A
+A
+B
+C
+D
+15
+24
+32
+36
+41
+--- PAGE 3 ---
+C O N F I D E N T I A L
+Executive Summary
+I
+--- PAGE 4 ---
+Executive Summary—Selected Key Findings from Lazard’s 2026 LCOE+
+Lazard’s 2026 LCOE+ Report includes Version 19.0 of the Levelized Cost of Energy, including the Cost of Firming Intermittency analysis,
+and Version 11.0 of the Levelized Cost of Storage
+Levelized Cost
+of Energy
+Version 19.0
+• Renewables Remain Lowest Cost New-Build Generation; All Generation Faces Increasing Cost Pressure: Unsubsidized renewable energy remains the most cost-
+competitive form of new-build generation on an LCOE basis. Wind, solar and storage are expected to continue to account for the majority of near-term U.S. capacity
+additions given their relatively short deployment timeline. However, this year’s analysis shows wind and solar LCOEs have continued to rise—reflecting higher capital
+costs, sustained interest rates, tariff pass-through and supply chain repricing—though they remain below conventional new-build alternatives. Renewables therefore
+maintain their relative cost advantage despite facing the same cost pressures affecting the rest of the generation stack. Continuous upward revisions to demand
+projections have driven a sharp increase in announced new-build gas generation despite a 15-year high LCOE and historically long development lead times. New gas
+combined cycle plants (“CCGT”) offer the lowest-cost dispatchable power in high-demand and low-cost-gas environments; however, gas turbine supply is
+constrained, extending development timelines well beyond historical norms. As anticipated, CCGT capital costs and LCOE increased in this year’s study, but they
+have not yet reached the levels of recently observed quotes, suggesting higher-cost projects may still be in the planning and development phases
+• Unprecedented Demand Reinforces Need for Diverse Generation and Thoughtful Acceleration of Permitting/Approval Processes: Lazard’s Cost of Firming
+Intermittency analysis provides an illustrative lens on firming costs for selected renewable and hybrid resources using grid operators’ capacity accreditation and
+resource adequacy frameworks. Even after incorporating these firming costs, renewables remain broadly cost-competitive with the LCOE of CCGTs, and this
+comparison is drawn without any regional adjustment or offsetting firming charge applied to the CCGTs themselves. Although Lazard’s analysis does not calculate
+firming costs for conventional generation, such resources are also subject to reliability-related constraints, including fuel supply, pipeline deliverability and outage
+risk, that can affect their ability to provide firm capacity. Rising power demand and intensifying reliability considerations—as evidenced by the increasingly broad
+application of sophisticated capacity accreditation methodologies across the generation stack, including for fossil resources—are compounding the pressures
+already confronting the Industry, from pipeline capacity constraints to rising and inflationary cost pressures. Meeting this demand requires substantial new
+infrastructure, yet development timelines remain protracted, and these challenges are further exacerbated by permitting delays, all of which increase costs and
+reduce reliability. Facilitating investment in grid infrastructure, while safeguarding the interests of affected stakeholders, is therefore critical. In this context, the
+LCOE+ reinforces that an acceleration of permitting and approval processes is needed to meet growing demand and to enhance overall system reliability and
+security. The analysis also continues to reinforce the need for, and value of, a diverse generation fleet. As emerging types of firm generation are attracting capital and
+policy support, this year’s LCOE+ adds illustrative cost data points for new geothermal and small modular nuclear reactors
+• Increasing Competitiveness of Existing Generation: The relative economics of existing generation have improved as rising new-build costs across all technologies,
+together with execution challenges tied to supply chains, inflation, tariffs, permitting and macroeconomic uncertainty, have made replacement capacity more
+expensive and difficult to deliver. As load growth increases the need for power, existing assets are being dispatched more frequently, spreading fixed costs over
+greater output and improving unit economics. However, the marginal cost of operating conventional generation remains sensitive to fuel prices, particularly natural
+gas and coal, which increased year over year in this year’s analysis and can fluctuate based on weather, geopolitical events and broader commodity market
+conditions. This year’s report introduces illustrative nuclear restart costs, reflecting increased market interest in nuclear restart opportunities where existing sites,
+interconnections and infrastructure can be leveraged to restore baseload capacity with potentially lower capital intensity and shorter timelines than greenfield
+development
+Levelized Cost
+of Storage
+Version 11.0
+• Storage Costs Increase, Reversing Recent Declines: Lazard’s LCOS shows an increase in costs for utility-scale standalone storage configurations, reversing last
+year’s declines. While the midpoint remains within the ranges observed since 2020, it has moved toward the higher end of such ranges. Like the LCOE, the LCOS is a
+snapshot of projects being built today and therefore captures real-time market dislocations—this year, the materialization of tariffs on lithium-ion battery imports has
+curtailed access to the low-cost Chinese cell supply that previously helped drive costs lower. While the One Big Beautiful Bill Act (“OBBBA”) preserved the storage
+ITC through 2033, new Foreign Entity of Concern restrictions have accelerated supply chain diversification toward Southeast Asian manufacturing capacity and
+domestic suppliers
+I    E X E C U T I V E  S U M M A R Y
+4
+--- PAGE 5 ---
+C O N F I D E N T I A L
+Lazard’s Levelized Cost of Energy
+Analysis—Version 19.0
+II
+--- PAGE 6 ---
+Introduction
+Lazard’s Levelized Cost of Energy analysis addresses the following topics:
+•
+Comparative LCOE analysis for various generation technologies on a $/MWh basis, including sensitivities for U.S. federal tax subsidies, fuel prices, carbon
+pricing and cost of capital
+•
+Illustration of how the LCOE of onshore wind, utility-scale solar and hybrid projects compares to the marginal cost of selected conventional generation
+technologies
+•
+Historical LCOE comparison of selected technologies
+•
+Illustration of the historical LCOE declines for onshore wind and utility-scale solar
+•
+Lazard’s Cost of Firming Intermittency analysis
+•
+Appendix materials, including:
+−
+An overview of the methodology utilized to prepare Lazard’s LCOE analysis
+−
+A summary of the assumptions utilized in Lazard’s LCOE analysis
+−
+Deconstruction of the LCOE for various generation technologies by capital cost, fixed operations and maintenance (“O&M”) expense, variable O&M
+expense and fuel cost
+−
+Scope of LCOE analysis
+−
+Market overview and assumptions for the Cost of Firming Intermittency Analysis
+Other factors would also have a potentially significant effect on the results contained herein but have not been examined in the scope of this current analysis.
+These additional factors, among others, may include: ongoing tariff-related cost impacts; implementation and interpretation of the full scope of current federal tax
+credits, including phase-out provisions under the OBBBA; changes in electricity demand trajectories and system planning assumptions associated with emerging
+large-load customers, as well as the potential for such customers to pursue self-supply, co-located generation, direct procurement or other non-traditional
+supply arrangements; transmission queue reform, network upgrades and other transmission matters; congestion, curtailment or other integration-related costs;
+permitting or other development costs, unless otherwise noted; changes in long-term fuel price assumptions or commodity market dynamics; and costs of
+complying with various environmental regulations (e.g., carbon emissions offsets or emissions control systems). This analysis is intended to represent a snapshot
+in time and utilizes a wide, but not exhaustive, sample set of Industry data. As such, we recognize and acknowledge the likelihood of results outside of our ranges.
+Therefore, this analysis is not a forecasting tool and should not be used as such given the complexities of our evolving Industry, grid and resource needs. The
+analysis does not include non-generation system resources such as demand management and energy efficiency, though they have been included in past versions
+of the LCOE and may be included again in the future as they become increasingly critical in a high load growth environment. Except as illustratively sensitized
+herein, this analysis does not consider the intermittent nature of selected renewable energy technologies or the related grid impacts of incremental renewable
+energy deployment. This analysis also does not address potential social and environmental externalities including, for example, the social costs and rate
+consequences as well as the long-term residual and societal consequences of various conventional generation technologies that are difficult to measure (e.g.,
+airborne pollutants, greenhouse gases, etc.)
+I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  E N E R G Y  A N A L Y S I S — V E R S I O N  1 9 . 0
+6
+--- PAGE 7 ---
+Levelized Cost of Energy Comparison—Version 19.0
+On a $/MWh basis, unsubsidized renewable energy remains the most cost-competitive form of new-build generation, though higher
+capital costs, sustained interest rates, tariff pass-through and supply chain repricing have increased LCOEs year over year across all
+generation technologies
+Renewable
+Generation
+Conventional
+Generation3
+$88
+$40
+$61
+$67
+$37
+$49
+$105
+$144
+$175
+$72
+$51
+$197
+$98
+$156
+$111
+$99
+$140
+$167
+$276
+$255
+$177
+$129
+$0
+$25
+$50
+$75
+$100
+$125
+$150
+$175
+$200
+$225
+$250
+$275
+$300
+Solar PV—Community & C&I
+Solar PV—Utility
+Solar PV + Storage—Utility
+Geothermal
+Wind—Onshore
+Wind + Storage—Onshore
+Wind—Offshore
+Gas Peaking
+U.S. Nuclear
+Coal
+Gas Combined Cycle
+$1075
+$426
+2
+2
+4
+Levelized Cost of Energy ($/MWh)
+$316
+$516
+$876
+$2148
+1
+1
+$717
+Source:
+Lazard estimates and publicly available information.
+Note:
+Here and throughout this analysis, unless otherwise indicated, the analysis assumes project capital structure consists of 60% debt at an 8% interest rate and 40% equity at a 12% cost. See page titled “Levelized Cost of Energy Comparison—Sensitivity
+to Cost of Capital” for cost of capital sensitivities.
+1
+Reflects the LCOE for a system composed of standalone generation plus standalone storage less the combined system-level synergies (assumed to be 10% of storage capital costs and 25% of inverter costs). The synergies capture potential cost
+reductions or efficiency gains from integrating generation and storage, such as shared interconnection infrastructure, improved energy dispatch, enhanced capacity utilization and operational efficiencies.
+2
+Given the limited public and/or observable data available for new-build geothermal and coal projects, the LCOE presented herein reflects Lazard’s LCOE v14.0 results adjusted for inflation. Coal LCOE excludes transportation and storage.
+3
+The fuel cost assumptions for Lazard’s LCOE analysis of gas-fired generation, coal-fired generation and nuclear generation resources are $3.45/MMBTU, $1.47/MMBTU and $0.85/MMBTU, respectively, for year-over-year comparison purposes. See
+page titled “Levelized Cost of Energy Comparison—Sensitivity to Fuel Prices” for fuel price sensitivities.
+4
+U.S. Nuclear LCOE based on publicly available cost estimates for Vogtle units 3 and 4, representing the most recent observable data point for a completed U.S. nuclear project. High end of LCOE range reflects portion of total capital cost attributable to
+Vogtle unit 3, while low end reflects costs attributed to Vogtle unit 4, based on suggestions from selected industry experts indicating a cost "learning curve" of ~30% cost savings between Vogtle units 3 and 4. Full assumptions are included in Appendix.
+5
+Represents illustrative LCOE for new geothermal technology based on publicly disclosed estimates, including capital cost of $7,000/kW, fixed O&M of $160/kW-year and illustrative operating assumptions.
+6
+Reflects the average of the high and low LCOE marginal cost of operating fully depreciated gas peaking, gas combined cycle, coal and nuclear facilities. Capacity factors, fuel, variable and fixed operating expenses are based on upper- and lower-
+quartile estimates derived from Lazard’s research. See page titled “Levelized Cost of Energy Comparison—New-Build Renewable Generation vs. Marginal Cost of Conventional Generation” for additional details.
+7
+Represents the illustrative LCOE of U.S. nuclear facilities which have announced restart (Crane Clean Energy Center, Duane Arnold Energy Center, and Palisades Nuclear Plant), inclusive of capital costs related to restart (based on publicly available
+estimates) and decommissioning costs, over 20 years, consistent with an initial license extension period.
+8
+Represents illustrative LCOE values for selected small modular nuclear reactor (“SMR”) projects at various stages of development (Clinch River, Darlington and Natrium) based on publicly disclosed capital cost estimates and illustrative operating
+assumptions. Estimate is highly illustrative and not directly comparable to other technologies presented herein given expected commercial operation dates of 2030 and beyond.
+9
+Illustrative high case reflects elevated capital costs ($2,400/kW – $2,600/kW) based on market quotes for CCGT projects in early stages of development with post-2028 COD. As anticipated, CCGT capital costs and LCOE increased in this year’s study,
+but they have not yet reached the levels of recently observed quotes, suggesting higher-cost projects may still be in the planning and development phases. Lazard expects there could be further cost increases in future studies as quoted costs are
+reflected in project deployments but also expects some degree of price normalization may occur.
+LCOE
+Inflation-adjusted LCOE
+Marginal Cost Midpoint
+Other Illustrative Analyses
+I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  E N E R G Y  A N A L Y S I S — V E R S I O N  1 9 . 0
+7
+$1079
+--- PAGE 8 ---
+Levelized Cost of Energy Comparison—Sensitivity to U.S. Federal Tax Subsidies
+The Investment Tax Credit (“ITC”), Production Tax Credit (“PTC”) and Bonus Adder materially impact LCOE for renewable energy
+technologies that are eligible under the OBBBA
+Source:
+Lazard estimates and publicly available information.
+Note:
+Unless otherwise indicated, this analysis does not include other state or federal subsidies (e.g., domestic content adder, etc.). Some zero-emissions generation technologies (e.g., hydropower) are not shown here, though eligible for
+ITC/PTC under OBBBA, due to lack of projects beginning construction in the time frame included in this study and lack of available cost data for such projects. Nuclear is included in the U.S. federal tax subsidy sensitivity for the first time
+this year, as growth in power demand has accelerated efforts for new nuclear that could feasibly begin construction within the eligibility window under the OBBBA. Lazard’s LCOE analysis assumes, for year-over-year reference purposes,
+60% debt at an 8% interest rate and 40% equity at a 12% cost (together implying an after-tax IRR/WACC of 7.7%).
+1
+This sensitivity analysis assumes that projects qualify for the full ITC/PTC with an adder of 10% for ITC projects and $3/MWh for PTC projects, assuming eligibility for this adder is achieved by meeting either domestic content requirements or
+energy community requirements. Analysis assumes projects have a capital structure that includes sponsor equity, debt and tax equity and assumes the equity owner has taxable income to monetize the tax credits.
+2
+This sensitivity analysis assumes that projects qualify for the full ITC/PTC, have a capital structure that includes sponsor equity, debt and tax equity and assumes the equity owner has taxable income to monetize the tax credits.
+3
+Reflects midpoint LCOE under ITC sensitivity for illustrative new geothermal, excluding Bonus Adder.
+4
+Reflects midpoint LCOE under PTC sensitivity for illustrative nuclear restart facilities, excluding Bonus Adder.
+5
+Reflects midpoint LCOE under PTC sensitivity for illustrative nuclear SMR, excluding Bonus Adder.
+Renewable
+Generation
+Conventional
+Generation
+$88
+$64
+$40
+$27
+$16
+$61
+$43
+$67
+$46
+$37
+$11
+$49
+$35
+$105
+$77
+$175
+$152
+$129
+$197
+$163
+$98
+$83
+$81
+$156
+$135
+$111
+$95
+$99
+$81
+$140
+$118
+$167
+$150
+$255
+$231
+$228
+$0
+$25
+$50
+$75
+$100
+$125
+$150
+$175
+$200
+$225
+$250
+$275
+$300
+Solar PV—Community & C&I
+Solar PV—Community & C&I (ITC)
+Solar PV—Utility
+Solar PV—Utility (ITC)
+Solar PV—Utility (PTC)
+Solar PV + Storage—Utility
+Solar PV + Storage—Utility (ITC)
+Geothermal
+Geothermal (ITC)
+Wind—Onshore
+Wind—Onshore (PTC)
+Wind + Storage—Onshore
+Wind + Storage—Onshore (ITC)
+Wind—Offshore
+Wind—Offshore (PTC)
+U.S. Nuclear
+U.S. Nuclear (ITC)
+U.S. Nuclear (PTC)
+LCOE
+Subsidized (incl. Bonus Adder)
+Subsidized (excl. Bonus Adder)
+1
+Levelized Cost of Energy ($/MWh)
+2
+LCOE
+$394
+$1805
+Other Illustrative Analyses
+$783
+I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  E N E R G Y  A N A L Y S I S — V E R S I O N  1 9 . 0
+8
+--- PAGE 9 ---
+Levelized Cost of Energy Comparison—Sensitivity to Fuel Prices
+Variations in fuel prices can materially impact the LCOE of conventional generation technologies
+Source:
+Lazard estimates and publicly available information.
+Note:
+Unless otherwise noted, the assumptions used in this sensitivity correspond to those used in the LCOE analysis as presented on the page titled “Levelized Cost of Energy Comparison—Version 19.0”.
+1
+Assumes a fuel cost range for gas-fired generation resources of $2.59/MMBTU – $4.31/MMBTU (representing a sensitivity range of ± 25% of the $3.45/MMBTU used in the LCOE).
+2
+Assumes a fuel cost range for nuclear generation resources of $0.64/MMBTU – $1.06/MMBTU (representing a sensitivity range of ± 25% of the $0.85/MMBTU used in the LCOE).
+3
+Assumes a fuel cost range for coal-fired generation resources of $1.10/MMBTU – $1.84/MMBTU (representing a sensitivity range of ± 25% of the $1.47/MMBTU used in the LCOE).
+Renewable
+Generation
+Conventional
+Generation
+$88
+$40
+$61
+$67
+$37
+$49
+$105
+$134
+$172
+$68
+$44
+$197
+$98
+$156
+$111
+$99
+$140
+$167
+$287
+$258
+$182
+$136
+$0
+$25
+$50
+$75
+$100
+$125
+$150
+$175
+$200
+$225
+$250
+$275
+$300
+Solar PV—Community & C&I
+Solar PV—Utility
+Solar PV + Storage—Utility
+Geothermal
+Wind—Onshore
+Wind + Storage—Onshore
+Wind—Offshore
+Gas Peaking
+U.S. Nuclear
+Coal
+Gas Combined Cycle
+LCOE
++/- 25% Fuel Price Adjustment
+1
+2
+3
+Levelized Cost of Energy ($/MWh)
+1
+LCOE
+I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  E N E R G Y  A N A L Y S I S — V E R S I O N  1 9 . 0
+9
+--- PAGE 10 ---
+Levelized Cost of Energy Comparison—Sensitivity to Carbon Pricing
+Carbon pricing is one avenue for policymakers to address carbon emissions; a carbon price range of $20 – $60/Ton1 of carbon would
+increase the LCOE for certain conventional generation technologies
+Source:
+Lazard estimates and publicly available information.
+Note:
+Unless otherwise noted, the assumptions used in this sensitivity correspond to those used in the LCOE analysis as presented on the page titled “Levelized Cost of Energy Comparison—Version 19.0”. LCOE with Carbon Pricing is limited to
+carbon emissions directly related to generation and does not include the impacts of carbon pricing on embodied carbon.
+1
+The current administration no longer maintains an estimate of the monetized impacts of greenhouse gas emissions. Previous administrations estimated the social cost of carbon to range from $5/Ton (first Trump Administration) to over
+$200/Ton (Biden Administration).
+2
+The low and high ranges reflect the LCOE of selected conventional generation technologies including an illustrative carbon price of $20/Ton and $60/Ton, respectively.
+Renewable
+Generation
+Conventional
+Generation
+$88
+$40
+$61
+$67
+$37
+$49
+$105
+$144
+$156
+$175
+$72
+$91
+$51
+$59
+$197
+$98
+$156
+$111
+$99
+$140
+$167
+$276
+$315
+$255
+$177
+$252
+$129
+$152
+$0
+$25
+$50
+$75
+$100
+$125
+$150
+$175
+$200
+$225
+$250
+$275
+$300
+$325
+Solar PV—Community & C&I
+Solar PV—Utility
+Solar PV + Storage—Utility
+Geothermal
+Wind—Onshore
+Wind + Storage—Onshore
+Wind—Offshore
+Gas Peaking
+Gas Peaking w/ Carbon Pricing
+U.S. Nuclear
+Coal
+Coal w/ Carbon Pricing
+Gas Combined Cycle
+Gas Combined Cycle w/ Carbon Pricing
+Levelized Cost of Energy ($/MWh)
+LCOE
+LCOE with Carbon Pricing
+2
+2
+2
+I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  E N E R G Y  A N A L Y S I S — V E R S I O N  1 9 . 0
+10
+--- PAGE 11 ---
+Levelized Cost of Energy Comparison—Sensitivity to Cost of Capital
+A key consideration in determining the LCOE for utility-scale generation technologies is the cost, and availability, of capital1. In practice,
+this dynamic is particularly significant because the cost of capital for each asset is related to its specific operational characteristics and
+the resulting risk/return profile
+Source:
+Lazard estimates and publicly available information.
+Note:
+Analysis assumes 60% debt and 40% equity. Unless otherwise noted, the assumptions used in this sensitivity correspond to those used on the page titled “Levelized Cost of Energy Comparison—Version 19.0”.
+1
+Cost of capital as used herein indicates the cost of capital applicable to the asset/plant and not the cost of capital of a particular investor/owner.
+2
+Reflects the average of the high and low LCOE for each respective cost of capital assumption.
+Average LCOE2
+After-Tax IRR/WACC
+4.2%
+5.4%
+6.5%
+7.7%
+8.8%
+10.0%
+Cost of Equity
+6.0%
+8.0%
+10.0%
+12.0%
+14.0%
+16.0%
+Cost of Debt
+5.0%
+6.0%
+7.0%
+8.0%
+9.0%
+10.0%
+$71
+$76
+$82
+$89
+$97
+$106
+$53
+$57
+$62
+$69
+$75
+$83
+$53
+$57
+$62
+$68
+$74
+$81
+$89
+$99
+$111
+$125
+$140
+$157
+$74
+$78
+$84
+$90
+$97
+$105
+$160
+$175
+$192
+$210
+$230
+$252
+$130
+$153
+$182
+$215
+$251
+$291
+$105
+$114
+$125
+$136
+$149
+$163
+0
+50
+100
+150
+200
+250
+$300
+LCOE
+($/MWh)
+Gas Peaking
+Geothermal
+Coal
+Gas Combined
+Cycle
+Solar PV—
+Utility
+Wind—Onshore
+LCOE v19.0
+U.S. Nuclear
+Wind—Offshore
+I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  E N E R G Y  A N A L Y S I S — V E R S I O N  1 9 . 0
+11
+--- PAGE 12 ---
+Levelized Cost of
+New-Build
+Renewable
+Generation
+Marginal Cost of
+Conventional
+Generation1,3
+Levelized Cost of Energy Comparison—New-Build Renewable Generation vs. Marginal
+Cost of Conventional Generation
+The marginal cost of existing conventional generation is lower than the new-build LCOE of most generation technologies and the marginal
+cost of existing renewable generation is near-zero1; this gap between marginal cost and new-build LCOE underscores the near-term
+economic case for optimizing existing generation while new-build costs across all technologies face sustained pressure
+Source:
+Lazard estimates and publicly available information.
+Note:
+Unless otherwise noted, the assumptions used in this sensitivity correspond to those used on the page titled “Levelized Cost of Energy Comparison—Version 19.0”.
+1
+In practice, the marginal cost of existing wind and solar generation is treated as near-zero when participating in wholesale energy markets because these resources do not incur fuel costs and typically have limited variable O&M. This
+treatment excludes Fixed O&M, which represents $3/MWh – $15/MWh and $5/MWh – $15/MWh of total LCOE for new-build Solar PV—Utility and Wind—Onshore, respectively. See pages titled “Levelized Cost of Energy Components” in
+Appendix for additional details.
+2
+See page titled “Levelized Cost of Energy Comparison—Sensitivity to U.S. Federal Tax Subsidies” for additional details.
+3
+Reflects the marginal cost of operating fully depreciated gas, coal and nuclear facilities, inclusive of decommissioning costs for nuclear facilities. Analysis assumes that the salvage value for a decommissioned gas or coal asset is
+equivalent to its decommissioning and site restoration costs. Inputs are derived from a benchmark of operating gas, coal and nuclear assets across the U.S. Capacity factors, fuel, variable and fixed O&M are based on upper- and lower-
+quartile estimates derived from Lazard’s research.
+$40
+$27
+$16
+$61
+$43
+$37
+$11
+$49
+$35
+$52
+$26
+$34
+$32
+$98
+$83
+$81
+$156
+$135
+$99
+$81
+$140
+$118
+$122
+$36
+$69
+$51
+$0
+$25
+$50
+$75
+$100
+$125
+$150
+$175
+$200
+Solar PV—Utility
+Solar PV—Utility (ITC)
+Solar PV—Utility (PTC)
+Solar PV + Storage—Utility
+Solar PV + Storage—Utility (ITC)
+Wind—Onshore
+Wind—Onshore (PTC)
+Wind + Storage—Onshore
+Wind + Storage—Onshore (ITC)
+Gas Peaking
+U.S. Nuclear
+Coal
+Gas Combined Cycle
+Levelized Cost of Energy ($/MWh)
+2
+2
+2
+2
+2
+LCOE
+Subsidized (excl. Bonus Adder)
+Marginal Cost1,3
+Subsidized (incl. Bonus Adder)
+I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  E N E R G Y  A N A L Y S I S — V E R S I O N  1 9 . 0
+12
+--- PAGE 13 ---
+Levelized Cost of Energy Comparison—Historical LCOE Comparison
+Lazard’s nearly 20 years of LCOE data demonstrate that technology costs benefit from economies of scale and development over time;
+wind and solar LCOEs have risen from their 2021 lows but remain well below historical peaks and below conventional new-build
+alternatives
+Source:
+Lazard estimates and publicly available information.
+Note:
+Select technologies are excluded (e.g., nuclear, coal, geothermal) due to lack of available data points and changes in methodology.
+1
+Reflects the average of the high and low LCOE for each respective technology in each respective year. Percentages represent the total change in the average LCOE since Lazard’s LCOE v3.0 and LCOE v18.0, respectively.
+Selected Historical Average LCOE Values1
+$359
+$248
+$157
+$125
+$98
+$79
+$64
+$55
+$50
+$43
+$40
+$37
+$36
+$60
+$61
+$58
+$69
+$83
+$82
+$83
+$75
+$74
+$74
+$65
+$63
+$60
+$58
+$56
+$59
+$60
+$70
+$76
+$78
+$90
+$135
+$124
+$71
+$72
+$70
+$59
+$55
+$47
+$45
+$42
+$41
+$40
+$38
+$50
+$50
+$61
+$68
+$275
+$243
+$227
+$216
+$205
+$205
+$192
+$191
+$183
+$179
+$175
+$175
+$173
+$168
+$169
+$200
+$210
+0
+50
+100
+150
+200
+250
+300
+350
+$400
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2023
+2024
+2025
+2026
+LCOE
+($/MWh)
+Gas Combined
+Cycle
+9%
+//
+LCOE
+Version
+3.0
+4.0
+5.0
+6.0
+7.0
+8.0
+9.0
+10.0
+11.0
+12.0
+13.0
+14.0
+15.0
+16.0
+17.0
+18.0
+19.0
+Since v3.0
+Solar PV—
+Utility
+(81%)
+Solar PV—
+Utility
+18%
+Gas Combined
+Cycle
+15%
+Wind—
+Onshore
+(50%)
+Wind—
+Onshore
+11%
+Gas Peaking
+(24%)
+Gas Peaking
+5%
+Since v18.0
+I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  E N E R G Y  A N A L Y S I S — V E R S I O N  1 9 . 0
+13
+--- PAGE 14 ---
+Levelized Cost of Energy Comparison—Historical Renewable Energy LCOE
+This year’s analysis shows a widening in the LCOE range for both onshore wind and utility-scale solar, with high-end costs rising faster
+than low-end costs—likely reflecting that some project developers have been better able to mitigate broader cost pressures across
+supply chain and project-level economics than others
+Source:
+Lazard estimates and publicly available information.
+1
+Reflects the average percentage increase/(decrease) of the high end and low end of the LCOE range.
+2
+Reflects the average compounded annual growth rate of the high end and low end of the LCOE range.
+$323
+$226
+$148
+$101 $91
+$72
+$58 $49 $46 $40 $36 $31 $30 $24 $29
+$38 $40
+$394
+$270
+$166
+$149
+$104
+$86
+$70 $61 $53 $46 $44 $42 $41
+$96 $92
+$78
+$98
+0
+75
+150
+225
+300
+375
+$450
+2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2023 2024 2025 2026
+LCOE
+($/MWh)
+Wind—Onshore
+Solar PV—Utility
+Solar PV—Utility LCOE Range
+Solar PV—Utility LCOE Average
+Wind—Onshore LCOE Range
+Wind—Onshore LCOE Average
+$101 $99
+$50 $48 $45
+$37 $32 $32
+$30 $29 $28 $26 $26 $24
+$27
+$37 $37
+$169
+$148
+$92 $95 $95
+$81 $77
+$62 $60 $56 $54 $54 $50
+$75
+$73
+$86
+$99
+0
+50
+100
+150
+200
+$250
+2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2023 2024 2025 2026
+LCOE
+($/MWh)
+Wind—Onshore 2009 – 2026 Percentage Decrease/CAGR: (52%)1/(4%)2
+Wind—Onshore 2021 – 2026 Increase/CAGR: 70%1/11%2
+//
+Solar PV—Utility 2009 – 2026 Percentage Decrease/CAGR: (81%)1/(10%)2
+Solar PV—Utility 2021 – 2026 Percentage Increase/CAGR: 85%1/12%2
+//
+LCOE
+Version
+3.0
+4.0
+5.0
+6.0
+7.0
+8.0
+9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0
+LCOE
+Version
+3.0
+4.0
+5.0
+6.0
+7.0
+8.0
+9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0
+I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  E N E R G Y  A N A L Y S I S — V E R S I O N  1 9 . 0
+14
+--- PAGE 15 ---
+C O N F I D E N T I A L
+Cost of Firming Intermittency
+A
+--- PAGE 16 ---
+Cost of Firming Intermittency—Background and Methodology
+Nameplate Capacity (kW) × (1 –  ELCC (%)) × Net CONE ($/kW-month) × 12 Months
+Nameplate Capacity (MW) × Regional Capacity Factor (%) × 8,760 Hours
+•
+The illustrative firm capacity value of a new resource is calculated as
+Nameplate Capacity × ELCC, where:
+−
+Nameplate Capacity of a resource refers to its maximum potential
+energy output, and
+−
+ELCC is as published by the grid operator
+•
+The remaining non-firm capacity (Nameplate Capacity × (1 – (ELCC (%)))
+is assumed to be “firmed” at the Net CONE, as published by the grid
+operator, according to the formula below, representing the Levelized
+Firming Cost
+•
+The LCOE plus Levelized Firming Cost varies between regional markets
+due to (1) the standalone LCOE in the region based on regional capacity
+factors for wind or solar, (2) applicable ELCC value of the resource and
+(3) the region’s Net CONE
+Background
+Methodology
+•
+Lazard’s LCOE is a cost-focused benchmarking tool, and not a planning
+tool or total system-cost analysis
+•
+To supplement the LCOE, Lazard’s Cost of Firming Intermittency analysis
+uses each grid operator’s own capacity accreditation and resource
+adequacy construct, providing a region-specific lens on third-party
+firming costs under existing planning frameworks
+•
+ The analysis utilizes Effective Load Carrying Capability (“ELCC”) and Net
+Cost of New Entry (“Net CONE”) values assessed and published by grid
+operators for each regional market
+•
+Grid operators plan to the system’s forecasted peak, or highest demand
+periods of the year, and estimate each resource’s contribution to
+meeting demand during such high periods using ELCC
+•
+ELCC measures a resource’s contribution to system reliability during
+periods of greatest reliability risk, or “system peak”, where system peak
+is a function of electricity demand patterns and the generation mix in
+each region
+−
+The performance of both renewable and conventional generation at
+system peak is accounted for in most system planning frameworks1
+•
+Net CONE is a planning construct intended to represent the region’s cost
+of building a new firm resource, less revenues that resource would
+expect to earn in the energy market
+Source:
+Publicly available information.
+Note:
+Background information describes, at a high level, approaches to resource adequacy and system planning used by U.S. grid operators. In practice, methodologies and market constructs vary by region, and such differences may not be fully
+reflected in the analysis herein. New-build and existing generators are compensated differently across markets for their contribution to resource adequacy, including through capacity market constructs, such as PJM’s forward capacity
+auction, or energy-only market constructs, such as ERCOT’s market design. Lazard’s Cost of Firming Intermittency analysis illustrates one methodology to quantify firming costs using publicly available grid-operator capacity accreditation
+and resource adequacy constructs, and is not intended to represent a planning tool or total system-cost analysis.
+1
+See pages titled “Market Overview—Current Renewable Generation Firming Cost Frameworks” and “Market Overview—Supplemental Conventional Generation Accreditation Background” in Appendix for further detail. Lazard’s Cost of
+Firming Intermittency analysis reflects Solar, Solar + Storage, Wind and Wind + Storage only, given the relative comparability of capacity accreditation approaches for these resources across U.S. grid operators. Conventional generation
+resources, including gas-fired generation, are not separately modeled in the firming analysis; however, such resources are increasingly subject to more granular—and, in some cases, asset-specific—capacity accreditation as grid operators
+seek to reflect fuel security, pipeline deliverability, outage risk and historical performance during peak or other reliability-critical periods.
+The Cost of Firming Intermittency analysis presents an illustrative “levelized firming cost” based on third-party grid operator capacity
+accreditation and resource adequacy constructs
+A    C O S T  O F  F I R M I N G  I N T E R M I T T E N C Y
+16
+--- PAGE 17 ---
+Gas Peaking
+LCOE v19.0
+($144 –
+$276/MWh)
+Gas
+Combined
+Cycle LCOE
+v19.0 ($51 –
+$129/MWh)
+Cost of Firming Intermittency—Results
+The Cost of Firming Intermittency or illustrative “levelized firming cost” is the incremental cost to firm solar, solar + storage, wind and
+wind + storage resources using each grid operator’s own capacity accreditation and resource adequacy construct—thereby normalizing
+renewable costs against the LCOE of CCGTs, absent any regional adjustment or offsetting firming charge applied to the latter
+Source:
+Lazard estimates and publicly available information.
+Note:
+Figures may not sum due to rounding. Total, including firming cost, does not represent the cost of building a 24/7 firm resource on a single project site but, instead, the LCOE of a renewable resource and the additional capacity costs required to
+achieve the resource adequacy requirement in the relevant reliability region based on the Net CONE as set by each market operator. ISO ELCC data is as of May 2026 and representative of annualized ELCC values for markets where seasonal
+accreditation values exist. Assumptions are detailed in Appendix. While analysis illustrates firming cost for solar, solar + storage, wind and wind + storage, conventional generation is also subject to applicable firming frameworks, as described in
+Appendix.
+1
+For PV + Storage and Wind + Storage cases, assumed storage configuration is 50% of PV or Wind capacity and 4-hour duration.
+2
+Here, LCOE reflects the average of the high and low of Lazard’s LCOE v19.0 for each technology, replacing the capacity factor assumption with the  regional capacity factor indicated in the table below.
+3
+For hybrid cases, the effective ELCC value is represented. The ISOs assess ELCC values separately for the Solar, Wind and Storage components of a system. For CAISO and  SPP, the combined ELCC is equal to the sum of the solar and storage ELCC
+values per ISO methodology. Where not specified or where the hybrid ELCC is calculated on an asset-by-asset basis,  storage ELCC value is provided only for the capacity that can be charged directly by the accompanying resource, up to the energy
+required for a 4-hour discharge during peak load periods. Any capacity available in excess of the 4-hour maximum discharge is attributed to the system at the Solar ELCC.
+4
+Reflects the proportion of installed capacity to system peak demand by energy source. PV + Storage and Wind + Storage figures represent penetration of the PV and Wind components, respectively.
+5
+This sensitivity analysis assumes that projects qualify for the full ITC/PTC, have a capital structure that includes sponsor equity, debt and tax equity and assumes the equity owner has taxable income to monetize the tax credits.
+LCOE2 plus Levelized Firming Cost ($/MWh)
+2
+2,5
+$86
+$136
+$69
+$96
+$59
+$93
+$74
+$103
+$84
+$134
+$67
+$92
+$73
+$113
+$52
+$81
+$50
+$77
+$59
+$87
+$71
+$111
+$49
+$78
+$30
+$30
+$22
+$22
+$18
+$18
+$8
+$8
+$33
+$33
+$22
+$22
+$22
+$22
+$15
+$15
+$26
+$26
+$19
+$19
+$21
+$21
+$11
+$11
+$115
+$102
+$158
+$135
+$87
+$70
+$104
+$89
+$92
+$83
+$115
+$99
+$96
+$80
+$117
+$102
+$110
+$97
+$153
+$130
+$87
+$70
+$103
+$89
+0
+25
+50
+75
+100
+125
+150
+175
+200
+225
+250
+$275
+Unsubsidized Regional LCOE
+Subsidized Regional LCOE (excl. Bonus Adder)
+Levelized Firming Cost
+Solar
+PV + Storage1
+Wind
+Wind + Storage1
+Solar
+PV + Storage1
+Wind
+Wind + Storage1
+Solar
+PV + Storage1
+Wind
+Wind + Storage1
+ELCC
+39%
+55%3
+26%
+66%3
+14%
+41%3
+27%
+50%3
+51%
+53%3
+20%
+47%3
+Capacity Factor
+18%
+18%
+36%
+36%
+27%
+27%
+34%
+34%
+19%
+19%
+37%
+37%
+Resource Penetration4
+23%
+23%
+26%
+26%
+50%
+50%
+19%
+19%
+4%
+4%
+66%
+66%
+MISO
+CAISO
+SPP
+A    C O S T  O F  F I R M I N G  I N T E R M I T T E N C Y
+17
+--- PAGE 18 ---
+Gas
+Combined
+Cycle LCOE
+v19.0 ($51 –
+$129/MWh)
+Gas Peaking
+LCOE v19.0
+($144 –
+$276/MWh)
+Cost of Firming Intermittency—Results (cont’d)
+The Cost of Firming Intermittency or illustrative “levelized firming cost” is the incremental cost to firm solar, solar + storage, wind and
+wind + storage resources using each grid operator’s own capacity accreditation and resource adequacy construct—thereby normalizing
+renewable costs against the LCOE of CCGTs, absent any regional adjustment or offsetting firming charge applied to the latter
+LCOE2 plus Levelized Firming Cost ($/MWh)
+2
+2,5
+Source:
+Lazard estimates and publicly available information.
+Note:
+Figures may not sum due to rounding. Total, including firming cost, does not represent the cost of building a 24/7 firm resource on a single project site but, instead, the LCOE of a renewable resource and the additional capacity costs required to
+achieve the resource adequacy requirement in the relevant reliability region based on the Net CONE as set by each market operator. ISO ELCC data is as of May 2026 and representative of annualized ELCC values for markets where seasonal
+accreditation values exist. Assumptions are detailed in Appendix. While analysis illustrates firming cost for solar, solar + storage, wind and wind + storage, conventional generation is also subject to applicable firming frameworks, as described in
+Appendix.
+1
+For PV + Storage and Wind + Storage cases, assumed storage configuration is 50% of PV or Wind capacity and 4-hour duration.
+2
+Here, LCOE reflects the average of the high and low of Lazard’s LCOE v19.0 for each technology, replacing the capacity factor assumption with the  regional capacity factor indicated in the table below.
+3
+For hybrid cases, the effective ELCC value is represented. The ISOs assess ELCC values separately for the Solar, Wind and Storage components of a system. Storage ELCC value is provided only for the capacity that can be charged directly by the
+accompanying resource, up to the energy required for a 4-hour discharge during peak load periods. Any capacity available in excess of the 4-hour maximum discharge is attributed to the system at the Solar ELCC.
+4
+Reflects the proportion of installed capacity to system peak demand by energy source. PV + Storage and Wind + Storage figures represent penetration of the PV and Wind components, respectively.
+5
+This sensitivity analysis assumes that projects qualify for the full ITC/PTC, have a capital structure that includes sponsor equity, debt and tax equity and assumes the equity owner has taxable income to monetize the tax credits.
+$86
+$138
+$83
+$116
+$73
+$115
+$74
+$103
+$83
+$132
+$94
+$131
+$73
+$114
+$70
+$98
+$62
+$95
+$59
+$87
+$70
+$109
+$84
+$111
+$37
+$37
+$29
+$29
+$16
+$16
+$12
+$12
+$62
+$62
+$35
+$35
+$36
+$36
+$17
+$17
+$37
+$37
+$23
+$23
+$25
+$25
+$15
+$15
+$123
+$110
+$167
+$143
+$98
+$86
+$127
+$109
+$135
+$123
+$150
+$131
+$110
+$95
+$120
+$104
+$120
+$107
+$155
+$132
+$118
+$109
+$146
+$125
+0
+25
+50
+75
+100
+125
+150
+175
+200
+225
+250
+$275
+Unsubsidized Regional LCOE
+Subsidized Regional LCOE (excl. Bonus Adder)
+Levelized Firming Cost
+Solar
+PV + Storage1
+Wind
+Wind + Storage1
+Solar
+PV + Storage1
+Wind
+Wind + Storage1
+Solar
+PV + Storage1
+Wind
+Wind + Storage1
+ELCC
+12%
+30%3
+38%
+53%3
+17%
+53%3
+24%
+63%3
+12%
+45%3
+17%
+51%3
+Capacity Factor
+18%
+18%
+30%
+30%
+22%
+22%
+34%
+34%
+19%
+19%
+27%
+27%
+Resource Penetration4
+7%
+7%
+1%
+1%
+47%
+47%
+49%
+49%
+2%
+2%
+8%
+8%
+PJM
+ERCOT
+NYISO
+A    C O S T  O F  F I R M I N G  I N T E R M I T T E N C Y
+18
+--- PAGE 19 ---
+C O N F I D E N T I A L
+Lazard’s Levelized Cost of Storage
+Analysis—Version 11.0
+III
+--- PAGE 20 ---
+Introduction
+Lazard’s Levelized Cost of Storage analysis addresses the following topics:
+•
+LCOS Analysis:
+−
+Comparative LCOS analysis for various energy storage systems on a $/MWh basis
+−
+Comparative LCOS analysis for various energy storage systems on a $/kW-year basis
+•
+Appendix Materials, including:
+−
+An overview of the methodology utilized to prepare Lazard’s LCOS analysis
+−
+A summary of the assumptions utilized in Lazard’s LCOS analysis
+−
+Deconstruction of the LCOS for various generation technologies by capital cost, fixed O&M expense and charging cost
+Other factors would also have a potentially significant effect on the results contained herein but have not been examined in the scope of this current analysis.
+These additional factors, among others, may include: ongoing tariff-related cost impacts; implementation and interpretation of the full scope of current federal tax
+credits, including phase-out provisions under OBBBA; economic policy, transmission queue reform, network upgrades and other transmission matters;
+congestion, curtailment or other integration-related costs; permitting or other development costs, unless otherwise noted; and costs of complying with various
+regulations (e.g., federal import tariffs or labor requirements). This analysis also does not address potential social and environmental externalities as well as the
+long-term residual and societal consequences of various energy storage system technologies that are difficult to measure (e.g., resource extraction, end-of-life
+disposal, lithium-ion-related safety hazards, etc.). This analysis is intended to represent a snapshot in time and utilizes a wide, but not exhaustive, sample set of
+Industry data. As such, we recognize and acknowledge the likelihood of results outside of our ranges. Therefore, this analysis is not a forecasting tool and should
+not be used as such given the complexities of our evolving Industry, grid and resource needs.
+I I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  S T O R A G E  A N A L Y S I S — V E R S I O N  1 1 . 0
+20
+--- PAGE 21 ---
+$136
+$96
+$266
+$187
+$178
+$264
+$262
+$369
+$0
+$100
+$200
+$300
+$400
+$500
+100 MW, 2-Hour
+100 MW, 2-Hour (ITC)
+100 MW, 4-Hour
+100 MW, 4-Hour (ITC)
+Levelized Cost of Storage ($/kW-year)
+LCOS
+Subsidized (incl. Bonus Adder)
+Subsidized (excl. Bonus Adder)
+Levelized Cost of Storage Comparison—Version 11.0
+Lazard’s LCOS analysis evaluates standalone energy storage systems on a levelized basis to derive cost metrics across energy storage
+use cases and configurations1
+Source:
+Lazard estimates and publicly available information.
+Note:
+Here and throughout this section, unless otherwise indicated, the analysis assumes 20% debt at an 8% interest rate and 80% equity at a 12% cost, which is a different capital structure than Lazard’s LCOE analysis. Capital costs include
+the storage module, balance of system and power conversion equipment, collectively referred to as the energy storage system, equipment (where applicable) and EPC costs. See Appendix for charging cost assumptions and additional
+details. The projects are assumed to use a 5-year MACRS depreciation schedule.
+1
+See Appendix for a detailed overview of LCOS assumptions.
+2
+This sensitivity analysis assumes that projects qualify for the full ITC and includes a 10% adder, assuming eligibility for this adder is achieved by meeting either domestic content requirements or energy community requirements. Assumes
+projects have a capital structure that includes sponsor equity, debt and tax equity.
+3
+This sensitivity analysis assumes that projects qualify for the full ITC and have a capital structure that includes sponsor equity, debt and tax equity.
+$215
+$152
+$210
+$148
+$414
+$282
+$292
+$209
+$0
+$100
+$200
+$300
+$400
+$500
+100 MW, 2-Hour
+100 MW, 2-Hour (ITC)
+100 MW, 4-Hour
+100 MW, 4-Hour (ITC)
+Levelized Cost of Storage ($/MWh)
+3
+2
+Utility-Scale
+Standalone
+ ($/MWh)
+Utility-Scale
+Standalone
+($/kW-year)
+I I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  S T O R A G E  A N A L Y S I S — V E R S I O N  1 1 . 0
+21
+--- PAGE 22 ---
+Levelized Cost of Storage Comparison—Historical LCOS Comparison
+This year’s analysis shows notable increases in the LCOS of utility-scale battery energy storage systems, reversing last year’s declines
+$183
+$181
+$252
+$214
+$145
+$266
+$340
+$322
+$323
+$374
+$319
+$369
+0
+100
+200
+300
+$400
+2020
+2021
+2023
+2024
+2025
+2026
+LCOS
+($/kW-year)
+Utility-Scale Standalone (100 MW, 4-Hour)
+$132
+$131
+$200
+$170
+$115
+$210
+$245
+$232
+$257
+$296
+$254
+$292
+0
+100
+200
+300
+$400
+2020
+2021
+2023
+2024
+2025
+2026
+LCOS
+($/MWh)
+Utility-Scale Standalone (100 MW, 4-Hour) 2020 – 2026 Increase/CAGR: 39%1/6%2
+//
+Utility-Scale Standalone (100 MW, 4-Hour)  2020 – 2026 Increase/CAGR: 27%1/4%2
+//
+LCOS
+Version
+6.0
+7.0
+8.0
+9.0
+10.0
+11.0
+Utility-Scale Standalone (100 MW, 4-Hour) LCOS Range
+Utility-Scale Standalone (100 MW, 4-Hour) LCOS Average
+Source:
+Lazard estimates and publicly available information.
+Note:
+The methodology for the Levelized Cost of Storage has evolved between v6.0 and v11.0 given technological advances and data availability. Page presents the most comparable storage technologies included in the Levelized Cost of Storage
+report for that year.
+1
+Reflects the average percentage increase/(decrease) of the high end and low end of the LCOS range.
+2
+Reflects the average compounded annual growth rate of the high end and low end of the LCOS range.
+LCOS
+Version
+6.0
+7.0
+8.0
+9.0
+10.0
+11.0
+I I I    L A Z A R D ’ S  L E V E L I Z E D  C O S T  O F  S T O R A G E  A N A L Y S I S — V E R S I O N  1 1 . 0
+22
+--- PAGE 23 ---
+C O N F I D E N T I A L
+Appendix
+IV
+--- PAGE 24 ---
+C O N F I D E N T I A L
+LCOE v19.0
+A
+--- PAGE 25 ---
+Year
+0
+1
+2
+3
+4
+5
+30
+Key Assumptions
+Capacity (MW)
+(A)
+300
+300
+300
+300
+300
+300
+Capacity (MW)
+300
+Capacity Factor
+(B)
+55%
+55%
+55%
+55%
+55%
+55%
+Capacity Factor
+55%
+Total Generation ('000 MWh)
+(C)* = (A) x (B)
+1,445
+1,445
+1,445
+1,445
+1,445
+1,445
+Fuel Cost ($/MMBtu)
+$0.00
+Levelized Energy Cost ($/M Wh)
+(D)
+$36.7
+$36.7
+$36.7
+$36.7
+$36.7
+$36.7
+Heat Rate (Btu/kWh)
+0
+Total Revenues
+(E)* = (C) x (D)
+$53.0
+$53.0
+$53.0
+$53.0
+$53.0
+$53.0
+Fixed O&M  ($/kW-year)
+$24.5
+Variable O&M  ($/MWh)
+$0.0
+Total Fuel Cost
+(F)
+--
+--
+--
+--
+--
+--
+O&M Escalation Rate
+2.25%
+Total O&M
+(G)*
+7.4
+7.5
+7.7
+7.9
+8.0
+14.0
+Capital Structure
+Total Operating Costs
+(H) = (F) + (G)
+$7.4
+$7.5
+$7.7
+$7.9
+$8.0
+$14.0
+Debt
+60.0%
+Cost of Debt
+8.0%
+EBITDA
+(I) = (E) - (H)
+$45.7
+$45.5
+$45.3
+$45.1
+$45.0
+$39.0
+Equity
+40.0%
+Cost of Equity
+12.0%
+Debt Outstanding - Beginning of Period
+(J)
+$342.0
+$339.0
+$335.7
+$332.2
+$328.4
+$28.1
+Taxes and Tax Incentives:
+Debt - Interest Expense
+(K)
+(27.4)
+(27.1)
+(26.9)
+(26.6)
+(26.3)
+(2.3)
+Combined Tax Rate
+40%
+Debt - Principal Payment
+(L)
+(3.0)
+(3.3)
+(3.5)
+(3.8)
+(4.1)
+(28.1)
+Economic Life (years)
+30
+Levelized Debt Service
+(M) = (K) + (L)
+($30.4)
+($30.4)
+($30.4)
+($30.4)
+($30.4)
+($30.4)
+MACRS Depreciation (Year Schedule)
+5
+Capex
+EBITDA
+(I)
+$45.7
+$45.5
+$45.3
+$45.1
+$45.0
+$39.0
+EPC Costs ($/kW)
+$1,900
+Depreciation (MACRS)
+(N)
+(114.0)
+(182.4)
+(109.4)
+(65.7)
+(65.7)
+0.0
+Additional Ow ner's Costs ($/kW)
+$0
+Interest Expense
+(K)
+(27.4)
+(27.1)
+(26.9)
+(26.6)
+(26.3)
+39.0
+Transmission Costs ($/kW)
+$0
+Taxable Income
+(O) = (I) + (N) + (K)
+($95.7)
+($164.0)
+($91.0)
+($47.1)
+($47.0)
+($2.3)
+Total Capital Costs ($/kW)
+$1,900
+Tax Benefit (Liability)
+(P) = (O) x (tax rate)
+$38.5
+$65.9
+$36.6
+$18.9
+$18.9
+($14.8)
+Total Capex ($m)
+$570
+After-Tax Net Equity Cash Flow
+(Q) = (I) + (M) + (P)
+($228.0)
+$53.7
+$81.0
+$51.5
+$33.7
+$33.5
+($6.2)
+IRR For Equity Investors
+12%
+Levelized Cost of Energy Comparison—Methodology
+Lazard’s LCOE analysis consists of creating a power plant model representing an illustrative project for each relevant technology and
+solving for the $/MWh value that results in a levered IRR equal to the assumed cost of equity (see subsequent “Key Assumptions” pages
+for detailed assumptions by technology)
+($ in millions, unless otherwise noted)
+Source:
+Lazard estimates and publicly available information.
+Note:
+Numbers presented for illustrative purposes only.
+*
+Denotes unit conversion.
+1
+Assumes half-year convention for discounting purposes.
+2
+Reflects initial debt financing to fund capex.
+3
+Assumes full monetization of tax benefits or losses immediately.
+4
+Reflects initial cash outflow from equity investors to fund capex.
+5
+Reflects a “key” subset of all assumptions for methodology illustration purposes only. Does not reflect all assumptions.
+6
+Economic life sets debt amortization schedule.
+Unsubsidized Onshore Wind—Low Case Sample Illustrative Calculations
+6
+3
+4
+Technology-Dependent
+Consistent Across
+Versions/Technologies
+2
+1
+5
+A    L C O E  V 1 9 . 0
+25
+--- PAGE 26 ---
+Levelized Cost of Energy—Assumptions
+Source:
+Lazard estimates and publicly available information.
+Solar PV
+Geothermal
+Wind
+Community & C&I
+Utility
+Onshore
+Offshore
+Metric
+Units
+Low
+High
+Low
+High
+Low
+High
+Low
+High
+Low
+High
+Capacity
+MW
+5.5
+–
+1
+200
+–
+100
+250
+–
+250
+300
+–
+200
+925
+–
+800
+Capital Cost
+$/kW
+$1,750
+–
+$2,950
+$1,250
+–
+$1,850
+$5,135
+–
+$6,635
+$1,900
+–
+$2,750
+$5,600
+–
+$7,100
+Fixed O&M
+$/kW-yr
+$13.00
+–
+$20.00
+$8.25
+–
+$26.25
+$14.50
+–
+$15.75
+$24.50
+–
+$40.00
+$60.00
+–
+$91.50
+Variable O&M
+$/MWh
+–
+–
+$9.05
+–
+$24.80
+–
+–
+Heat Rate
+Btu/kWh
+–
+–
+–
+–
+–
+Capacity Factor
+%
+20%
+–
+15%
+30%
+–
+20%
+90%
+–
+80%
+55%
+–
+30%
+55%
+–
+45%
+Fuel Price
+$/MMBtu
+–
+–
+–
+–
+–
+Construction Time
+Months
+6
+12
+–
+18
+36
+18
+24
+Facility Life
+Years
+30
+35
+25
+30
+30
+LCOE
+$/MWh
+$88
+–
+$197
+$40
+–
+$98
+$67
+–
+$111
+$37
+–
+$99
+$105
+–
+$167
+Avg.
+$142
+$69
+$89
+$68
+$136
+A    L C O E  V 1 9 . 0
+26
+--- PAGE 27 ---
+Solar PV + Storage
+Wind + Storage
+Utility
+Onshore
+Metric
+Units
+Low
+High
+Low
+High
+Storage
+Power Rating
+MW
+50
+50
+Duration
+Hours
+4
+4
+Usable Energy
+MWh
+200
+200
+90% Depth of Discharge
+Cycles/Year
+350
+350
+Roundtrip Efficiency
+%
+92%
+–
+86%
+92%
+–
+86%
+Capital Cost (incl. Inverter)
+$/kWh
+$270
+–
+$365
+$270
+–
+$365
+Storage O&M
+$/kWh
+$3.75
+–
+$7.75
+$3.75
+–
+$7.75
+Extended Warranty Start
+Year
+3
+3
+Warranty Expense
+% of Capital Costs
+0.66%
+–
+1.85%
+0.66%
+–
+1.85%
+Charging Cost
+$/MWh
+$40.00
+$40.00
+Generation
+Capacity
+MW
+100
+100
+Capital Cost
+$/kW
+$1,250
+–
+$1,850
+$1,900
+–
+$2,750
+Fixed O&M
+$/kW-yr
+$8.25
+–
+$26.25
+$24.50
+–
+$40.00
+Capacity Factor
+%
+30%
+–
+20%
+55%
+–
+30%
+Construction Time
+Months
+12
+18
+Facility Life
+Years
+35
+30
+LCOE
+$/MWh
+$61
+–
+$156
+$49
+–
+$140
+Avg.
+$109
+$95
+Levelized Cost of Energy—Assumptions (cont’d)
+Source:
+Lazard estimates and publicly available information.
+A    L C O E  V 1 9 . 0
+27
+--- PAGE 28 ---
+Levelized Cost of Energy—Assumptions (cont’d)
+Source:
+Lazard estimates and publicly available information.
+Conventional
+Gas Peaking
+U.S. Nuclear
+Coal
+Gas Combined Cycle
+Metric
+Units
+Low
+High
+Low
+High
+Low
+High
+Low
+High
+Capacity
+MW
+900
+–
+250
+1,117
+600
+1425
+–
+725
+Capital Cost
+$/kW
+$1,100
+–
+$1,650
+$12,300
+–
+$17,570
+$3,495
+–
+$7,405
+$1,450
+–
+$2,100
+Fixed O&M
+$/kW-yr
+$10.00
+–
+$17.00
+$136.00
+–
+$158.00
+$40.85
+–
+$94.35
+$10.00
+–
+$25.50
+Variable O&M
+$/MWh
+$3.50
+–
+$5.00
+$4.40
+–
+$5.15
+$3.10
+–
+$5.70
+$2.75
+–
+$5.00
+Heat Rate
+Btu/kWh
+10,275
+–
+11,175
+10,450
+8,750
+–
+12,000
+6,475
+–
+6,550
+Capacity Factor
+%
+15%
+–
+10%
+94%
+–
+89%
+85%
+–
+65%
+90%
+–
+30%
+Fuel Price
+$/MMBtu
+$3.45
+$0.85
+$1.47
+$3.45
+Construction Time
+Months
+24
+84
+60
+–
+66
+24
+Facility Life
+Years
+30
+80
+–
+60
+40
+30
+LCOE
+$/MWh
+$144
+–
+$276
+$175
+–
+$255
+$72
+–
+$177
+$51
+–
+$129
+Avg.
+$210
+$215
+$125
+$90
+A    L C O E  V 1 9 . 0
+28
+--- PAGE 29 ---
+Levelized Cost of Energy—Assumptions (cont’d)
+Source:
+Lazard estimates and publicly available information.
+Marginal Cost of Selected Existing Conventional Generation
+Gas Peaking
+U.S. Nuclear
+Coal
+Gas Combined Cycle
+Metric
+Units
+Low
+High
+Low
+High
+Low
+High
+Low
+High
+Capacity
+MW
+375
+–
+100
+2,350
+–
+1,175
+1,175
+–
+100
+900
+–
+350
+Fixed O&M
+$/kW-yr
+$4.50
+–
+$6.50
+$71.00
+–
+$109.50
+$23.75
+–
+$38.00
+$17.75
+–
+$33.25
+Variable O&M
+$/MWh
+$3.00
+–
+$11.75
+$3.50
+–
+$6.00
+$3.25
+–
+$9.50
+$1.00
+–
+$2.75
+Heat Rate
+Btu/kWh
+10,100
+–
+12,125
+10,400
+10,400
+–
+11,850
+7,050
+–
+7,700
+Capacity Factor
+%
+14%
+–
+2%
+94%
+–
+89%
+62%
+–
+34%
+69%
+–
+44%
+Fuel Price
+$/MMBtu
+$3.60
+–
+$4.35
+$0.65
+–
+$0.65
+$1.90
+–
+$2.95
+$3.25
+–
+$4.10
+Facility Life
+Years
+30
+70
+40
+30
+LCOE
+$/MWh
+$52
+–
+$122
+$26
+–
+$36
+$34
+–
+$69
+$32
+–
+$51
+Avg.
+$87
+$31
+$51
+$42
+A    L C O E  V 1 9 . 0
+29
+--- PAGE 30 ---
+Levelized Cost of Energy Components—Low End ($/MWh)
+The cost structure of generation technologies varies significantly by type—renewable energy technologies are predominantly capital cost-
+driven while conventional technologies carry higher fuel and variable cost components—a dynamic that drives technology-specific
+economics across use cases and reinforces the need for a diverse generation fleet
+Source:
+Lazard estimates and publicly available information.
+Note:
+Figures may not sum due to rounding.
+Renewable
+Energy
+Conventional Energy
+$81
+$36
+$58
+$57
+$32
+$44
+$92
+$98
+$147
+$51
+$25
+$7
+$3
+$3
+$2
+$5
+$5
+$12
+$8
+$15
+$5
+$1
+$9
+$4
+$4
+$3
+$3
+$35
+$9
+$13
+$22
+$88
+$40
+$61
+$67
+$37
+$49
+$105
+$144
+$175
+$72
+$51
+$0
+$25
+$50
+$75
+$100
+$125
+$150
+$175
+$200
+Solar PV—Community & C&I
+Solar PV—Utility
+Solar PV + Storage—Utility
+Geothermal
+Wind—Onshore
+Wind + Storage—Onshore
+Wind—Offshore
+Gas Peaking
+U.S. Nuclear
+Coal
+Gas Combined Cycle
+Capital Cost
+Fixed O&M
+Variable O&M
+Fuel Cost
+Levelized Cost of Energy ($/MWh)
+A    L C O E  V 1 9 . 0
+30
+--- PAGE 31 ---
+Levelized Cost of Energy Components—High End ($/MWh)
+The cost structure of generation technologies varies significantly by type—renewable energy technologies are predominantly capital cost-
+driven while conventional technologies carry higher fuel and variable cost components—a dynamic that drives technology-specific
+economics across use cases and reinforces the need for a diverse generation fleet
+Source:
+Lazard estimates and publicly available information.
+Note:
+Figures may not sum due to rounding.
+Renewable
+Energy
+Conventional Energy
+$181
+$83
+$141
+$84
+$84
+$125
+$144
+$213
+$223
+$137
+$92
+$15
+$15
+$15
+$2
+$15
+$15
+$23
+$19
+$17
+$17
+$10
+$25
+$5
+$5
+$6
+$5
+$39
+$9
+$18
+$23
+$197
+$98
+$156
+$111
+$99
+$140
+$167
+$276
+$255
+$177
+$129
+$0
+$25
+$50
+$75
+$100
+$125
+$150
+$175
+$200
+$225
+$250
+$275
+$300
+Solar PV—Community & C&I
+Solar PV—Utility
+Solar PV + Storage—Utility
+Geothermal
+Wind—Onshore
+Wind + Storage—Onshore
+Wind—Offshore
+Gas Peaking
+U.S. Nuclear
+Coal
+Gas Combined Cycle
+Capital Cost
+Fixed O&M
+Variable O&M
+Fuel Cost
+Levelized Cost of Energy ($/MWh)
+A    L C O E  V 1 9 . 0
+31
+--- PAGE 32 ---
+C O N F I D E N T I A L
+Cost of Firming Intermittency
+B
+--- PAGE 33 ---
+Market Overview—Current Generation Mix
+The current generation mix across the U.S. varies significantly by market—resource availability, operational constraints, load profiles,
+transmission infrastructure, seasonal weather patterns and regulatory constructs, among other factors, are key drivers of such variation
+Source:
+Publicly available information.
+Note:
+Figures may not sum due to rounding.
+ERCOT
+CAISO
+Southeast
+NYISO
+MISO
+Northwest
+2025 Generation Mix by Region
+PJM
+ISO-NE
+Natural Gas,
+42%
+Solar, 27%
+Hydro, 11%
+Wind, 11%
+Nuclear, 9%
+Southwest
+SPP
+Hydro, 31%
+Natural Gas,
+23%
+Coal, 19%
+Wind, 16%
+Solar, 7%
+Other, 3%
+Nuclear, 2%
+Natural
+Gas, 35%
+Coal, 29%
+Wind, 15%
+Nuclear, 14%
+Solar, 5%
+Hydro, 1%
+Other, <1%
+Natural Gas,
+53%
+Nuclear, 21%
+Hydro, 18%
+Wind, 5%
+Other, 2%
+Natural Gas,
+56%
+Nuclear,
+26%
+Other, 8%
+Hydro, 5%
+Wind, 4% Solar, 1%
+Coal, <1%
+Natural Gas,
+49%
+Nuclear,
+25%
+Coal, 17%
+Solar, 5%
+Hydro, 3%
+Other, 1%
+Natural Gas,
+41%
+Wind, 23%
+Coal, 14%
+Solar, 13%
+Nuclear, 9% Hydro, <1%
+Wind, 37%
+Coal, 29%
+Natural Gas,
+25%
+Nuclear, 5%
+Hydro, 3% Solar, 1%
+Other, <1%
+Natural Gas,
+41%
+Nuclear, 24%
+Solar, 12%
+Wind, 12%
+Coal, 8%
+Hydro, 3% Other, 1%
+Natural Gas,
+42%
+Nuclear,
+31%
+Coal, 17%
+Wind, 4%
+Solar, 3%Other, 2% Hydro, 2%
+B    C O S T  O F  F I R M I N G  I N T E R M I T T E N C Y
+33
+--- PAGE 34 ---
+Market Overview—Current Renewable Generation Firming Cost Frameworks
+Many grid operators and utilities use ELCC to measure the reliability of new power generation resources to contribute to the electricity
+grid at key periods of demand, particularly intermittent ones like wind and solar. Combined with the Net CONE, as determined by the grid
+operator, ELCC helps to guide decisions on resource planning, capacity adequacy and system reliability
+Source:
+Publicly available information.
+Note:
+ELCC and Net CONE values represent each market’s PY 2025/2026 or equivalent annual compliance year.
+1
+ELCC values are calculated by the respective balancing authority. ELCC is an indicator of the incremental reliability contribution of a given resource to the electricity grid based on its contribution to meeting peak electricity demand. For
+example, a 1 MW wind resource with a 15% ELCC provides 0.15 MW of capacity contribution and would need to be supplemented by 0.85 MW of additional firm capacity to represent the addition of 1 MW of firm system capacity. Where
+seasonal accreditation values exist, values have been annualized. For CAISO, Net Qualifying Capacity (“NQC”) values are used.
+2
+Net CONE is established by the respective balancing authority. Unlike PJM, MISO and NYISO, where Net CONE explicitly subtracts expected energy and ancillary services revenues from Gross CONE, ERCOT and SPP use a Gross CONE
+construct only. CAISO does not have a CONE construct. The closest analog is the Capacity Procurement Mechanism soft offer cap of $7.34/kW-month (120% of 2023 CEC Cost of Generation estimate for a 550 MW CCGT), which serves as an
+emergency procurement backstop.
+3
+MISO credits all electric storage resources at a 5% unavailability rate (95% capacity credit) until 30+ units in service support a class-average calculation, with full probabilistic accreditation arriving under DLOL in PY 2028/2029.
+4
+Based on actual NQC values for 2025.
+5
+The “worst day” is defined as the day of the month that contains the hour with the highest coincident peak load forecast.
+BA-Specified
+“Firming” Source
+ELCC Values1
+Net CONE2
+($/kW-month)
+Selected Market Commentary
+MISO
+Natural Gas
+Peaker
+Solar: 39%
+Wind: 26%
+Storage: 95%3
+$6.49
+• ELCCs have shown variability across non-summer seasons, largely driven by an evolving resource risk and the resulting shift in
+reliability risk hours. In 2025, later day risk generally reduced solar ELCCs where peak hours moved beyond peak solar output
+while benefiting wind in most seasons; winter was the exception, as load updates improved solar and reduced wind ELCCs
+• For the 2026/2027 planning year (“PY”), MISO is adopting a Direct Loss of Load (“DLOL”) methodology that values each resource’s
+marginal reliability contribution, rather than peak-hour output, resulting in generally lower ELCC values for wind and solar
+CAISO
+4-Hour
+Lithium-Ion
+Battery
+Solar: 14%
+Wind: 27%
+Storage: 96%4
+$7.34
+• For 2025, CAISO implemented the Slice of Day (“SOD”) framework, that requires solar and wind generators to demonstrate an
+ability to meet its gross load profile in all 24 hours on CAISO’s “worst day”5 in each month to determine the qualifying capacity
+(“QC”), shifting away from the ELCC methodology which applies a flat monthly percentage to each resource’s nameplate
+• Dispatchable resources receive QC based on maximum resource power; storage QC is calculated as max continuous energy over
+4 hours, subject to capability limits; and hybrid/co-located QC is the sum of separately calculated generation and storage QCs
+SPP
+Natural Gas
+Peaker
+Solar: 51%
+Wind: 20%
+Storage: 56%
+$7.13
+• SPP did not publish updated 2025 ELCC values; therefore, this year’s values reflect 2024 ELCCs
+• Hybrid resources are not explicitly addressed in the 2024 ELCC report. However, the PY 2026/2027 publication states that a hybrid
+resource’s ELCC will equal the sum of its generation and storage component ELCCs, capped at the interconnection limit
+PJM
+Natural Gas
+Peaker
+Solar: 12%
+Wind: 38%
+Storage: 55%
+$5.50
+• PJM calculates ELCC for solar and storage using a marginal modeling approach that measures each resource’s contribution to
+grid reliability during peak stress periods
+• PJM is currently assessing a transition from an annual capacity construct to a seasonal one through its stakeholder process
+ERCOT
+Natural Gas
+Peaker
+Solar: 17%
+Wind: 24%
+Storage: 93%
+$11.67
+• ERCOT establishes ELCCs for afternoon and evening risk periods in both summer and winter. Values shown reflect afternoon
+ELCCs, consistent with the analysis methodology focused on periods of greatest capacity need
+• ELCC for renewables has declined as penetration has risen; high renewable output during typical system peak period has shifted
+this peak to periods of lower renewable output
+• ERCOT does not operate a centralized capacity market so Net CONE is an analytical construct rather than a cleared price
+NYISO
+2-Hour
+Lithium-Ion
+Battery
+Solar: 12%
+Wind: 17%
+Storage: 81%
+$5.80
+• NYISO implemented a new marginal capacity accreditation framework beginning in the 2024/2025 capacity year, reducing
+accredited capacity values for intermittent resources and storage
+B    C O S T  O F  F I R M I N G  I N T E R M I T T E N C Y
+34
+--- PAGE 35 ---
+Market Overview—Supplemental Conventional Generation Accreditation Background
+Grid operators also apply capacity accreditation methodologies to conventional generation, which are subject to reliability-related
+constraints including fuel supply, pipeline deliverability and outage risk that can affect their ability to provide firm capacity during system
+peaks
+Source:
+Publicly available information.
+Note:
+Capacity accreditation values represent each market’s PY 2025/2026 or equivalent annual compliance year, unless otherwise indicated.
+1
+Reflects MISO Schedule 53 average seasonal accredited capacity ratio by technology.
+2
+Reflects nuclear accreditation under indicative DLOL methodology.
+3
+Reflects full capacity accreditation less equivalent forced outage rate by technology class.
+4
+NYISO accredits by resource class, where conventional thermal (including gas, coal and nuclear) falls within the “Generator” class and are typically accredited at 100%. Firm/non-firm fuel accreditation for gas will take effect with the 2026/2027
+planning year, and figures reflects range of accreditation factors for non-firm resources under a scenario in which the Champlain Hudson Power Express (“CHPE”) transmission line contributes to the NYISO capacity market. CHPE began
+delivering power into NYISO in May 2026.
+Capacity Accreditation
+Gas
+Coal
+Nuclear
+Selected Market Commentary
+MISO
+Combined Cycle:
+87%1
+Peaking: 83%1
+79%1
+89%2
+•
+Gas, coal and nuclear resources are accredited via Seasonal Accredited Capacity (“SAC”) based on
+standard availability and historical availability during critical periods of system risk and highest grid
+need
+•
+Unit-specific factors are applied where historical performance data is available, otherwise resources
+are accredited by technology class
+CAISO
+Unit-specific
+n.m.
+Unit-specific
+•
+Thermal resources are accredited per individual asset under the same SOD framework as wind and
+solar
+•
+Ambient temperature derates (based on CAISO analysis of the correlation between system peak,
+temperature and resource performance) and forced outage rates are also applied
+SPP
+Unit-specific
+Unit-specific
+Unit-specific
+•
+Accredited per individual asset based on a seven-year forced outage history, including winter fuel-
+related outages
+PJM
+Combined Cycle: 78%
+Peaking: 63%
+Dual-Fuel: 79%
+83%
+95%
+•
+Accredited by technology class, with class values reflecting correlated forced outage risk during
+winter peak hours and dual-fuel resources assigned higher accreditation value
+ERCOT3
+89%
+72%
+98%
+•
+Thermal accreditation based on forced outage rate by technology class
+•
+Additional extreme-cold correlated-outage adder is applied within ERCOT’s loss-of-load model,
+calibrated to Winter Storms Uri and Elliott; this adder lowers effective winter contribution but is not
+separately published
+NYISO4
+Firm: 100%
+Non-Firm: 55% – 95%
+n.m.
+100%
+•
+Beginning in the 2026/2027 planning year, gas generators may submit a Firm Fuel Characteristic
+Election if they can meet specific run-time performance standards and possess firm pipeline
+transportation and gas supply that is not subject to interruption
+•
+Gas generators that are not eligible for this Election face non-firm capacity accreditation factors,
+which vary by NYISO locality
+B    C O S T  O F  F I R M I N G  I N T E R M I T T E N C Y
+35
+--- PAGE 36 ---
+C O N F I D E N T I A L
+LCOS v11.0
+C
+--- PAGE 37 ---
+Year
+0
+1
+2
+3
+4
+5
+20
+Key Assumptions
+Capacity (MW)
+(A)
+100
+100
+100
+100
+100
+100
+Power Rating (MW)
+100
+Available Capacity (MW)
+110
+109
+107
+104
+102
+110
+110
+Available Capacity after 10% Upsize (MW)
+110
+Total Generation ('000 MWh)
+(B)*
+63
+63
+63
+63
+63
+63
+Duration (Hours)
+2
+Levelized Storage Cost ($/MWh)
+(C)
+$169
+$169
+$169
+$169
+$169
+$169
+Usable Energy (MWh)
+200
+Total Revenues
+(D)* = (B) x (C)
+$10.7
+$10.7
+$10.7
+$10.7
+$10.7
+$10.7
+90% Depth of Discharge Cycles/Day
+1
+Operating Days/Year
+350
+Total Charging Cost
+(E)
+(2.8)
+(2.8)
+(2.9)
+(2.9)
+(3.0)
+(4.0)
+Charging Cost ($/kWh)
+$0.04
+Total O&M, Warranty, & Augmentation
+(F)*
+(1.0)
+(1.0)
+(1.1)
+(1.1)
+(1.1)
+(1.6)
+Fixed O&M Cost ($/kWh)
+$5.00
+Total Operating Costs
+ (G) = (E) + (F)
+($3.8)
+($3.8)
+($3.9)
+($4.0)
+($4.1)
+($5.6)
+Fixed O&M Escalator (%)
+2.5%
+Charging Cost Escalator (%)
+2.0%
+EBITDA
+(H) = (D) - (G)
+$6.9
+$6.8
+$6.7
+$6.7
+$6.6
+$5.1
+Efficiency (%)
+91%
+Capital Structure
+Debt Outstanding - Beginning of Period
+(I)
+$11.9
+$11.6
+$11.3
+$11.0
+$10.7
+$1.1
+Debt
+20.0%
+Debt - Interest Expense
+(J)
+(1.0)
+(0.9)
+(0.9)
+(0.9)
+(0.9)
+(0.1)
+Cost of Debt
+8.0%
+Debt - Principal Payment
+(K)
+(0.3)
+(0.3)
+(0.3)
+(0.3)
+(0.4)
+(1.1)
+Equity
+80.0%
+Levelized Debt Service
+(L) = (J) + (K)
+(1.2)
+(1.2)
+(1.2)
+(1.2)
+(1.2)
+(1.2)
+Cost of Equity
+12.0%
+Taxes
+EBITDA
+(H)
+$6.9
+$6.8
+$6.7
+$6.7
+$6.6
+$5.1
+Combined Tax Rate
+40%
+Depreciation (MACRS)
+(M)
+(10.1)
+(16.2)
+(9.7)
+(5.8)
+(5.8)
+—
+Economic Life (years)
+20
+Net Interest Expense
+(N)
+(1.0)
+2.8
+1.0
+—
+1.2
+—
+MACRS (Year Schedule)
+5 Years
+Taxable Income
+(O) = (H) + (M) + (N)
+($4.2)
+($6.5)
+($2.0)
+$0.8
+$1.9
+$5.1
+Federal ITC - BESS
+30%
+Tax Benefit (Liability)
+(P) = (O) x (Tax Rate)
+$1.7
+$2.6
+$0.8
+($0.3)
+($0.8)
+($2.0)
+Capex
+Total Initial Installed Cost ($/kWh)
+$270
+Federal Investment Tax Credit (ITC)
+(Q)
+$17.8
+—
+—
+—
+—
+—
+Extended Warranty (% of Capital Cost)
+0.7%
+Extended Warranty Start Year
+3
+
+After-Tax Net Equity Cash Flow
+(R) = (H) + (L) + (P) + (Q)
+($47.5)
+$25.2
+$8.2
+$6.1
+$4.9
+$1.8
+$1.6
+Total Capex ($m)
+$59
+IRR For Equity Investors
+12.0%
+Levelized Cost of Storage Comparison—Methodology
+Lazard’s LCOS analysis consists of creating a power plant model representing an illustrative project for each relevant technology and
+solving for the $/MWh value that results in a levered IRR equal to the assumed cost of equity (see subsequent “Key Assumptions” page for
+detailed assumptions by technology)
+Source:
+Lazard estimates and publicly available information.
+Note:
+Numbers presented for illustrative purposes only.
+*
+Denotes unit conversion.
+1
+Assumes half-year convention for discounting purposes.
+2
+Total Generation reflects (Cycles) x (Available Capacity) x (Depth of Discharge) x (Duration). Note for the purpose of this analysis, Lazard accounts for degradation in the available capacity calculation.
+3
+Charging Cost reflects (Total Generation) / [(Efficiency) x (Charging Cost) x (1 + Charging Cost Escalator)].
+4
+O&M costs include general O&M (BESS plus any relevant Solar PV or Wind O&M, escalating annually at 2.5%), augmentation costs (incurred in years needed to maintain usable energy at original storage module cost) and warranty costs
+starting in year 3.
+5
+Reflects initial debt financing to fund capex.
+6
+Reflects initial cash outflow from equity sponsor.
+7
+Reflects a “key” subset of all assumptions for methodology and illustration purposes only. Does not reflect all assumptions.
+8
+Initial Installed Cost includes inverter cost, module cost, balance-of-system cost and EPC cost.
+Subsidized Utility-Scale Standalone (100 MW, 2-Hour)—Low Case Sample Calculations
+1
+7
+4
+8
+2
+3
+6
+Technology-Dependent
+Consistent Across Versions/Technologies
+5
+C    L C O S  V 1 1 . 0
+37
+--- PAGE 38 ---
+Levelized Cost of Storage—Key Assumptions
+Source:
+Lazard estimates and publicly available information.
+Note:
+All cases were modeled using 90% depth of discharge and 10% overbuild. Wholesale charging costs reflect low end of unsubsidized Solar PV—Utility LCOE.
+Utility-Scale (Standalone)
+2-Hour
+4-Hour
+Metric
+Units
+Low
+High
+Low
+High
+Power Rating
+MW
+100
+100
+Duration
+Hours
+2
+4
+Usable Energy
+MWh
+200
+400
+90% Depth of Discharge Cycles / Day
+#
+1
+1
+Operating Days / Year
+#
+350
+350
+Project Life
+Years
+20
+20
+Total Capital Cost
+$/kWh
+$270
+—
+$580
+$270
+—
+$365
+Storage O&M
+$/kWh
+$5.00
+—
+$8.75
+$3.75
+—
+$7.75
+Extended Warranty Start
+Year
+3
+3
+Warranty Expense % of Capital Costs
+%
+0.65%
+—
+1.50%
+0.66%
+—
+1.85%
+Charging Cost
+$/MWh
+$40.00
+$40.00
+Charging Cost Escalator
+%
+2.0%
+2.0%
+Efficiency Storage Technology
+%
+91%
+—
+87%
+92%
+—
+86%
+Unsubsidized LCOS
+$/MWh
+$215
+—
+$414
+$210
+—
+$292
+Avg.
+$315
+$251
+C    L C O S  V 1 1 . 0
+38
+--- PAGE 39 ---
+Utility-Scale Standalone
+($/MWh)
+Levelized Cost of Storage Components—Low End ($/MWh)
+Capital costs, fixed operating costs and charging costs contribute to the all-in cost in varying proportions depending on the specific
+energy storage use case and configuration
+Source:
+Lazard estimates and publicly available information.
+Note:
+Figures may not sum due to rounding.
+$122
+$123
+$33
+$28
+$60
+$60
+$215
+$210
+$0
+$50
+$100
+$150
+$200
+$250
+$300
+$350
+$400
+$450
+Utility-Scale Standalone
+              (100 MW, 2-Hour)
+Utility-Scale Standalone
+              (100 MW, 4-Hour)
+Capital Cost
+Fixed O&M
+Charging Cost
+Levelized Cost of Storage ($/MWh)
+C    L C O S  V 1 1 . 0
+39
+--- PAGE 40 ---
+Utility-Scale Standalone
+($/MWh)
+$281
+$174
+$66
+$51
+$67
+$67
+$414
+$292
+$0
+$50
+$100
+$150
+$200
+$250
+$300
+$350
+$400
+$450
+Utility-Scale Standalone
+              (100 MW, 2-Hour)
+Utility-Scale Standalone
+              (100 MW, 4-Hour)
+Capital Cost
+Fixed O&M
+Charging Cost
+Levelized Cost of Storage Components—High End ($/MWh)
+Capital costs, fixed operating costs and charging costs contribute to the all-in cost in varying proportions depending on the specific
+energy storage use case and configuration
+Levelized Cost of Storage ($/MWh)
+Source:
+Lazard estimates and publicly available information.
+Note:
+Figures may not sum due to rounding.
+C    L C O S  V 1 1 . 0
+40
+--- PAGE 41 ---
+C O N F I D E N T I A L
+Scope of Lazard’s LCOE+
+D
+--- PAGE 42 ---
+Scope of Lazard’s LCOE Metric
+Lazard’s LCOE represents the illustrative cost of generating 1 MWh of incremental electricity from an individual project, and excludes
+certain project- and geography-specific costs and system and grid-level costs that enable a functioning power grid and are ultimately paid
+by developers and/or end users
+Generation
+Transmission  & Distribution
+End Users
+Owners
+Independent Power Producers (“IPPs”), Utilities,
+Munis/Coops
+Utilities, Munis/Coops, TransCos
+Residential, C&I, Public Sector
+Components
+Generators, Storage
+Substations, Transmission Lines, Distribution System
+Homes, Data Centers, Commercial Facilities,
+Government Buildings
+Costs
+Installed capital cost, development overhead,
+fixed O&M, variable O&M, fuel (where applicable),
+construction period costs, financing and tax
+assumptions
+Bulk transmission, local distribution, reliability
+costs (including capacity/reserve margin
+compliance), ancillary services, system balancing
+and congestion management, interconnection and
+network upgrades
+Metering, meter reading or advanced metering
+infrastructure, billing and collections, customer
+service/account administration, service
+connection/hookup, public policy charges/riders,
+taxes and fees
+Significant, but excluded from LCOE are project-
+and geography-specific costs, including but not
+limited to: off-site gas and fuel delivery
+infrastructure, substation costs, environmental
+mitigation and compliance, extraordinary tariff,
+delay or schedule-driven owner costs, insurance,
+financing & construction fees, etc.
+LCOE Perimeter
+The LCOE perimeter is not exhaustive and excludes many components and costs required to
+maintain grid stability and ensure reliable power to end users
+D    S C O P E  O F  L A Z A R D ’ S  L C O E +
+42
+--- PAGE 43 ---
+What Lazard’s LCOE+…
+Does Say…
+Does Not Say…
+✓That general economic and power demand complexity reinforces the
+need for diverse generation portfolios and thoughtful acceleration of
+permitting/approval processes for grid infrastructure
+✓Illustrates project-level costs to generate 1 MWh of incremental
+electricity in a given year, with and without specified assumptions
+✓That firming costs and dispatchability are increasingly critical for
+comparing resources on a more complex grid
+✓That storage remains a critical resource to address intermittency
+and, by itself, cannot solve for intermittency
+✓That technology costs benefit from economies of scale and
+development over time, as shown in nearly 20 years of LCOE data
+What total system costs are for 1 MWh of incremental electricity
+The optimal mix of renewables, conventional generation and storage
+What technology costs will be in the future, including emerging
+technologies
+How demand growth driven by data centers/hyperscalers should be
+supplied
+Recommendations for specific policy or regulatory design
+Recommendations for investment decisions
+Recommendations for any specific asset or geography
+D    S C O P E  O F  L A Z A R D ’ S  L C O E +
+43
+--- PAGE 44 ---
+C O N F I D E N T I A L
+Lazard’s LCOE+ will continue to evolve over time, and we appreciate that there can, and will be, varied views regarding the specifics of our analyses.
+Accordingly, we would be happy to discuss any of our underlying assumptions and analyses in further detail—and, to be clear, we welcome these discussions
+as we try to improve our studies over time. In that regard, the studies remain our attempt to contribute in a differentiated and impactful manner to the Industry.
+More generally, Lazard remains committed to our Power, Energy & Infrastructure Group clients, who remain our highest priority. In that regard, we believe that
+we have the greatest allocation of resources and effort devoted to this sector of any investment bank. Further, we have an ongoing and intense focus on
+strategic issues that require long-term commitment and planning. Accordingly, Lazard strives to maintain its preeminent position as a thought leader and
+leading advisor to clients on their most important matters, especially in this Industry.
+If you have any questions regarding this memorandum or Lazard’s LCOE+, please feel free to contact any member of the Lazard Power, Energy & Infrastructure
+Group, including those listed below.
+George Bilicic
+Vice Chairman of Investment Banking, Global Head of Power, Energy & Infrastructure
+Tel: +1 212 632-1560  |  george.bilicic@lazard.com
+Gregory Hort
+Managing Director, Head of North America Power, Utilities & Infrastructure
+Tel: +1 212 632-6022  |  gregory.hort@lazard.com
+Samuel Scroggins
+Managing Director, Head of Renewables & Sustainable Infrastructure
+Tel: +1 212 632-6758  |  samuel.scroggins@lazard.com
+Daniel Katz
+Managing Director
+Tel: +1 212 632-1966
+daniel.katz@lazard.com
+Mark Lund
+Managing Director
+Tel: +1 713 236-4639
+mark.lund@lazard.com
+Chris Miller
+Managing Director
+Tel: +1 713 236-4675
+chris.miller@lazard.com
+Zac Scotton
+Managing Director
+Tel: +1 713 236-4652
+zac.scotton@lazard.com
+Bill Sembo
+Senior Advisor
+Tel: +1 212 632-6684
+bill.sembo@lazard.com
+Michael Ure
+Senior Advisor
+Tel: +1 713 236-4604
+michael.ure@lazard.com
+Kevin Chi
+Director
+Tel: +1 212 632-8240
+kevin.chi@lazard.com
+Sergio De La Torre Lara
+Director
+Tel: +1 212 632-6444
+sergio.delatorrelara@lazard.com
+Petar Dudukovski
+Director
+Tel: +1 212 632-8242
+petar.dudukovski@lazard.com
+Gerard Pechal
+Director
+Tel: +1 713 236-4673
+gerard.pechal@lazard.com
+Gennadiy Ryskin
+Director
+Tel: +1 713 236-4624
+gennadiy.ryskin@lazard.com
+Sarah Steiner
+Director
+Tel: +1 212 632-1873
+sarah.steiner@lazard.com
+Lauren Davis
+Vice President
+Tel: +1 332 204-5527
+lauren.davis@lazard.com
+Clare Everts
+Vice President
+Tel: +1 917 994-3240
+clare.everts@lazard.com
+Connor Blum
+Associate
+Tel: +1 713 236-4603
+connor.blum@lazard.com
+Kundai Chifamba
+Associate
+Tel: +1 713 236-4631
+kundai.chifamba@lazard.com
+Griffin Gerchman
+Associate
+Tel: +1 332 204-5523
+griffin.gerchman@lazard.com
+Wanjiru Kamau
+Associate
+Tel: +1 332 204-5524
+wanjiru.kamau@lazard.com
+Sebastian Laso Errazuriz
+Associate
+Tel: +1 917 994-3210
+sebastian.laso@lazard.com
+David Warren
+Associate
+Tel: +1 917 994-3212
+david.warren@lazard.com
+Emily He
+Analyst
+Tel: +1 332 204-5163
+emily.he@lazard.com
+Kevin Teng
+Analyst
+Tel: +1 713 236-4677
+kevin.teng@lazard.com

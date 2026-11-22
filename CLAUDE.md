@@ -658,3 +658,15 @@ For a content/static site, default to a **cookieless, privacy-first** tool (no c
 - **Pieter Levels (levels.io)**: ship fast and ugly; boring tech beats shiny; solo-friendly defaults (vanilla, SQLite, single-file, cheap hosting); profit before scale; don't add a dependency you can't maintain alone; talk to users daily.
 
 When in doubt: **ship the smallest version that works, then iterate on what real users do, not what you imagine they'll do.**
+
+
+### 2026-11-21 refresh integration
+
+- A full-width flex control inside an implicit `1fr` grid track can force
+  tablet overflow through intrinsic sizing. Use `minmax(0, 1fr)` and shrinkable
+  child labels, then measure actual document width after integrating changes.
+- A new dark surface needs a separate keyboard-focus contrast check; passing
+  text contrast does not prove the shared outline token remains visible.
+- When sorting a server-rendered board with a collapsed tail, reorder both
+  lists, keep the wrapper last, and save disclosure state for the whole
+  search/class/sort session. Verify reset and cached-route return in a browser.

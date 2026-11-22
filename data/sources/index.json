@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-19T05:21:03.273Z",
+  "updated_at": "2026-11-21T22:33:37.358Z",
   "sources": {
     "https://ceepr.mit.edu/workingpaper/the-value-of-nuclear-microreactors-in-providing-heat-and-electricity-to-alaskan-communities/": {
       "hash": "9d8952c8c1f344db",
-      "fetched_at": "2026-08-18T01:16:12.620Z",
+      "fetched_at": "2026-11-21T22:20:39.310Z",
       "http_status": 200,
       "state": "stored",
       "title": "The Value of Nuclear Microreactors in Providing Heat and Electricity to Alaskan Communities - CEEPR",
@@ -11,11 +11,19 @@
     },
     "https://cib-bic.ca/en/medias/articles/cib-commits-970-million-towards-canadas-first-small-modular-reactor/": {
       "hash": "9bcc7b7df82ebae1",
-      "fetched_at": "2026-08-11T04:03:16.700Z",
+      "fetched_at": "2026-11-21T22:19:59.710Z",
       "http_status": 200,
       "state": "stored",
       "title": "CIB commits $970 million towards Canada’s first Small Modular Reactor (SMR) | Canada Infrastructure Bank (CIB)",
-      "bytes": 6774
+      "bytes": 6642
+    },
+    "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99": {
+      "hash": "ad6c6135014a773b",
+      "fetched_at": "2026-11-21T22:21:32.013Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "NRC Issues First Construction Permit in Nearly 60 Years for High-Temperature Gas-Cooled Reactor",
+      "bytes": 3492
     },
     "https://deepfission.com/deep-fission-and-endeavour-announce-strategic-partnership/": {
       "hash": "01821f6b5fc3268c",
@@ -26,54 +34,54 @@
     },
     "https://dspace.mit.edu/bitstream/handle/1721.1/133049/Jacopo's%20and%20Jessika's%20paper%20on%20nuclear%20cost%20Sep%202020.pdf": {
       "hash": "8e03d2e9fc21608e",
-      "fetched_at": "2026-08-19T05:20:49.743Z",
-      "http_status": 200,
-      "state": "not-text",
-      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
+      "fetched_at": "2026-11-21T22:19:44.890Z",
+      "http_status": 429,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://energy-communities-alliance.squarespace.com/s/Holtec-Slides.pdf": {
       "hash": "b5a61f40af09c445",
-      "fetched_at": "2026-08-19T05:20:45.676Z",
+      "fetched_at": "2026-11-21T22:19:02.357Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://gain.inl.gov/content/uploads/4/2024/11/DOE-Advanced-Nuclear-Liftoff-Report.pdf": {
       "hash": "57d8ad3ab1b62337",
-      "fetched_at": "2026-08-19T05:20:46.694Z",
+      "fetched_at": "2026-11-21T22:19:40.004Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://gain.inl.gov/content/uploads/4/2024/11/INL-RPT-23-72972-Literature-Review-of-Adv-Reactor-Cost-Estimates.pdf": {
       "hash": "c4f9be65bc0b2113",
-      "fetched_at": "2026-08-19T05:20:53.439Z",
+      "fetched_at": "2026-11-21T22:20:03.443Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://gain.inl.gov/content/uploads/4/2025/03/2024-Document-INL-RPT-24-80433.pdf": {
       "hash": "7545f944429043a7",
-      "fetched_at": "2026-08-19T05:20:48.980Z",
+      "fetched_at": "2026-11-21T22:19:42.266Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://gov.alaska.gov/microreactor-regulations-put-alaskan-communities-at-forefront-of-energy-innovation/": {
       "hash": "f0a3d1dc3bc73969",
-      "fetched_at": "2026-08-18T01:16:07.571Z",
+      "fetched_at": "2026-11-21T22:20:33.080Z",
       "http_status": 200,
       "state": "stored",
       "title": "Microreactor Regulations Put Alaskan Communities at Forefront of Energy Innovation - Mike Dunleavy",
-      "bytes": 7240
+      "bytes": 7186
     },
     "https://group.vattenfall.com/press-and-media/newsroom/2025/vattenfall-selects-suppliers-on-the-journey-towards-new-nuclear-power/": {
       "hash": "f375d37deaff5889",
-      "fetched_at": "2026-08-19T05:20:56.871Z",
+      "fetched_at": "2026-11-21T22:20:29.381Z",
       "http_status": 200,
       "state": "stored",
       "title": "Vattenfall selects suppliers on the journey towards new nuclear power - Vattenfall",
-      "bytes": 10552
+      "bytes": 10633
     },
     "https://holtecinternational.com/2024/09/30/hh-39-17/": {
       "hash": "8e31672614a8f795",
@@ -84,94 +92,113 @@
     },
     "https://holtecinternational.com/hh-40-24/": {
       "hash": "2b1530e91508ecb4",
-      "fetched_at": "2026-08-06T18:26:48.227Z",
+      "fetched_at": "2026-11-21T22:17:23.103Z",
       "http_status": 200,
       "state": "stored",
       "title": "Holtec Receives Coveted “Tier 1 First Mover Award” from the USDOE to Accelerate Deployment of its Dual-Unit SMR-300 Plant at the Company’s Palisades Energy Site - Holtec International",
-      "bytes": 10313
+      "bytes": 10132
     },
     "https://info.westinghousenuclear.com/news/westinghouse-announces-department-of-energy-partnership-to-jumpstart-large-scale-nuclear-supply-chain": {
       "hash": "0093ba816400cb65",
-      "fetched_at": "2026-08-06T18:26:52.902Z",
+      "fetched_at": "2026-11-21T22:17:24.202Z",
       "http_status": 200,
       "state": "stored",
       "title": "Westinghouse Announces Department of Energy Partnership to Jumpstart Large-Scale Nuclear Supply Chain",
-      "bytes": 3506
+      "bytes": 3536
     },
     "https://info.westinghousenuclear.com/news/westinghouse-ap300-smr-ap1000-interest-in-europe-slovakia-deployment-discussions": {
       "hash": "39df5d7087524fac",
-      "fetched_at": "2026-08-19T05:20:59.971Z",
+      "fetched_at": "2026-11-21T22:20:32.570Z",
       "http_status": 200,
       "state": "stored",
       "title": "Interest in Westinghouse AP300™ Small Modular Reactor, AP1000® Technology Surging in Europe as Slovakia Begins Deployment Discussions",
-      "bytes": 4636
+      "bytes": 4666
     },
     "https://inl.gov/news-release/national-reactor-innovation-center-announces-first-selections-for-nuclear-energy-launch-pad/": {
       "hash": "7fd0bdd565ce8ec7",
-      "fetched_at": "2026-08-19T05:20:45.231Z",
+      "fetched_at": "2026-11-21T22:19:00.888Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://interestingengineering.com/energy/us-firm-deep-fission-6000-ft-well": {
       "hash": "c70bd59e744fe7ff",
-      "fetched_at": "2026-08-06T18:28:49.901Z",
+      "fetched_at": "2026-11-21T22:19:05.394Z",
       "http_status": 200,
       "state": "stored",
       "title": "US firm begins drilling for world's first mile-deep nuclear reactor",
-      "bytes": 8623
+      "bytes": 9027
+    },
+    "https://investors.x-energy.com/news-releases/news-release-details/x-energy-reports-third-quarter-2026-results": {
+      "hash": "77ab9221ca000689",
+      "fetched_at": "2026-11-21T22:21:32.952Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://ir.nanonuclearenergy.com/node/8816/html": {
+      "hash": "a05a25061ad76f5b",
+      "fetched_at": "2026-11-21T22:30:15.791Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under": {
       "hash": "3ab35c798a457c24",
-      "fetched_at": "2026-08-06T18:28:16.582Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Terrestrial Energy Executes DOE Agreement for Project TETRA Under Advanced Reactor Pilot Program | Tue, 01/06/2026 - 08:01",
-      "bytes": 11378
+      "fetched_at": "2026-11-21T22:18:37.190Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-reports-third-quarter-2026-results": {
+      "hash": "72a24d9a09e53954",
+      "fetched_at": "2026-11-21T22:21:33.161Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://jpt.spe.org/chevron-partners-with-ge-vernova-and-engine-no-1-to-power-up-ai-data-centers-in-us": {
       "hash": "f90be5ace3c99e57",
-      "fetched_at": "2026-08-18T01:16:08.825Z",
+      "fetched_at": "2026-11-21T22:20:38.790Z",
       "http_status": 200,
       "state": "stored",
       "title": "Chevron Partners With GE Vernova and Engine No. 1 To Power Up AI Data Centers in US",
-      "bytes": 16292
+      "bytes": 16236
     },
     "https://nanonuclearenergy.com/kronos-mmr/": {
       "hash": "d9cca3915b4665a0",
-      "fetched_at": "2026-08-11T04:39:34.750Z",
+      "fetched_at": "2026-11-21T22:20:03.086Z",
       "http_status": 200,
       "state": "stored",
       "title": "KRONOS MMR | NANO Nuclear Energy",
-      "bytes": 8002
+      "bytes": 8132
     },
     "https://natlawreview.com/article/us-government-announces-historic-80-billion-nuclear-partnership-westinghouse": {
       "hash": "eabc53a7811b923b",
-      "fetched_at": "2026-08-11T04:03:10.709Z",
+      "fetched_at": "2026-11-21T22:19:50.799Z",
       "http_status": 200,
       "state": "stored",
       "title": "President Trump Unveils $80B Nuclear Reactor Partnership",
-      "bytes": 15455
+      "bytes": 15338
     },
     "https://news.duke-energy.com/releases/responding-to-growing-demand-duke-energy-amazon-google-microsoft-and-nucor-execute-agreements-to-accelerate-clean-energy-options": {
       "hash": "2682db2e22cc3db3",
-      "fetched_at": "2026-08-11T04:03:11.022Z",
+      "fetched_at": "2026-11-21T22:19:51.086Z",
       "http_status": 200,
       "state": "stored",
       "title": "Responding to growing demand, Duke Energy, Amazon, Google, Microsoft and Nucor execute agreements to accelerate clean energy options | Duke Energy | News Center",
-      "bytes": 7479
+      "bytes": 7382
     },
     "https://news.spacconference.com/2024/05/07/oklo-to-debut-on-nyse-following-altc-acqusition-shareholder-approval/": {
       "hash": "9c80ea1b4ecbc501",
-      "fetched_at": "2026-08-06T18:26:45.571Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Oklo to Debut on NYSE Following AltC Acquisition Shareholder Approval | DealFlow's SPAC News",
-      "bytes": 4154
+      "fetched_at": "2026-11-21T22:17:20.476Z",
+      "http_status": 0,
+      "state": "unreachable",
+      "note": "Could not fetch: ENOTFOUND"
     },
     "https://newsroom.nexteraenergy.com/NextEra-Energy-and-Google-Announce-New-Collaboration-to-Accelerate-Nuclear-Energy-Deployment-in-the-U-S?l=12": {
       "hash": "3925eb2186ca9df2",
-      "fetched_at": "2026-08-18T01:15:51.798Z",
+      "fetched_at": "2026-11-21T22:20:12.571Z",
       "http_status": 200,
       "state": "stored",
       "title": "NextEra Energy Newsroom - News Releases",
@@ -179,88 +206,113 @@
     },
     "https://npre.illinois.edu/news/stories/imdp-cpa": {
       "hash": "a14eacc514dfc0fc",
-      "fetched_at": "2026-08-06T18:26:04.634Z",
+      "fetched_at": "2026-11-21T22:16:48.262Z",
       "http_status": 200,
       "state": "stored",
       "title": "Illinois Microreactor Demonstration Project submits construction permit application, marking major milestone in deployment of research reactor | Nuclear, Plasma & Radiological Engineering | Illinois",
-      "bytes": 8593
+      "bytes": 8596
     },
     "https://nuclearinnovationalliance.org/sites/default/files/2026-04/The%20Role%20of%20DOE%E2%80%99s%20Office%20of%20Energy%20Dominance%20Financing%20in%20U.S.%20Nuclear%20Energy%20Leadership%20-%20March%202026%20Update.pdf": {
       "hash": "502eb9e2c4634950",
-      "fetched_at": "2026-08-19T05:20:52.901Z",
+      "fetched_at": "2026-11-21T22:19:55.818Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://oklo.com/newsroom/news-details/2024/Oklo-Signs-LOI-to-Supply-50-Megawatts-of-Power-to-Diamondback-Energy/default.aspx": {
       "hash": "d3890f688a2ce12f",
-      "fetched_at": "2026-08-06T18:26:23.489Z",
+      "fetched_at": "2026-11-21T22:17:09.855Z",
       "http_status": 200,
       "state": "stored",
-      "title": "Oklo Inc. - Oklo Signs LOI to Supply 50 Megawatts of Power to Diamondback Energy",
-      "bytes": 15659
+      "title": "Oklo Signs LOI to Supply 50 Megawatts of Power to Diamondback Energy | Oklo",
+      "bytes": 3959
     },
     "https://oklo.com/newsroom/news-details/2025/Oklo-and-Los-Alamos-National-Lab-Conduct-Fast-Spectrum-Plutonium-Criticality-Experiment/default.aspx": {
       "hash": "7dcc5fcd4a9d82cf",
-      "fetched_at": "2026-08-06T18:32:15.238Z",
+      "fetched_at": "2026-11-21T22:18:31.365Z",
       "http_status": 200,
       "state": "stored",
-      "title": "Oklo Inc. - Oklo and Los Alamos National Lab Conduct Fast Spectrum Plutonium Criticality Experiment",
-      "bytes": 14152
+      "title": "Oklo and Los Alamos National Lab Conduct Fast Spectrum Plutonium Criticality Experiment | Oklo",
+      "bytes": 8149
     },
     "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx": {
       "hash": "246dd6427b9555e8",
-      "fetched_at": "2026-08-19T05:19:16.999Z",
-      "http_status": 403,
-      "state": "blocked",
-      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+      "fetched_at": "2026-11-21T22:16:45.638Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Oklo Breaks Ground on First Aurora Powerhouse | Oklo",
+      "bytes": 5563
     },
     "https://oklo.com/newsroom/news-details/2026/Oklo-Meta-Announce-Agreement-in-Support-of-1-2-GW-Nuclear-Energy-Development-in-Southern-Ohio/default.aspx": {
       "hash": "38e2dc3326277a1b",
-      "fetched_at": "2026-08-06T18:31:06.704Z",
+      "fetched_at": "2026-11-21T22:17:07.447Z",
       "http_status": 200,
       "state": "stored",
-      "title": "Oklo Inc. - Oklo, Meta Announce Agreement in Support of 1.2 GW Nuclear Energy Development in Southern Ohio",
-      "bytes": 12218
+      "title": "Oklo, Meta Announce Agreement in Support of 1.2 GW Nuclear Energy Development in Southern Ohio | Oklo",
+      "bytes": 6083
     },
     "https://oklo.com/newsroom/news-details/2026/Oklo-Receives-U-S--Department-of-Energy-Startup-Authorization-for-Groves-Reactor-Clearing-Way-for-Fuel-Loading-and-First-Criticality/default.aspx": {
       "hash": "d6e354305862ae7f",
-      "fetched_at": "2026-08-06T18:28:02.296Z",
+      "fetched_at": "2026-11-21T22:18:33.572Z",
       "http_status": 200,
       "state": "stored",
-      "title": "Oklo Inc. - Oklo Receives U.S. Department of Energy Startup Authorization for Groves Reactor, Clearing Way for Fuel Loading and First Criticality",
-      "bytes": 13261
+      "title": "Oklo Receives U.S. Department of Energy Startup Authorization for Groves Reactor, Clearing Way for Fuel Loading and First Criticality | Oklo",
+      "bytes": 7091
     },
     "https://oklo.com/newsroom/news-details/2026/Oklos-Groves-Reactor-Achieves-First-Criticality-in-Under-a-Year/default.aspx": {
       "hash": "f1b960f1cd9ace8d",
-      "fetched_at": "2026-08-19T05:20:23.180Z",
+      "fetched_at": "2026-11-21T22:18:29.013Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Oklo's Groves Reactor Achieves First Criticality in Under a Year | Oklo",
+      "bytes": 5402
+    },
+    "https://oklo.com/newsroom/oklo-inc-begins-trading-on-the-new-york-stock-exchange": {
+      "hash": "49f9a63cf8ae4a62",
+      "fetched_at": "2026-11-21T22:30:15.071Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Oklo Inc. Begins Trading on the New York Stock Exchange | Oklo",
+      "bytes": 5572
+    },
+    "https://oklo.com/newsroom/oklos-groves-reactor-achieves-first-criticality-in-under-a-year": {
+      "hash": "b43cceb7d7745c32",
+      "fetched_at": "2026-11-21T22:33:37.358Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Oklo's Groves Reactor Achieves First Criticality in Under a Year | Oklo",
+      "bytes": 5402
+    },
+    "https://oodaloop.com/briefs/technology/valar-atomics-begins-construction-on-ward-250-nuclear-reactor-utah/": {
+      "hash": "42af2e0a90264d8c",
+      "fetched_at": "2026-11-21T22:19:00.711Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Valar Atomics Begins Construction on Ward 250 Nuclear Reactor, Utah — OODAloop",
+      "bytes": 4227
+    },
+    "https://osge.com/en/us-government-financial-institutions-indicate-willingness-to-support-osge/": {
+      "hash": "5438acfd3a91da10",
+      "fetched_at": "2026-11-21T22:19:57.610Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "US government financial institutions indicate willingness to support ORLEN Synthos Green Energy with its GE Hitachi BWRX-300 small modular reactor deployment program in Poland - OSGE :OSGE",
+      "bytes": 10279
+    },
+    "https://radiantnuclear.com/news/radiant-expands-manufacturing": {
+      "hash": "52ad7d7f55d7ca87",
+      "fetched_at": "2026-11-21T22:21:33.731Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
-    "https://oodaloop.com/briefs/technology/valar-atomics-begins-construction-on-ward-250-nuclear-reactor-utah/": {
-      "hash": "42af2e0a90264d8c",
-      "fetched_at": "2026-08-06T18:28:44.629Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Valar Atomics Begins Construction on Ward 250 Nuclear Reactor, Utah — OODAloop",
-      "bytes": 4168
-    },
-    "https://osge.com/en/us-government-financial-institutions-indicate-willingness-to-support-osge/": {
-      "hash": "5438acfd3a91da10",
-      "fetched_at": "2026-08-11T04:03:15.487Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "US government financial institutions indicate willingness to support ORLEN Synthos Green Energy with its GE Hitachi BWRX-300 small modular reactor deployment program in Poland - OSGE :OSGE",
-      "bytes": 10239
-    },
     "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/": {
       "hash": "2ee45153ae836f20",
-      "fetched_at": "2026-08-11T04:03:19.838Z",
+      "fetched_at": "2026-11-21T22:20:06.087Z",
       "http_status": 200,
       "state": "stored",
       "title": "Antares raises $96 million for nuclear reactors on Earth and in space - SpaceNews",
-      "bytes": 8163
+      "bytes": 6872
     },
     "https://spectrum.ieee.org/microreactor": {
       "hash": "38abd8744ba648d8",
@@ -280,63 +332,62 @@
     },
     "https://techcrunch.com/2025/12/16/nuclear-startup-last-energy-raises-100m-for-its-steel-encased-micro-reactor/": {
       "hash": "d1a8a6dea8f28cf3",
-      "fetched_at": "2026-08-06T18:27:35.199Z",
+      "fetched_at": "2026-11-21T22:18:06.544Z",
       "http_status": 200,
       "state": "stored",
       "title": "Nuclear startup Last Energy raises $100M for its steel-encased micro reactor | TechCrunch",
-      "bytes": 6599
+      "bytes": 6579
     },
     "https://techcrunch.com/2026/04/24/x-energy-stock-pops-27-on-first-day-of-trading-following-upsized-ipo/": {
       "hash": "7e32bfe9a668e856",
-      "fetched_at": "2026-08-06T18:26:45.860Z",
+      "fetched_at": "2026-11-21T22:17:20.725Z",
       "http_status": 200,
       "state": "stored",
       "title": "X-energy stock pops 27% on first day of trading following upsized IPO | TechCrunch",
-      "bytes": 5733
+      "bytes": 5716
     },
     "https://techfundingnews.com/a-high-school-dropouts-nuclear-startup-just-landed-1b-from-sequoia-at-a-6b-valuation/": {
       "hash": "ed96ecaab5132b0e",
-      "fetched_at": "2026-08-18T01:14:31.070Z",
+      "fetched_at": "2026-11-21T22:17:45.813Z",
       "http_status": 200,
       "state": "stored",
       "title": "A high school dropout&#039;s nuclear startup just landed $1B from Sequoia at a $6B valuation — TFN",
-      "bytes": 10602
+      "bytes": 9858
     },
     "https://theaiworld.org/news/valar-atomics-raises-450m-to-power-ai-data-centres": {
       "hash": "68dc6814bd7bbd95",
-      "fetched_at": "2026-08-06T18:27:13.757Z",
+      "fetched_at": "2026-11-21T22:17:45.593Z",
       "http_status": 200,
       "state": "stored",
       "title": "Valar Atomics Raises $450M to Power AI Data Centres",
-      "bytes": 16494
+      "bytes": 16828
     },
     "https://thebreakthrough.org/press/release-the-nrc-issues-construction-permit-for-terrapowers-natrium-reactor": {
       "hash": "9ceaef6e940141e8",
-      "fetched_at": "2026-08-06T18:28:47.044Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "RELEASE: The NRC Issues Construction… | The Breakthrough Institute",
-      "bytes": 6037
+      "fetched_at": "2026-11-21T22:19:01.114Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://world-nuclear-news.org/articles/holtec-and-hyundai-ec-target-10gw-fleet-of-smrs-in-us": {
       "hash": "ff20c03392c324b8",
-      "fetched_at": "2026-08-11T04:03:21.159Z",
+      "fetched_at": "2026-11-21T22:20:07.655Z",
       "http_status": 200,
       "state": "stored",
       "title": "Holtec and Hyundai E&C target 10 GW SMR fleet after Palisades - World Nuclear News",
-      "bytes": 5537
+      "bytes": 5529
     },
     "https://world-nuclear-news.org/Articles/Philippines-considers-deploying-USNC-microreactors": {
       "hash": "a8ec783c1e39ca86",
-      "fetched_at": "2026-08-18T04:21:02.880Z",
+      "fetched_at": "2026-11-21T22:20:23.644Z",
       "http_status": 200,
       "state": "stored",
       "title": "Philippines&nbsp;considers deploying USNC microreactors - World Nuclear News",
-      "bytes": 7123
+      "bytes": 7085
     },
     "https://world-nuclear.org/net-zero-nuclear/news/international-banks-express-support-for-nuclear-expansion": {
       "hash": "af596f7de83f7f66",
-      "fetched_at": "2026-08-11T04:06:38.673Z",
+      "fetched_at": "2026-11-21T22:20:00.583Z",
       "http_status": 200,
       "state": "stored",
       "title": "International banks express support for nuclear expansion - World Nuclear Association",
@@ -351,130 +402,138 @@
     },
     "https://www.aalo.com/aalo-x": {
       "hash": "3d297e65a7f7156a",
-      "fetched_at": "2026-08-06T18:28:48.390Z",
+      "fetched_at": "2026-11-21T22:19:03.163Z",
       "http_status": 200,
       "state": "stored",
       "title": "Aalo Pod: 50 MWe Nuclear Power Plant for AI Data Centers",
-      "bytes": 5779
+      "bytes": 6022
     },
     "https://www.aalo.com/factory": {
       "hash": "47e98c927fba4989",
-      "fetched_at": "2026-08-18T01:16:13.349Z",
+      "fetched_at": "2026-11-21T22:20:39.878Z",
       "http_status": 200,
       "state": "stored",
       "title": "Aalo Gigawatt Factory | Mass-Manufactured Nuclear Reactors",
-      "bytes": 4880
+      "bytes": 5099
     },
     "https://www.accessnewswire.com/newsroom/en/clean-technology/radiant-announces-equinix-preorder-and-deposits-for-20-kaleidos-microreactors-1061067": {
       "hash": "c30aa2c537969ff4",
-      "fetched_at": "2026-08-19T05:20:50.203Z",
+      "fetched_at": "2026-11-21T22:19:45.193Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/": {
       "hash": "422ebb32e3fdab4d",
-      "fetched_at": "2026-08-06T18:26:23.998Z",
+      "fetched_at": "2026-11-21T22:17:10.201Z",
       "http_status": 200,
       "state": "stored",
       "title": "Air Force issues notice to partner with Oklo on microreactor deployment in Alaska -- ANS / Nuclear Newswire",
-      "bytes": 5443
+      "bytes": 5256
     },
     "https://www.ans.org/news/2025-06-25/article-7136/nrc-cuts-50-percent-off-for-advanced-reactor-applicants/": {
       "hash": "f58241748b159f2d",
-      "fetched_at": "2026-08-11T04:03:17.655Z",
+      "fetched_at": "2026-11-21T22:20:00.992Z",
       "http_status": 200,
       "state": "stored",
       "title": "NRC cuts fees by 50 percent for advanced reactor applicants -- ANS / Nuclear Newswire",
-      "bytes": 5417
+      "bytes": 5222
     },
     "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/": {
       "hash": "4a6ce4c0c4bc1606",
-      "fetched_at": "2026-08-06T18:26:05.111Z",
+      "fetched_at": "2026-11-21T22:16:48.867Z",
       "http_status": 200,
       "state": "stored",
       "title": "Radiant signs contract on microreactors for the military -- ANS / Nuclear Newswire",
-      "bytes": 7877
+      "bytes": 5514
     },
     "https://www.ans.org/news/2025-12-03/article-7593/doe-selects-tva-and-holtec-for-smr-awards/": {
       "hash": "c00b58952863e3cf",
-      "fetched_at": "2026-08-06T18:26:52.256Z",
+      "fetched_at": "2026-11-21T22:17:23.834Z",
       "http_status": 200,
       "state": "stored",
       "title": "DOE selects TVA and Holtec for SMR awards -- ANS / Nuclear Newswire",
-      "bytes": 8605
+      "bytes": 8355
     },
     "https://www.ans.org/news/2026-03-25/article-7878/new-us-bwrx300-projects-get-japanese-investment/": {
       "hash": "9c60f6ff40add39e",
-      "fetched_at": "2026-08-06T18:26:29.309Z",
+      "fetched_at": "2026-11-21T22:17:15.176Z",
       "http_status": 200,
       "state": "stored",
       "title": "New U.S. BWRX-300 projects get Japanese investment -- ANS / Nuclear Newswire",
-      "bytes": 8370
+      "bytes": 8053
     },
     "https://www.ans.org/news/2026-04-09/article-7920/texas-opens-350m-in-nuclear-funding/": {
       "hash": "5d5dde092a6d1cab",
-      "fetched_at": "2026-08-18T01:16:03.456Z",
+      "fetched_at": "2026-11-21T22:20:19.926Z",
       "http_status": 200,
       "state": "stored",
       "title": "Texas opens $350M in nuclear funding -- ANS / Nuclear Newswire",
-      "bytes": 9339
+      "bytes": 9071
     },
     "https://www.ans.org/news/2026-06-23/article-8139/terrestrial-energy-and-texas-am-reach-agreement-on-reactor-siting/": {
       "hash": "ad630b2409886e5c",
-      "fetched_at": "2026-08-06T18:26:07.622Z",
+      "fetched_at": "2026-11-21T22:16:51.260Z",
       "http_status": 200,
       "state": "stored",
       "title": "Terrestrial Energy and Texas A&M reach agreement on reactor siting -- ANS / Nuclear Newswire",
-      "bytes": 9109
+      "bytes": 8832
     },
     "https://www.ans.org/news/2026-06-29/article-8155/holtec-and-edf-submit-proposal-to-deploy-smr300-at-cottam-nottinghamshire/": {
       "hash": "05fbc21abfa52369",
-      "fetched_at": "2026-08-06T18:32:16.396Z",
+      "fetched_at": "2026-11-21T22:18:36.871Z",
       "http_status": 200,
       "state": "stored",
       "title": "Holtec and EDF submit proposal to deploy SMR-300 at Cottam, Nottinghamshire -- ANS / Nuclear Newswire",
-      "bytes": 8577
+      "bytes": 8426
     },
     "https://www.ans.org/news/article-6480/amazon-investing-in-smrs-to-deploy-5gw-by-2039/": {
       "hash": "b6495a1c09624bae",
-      "fetched_at": "2026-08-06T18:26:26.284Z",
+      "fetched_at": "2026-11-21T22:17:12.459Z",
       "http_status": 200,
       "state": "stored",
       "title": "Amazon investing in SMRs to deploy 5 GW by 2039 -- ANS / Nuclear Newswire",
-      "bytes": 5488
+      "bytes": 5250
     },
     "https://www.ans.org/news/article-8091/ansuprm-student-section-advocates-for-puerto-rican-nuclear/": {
       "hash": "ec9a0845868ad13f",
-      "fetched_at": "2026-08-18T04:21:08.664Z",
+      "fetched_at": "2026-11-21T22:20:34.938Z",
       "http_status": 200,
       "state": "stored",
       "title": "ANS-UPRM Student Section advocates for Puerto Rican nuclear -- ANS / Nuclear Newswire",
-      "bytes": 8159
+      "bytes": 7869
     },
     "https://www.ans.org/news/article-8210/nuclear-is-ready-now/": {
       "hash": "57746af06ed50630",
-      "fetched_at": "2026-08-18T01:16:09.361Z",
+      "fetched_at": "2026-11-21T22:20:38.905Z",
       "http_status": 200,
       "state": "stored",
       "title": "Nuclear is ready now -- ANS / Nuclear Newswire",
-      "bytes": 12931
+      "bytes": 12634
     },
     "https://www.army.mil/article/288903/army_announces_janus_program_for_next_generation_nuclear_energy": {
       "hash": "70eeb9c6466279d9",
-      "fetched_at": "2026-08-11T04:57:33.521Z",
+      "fetched_at": "2026-11-21T22:19:51.596Z",
       "http_status": 200,
       "state": "stored",
       "title": "Army announces Janus Program for next-generation nuclear energy &#124; Article &#124; The United States Army",
-      "bytes": 5308
+      "bytes": 5253
     },
     "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors": {
       "hash": "f68abb8c2c225454",
-      "fetched_at": "2026-08-06T18:27:59.686Z",
+      "fetched_at": "2026-11-21T22:18:28.607Z",
       "http_status": 200,
       "state": "stored",
       "title": "Department of Energy and U.S. Army reach a major milestone on advanced microreactors &#124; Article &#124; The United States Army",
-      "bytes": 4838
+      "bytes": 4974
+    },
+    "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors": {
+      "hash": "7fc7a17acb90c17e",
+      "fetched_at": "2026-11-21T22:21:34.311Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Army reaches agreement with private industry for nuclear micro-reactors &#124; Article &#124; The United States Army",
+      "bytes": 8128
     },
     "https://www.axios.com/local/houston/2026/04/29/houston-nuclear-startup-deployable-energy-idaho-reactor": {
       "hash": "67121abcdc9b8f62",
@@ -485,96 +544,94 @@
     },
     "https://www.barchart.com/story/news/35743041/terrestrial-energy-inc-completes-business-combination-with-hcm-ii-acquisition-corp": {
       "hash": "0b530c5e19d4c61b",
-      "fetched_at": "2026-08-06T18:26:52.757Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Terrestrial Energy Inc. Completes Business Combination with HCM II Acquisition Corp.",
-      "bytes": 36043
+      "fetched_at": "2026-11-21T22:17:24.043Z",
+      "http_status": 202,
+      "state": "blocked",
+      "note": "Server answered 202 with a refusal page (empty response). Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.barchart.com/story/news/37017636/nano-nuclear-energy-signs-mou-with-ds-dansuk-to-advance-micro-modular-reactor-deployment-in-south-korea": {
       "hash": "92f40e74b0a7a82b",
-      "fetched_at": "2026-08-19T05:20:55.833Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "NANO Nuclear Energy Signs MOU with DS Dansuk to Advance Micro Modular Reactor Deployment in South Korea",
-      "bytes": 35291
+      "fetched_at": "2026-11-21T22:20:28.371Z",
+      "http_status": 202,
+      "state": "blocked",
+      "note": "Server answered 202 with a refusal page (empty response). Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.bdlaw.com/publications/nrc-finalizes-new-optional-licensing-framework-for-advanced-reactors/": {
       "hash": "2ee10a98245590c1",
-      "fetched_at": "2026-08-19T05:20:52.966Z",
+      "fetched_at": "2026-11-21T22:20:01.123Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.bechtel.com/press-releases/tva-bechtel-sargent-lundy-and-ge-hitachi-plan-initial-construction-and-design-for-potential-clinch-river-smr/": {
       "hash": "7bdde35fe9ccf8fe",
-      "fetched_at": "2026-08-11T04:03:07.607Z",
+      "fetched_at": "2026-11-21T22:20:07.873Z",
       "http_status": 200,
       "state": "stored",
       "title": "TVA, Bechtel, Sargent & Lundy and GE Hitachi Plan Initial Construction and Design for Potential Clinch River SMR - Bechtel",
-      "bytes": 24774
+      "bytes": 25458
     },
     "https://www.bloomberg.com/news/articles/2025-12-17/nuclear-startup-radiant-raises-300-million-for-small-reactors": {
       "hash": "f71a752f3d93f206",
-      "fetched_at": "2026-08-19T05:19:39.240Z",
+      "fetched_at": "2026-11-21T22:17:44.437Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.bloomberg.com/news/articles/2026-07-31/nuclear-tech-firm-westinghouse-files-confidentially-for-ipo": {
       "hash": "9ffd92ad72e9efd5",
-      "fetched_at": "2026-08-19T05:19:19.085Z",
+      "fetched_at": "2026-11-21T22:17:24.302Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.businesswire.com/news/home/20250820559252/en/Aalo-Atomics-Secures-$100-Million-in-Series-B-Funding-to-Build-Modular-Nuclear-Plants-Purpose-Built-for-Powering-AI-Data-Centers": {
       "hash": "cdb38eaf2c069cd3",
-      "fetched_at": "2026-08-19T05:19:39.091Z",
+      "fetched_at": "2026-11-21T22:17:44.304Z",
       "http_status": 0,
       "state": "unreachable",
       "note": "Could not fetch: TimeoutError"
     },
     "https://www.businesswire.com/news/home/20250910715287/en/Aalo-Atomics-Becomes-First-U.S.-Nuclear-Reactor-Company-with-a-Contract-for-Commercial-Delivery-of-Enriched-Uranium-Hits-Crucial-Next-Milestone-on-Path-to-2026-Startup": {
       "hash": "3a998634e6b98416",
-      "fetched_at": "2026-08-19T05:20:45.178Z",
+      "fetched_at": "2026-11-21T22:18:59.520Z",
       "http_status": 0,
       "state": "unreachable",
       "note": "Could not fetch: TimeoutError"
     },
     "https://www.businesswire.com/news/home/20251202017776/en/Antares-Raises-$96-Million-in-Series-B-Funding-to-Accelerate-Nuclear-Microreactor-Development": {
       "hash": "86b5b149d93aeed1",
-      "fetched_at": "2026-08-19T05:20:01.094Z",
+      "fetched_at": "2026-11-21T22:18:06.377Z",
       "http_status": 0,
       "state": "unreachable",
       "note": "Could not fetch: TimeoutError"
     },
     "https://www.businesswire.com/news/home/20260514188075/en/Terrestrial-Energy-Reports-First-Quarter-2026-Results": {
       "hash": "e99bce68e50b1ac3",
-      "fetched_at": "2026-08-19T05:20:23.099Z",
+      "fetched_at": "2026-11-21T22:18:28.378Z",
       "http_status": 0,
       "state": "unreachable",
       "note": "Could not fetch: TimeoutError"
     },
     "https://www.bwxt.com/bwxt-delivers-full-core-of-triso-nuclear-fuel-for-project-pele-microreactor/": {
       "hash": "eb6537076513aefd",
-      "fetched_at": "2026-08-06T18:28:18.077Z",
+      "fetched_at": "2026-11-21T22:18:39.515Z",
       "http_status": 200,
       "state": "stored",
       "title": "BWXT Delivers Full Core of TRISO Nuclear Fuel for Project Pele Microreactor - | People Strong. Innovation Driven.",
-      "bytes": 9285
+      "bytes": 21862
     },
     "https://www.catf.us/2025/05/can-they-make-atoms-great-again/": {
       "hash": "c6f1bd5b456a371e",
-      "fetched_at": "2026-08-11T04:03:12.128Z",
+      "fetched_at": "2026-11-21T22:19:55.291Z",
       "http_status": 200,
       "state": "stored",
       "title": "Can they “Make Atoms Great Again”? How the federal government can support domestic advanced nuclear energy production and exports – Clean Air Task Force",
-      "bytes": 16666
+      "bytes": 16677
     },
     "https://www.cnbc.com/2024/09/10/oracle-is-designing-a-data-center-that-would-be-powered-by-three-small-nuclear-reactors.html": {
       "hash": "751958d5412f035b",
-      "fetched_at": "2026-08-18T01:15:54.568Z",
+      "fetched_at": "2026-11-21T22:20:13.607Z",
       "http_status": 200,
       "state": "stored",
       "title": "Oracle designing data center that would be powered by 3 small nuclear reactors",
@@ -582,7 +639,7 @@
     },
     "https://www.cnbc.com/2025/04/22/sam-altman-steps-down-as-oklo-chair-freeing-nuclear-company-up-to-work-with-more-ai-companies.html": {
       "hash": "440165a9abe2a1ae",
-      "fetched_at": "2026-08-18T01:15:57.404Z",
+      "fetched_at": "2026-11-21T22:20:16.346Z",
       "http_status": 200,
       "state": "stored",
       "title": "Sam Altman steps down as Oklo chair",
@@ -590,239 +647,239 @@
     },
     "https://www.congress.gov/crs-product/IF10821": {
       "hash": "fad6fea0a78fec7e",
-      "fetched_at": "2026-08-19T05:20:52.325Z",
+      "fetched_at": "2026-11-21T22:19:55.323Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.congress.gov/crs-product/IN12719": {
       "hash": "16c20b57ebf031fe",
-      "fetched_at": "2026-08-19T05:20:50.279Z",
+      "fetched_at": "2026-11-21T22:19:51.434Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html": {
       "hash": "b1caf7cf2ec3c22e",
-      "fetched_at": "2026-08-18T01:15:49.246Z",
+      "fetched_at": "2026-11-21T22:20:10.426Z",
       "http_status": 200,
       "state": "stored",
       "title": "Constellation to Launch Crane Clean Energy Center, Restoring Jobs and Carbon-Free Power to The Grid",
-      "bytes": 14432
+      "bytes": 14587
     },
     "https://www.constellationenergy.com/news/2025/constellation-meta-sign-20-year-deal-for-clean-reliable-nuclear-energy-in-illinois.html": {
       "hash": "1b76f4395543e722",
-      "fetched_at": "2026-08-18T01:15:51.353Z",
+      "fetched_at": "2026-11-21T22:20:12.439Z",
       "http_status": 200,
       "state": "stored",
       "title": "Constellation, Meta Sign 20-Year Deal for Clean, Reliable Nuclear Energy in Illinois",
-      "bytes": 11842
+      "bytes": 11997
     },
     "https://www.cooperative.com/programs-services/bts/documents/advisories/advisory-nuscale-and-uamps-end-smr-project-cfpp-dec-2023.pdf": {
       "hash": "78074bdb3b9a94cc",
-      "fetched_at": "2026-08-19T05:20:50.133Z",
+      "fetched_at": "2026-11-21T22:19:45.027Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://www.deepfission.com/pr-media-kit/press-releases/detail/114/deep-fission-prototype-reactor-canister-arrives-at-kansas-site-advancing-reactor-proof-of-concept-program": {
       "hash": "309330e8a1766219",
-      "fetched_at": "2026-08-06T18:28:17.892Z",
+      "fetched_at": "2026-11-21T22:18:39.270Z",
       "http_status": 200,
       "state": "stored",
       "title": "Deep Fission Prototype Reactor Canister Arrives at Kansas Site, Advancing Reactor Proof-of-Concept Program :: Deep Fission, Inc. (FISN)",
-      "bytes": 7854
+      "bytes": 7946
     },
     "https://www.deepfission.com/technology": {
       "hash": "8dcd15490dfb6def",
-      "fetched_at": "2026-08-11T04:03:18.027Z",
+      "fetched_at": "2026-11-21T22:20:03.245Z",
       "http_status": 200,
       "state": "stored",
       "title": "Gravity Reactor™ | Small modular PWR a mile underground :: Deep Fission, Inc. (FISN)",
-      "bytes": 5777
+      "bytes": 4731
     },
     "https://www.deployable.energy/post/deployable-energy-announces-unity-demonstration-reactor-achieves-criticality-at-idaho-national-labor": {
       "hash": "6c42e7c81838ade8",
-      "fetched_at": "2026-08-11T04:03:20.275Z",
+      "fetched_at": "2026-11-21T22:20:06.569Z",
       "http_status": 200,
       "state": "stored",
       "title": "Deployable Energy Announces Unity Demonstration Reactor Achieves Criticality at Idaho National Laboratory",
-      "bytes": 5466
+      "bytes": 5538
     },
     "https://www.energy.gov/articles/department-energy-announces-american-nuclear-supply-chain-loans": {
       "hash": "c21a53fed2daec08",
-      "fetched_at": "2026-08-11T04:18:33.050Z",
+      "fetched_at": "2026-11-21T22:19:31.452Z",
       "http_status": 200,
       "state": "stored",
       "title": "Department of Energy Announces American Nuclear Supply Chain Loans | Department of Energy",
-      "bytes": 9135
+      "bytes": 9260
     },
     "https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality": {
       "hash": "0ad293da659d67e6",
-      "fetched_at": "2026-08-06T18:26:18.532Z",
+      "fetched_at": "2026-11-21T22:17:04.522Z",
       "http_status": 200,
       "state": "stored",
       "title": "Department of Energy Celebrates First Advanced Reactor Criticality | Department of Energy",
-      "bytes": 9305
+      "bytes": 9445
     },
     "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal": {
       "hash": "d330a4b7231c5dd2",
-      "fetched_at": "2026-08-06T18:26:10.360Z",
+      "fetched_at": "2026-11-21T22:16:54.283Z",
       "http_status": 200,
       "state": "stored",
       "title": "Department of Energy Celebrates Fourth Criticality Ahead of July 4th Goal | Department of Energy",
-      "bytes": 8152
+      "bytes": 8228
     },
     "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality": {
       "hash": "88d34912dc2bf5ba",
-      "fetched_at": "2026-08-06T18:26:12.398Z",
+      "fetched_at": "2026-11-21T22:16:56.296Z",
       "http_status": 200,
       "state": "stored",
       "title": "Department of Energy Celebrates Second Advanced Reactor Achieving Criticality | Department of Energy",
-      "bytes": 7992
+      "bytes": 8128
     },
     "https://www.energy.gov/articles/doe-announces-site-selection-ai-data-center-and-energy-infrastructure-development-federal": {
       "hash": "0cbca60ded4ad145",
-      "fetched_at": "2026-08-18T01:16:00.664Z",
+      "fetched_at": "2026-11-21T22:20:19.171Z",
       "http_status": 200,
       "state": "stored",
       "title": "DOE Announces Site Selection for AI Data Center and Energy Infrastructure Development on Federal Lands | Department of Energy",
-      "bytes": 8048
+      "bytes": 8227
     },
     "https://www.energy.gov/articles/energy-department-awards-94-million-american-companies-help-expedite-deployments-small": {
       "hash": "e3f3e1ffd570f84a",
-      "fetched_at": "2026-08-06T18:29:04.521Z",
+      "fetched_at": "2026-11-21T22:19:23.981Z",
       "http_status": 200,
       "state": "stored",
       "title": "Energy Department Awards $94 Million to American Companies to Help Expedite the Deployments of Small Modular Reactors in the United States | Department of Energy",
-      "bytes": 10124
+      "bytes": 10258
     },
     "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor": {
       "hash": "e6e04a0ad0ec6b8c",
-      "fetched_at": "2026-08-06T18:26:16.494Z",
+      "fetched_at": "2026-11-21T22:17:01.451Z",
       "http_status": 200,
       "state": "stored",
       "title": "U.S. Department of Energy Meets President Trump’s Goal, Delivers Third Advanced Reactor Criticality | Department of Energy",
-      "bytes": 8720
+      "bytes": 8763
     },
     "https://www.energy.gov/edf/palisades": {
       "hash": "d0ba2a5e54caa373",
-      "fetched_at": "2026-08-11T04:14:53.801Z",
+      "fetched_at": "2026-11-21T22:17:23.329Z",
       "http_status": 200,
       "state": "stored",
       "title": "Palisades | Department of Energy",
-      "bytes": 6418
+      "bytes": 6657
     },
     "https://www.energy.gov/ne/advanced-reactor-demonstration-projects": {
       "hash": "698e215b28a10b11",
-      "fetched_at": "2026-08-11T04:18:41.251Z",
+      "fetched_at": "2026-11-21T22:19:39.727Z",
       "http_status": 200,
       "state": "stored",
       "title": "Advanced Reactor Demonstration Projects | Department of Energy",
-      "bytes": 7735
+      "bytes": 8038
     },
     "https://www.energy.gov/ne/articles/department-defense-breaks-ground-project-pele-microreactor": {
       "hash": "9562edd78b46b6f5",
-      "fetched_at": "2026-08-06T18:26:14.429Z",
+      "fetched_at": "2026-11-21T22:16:59.355Z",
       "http_status": 200,
       "state": "stored",
       "title": "Department of Defense Breaks Ground on Project Pele Microreactor | Department of Energy",
-      "bytes": 7903
+      "bytes": 8037
     },
     "https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed": {
       "hash": "a2dca6bfac9fe90c",
-      "fetched_at": "2026-08-06T18:26:07.666Z",
+      "fetched_at": "2026-11-21T22:16:51.279Z",
       "http_status": 200,
       "state": "stored",
       "title": "Energy Department Announces First Microreactor Experiments in DOME Test Bed | Department of Energy",
-      "bytes": 9300
+      "bytes": 9429
     },
     "https://www.energy.gov/ne/articles/idaho-national-lab-creates-first-batch-fuel-worlds-first-fast-spectrum-molten-salt": {
       "hash": "62dca9a47a0cbb97",
-      "fetched_at": "2026-08-06T18:29:06.899Z",
+      "fetched_at": "2026-11-21T22:19:27.370Z",
       "http_status": 200,
       "state": "stored",
       "title": "Idaho National Lab Creates First Batch of Fuel for World’s First Fast Spectrum Molten Salt Reactor Experiment | Department of Energy",
-      "bytes": 7982
+      "bytes": 8152
     },
     "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design": {
       "hash": "443eb6acfc203215",
-      "fetched_at": "2026-08-06T18:26:05.214Z",
+      "fetched_at": "2026-11-21T22:16:48.989Z",
       "http_status": 200,
       "state": "stored",
       "title": "NRC Approves NuScale Power’s Uprated Small Modular Reactor Design | Department of Energy",
-      "bytes": 7890
+      "bytes": 7934
     },
     "https://www.energy.gov/ne/articles/nrc-dockets-construction-permit-application-tva-small-modular-reactor": {
       "hash": "e2d5a3448d13f336",
-      "fetched_at": "2026-08-06T18:28:58.621Z",
+      "fetched_at": "2026-11-21T22:19:17.123Z",
       "http_status": 200,
       "state": "stored",
       "title": "NRC Dockets Construction Permit Application for TVA Small Modular Reactor | Department of Energy",
-      "bytes": 7962
+      "bytes": 8030
     },
     "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication": {
       "hash": "17459f6649228b76",
-      "fetched_at": "2026-08-06T18:28:04.503Z",
+      "fetched_at": "2026-11-21T22:18:35.749Z",
       "http_status": 200,
       "state": "stored",
       "title": "TRISO-X Receives NRC Special Nuclear Material License for Advanced Fuel Fabrication Facility | Department of Energy",
-      "bytes": 9912
+      "bytes": 10059
     },
     "https://www.energy.gov/ne/articles/us-department-energy-announces-160-million-first-awards-under-advanced-reactor": {
       "hash": "4a135351f2ec5d0b",
-      "fetched_at": "2026-08-11T04:18:35.071Z",
+      "fetched_at": "2026-11-21T22:19:33.521Z",
       "http_status": 200,
       "state": "stored",
       "title": "U.S. Department of Energy Announces $160 Million in First Awards under Advanced Reactor Demonstration Program | Department of Energy",
-      "bytes": 9157
+      "bytes": 9228
     },
     "https://www.energy.gov/ne/articles/us-department-energy-signs-oklo-fuel-fabrication-facility-design-concept": {
       "hash": "5152bae6d06807c9",
-      "fetched_at": "2026-08-06T18:28:00.119Z",
+      "fetched_at": "2026-11-21T22:18:31.133Z",
       "http_status": 200,
       "state": "stored",
       "title": "U.S. Department of Energy Signs Off on Oklo Fuel Fabrication Facility Design Concept | Department of Energy",
-      "bytes": 7445
+      "bytes": 7579
     },
     "https://www.energy.gov/ne/demonstration-microreactor-experiments-dome": {
       "hash": "007a694eb9d28b3e",
-      "fetched_at": "2026-08-06T18:28:54.530Z",
+      "fetched_at": "2026-11-21T22:19:12.133Z",
       "http_status": 200,
       "state": "stored",
       "title": "Demonstration of Microreactor Experiments (DOME) | Department of Energy",
-      "bytes": 15623
+      "bytes": 15795
     },
     "https://www.energy.gov/ne/us-department-energy-reactor-pilot-program": {
       "hash": "4da8de99acbf852d",
-      "fetched_at": "2026-08-06T18:29:08.918Z",
+      "fetched_at": "2026-11-21T22:19:29.421Z",
       "http_status": 200,
       "state": "stored",
       "title": "U.S. Department of Energy Reactor Pilot Program | Department of Energy",
-      "bytes": 7074
+      "bytes": 7551
     },
     "https://www.energy.gov/nepa/articles/cx-271014-groves-1-project": {
       "hash": "60c79d6f68b5f27f",
-      "fetched_at": "2026-08-07T12:52:26.889Z",
+      "fetched_at": "2026-11-21T22:18:29.102Z",
       "http_status": 200,
       "state": "stored",
       "title": "CX-271014: Groves-1 Project | Department of Energy",
-      "bytes": 6046
+      "bytes": 6283
     },
     "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf": {
       "hash": "77f376c4a67fb2c5",
-      "fetched_at": "2026-08-19T05:20:45.750Z",
+      "fetched_at": "2026-11-21T22:19:14.155Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://www.esgtoday.com/clean-energy-startup-radiant-raises-165-million-to-replace-diesel-generators-with-portable-nuclear-reactors/": {
       "hash": "45ce9fdd0a8295a6",
-      "fetched_at": "2026-08-06T18:28:49.246Z",
+      "fetched_at": "2026-11-21T22:19:03.694Z",
       "http_status": 200,
       "state": "stored",
       "title": "Clean Energy Startup Radiant Raises $165 Million to Replace Diesel Generators with Portable Nuclear Reactors - ESG Today",
-      "bytes": 11915
+      "bytes": 11788
     },
     "https://www.exim.gov/policies/small-modular-reactor-financing": {
       "hash": "6d87084e19acf519",
@@ -834,7 +891,7 @@
     },
     "https://www.federalregister.gov/documents/2023/11/16/2023-25163/emergency-preparedness-for-small-modular-reactors-and-other-new-technologies": {
       "hash": "9762e171e0df6494",
-      "fetched_at": "2026-08-11T04:03:17.330Z",
+      "fetched_at": "2026-11-21T22:20:00.649Z",
       "http_status": 200,
       "state": "stored",
       "title": "Emergency Preparedness for Small Modular Reactors and Other New Technologies",
@@ -843,7 +900,7 @@
     },
     "https://www.federalregister.gov/documents/2026/02/27/2026-03943/smr-llc-pioneer-units-1-and-2-phased-construction-permit-application-limited-work-authorization": {
       "hash": "b8bd39ad0d5561e2",
-      "fetched_at": "2026-08-06T18:30:53.968Z",
+      "fetched_at": "2026-11-21T22:16:45.840Z",
       "http_status": 200,
       "state": "stored",
       "title": "SMR, LLC; Pioneer Units 1 and 2; Phased Construction Permit Application-Limited Work Authorization",
@@ -852,14 +909,14 @@
     },
     "https://www.federalregister.gov/documents/2026/05/18/2026-09880/in-the-matter-of-kairos-power-llc-hermes-test-reactor-extension-of-latest-date-for-completion-of": {
       "hash": "78ed1e735970c215",
-      "fetched_at": "2026-08-06T18:31:04.368Z",
+      "fetched_at": "2026-11-21T22:18:29.225Z",
       "http_status": 200,
       "state": "blocked",
       "note": "Server answered 200 with a refusal page (only 779 bytes of text). Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing": {
       "hash": "bb490bf39b039ba1",
-      "fetched_at": "2026-08-06T18:31:03.985Z",
+      "fetched_at": "2026-11-21T22:16:47.899Z",
       "http_status": 200,
       "state": "stored",
       "title": "Tennessee Valley Authority; Clinch River Nuclear Site, Unit 1; Notice of Hearing",
@@ -868,86 +925,97 @@
     },
     "https://www.georgiapower.com/news-hub/press-releases/vogtle-unit-4-enters-commercial-operation.html": {
       "hash": "656726e2921259e2",
-      "fetched_at": "2026-08-06T18:29:07.074Z",
+      "fetched_at": "2026-11-21T22:19:27.527Z",
       "http_status": 200,
       "state": "stored",
       "title": "Vogtle Unit 4 enters commercial operation",
-      "bytes": 12282
+      "bytes": 11974
     },
     "https://www.gevernova.com/news/press-releases/deployment-bwrx-300-small-modular-reactor-poland-major-step-forward-design-development": {
       "hash": "7d77fd9fea7a519f",
-      "fetched_at": "2026-08-18T01:16:06.095Z",
+      "fetched_at": "2026-11-21T22:20:20.695Z",
       "http_status": 200,
       "state": "stored",
       "title": "Deployment of BWRX-300 small modular reactor in Poland takes major step forward with design development | GE Vernova News",
-      "bytes": 10431
+      "bytes": 10445
     },
     "https://www.gevernova.com/news/press-releases/ge-vernova-hitachi-nuclear-energy-fortum-agreement-deployment-bwrx-300-small-modular-reactor-finland-sweden": {
       "hash": "71e02a5d0bb09bbb",
-      "fetched_at": "2026-08-19T05:20:57.258Z",
+      "fetched_at": "2026-11-21T22:20:29.598Z",
       "http_status": 200,
       "state": "stored",
       "title": "GE Vernova Hitachi Nuclear Energy and Fortum sign early works agreement to advance potential deployment of BWRX-300 small modular reactor | GE Vernova News",
-      "bytes": 7659
+      "bytes": 7673
     },
     "https://www.globenewswire.com/news-release/2025/06/24/3104171/0/en/Terrestrial-Energy-and-Ameresco-Announce-Collaboration-to-Develop-IMSR-Plant-Projects-for-Customized-Energy-Supply.html": {
       "hash": "3d08f82f9e367f5a",
-      "fetched_at": "2026-08-11T04:39:37.551Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Terrestrial Energy and Ameresco Announce Collaboration to",
-      "bytes": 18011
-    },
-    "https://www.globenewswire.com/news-release/2025/09/09/3147107/0/en/FOR-IMMEDIATE-RELEASE-UPDATE-NANO-Nuclear-Awarded-AFWERX-Direct-to-Phase-II-Contract-for-KRONOS-MMR-RDT-E-at-Joint-Base-Anacostia-Bolling.html": {
-      "hash": "ee83465c45d45c73",
-      "fetched_at": "2026-08-06T18:27:39.159Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "FOR IMMEDIATE RELEASE UPDATE: NANO Nuclear Awarded AFWERX",
-      "bytes": 12880
-    },
-    "https://www.globenewswire.com/news-release/2025/09/10/3147707/0/en/NRC-Completes-Safety-Evaluation-and-Approves-Terrestrial-Energy-IMSR-Principal-Design-Criteria-Including-its-Mechanism-for-Inherent-Reactor-Power-Control.html": {
-      "hash": "7dfffcd59d45f114",
-      "fetched_at": "2026-08-06T18:28:16.437Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "NRC Completes Safety Evaluation and Approves Terrestrial",
-      "bytes": 16940
-    },
-    "https://www.globenewswire.com/news-release/2026/05/20/3298411/0/en/NANO-Nuclear-s-KRONOS-MMR-and-the-University-of-Illinois-Urbana-Champaign-Advance-to-Next-Regulatory-Milestone-as-U-S-NRC-Formally-Accepts-Construction-Permit-Application-for-Revie.html": {
-      "hash": "f83a4eec5c8bbffc",
-      "fetched_at": "2026-08-06T18:28:46.805Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "NANO Nuclear’s KRONOS MMR™ and the University of Illinois",
-      "bytes": 16189
-    },
-    "https://www.globenewswire.com/news-release/2026/07/30/3336005/0/en/crusoe-and-aalo-atomics-form-strategic-partnership-with-goal-of-deploying-first-nuclear-powered-ai-factory.html": {
-      "hash": "3a5b8931025efde5",
-      "fetched_at": "2026-08-06T18:26:43.003Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Crusoe and Aalo Atomics Form Strategic Partnership with",
-      "bytes": 5298
-    },
-    "https://www.gov.uk/government/news/great-british-energy-nuclear-and-rolls-royce-smr-sign-contract": {
-      "hash": "9743c5478835f71b",
-      "fetched_at": "2026-08-18T01:16:04.796Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Great British Energy - Nuclear and Rolls-Royce SMR sign contract - GOV.UK",
-      "bytes": 9039
-    },
-    "https://www.gurufocus.com/news/8922229/deep-fission-fisn-prices-ipo-at-16-raising-40-million": {
-      "hash": "c7a01718f12b4a14",
-      "fetched_at": "2026-08-19T05:20:01.154Z",
+      "fetched_at": "2026-11-21T22:20:10.249Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
+    "https://www.globenewswire.com/news-release/2025/09/09/3147107/0/en/FOR-IMMEDIATE-RELEASE-UPDATE-NANO-Nuclear-Awarded-AFWERX-Direct-to-Phase-II-Contract-for-KRONOS-MMR-RDT-E-at-Joint-Base-Anacostia-Bolling.html": {
+      "hash": "ee83465c45d45c73",
+      "fetched_at": "2026-11-21T22:18:06.748Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://www.globenewswire.com/news-release/2025/09/10/3147707/0/en/NRC-Completes-Safety-Evaluation-and-Approves-Terrestrial-Energy-IMSR-Principal-Design-Criteria-Including-its-Mechanism-for-Inherent-Reactor-Power-Control.html": {
+      "hash": "7dfffcd59d45f114",
+      "fetched_at": "2026-11-21T22:18:37.028Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://www.globenewswire.com/news-release/2026/05/20/3298411/0/en/NANO-Nuclear-s-KRONOS-MMR-and-the-University-of-Illinois-Urbana-Champaign-Advance-to-Next-Regulatory-Milestone-as-U-S-NRC-Formally-Accepts-Construction-Permit-Application-for-Revie.html": {
+      "hash": "f83a4eec5c8bbffc",
+      "fetched_at": "2026-11-21T22:19:00.795Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://www.globenewswire.com/news-release/2026/07/30/3336005/0/en/crusoe-and-aalo-atomics-form-strategic-partnership-with-goal-of-deploying-first-nuclear-powered-ai-factory.html": {
+      "hash": "3a5b8931025efde5",
+      "fetched_at": "2026-11-21T22:17:18.390Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://www.gov.uk/government/news/great-british-energy-nuclear-and-rolls-royce-smr-sign-contract": {
+      "hash": "9743c5478835f71b",
+      "fetched_at": "2026-11-21T22:20:20.453Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Great British Energy - Nuclear and Rolls-Royce SMR sign contract - GOV.UK",
+      "bytes": 8994
+    },
+    "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm": {
+      "hash": "e27bbf2c849a40a6",
+      "fetched_at": "2026-11-21T22:21:32.282Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Federal Register, Volume 91 Issue 191 (Monday, October 5, 2026)",
+      "bytes": 6969
+    },
+    "https://www.gurufocus.com/news/8922229/deep-fission-fisn-prices-ipo-at-16-raising-40-million": {
+      "hash": "c7a01718f12b4a14",
+      "fetched_at": "2026-11-21T22:18:06.488Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://www.kairospower.com/iterative-development": {
+      "hash": "a15193f25852fc27",
+      "fetched_at": "2026-11-21T22:21:31.031Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Iterative Development | Kairos Power",
+      "bytes": 8230
+    },
     "https://www.kairospower.com/updates/google-and-kairos-power-partner-to-deploy-500-mw-of-clean-electricity-generation": {
       "hash": "de41cc60e387558e",
-      "fetched_at": "2026-08-06T18:26:37.287Z",
+      "fetched_at": "2026-11-21T22:17:16.791Z",
       "http_status": 200,
       "state": "stored",
       "title": "Google and Kairos Power Partner to Deploy 500 MW of Clean Electricity Generation | Kairos Power",
@@ -955,220 +1023,234 @@
     },
     "https://www.kairospower.com/updates/kairos-power-breaks-ground-on-hermes-2-demonstration-plant": {
       "hash": "1de74fff12531fc0",
-      "fetched_at": "2026-08-06T18:26:01.527Z",
+      "fetched_at": "2026-11-21T22:16:45.773Z",
       "http_status": 200,
       "state": "stored",
       "title": "Kairos Power Breaks Ground on Hermes 2 Demonstration Plant | Kairos Power",
       "bytes": 8888
     },
+    "https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis": {
+      "hash": "52f8b5e90cf99a0a",
+      "fetched_at": "2026-11-21T22:21:34.096Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Last Energy Receives DOE Approval of Pilot Reactor Documented Safety Analysis",
+      "bytes": 3953
+    },
     "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf": {
       "hash": "ba02deeb2d6b76ff",
-      "fetched_at": "2026-08-19T05:20:46.583Z",
+      "fetched_at": "2026-11-21T22:19:39.920Z",
+      "http_status": 404,
+      "state": "error",
+      "note": "Could not fetch: 404"
+    },
+    "https://www.lazard.com/media/kcfconhf/lazards-lcoeplus_vf.pdf": {
+      "hash": "fc84312db28ddea4",
+      "fetched_at": "2026-11-21T22:30:16.295Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://www.manilatimes.net/2026/08/04/tmt-newswire/globenewswire/holtec-entergy-and-hyundai-ec-sign-moa-to-evaluate-potential-smr-300-projects-in-gulf-south-region/2397924": {
       "hash": "f4345e1598af272b",
-      "fetched_at": "2026-08-06T18:26:36.425Z",
+      "fetched_at": "2026-11-21T22:17:15.502Z",
       "http_status": 200,
       "state": "stored",
       "title": "Holtec, Entergy and Hyundai E&C Sign MOA to Evaluate Potential SMR-300 Projects in Gulf South Region\n| The Manila Times",
-      "bytes": 10175
+      "bytes": 10172
     },
     "https://www.metro.pr/noticias/2026/06/15/camara-aprueba-medida-que-incorpora-la-energia-nuclear-a-la-politica-publica-energetica-de-puerto-rico/": {
       "hash": "f23abcf5f5c932aa",
-      "fetched_at": "2026-08-19T05:21:00.577Z",
+      "fetched_at": "2026-11-21T22:20:35.893Z",
       "http_status": 200,
       "state": "stored",
       "title": "Cámara aprueba medida que incorpora la energía nuclear a la política pública energética de Puerto Rico | Metro Puerto Rico",
-      "bytes": 7232
+      "bytes": 7409
     },
     "https://www.neimagazine.com/news/bwxt-awarded-second-contract-to-evaluate-microreactor-for-wyoming/": {
       "hash": "f6a9718febfb1dcc",
-      "fetched_at": "2026-08-06T18:27:39.227Z",
+      "fetched_at": "2026-11-21T22:18:06.988Z",
       "http_status": 200,
       "state": "stored",
       "title": "BWXT awarded second contract to evaluate microreactor for Wyoming - Nuclear Engineering International",
-      "bytes": 8573
+      "bytes": 8581
     },
     "https://www.neimagazine.com/news/kairos-breaks-ground-on-hermes-2/": {
       "hash": "a9b0c8a7e2878a16",
-      "fetched_at": "2026-08-06T18:26:18.660Z",
+      "fetched_at": "2026-11-21T22:17:04.757Z",
       "http_status": 200,
       "state": "stored",
       "title": "Kairos breaks ground on Hermes 2 - Nuclear Engineering International",
-      "bytes": 11833
+      "bytes": 11841
     },
     "https://www.neimagazine.com/news/lithuania-considers-smr-technology/": {
       "hash": "e9e705783b67b6c6",
-      "fetched_at": "2026-08-19T05:20:57.788Z",
+      "fetched_at": "2026-11-21T22:20:30.544Z",
       "http_status": 200,
       "state": "stored",
       "title": "Lithuania considers SMR technology - Nuclear Engineering International",
-      "bytes": 10832
+      "bytes": 10817
     },
     "https://www.neimagazine.com/news/pacificorp-considers-adding-two-more-natrium-units-to-its-generation-mix-by-2033-10759748/": {
       "hash": "9d335d2027bb8cbf",
-      "fetched_at": "2026-08-11T04:39:36.112Z",
+      "fetched_at": "2026-11-21T22:20:06.766Z",
       "http_status": 200,
       "state": "stored",
       "title": "PacifiCorp considers adding two more Natrium units to its generation mix by 2033 - Nuclear Engineering International",
-      "bytes": 15201
+      "bytes": 15216
     },
     "https://www.nrc.gov/docs/ML2009/ML20097B839.pdf": {
       "hash": "35d0e74073a33e03",
-      "fetched_at": "2026-08-19T05:20:53.363Z",
+      "fetched_at": "2026-11-21T22:20:03.376Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://www.nrc.gov/info-finder/reactors/ccec": {
       "hash": "1bb90c2454b0b07b",
-      "fetched_at": "2026-08-06T18:29:06.874Z",
+      "fetched_at": "2026-11-21T22:19:25.556Z",
       "http_status": 200,
       "state": "stored",
       "title": "Christopher M. Crane Clean Energy Center | Nuclear Regulatory Commission",
-      "bytes": 23002
+      "bytes": 28607
     },
     "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/dukeenergy": {
       "hash": "c18b1678121eba86",
-      "fetched_at": "2026-08-06T18:29:04.469Z",
+      "fetched_at": "2026-11-21T22:19:22.796Z",
       "http_status": 200,
       "state": "stored",
-      "title": "Duke Energy&#039;s, Belews Creek Early, N.C., Site Early Permit Application | Nuclear Regulatory Commission",
-      "bytes": 7791
+      "title": "Duke Energy&#039;s Belews Creek Early Site Permit Application | Nuclear Regulatory Commission",
+      "bytes": 13960
     },
     "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/kronos": {
       "hash": "b3a92082763a1dbf",
-      "fetched_at": "2026-08-06T18:29:01.842Z",
+      "fetched_at": "2026-11-21T22:19:19.991Z",
       "http_status": 200,
       "state": "stored",
       "title": "University of Illinois Urbana-Champaign – KRONOS Micro Modular Reactor (KRONOS MMR™) | Nuclear Regulatory Commission",
-      "bytes": 7175
+      "bytes": 11827
     },
     "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/long-mott": {
       "hash": "544b273c9190f405",
-      "fetched_at": "2026-08-06T18:28:54.470Z",
+      "fetched_at": "2026-11-21T22:19:11.290Z",
       "http_status": 200,
       "state": "stored",
       "title": "Long Mott Energy, LLC – Long Mott Generating Station Xe-100 Power Reactor Application | Nuclear Regulatory Commission",
-      "bytes": 13634
+      "bytes": 18293
     },
     "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/pioneer": {
       "hash": "6cca80dc4206f12a",
-      "fetched_at": "2026-08-06T18:28:59.127Z",
+      "fetched_at": "2026-11-21T22:19:17.470Z",
       "http_status": 200,
       "state": "stored",
       "title": "Pioneer Units 1 and 2 Limited Work Authorization Application | Nuclear Regulatory Commission",
-      "bytes": 11698
+      "bytes": 16608
     },
     "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/past-license-activities/terrapower": {
       "hash": "9c9b1c5ef1cd5b30",
-      "fetched_at": "2026-08-06T18:28:50.197Z",
+      "fetched_at": "2026-11-21T22:19:06.057Z",
       "http_status": 200,
       "state": "stored",
       "title": "TerraPower, LLC -- Kemmerer Power Station Unit 1 Application | Nuclear Regulatory Commission",
-      "bytes": 9183
+      "bytes": 13997
     },
     "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/pre-application-activities/texas-am-system": {
       "hash": "fde3c34fc1891781",
-      "fetched_at": "2026-08-06T18:28:56.885Z",
+      "fetched_at": "2026-11-21T22:19:14.469Z",
       "http_status": 200,
       "state": "stored",
       "title": "Texas A&M University System | Nuclear Regulatory Commission",
-      "bytes": 6283
+      "bytes": 10227
     },
     "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos": {
       "hash": "4c1802480bd48512",
-      "fetched_at": "2026-08-06T18:28:52.405Z",
+      "fetched_at": "2026-11-21T22:19:08.625Z",
       "http_status": 200,
       "state": "stored",
       "title": "Hermes 2 – Kairos Application | Nuclear Regulatory Commission",
-      "bytes": 8635
+      "bytes": 13257
+    },
+    "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-008.pdf": {
+      "hash": "cc15962cbf443bbb",
+      "fetched_at": "2026-11-21T22:21:31.459Z",
+      "http_status": 200,
+      "state": "not-text",
+      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-054.pdf": {
       "hash": "f3590a2cefe80dfa",
-      "fetched_at": "2026-08-19T05:19:17.309Z",
+      "fetched_at": "2026-11-21T22:16:46.034Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://www.nucnet.org/news/african-nation-signs-agreement-for-nuscale-12-module-nuclear-power-plant-8-5-2024": {
       "hash": "f227938899a686d4",
-      "fetched_at": "2026-08-18T01:16:06.884Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Ghana / African Nation Signs Agreement For NuScale 12-Module Nuclear Power Plant",
-      "bytes": 5857
+      "fetched_at": "2026-11-21T22:20:32.618Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.nucnet.org/news/amazon-buys-stake-in-nuclear-reactor-developer-in-bid-to-power-data-centres-10-4-2024": {
       "hash": "d1b7a9f41e528038",
-      "fetched_at": "2026-08-18T01:15:53.234Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "US / Amazon Buys Stake In Nuclear Reactor Developer In Bid To Power Data Centres",
-      "bytes": 7010
+      "fetched_at": "2026-11-21T22:20:12.977Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.nucnet.org/news/electricity-from-micro-reactors-will-cost-less-than-diesel-generators-says-nei-report": {
       "hash": "998e66519aeccd38",
-      "fetched_at": "2026-08-11T04:06:35.197Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Electricity From Micro Reactors Will Cost Less Than Diesel Generators, Says NEI Report",
-      "bytes": 3779
+      "fetched_at": "2026-11-21T22:19:42.317Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.nucnet.org/news/oak-ridge-lab-signs-usd27m-deal-with-kairos-power-for-advanced-reactor-development-2-5-2026": {
       "hash": "c4fc23f9e15e113b",
-      "fetched_at": "2026-08-11T04:01:28.375Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Oak Ridge Lab Signs $27M Deal With Kairos Power For Advanced Reactor Development",
-      "bytes": 3968
+      "fetched_at": "2026-11-21T22:17:20.652Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.nucnet.org/news/oklo-signs-nuclear-pre-agreement-with-data-company-equinix-4-2-2024": {
       "hash": "af32f1470f091d30",
-      "fetched_at": "2026-08-18T01:14:03.367Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "US / Oklo Signs Nuclear Pre-Agreement With Data Company Equinix",
-      "bytes": 4018
+      "fetched_at": "2026-11-21T22:17:07.739Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.nucnet.org/news/opg-completes-excavation-works-at-darlington-bwrx-300-smr-project-3-1-2026": {
       "hash": "e0d7d318065b7439",
-      "fetched_at": "2026-08-06T18:32:15.877Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "OPG Completes Shaft Excavation Works At Darlington BWRX-300 SMR Project",
-      "bytes": 4124
+      "fetched_at": "2026-11-21T22:18:35.853Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026": {
       "hash": "fefe17aaa74463c9",
-      "fetched_at": "2026-08-06T18:28:17.082Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "US DOE Approves PDSA For Last Energy Pilot Nuclear Reactor At Texas University",
-      "bytes": 4042
+      "fetched_at": "2026-11-21T22:18:37.948Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.nucnet.org/news/us-startup-last-energy-raises-usd40-million-for-ambitious-microreactor-project-8-5-2024": {
       "hash": "cd7ca7d5fcb1ae7a",
-      "fetched_at": "2026-08-18T01:14:52.021Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Advanced Reactors / US Startup Last Energy Raises $40 Million For Ambitious Microreactor Project",
-      "bytes": 5583
+      "fetched_at": "2026-11-21T22:18:06.584Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.nuscalepower.com/about/strategic-partners": {
       "hash": "d336459803707a26",
-      "fetched_at": "2026-08-11T04:03:07.506Z",
+      "fetched_at": "2026-11-21T22:19:45.261Z",
       "http_status": 200,
       "state": "stored",
       "title": "Strategic Partners | NuScale Power",
-      "bytes": 5059
+      "bytes": 5044
     },
     "https://www.nuscalepower.com/press-releases/2022/nuscale-completes-merger-with-spring-valley": {
       "hash": "b6f8ef4e376a6495",
-      "fetched_at": "2026-08-06T18:26:52.379Z",
+      "fetched_at": "2026-11-21T22:17:23.908Z",
       "http_status": 200,
       "state": "stored",
       "title": "NuScale Power Completes Merger with Spring Valley Acquisition Corp. to Create World’s First and Only Publicly Traded Provider of Transformational Small Modular Nuclear Reactor Technology",
@@ -1176,7 +1258,7 @@
     },
     "https://www.nuscalepower.com/press-releases/2025/nuscale-proudly-supports-tva-and-entra1-energy-announcement-of-landmark-6-gigawatt-small-module-reactor-smr-deployment-program": {
       "hash": "319dd11a0d657da3",
-      "fetched_at": "2026-08-06T18:26:24.105Z",
+      "fetched_at": "2026-11-21T22:17:10.411Z",
       "http_status": 200,
       "state": "stored",
       "title": "NuScale Proudly Supports TVA and ENTRA1 Energy Announcement of Landmark 6-Gigawatt Small Module Reactor (SMR) Deployment Program",
@@ -1184,143 +1266,149 @@
     },
     "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-first-quarter-2026-results": {
       "hash": "ce7876516b36e6ec",
-      "fetched_at": "2026-08-06T18:27:39.296Z",
+      "fetched_at": "2026-11-21T22:18:07.103Z",
       "http_status": 200,
       "state": "stored",
       "title": "NuScale Power Reports First Quarter 2026 Results",
-      "bytes": 10154
+      "bytes": 10153
+    },
+    "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-third-quarter-2026-results": {
+      "hash": "09aab1d73ecc54ba",
+      "fetched_at": "2026-11-21T22:21:32.618Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "NuScale Power Reports Third Quarter 2026 Results",
+      "bytes": 9981
     },
     "https://www.nypa.gov/News/Press-Releases/2026/20260623-nuclear": {
       "hash": "ba8d9292274c56cd",
-      "fetched_at": "2026-08-18T01:16:02.968Z",
+      "fetched_at": "2026-11-21T22:20:19.696Z",
       "http_status": 200,
       "state": "stored",
-      "title": "One Year In, NYPA Highlights Progress Toward Developing at Least 1 GW of Advanced Nuclear Energy in Upstate New York",
-      "bytes": 11190
+      "title": null,
+      "bytes": 11019
     },
     "https://www.postguam.com/news/local/congress-nuclear-reactor-push-alarms-locals/article_a63b9661-5cca-43a3-9fae-e06ab5682477.html": {
       "hash": "feaa2fca7e62194c",
-      "fetched_at": "2026-08-19T05:21:03.104Z",
+      "fetched_at": "2026-11-21T22:20:38.075Z",
       "http_status": 200,
       "state": "stored",
       "title": "Congress’ nuclear reactor push alarms locals | Local News | postguam.com",
-      "bytes": 12777
+      "bytes": 12735
     },
     "https://www.postguam.com/news/local/lawmakers-want-answers-about-micro-nuclear-reactors-on-guam/article_88cb2824-85aa-4c5c-8dd7-e6ac6cdd2b76.html": {
       "hash": "8509ea1ecb70dbf2",
-      "fetched_at": "2026-08-19T05:21:00.951Z",
+      "fetched_at": "2026-11-21T22:20:36.050Z",
       "http_status": 200,
       "state": "stored",
       "title": "Lawmakers want answers about micro-nuclear reactors on Guam | Local News | postguam.com",
-      "bytes": 8151
+      "bytes": 8109
     },
     "https://www.power-eng.com/nuclear/oklo-secures-up-to-750-mw-worth-of-new-data-center-partnerships/": {
       "hash": "4d0edfd554dced1b",
-      "fetched_at": "2026-08-11T04:03:07.317Z",
+      "fetched_at": "2026-11-21T22:19:52.453Z",
       "http_status": 200,
       "state": "stored",
       "title": "Oklo secures up to 750 MW-worth of new data center partnerships",
-      "bytes": 6246
+      "bytes": 6864
     },
     "https://www.powermag.com/air-force-anpi-picks-put-radiant-antares-westinghouse-on-track-for-first-on%E2%80%91base-microreactors-by-2028/": {
       "hash": "ab0a322b6a417cc0",
-      "fetched_at": "2026-08-18T04:20:58.781Z",
+      "fetched_at": "2026-11-21T22:20:17.038Z",
       "http_status": 200,
       "state": "stored",
       "title": "Air Force ANPI Picks Put Radiant, Antares, Westinghouse on Track for First On‑Base Microreactors by 2028",
-      "bytes": 25500
+      "bytes": 25820
     },
     "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/": {
       "hash": "07d828c675afb6ec",
-      "fetched_at": "2026-08-11T04:02:59.811Z",
+      "fetched_at": "2026-11-21T22:19:44.160Z",
       "http_status": 200,
       "state": "stored",
       "title": "DOD Picks BWXT Design for &#039;Project Pele&#039; Prototype Nuclear Microreactor",
-      "bytes": 13032
+      "bytes": 13379
     },
     "https://www.powermag.com/doe-kairos-unveil-milestone-based-funding-agreement-for-advanced-nuclear-demonstration-project/": {
       "hash": "e6e6a85d97a5b44e",
-      "fetched_at": "2026-08-06T18:26:45.728Z",
+      "fetched_at": "2026-11-21T22:17:20.624Z",
       "http_status": 200,
       "state": "stored",
       "title": "DOE, Kairos Unveil Milestone-Based Funding Agreement for Advanced Nuclear Demonstration Project",
-      "bytes": 18144
+      "bytes": 18445
     },
     "https://www.powermag.com/doe-unveils-initiative-to-add-5-gw-of-nuclear-capacity-through-uprates-and-restarts/": {
       "hash": "c2b023f24d6650fd",
-      "fetched_at": "2026-08-18T01:16:01.462Z",
+      "fetched_at": "2026-11-21T22:20:19.205Z",
       "http_status": 200,
       "state": "stored",
       "title": "DOE Launches UPRISE to Add 5 GW of Nuclear Capacity by 2029",
-      "bytes": 20728
+      "bytes": 21089
     },
     "https://www.powermag.com/exxonmobil-planning-large-gas-fired-plant-to-serve-data-centers/": {
       "hash": "b4276307e9043694",
-      "fetched_at": "2026-08-18T01:16:07.826Z",
+      "fetched_at": "2026-11-21T22:20:38.159Z",
       "http_status": 200,
       "state": "stored",
       "title": "ExxonMobil Planning Large Gas-Fired Plant to Serve Data Centers",
-      "bytes": 10956
+      "bytes": 11319
     },
     "https://www.powermag.com/holtec-targets-2036-for-1-36-gw-smr-300-project-at-oyster-creek/": {
       "hash": "77d65230116b2bfc",
-      "fetched_at": "2026-08-06T18:26:29.436Z",
+      "fetched_at": "2026-11-21T22:17:15.348Z",
       "http_status": 200,
       "state": "stored",
       "title": "Holtec Targets 2036 for 1.36-GW SMR-300 Project at Oyster Creek",
-      "bytes": 19700
+      "bytes": 19981
     },
     "https://www.powermag.com/last-energy-secures-ppas-for-34-smr-nuclear-power-plants-in-poland-and-the-uk/": {
       "hash": "038a91d361499746",
-      "fetched_at": "2026-08-06T18:28:17.784Z",
+      "fetched_at": "2026-11-21T22:18:38.996Z",
       "http_status": 200,
       "state": "stored",
       "title": "Last Energy Secures PPAs for 34 SMR Nuclear Power Plants in Poland and the UK",
-      "bytes": 19265
+      "bytes": 19568
     },
     "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/": {
       "hash": "617178504259020d",
-      "fetched_at": "2026-08-11T04:02:55.688Z",
+      "fetched_at": "2026-11-21T22:19:40.087Z",
       "http_status": 200,
       "state": "stored",
       "title": "Ontario Authorizes OPG to Start Construction of First Commercial Nuclear SMR",
-      "bytes": 14001
+      "bytes": 20056
     },
     "https://www.powermag.com/terrapowers-kemmerer-1-enters-construction-timeline-of-the-natrium-projects-road-to-first-power/": {
       "hash": "66364a01663124ac",
-      "fetched_at": "2026-08-11T04:02:57.790Z",
+      "fetched_at": "2026-11-21T22:19:42.121Z",
       "http_status": 200,
       "state": "stored",
       "title": "TerraPower’s Kemmerer 1 Enters Construction: Timeline of the Natrium Project’s Road to First Power",
-      "bytes": 36398
+      "bytes": 36704
     },
     "https://www.powermag.com/westinghouse-secures-first-customer-for-evinci-nuclear-microreactor/": {
       "hash": "69ebbaf76ba02a0a",
-      "fetched_at": "2026-08-06T18:28:15.737Z",
+      "fetched_at": "2026-11-21T22:18:36.943Z",
       "http_status": 200,
       "state": "stored",
       "title": "Westinghouse Secures First Customer for eVinci Nuclear Microreactor",
-      "bytes": 18820
+      "bytes": 19145
     },
     "https://www.premieralts.com/companies/deployable-energy": {
       "hash": "282bb19c4d0c3d67",
-      "fetched_at": "2026-08-06T18:27:35.564Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Deployable Energy Private Stock Price & Valuation ($15M) | 2026 Data",
-      "bytes": 2037
+      "fetched_at": "2026-11-21T22:18:06.692Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.radiantnuclear.com/blog/doe-pdsa-approval/": {
       "hash": "78e9167ca5de23fc",
-      "fetched_at": "2026-08-06T18:32:15.360Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Radiant receives DOE approval of Preliminary Documented Safety Analysis, latest milestone towards start up of first reactor - Radiant Nuclear",
-      "bytes": 3803
+      "fetched_at": "2026-11-21T22:18:33.624Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.radiantnuclear.com/blog/series-c-close/": {
       "hash": "e73ab482b802c374",
-      "fetched_at": "2026-08-19T05:19:39.306Z",
+      "fetched_at": "2026-11-21T22:17:44.578Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
@@ -1334,97 +1422,117 @@
     },
     "https://www.radiantnuclear.com/blog/triso-fuel-inl/": {
       "hash": "f71a013f07cdab8f",
-      "fetched_at": "2026-08-06T18:28:04.454Z",
-      "http_status": 200,
-      "state": "stored",
-      "title": "Radiant receives first TRISO fuel shipment at INL's DOME facility, clearing path to full-power, full-temperature testing - Radiant Nuclear",
-      "bytes": 3878
+      "fetched_at": "2026-11-21T22:18:35.685Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://www.radiantnuclear.com/news/radiant-secure-doe-approval-for-full-power-operations": {
+      "hash": "a124984cad1b5231",
+      "fetched_at": "2026-11-21T22:21:33.423Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://www.radiantnuclear.com/news/radiant-wins-750m-janus-army-contract": {
+      "hash": "f04d2d6a8d170af3",
+      "fetched_at": "2026-11-21T22:21:30.726Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/": {
       "hash": "db3724234f383ee6",
-      "fetched_at": "2026-08-06T18:26:26.392Z",
+      "fetched_at": "2026-11-21T22:17:12.628Z",
       "http_status": 200,
       "state": "stored",
       "title": "Terrestrial Energy and Riot Platforms Launch Collaboration to Develop Nuclear-Powered Large-Scale Data Center Projects | Riot Platforms",
-      "bytes": 13476
+      "bytes": 16130
     },
     "https://www.risch.senate.gov/news/press-releases/risch-gallego-introduce-bill-to-accelerate-new-nuclear-investment/": {
       "hash": "64fac9e0f1db44f0",
-      "fetched_at": "2026-08-11T04:03:11.593Z",
+      "fetched_at": "2026-11-21T22:19:53.792Z",
       "http_status": 200,
       "state": "stored",
       "title": "Risch, Gallego Introduce Bill to Accelerate New Nuclear Investment",
-      "bytes": 4757
+      "bytes": 4801
     },
     "https://www.sec.gov/Archives/edgar/data/0002086716/000162828026056936/cohen_boardxappointmentxpr.htm": {
       "hash": "196a21d7e356dcd8",
-      "fetched_at": "2026-08-19T05:21:03.273Z",
+      "fetched_at": "2026-11-21T22:20:39.107Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.sec.gov/Archives/edgar/data/0002104277/000119312526301023/d40440ds1.htm": {
       "hash": "7a430bdaf384935d",
-      "fetched_at": "2026-08-19T05:19:18.918Z",
+      "fetched_at": "2026-11-21T22:17:23.224Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000024/a2025annualreportmaster.htm": {
       "hash": "31f776db771eb1c7",
-      "fetched_at": "2026-08-19T05:20:52.477Z",
+      "fetched_at": "2026-11-21T22:19:55.405Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.sec.gov/Archives/edgar/data/1822966/000182296623000008/pressreleasenuscalereach.htm": {
       "hash": "b699b213e8f016e8",
-      "fetched_at": "2026-08-19T05:20:46.830Z",
+      "fetched_at": "2026-11-21T22:19:42.209Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.sec.gov/Archives/edgar/data/1822966/000182296623000256/uampsnuscalejointpressre.htm": {
       "hash": "1147414b5e1ecad7",
-      "fetched_at": "2026-08-19T05:20:54.551Z",
+      "fetched_at": "2026-11-21T22:20:08.094Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://www.sec.gov/Archives/edgar/data/1849056/000162828026071319/oklo-20260930.htm": {
+      "hash": "70c991f710c32bde",
+      "fetched_at": "2026-11-21T22:30:15.401Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.sizewellc.com/news-views/final-investment-decision-reached-for-sizewell-c-the-biggest-british-clean-energy-project-in-a-generation/": {
       "hash": "4b54f4ed3813139c",
-      "fetched_at": "2026-08-11T04:03:11.464Z",
+      "fetched_at": "2026-11-21T22:19:51.389Z",
       "http_status": 200,
       "state": "stored",
       "title": "Final Investment Decision reached for Sizewell C – the biggest British clean energy project in a generation - Sizewell C",
-      "bytes": 8762
+      "bytes": 8741
     },
     "https://www.stocktitan.net/news/NNE/nano-nuclear-reports-q1-fy-2026-financial-results-and-provides-awkjhq74zjnt.html": {
       "hash": "13366e80d61e82e6",
-      "fetched_at": "2026-08-06T18:27:39.568Z",
+      "fetched_at": "2026-11-21T22:18:07.336Z",
       "http_status": 200,
       "state": "stored",
       "title": "NANO Nuclear Q1 2026 results; cash $577M after raise | NNE Stock News",
-      "bytes": 34471
+      "bytes": 33529
     },
     "https://www.switch.com/oklo-and-switch-form-landmark-strategic-relationship/": {
       "hash": "b9b2009161ff8e15",
-      "fetched_at": "2026-08-06T18:26:20.552Z",
+      "fetched_at": "2026-11-21T22:17:06.969Z",
       "http_status": 200,
       "state": "stored",
       "title": "Oklo and Switch Form Landmark Strategic Relationship to Deploy 12 Gigawatts of Advanced Nuclear Power",
-      "bytes": 18281
+      "bytes": 22337
     },
     "https://www.tatachemicals.com/upload/content_pdf/BWXT-Tata-LOI-12-December-2024.pdf": {
       "hash": "6c3101e86e05b83a",
-      "fetched_at": "2026-08-19T05:19:18.738Z",
+      "fetched_at": "2026-11-21T22:17:18.301Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
     },
     "https://www.terrapower.com/fundraise": {
       "hash": "6f866373430e5480",
-      "fetched_at": "2026-08-06T18:26:45.444Z",
+      "fetched_at": "2026-11-21T22:17:20.426Z",
       "http_status": 200,
       "state": "stored",
       "title": "TerraPower Announces $750 Million Secured in Fundraise",
@@ -1432,7 +1540,7 @@
     },
     "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit": {
       "hash": "a79ba09189c68638",
-      "fetched_at": "2026-08-06T18:27:59.950Z",
+      "fetched_at": "2026-11-21T22:18:29.165Z",
       "http_status": 200,
       "state": "stored",
       "title": "NRC Approves the Natrium® Reactor Construction Permit",
@@ -1440,7 +1548,7 @@
     },
     "https://www.terrapower.com/pacificorp-forecasts-need-for-two-additional-natrium-reactors-in-new-regulatory-filing/": {
       "hash": "5ad5b8a029c2e3cd",
-      "fetched_at": "2026-08-06T18:26:28.820Z",
+      "fetched_at": "2026-11-21T22:17:14.747Z",
       "http_status": 200,
       "state": "stored",
       "title": "PacifiCorp Forecasts Need for Two Additional Natrium Reactors in New Regulatory Filing",
@@ -1448,7 +1556,7 @@
     },
     "https://www.terrapower.com/terrapower-announces-650-million-fundraise": {
       "hash": "674b590d0c5a40a2",
-      "fetched_at": "2026-08-06T18:26:43.298Z",
+      "fetched_at": "2026-11-21T22:17:18.409Z",
       "http_status": 200,
       "state": "stored",
       "title": "TerraPower Announces $650 Million Fundraise",
@@ -1456,7 +1564,7 @@
     },
     "https://www.terrapower.com/terrapower-announces-deal-with-meta": {
       "hash": "6018067f06b84344",
-      "fetched_at": "2026-08-06T18:26:26.688Z",
+      "fetched_at": "2026-11-21T22:17:12.672Z",
       "http_status": 200,
       "state": "stored",
       "title": "TerraPower and Meta Enter Agreement for 8 Natrium® Advanced Nuclear Plants",
@@ -1464,7 +1572,7 @@
     },
     "https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant": {
       "hash": "ec8a15c8bd4ea505",
-      "fetched_at": "2026-08-06T18:26:01.342Z",
+      "fetched_at": "2026-11-21T22:16:45.207Z",
       "http_status": 200,
       "state": "stored",
       "title": "TerraPower Commences Construction on America’s First Utility-Scale Advanced Nuclear Power Plant",
@@ -1472,122 +1580,122 @@
     },
     "https://www.tipranks.com/news/oklo-is-about-to-report-q2-earnings-heres-what-to-expect-from-the-nuclear-energy-stock": {
       "hash": "71a3b47f32e71c11",
-      "fetched_at": "2026-08-19T05:19:18.802Z",
+      "fetched_at": "2026-11-21T22:17:20.533Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.tn.gov/ecd/news/2025/10/13/radiant-selects-tennessee-to-build-world-s-first-mass-produced-nuclear-generator-factory.html": {
       "hash": "5a79e4e05cdf92a4",
-      "fetched_at": "2026-08-11T04:03:17.924Z",
+      "fetched_at": "2026-11-21T22:20:04.631Z",
       "http_status": 200,
       "state": "stored",
       "title": "Radiant Selects Tennessee to Build World’s First Mass-Produced Nuclear Generator Factory",
-      "bytes": 7146
+      "bytes": 7124
     },
     "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/": {
       "hash": "1487847e9c7759cf",
-      "fetched_at": "2026-08-06T18:26:37.207Z",
+      "fetched_at": "2026-11-21T22:17:16.709Z",
       "http_status": 200,
       "state": "stored",
       "title": "Last Energy plans to deploy 600 MW of microreactors to power Texas data centers | Utility Dive",
-      "bytes": 12260
+      "bytes": 12409
     },
     "https://www.utilitydive.com/news/oklo-75-mw-reactor-design-smr-nuclear/743578/": {
       "hash": "93924c005a2983cf",
-      "fetched_at": "2026-08-06T18:28:47.519Z",
+      "fetched_at": "2026-11-21T22:19:01.184Z",
       "http_status": 200,
       "state": "stored",
       "title": "Oklo reveals 75-MW reactor design, eyes late 2027 commercial deployment | Utility Dive",
-      "bytes": 14229
+      "bytes": 14268
     },
     "https://www.utilitydive.com/news/oklo-advanced-nuclear-microreactor-project-pipeline-nrc/724343/": {
       "hash": "b9611c85c7843176",
-      "fetched_at": "2026-08-11T04:02:59.915Z",
+      "fetched_at": "2026-11-21T22:19:44.624Z",
       "http_status": 200,
       "state": "stored",
       "title": "Oklo’s microreactor project pipeline jumps 93% ahead of 2027 planned deployment | Utility Dive",
-      "bytes": 13853
+      "bytes": 14014
     },
     "https://www.utilitydive.com/news/palisades-nuclear-holtec-wolverine-hoosier-power-purchase-ppa/693480/": {
       "hash": "acbc4b839d1b45ed",
-      "fetched_at": "2026-08-11T12:16:42.720Z",
+      "fetched_at": "2026-11-21T22:19:47.658Z",
       "http_status": 200,
       "state": "stored",
       "title": "Holtec International formally launches process to restart Palisades nuclear power plant | Utility Dive",
-      "bytes": 12668
+      "bytes": 12827
     },
     "https://www.utilitydive.com/news/washington-nuclear-facility-smrs-cascade-amazon-modular/802967/": {
       "hash": "f8bbad771c81de3c",
-      "fetched_at": "2026-08-06T18:26:19.317Z",
+      "fetched_at": "2026-11-21T22:17:05.649Z",
       "http_status": 200,
       "state": "stored",
       "title": "Washington nuclear facility will deploy 12 Amazon-funded SMRs | Utility Dive",
-      "bytes": 11248
+      "bytes": 11396
     },
     "https://www.valaratomics.com": {
       "hash": "0b187afb5bb71f25",
-      "fetched_at": "2026-08-11T04:57:35.732Z",
+      "fetched_at": "2026-11-21T22:20:04.702Z",
       "http_status": 200,
       "state": "stored",
       "title": "The New Atomic Age | Valar Atomics",
-      "bytes": 3411
+      "bytes": 3426
     },
     "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia": {
       "hash": "af3298d0714bc2c9",
-      "fetched_at": "2026-08-06T18:26:38.139Z",
+      "fetched_at": "2026-11-21T22:17:16.982Z",
       "http_status": 200,
       "state": "stored",
       "title": "Announcing our $1B Series B Led By Sequoia | Valar Atomics",
-      "bytes": 6258
+      "bytes": 6273
     },
     "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/": {
       "hash": "63aafa774a7b1238",
-      "fetched_at": "2026-08-06T18:27:14.294Z",
+      "fetched_at": "2026-11-21T22:17:46.375Z",
       "http_status": 200,
       "state": "stored",
       "title": "Antares fetches $470M to move on military base reactor push - Washington Technology",
-      "bytes": 11873
+      "bytes": 11716
     },
     "https://www.whitehouse.gov/presidential-actions/2025/05/deploying-advanced-nuclear-reactor-technologies-for-national-security/": {
       "hash": "43e47030b1760d49",
-      "fetched_at": "2026-08-11T04:18:35.141Z",
+      "fetched_at": "2026-11-21T22:19:33.574Z",
       "http_status": 200,
       "state": "stored",
       "title": "Deploying Advanced Nuclear Reactor Technologies for National Security – The White House",
-      "bytes": 22564
+      "bytes": 22905
     },
     "https://www.whitehouse.gov/presidential-actions/2025/05/ordering-the-reform-of-the-nuclear-regulatory-commission/": {
       "hash": "0d0458eb9215ed6c",
-      "fetched_at": "2026-08-11T04:18:37.167Z",
+      "fetched_at": "2026-11-21T22:19:35.604Z",
       "http_status": 200,
       "state": "stored",
       "title": "Ordering the Reform of the Nuclear Regulatory Commission – The White House",
-      "bytes": 14849
+      "bytes": 15109
     },
     "https://www.whitehouse.gov/presidential-actions/2025/05/reforming-nuclear-reactor-testing-at-the-department-of-energy/": {
       "hash": "4814eb720f02e2ed",
-      "fetched_at": "2026-08-11T04:18:39.186Z",
+      "fetched_at": "2026-11-21T22:19:37.617Z",
       "http_status": 200,
       "state": "stored",
       "title": "Reforming Nuclear Reactor Testing at the Department of Energy – The White House",
-      "bytes": 13195
+      "bytes": 13479
     },
     "https://www.whitehouse.gov/presidential-actions/2025/05/reinvigorating-the-nuclear-industrial-base/": {
       "hash": "c340a2f57e5e41f8",
-      "fetched_at": "2026-08-11T04:18:41.209Z",
+      "fetched_at": "2026-11-21T22:19:39.638Z",
       "http_status": 200,
       "state": "stored",
       "title": "Reinvigorating the Nuclear Industrial Base – The White House",
-      "bytes": 19178
+      "bytes": 19463
     },
     "https://www.wkms.org/energy/2025-10-14/nuclear-hype-is-building-tva-plans-to-buy-in": {
       "hash": "8d219acb3d0862fd",
-      "fetched_at": "2026-08-11T04:02:57.008Z",
+      "fetched_at": "2026-11-21T22:19:41.886Z",
       "http_status": 200,
       "state": "stored",
       "title": "Nuclear hype is building. TVA plans to buy in. | WKMS",
-      "bytes": 14959
+      "bytes": 15020
     },
     "https://www.wolverinepowercooperative.com/2023/09/12/holtec-international-and-wolverine-power-cooperative-sign-historic-agreement-for-restart-of-palisades-nuclear-power-plant/": {
       "hash": "f653bcc2276de3a7",
@@ -1599,143 +1707,143 @@
     },
     "https://www.world-nuclear-news.org/articles/aecon-and-norsk-kjernekraft-to-promote-smrs-in-norway": {
       "hash": "f4c2c95234a8f79d",
-      "fetched_at": "2026-08-19T05:20:57.719Z",
+      "fetched_at": "2026-11-21T22:20:30.357Z",
       "http_status": 200,
       "state": "stored",
       "title": "Aecon and Norsk Kjernekraft aim to develop SMRs in Norway - World Nuclear News",
-      "bytes": 4196
+      "bytes": 4138
     },
     "https://www.world-nuclear-news.org/Articles/Alberta-funds-SMR-deployment-study": {
       "hash": "cd1d30c3bad8a566",
-      "fetched_at": "2026-08-18T01:16:00.611Z",
+      "fetched_at": "2026-11-21T22:20:16.909Z",
       "http_status": 200,
       "state": "stored",
       "title": "Alberta funds SMR deployment study - World Nuclear News",
-      "bytes": 5275
+      "bytes": 5237
     },
     "https://www.world-nuclear-news.org/articles/deep-fission-and-endeavour-announce-strategic-partnership": {
       "hash": "08c34aabbae8f6c1",
-      "fetched_at": "2026-08-11T04:03:00.469Z",
+      "fetched_at": "2026-11-21T22:17:16.025Z",
       "http_status": 200,
       "state": "stored",
       "title": "Deep Fission and Endeavour announce strategic partnership - World Nuclear News",
-      "bytes": 6017
+      "bytes": 6009
     },
     "https://www.world-nuclear-news.org/articles/deep-fission-begins-drilling-first-data-acquisition-well": {
       "hash": "3addb402090ccd9d",
-      "fetched_at": "2026-08-06T18:26:10.314Z",
+      "fetched_at": "2026-11-21T22:16:54.265Z",
       "http_status": 200,
       "state": "stored",
       "title": "Deep Fission begins drilling first data acquisition well - World Nuclear News",
-      "bytes": 5135
+      "bytes": 5109
     },
     "https://www.world-nuclear-news.org/articles/final-investment-decision-taken-for-romanias-smrs": {
       "hash": "2aa50c867bbb9c8f",
-      "fetched_at": "2026-08-06T18:28:05.139Z",
+      "fetched_at": "2026-11-21T22:18:36.509Z",
       "http_status": 200,
       "state": "stored",
       "title": "Final Investment Decision taken for Romanian SMR project - World Nuclear News",
-      "bytes": 7691
+      "bytes": 7665
     },
     "https://www.world-nuclear-news.org/articles/last-energy-microreactor-planned-at-texas-university": {
       "hash": "6de910b215a164d8",
-      "fetched_at": "2026-08-06T18:26:08.218Z",
+      "fetched_at": "2026-11-21T22:16:52.172Z",
       "http_status": 200,
       "state": "stored",
       "title": "Last Energy microreactor planned at Texas university - World Nuclear News",
-      "bytes": 6210
+      "bytes": 6184
     },
     "https://www.world-nuclear-news.org/articles/radiant-to-locate-microreactor-factory-in-tennessee": {
       "hash": "60d3e8d1229c8423",
-      "fetched_at": "2026-08-18T01:21:02.832Z",
+      "fetched_at": "2026-11-21T22:20:39.814Z",
       "http_status": 200,
       "state": "stored",
       "title": "Radiant to locate microreactor factory in Tennessee - World Nuclear News",
-      "bytes": 7262
+      "bytes": 7224
     },
     "https://www.world-nuclear-news.org/articles/site-of-polands-first-smr-selected": {
       "hash": "0cfff917a3181246",
-      "fetched_at": "2026-08-18T01:20:57.315Z",
+      "fetched_at": "2026-11-21T22:20:21.086Z",
       "http_status": 200,
       "state": "stored",
       "title": "Site of Poland's first SMR selected - World Nuclear News",
-      "bytes": 5544
+      "bytes": 5506
     },
     "https://www.world-nuclear-news.org/Articles/Small-reactors-feasible-in-Puerto-Rico,-study-conc": {
       "hash": "8059045a66b4ddb6",
-      "fetched_at": "2026-08-18T04:21:08.186Z",
+      "fetched_at": "2026-11-21T22:20:34.550Z",
       "http_status": 200,
       "state": "stored",
       "title": "Small reactors feasible in Puerto Rico, study concludes - World Nuclear News",
-      "bytes": 7158
+      "bytes": 7120
     },
     "https://www.world-nuclear-news.org/articles/terrapower-expands-cooperation-with-korean-partners": {
       "hash": "c17f11f7b4332e7f",
-      "fetched_at": "2026-08-19T05:20:55.556Z",
+      "fetched_at": "2026-11-21T22:20:28.266Z",
       "http_status": 200,
       "state": "stored",
       "title": "TerraPower expands cooperation with Korean partners - World Nuclear News",
-      "bytes": 9393
+      "bytes": 9335
     },
     "https://www.world-nuclear-news.org/articles/tva-entra1-energy-team-up-for-smr-deployment": {
       "hash": "ddbc5c65daad583e",
-      "fetched_at": "2026-08-11T04:39:36.873Z",
+      "fetched_at": "2026-11-21T22:20:10.195Z",
       "http_status": 200,
       "state": "stored",
       "title": "TVA, ENTRA1 Energy team up for SMR deployment - World Nuclear News",
-      "bytes": 4825
+      "bytes": 4817
     },
     "https://www.world-nuclear-news.org/articles/us-army-names-potential-microreactor-sites": {
       "hash": "7d9b334e99cb3b50",
-      "fetched_at": "2026-08-18T04:20:59.748Z",
+      "fetched_at": "2026-11-21T22:20:19.000Z",
       "http_status": 200,
       "state": "stored",
       "title": "US Army names potential microreactor sites - World Nuclear News",
-      "bytes": 6600
+      "bytes": 6562
     },
     "https://www.world-nuclear-news.org/articles/us-exim-bank-approves-loan-for-romanian-smr-project": {
       "hash": "ac8c10d684042451",
-      "fetched_at": "2026-08-11T04:57:35.352Z",
+      "fetched_at": "2026-11-21T22:19:56.723Z",
       "http_status": 200,
       "state": "stored",
       "title": "US Exim Bank approves loan for Romanian SMR project - World Nuclear News",
-      "bytes": 5727
+      "bytes": 5719
     },
     "https://www.world-nuclear-news.org/articles/us-grant-agreements-to-support-bulgarian-nuclear-projects": {
       "hash": "960e6a34ed49f183",
-      "fetched_at": "2026-08-19T05:20:59.881Z",
+      "fetched_at": "2026-11-21T22:20:32.455Z",
       "http_status": 200,
       "state": "stored",
       "title": "US development agency announces grants for Bulgarian nuclear projects - World Nuclear News",
-      "bytes": 5246
+      "bytes": 5188
     },
     "https://www.world-nuclear-news.org/articles/us-touts-smr-designs-to-the-philippines": {
       "hash": "f7ecf7e6d39c2c91",
-      "fetched_at": "2026-08-18T04:21:05.958Z",
+      "fetched_at": "2026-11-21T22:20:26.176Z",
       "http_status": 200,
       "state": "stored",
       "title": "USA touts SMR designs to the Philippines - World Nuclear News",
-      "bytes": 8727
+      "bytes": 8689
     },
     "https://www.world-nuclear-news.org/Articles/Westinghouse-unveils-AP300-small-modular-reactor": {
       "hash": "1ea39c50034e1881",
-      "fetched_at": "2026-08-06T18:28:48.191Z",
+      "fetched_at": "2026-11-21T22:19:02.894Z",
       "http_status": 200,
       "state": "stored",
       "title": "Westinghouse unveils AP300 small modular reactor - World Nuclear News",
-      "bytes": 6061
+      "bytes": 6035
     },
     "https://www.world-nuclear-news.org/articles/world-bank-agrees-to-end-ban-on-funding-nuclear-energy": {
       "hash": "a03a7e3ae4a3808f",
-      "fetched_at": "2026-08-11T04:03:16.020Z",
+      "fetched_at": "2026-11-21T22:19:58.814Z",
       "http_status": 200,
       "state": "stored",
       "title": "World Bank ends ban on funding nuclear energy - World Nuclear News",
-      "bytes": 6775
+      "bytes": 6767
     },
     "https://www.worldbank.org/en/news/press-release/2025/06/26/world-bank-group-iaea-formalize-partnership-to-collaborate-on-nuclear-energy-for-development": {
       "hash": "b31041a88ded32aa",
-      "fetched_at": "2026-08-18T01:16:07.326Z",
+      "fetched_at": "2026-11-21T22:20:32.740Z",
       "http_status": 200,
       "state": "stored",
       "title": "World Bank Group, IAEA Formalize Partnership to Collaborate on Nuclear Energy for Development",
@@ -1743,51 +1851,51 @@
     },
     "https://x-energy.com/media/news-releases/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power": {
       "hash": "9343fca4e1aac3cc",
-      "fetched_at": "2026-08-18T01:15:52.376Z",
+      "fetched_at": "2026-11-21T22:20:12.921Z",
       "http_status": 200,
       "state": "stored",
       "title": "Amazon Invests in X-energy to Support Advanced Small Modular Nuclear Reactors and Expand Carbon-Free Power - X-energy",
-      "bytes": 10376
+      "bytes": 10456
     },
     "https://x-energy.com/news/nrc-issues-environmental-assessment-with-finding-of-no-significant-impact-for-dow-and-x-energys-propsed-advanced-nuclear-project-in-texas/": {
       "hash": "e4a26f96cf22d9f6",
-      "fetched_at": "2026-08-06T18:26:18.827Z",
+      "fetched_at": "2026-11-21T22:17:04.932Z",
       "http_status": 200,
       "state": "stored",
       "title": "NRC Issues Environmental Assessment with Finding of No Significant Impact for Dow and X-energy&#039;s Proposed Advanced Nuclear Project in Texas - X-energy",
-      "bytes": 7287
+      "bytes": 7362
     },
     "https://x-energy.com/news/x-energy-closes-oversubscribed-700-million-series-d-financing-round-to-continue-expansion-to-meet-global-energy-demand/": {
       "hash": "89f7d125e6da06f4",
-      "fetched_at": "2026-08-06T18:26:46.028Z",
+      "fetched_at": "2026-11-21T22:17:20.864Z",
       "http_status": 200,
       "state": "stored",
       "title": "X-energy Closes Oversubscribed $700 Million Series D Financing Round to Continue Expansion to Meet Global Energy Demand - X-energy",
-      "bytes": 5253
+      "bytes": 5333
     },
     "https://x-energy.com/news/x-energy-closes-upsized-700-million-series-c-1-financing-round-to-accelerate-the-development-of-advanced-small-modular-nuclear-technology/": {
       "hash": "dda62134745fdc57",
-      "fetched_at": "2026-08-06T18:26:48.104Z",
+      "fetched_at": "2026-11-21T22:17:22.948Z",
       "http_status": 200,
       "state": "stored",
       "title": "X-energy Closes Upsized $700 Million Series C-1 Financing Round to Accelerate the Development of Advanced Small Modular Nuclear Technology - X-energy",
-      "bytes": 5573
+      "bytes": 5653
     },
     "https://x-energy.com/news/x-energy-reports-first-quarter-2026-results/": {
       "hash": "c9ed7c387f68c591",
-      "fetched_at": "2026-08-06T18:27:39.405Z",
+      "fetched_at": "2026-11-21T22:18:07.240Z",
       "http_status": 200,
       "state": "stored",
       "title": "X-energy Reports First Quarter 2026 Results | X-Energy News",
-      "bytes": 23009
+      "bytes": 23077
     },
     "https://x-energy.com/news/x-energy-signs-department-of-energys-advanced-reactor-demonstration-program-ardp-cooperative-agreement/": {
       "hash": "824564e19ed1acdf",
-      "fetched_at": "2026-08-11T04:03:01.496Z",
+      "fetched_at": "2026-11-21T22:19:45.132Z",
       "http_status": 200,
       "state": "stored",
       "title": "X-energy signs Department of Energy’s Advanced Reactor Demonstration Program (ARDP) Cooperative Agreement - X-energy",
-      "bytes": 5379
+      "bytes": 5459
     }
   }
 }

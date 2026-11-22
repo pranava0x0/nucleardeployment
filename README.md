@@ -2,13 +2,13 @@
 
 Deployment Core is an evidence-led tracker for U.S. nuclear deployment. It separates announcements from binding commitments, licensing, physical construction, criticality, operation, and replication.
 
-The site leads with the race to a gigawatt: 18 companies building new-design reactors for U.S. deployment, ranked by the strongest state their megawatts have actually reached. As of 2026-08-05 that ranking starts from an honest zero. No entrant has generated a commercial megawatt, 440 MWe are physically being built, and 40,075 MWe have been announced without binding documents behind them.
+The site leads with the race to a gigawatt: 18 companies building new-design reactors for U.S. deployment, ranked by the strongest state their megawatts have actually reached. As of 2026-11-19, no entrant has generated a commercial megawatt. The tracked sample carries 470 MWe in documented builds, 620 MWe permitted without documented physical nuclear work, and 40,045 MWe announced without binding project documents. The capacity frames overlap and are never added together.
 
 The current release is a research-backed tracked set: 28 sourced projects and 26 company records, including all 11 initial Reactor Pilot Program projects. It is not yet a complete national census.
 
 ## What is included
 
-- The race board: per-company capacity in six evidence bands, with a fixed one-gigawatt line on every bar, a type-to-narrow filter, and a sticky band key
+- The race board: per-company capacity in seven evidence bands, with a fixed one-gigawatt line on every bar, a type-to-narrow filter, and a sticky band key
 - A headline stat strip: operational, being built, on executed actions, and announced megawatts as four separate frames that are never summed
 - An updates page: every dated proof and capital event, newest first with sources, plus every project's next gate and owner, with an RSS feed
 - Company race dossiers: funding in separate frames, licensing, physical progress, pipeline, and company-stated targets beside the regulator-documented state
@@ -16,10 +16,10 @@ The current release is a research-backed tracked set: 28 sourced projects and 26
 - Linked company names inside every active pipeline stage
 - Company directory and sourced company detail pages
 - DOE program labels that separate the Reactor Pilot Program, Nuclear Energy Launch Pad, ARDP, DOME, and Project Pele
-- Four tracked 2026 criticality records: three government-reported and one company-reported
+- Five tracked 2026 criticality records: four government-reported and one company-reported
 - Filterable deployment directory
 - Project pages with latest evidence, next gate, owner, blocker, and confidence
-- Schematic U.S. project map plus a non-map list
+- Regional location ledger with project links
 - Four-order federal-action crosswalk
 - DOE program inventory
 - Capital ledger that keeps closed, conditional, and appropriated support separate

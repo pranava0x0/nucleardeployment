@@ -1,8 +1,9 @@
 {
   "url": "https://www.energy.gov/ne/articles/nrc-dockets-construction-permit-application-tva-small-modular-reactor",
-  "fetched_at": "2026-08-06T18:28:58.619Z",
+  "fetched_via": "https://www.energy.gov/ne/articles/nrc-dockets-construction-permit-application-tva-small-modular-reactor",
+  "fetched_at": "2026-11-21T22:19:17.122Z",
   "http_status": 200,
-  "content_type": "text/html; charset=UTF-8",
-  "bytes": 7962,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 8030,
   "title": "NRC Dockets Construction Permit Application for TVA Small Modular Reactor | Department of Energy"
 }

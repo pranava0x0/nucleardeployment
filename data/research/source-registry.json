@@ -10,12 +10,30 @@
       "published_at": "2025-10-14",
       "source_tier": "primary",
       "use": "supports-program",
-      "officials": ["Dan Driscoll", "Chris Wright", "Jeff Waksman"],
+      "officials": [
+        "Dan Driscoll",
+        "Chris Wright",
+        "Jeff Waksman"
+      ],
       "companies": [],
-      "reactor_types": ["microreactor", "Gen IV"],
-      "deployment_stages": ["preliminary", "development"],
-      "industry_domains": ["defense", "deployment", "fuel cycle", "supply chain"],
-      "geography": { "country": "United States", "states": [] },
+      "reactor_types": [
+        "microreactor",
+        "Gen IV"
+      ],
+      "deployment_stages": [
+        "preliminary",
+        "development"
+      ],
+      "industry_domains": [
+        "defense",
+        "deployment",
+        "fuel cycle",
+        "supply chain"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
       "notes": "Commercially owned and operated reactors; milestone contracting; no vendor award named."
     },
     {
@@ -26,12 +44,38 @@
       "published_at": "2025-11-18",
       "source_tier": "primary",
       "use": "supports-program",
-      "officials": ["Jordan Gillis", "Andrew Higier", "Jeff Waksman"],
+      "officials": [
+        "Jordan Gillis",
+        "Andrew Higier",
+        "Jeff Waksman"
+      ],
       "companies": [],
-      "reactor_types": ["microreactor"],
-      "deployment_stages": ["preliminary", "development"],
-      "industry_domains": ["defense", "siting", "procurement"],
-      "geography": { "country": "United States", "states": ["Alabama", "Alaska", "Georgia", "Kentucky", "New York", "North Carolina", "Tennessee", "Texas", "Washington"] },
+      "reactor_types": [
+        "microreactor"
+      ],
+      "deployment_stages": [
+        "preliminary",
+        "development"
+      ],
+      "industry_domains": [
+        "defense",
+        "siting",
+        "procurement"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Alabama",
+          "Alaska",
+          "Georgia",
+          "Kentucky",
+          "New York",
+          "North Carolina",
+          "Tennessee",
+          "Texas",
+          "Washington"
+        ]
+      },
       "notes": "Names nine candidate installations. DIU solicitation begins; final locations and vendors remain unselected."
     },
     {
@@ -42,12 +86,25 @@
       "published_at": "2026-06-25",
       "source_tier": "primary",
       "use": "lead-only",
-      "officials": ["Jeff Waksman"],
+      "officials": [
+        "Jeff Waksman"
+      ],
       "companies": [],
-      "reactor_types": ["microreactor"],
-      "deployment_stages": ["preliminary"],
-      "industry_domains": ["defense", "commercialization", "deployment"],
-      "geography": { "country": "United States", "states": [] },
+      "reactor_types": [
+        "microreactor"
+      ],
+      "deployment_stages": [
+        "preliminary"
+      ],
+      "industry_domains": [
+        "defense",
+        "commercialization",
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
       "notes": "Signals a forthcoming Janus announcement. Not a completed milestone or vendor selection."
     },
     {
@@ -58,12 +115,31 @@
       "published_at": "2026-06-05",
       "source_tier": "primary",
       "use": "supports-tracker",
-      "officials": ["Chris Wright", "Jeff Waksman"],
-      "companies": ["Antares Nuclear"],
-      "reactor_types": ["microreactor", "critical experiment"],
-      "deployment_stages": ["operational"],
-      "industry_domains": ["defense", "reactor testing", "deployment"],
-      "geography": { "country": "United States", "states": ["Idaho"] },
+      "officials": [
+        "Chris Wright",
+        "Jeff Waksman"
+      ],
+      "companies": [
+        "Antares Nuclear"
+      ],
+      "reactor_types": [
+        "microreactor",
+        "critical experiment"
+      ],
+      "deployment_stages": [
+        "operational"
+      ],
+      "industry_domains": [
+        "defense",
+        "reactor testing",
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Idaho"
+        ]
+      },
       "notes": "Connects Antares criticality to Janus learning; does not make Antares a Janus awardee."
     },
     {
@@ -75,11 +151,48 @@
       "source_tier": "primary",
       "use": "supports-discovery",
       "officials": [],
-      "companies": ["Aalo Atomics", "Antares Nuclear", "Deep Fission", "Deployable Energy", "Duke Energy", "Energy Northwest", "General Atomics", "Hadron Energy", "Kairos Power", "Last Energy", "NANO Nuclear Energy", "Oklo", "Radiant Industries", "REPLOY Power", "Rolls-Royce SMR", "Terra Innovatum", "TerraPower", "Terrestrial Energy", "Westinghouse", "X-energy"],
-      "reactor_types": ["HTGR", "LWR", "molten-salt reactor", "liquid-metal reactor", "microreactor"],
-      "deployment_stages": ["preliminary", "development"],
-      "industry_domains": ["licensing", "reactor design", "deployment"],
-      "geography": { "country": "United States", "states": [] },
+      "companies": [
+        "Aalo Atomics",
+        "Antares Nuclear",
+        "Deep Fission",
+        "Deployable Energy",
+        "Duke Energy",
+        "Energy Northwest",
+        "General Atomics",
+        "Hadron Energy",
+        "Kairos Power",
+        "Last Energy",
+        "NANO Nuclear Energy",
+        "Oklo",
+        "Radiant Industries",
+        "REPLOY Power",
+        "Rolls-Royce SMR",
+        "Terra Innovatum",
+        "TerraPower",
+        "Terrestrial Energy",
+        "Westinghouse",
+        "X-energy"
+      ],
+      "reactor_types": [
+        "HTGR",
+        "LWR",
+        "molten-salt reactor",
+        "liquid-metal reactor",
+        "microreactor"
+      ],
+      "deployment_stages": [
+        "preliminary",
+        "development"
+      ],
+      "industry_domains": [
+        "licensing",
+        "reactor design",
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
       "notes": "Authoritative census of active NRC pre-application engagements; activity alone is not a permit or construction milestone."
     },
     {
@@ -91,11 +204,36 @@
       "source_tier": "primary",
       "use": "supports-tracker",
       "officials": [],
-      "companies": ["Aalo Atomics", "Antares Nuclear", "Atomic Alchemy", "Deep Fission", "Last Energy", "Natura Resources", "Oklo", "Radiant Industries", "Terrestrial Energy", "Valar Atomics"],
-      "reactor_types": ["advanced reactor", "microreactor", "critical experiment"],
-      "deployment_stages": ["development", "operational"],
-      "industry_domains": ["reactor testing", "authorization", "commercialization"],
-      "geography": { "country": "United States", "states": [] },
+      "companies": [
+        "Aalo Atomics",
+        "Antares Nuclear",
+        "Atomic Alchemy",
+        "Deep Fission",
+        "Last Energy",
+        "Natura Resources",
+        "Oklo",
+        "Radiant Industries",
+        "Terrestrial Energy",
+        "Valar Atomics"
+      ],
+      "reactor_types": [
+        "advanced reactor",
+        "microreactor",
+        "critical experiment"
+      ],
+      "deployment_stages": [
+        "development",
+        "operational"
+      ],
+      "industry_domains": [
+        "reactor testing",
+        "authorization",
+        "commercialization"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
       "notes": "Official program roster and stated criticality target."
     },
     {
@@ -106,12 +244,38 @@
       "published_at": "2026-03",
       "source_tier": "official-social",
       "use": "lead-only",
-      "officials": ["Rian Bahran", "Omid Tabatabai", "Chris Wright", "Mike Duffy", "John Curtis"],
-      "companies": ["Antares Nuclear", "Radiant Industries", "Valar Atomics"],
-      "reactor_types": ["microreactor", "critical experiment"],
-      "deployment_stages": ["development", "physical"],
-      "industry_domains": ["authorization", "transport", "reactor testing"],
-      "geography": { "country": "United States", "states": ["California", "Utah"] },
+      "officials": [
+        "Rian Bahran",
+        "Omid Tabatabai",
+        "Chris Wright",
+        "Mike Duffy",
+        "John Curtis"
+      ],
+      "companies": [
+        "Antares Nuclear",
+        "Radiant Industries",
+        "Valar Atomics"
+      ],
+      "reactor_types": [
+        "microreactor",
+        "critical experiment"
+      ],
+      "deployment_stages": [
+        "development",
+        "physical"
+      ],
+      "industry_domains": [
+        "authorization",
+        "transport",
+        "reactor testing"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "California",
+          "Utah"
+        ]
+      },
       "notes": "Lead for PDSA sequence and Ward 250 airlift. Primary agency records required for public status claims."
     },
     {
@@ -126,8 +290,15 @@
       "companies": [],
       "reactor_types": [],
       "deployment_stages": [],
-      "industry_domains": ["industry commentary", "policy", "grid reliability"],
-      "geography": { "country": "United States", "states": [] },
+      "industry_domains": [
+        "industry commentary",
+        "policy",
+        "grid reliability"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
       "notes": "Nukebarbarian and Emmet Penney are the same source. Use for discovery, never stage assignment."
     },
     {
@@ -139,11 +310,24 @@
       "source_tier": "trade-commentary",
       "use": "lead-only",
       "officials": [],
-      "companies": ["Exodys Energy", "Zeno Power"],
-      "reactor_types": ["nuclear battery"],
+      "companies": [
+        "Exodys Energy",
+        "Zeno Power"
+      ],
+      "reactor_types": [
+        "nuclear battery"
+      ],
       "deployment_stages": [],
-      "industry_domains": ["used-fuel recycling", "space power", "financing", "industry commentary"],
-      "geography": { "country": "United States", "states": [] },
+      "industry_domains": [
+        "used-fuel recycling",
+        "space power",
+        "financing",
+        "industry commentary"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
       "notes": "Useful adjacent-sector leads. No deployment dashboard found in the public archive."
     },
     {
@@ -154,12 +338,44 @@
       "published_at": "2025-12-02",
       "source_tier": "primary",
       "use": "supports-tracker",
-      "officials": ["Chris Wright"],
-      "companies": ["TVA", "Holtec", "GE Vernova Hitachi", "Indiana Michigan Power", "Elementl", "BWX Technologies", "Scot Forge", "North American Forgemasters", "Aecon", "Duke Energy"],
-      "reactor_types": ["Gen III+", "SMR", "LWR", "BWR", "PWR"],
-      "deployment_stages": ["contractual", "development"],
-      "industry_domains": ["deployment", "federal funding", "supply chain"],
-      "geography": { "country": "United States", "states": ["Michigan", "Tennessee"] },
+      "officials": [
+        "Chris Wright"
+      ],
+      "companies": [
+        "TVA",
+        "Holtec",
+        "GE Vernova Hitachi",
+        "Indiana Michigan Power",
+        "Elementl",
+        "BWX Technologies",
+        "Scot Forge",
+        "North American Forgemasters",
+        "Aecon",
+        "Duke Energy"
+      ],
+      "reactor_types": [
+        "Gen III+",
+        "SMR",
+        "LWR",
+        "BWR",
+        "PWR"
+      ],
+      "deployment_stages": [
+        "contractual",
+        "development"
+      ],
+      "industry_domains": [
+        "deployment",
+        "federal funding",
+        "supply chain"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Michigan",
+          "Tennessee"
+        ]
+      },
       "notes": "$400 million selection for each team; selection is not construction authorization."
     },
     {
@@ -170,12 +386,32 @@
       "published_at": "2025-07-10",
       "source_tier": "primary",
       "use": "supports-tracker",
-      "officials": ["Don Moul"],
-      "companies": ["TVA", "GE Vernova Hitachi"],
-      "reactor_types": ["Gen III+", "SMR", "LWR", "BWRX-300"],
-      "deployment_stages": ["development"],
-      "industry_domains": ["licensing", "deployment"],
-      "geography": { "country": "United States", "states": ["Tennessee"] },
+      "officials": [
+        "Don Moul"
+      ],
+      "companies": [
+        "TVA",
+        "GE Vernova Hitachi"
+      ],
+      "reactor_types": [
+        "Gen III+",
+        "SMR",
+        "LWR",
+        "BWRX-300"
+      ],
+      "deployment_stages": [
+        "development"
+      ],
+      "industry_domains": [
+        "licensing",
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Tennessee"
+        ]
+      },
       "notes": "NRC accepted construction-permit application for review; not a permit."
     },
     {
@@ -187,11 +423,30 @@
       "source_tier": "primary",
       "use": "supports-tracker",
       "officials": [],
-      "companies": ["Holtec", "Palisades SMR"],
-      "reactor_types": ["Gen III+", "SMR", "LWR", "PWR", "SMR-300"],
-      "deployment_stages": ["development"],
-      "industry_domains": ["licensing", "deployment"],
-      "geography": { "country": "United States", "states": ["Michigan"] },
+      "companies": [
+        "Holtec",
+        "Palisades SMR"
+      ],
+      "reactor_types": [
+        "Gen III+",
+        "SMR",
+        "LWR",
+        "PWR",
+        "SMR-300"
+      ],
+      "deployment_stages": [
+        "development"
+      ],
+      "industry_domains": [
+        "licensing",
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Michigan"
+        ]
+      },
       "notes": "Part 1 and limited-work application accepted for review; no limited-work authorization issued."
     },
     {
@@ -202,12 +457,31 @@
       "published_at": "2025-07-01",
       "source_tier": "primary",
       "use": "supports-tracker",
-      "officials": ["Mike Goff"],
-      "companies": ["Westinghouse", "Radiant Industries"],
-      "reactor_types": ["microreactor", "heat-pipe reactor", "HTGR"],
-      "deployment_stages": ["development"],
-      "industry_domains": ["reactor testing", "commercialization"],
-      "geography": { "country": "United States", "states": ["Idaho"] },
+      "officials": [
+        "Mike Goff"
+      ],
+      "companies": [
+        "Westinghouse",
+        "Radiant Industries"
+      ],
+      "reactor_types": [
+        "microreactor",
+        "heat-pipe reactor",
+        "HTGR"
+      ],
+      "deployment_stages": [
+        "development"
+      ],
+      "industry_domains": [
+        "reactor testing",
+        "commercialization"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Idaho"
+        ]
+      },
       "notes": "Conditional DOME selections for eVinci and Kaleidos; experiments self-funded."
     },
     {
@@ -218,12 +492,32 @@
       "published_at": "2025-12-03",
       "source_tier": "primary",
       "use": "supports-tracker",
-      "officials": ["Bill Phillips"],
-      "companies": ["Southern Company", "TerraPower"],
-      "reactor_types": ["Gen IV", "molten-chloride fast reactor", "test reactor"],
-      "deployment_stages": ["physical"],
-      "industry_domains": ["fuel fabrication", "reactor testing", "R&D"],
-      "geography": { "country": "United States", "states": ["Idaho"] },
+      "officials": [
+        "Bill Phillips"
+      ],
+      "companies": [
+        "Southern Company",
+        "TerraPower"
+      ],
+      "reactor_types": [
+        "Gen IV",
+        "molten-chloride fast reactor",
+        "test reactor"
+      ],
+      "deployment_stages": [
+        "physical"
+      ],
+      "industry_domains": [
+        "fuel fabrication",
+        "reactor testing",
+        "R&D"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Idaho"
+        ]
+      },
       "notes": "First of 72–75 fuel-salt batches made; experiment anticipated in 2028."
     },
     {
@@ -235,11 +529,29 @@
       "source_tier": "primary",
       "use": "supports-tracker",
       "officials": [],
-      "companies": ["NANO Nuclear Energy", "University of Illinois Urbana-Champaign"],
-      "reactor_types": ["microreactor", "HTGR", "research reactor"],
-      "deployment_stages": ["development"],
-      "industry_domains": ["licensing", "university research", "reactor testing"],
-      "geography": { "country": "United States", "states": ["Illinois"] },
+      "companies": [
+        "NANO Nuclear Energy",
+        "University of Illinois Urbana-Champaign"
+      ],
+      "reactor_types": [
+        "microreactor",
+        "HTGR",
+        "research reactor"
+      ],
+      "deployment_stages": [
+        "development"
+      ],
+      "industry_domains": [
+        "licensing",
+        "university research",
+        "reactor testing"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Illinois"
+        ]
+      },
       "notes": "Construction-permit application submitted; NRC acceptance review initially ongoing."
     },
     {
@@ -250,12 +562,48 @@
       "published_at": "2026-05-14",
       "source_tier": "primary",
       "use": "supports-tracker",
-      "officials": ["Chris Wright"],
-      "companies": ["American Forgemasters", "BWXT Nuclear Energy", "Constellation SMR Development", "Container Technologies Industries", "Framatome", "Global Nuclear Fuel Americas", "Nebraska Public Power District", "Scot Forge"],
-      "reactor_types": ["Gen III+", "SMR", "LWR"],
-      "deployment_stages": ["contractual", "development"],
-      "industry_domains": ["siting", "licensing", "fuel fabrication", "supply chain", "federal funding"],
-      "geography": { "country": "United States", "states": ["Illinois", "Indiana", "Nebraska", "New York", "North Carolina", "Pennsylvania", "Tennessee", "Washington"] },
+      "officials": [
+        "Chris Wright"
+      ],
+      "companies": [
+        "American Forgemasters",
+        "BWXT Nuclear Energy",
+        "Constellation SMR Development",
+        "Container Technologies Industries",
+        "Framatome",
+        "Global Nuclear Fuel Americas",
+        "Nebraska Public Power District",
+        "Scot Forge"
+      ],
+      "reactor_types": [
+        "Gen III+",
+        "SMR",
+        "LWR"
+      ],
+      "deployment_stages": [
+        "contractual",
+        "development"
+      ],
+      "industry_domains": [
+        "siting",
+        "licensing",
+        "fuel fabrication",
+        "supply chain",
+        "federal funding"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Illinois",
+          "Indiana",
+          "Nebraska",
+          "New York",
+          "North Carolina",
+          "Pennsylvania",
+          "Tennessee",
+          "Washington"
+        ]
+      },
       "notes": "Two site-preparation awards and six supply-chain awards. Award does not equal ESP issuance."
     },
     {
@@ -267,11 +615,28 @@
       "source_tier": "primary",
       "use": "supports-tracker",
       "officials": [],
-      "companies": ["Duke Energy"],
-      "reactor_types": ["advanced reactor", "SMR", "design TBD"],
-      "deployment_stages": ["development"],
-      "industry_domains": ["siting", "licensing", "coal-site transition"],
-      "geography": { "country": "United States", "states": ["North Carolina"] },
+      "companies": [
+        "Duke Energy"
+      ],
+      "reactor_types": [
+        "advanced reactor",
+        "SMR",
+        "design TBD"
+      ],
+      "deployment_stages": [
+        "development"
+      ],
+      "industry_domains": [
+        "siting",
+        "licensing",
+        "coal-site transition"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "North Carolina"
+        ]
+      },
       "notes": "ESP application accepted and under review; reactor design not selected."
     },
     {
@@ -283,11 +648,28 @@
       "source_tier": "primary",
       "use": "supports-tracker",
       "officials": [],
-      "companies": ["Texas A&M University System"],
-      "reactor_types": ["advanced reactor", "multi-reactor site", "design TBD"],
-      "deployment_stages": ["preliminary"],
-      "industry_domains": ["siting", "licensing", "university research"],
-      "geography": { "country": "United States", "states": ["Texas"] },
+      "companies": [
+        "Texas A&M University System"
+      ],
+      "reactor_types": [
+        "advanced reactor",
+        "multi-reactor site",
+        "design TBD"
+      ],
+      "deployment_stages": [
+        "preliminary"
+      ],
+      "industry_domains": [
+        "siting",
+        "licensing",
+        "university research"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Texas"
+        ]
+      },
       "notes": "Active pre-application engagement for a future early site permit; not a submitted application."
     },
     {
@@ -299,11 +681,30 @@
       "source_tier": "primary",
       "use": "supports-tracker",
       "officials": [],
-      "companies": ["Constellation Energy"],
-      "reactor_types": ["Gen II", "large reactor", "LWR", "PWR"],
-      "deployment_stages": ["ready", "physical"],
-      "industry_domains": ["restart", "licensing", "inspection"],
-      "geography": { "country": "United States", "states": ["Pennsylvania"] },
+      "companies": [
+        "Constellation Energy"
+      ],
+      "reactor_types": [
+        "Gen II",
+        "large reactor",
+        "LWR",
+        "PWR"
+      ],
+      "deployment_stages": [
+        "ready",
+        "physical"
+      ],
+      "industry_domains": [
+        "restart",
+        "licensing",
+        "inspection"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Pennsylvania"
+        ]
+      },
       "notes": "NRC restart panel, reviews, and inspections active; power-operation authorization remains pending."
     },
     {
@@ -314,12 +715,32 @@
       "published_at": "2025-11-18",
       "source_tier": "primary",
       "use": "supports-tracker",
-      "officials": ["Chris Wright"],
-      "companies": ["Constellation Energy"],
-      "reactor_types": ["Gen II", "large reactor", "LWR", "PWR"],
-      "deployment_stages": ["ready"],
-      "industry_domains": ["financing", "restart", "deployment"],
-      "geography": { "country": "United States", "states": ["Pennsylvania"] },
+      "officials": [
+        "Chris Wright"
+      ],
+      "companies": [
+        "Constellation Energy"
+      ],
+      "reactor_types": [
+        "Gen II",
+        "large reactor",
+        "LWR",
+        "PWR"
+      ],
+      "deployment_stages": [
+        "ready"
+      ],
+      "industry_domains": [
+        "financing",
+        "restart",
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Pennsylvania"
+        ]
+      },
       "notes": "$1 billion loan closed; NRC approvals remain."
     },
     {
@@ -331,11 +752,35 @@
       "source_tier": "official-company",
       "use": "supports-tracker",
       "officials": [],
-      "companies": ["Georgia Power", "Southern Nuclear", "Westinghouse", "Oglethorpe Power", "MEAG Power", "Dalton Utilities"],
-      "reactor_types": ["Gen III+", "large reactor", "LWR", "PWR", "AP1000"],
-      "deployment_stages": ["operational", "replication"],
-      "industry_domains": ["commercial operation", "fleet delivery"],
-      "geography": { "country": "United States", "states": ["Georgia"] },
+      "companies": [
+        "Georgia Power",
+        "Southern Nuclear",
+        "Westinghouse",
+        "Oglethorpe Power",
+        "MEAG Power",
+        "Dalton Utilities"
+      ],
+      "reactor_types": [
+        "Gen III+",
+        "large reactor",
+        "LWR",
+        "PWR",
+        "AP1000"
+      ],
+      "deployment_stages": [
+        "operational",
+        "replication"
+      ],
+      "industry_domains": [
+        "commercial operation",
+        "fleet delivery"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Georgia"
+        ]
+      },
       "notes": "Unit 4 repeated the AP1000 delivery after Unit 3 and entered commercial operation."
     },
     {
@@ -346,12 +791,29 @@
       "published_at": "2026-07-06",
       "source_tier": "primary",
       "use": "supports-tracker",
-      "officials": ["Chris Wright"],
-      "companies": ["Aalo Atomics"],
-      "reactor_types": ["critical experiment", "sodium-cooled reactor"],
-      "deployment_stages": ["operational"],
-      "industry_domains": ["reactor testing", "authorization"],
-      "geography": { "country": "United States", "states": ["Idaho"] },
+      "officials": [
+        "Chris Wright"
+      ],
+      "companies": [
+        "Aalo Atomics"
+      ],
+      "reactor_types": [
+        "critical experiment",
+        "sodium-cooled reactor"
+      ],
+      "deployment_stages": [
+        "operational"
+      ],
+      "industry_domains": [
+        "reactor testing",
+        "authorization"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Idaho"
+        ]
+      },
       "notes": "DOE government source supersedes the earlier company-only Aalo criticality source."
     },
     {
@@ -362,12 +824,29 @@
       "published_at": "2026-07-01",
       "source_tier": "primary",
       "use": "supports-tracker",
-      "officials": ["Chris Wright"],
-      "companies": ["Deployable Energy"],
-      "reactor_types": ["critical experiment", "microreactor"],
-      "deployment_stages": ["operational"],
-      "industry_domains": ["reactor testing", "authorization"],
-      "geography": { "country": "United States", "states": ["Idaho"] },
+      "officials": [
+        "Chris Wright"
+      ],
+      "companies": [
+        "Deployable Energy"
+      ],
+      "reactor_types": [
+        "critical experiment",
+        "microreactor"
+      ],
+      "deployment_stages": [
+        "operational"
+      ],
+      "industry_domains": [
+        "reactor testing",
+        "authorization"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": [
+          "Idaho"
+        ]
+      },
       "notes": "Government source for Unity criticality; supersedes the DOE LinkedIn lead."
     },
     {
@@ -380,10 +859,20 @@
       "use": "supports-discovery",
       "officials": [],
       "companies": [],
-      "reactor_types": ["SMR", "microreactor"],
+      "reactor_types": [
+        "SMR",
+        "microreactor"
+      ],
       "deployment_stages": [],
-      "industry_domains": ["global comparison", "reactor design", "deployment"],
-      "geography": { "country": "Global", "states": [] },
+      "industry_domains": [
+        "global comparison",
+        "reactor design",
+        "deployment"
+      ],
+      "geography": {
+        "country": "Global",
+        "states": []
+      },
       "notes": "Useful design inventory. Developer-submitted updates require regulator or project-source verification before U.S. stage assignment."
     },
     {
@@ -397,10 +886,433 @@
       "officials": [],
       "companies": [],
       "reactor_types": [],
-      "deployment_stages": ["development", "ready", "operational"],
-      "industry_domains": ["licensing", "inspection", "regulatory data"],
-      "geography": { "country": "United States", "states": [] },
+      "deployment_stages": [
+        "development",
+        "ready",
+        "operational"
+      ],
+      "industry_domains": [
+        "licensing",
+        "inspection",
+        "regulatory data"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
       "notes": "Authoritative starting point for current licensing and oversight data."
+    },
+    {
+      "id": "refresh-2026-11-21-1",
+      "url": "https://www.radiantnuclear.com/news/radiant-wins-750m-janus-army-contract",
+      "title": "Army Janus fleet · binding agreement for 15 one-MWe Kaleidos units, up to $750M subject to milestones; separate from the earlier Air Force delivery agreement",
+      "publisher": "www.radiantnuclear.com",
+      "published_at": "2026-08-26",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "radiant-industries"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-2",
+      "url": "https://www.kairospower.com/iterative-development",
+      "title": "Iterative Development | Kairos Power",
+      "publisher": "www.kairospower.com",
+      "published_at": null,
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "kairos-power"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-3",
+      "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-008.pdf",
+      "title": "PIONEER 1&2, Palisades site, Michigan · two approximately 340 MWe units per NRC; phased construction-permit application under review",
+      "publisher": "www.nrc.gov",
+      "published_at": "2026-01-13",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "holtec"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-4",
+      "url": "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
+      "title": "NRC Issues First Construction Permit in Nearly 60 Years for High-Temperature Gas-Cooled Reactor",
+      "publisher": "content.govdelivery.com",
+      "published_at": "2026-11-09",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "x-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-5",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
+      "title": "Federal Register, Volume 91 Issue 191 (Monday, October 5, 2026)",
+      "publisher": "www.govinfo.gov",
+      "published_at": "2026-10-05",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "gev-hitachi",
+        "tva"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-6",
+      "url": "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-third-quarter-2026-results",
+      "title": "NuScale Power Reports Third Quarter 2026 Results",
+      "publisher": "www.nuscalepower.com",
+      "published_at": "2026-11-05",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "nuscale"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-7",
+      "url": "https://investors.x-energy.com/news-releases/news-release-details/x-energy-reports-third-quarter-2026-results",
+      "title": "$1,805.5M total liquidity: cash and short- and long-term investments; no debt",
+      "publisher": "investors.x-energy.com",
+      "published_at": "2026-11-12",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "x-energy",
+        "amazon"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-8",
+      "url": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-reports-third-quarter-2026-results",
+      "title": "$276.3M cash, equivalents and short-term investments; no debt",
+      "publisher": "ir.terrestrialenergy.com",
+      "published_at": "2026-11-10",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "terrestrial-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-9",
+      "url": "https://www.radiantnuclear.com/news/radiant-secure-doe-approval-for-full-power-operations",
+      "title": "DOE approved the Kaleidos documented safety analysis; readiness review and startup authorization remain before nuclear operations",
+      "publisher": "www.radiantnuclear.com",
+      "published_at": "2026-10-29",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "radiant-industries"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-10",
+      "url": "https://radiantnuclear.com/news/radiant-expands-manufacturing",
+      "title": "Kaleidos remains in DOE readiness review at DOME ahead of the planned full-power test campaign",
+      "publisher": "radiantnuclear.com",
+      "published_at": "2026-11-19",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "radiant-industries"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-11",
+      "url": "https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis",
+      "title": "Last Energy Receives DOE Approval of Pilot Reactor Documented Safety Analysis",
+      "publisher": "www.lastenergy.com",
+      "published_at": "2026-10-07",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "last-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-12",
+      "url": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors",
+      "title": "Army reaches agreement with private industry for nuclear micro-reactors &#124; Article &#124; The United States Army",
+      "publisher": "www.army.mil",
+      "published_at": "2026-08-26",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "antares-nuclear",
+        "bwxt",
+        "westinghouse",
+        "radiant-industries",
+        "army"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Content read during November refresh; exact supported claims are recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-13",
+      "url": "https://oklo.com/newsroom/oklo-inc-begins-trading-on-the-new-york-stock-exchange",
+      "title": "Oklo Inc. Begins Trading on the New York Stock Exchange | Oklo",
+      "publisher": "oklo.com",
+      "published_at": "2024-05-10",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Exact supported claims and limitations recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-14",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026071319/oklo-20260930.htm",
+      "title": "$3,130.8M cash, equivalents and marketable debt securities; restricted cash excluded",
+      "publisher": "www.sec.gov",
+      "published_at": null,
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Exact supported claims and limitations recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-15",
+      "url": "https://ir.nanonuclearenergy.com/node/8816/html",
+      "title": "$580.0M total liquidity: $298.5M cash and equivalents plus $281.5M short-term investments",
+      "publisher": "ir.nanonuclearenergy.com",
+      "published_at": null,
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "nano-nuclear"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Exact supported claims and limitations recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-16",
+      "url": "https://oklo.com/newsroom/oklos-groves-reactor-achieves-first-criticality-in-under-a-year",
+      "title": "Oklo's Groves Reactor Achieves First Criticality in Under a Year | Oklo",
+      "publisher": "oklo.com",
+      "published_at": "2026-08-06",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [
+        "atomic-alchemy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Exact supported claims and limitations recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "refresh-2026-11-21-17",
+      "url": "https://www.lazard.com/media/kcfconhf/lazards-lcoeplus_vf.pdf",
+      "title": "$175–255/MWh (Large LWR FOAK)",
+      "publisher": "www.lazard.com",
+      "published_at": "2026-07-13",
+      "captured_at": "2026-11-21",
+      "source_tier": "primary",
+      "use": "supports-project",
+      "officials": [],
+      "companies": [],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "deployment"
+      ],
+      "geography": {
+        "country": "United States",
+        "states": []
+      },
+      "notes": "Exact supported claims and limitations recorded in refresh-2026-11-21.json."
     }
   ]
 }

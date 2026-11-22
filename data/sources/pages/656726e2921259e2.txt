@@ -51,13 +51,14 @@ Land Acquisition
 Outages
 Open Sub Navigation
 Report a Street Light Outage
-Safety
-Open Sub Navigation
 Outage & Storm Center
 Open Sub Navigation
-Prepare Before A Storm
-Stay Safe During a Storm
-After-Storm Safety & Recovery
+Storm Prep: Before, During & After a Storm
+Power Restoration Process
+Historic Storms
+Outage FAQs & Storm Resources
+Safety
+Open Sub Navigation
 Electrical Safety
 Open Sub Navigation
 Electrical Safety at Home
@@ -118,38 +119,26 @@ Open Sub Navigation
 My Power Usage
 Start/Stop Service
 Pay My Bill
-Authorized Payment Locations
 EnergyDirect
 Property Managers
-Billing & Rate Plans
+Rate Plans & Tariffs
 Open Sub Navigation
-Business Rates and Tariffs
-Open Sub Navigation
-Business FlatBill
-Billing Options
-Open Sub Navigation
-Summary Billing
-Your Bill Explained
+Small Business
+Medium Business
+Large Business
+Agriculture & Irrigation
+Schools & Colleges
+Government & Municipality
 Rate Advisor
-Power and Light Rate Calculator
-Electronic Data Interchange
-Payment Options
+Billing & Payment Options
 Open Sub Navigation
-ACH Payments
-Pay My Bill
-Authorized Payment Locations
+Your Bill Explained
 Products, Programs & Services
 Open Sub Navigation
 Efficiency and Maintenance
 Open Sub Navigation
 Small Business Energy Savings
 Commercial Energy Efficiency Program
-Water Saving Devices
-Smart Products
-LED Bulbs
-Smart Thermostats
-Product Deals
-Power Strips
 Business Solutions
 Open Sub Navigation
 Solar Solutions
@@ -189,10 +178,6 @@ Open Sub Navigation
 Move or Stop Service
 Establish New Connection
 Energy Services
-Shop our Marketplace
-My Energy
-Open Sub Navigation
-Small Commercial Businesses
 Our Impact
 Open Sub Navigation
 Our Impact
@@ -219,7 +204,7 @@ Compliance Information | CCR & ELG
 Plant List & Compliance Data
 Sustainability
 Improving Air Quality
-Water Research Initiatives
+Water Usage & Stewardship
 Lakes & Rivers
 Open Sub Navigation
 Our Lakes
@@ -228,9 +213,7 @@ North Georgia Lakes
 West Georgia Lakes
 East Georgia Lakes
 Central Georgia Lakes
-Shoreline Management
-Open Sub Navigation
-Shoreline Management Application
+Permitting & Shoreline Management
 Buying & Leasing Property
 Aquatic Vegetation Treatment & Permits
 Lake Stewardship

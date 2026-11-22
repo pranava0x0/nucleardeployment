@@ -37,11 +37,9 @@ Governor's Rural Initiatives
 Community Development Block Grant
 Historic Development Grant Program
 Infrastructure Planning Grant
-Small and Rural Hospital Readiness Grant
 Site Development
 Tennessee Main Street
 ThreeStar
-Work Based Learning Grant
 Calendar
 Grant Administration
 Broadband Office
@@ -49,6 +47,7 @@ West TN Planning/BlueOval City
 Appalachian Regional Commission
 Delta Regional Authority
 Grant Opportunity Fund
+Community & Rural Development
 News
 Resources
 Publications & Maps
@@ -87,7 +86,7 @@ TNECD
 Lindsey Tipton
 Director of Communications
 (615) 339-6608
-Lindsey.Tipton@tn.gov
+Lindsey.Tipton&#64;tn.gov
 ###
 Social Media
 facebook
@@ -116,6 +115,7 @@ Governor's Conference
 LaunchTN
 TN Main Street
 TNSmartStart
+TN Connect
 Tennessee Department of Economic and Community Development
 Stuart C. McWhorter, Commissioner
 312 Rosa L. Parks Avenue

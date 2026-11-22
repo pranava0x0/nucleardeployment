@@ -36,6 +36,7 @@ Marketplace
 Employment
 Expo
 Real Estate
+Sales
 Shop Post
 Subscribe
 Make Payment
@@ -80,6 +81,7 @@ Marketplace
 Employment
 Expo
 Real Estate
+Sales
 Shop Post
 Subscribe
 Make Payment
@@ -350,13 +352,12 @@ Don't have an account? Sign Up Today
 Recommended for you
 Weekly Online Poll
 Poll results are published every Monday in The Guam Daily Post.
-Who should be held accountable when school facility issues prevent students from attending classes?
+What should be the incoming US Democratic Congress' top priority in January?
 You voted:
-Guam Department of Education
-Guam Education Board
-The governor
-The Legislature
-Everyone involved shares responsibility
+Housing and everyday costs
+Administration oversight
+Foreign policy and defense
+Not sure
 Vote
 View Results
 Back

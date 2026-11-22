@@ -1,0 +1,191 @@
+Iterative Development | Kairos Power
+Skip to main content
+Updates
+Careers
+Contact
+Technology
+Approach
+Our Approach
+Iterative Development
+Vertical Integration
+Mission
+About
+Locations
+Our Locations
+California
+New Mexico
+Tennessee
+This is some text inside of a div block.
+Search
+Search
+Search
+Updates
+Careers
+Contact
+Technology
+Approach
+Our Approach
+Iterative Development
+Vertical Integration
+Mission
+About
+Locations
+Our Locations
+California
+New Mexico
+Tennessee
+This is some text inside of a div block.
+Search
+Search
+Search
+Iterative development
+RAPID LEARNING CYCLES. ACCELERATED INNOVATION.
+Learning by building
+Nuclear development can be long, slow, and capital-intensive. Kairos Power takes a new approach. Our unique test-to-learn process enables faster innovation—building on each stage to eliminate uncertainty, strengthen our capabilities, and support an efficient licensing pathway—so we can deliver on cost and on schedule.
+01
+Plan
+Every iteration applies learnings from the last, building on experience to mitigate uncertainty before commercial deployment.
+02
+Design
+Narrowing the design space through progressive test cycles allows for continuous improvement as we progress from lab to commercial scale.
+03
+Build
+Rapid prototyping with components fabricated in-house enables deep manufacturing expertise, and greater control over quality, schedule, and cost.
+04
+Test
+Assembling, operating, and troubleshooting real-world hardware helps validate system performance ahead of our first reactor deployments.
+Plan
+Design
+Build
+Test
+The path to commercialization
+Successive large-scale demonstrations
+Kairos Power’s iterative approach validates both nuclear and non-nuclear systems.
+Our unique process continuously learns from each iteration to accelerate commercialization.
+Nuclear
+Generates electricity
+NRC PERMITTED
+Engineering Test Unit series
+Modular, reactor-scale, non-nuclear tests built to validate key systems, exercise the supply chain, and inform operations of our first reactors.
+Learn More
+Hermes Low-Power Demonstration Reactor
+NRC permitted Gen IV reactor under construction in Oak Ridge, Tennessee. Supported by the DOE Advanced Reactor Demonstration Program.
+Learn More
+Hermes 2 Demonstration Plant
+50 MWe commercial-scale reactor that will supply clean electricity to the grid, in partnership with Google and the Tennessee Valley Authority.
+Learn More
+Commercial fleet
+Scalable deployment of 75 MWe commercial reactors, sited in pairs. First 6 reactors (450 MWe) to be delivered by 2035 under a long-term, multi-plant agreement with Google.
+Learn More
+The path to commercialization
+Successive large-scale demonstrations
+Kairos Power’s iterative approach validates both nuclear and non-nuclear systems.  Our unique process continuously learns from each iteration to accelerate commercialization.
+Investments in iterative development
+‍
+Our iterative approach validates both nuclear and non-nuclear systems, maturing capabilities and optimizing technology with every build. Each milestone brings us closer to the goal of delivering affordable clean energy to power our world.
+01
+Lab-scale testing
+RAPID Lab
+Salt Lab
+This is tab 01
+RAPID Lab
+Our Rapid Analysis, Prototyping and Iterative Design (RAPID) Lab was commissioned in 2018 at our Alameda, CA headquarters. To date, Kairos Power engineers have fabricated and commissioned dozens of tests for fluids and high-temperature materials to inform system and component designs, including circulating over one million scaled fuel pebbles. These early iterations represent foundational steps toward proving our technology, and generate key data to support KP-FHR licensing efforts and future builds.
+Location
+Alameda, CA
+Established
+2018
+This is tab 02
+Salt Lab
+Commissioned in 2020, the Kairos Power Salt Lab is the first modern U.S. testing facility dedicated to evaluating materials and components in a molten fluoride salt (Flibe) environment. Located in our Alameda, CA headquarters, the lab applies best-in-class safety standards for beryllium handling while enabling critical chemistry and materials testing. The Salt Lab has been instrumental in understanding how Flibe behaves in real systems, informing the design of future facilities.
+Location
+Alameda, CA
+Established
+2020
+02
+Engineering Test Unit series
+ETU 1
+ETU 2
+ETU 3
+This is tab 01
+ETU 1
+The Engineering Test Units (ETUs) are fully integrated, reactor-scale,  non-nuclear tests that emulate the size and operating conditions of the Hermes demonstration reactor. Built to validate key systems, structures, and components, ETU 1 generated valuable data and operating experience over 2,000+ hours of pumped salt operations.  ETU 1 helped establish the supply chain for specialized reactor components and laid the groundwork for future builds.
+Location
+ALBUQUERQUE, NM
+Status
+Decommissioned
+This is tab 02
+ETU 2
+ETU 2 is our first fully modular, reactor-scale build, comprising more than 30 plant equipment modules fabricated on-site in Albuquerque, New Mexico. Designed for scalability, repeatability, and ease of transport, this iteration focuses on streamlining assembly and integration of reactor systems. Lessons from ETU 2 will carry forward to ETU 3 and inform the construction of the Hermes demonstration reactor series in Oak Ridge, Tennessee.
+Location
+ALBUQUERQUE, NM
+Status
+Under Construction
+This is tab 03
+ETU 3
+ETU 3 serves an important mission as a testing platform for remote handling and maintenance equipment and a training facility for plant operators to ensure safe and efficient operations for the Hermes reactor. Building the ETU 3 facility enabled Kairos Power to test new construction techniques, quality control procedures, and advanced manufacturing methods that will inform the Hermes reactor series and future plants.
+Location
+OAK RIDGE, TN
+Status
+Under Construction
+03
+Hermes demonstration reactor series
+Hermes 1
+Hermes 2
+This is tab 01
+Hermes 1
+The Hermes Low-Power Demonstration Reactor (Hermes 1) is the first Gen IV reactor to be approved for construction by the U.S. Nuclear Regulatory Commission. Nuclear construction commenced at the Hermes site in Oak Ridge, Tennessee, in May 2025. The U.S. Department of Energy will invest up to $303 million in the Hermes project under a performance-based milestone agreement through the Advanced Reactor Demonstration Program.
+Location
+OAK RIDGE, TN
+Licensing status
+Construction Permit Issued
+Partnerships
+This is tab 02
+Hermes 2
+The Hermes 2 Demonstration Plant is a 50 MW commercial-scale reactor that builds on lessons from Hermes 1 to demonstrate complete plant architecture and supply electricity to the grid. Hermes 2 is the first electricity-producing
+Gen IV reactor to receive an NRC permit. Enabled by vertically integrated manufacturing and prefabricated modular construction, Hermes 2 will help mitigate risk and drive toward cost certainty for our commercial fleet.
+Location
+OAK RIDGE, TN
+POWER OUTPUTS
+50 MWe
+Licensing status
+Construction Permit Issued
+Partnerships
+04
+Commercial fleet
+This is tab 01
+Tab 01
+Together with our partners, Kairos Power will build on the learning from the Hermes series to develop, construct, and operate a commercial reactor fleet. We’ve committed to delivering up to 500 megawatts of carbon-free electricity to Google under a Master Plant Development Agreement. A new model for advanced nuclear deployment made possible by Kairos Power's iterative development model, which demonstrates KP-FHR's technical and market viability through methodical iteration and continuous learning.
+MINIMUM CONFIGURATION
+2 UNITS (150 MWe)
+STANDARD CONFIGURATION
+6 UNITS (450 MWe)
+Partnerships
+Owning our destiny
+A LOOK INSIDE OUR in-house manufacturing and production capabilities.
+Learn More Learn More
+Learn More
+Prove what's possible with Kairos Power
+The challenge is great. So is the opportunity.
+Connect With Us Connect With Us
+Connect With Us
+Footer
+Locations
+California
+New Mexico
+Tennessee
+Company
+Technology
+Approach
+Mission
+About
+Connect
+Careers
+Updates
+Contact
+Stay Up To Date
+Be the first to hear about company updates
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Follow
+© {{year}} Kairos Power. All Rights Reserved.
+Privacy Policy

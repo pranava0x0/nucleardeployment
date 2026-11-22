@@ -93,7 +93,7 @@ Facebook
 Print
 License
 Filed Under:
-Generation,
+Generation ,
 Corporate News
 Utility Dive news delivered to your inbox
 Get the free daily newsletter read by industry experts
@@ -118,16 +118,16 @@ Sign up
 A valid email address is required.
 Please select at least one newsletter.
 Editors' picks
-Kevin Dietsch via Getty Images
-Former FERC officials concerned about Supreme Court Slaughter decision impacts
-&ldquo;Stripping those agencies of their independence will leave consumers exposed to the worst aspects of competitive markets without the protections of informed regulatory review,&rdquo; said former FERC Chair Jon Wellinghoff.
-By Herman K. Trabish •
-July 10, 2026
-Courtesy of GE Vernova
-GE Vernova gas turbine backlog climbs to 116 GW
-GE Vernova is taking reservations for 2031 deliveries now, said CEO Scott Strazik. He spoke of an increasingly diverse customer base, including data centers.
-By Brian Martucci •
-July 23, 2026
+Diana DiGangi/Utility Dive
+FERC rejects most of PJM’s large load interconnection plan
+The PJM Interconnection&rsquo;s plan for curtailing large loads that don&rsquo;t have matching new generation intrudes on state jurisdiction and appears to be discriminatory, the Federal Energy Regulatory Commission said.
+By Ethan Howland •
+Oct. 12, 2026
+Getty Images
+Reliability standards for AI data centers, crypto miners move closer to adoption
+NERC&rsquo;s Board of Trustees on Monday voted to adopt reliability standards for AI data centers and other computational loads. The proposed rules now go to the Federal Energy Regulatory Commission for approval.
+By Robert Walton •
+Updated Oct. 27, 2026
 Get the free newsletter
 Subscribe to Utility Dive for top news, trends & analysis
 Email:
@@ -162,34 +162,34 @@ To ensure we make it into your inbox regularly,
 add us to your allow list, mark us as a safe sender, or add us to your address book.
 Check out more from
 Most Popular
-PPL-Blackstone joint venture secures 5 GW of gas turbines for data centers in Pennsylvania
-Siemens’ gas turbine backlog nears 70 GW as company expands manufacturing
-Texas data center pause puts 20% of US pipeline at risk of delay: BNEF
-Facing an estimated 474 GW of interconnection requests, Texas hits pause on data centers
+PJM urged to delay base capacity auction until data centers cut from forecast
+New York state is short electric resources beginning 2033: ISO
+Permitting reform bill heads to House as Democratic divisions persist
+DOE-funded transmission projects could boost East-West transfer capacity 440%
 Library resources
-Playbook
-How Energy Decision Intelligence is transforming utilities
-Custom content for
-Energy Exemplar
-Infographic
-Utility Procurement's Technology Paradox: Survey Insights
-Custom content for
-Veriforce
 Webinar - on demand
-When the Grid Goes Down, Will Your Finance Operations Hold Up?
+Why Better Customer Communication Matters More Than Ever
 Custom content for
-SAP Concur
+Convey
+Playbook
+How Utilities Can Measure and Earn Customer Trust
+Custom content for
+Pariveda
+Webinar - on demand
+Moving Beyond Financial Data: Connecting Financial Results to Business Drivers and Context
+Custom content for
+Incorta
 View all
 Company Announcements
 View all
 | Post a press release
 What We're Reading
-Wall Street Journal
-China-Free Batteries Made From Salt Are Finally Here
+Bloomberg
+Republican Lawmakers Urge EPA to Reinstate $7B Solar Program
 Reuters
-Hundreds of millions in grid deposits linger in uncertainty following Texas data center pause
-E&E News by POLITICO
-Newsom says wildfire liability ‘status quo doesn’t work,’ slams utility CEO bonuses
+US DOJ antitrust division closes probe of NextEra Energy’s acquisition of Dominion Energy
+The New York Times
+How the War in Iran Will Remake the Global Energy Order
 View all
 Events
 View all
@@ -199,14 +199,14 @@ Reducing Grid Strain With Automated Energy Management for EV Charging
 Webinar - on demand
 &bull;
 Provided by Amply
+Planning the grid at the speed of AI: From interconnection queues to grid readiness
+Webinar - on demand
+&bull;
+Provided by Siemens
 Integrating Geospatial Data and Analytics Into Your Cloud Strategy: A Game Changer For Utilities
 Webinar - on demand
 &bull;
 Provided by Korem
-AI Can Build Your Field App. But Build It On What?
-Webinar - on demand
-&bull;
-Provided by Fulcrum
 Utility Dive news delivered to your inbox
 Get the free daily newsletter read by industry experts
 Email:
@@ -232,38 +232,38 @@ Please select at least one newsletter.
 Company Announcements
 View all
 | Post a press release
-Field Eagle Launches AI Predictive Maintenance for Utility Infrastructure Inspection Programs
-From Field Eagle
-August 10, 2026
-SitePath Intelligence Launches County-Level Permitting Intelligence Platform for Renewable Ene…
-From SitePath Intelligence
-August 10, 2026
-IMB Partners Completes a Growth Investment in Strategic Land Services
-From IMB Partners
-July 27, 2026
-Greg Chamberlain, Former Xcel Energy Executive, Named Utilen's Chief Strategy and Growth Offic…
-From Utilen
-July 27, 2026
+Leaders from TECO Energy and CPS Energy Join BlastPoint Roundtable on Putting Customer Persona…
+From BlastPoint
+November 14, 2026
+Silicon Valley Disposition to auction off advanced test equipment and precision instrumentatio…
+From Silicon Valley Disposition
+November 12, 2026
+Polesaver Rot-Guards Add 20 Years to Wooden Utility Pole Life
+From Polesaver
+November 09, 2026
+Nuvation Energy Introduces North American-Made G5 Plus Battery Management System with 64-Chann…
+From Nuvation Energy
+November 05, 2026
 Editors' picks
-Kevin Dietsch via Getty Images
-Former FERC officials concerned about Supreme Court Slaughter decision impacts
-&ldquo;Stripping those agencies of their independence will leave consumers exposed to the worst aspects of competitive markets without the protections of informed regulatory review,&rdquo; said former FERC Chair Jon Wellinghoff.
-By Herman K. Trabish •
-July 10, 2026
-Courtesy of GE Vernova
-GE Vernova gas turbine backlog climbs to 116 GW
-GE Vernova is taking reservations for 2031 deliveries now, said CEO Scott Strazik. He spoke of an increasingly diverse customer base, including data centers.
-By Brian Martucci •
-July 23, 2026
+Eric Lee/Getty Images via Getty Images
+NextEra’s $4M Trump ballroom donation muddies Dominion merger debate, watchdogs say
+The donation, which advocates called &ldquo;problematic&rdquo; and &ldquo;convenient&rdquo; for the company, comes to light as federal regulators chosen by President Donald Trump consider whether to allow NextEra to merge with Dominion Energy.
+By Robert Walton and Meris Lutz •
+Oct. 16, 2026
+Getty Images
+Reliability standards for AI data centers, crypto miners move closer to adoption
+NERC&rsquo;s Board of Trustees on Monday voted to adopt reliability standards for AI data centers and other computational loads. The proposed rules now go to the Federal Energy Regulatory Commission for approval.
+By Robert Walton •
+Updated Oct. 27, 2026
 Latest in Generation
-Vistra supports Texas data center pause, execs say
-By Diana DiGangi
-PPL-Blackstone joint venture secures 5 GW of gas turbines for data centers in Pennsylvania
+Market reforms bolster grid, may lower costs this winter: FERC
 By Ethan Howland
-Siemens’ gas turbine backlog nears 70 GW as company expands manufacturing
-By Emma Penrod
-Constellation CEO: Existing power plants are ‘bedrock’ in supplying data centers
+Google signs 50-MW superhot geothermal PPA with Quaise Energy
+By Marlene Wilden
+PJM urged to delay base capacity auction until data centers cut from forecast
 By Ethan Howland
+Fuel constraints could challenge grid this winter, despite resource improvements: NERC
+By Robert Walton
 Explore
 About
 Editorial Team
@@ -283,7 +283,7 @@ Waste Dive
 This website is owned and operated by
 Informa TechTarget ,
 a global network that informs, influences and connects the world's technology buyers and sellers.
-&copy; 2025 TechTarget, Inc. or its subsidiaries. All rights reserved. An Informa PLC company.
+&copy; 2026 TechTarget, Inc. or its subsidiaries. All rights reserved. An Informa PLC company.
 Privacy policy
 | Terms of use
 | Take down policy

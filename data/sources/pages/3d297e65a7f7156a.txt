@@ -1,5 +1,5 @@
 Aalo Pod: 50 MWe Nuclear Power Plant for AI Data Centers
-Applications Technology Factory Company Updates Contact
+Applications Technology Factory Company News Careers
 The mission and the timeline.
 Home
 What Aalo powers and what's next.
@@ -12,12 +12,14 @@ The team and the story.
 Company
 The latest from the floor.
 Updates
+Careers
+Explore open positions
 Aalo © 2026
 All rights reserved
 Designed by tonik
 We build mass-manufactured nuclear plants designed to power anything from a data center to a city - eventually achieving 3¢/kWh electricity.
+Contact Us
 Become a Partner
-Work at Aalo
 Invest
 Menu
 Aalo Pod
@@ -179,6 +181,18 @@ Read more about our factory
 Built with the institutions that built nuclear.
 Become a Partner
 We are looking for partners who can also deliver NQA-1 components. Reach out to our Procurement Specialists to learn more.
+Explore more:
+Explore more:
+Technology
+How we make electricity
+Applications
+What Aalo powers and what’s next
+Factory
+Where the reactors get made
+Company
+Our team and our story
+News
+The latest on the path to electrons
 Energy without limits.
 Contact us:
 Become a Partner
@@ -195,9 +209,9 @@ Company
 1.5
 Updates
 2.1
-Contact
-2.2
 Careers
+2.2
+Contact
 2.3
 X
 2.4

@@ -1,8 +1,9 @@
 {
   "url": "https://www.energy.gov/ne/us-department-energy-reactor-pilot-program",
-  "fetched_at": "2026-08-06T18:29:08.917Z",
+  "fetched_via": "https://www.energy.gov/ne/us-department-energy-reactor-pilot-program",
+  "fetched_at": "2026-11-21T22:19:29.420Z",
   "http_status": 200,
-  "content_type": "text/html; charset=UTF-8",
-  "bytes": 7074,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 7551,
   "title": "U.S. Department of Energy Reactor Pilot Program | Department of Energy"
 }

@@ -534,26 +534,26 @@ emission reductions ,
 carbon capture and storage ,
 renewable energy
 Related Content
-Robotics/unmanned systems
-The Rise of Robotics in Oil and Gas
+AI/machine learning
+Invisible Engineer: AI Is Eliminating Manual Work, Taking Over Cognitive Tasks
+November 5, 2026 &bull; Jennifer Pallanich
+&bull; Journal of Petroleum Technology
+Asset/portfolio management
+The Hunt for Unrecovered Barrels in the Permian Basin
 Locked
-August 1, 2026 &bull; Adam Wilson
+November 1, 2026 &bull; Trent Jacobs
 &bull; Journal of Petroleum Technology
-Data & Analytics
-The Rise of Geology as the Subsurface Intelligence Layer Behind AI, Energy, and Carbon Management
-July 27, 2026 &bull; Fernando C. Hernandez
+Drilling
+Case Study: AI Redefines Next-Gen Drilling Vibration Compliance
+November 1, 2026 &bull; Nils Reimers
 &bull; Journal of Petroleum Technology
-AI/machine learning
-Schneider Electric To Buy Cognite in $3.1 Billion Deal
-July 7, 2026 &bull; JPT Staff
-&bull; Journal of Petroleum Technology
-AI/machine learning
-Rystad Puts Benefits of Digitalization, AI in Upstream Oil and Gas at $500 Billion
-June 23, 2026 &bull; JPT Staff
+Artificial lift
+Artificial Lift’s New Adaptive Era
+November 1, 2026 &bull; Jennifer Pallanich
 &bull; Journal of Petroleum Technology
 AI/machine learning
-Breaking Down the Sensing, Logic, and Execution of the Closed-Loop Frac System
-June 16, 2026 &bull; Jennifer Pallanich
+Industry Eyes AI-Driven Path to Energy Abundance
+October 26, 2026 &bull; Jennifer Pallanich
 &bull; Journal of Petroleum Technology
 Get JPT articles in your LinkedIn feed and stay current with oil and gas news and technology.
 The Journal of Petroleum Technology , the Society of Petroleum Engineers’ flagship magazine, presents authoritative briefs and features on technology advancements in exploration and production, oil and gas industry issues, and news about SPE and its members.

@@ -8,7 +8,7 @@ export type Verification = "Verified" | "Government-reported" | "Institution-rep
 
 /** Source-host tiers for race records. A host in no list is press by default. */
 export const verificationHosts: { verification: Verification; hosts: string[] }[] = [
-  { verification: "Verified", hosts: ["nrc.gov", "federalregister.gov", "sec.gov"] },
+  { verification: "Verified", hosts: ["nrc.gov", "federalregister.gov", "sec.gov", "govinfo.gov", "content.govdelivery.com"] },
   { verification: "Government-reported", hosts: [
     "energy.gov", "inl.gov", "gain.inl.gov", "nric.inl.gov", "army.mil", "eia.gov",
     // Financing layer: legislature, export credit, a state economic-development
@@ -23,7 +23,7 @@ export const verificationHosts: { verification: Verification; hosts: string[] }[
   // BD layer adds a multilateral lender and an MIT research center.
   { verification: "Institution-reported", hosts: ["npre.illinois.edu", "illinois.edu", "acu.edu", "tamu.edu", "dspace.mit.edu", "worldbank.org", "ceepr.mit.edu"] },
   { verification: "Company-reported", hosts: [
-    "terrapower.com", "kairospower.com", "oklo.com", "x-energy.com", "holtecinternational.com",
+    "terrapower.com", "kairospower.com", "oklo.com", "investor.oklo.com", "x-energy.com", "investors.x-energy.com", "lastenergy.com", "holtecinternational.com",
     "nuscalepower.com", "aalo.com", "radiantnuclear.com", "valaratomics.com", "deepfission.com",
     "bwxt.com", "ir.terrestrialenergy.com", "info.westinghousenuclear.com", "gevernova.com",
     "tatachemicals.com", "switch.com", "riotplatforms.com", "deployable.energy", "georgiapower.com",
@@ -31,7 +31,7 @@ export const verificationHosts: { verification: Verification; hosts: string[] }[
     // Financing layer: counterparties and project companies speaking about
     // their own deals, plus one more newswire.
     "accessnewswire.com", "wolverinepowercooperative.com", "news.duke-energy.com",
-    "sizewellc.com", "osge.com", "bechtel.com", "nanonuclearenergy.com",
+    "lazard.com", "ir.nanonuclearenergy.com", "sizewellc.com", "osge.com", "bechtel.com", "nanonuclearenergy.com",
     // BD layer: buyers and vendors speaking about their own deals.
     "constellationenergy.com", "newsroom.nexteraenergy.com", "group.vattenfall.com",
   ] },
@@ -136,23 +136,23 @@ export const projects: Project[] = [
     region: "South",
     technology: "Fluoride salt-cooled high-temperature reactor",
     generation: "Gen IV",
-    scale: "Test reactor",
+    scale: "SMR",
     family: "FHR",
-    reactorRole: "Research / test",
-    capacity: "Two low-power test reactors",
+    reactorRole: "Demonstration power",
+    capacity: "50 MWe company-stated plant output",
     stage: 6,
     stageLabel: "Physical deployment",
     status: "Construction underway",
-    summary: "Two non-power test reactors intended to support commercial validation of Kairos Power's KP-FHR technology.",
-    latest: "DOE reported Hermes 2 groundbreaking after the NRC issued two construction permits.",
+    summary: "Kairos's Hermes 2 demonstration plant at Oak Ridge, company-rated at 50 MWe for electricity delivery to the TVA grid.",
+    latest: "Kairos reports Hermes 2 construction and a 50 MWe plant output; an operating license remains a separate requirement.",
     latestDate: "2026-04",
-    next: "Complete nuclear construction, request operating licenses, then load fuel and test.",
+    next: "Complete plant construction and obtain the operating license before fueling and power operations.",
     nextOwner: "Kairos Power and NRC",
     blocker: "Construction execution and later operating authorization",
     confidence: "High",
-    verification: "Verified",
-    source: "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos",
-    sourceLabel: "NRC Hermes 2 record",
+    verification: "Company-reported",
+    source: "https://www.kairospower.com/iterative-development",
+    sourceLabel: "Kairos current development and plant specifications",
     programs: ["ARDP risk reduction"],
   },
   {
@@ -168,19 +168,19 @@ export const projects: Project[] = [
     family: "HTGR",
     reactorRole: "Demonstration power",
     capacity: "4 × 80 MWe + process heat",
-    stage: 3,
-    stageLabel: "Development commitment",
-    status: "License review",
+    stage: 5,
+    stageLabel: "Ready",
+    status: "Construction permit issued",
     summary: "A four-module industrial energy project designed to supply electricity and process heat at Dow's Seadrift site.",
-    latest: "NRC environmental review concluded with an environmental assessment and finding of no significant impact.",
-    latestDate: "2026-05",
-    next: "Complete the safety review and obtain a construction permit; operation requires a later license.",
+    latest: "NRC issued a construction permit for four Xe-100 reactors at the Dow Seadrift site on November 9, 2026.",
+    latestDate: "2026-11-09",
+    next: "Document nuclear construction, complete the plant, and obtain a separate NRC operating license before fuel loading.",
     nextOwner: "NRC and Long Mott Energy",
-    blocker: "Construction-permit decision and TRISO fuel scale-up",
+    blocker: "Construction execution, TRISO fuel delivery, and separate operating license",
     confidence: "Medium",
     verification: "Verified",
-    source: "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/long-mott",
-    sourceLabel: "NRC Long Mott dashboard",
+    source: "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
+    sourceLabel: "NRC construction-permit announcement",
     programs: ["ARDP demonstration"],
   },
   {
@@ -228,15 +228,15 @@ export const projects: Project[] = [
     stageLabel: "Development commitment",
     status: "Conditional test slot",
     summary: "A planned fueled experiment in DOE's DOME microreactor test bed, subject to readiness milestones.",
-    latest: "DOE conditionally selected Kaleidos for an initial DOME test slot.",
-    latestDate: "2025-07",
-    next: "Satisfy readiness gates, complete authorization, install the experiment, and conduct testing.",
+    latest: "Radiant reports DOE approval of the Kaleidos documented safety analysis; its November 19 update places the reactor in readiness review.",
+    latestDate: "2026-11-19",
+    next: "Complete DOE readiness review and obtain authorization to fuel and begin the DOME test campaign.",
     nextOwner: "Radiant, NRIC, and DOE",
-    blocker: "Test readiness and DOE authorization",
+    blocker: "DOE readiness review, fueling authorization, and sustained full-power testing",
     confidence: "Medium",
-    verification: "Government-reported",
-    source: "https://www.energy.gov/ne/demonstration-microreactor-experiments-dome",
-    sourceLabel: "DOE DOME program",
+    verification: "Company-reported",
+    source: "https://radiantnuclear.com/news/radiant-expands-manufacturing",
+    sourceLabel: "Radiant manufacturing and DOME update",
     programs: ["DOME"],
   },
   {
@@ -335,20 +335,20 @@ export const projects: Project[] = [
     scale: "Test reactor",
     family: "Design TBD",
     reactorRole: "Research / test",
-    capacity: "Not disclosed by DOE",
-    stage: 3,
-    stageLabel: "Development commitment",
-    status: "DOE pilot development",
-    summary: "Atomic Alchemy's privately funded Groves project under DOE's Reactor Pilot Program pathway.",
-    latest: "A DOE variance package identified the Groves project and its 40-acre Caldwell County site.",
-    latestDate: "2026-01",
-    next: "Complete the DOE safety basis, authorization, construction, and fuel-readiness gates before operation.",
-    nextOwner: "Atomic Alchemy and DOE Idaho Operations",
-    blocker: "DOE authorization, construction, and fuel readiness",
+    capacity: "Low-power isotope test · 0 MWe counted",
+    stage: 7,
+    stageLabel: "Operational",
+    status: "Initial criticality achieved",
+    summary: "Oklo's Groves low-power isotope test reactor at a private greenfield site in Caldwell County, Texas. Test criticality contributes no commercial megawatts.",
+    latest: "Oklo reported Groves reached first criticality on August 6, 2026 under the DOE Reactor Pilot Program.",
+    latestDate: "2026-08-06",
+    next: "Validate test operations and advance the separate commercial isotope-production facility and its authorizations.",
+    nextOwner: "Oklo / Atomic Alchemy and DOE",
+    blocker: "Test validation and commercial isotope-facility authorization and delivery",
     confidence: "Medium",
-    verification: "Government-reported",
-    source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
-    sourceLabel: "DOE contractor variance package",
+    verification: "Company-reported",
+    source: "https://oklo.com/newsroom/oklos-groves-reactor-achieves-first-criticality-in-under-a-year",
+    sourceLabel: "Oklo Groves criticality announcement",
     programs: ["Reactor Pilot Program"],
   },
   {
@@ -396,15 +396,15 @@ export const projects: Project[] = [
     stageLabel: "Development commitment",
     status: "DOE pilot development",
     summary: "Last Energy's PWR-5 test project at the Texas A&M RELLIS campus under the DOE pilot pathway.",
-    latest: "DOE identified PWR-5 and the Texas A&M RELLIS campus in its contractor variance package.",
-    latestDate: "2026-01",
-    next: "Complete site authorization, safety analysis, construction, and operating readiness under DOE oversight.",
+    latest: "DOE approved the pilot reactor documented safety analysis on October 7, 2026; readiness review and startup authorization remain.",
+    latestDate: "2026-10-07",
+    next: "Complete DOE readiness review and secure startup authorization before criticality or power operations.",
     nextOwner: "Last Energy and DOE Idaho Operations",
-    blocker: "DOE authorization, construction readiness, and fuel",
+    blocker: "DOE readiness review, startup authorization, and test execution",
     confidence: "Medium",
-    verification: "Government-reported",
-    source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
-    sourceLabel: "DOE contractor variance package",
+    verification: "Company-reported",
+    source: "https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis",
+    sourceLabel: "Last Energy safety-analysis announcement",
     programs: ["Reactor Pilot Program"],
   },
   {
@@ -517,15 +517,15 @@ export const projects: Project[] = [
     stageLabel: "Development commitment",
     status: "DOE pilot development",
     summary: "Radiant's DOE pilot project covers the Kaleidos and RiPPer test reactors at Idaho National Laboratory.",
-    latest: "DOE identified both reactors and their INL site in its contractor variance package.",
-    latestDate: "2026-01",
-    next: "Complete DOE authorization and readiness gates for construction, fuel loading, and critical testing.",
+    latest: "Radiant reports DOE approval of the Kaleidos documented safety analysis; its November 19 update places the reactor in readiness review.",
+    latestDate: "2026-11-19",
+    next: "Complete DOE readiness review and obtain authorization to fuel and begin the DOME test campaign.",
     nextOwner: "Radiant Industries and DOE Idaho Operations",
-    blocker: "DOE authorization, test-bed sequencing, construction, and fuel",
+    blocker: "DOE readiness review, fueling authorization, and sustained full-power testing",
     confidence: "Medium",
-    verification: "Government-reported",
-    source: "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
-    sourceLabel: "DOE contractor variance package",
+    verification: "Company-reported",
+    source: "https://radiantnuclear.com/news/radiant-expands-manufacturing",
+    sourceLabel: "Radiant manufacturing and DOME update",
     programs: ["Reactor Pilot Program"],
   },
   {
@@ -625,19 +625,19 @@ export const projects: Project[] = [
     family: "LWR · BWR",
     reactorRole: "Commercial power",
     capacity: "300 MWe",
-    stage: 3,
-    stageLabel: "Development commitment",
-    status: "Construction-permit review",
+    stage: 5,
+    stageLabel: "Ready",
+    status: "Construction permit CPAR-2 issued",
     summary: "TVA's utility-led BWRX-300 project at the already permitted Clinch River site.",
-    latest: "NRC accepted TVA's construction-permit application for a full safety review.",
-    latestDate: "2025-07",
-    next: "Complete NRC safety review and obtain the construction permit before nuclear construction.",
+    latest: "NRC issued construction permit CPAR-2 on September 28, 2026, authorizing construction of Clinch River Unit 1.",
+    latestDate: "2026-09-28",
+    next: "Document nuclear construction and obtain the separate operating license before fuel loading or operation.",
     nextOwner: "TVA and NRC",
-    blocker: "Construction-permit decision, final design, supply chain, and project finance",
+    blocker: "Construction execution, supply chain, project finance, and operating license",
     confidence: "High",
-    verification: "Government-reported",
-    source: "https://www.energy.gov/ne/articles/nrc-dockets-construction-permit-application-tva-small-modular-reactor",
-    sourceLabel: "DOE summary of NRC docketing",
+    verification: "Verified",
+    source: "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
+    sourceLabel: "NRC permit issuance in the Federal Register",
     programs: ["Gen III+ SMR Pathway", "NRC construction-permit review"],
   },
   {
@@ -652,11 +652,11 @@ export const projects: Project[] = [
     scale: "SMR",
     family: "LWR · PWR",
     reactorRole: "Commercial power",
-    capacity: "2 × 300 MWe",
+    capacity: "2 × approximately 340 MWe",
     stage: 3,
     stageLabel: "Development commitment",
     status: "Phased permit review",
-    summary: "A proposed two-unit SMR-300 plant adjacent to the existing Palisades reactor.",
+    summary: "Two proposed SMR-300 units at the Palisades site, rated by the NRC at approximately 340 MWe each. The phased construction-permit application remains separate from the existing reactor restart.",
     latest: "NRC accepted Part 1 of the phased construction-permit application, including a limited-work request, for detailed review.",
     latestDate: "2026-02",
     next: "Obtain the limited-work authorization and complete the remaining construction-permit application and reviews.",
@@ -920,21 +920,21 @@ export const companies: Company[] = [
     slug: "kairos-power",
     name: "Kairos Power",
     role: "Reactor developer and test-reactor licensee",
-    summary: "Developer of the Hermes 2 low-power test reactors in Oak Ridge, Tennessee.",
+    summary: "Developer of the Hermes demonstration series and a planned commercial KP-FHR fleet.",
     technology: "Fluoride salt-cooled high-temperature reactor",
     projectSlugs: ["hermes-2"],
-    source: "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos",
-    sourceLabel: "NRC Hermes 2 record",
+    source: "https://www.kairospower.com/iterative-development",
+    sourceLabel: "Kairos iterative development program",
   },
   {
     slug: "x-energy",
     name: "X-energy",
     role: "Reactor technology provider",
-    summary: "Technology developer for the Xe-100 project under review at Dow's Seadrift site in Texas.",
+    summary: "Developer of the Xe-100 technology for the NRC-permitted Long Mott project at Dow's Seadrift site in Texas.",
     technology: "High-temperature gas-cooled reactor",
     projectSlugs: ["long-mott-xe-100"],
-    source: "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/long-mott",
-    sourceLabel: "NRC Long Mott dashboard",
+    source: "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
+    sourceLabel: "NRC Long Mott construction permit",
   },
   {
     slug: "bwxt",
@@ -1160,11 +1160,11 @@ export const companies: Company[] = [
     slug: "gev-hitachi",
     name: "GE Vernova Hitachi",
     role: "Reactor technology provider",
-    summary: "Developer of the BWRX-300, the design under NRC construction-permit review at TVA's Clinch River site and under construction at Darlington, Ontario.",
+    summary: "Developer of the BWRX-300 used in TVA's permitted Clinch River Unit 1 project.",
     technology: "Boiling-water SMR",
     projectSlugs: [],
-    source: "https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing",
-    sourceLabel: "NRC Clinch River hearing notice",
+    source: "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
+    sourceLabel: "NRC Clinch River construction permit",
   },
 ];
 
@@ -1175,7 +1175,7 @@ export const federalActions = [
     directive: "Operate an Army-regulated reactor at a domestic military installation by September 30, 2028.",
     owner: "Department of Defense / Army",
     status: "In progress",
-    next: "Select vendors and match designs to the nine candidate installations",
+    next: "Complete site-specific authorization and milestone delivery for the selected Janus vendors",
     source: "https://www.whitehouse.gov/presidential-actions/2025/05/deploying-advanced-nuclear-reactor-technologies-for-national-security/",
   },
   {
@@ -1221,7 +1221,7 @@ export const programs = [
     lead: "DOE Office of Clean Energy Demonstrations",
     purpose: "Cost-shared commercial demonstrations of Natrium and Xe-100 technologies.",
     measure: "$3.2B planned federal investment over seven years, subject to appropriations, with matching industry funds",
-    status: "Natrium permitted and under construction; Long Mott license review active",
+    status: "Natrium construction and Long Mott construction-permit issuance tracked separately",
     source: "https://www.energy.gov/ne/advanced-reactor-demonstration-projects",
   },
   {
@@ -1338,13 +1338,14 @@ export function stageCounts() {
      - Binding and non-binding never merge into one figure.
 --------------------------------------------------------------------------- */
 
-export type CapacityBand = "operational" | "construction" | "doe-authorized" | "review" | "contracted" | "framework";
+export type CapacityBand = "operational" | "construction" | "doe-authorized" | "permitted" | "review" | "contracted" | "framework";
 
 /** Strongest evidence first. Board sort and render order both read this. */
 export const capacityBands: { band: CapacityBand; label: string; rule: string; authority: string }[] = [
   { band: "operational", label: "Operational", rule: "Grid-connected and generating commercial power.", authority: "Grid operator" },
   { band: "construction", label: "Nuclear construction", rule: "NRC construction permit issued and physical nuclear work documented.", authority: "NRC" },
   { band: "doe-authorized", label: "DOE-authorized build", rule: "Built under a DOE authorization pathway with physical work documented. Not an NRC license to operate.", authority: "DOE" },
+  { band: "permitted", label: "NRC permitted", rule: "Construction permit issued; physical nuclear work not yet documented in the tracked evidence. Separate operating license still required.", authority: "NRC" },
   { band: "review", label: "Under review", rule: "Construction-permit or combined-license application docketed and in active regulator review.", authority: "NRC" },
   { band: "contracted", label: "Contracted", rule: "An executed, funded agreement for a named project, whether offtake, order, delivery, or development funding, not yet in regulator review. Each claim says which kind it is.", authority: "Counterparty" },
   { band: "framework", label: "Announced, non-binding", rule: "MOU, LOI, master agreement, or announced target. No executed project documents.", authority: "None" },
@@ -1368,7 +1369,7 @@ export type CapacityClaim = {
   label: string;
   /** False if and only if the band is framework. Everything else rests on an executed action. */
   binding: boolean;
-  /** YYYY-MM of the action supporting the band, or null when no source states one. */
+  /** YYYY-MM or YYYY-MM-DD of the supporting action; null if the source is undated. */
   date: string | null;
   source: string;
   verification: Verification;
@@ -1423,17 +1424,17 @@ export const raceEntrants: RaceEntrant[] = [
   {
     companySlug: "kairos-power",
     design: "KP-FHR",
-    unitMWe: 140,
-    unitMWeNote: "Commercial product rating. Hermes 2 is a ~20 MWe demonstration plant.",
+    unitMWe: 75,
+    unitMWeNote: "Current commercial reactor rating: 75 MWe, deployed in pairs. The separate Hermes 2 plant is company-rated at 50 MWe.",
     lane: "Grid-scale SMR",
     rosterBasis: "Hermes 2 holds the first NRC construction permit for a power-producing Gen IV reactor and is under construction.",
-    rosterSource: "https://www.kairospower.com/updates/kairos-power-breaks-ground-on-hermes-2-demonstration-plant",
+    rosterSource: "https://www.kairospower.com/iterative-development",
   },
   {
     companySlug: "holtec",
     design: "SMR-300",
-    unitMWe: 300,
-    unitMWeNote: "Holtec's technical bulletin states 300 MWe net; 2026 partner materials describe approximately 340 MWe.",
+    unitMWe: 340,
+    unitMWeNote: "NRC describes each Pioneer SMR-300 unit as approximately 340 MWe; the product name is retained.",
     lane: "Grid-scale SMR",
     rosterBasis: "Phased construction-permit application for PIONEER 1&2 docketed at the NRC for the Palisades site.",
     rosterSource: "https://www.federalregister.gov/documents/2026/02/27/2026-03943/smr-llc-pioneer-units-1-and-2-phased-construction-permit-application-limited-work-authorization",
@@ -1445,16 +1446,16 @@ export const raceEntrants: RaceEntrant[] = [
     unitMWeNote: "A standard plant bundles four modules for 320 MWe.",
     lane: "Grid-scale SMR",
     ticker: "Nasdaq: XE",
-    rosterBasis: "Long Mott construction-permit application under NRC safety review after the environmental review closed.",
-    rosterSource: "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-054.pdf",
+    rosterBasis: "NRC issued the Long Mott construction permit for four Xe-100 reactors on November 9, 2026.",
+    rosterSource: "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
   },
   {
     companySlug: "gev-hitachi",
     design: "BWRX-300",
     unitMWe: 300,
     lane: "Grid-scale SMR",
-    rosterBasis: "TVA's Clinch River Unit 1 construction permit is under NRC review with a mandatory hearing scheduled.",
-    rosterSource: "https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing",
+    rosterBasis: "NRC issued construction permit CPAR-2 for TVA's Clinch River Unit 1 BWRX-300 on September 28, 2026.",
+    rosterSource: "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
   },
   {
     companySlug: "nano-nuclear",
@@ -1571,6 +1572,7 @@ export const raceEntrants: RaceEntrant[] = [
 ];
 
 export const capacityClaims: CapacityClaim[] = [
+  {"companySlug": "radiant-industries", "band": "contracted", "mwe": 15, "label": "Army Janus fleet · binding agreement for 15 one-MWe Kaleidos units, up to $750M subject to milestones; separate from the earlier Air Force delivery agreement", "binding": true, "date": "2026-08-26", "source": "https://www.radiantnuclear.com/news/radiant-wins-750m-janus-army-contract", "verification": "Company-reported"},
   // Nuclear construction — NRC permit issued and physical work documented.
   {
     companySlug: "terrapower",
@@ -1585,12 +1587,12 @@ export const capacityClaims: CapacityClaim[] = [
   {
     companySlug: "kairos-power",
     band: "construction",
-    mwe: 20,
-    label: "Hermes 2, Oak Ridge · two 35 MWt reactors on one power system, 20 MWe combined. Kairos frames the same plant as supplying up to 50 MW to the TVA grid.",
+    mwe: 50,
+    label: "Hermes 2, Oak Ridge, Tennessee · company-stated 50 MWe plant output; NRC construction permits issued and groundbreaking documented. Replaces the earlier 20 MWe account.",
     binding: true,
     date: "2026-04",
-    source: "https://www.neimagazine.com/news/kairos-breaks-ground-on-hermes-2/",
-    verification: "Press-reported",
+    source: "https://www.kairospower.com/iterative-development",
+    verification: "Company-reported",
   },
 
   // DOE-authorized build — physical work under a DOE pathway, no NRC license to operate.
@@ -1609,31 +1611,31 @@ export const capacityClaims: CapacityClaim[] = [
   {
     companySlug: "holtec",
     band: "review",
-    mwe: 600,
-    label: "PIONEER 1&2, Palisades site, Michigan · 2 × 300 MWe; phased permit application with limited work authorization docketed",
+    mwe: 680,
+    label: "PIONEER 1&2, Palisades site, Michigan · two approximately 340 MWe units per NRC; phased construction-permit application under review",
     binding: true,
     date: "2026-02",
-    source: "https://www.federalregister.gov/documents/2026/02/27/2026-03943/smr-llc-pioneer-units-1-and-2-phased-construction-permit-application-limited-work-authorization",
+    source: "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-008.pdf",
     verification: "Verified",
   },
   {
     companySlug: "x-energy",
-    band: "review",
+    band: "permitted",
     mwe: 320,
-    label: "Long Mott, Seadrift, Texas · Dow site, 4 × 80 MWe; environmental review closed 2026-05, safety decision targeted 2026-11",
+    label: "Long Mott, Seadrift, Texas · four Xe-100 modules, 320 MWe design capacity; NRC construction permit issued November 9, 2026. Separate operating license required.",
     binding: true,
-    date: "2026-05",
-    source: "https://x-energy.com/news/nrc-issues-environmental-assessment-with-finding-of-no-significant-impact-for-dow-and-x-energys-propsed-advanced-nuclear-project-in-texas/",
-    verification: "Company-reported",
+    date: "2026-11-09",
+    source: "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
+    verification: "Verified",
   },
   {
     companySlug: "gev-hitachi",
-    band: "review",
+    band: "permitted",
     mwe: 300,
-    label: "Clinch River Unit 1, Tennessee · TVA project; safety evaluation complete, mandatory hearing 2026-08-13",
+    label: "Clinch River Unit 1, Tennessee · 300 MWe BWRX-300; construction permit CPAR-2 issued September 28, 2026. Physical nuclear work not yet documented here.",
     binding: true,
-    date: "2026-07",
-    source: "https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing",
+    date: "2026-09-28",
+    source: "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
     verification: "Verified",
   },
 
@@ -1821,11 +1823,11 @@ export const capacityClaims: CapacityClaim[] = [
   {
     companySlug: "kairos-power",
     band: "framework",
-    mwe: 480,
-    label: "Google master plant development agreement · remainder of the stated 500 MW by 2035 beyond Hermes 2",
+    mwe: 450,
+    label: "Google · remaining 450 MWe of the up-to-500 MWe master development agreement after the separately counted 50 MWe Hermes 2 plant",
     binding: false,
     date: "2024-10",
-    source: "https://www.kairospower.com/updates/google-and-kairos-power-partner-to-deploy-500-mw-of-clean-electricity-generation",
+    source: "https://www.kairospower.com/iterative-development",
     verification: "Company-reported",
   },
   {
@@ -1876,10 +1878,11 @@ export type StatedTarget = {
 };
 
 export const fundingEvents: FundingEvent[] = [
+  {"companySlug": "radiant-industries", "date": "2026-08-26", "kind": "Federal award", "amount": "Up to $750M Janus contract ceiling, subject to milestones; not cash received", "counterparty": "U.S. Army / Defense Innovation Unit", "source": "https://www.radiantnuclear.com/news/radiant-wins-750m-janus-army-contract"},
   { companySlug: "terrapower", date: "2025-06", kind: "Venture equity", amount: "$650M round", counterparty: "NVentures (NVIDIA), Bill Gates, HD Hyundai", source: "https://www.terrapower.com/terrapower-announces-650-million-fundraise" },
   { companySlug: "terrapower", date: "2022-08", kind: "Venture equity", amount: "$750M minimum equity raise", counterparty: "SK Inc. and SK Innovation", source: "https://www.terrapower.com/fundraise" },
   { companySlug: "terrapower", date: null, kind: "Cost share", amount: "Up to $2B DOE ceiling, 50% of project costs", counterparty: "DOE Advanced Reactor Demonstration Program", source: "https://www.terrapower.com/fundraise" },
-  { companySlug: "oklo", date: "2024-05", kind: "IPO / listing", amount: "Up to $645M cash from the combination, including a $300M PIPE", counterparty: "AltC Acquisition Corp (NYSE)", source: "https://news.spacconference.com/2024/05/07/oklo-to-debut-on-nyse-following-altc-acqusition-shareholder-approval/" },
+  { companySlug: "oklo", date: "2024-05", kind: "IPO / listing", amount: "Approximately $306M gross transaction proceeds received at the AltC combination close", counterparty: "AltC Acquisition Corp (NYSE)", source: "https://oklo.com/newsroom/oklo-inc-begins-trading-on-the-new-york-stock-exchange" },
   { companySlug: "oklo", date: "2026-05", kind: "Public offering", amount: "Up to $1B at-the-market program, replacing a prior program that placed ~$1.5B gross", counterparty: "Public markets", source: "https://www.tipranks.com/news/oklo-is-about-to-report-q2-earnings-heres-what-to-expect-from-the-nuclear-energy-stock" },
   { companySlug: "kairos-power", date: "2024-02", kind: "Cost share", amount: "Up to $303M of a $629M project, milestone-based", counterparty: "DOE Advanced Reactor Demonstration Program", source: "https://www.powermag.com/doe-kairos-unveil-milestone-based-funding-agreement-for-advanced-nuclear-demonstration-project/" },
   { companySlug: "kairos-power", date: "2026-02", kind: "Federal award", amount: "$27M agreement", counterparty: "Oak Ridge National Laboratory", source: "https://www.nucnet.org/news/oak-ridge-lab-signs-usd27m-deal-with-kairos-power-for-advanced-reactor-development-2-5-2026" },
@@ -1919,14 +1922,33 @@ export const fundingEvents: FundingEvent[] = [
 ];
 
 export const cashPositions: CashPosition[] = [
-  { companySlug: "oklo", asOf: "2026-03-31", amount: "~$2.5B cash and marketable securities, no debt", source: "https://www.tipranks.com/news/oklo-is-about-to-report-q2-earnings-heres-what-to-expect-from-the-nuclear-energy-stock" },
-  { companySlug: "nuscale", asOf: "2026-03-31", amount: "$1.0B cash, equivalents and investments", source: "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-first-quarter-2026-results" },
-  { companySlug: "x-energy", asOf: "2026-03-31", amount: "$944.0M total liquidity, a pre-IPO balance date", source: "https://x-energy.com/news/x-energy-reports-first-quarter-2026-results/" },
-  { companySlug: "nano-nuclear", asOf: "2026-03-31", amount: "$568.7M cash and short-term investments", source: "https://www.stocktitan.net/news/NNE/nano-nuclear-reports-q1-fy-2026-financial-results-and-provides-awkjhq74zjnt.html" },
-  { companySlug: "terrestrial-energy", asOf: "2026-03-31", amount: "$289.9M cash and investments", source: "https://www.businesswire.com/news/home/20260514188075/en/Terrestrial-Energy-Reports-First-Quarter-2026-Results" },
+  {"companySlug": "oklo", "asOf": "2026-03-31", "amount": "~$2.5B cash and marketable securities, no debt", "source": "https://www.tipranks.com/news/oklo-is-about-to-report-q2-earnings-heres-what-to-expect-from-the-nuclear-energy-stock"},
+  {"companySlug": "nuscale", "asOf": "2026-03-31", "amount": "$1.0B cash, equivalents and investments", "source": "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-first-quarter-2026-results"},
+  {"companySlug": "x-energy", "asOf": "2026-03-31", "amount": "$944.0M total liquidity, a pre-IPO balance date", "source": "https://x-energy.com/news/x-energy-reports-first-quarter-2026-results/"},
+  {"companySlug": "nano-nuclear", "asOf": "2026-03-31", "amount": "$568.7M cash and short-term investments", "source": "https://www.stocktitan.net/news/NNE/nano-nuclear-reports-q1-fy-2026-financial-results-and-provides-awkjhq74zjnt.html"},
+  {"companySlug": "terrestrial-energy", "asOf": "2026-03-31", "amount": "$289.9M cash and investments", "source": "https://www.businesswire.com/news/home/20260514188075/en/Terrestrial-Energy-Reports-First-Quarter-2026-Results"},
+
+  {"companySlug": "oklo", "asOf": "2026-09-30", "amount": "$3,130.8M cash, equivalents and marketable debt securities; restricted cash excluded", "source": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026071319/oklo-20260930.htm"},
+  {"companySlug": "nuscale", "asOf": "2026-09-30", "amount": "$1.9B cash, equivalents, and short- and long-term investments", "source": "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-third-quarter-2026-results"},
+  {"companySlug": "x-energy", "asOf": "2026-09-30", "amount": "$1,805.5M total liquidity: cash and short- and long-term investments; no debt", "source": "https://investors.x-energy.com/news-releases/news-release-details/x-energy-reports-third-quarter-2026-results"},
+  {"companySlug": "nano-nuclear", "asOf": "2026-06-30", "amount": "$580.0M total liquidity: $298.5M cash and equivalents plus $281.5M short-term investments", "source": "https://ir.nanonuclearenergy.com/node/8816/html"},
+  {"companySlug": "terrestrial-energy", "asOf": "2026-09-30", "amount": "$276.3M cash, equivalents and short-term investments; no debt", "source": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-reports-third-quarter-2026-results"},
 ];
 
 export const proofEvents: ProofEvent[] = [
+  {"companySlug": "x-energy", "date": "2026-11-12", "kind": "Fuel milestone", "label": "Reported TX-1 fuel-facility shell completed in Q3 2026; interior buildout, equipment installation, and supporting facilities remain", "source": "https://investors.x-energy.com/news-releases/news-release-details/x-energy-reports-third-quarter-2026-results", "verification": "Company-reported"},
+  {"companySlug": "x-energy", "date": "2026-11-09", "kind": "Permit / authorization", "label": "NRC issued the Long Mott construction permit; a separate operating license is required before fuel loading or operation", "source": "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99", "verification": "Verified"},
+  {"companySlug": "gev-hitachi", "date": "2026-09-28", "kind": "Permit / authorization", "label": "NRC issued Clinch River Unit 1 construction permit CPAR-2", "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm", "verification": "Verified"},
+  {"companySlug": "radiant-industries", "date": "2026-10-29", "kind": "Permit / authorization", "label": "DOE approved the Kaleidos documented safety analysis; readiness review and startup authorization remain before nuclear operations", "source": "https://www.radiantnuclear.com/news/radiant-secure-doe-approval-for-full-power-operations", "verification": "Company-reported"},
+  {"companySlug": "radiant-industries", "date": "2026-11-19", "kind": "Test program", "label": "Kaleidos remains in DOE readiness review at DOME ahead of the planned full-power test campaign", "source": "https://radiantnuclear.com/news/radiant-expands-manufacturing", "verification": "Company-reported"},
+  {"companySlug": "last-energy", "date": "2026-10-07", "kind": "Permit / authorization", "label": "DOE approved the PWR-5 documented safety analysis; readiness review and startup authorization remain", "source": "https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis", "verification": "Company-reported"},
+  {"companySlug": "nuscale", "date": "2026-10-29", "kind": "Program selection / agreement", "label": "NuScale signed a Doosan agreement for fabrication of upper reactor coolant system components; no U.S. power-plant construction is established", "source": "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-third-quarter-2026-results", "verification": "Company-reported"},
+  {"companySlug": "terrestrial-energy", "date": "2026-11-10", "kind": "Program selection / agreement", "label": "Selected as advanced nuclear technology supplier for Ameresco at Aberdeen Proving Ground; no plant capacity or operating authorization established", "source": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-reports-third-quarter-2026-results", "verification": "Company-reported"},
+  {"companySlug": "antares-nuclear", "date": "2026-08-26", "kind": "Program selection / agreement", "label": "Antares selected for Army Janus vendor and installation pairing at Fort Bragg, North Carolina; payments depend on technical milestones", "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors", "verification": "Government-reported"},
+  {"companySlug": "bwxt", "date": "2026-08-26", "kind": "Program selection / agreement", "label": "BWXT selected for Army Janus vendor and installation pairing at Fort Campbell, Kentucky; payments depend on technical milestones", "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors", "verification": "Government-reported"},
+  {"companySlug": "westinghouse", "date": "2026-08-26", "kind": "Program selection / agreement", "label": "Westinghouse selected for Army Janus vendor and installation pairing at Fort Drum, New York; payments depend on technical milestones", "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors", "verification": "Government-reported"},
+  {"companySlug": "radiant-industries", "date": "2026-08-26", "kind": "Program selection / agreement", "label": "Radiant selected for Army Janus vendor and installation pairing at Fort Benning, Georgia; payments depend on technical milestones", "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors", "verification": "Government-reported"},
+
   { companySlug: "antares-nuclear", date: "2026-06-04", kind: "Criticality", label: "Mark-0 reached initial criticality at Idaho National Laboratory, the first of the DOE pilot cohort", powerNote: "Zero-power demonstrator. Contributes 0 MWe.", source: "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors", verification: "Government-reported" },
   { companySlug: "valar-atomics", date: "2026-06-18", kind: "Criticality", label: "Ward 250 reached fuelled criticality in Emery County, Utah, the only pilot reactor built outside a national laboratory", powerNote: "Ran at 100 kWt, a zero-power demonstration. Contributes 0 MWe.", source: "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality", verification: "Government-reported" },
   { companySlug: "deployable-energy", date: "2026-07-01", kind: "Criticality", label: "Unity reached initial criticality at the National Reactor Innovation Center, INL, about 150 days from kickoff", powerNote: "Demonstration reactor. Contributes 0 MWe.", source: "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor", verification: "Government-reported" },
@@ -1968,15 +1990,15 @@ export const proofEvents: ProofEvent[] = [
 export const statedTargets: StatedTarget[] = [
   { companySlug: "terrapower", target: "First Natrium plant completed in 2030", statedDate: "2026-03", source: "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit", conflict: "Coverage of the same permit frames the plant's NRC-told schedule as early 2031, a five to seven year slip from DOE's original target.", conflictSource: "https://thebreakthrough.org/press/release-the-nrc-issues-construction-permit-for-terrapowers-natrium-reactor" },
   { companySlug: "oklo", target: "First commercial Aurora-INL plant in late 2027 to early 2028", statedDate: "2025-03", source: "https://www.utilitydive.com/news/oklo-75-mw-reactor-design-smr-nuclear/743578/" },
-  { companySlug: "kairos-power", target: "Hermes 2 operating by December 2027", statedDate: "2026-04", source: "https://www.neimagazine.com/news/kairos-breaks-ground-on-hermes-2/" },
-  { companySlug: "x-energy", target: "TX-1 fuel facility complete mid-2026, operations from 2027 supplying Long Mott", statedDate: "2026-02", source: "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication" },
+  { companySlug: "kairos-power", target: "First six commercial 75 MWe reactors (450 MWe) delivered by 2035 under the Google agreement", statedDate: null, source: "https://www.kairospower.com/iterative-development" },
+  { companySlug: "x-energy", target: "February 2026 schedule: TX-1 complete mid-2026, operations from 2027 supplying Long Mott", statedDate: "2026-02", source: "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication" },
   { companySlug: "holtec", target: "Execute a power contract for PIONEER in 2026, NRC permit in 2028, interconnection in 2029", statedDate: null, source: "https://energy-communities-alliance.squarespace.com/s/Holtec-Slides.pdf" },
   { companySlug: "nuscale", target: "Management targets converting the TVA collaboration into a signed power contract by the end of 2026", statedDate: "2026-05", source: "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-first-quarter-2026-results" },
   { companySlug: "westinghouse", target: "Full-scale commercial eVinci deployment could begin as early as 2029, contingent on NRC licensing and HALEU supply", statedDate: null, source: "https://www.powermag.com/westinghouse-secures-first-customer-for-evinci-nuclear-microreactor/" },
   { companySlug: "westinghouse", target: "AP300 design certification around 2027, first-unit construction toward the end of the decade, with no U.S. site named", statedDate: null, source: "https://www.world-nuclear-news.org/Articles/Westinghouse-unveils-AP300-small-modular-reactor" },
   { companySlug: "terrestrial-energy", target: "Commercial IMSR plant at RELLIS in the early 2030s; no construction-start or first-power date disclosed", statedDate: "2026-06", source: "https://www.ans.org/news/2026-06-23/article-8139/terrestrial-energy-and-texas-am-reach-agreement-on-reactor-siting/" },
   { companySlug: "aalo-atomics", target: "Aalo-X built by the end of 2026 and a reactor paired with a data centre by July 2027", statedDate: null, source: "https://www.aalo.com/aalo-x" },
-  { companySlug: "radiant-industries", target: "Factory-scale manufacturing and first customer deliveries beginning 2028", statedDate: null, source: "https://www.esgtoday.com/clean-energy-startup-radiant-raises-165-million-to-replace-diesel-generators-with-portable-nuclear-reactors/" },
+  { companySlug: "radiant-industries", target: "Factory-scale manufacturing and first customer deliveries beginning 2028", statedDate: "2026-11-19", source: "https://radiantnuclear.com/news/radiant-expands-manufacturing" },
   { companySlug: "antares-nuclear", target: "Mark-1 producing electricity in 2027 and installation deployment by 2028", statedDate: "2026-07", source: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/" },
   { companySlug: "deep-fission", target: "First commercial underground reactor operating at Parsons, Kansas by 2027 or 2028", statedDate: null, source: "https://interestingengineering.com/energy/us-firm-deep-fission-6000-ft-well" },
   { companySlug: "nano-nuclear", target: "Potential KRONOS construction start in the second half of 2027, after an estimated 12-month NRC review clock", statedDate: "2026-05", source: "https://www.globenewswire.com/news-release/2026/05/20/3298411/0/en/NANO-Nuclear-s-KRONOS-MMR-and-the-University-of-Illinois-Urbana-Champaign-Advance-to-Next-Regulatory-Milestone-as-U-S-NRC-Formally-Accepts-Construction-Permit-Application-for-Revie.html" },
@@ -1994,7 +2016,10 @@ export const gigawattMWe = 1000;
 export const raceScaleMWe = 1200;
 
 /** One date for the whole dataset. Every "as of" on the site derives from it. */
-export const dataAsOf = "2026-08-06";
+export const dataAsOf = "2026-11-19";
+
+/** Review date is separate from the latest underlying event date. */
+export const reviewedAsOf = "2026-11-21";
 
 export type RaceBandCell = { band: CapacityBand; label: string; mwe: number; claims: CapacityClaim[] };
 
@@ -2109,7 +2134,7 @@ export function headlineTotals(claims: CapacityClaim[] = capacityClaims) {
   return {
     operationalMWe: sum(["operational"]),
     buildingMWe: sum(["construction", "doe-authorized"]),
-    executedMWe: sum(["operational", "construction", "doe-authorized", "review", "contracted"]),
+    executedMWe: sum(["operational", "construction", "doe-authorized", "permitted", "review", "contracted"]),
     announcedMWe: sum(["framework"]),
   };
 }
@@ -2202,7 +2227,7 @@ export function dossierFor(companySlug: string) {
       ...frame,
       events: byDateDescending(fundingEvents.filter((event) => event.companySlug === companySlug && frame.kinds.includes(event.kind))),
     })),
-    cash: cashPositions.filter((position) => position.companySlug === companySlug),
+    cash: cashPositions.filter((position) => position.companySlug === companySlug).sort((a, b) => b.asOf.localeCompare(a.asOf)),
     proof: proofLanes.map((lane) => ({
       ...lane,
       events: byDateDescending(proofEvents.filter((event) => event.companySlug === companySlug && lane.kinds.includes(event.kind))),

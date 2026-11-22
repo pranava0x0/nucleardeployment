@@ -10,3 +10,6 @@
 | 2026-08-05 | Gigawatt race implementation, 13 review rounds, data tooling, merge and deploy | **None. Zero subagents, zero workflows.** | Yes | All five spec phases shipped; 22 defects found in review and fixed; 39 tests | ~0 delegated | Correct call. Every question was about files this repo controls (grep, read, run the tests) or about the site's own rendered output. The only external work was ~14 targeted web searches and fetches to find primary sources, each answering a named question about a named company. A fan-out would have returned summaries nobody could cross-check against the dataset, which is exactly what citation work cannot tolerate. |
 
 Future subagent or workflow runs append one row. Web searches belong in `data/research/search-history.jsonl`.
+
+| 2026-11-21 | Refresh data correctness review | Independent Codex subagent | Yes | No actionable findings; capacity frames and cash history checked against cached evidence | Not measured | Bounded independent diff review was appropriate; bulk snapshots excluded |
+| 2026-11-21 | Refresh controls/error-handling review | Independent Codex subagent | Yes | Found dark-surface focus contrast regression; confirmed the fix in a bounded follow-up | Not measured | Independent static review complemented direct browser UAT; no UI agent used |

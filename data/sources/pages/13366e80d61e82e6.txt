@@ -1,4 +1,5 @@
 NANO Nuclear Q1 2026 results; cash $577M after raise | NNE Stock News
+Skip to content
 STOCK TITAN
 Login
 Sign up
@@ -6,23 +7,26 @@ Login
 Sign up
 0
 NEWS FEED
-Stock News Live
-Stock News Today
+Live News Feed
+Today's News
 Trending News
-AI news
+Topics
+Earnings
+AI News
 FDA Approvals
 Clinical Trials
 Crypto News
-Merger & Acquisitions
-Earnings
+Mergers & Acquisitions
 Offerings
 IPO News
 Stock Splits
-Top News - Gainers
-Top News - Losers
+Monthly Top News
+Top Gainers
+Top Losers
 SEC FILINGS
-SEC Filings Live
-SEC Filings Today
+Live Filings Feed
+Today's Filings
+Form Types
 Form 4 - Insider Trading
 8-K - Material Events
 10-K - Annual Reports
@@ -31,30 +35,37 @@ DEF 14A - Proxy Statements
 S-1 - IPO Registration
 S-3 - Shelf Registration
 STOCKS
+Themes
 All Stock Themes
 AI Stocks
 Crypto Stocks
 Oil & Gas
 Defense & Military
 Space & Satellite
-Financials
+Market
+Financial Rankings
 Stock Market Heatmap
 Sector Performance
 Theme Performance
+Rankings
 All Stock Rankings
 Stock Movers Today
 Largest Companies by Market Cap
 Highest Dividend Yields
 Best Performing Stocks - 52 Week
 Best Performing Stocks - 2026
-Best Performing Stocks - August 2026
+Best Performing Stocks - November 2026
 Short Interest Increases
 Short Interest Decreases
 TOOLS
+Tools
 Dashboard Platinum
 Argus Momentum Scanner
 Trading Halt Tracker
-News Keywords Impact Gold
+Stock News Keyword Finder Gold
+Watchlist Silver
+Calculators
+All Calculators
 Investment Growth Calculator
 Average Stock Price Calculator
 Profit & Loss Calculator
@@ -67,9 +78,9 @@ Position Size Calculator
 Stock Return Calculator
 Covered Call Calculator
 Cash-Secured Put Calculator
-View All 18 Tools →
 ARTICLES
 Latest Articles
+News
 Educational
 Guides
 Analysis
@@ -81,49 +92,33 @@ News
 NNE
 NANO Nuclear Reports Q1 FY 2026 Financial Results and Provides Business Update
 Trending News
-RDW
-Redwire’s SpaceMD Announces its First Commercial Mission on Space...
-MGRX
-Mangoceuticals’ Merger Partner, Nuclea Energy Inc., Signs MOU wit...
-ENSC
-Ensysce Biosciences Announces Acquisition of Cy Biopharma and up ...
-OKLO
-Oklo's Groves Reactor Achieves First Criticality in Under a Year
-CELZ
-Creative Medical Technology Holdings, Inc. Receives Notice of All...
-ASTS
-AST SpaceMobile Accelerates Presence Across Europe with Leading M...
-RDW
-Redwire’s SpaceMD Announces its First Commercial Mission on Space...
-MGRX
-Mangoceuticals’ Merger Partner, Nuclea Energy Inc., Signs MOU wit...
-ENSC
-Ensysce Biosciences Announces Acquisition of Cy Biopharma and up ...
-OKLO
-Oklo's Groves Reactor Achieves First Criticality in Under a Year
-CELZ
-Creative Medical Technology Holdings, Inc. Receives Notice of All...
-ASTS
-AST SpaceMobile Accelerates Presence Across Europe with Leading M...
+SRXH
+SRX Global Provides Update on Engineered T-Cell Strategy Following Pfizer–Starna Licensing Agreement
+NEGG
+GIGABYTE Partners with Newegg to Host "AORUS VS40" Esports Event for GIGABYTE's 40th Anniversary
+CAPR
+Capricor Therapeutics Provides Regulatory Update on Deramiocel BLA for Duchenne Muscular Dystrophy
+FND
+Floor & Decor Opens New Store in Fort Worth, Texas
+ZS
+Zscaler Partners with Frontier Model Providers to Help Enterprises Safely Embrace AI and Stop AI-Driven Attacks
+ALP
+Alpha Compute Completes Asset Acquisitions for Alpha Energy 02 Campus in Western Pennsylvania, Securing 430MW of Natural Gas Power
 Overview
 Financials
 News
 SEC Filings
 NANO Nuclear Reports Q1 FY 2026 Financial Results and Provides Business Update
 Rhea-AI Impact
-(High)
+(Moderate)
 Rhea-AI Sentiment
-(Positive)
+(Positive) How Sentiment works
+Sentiment and the balance of points
+Rhea-AI Sentiment reads the wording of the document, how positive or negative its language is on a 1 to 5 scale. The balance of points shown with the takes weighs what the document actually discloses, so the two can disagree, for example when a trial that missed its main goal is described in upbeat language.
+How Sentiment works How the balance works
 Tags
 earnings
 Rhea-AI Summary
-English
-Arabic
-French
-German
-Italian
-Korean
-Spanish
 NANO Nuclear (NASDAQ: NNE) reported Q1 FY2026 results and a business update on Feb 17, 2026. Key facts: $577.5M cash and cash equivalents at Dec 31, 2025; completed an oversubscribed $400M private placement (net proceeds ~ $379M ); operating cash used $4.0M ; investing cash used $3.1M .
 Progress includes advancing the KRONOS MMR toward U.S. and Canadian licensing, a U. of I. prototype MOU, a $6.8M REV Illinois incentive, supply‑chain and fuel partnerships, and target submission of a U.S. construction permit with prototype aiming mid‑to‑late 2027.
 Loading...
@@ -136,28 +131,22 @@ Targeting U.S. construction permit submission to begin prototype by mid‑to‑l
 Negative
 Operating activities used $4.0M in Q1 FY2026 reflecting increased R&D and operations
 Investing activities used $3.1M including payments for new Oak Brook engineering facility
+Argus
+Feb 18 session
+-0.63%
+close to close
+0.9x
+rel. volume
+Open Argus
+Details
 News Market Reaction &ndash; NNE
--0.63%
-2 alerts
--0.63%
-Session close to close
-$1.34B
-Market Cap
-0.0x
-Rel. Volume
-In the Feb 18 session, NNE declined 0.63% , reflecting a mild negative market reaction.
-Our momentum scanner triggered 2 alerts that day, indicating moderate trading interest and price volatility.
-Data tracked by StockTitan Argus on the day of publication.
-Market Context
-This announcement details NANO Nuclear’s Q1 FY 2026 results, highlighting a cash position of $577.5M...
-Analysis
-This announcement details NANO Nuclear’s Q1 FY 2026 results, highlighting a cash position of $577.5M , increased operating spending to advance KRONOS and fuel initiatives, and progress toward U.S. and Canadian licensing plus new commercial MOUs. Historically, earnings updates have produced modest average price moves of about -0.12% . Investors may focus on how the large cash balance, significant $900,000,000 shelf capacity, and ongoing insider activity balance against long-dated deployment timelines and rising development expenses.
+On Feb 18, the first trading day after this news, NNE closed 0.63% below the previous close.
+Data tracked by StockTitan Argus for the Feb 18 session.
 Key Figures
 Cash & equivalents: $577.5M
 Prior cash: $203.3M
 Net loss: $6.5M
 +5 more
-8 metrics
 Cash & equivalents
 $577.5M
 As of December 31, 2025
@@ -183,40 +172,30 @@ Shelf registration size
 $900,000,000
 Amended S-3/A shelf capacity
 Previous Earnings Reports
-4 past events · Latest: Dec 18 (Positive)
+4 past events · Latest: Dec 18
 Same Type
-Pattern
 4 events
-Date
-Event
-Sentiment
-24h Move
-Catalyst
 Dec 18
 Full-year results
-Positive
+24h Move
 +0.8%
 Fiscal 2025 results with major cash build and KRONOS licensing progress.
 Aug 14
 Quarterly results
-Positive
+24h Move
 +2.0%
 Q3 2025 update showing strong financing, higher cash, and KRONOS advances.
 May 16
 Quarterly results
-Positive
+24h Move
 +4.5%
 Q2 2025 results with KRONOS/LOKI acquisition and major capital raise.
 Dec 30
 Full-year results
-Positive
+24h Move
 -7.8%
 FY 2024 results with substantial capital raised and index inclusion.
 24h Move is the share-price change in the day after each event; other market factors may also have contributed.
-Pattern Detected
-Earnings and business updates have historically produced relatively small average moves ( -0.12% ), with mostly positive reactions but one notable negative selloff.
-Recent Company History
-Over the last several quarters, NANO Nuclear’s earnings and business updates have consistently highlighted progress on its KRONOS and other microreactor programs while scaling its balance sheet. Prior releases reported cash building from $120M+ in 2024 to $210.2M in Q3 2025 and about $580M after the October 2025 private placement, alongside significant operating and investing cash use. Today’s Q1 FY 2026 update extends that trajectory, emphasizing a strengthened cash position, active licensing work, and expanding commercial and strategic pipelines.
 Key Terms
 microreactor, high-temperature gas-cooled reactor, construction permit application, pre-licensing process, +4 more
 8 terms
@@ -257,7 +236,7 @@ See more from StockTitan in Google Search and AI answers.
 Adds StockTitan as a preferred source &middot; opens Google
 Add on Google
 Not now
-02/17/2026 - 04:30 PM
+02/17/2026 - 04:30 PM EST
 Management to hold webcast today at 5:00 pm Eastern
 New York, N.Y., Feb. 17, 2026 (GLOBE NEWSWIRE) -- NANO Nuclear Energy Inc. (NASDAQ: NNE ) (“NANO Nuclear” or “the Company”) , a leading advanced nuclear micro modular reactor and technology company focused on developing clean energy solutions, today reported its first quarter fiscal year 2026 financial results and provided a business update.
 Figure 1 - NANO Nuclear Reports Q1 FY 2026 Financial Results and Provides Business Update
@@ -329,6 +308,7 @@ This news release, the webcast described herein and statements of NANO Nuclear�
 Attachment
 NANO Nuclear Energy Inc
 FAQ
+AI-generated questions and answers. How Rhea-AI works . Not financial advice.
 What cash position did NANO Nuclear (NNE) report for Q1 FY2026?
 NANO Nuclear reported $577.5 million in cash and cash equivalents at Dec 31, 2025. According to the company, this increase followed an October 2025 private placement that provided net proceeds of approximately $379 million .
 When does NANO Nuclear (NNE) plan to submit a U.S. construction permit for KRONOS MMR?
@@ -343,98 +323,102 @@ Nano Nuclear Energy Inc.
 NASDAQ: NNE
 View NNE Stock Overview &rarr;
 NNE Rankings
-#3007 Ranked by Market Cap
-N/A Ranked by Dividends
-#3249 52-Week Gainer
-#3472 YTD Gainer
-#1393 Monthly Gainer
-#620 Ranked by Short %Change
+#3023 Ranked by Market Cap
+#3886 52-Week Gainer
+#4068 YTD Gainer
+#3706 Monthly Gainer
+#2561 Ranked by Short %Change
+#519 Top Gainer
 NNE Latest News
-Aug 5, 2026
-NANO Nuclear to Hold Third Quarter Business Update Webcast on August 12, 2026
-Jul 27, 2026
-NANO Nuclear Energy Selected by AFWERX for SBIR Phase I Award to Advance KRONOS MMR™ for the U.S. Air Force
-Jul 22, 2026
-NANO Nuclear and Fortil Advance Engineering Collaboration for the KRONOS MMR™ Fuel Handling & Storage System
-Jul 17, 2026
-NANO Nuclear Energy Joins Virginia Nuclear Energy Consortium to Advance Nuclear Innovation and Support the Commonwealth’s Growing Energy Requirements
-Jun 25, 2026
-NANO Nuclear's KRONOS MMR(TM) Program Advances as U.S. NRC Initiates Formal Review Activities with University of Illinois Urbana-Champaign and NANO Nuclear Energy
+Nov 19, 2026
+NANO Nuclear Energy and SJ Group Establish Collaboration to Advance Knowledge Exchange and Capability Building in Advanced Nuclear Energy across Southeast Asia
+Nov 11, 2026
+NANO Nuclear to Hold Fourth Quarter Business Update Webcast on November 30, 2026
+Oct 29, 2026
+NANO Nuclear Subsidiary Secured Transportation Services (STS) Supports Successful NNSA/Y-12 Cesium-137 Removal Mission in Brazil
+Oct 27, 2026
+NANO Nuclear Energy and Hyundai Engineering Sign Memorandum of Understanding to Advance KRONOS MMR™ Project Execution and Future Fleet Deployment
+Oct 21, 2026
+NANO Nuclear Energy and IMPSA Sign Master Services Agreement to Advance Engineering and Fabrication of Critical KRONOS MMR™ Components
 NNE Latest SEC Filings
-Jul 29, 2026
-[SCHEDULE 13G/A] Nano Nuclear Energy Inc. Amended Passive Investment Disclosure
-Jul 27, 2026
-[DEF 14A] Nano Nuclear Energy Inc. Definitive Proxy Statement
-Jun 25, 2026
-[8-K] Nano Nuclear Energy Inc. Reports Material Event
-Jun 24, 2026
-[8-K] Nano Nuclear Energy Inc. Reports Material Event
-Jun 5, 2026
+Nov 17, 2026
+[Form 4] Nano Nuclear Energy Inc. Insider Trading Activity
+Nov 17, 2026
+[Form 4] Nano Nuclear Energy Inc. Insider Trading Activity
+Nov 17, 2026
+[Form 4] Nano Nuclear Energy Inc. Insider Trading Activity
+Nov 17, 2026
+[Form 4] Nano Nuclear Energy Inc. Insider Trading Activity
+Nov 17, 2026
 [Form 4] Nano Nuclear Energy Inc. Insider Trading Activity
 NNE Stock Data
 Market Cap
-975.70M
+488.65M at $9.10 close
 Float
-44.29M
+44.22M
 Industry
 Specialty Industrial Machinery
 Sector
-Electric Services
+Industrials
 Website
 Link
 Country
 United States
 City
 NEW YORK
-Related Articles
-Continue reading with these related stories
-$CELZ
+Keep reading
+More on NNE
+Nov 19, 2026
+NANO Nuclear Energy and SJ Group Establish Collaboration to Advance Knowledge Exchange and Capability Building in Advanced Nuclear Energy across Southeast Asia
+Nov 11, 2026
+NANO Nuclear to Hold Fourth Quarter Business Update Webcast on November 30, 2026
+Oct 29, 2026
+NANO Nuclear Subsidiary Secured Transportation Services (STS) Supports Successful NNSA/Y-12 Cesium-137 Removal Mission in Brazil
+All NNE news
+Trending in the feed
+SRXH
+SRX Global Provides Update on Engineered T-Cell Strategy Following Pfizer–Starna Licensing Agreement
+Open the live feed
+Related articles
+View all latest news
+MRM
 Top Gainer
-Creative Medical Technology Holdings, Inc. Receives Notice of Allowance for New U.S. Patent Covering Exosome-Based Immunotherapy for Type 1 Diabetes, Deepening IP Protection Across Its MyeloCelz™, CELZ-101 and CELZ-201 Diabetes Platforms
-Aug 6, 2026
-+101.84%
-$YXT
++75.61%
+MEDIROM Regains Compliance with Nasdaq’s Periodic Filing Requirement
+Nov 20, 2026
+CAPR
 Top Loser
-YXT.COM GROUP HOLDING Ltd Announces Pricing of $1.05 Million Registered Direct Offering
-Aug 6, 2026
--65.40%
+-78.52%
+Capricor Therapeutics Provides Regulatory Update on Deramiocel BLA for Duchenne Muscular Dystrophy
+Nov 20, 2026
+NNE
+Same Company
+NANO Nuclear Energy and SJ Group Establish Collaboration to Advance Knowledge Exchange and Capability Building in Advanced Nuclear Energy across Southeast Asia
+Nov 19, 2026
+NNE
+Same Company
+NANO Nuclear to Hold Fourth Quarter Business Update Webcast on November 30, 2026
+Nov 11, 2026
+IMITF
+Ironman Announces Amendment to Convertible Debentures
+Nov 20, 2026
+MNTS
+Momentus Grants Inducement Awards to New Employees
+Nov 20, 2026
+BE
+Bloom Energy Supports Lincoln Fire & Rescue Ahead of Ohio State-Nebraska Matchup
+Nov 20, 2026
+ELOG
+Eastern International Ltd. Announces Closing of Approximately $4.5 Million Public Offering
+Nov 20, 2026
 offering
-$NNE
-Same Company
-NANO Nuclear to Hold Third Quarter Business Update Webcast on August 12, 2026
-Aug 5, 2026
-$NNE
-Same Company
-NANO Nuclear Energy Selected by AFWERX for SBIR Phase I Award to Advance KRONOS MMR™ for the U.S. Air Force
-Jul 27, 2026
-clinical trial
-$NREDF
-Related
-NovaRed Mining Interprets Multiple Porphyry Copper-Gold Targets Above Large Interpreted Batholith at Wilmac
-Aug 6, 2026
-$MYCOF
-Related
-Noveris Health Sciences Inc. Unaware of Any Material Change
-Aug 6, 2026
-$AWK
-Related
-Illinois American Water Recognizes Parent Company American Water's 140 Years of Providing Safe and Reliable Water and Wastewater Services to Customers and Communities in 2026
-Aug 6, 2026
-$NMRK
-Related
-Newmark Arranges $718.5 Million SASB Recapitalization of 13-Property Multifamily Portfolio for Keller Investment Properties
-Aug 6, 2026
-$AGRIP
-Related
-AgriBank Reports Second Quarter 2026 Financial Results
-Aug 6, 2026
-earnings
-$TSEOF,TSEOQ
-Related
-Trinseo Reports Second Quarter 2026 Financial Results
-Aug 6, 2026
-earnings
-View All Latest News
+CHUC
+Charlie’s Holdings (OTCQB: CHUC) Reports Growth of 19% to $11.3 Million Revenue for First Nine Months 2026
+Nov 20, 2026
+SUNE
+SUNation Energy Announces Third Quarter 2026 Results; Reports Sequential Revenue and Gross Margin Improvement and Provides Suniva Merger Update
+Nov 20, 2026
+acquisition
 Explore
 About
 Contact
@@ -448,8 +432,9 @@ Cookie Notice
 Privacy Policy
 Market Data
 Articles
-Top Gainers
+52-Week Gainers
 Market Cap
+Monthly News Movers
 Momentum Scanner
 Stock Themes
 Live News
