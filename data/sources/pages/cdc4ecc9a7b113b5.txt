@@ -1,0 +1,36 @@
+Ward 250 By the Numbers | Valar Atomics
+Technology Ward 250 Castle Country Mission Docs Join our Team
+Back to Library
+Ward 250 By the Numbers
+One small step for nuclear. One giant leap for nuclear startups.
+Isaiah Taylor
+June 28, 2026
+Engineering
+Back to Library
+It's been two weeks since Ward 250 went critical for the first time. Here's an update of what the team has learned so far!
+What is Ward250?
+Ward 250 is a modular high temperature gas-cooled reactor (HTGR), fueled by TRISO and cooled by pressurized helium. It is a test reactor meant to validate Valar Atomics' engineering methods, design assumptions, and execution capabilities. The reactor is licensed for 30 Effective Full Power Days at 100kWt and up to one day at 250kWt.
+The entire reactor system is a series of six ISO 668 compliant high cube shipping containers: the reactor module containing the RPV, the heat transport system (main helium circuit), helium services system (helium inventory, pressure equipment, and purification), the reactor control module (instrumentation and control cabinets), and two containers joined together which make up the control room. All 6 of these units flew to Utah on three C-17s in Operation Windlord, including 2 standard shipping containers containing the core graphite, piping spools, etc.
+Ward 250’s build time and design parameters flow from our philosophy as a company: nuclear’s next great problem is solving for speed and scale, and that fundamentally needs new engineering. The best way to do new engineering is to build and iterate quickly. But nuclear reactors are complex and have significant hazards to human safety; so how do you move quickly in that environment? You take small steps, and you take them with lots and lots of hardware testing.
+Before Ward 250 ever arrived on our site in Utah, it underwent extremely rigorous non-nuclear testing at our headquarters in Hawthorne, CA. The system experienced temps above 750c and pressures over 6MPa. It experienced thermal cycling. We took it through all the major transients we expected it to experience in nuclear; but much more extreme. This testing campaign is what gave us confidence to move quickly toward nuclear power operations. And we did move quickly: we broke ground on this test site in September of last year and made power on July XX; only 9 months. Even more impressive is the fact that the company is still not yet 3 years old.
+Ward 250 had two purposes: first, it validated a set of design assumptions that we have about how to build nuclear reactors at scale. but the second reason is more important: it taught Valar Atomics how to become a nuclear operations company.
+As of today, Valar Atomics is a company which has been entrusted by the Department of Energy to operate a nuclear reactor that we designed from paper and built. We are capable and authorized to operate that reactor on our own (we have now graduated from the Joint Test Group) and outside the national laboratories. This aspect
+So, it’s been 14 days since we first went critical. How are we doing? Valar Atomics is an engineering-first company. We do not (yet) have anyone in the company who does marketing. We finally, as of a few months ago, have finance and accounting. Government affairs and business development are rolled into three people. All of these
+Being an engineering-first company means that we care most about the results. We care little for market fluctuations, stock prices, [xxx]. Our goal is to make the cheapest energy on earth; in fact, to make energy 10x cheaper than it is now, and then to keep doing that over and over again.
+We have two very deeply held beliefs:
+1. The path to making energy 10x cheaper is by scaling the production of extremely simple, extremely safe nuclear reactors.
+2. The bottleneck on belief 1. is engineering and execution in hardware.
+These beliefs have led us to being a very open and transparent company. Our reactor has been more photographed, video’d, podcasted, than any other nuclear reactor in history by a wide margin. This is because we want people to see that hardware execution is our focus. There are many things that people consider in a company. Marketing, publicity, customer backlog, amount of money raised, headcount, government funding, partnerships announced, and others. While each of these things have their place and are each important in their own way, Valar Atomics believes that one thing utterly dominates the rest in importance: pace of execution in hardware. It’s not that we don’t care about those other things, it’s that if we do well on pace of execution in hardware, all those other things will find their way to us naturally.
+That’s why, instead of having a marketing department, I asked my friend Darren to follow us around and point a camera at our engineers whenever they’re doing something cool (which is often). As a month ago, we finally have a Talent Acquisition team; but before that, our Talent process was just existing team members texting the most talented people they know about the hardest problems they were facing in hardware.
+That is why I am sharing this update today. The data we’re sharing today is raw and uncleaned; so please let us know what errors you find. Over the next few weeks, we will use both internal and external peer review processes to refine the data and preliminary analysis that you see here. This process will certainly find anomalies in the data and mistakes in the analysis. But as a company that cares most about engineering and execution, we don’t want to wait.
+Back to Library
+Build with us
+Proudly built in America
+© 2025 Valar Atomics
+Join the Team
+Use our energy
+Contact us
+Technology Mission Docs
+Press
+All Rights Reserved
+Proudly built in America

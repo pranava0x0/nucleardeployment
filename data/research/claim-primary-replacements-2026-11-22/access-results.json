@@ -1,0 +1,36 @@
+[
+  {
+    "url": "https://news.ontario.ca/en/RELEASE/1005889/ONTARIO",
+    "name": "ontario-2025",
+    "status": 200,
+    "bytes": 1505,
+    "text_chars": 128
+  },
+  {
+    "url": "https://www.opg.com/news-resources/newsroom/release/opg-reports-2025-first-quarter-financial-results/",
+    "name": "opg-q1-2025",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/",
+    "name": "opg-darlington-current",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.af.mil/News/Article-Display/Article/4465439/daf-announces-next-steps-in-advanced-nuclear-power-for-installations-initiative/",
+    "name": "daf-anpi-af-2026",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.spaceforce.mil/News/Article-Display/Article/4465446/daf-announces-next-steps-in-advanced-nuclear-power-for-installations-initiative/",
+    "name": "daf-anpi-spaceforce-2026",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.linkedin.com/posts/antares-industries_after-6-months-in-huntsville-ourelectrically-heated-activity-7396980168080154624-i2CV",
+    "name": "antares-edu-company-post",
+    "status": 200,
+    "bytes": 408973,
+    "text_chars": 22164
+  }
+]

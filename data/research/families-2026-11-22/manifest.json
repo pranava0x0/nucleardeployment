@@ -1,0 +1,106 @@
+{
+  "captured_at": "2026-11-22",
+  "sources": [
+    {
+      "url": "https://www.gen-4.org/generation-iv-criteria-and-technologies",
+      "title": "Generation IV Goals, Technologies and GIF R&D Roadmap",
+      "publisher": "Generation IV International Forum",
+      "published_at": null,
+      "snapshot_path": "data/research/families-2026-11-22/gif-overview.txt"
+    },
+    {
+      "url": "https://www.gen-4.org/generation-iv-criteria-and-technologies/gas-cooled-fast-reactor-gfr",
+      "title": "Gas-Cooled Fast Reactor",
+      "publisher": "Generation IV International Forum",
+      "published_at": null,
+      "snapshot_path": "data/research/families-2026-11-22/gif-gfr.txt"
+    },
+    {
+      "url": "https://www.gen-4.org/sites/default/files/2024-08/2022%20Status%20of%20LFR%20activities%20in%20Gen%20IV%20countries%20and%20entities%20GIF%20Industry%20Forum.pdf",
+      "title": "Status of Lead-cooled Fast Reactor activities in GEN-IV Countries/Entities",
+      "publisher": "Generation IV International Forum",
+      "published_at": "2022-10",
+      "snapshot_path": "data/research/families-2026-11-22/gif-lfr-2022.txt"
+    },
+    {
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+      "title": "Nuclear Power Reactors in the World, 2025 Edition",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2025-08",
+      "snapshot_path": "data/research/families-2026-11-22/iaea-rds2-2025.txt",
+      "observation_date": "2024-12-31",
+      "capture_method": "PyMuPDF extraction; table 23 on PDF page79 visually checked"
+    },
+    {
+      "url": "https://www.energy.gov/ne/articles/westinghouse-evinci-microreactor-achieves-criticality-milestone",
+      "title": "Westinghouse eVinci Microreactor Achieves Criticality Milestone",
+      "publisher": "U.S. Department of Energy",
+      "published_at": "2026-09-16",
+      "snapshot_path": "data/research/families-2026-11-22/doe-evinci-2026.txt"
+    },
+    {
+      "url": "https://info.westinghousenuclear.com/news/westinghouse-evinci-microreactor-achieves-zero-power-high-temperature-criticality",
+      "title": "Westinghouse eVinci Microreactor Achieves Zero-Power High-Temperature Criticality",
+      "publisher": "Westinghouse Electric Company",
+      "published_at": "2026-09-15",
+      "snapshot_path": "data/research/families-2026-11-22/westinghouse-evinci-2026.txt"
+    },
+    {
+      "url": "https://www.inet.tsinghua.edu.cn/ineten/info/1024/1698.htm",
+      "title": "Chinese HTR-PM Demo begins commercial operation",
+      "publisher": "Tsinghua University Institute of Nuclear and New Energy Technology",
+      "published_at": "2023-12-07",
+      "snapshot_path": "data/research/families-2026-11-22/tsinghua-htrpm-2023.txt"
+    },
+    {
+      "url": "https://www.wrpc.gov.in/allfile/Share_Allocation_KAPP_29.06.2023.pdf",
+      "title": "Commercial operation and allocation for Kakrapar Atomic Power Station Unit 3",
+      "publisher": "Government of India Western Regional Power Committee",
+      "published_at": "2023-06-29",
+      "snapshot_path": "data/research/families-2026-11-22/wrpc-kakrapar-2023.txt",
+      "capture_method": "PDF text extraction plus page-1 visual transcription; source original saved in gitignored work/reports"
+    },
+    {
+      "url": "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos",
+      "title": "Hermes 2 – Kairos Application | Nuclear Regulatory Commission",
+      "publisher": "U.S. Nuclear Regulatory Commission",
+      "published_at": null,
+      "snapshot_path": "data/research/families-2026-11-22/nrc-hermes2.txt",
+      "snapshot_captured_at": "2026-11-21T22:19:08.625Z"
+    },
+    {
+      "url": "https://www.energy.gov/ne/articles/idaho-national-lab-creates-first-batch-fuel-worlds-first-fast-spectrum-molten-salt",
+      "title": "Idaho National Lab Creates First Batch of Fuel for World’s First Fast Spectrum Molten Salt Reactor Experiment | Department of Energy",
+      "publisher": "U.S. Department of Energy",
+      "published_at": "2025-12-03",
+      "snapshot_path": "data/research/families-2026-11-22/doe-mcre-fuel.txt",
+      "snapshot_captured_at": "2026-11-21T22:19:27.370Z"
+    },
+    {
+      "url": "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+      "title": "Introduction of Innovative Nuclear Reactors and GEN-IV Concepts",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2026-02-16",
+      "snapshot_path": "data/research/families-2026-11-22/iaea-classification-2026.txt"
+    },
+    {
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS446_web.pdf",
+      "title": "Decommissioning of Research Reactors: Evolution, State of the Art, Open Issues",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2006-05",
+      "snapshot_path": "data/research/families-2026-11-22/iaea-trs446.txt",
+      "use": "Historical classification only; its reactor counts are not current."
+    },
+    {
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf",
+      "title": "Research Reactor Exercises for Higher Education Programmes: Compendium (IAEA-TECDOC-2024)",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2023-05",
+      "snapshot_path": "data/research/families-2026-11-22/iaea-tecdoc2024.txt",
+      "use": "Research-configuration definitions and neutron-physics distinctions; no current fleet totals inferred."
+    }
+  ],
+  "gaps": [
+    "https://www.nrc.gov/regulations-legislation/fact-sheets-brochures/backgrounder-on-research-and-test-reactors: HTTP Error 403: Forbidden"
+  ]
+}

@@ -8,12 +8,14 @@ import { absoluteFileUrl, absoluteUrl, authorUrl, canonicalUrl, repoUrl, sitePat
 
 export const metadata: Metadata = {
   description:
-    "Which U.S. nuclear companies have generated a megawatt, which are building, and which have only announced. Every figure links to the document behind it.",
+    "U.S. nuclear fleet statistics, worldwide fission reactor families, and evidence of new reactor deployment. Every figure carries a dated source.",
   alternates: {
     canonical: canonicalUrl("/"),
     types: { "application/rss+xml": sitePath("/feed.xml") },
   },
 };
+
+import { nationalBaseline } from "./fission-data";
 
 const mwe = (value: number) => value.toLocaleString("en-US");
 
@@ -65,8 +67,8 @@ export default function Home() {
       <section className="masthead grid-bg">
         <div className="brief-heading">
           <h1>The state of<br />American nuclear.</h1>
-          <p className="dek">{raceEntrants.length} companies racing to put a gigawatt on the U.S. grid. Track their permits, projects, capital, and customers.</p>
-          <p className="hero-meta">Tracked U.S. sample · {projects.length} sourced projects · Reviewed {reviewedAsOf}</p>
+          <p className="dek">Fleet statistics, reactor families, and the evidence behind new U.S. projects. Track permits, construction, capital, and customers.</p>
+          <p className="hero-meta">U.S. fleet baseline + selected advanced-reactor sample · {projects.length} sourced projects · Reviewed {reviewedAsOf}</p>
         </div>
         <aside className="brief-note" aria-label="Current deployment brief">
           <span className="brief-date">Source update · {dataAsOf}</span>
@@ -76,12 +78,23 @@ export default function Home() {
         </aside>
       </section>
 
-      <section className="stat-strip" aria-label="Headline megawatt totals">
-        <p className="strip-zero"><b>{mwe(totals.operationalMWe)} MWe operational across all {raceEntrants.length} entrants.</b> Capacity frames overlap. Read each on its own.</p>
+      <section className="stat-strip" aria-label="U.S. national fleet statistics">
+        <p className="strip-zero"><b>U.S. commercial fleet · {nationalBaseline.year} observations.</b> EIA Monthly Energy Review, published October 2026. Year-end stocks and annual generation use separate frames.</p>
+        <div className="strip-tiles national-stats">
+          <div><b>{nationalBaseline.units.value}</b><span>Operable reactor units</span><small>Year-end licensed-unit stock; includes outages</small></div>
+          <div><b>{nationalBaseline.capacity.value / 1000}</b><span>GW net summer capacity</span><small>Year-end licensed-unit capacity</small></div>
+          <div><b>{nationalBaseline.generation.value}</b><span>TWh net generation</span><small>Calendar-year electricity output</small></div>
+          <div><b>{nationalBaseline.share.value}%</b><span>Of U.S. electricity generation</span><small>Calendar-year nuclear share</small></div>
+        </div>
+        <p className="strip-note"><a href={nationalBaseline.generation.source_url} target="_blank" rel="noreferrer">EIA source ↗</a> · <Link href="/fission#fleet">Five-year series, definitions, and reactor families →</Link></p>
+      </section>
+
+      <section className="stat-strip sample-stats" aria-label="Selected advanced-reactor sample totals">
+        <p className="strip-zero"><b>Selected advanced-reactor sample · {raceEntrants.length} entrants.</b> These totals describe new designs, separately from the existing national fleet. Capacity frames overlap; read each on its own.</p>
         <div className="strip-tiles">
           <div><b>{mwe(totals.operationalMWe)}</b><span>MWe operational</span><small>Grid-connected commercial power</small></div>
           <div><b>{mwe(totals.buildingMWe)}</b><span>MWe being built</span><small>NRC-permitted or DOE-authorized, work documented</small></div>
-          <div><b>{mwe(totals.executedMWe)}</b><span>MWe on executed actions</span><small>Includes permits, applications, and funded contracts</small></div>
+          <div><b>{mwe(totals.executedMWe)}</b><span>MWe on documented actions</span><small>Permits, applications, funded development and contracts; not all firm plant orders</small></div>
           <div><b>{mwe(totals.announcedMWe)}</b><span>MWe announced, non-binding</span><small>MOU, LOI, or target. No binding documents</small></div>
         </div>
       </section>

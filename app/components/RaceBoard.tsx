@@ -53,7 +53,7 @@ function RaceRowItem({ row, index }: { row: RaceRow; index: number }) {
       <div className="race-id">
         <span className="race-rank" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
         <h3><Link className="row-link" href={`/companies/${row.company.slug}`}>{row.company.name}</Link></h3>
-        <p>{row.entrant.design} · {mwe(row.entrant.unitMWe)} MWe per unit · {row.entrant.lane}</p>
+        <p>{row.entrant.design} · {row.entrant.unitMWe === null ? "Electrical rating not verified" : `${mwe(row.entrant.unitMWe)} MWe per unit`} · {row.entrant.lane}</p>
       </div>
       <RaceBar row={row} />
       <p className="race-state">{row.strongestLine}</p>

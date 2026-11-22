@@ -1,0 +1,7 @@
+{
+  "url": "https://gain.inl.gov/content/uploads/4/2024/11/INL-RPT-23-72972-Literature-Review-of-Adv-Reactor-Cost-Estimates.pdf",
+  "captured_at": "2026-11-22",
+  "title": "Literature Review of Advanced Reactor Cost Estimates (INL/RPT-23-72972)",
+  "capture_method": "curl download + PyMuPDF text extraction",
+  "upstream_snapshot": "data/sources/reports/inl-adv-reactor-cost-lit-review-2023.txt"
+}

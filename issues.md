@@ -133,3 +133,8 @@
   the tablet control grid keep an intrinsic minimum wider than its column.
   Used a zero minimum grid track and shrinkable labels. Browser checks at
   768px, 1280px and 375px confirm no page overflow.
+- 2026-11-22 — AUDIT-001 (fixed): National nuclear output was easily confused with zero output in the selected advanced-reactor sample. Added the dated EIA baseline and five-year series, with separate stock, flow, inventory and capacity-factor denominators. Regression tests verify 2025 values and sample totals independently.
+- 2026-11-22 — AUDIT-002 (fixed): Capacity accounting credited an unverified Hermes 2 electrical configuration, unresolved additional GEV capacity, AI load, and an Eielson rating absent from accessible evidence. Corrected the ledger and unknown-rating handling; tests prevent these quantities becoming delivered generation.
+- 2026-11-22 — AUDIT-003 (fixed): Compound citations overstated licensing state, contractual terms, cost bases and historical targets. Adjudicated all 139 original flags, with 80 corrections, three removals and exact-source excerpts for 56 supported claims. Snapshot/record fingerprints expire stale approvals; tampering tests cover claims, URLs, quotes and snapshots.
+- 2026-11-22 — AUDIT-004 (fixed): A prior Federal Register cache contained an access warning. Archived the actual PDF and reject wall text when reading old snapshots as well as during capture. Agency fees and OPG's budget status now cite current primary records.
+- 2026-11-22 — AUDIT-005 (fixed): Browser UAT identified two new national-statistics source links below the mobile target size. Applied 44px link targets and rechecked the responsive page.

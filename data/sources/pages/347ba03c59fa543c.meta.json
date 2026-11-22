@@ -1,0 +1,7 @@
+{
+  "url": "https://www.eia.gov/totalenergy/data/monthly/pdf/sec8_n.pdf",
+  "captured_at": "2026-11-22",
+  "title": "Monthly Energy Review, October 2026: Nuclear Energy Notes",
+  "capture_method": "Archived primary-source text; see research manifest",
+  "upstream_snapshot": "data/research/fleet-2026-11-22/eia-mer-nuclear-notes.txt"
+}

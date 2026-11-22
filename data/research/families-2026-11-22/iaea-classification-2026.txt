@@ -1,0 +1,1429 @@
+--- PAGE 1 ---
+Vladimir Kriventsev
+Nicole Virgili
+Panashe Ndlalambi
+Woojin Jung
+Nuclear Power Technology Development Section
+Division of Nuclear Power
+Department of Nuclear Energy
+International Atomic Energy Agency
+IAEA National Training Course on 
+Heavy Liquid Metal Cooled Fast Reactors: Benefits and Challenges
+16-20 February 2026
+Introduction of Innovative 
+Nuclear Reactors and GEN-IV 
+Concepts
+https://www.iaea.org/topics/fast-reactors
+
+--- PAGE 2 ---
+2
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Outline: Introduction of Innovative Nuclear Reactors and
+              GEN-IV Concepts
+• Innovative Nuclear Energy Systems and Gen-IV Reactor 
+Concepts
+• IAEA ang GIF Terminology
+• Thermal vs. Fast Neutron Reactors
+• What is wrong with WCR? What about SWCR?
+• Gas cooled: HTGR and GFR
+• Ligiid Metal cooled: SFR and LFR  
+• Molte salt cooled: MSR
+• IAEA Advanced Reactors Information System (ARIS)
+• Fast Reactor Technology: World Status
+• In Operation and Commissioning
+• Under Development and Design 
+
+--- PAGE 3 ---
+3
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Outline: Introduction of Innovative Nuclear Reactors and
+              GEN-IV Concepts
+• Innovative Nuclear Energy Systems and Gen-IV Reactor 
+Concepts
+• IAEA ang GIF Terminology
+• Thermal vs. Fast Neutron Reactors
+• What is wrong with WCR? What about SWCR?
+• Gas cooled: HTGR and GFR
+• Ligiid Metal cooled: SFR and LFR  
+• Molte salt cooled: MSR
+• IAEA Advanced Reactors Information System (ARIS)
+• Fast Reactor Technology: World Status
+• In Operation and Commissioning
+• Under Development and Design 
+
+--- PAGE 4 ---
+4
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Classification of Nuclear Fission Reactors 1/2 
+• Moderator
+• Water / Heavy Water
+• Graphite
+• None (fast neutron systems)
+• Coolant
+• Water/Heavy Water
+• Liquid Metal
+• Sodium/Lead/Lead-Bismuth Eutectic (LBE)
+• Gas
+• Air
+• CO2 
+• He
+• Molten Salt
+• Fluoride
+• Chloride
+• Fuel
+– UO2
+– MOX (UO2 + PuO2)
+– Metallic
+– U/Pu Nitride
+– U/Pu Carbide
+– Molten Salt 
+• Purpose
+– Electricity Generation
+– Non-Electric Application
+• District Heating
+• Water Desalination
+• Industrial Purposes
+• H2 Production
+• Power
+– Low/Middle/High
+
+--- PAGE 5 ---
+5
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Nuclear Power Reactor Classifications  2/2
+Coolant
+Moderator
+Light
+Water
+(LW)
+Heavy
+Water
+(HW)
+Gas
+Liquid, 
+Metal or 
+Salt
+LW
+HW
+PHWR
+LW
+Graphite
+(None)
+Reactor Type
+PWR/VVER
+BWR
+LWGR (RBMK)
+LW
+GCR
+Fuel
+LEU or
+MOX (oxide)
+Natural U
+(oxide)
+LEU or
+MOX (metal)
+LEU or MOX
+(liquid salt)
+MOX: mixed-oxide containing any combination of U, Pu and Th
+MSR
+FR
+WCRs
+
+--- PAGE 6 ---
+6
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Evolution of Nuclear Power Reactor Technology
+
+--- PAGE 7 ---
+7
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Innovative Reactors (Gen-IV) 
+Source: GIF homepage (www.gen-4.org)
+7
+Sodium cooled Fast Reactor 
+(SFR) 
+Lead cooled Fast Reactor (LFR) 
+Very-High-Temperature Reactor (VHTR) 
+Supercritical Water cooled Reactor  (SCWR) Gas cooled Fast Reactor 
+(GFR) 
+Molten Salt Reactor (MSR)
+Innovative Reactor: 
+Advanced design which incorporates 
+conceptual changes in design 
+approaches or system configuration in 
+comparison with existing practice. 
+Substantial R&D, feasibility tests, and 
+possibly a prototype or demonstration 
+reactor are required prior to deployment.
+• Early Prototypes and 
+Demonstration Plants Gen-I 
+• Current Fleet  Gen-II/III
+• Advanced Nuclear Reactors 
+• Evolutionary designs  
+Gen-III and Gen-III+ 
+• Innovative designs  
+Gen-IV
+• SMRs can be either evolutionary or 
+innovative
+• Innovative SMR
+Advanced Modular Reactor (AMR) 
+
+--- PAGE 8 ---
+8
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Water Cooled Reactors: Why are we unsatisfied?
+WCR
+coolant
+H2O/D2O
+outlet T, C
+288-329
+efficiency, %
+35
+max P, MPa
+7-17
+spectrum
+thermal
+• Mature Technology 
+• Low T => Low Efficiency
+• High Pressure => safety issues
+• Only thermal spectrum => not sustainable
+8
+
+--- PAGE 9 ---
+9
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+GIF: Goals for Gen-IV Nuclear Energy Systems
+Sustainability-1
+Generation IV nuclear energy systems will provide sustainable energy generation that 
+meets clean air objectives and provides long-term availability of systems and 
+effective fuel utilisation for worldwide energy production.
+Sustainability-2
+Generation IV nuclear energy systems will minimise and manage their nuclear waste 
+and notably reduce the long-term stewardship burden, thereby improving protection 
+for the public health and the environment.
+Economics-1
+Generation IV nuclear energy systems will have a clear life-cycle cost advantage over 
+other energy sources.
+Economics-2
+Generation IV nuclear energy systems will have a level of financial risk comparable to 
+other energy projects.
+Safety and Reliability-1
+Generation IV nuclear energy systems operations will excel in safety and reliability.
+Safety and Reliability-2
+Generation IV nuclear energy systems will have a very low likelihood and degree of 
+reactor core damage.
+Safety and Reliability-3
+Generation IV nuclear energy systems will eliminate the need for offsite emergency 
+response.
+Proliferation Resistance
+and Physical Protection
+Generation IV nuclear energy systems will increase the assurance that they are very 
+unattractive and the least desirable route for diversion or theft of weapons-usable 
+materials, and provide increased physical protection against acts of terrorism.
+See at: www.gen-4.org
+
+--- PAGE 10 ---
+10
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+
+--- PAGE 11 ---
+11
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Thermal vs. Fast Neutron Reactors: Sustainability?
+Two main Isotopes in Natural Uranium:
+fissile 235U    0.7%  
+fertile 238U    99.3%
+Thermal Reactor
+Fast Reactor
+fuel efficiency       (sustainability-1)
+less 1% of natural U used
+can utilize 60 times more U
+waste production  (sustainability-2)
+significant amounts of long-lived 
+radioactive waste
+potentially less waste; burnup of 
+long-lived isotopes is possible
+enrichment
+<3-5%
+15-100%  (20% ref.)
+proliferation issues 
+easier
+more problems as it require closing 
+the fuel cycle
+coolant
+H2O
+water is not possible
+neutron flux density (material 
+damage)
+1013 - 1014 n/cm²/s
+1014 - 1015 n/cm²/s
+compatibility of structural 
+materials
+long experience
+needs qualifications
+technology readiness 
+mature technology
+pong experience with Na coolant 
+but not with others
+Safety 
+Well-established but…
+to be proven
+
+--- PAGE 12 ---
+12
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Super-Critical Water-cooled Reactors (SCWR)
+•
+High Pressure -> increased costs for ensuring safety.
+•
+Known technology for gas and coal plants but no experience in nuclear reactors.
+12
+WCR
+SCWR
+coolant
+H2O
+H2O
+outlet T, C
+288-329
+500
+efficiency, %
+35
+45
+max P, MPa
+17
+25
+spectrum
+thermal
+thermal/fast
+•
+Use water above critical point (22.12MPa and 
+647.14 K) as coolant.
+•
+The high outlet temperature increases efficiency
+•
+Potential for fast neutron spectrum in some 
+designs.
+
+--- PAGE 13 ---
+13
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Gas cooled Reactors (HTGR - VHTR, GFR)
+•
+The high temperatures and direct cycle 
+increase efficiency
+•
+The high temperature enables non-electric 
+industrial applications
+•
+Extended experience in gas and coal power 
+plants but limited experience in nuclear
+•
+GFR design allows for fast spectrum
+•
+Low Voiding Reactivity 
+13
+WCR
+SCWR
+HTGR
+GFR
+coolant
+H2O
+H2O
+He
+He
+outlet T, C
+288-329
+500
+750
+750
+efficiency, %
+35
+45
+50
+50
+max P, MPa
+17
+25
+7
+7
+spectrum
+thermal
+thermal/fast
+thermal
+fast
+
+--- PAGE 14 ---
+14
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Sodium cooled Fast Reactors
+WCR
+SCWR
+HTGR
+GFR
+SFR
+coolant
+H2O
+H2O
+He
+He
+Na
+outlet T, C
+288-329
+500
+750
+750
+550
+efficiency, %
+35
+45
+50
+50
+45
+max P, MPa
+17
+25
+7
+7
+~0.2
+spectrum
+thermal
+thermal/fast
+thermal
+fast
+fast
+• Hight coolant T => High Efficiency
+• Low Pressure
+• Mature Technology
+• Fast spectrum
+• Sodium violently reacts with water and 
+air
+EBR-I   1951
+14
+
+--- PAGE 15 ---
+15
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Experimental Breeder Reactor (EBR-I)
+(First Ever Electricity Generated from Nuclear Reactor)
+Idaho National Laboratory
+•
+First ever liquid metal cooled fast reactor built by 
+Argonne National Laboratory (ANL) – West (now 
+Idaho National Laboratory (INL)) 
+•
+The primary purpose of EBR-I is to demonstrate 
+breeding of fissile material
+•
+Coolant: NaK Eutectic Alloy
+•
+Fuel: Metallic Uranium
+https://www.ne.anl.gov/About/reactors/frt.shtml
+•
+On 20 December, 1951, EBR-I 
+generated first usable electricity to 
+power four light bulbs
+•
+Later, EBR-I continued to supply 
+200 kW to power its own building. 
+Reactor operated for 12 years before 
+its final shutdown in 1953  
+EBR-I
+
+--- PAGE 16 ---
+16
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+SFR: Existing Fleet > Evolutionary  > Innovative 
+BN-600  >>>  BN-800
+Similar:
+•
+sodium circuits design
+•
+Basic safety systems
+•
+I&C systems including 
+•
+reactor monitoring systems
+New:
+•
+safety systems
+•
+including passive: hydraulically 
+suspended control rods 
+•
+numerous other improvements
+BN-800  >>>  BN-1200
+•
+Proven technologies based on BN-600/800 
+experience 
+•
+Safety: accidents that require public evacuation 
+are practically eliminated
+•
+Additional passive high temperature 
+actuated control rods system 
+•
+Fuel: uranium-plutonium nitride 
+•
+Lower power density
+•
+Passive DHR systems
+•
+Competitive with other advanced nuclear power 
+plants and with power plants using fossil fuel
+
+--- PAGE 17 ---
+17
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Sodium cooled Fast SMRs
+150 MW(e) PGSFR
+Rep. of Korea
+50 MW(e) SMFR
+Japan
+300 MW(e) SFR
+Japan
+400 MW(th) HEXANA
+France 
+180MW(th) + 110 MW(e)
+OTRERA
+France 
+
+--- PAGE 18 ---
+18
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+HEXANA: Multi-Purpose SFR
+2x400 MW(th) reactors 
+
+--- PAGE 19 ---
+19
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Heavy Liquid Metal cooled Fast Reactors
+WCR
+SCWR
+HTGR
+GFR
+SFR
+LFR
+coolant
+H2O
+H2O
+He
+He
+Na
+Pb/LBE
+outlet T, C
+288-329
+500
+750
+750
+550
+500
+efficiency, %
+35
+45
+50
+50
+45
+43
+max P, MPa
+17
+25
+7
+7
+~0.2
+~0.5
+spectrum
+thermal
+thermal/fast
+thermal
+fast
+fast
+fast
+• No intermediate circuit
+• Hight coolant T => High Efficiency
+• Low Pressure
+• Fast spectrum
+• New Technology 
+• Compatibility of Materials
+• Pb/LBE O2 Control
+19
+
+--- PAGE 20 ---
+20
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Heavy Liquid Metal cooled Fast Reactors
+55 MW(e) SEALER
+Sweden
+СВБР-100 (LBE)
+Russia
+LFR-AS-200 MW(e)
+newcleo, Italy
+Transportable LFR-TL-5 MW(e)
+newcleo, Italy
+ALFRED
+125-250 MW(e)
+EU
+3-10 MW(e) SEALER
+Sweden
+CLFR-300
+China
+14 MW(e) CLEAR-
+M10d
+China
+Westinghouse LFR 450 MW(e)
+WEC, USA
+BREST-OD-300
+Russia
+See upgraded ARIS database: aris.iaea.org
+
+--- PAGE 21 ---
+21
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Molten Salt Reactors
+21
+• Hight coolant T => High Efficiency
+• Low Pressure
+• Very safe (negative temperature 
+reactivity)
+• Online Waste/Fuel Management
+• Thermal/Fast spectrum
+• New Technology 
+• Compatibility of Materials
+WCR
+SCWR
+HTGR
+GFR
+SFR
+LFR
+MSR
+coolant
+H2O
+H2O
+He
+He
+Na
+Pb/LBE
+Fluoride/Chloride
+outlet T, C
+288-329
+500
+750
+750
+550
+500
+800
+efficiency, %
+35
+45
+50
+50
+45
+43
+48
+max P, MPa
+17
+25
+7
+7
+~0.2
+~0.5
+~0.2
+spectrum
+thermal
+thermal/fast
+thermal
+fast
+fast
+fast
+thermal/fast
+
+--- PAGE 22 ---
+22
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+NATRIUM: SFR with Molten Salt Storage System
+• 345 MW(e) SFR combined with
+• 1GW(th) Energy molten salt-based storage 
+system
+• Pick power can boost to 500 MW(e)
+• Can be used for non-electrical applications
+• Can work with renewables
+www.gen-4.org
+Build by Terrapower
+
+--- PAGE 23 ---
+23
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Comparing Innovative Reactor Concepts
+WCR
+SCWR
+HTGR
+GFR
+SFR
+LFR
+MSR
+coolant
+H2O
+H2O
+He
+He
+Na
+Pb/LBE
+Fluoride/Chloride
+outlet T, C
+288-329
+500
+750
+750
+550
+500
+800
+efficiency, %
+35
+45
+50
+50
+45
+43
+48
+max P, MPa
+17
+25
+7
+7
+~0.2
+~0.5
+~0.2
+spectrum
+thermal
+thermal/fast
+thermal
+fast
+fast
+fast
+thermal/fast
+23
+
+--- PAGE 24 ---
+24
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Innovative Reactors: Coolant Properties & More 
+WCR
+SCWR
+HTGR
+GFR
+SFR
+LFR
+MSR
+coolant
+H2O
+H2O
+He
+He
+Na
+Pb/LBE
+Fluoride/Chloride
+outlet T, C
+329
+500
+750
+750
+550
+500
+800
+efficiency, %
+35
+45
+50
+50
+45
+43
+48
+max P, MPa
+17
+25
+7
+7
+0.2
+0.5
+0.2
+n. spectrum
+thermal
+thermal/fast
+thermal
+fast
+fast
+fast
+thermal/fast
+𝜌𝜌, kg/m3
+700
+800/90
+0.12/8.5
+830
+10000
+3200
+𝐶𝐶𝑃𝑃, kJ/kg/K
+5.7
+5/4
+5.2/5.2
+1.3
+0.15
+1.4
+𝜌𝜌𝐶𝐶𝑃𝑃, MJ/m3/K
+4
+0.35
+6x10-4/0.4
+1
+1.5
+4.5
+k, W/m/K
+0.6
+0.1 - 0.4
+0.15/0.24
+70
+18
+0.01
+boiling T, C
+350
+880
+1700
+1700
+melting T, C
+98
+327/125
+~500
+CMI1
+ok
+ok
+good
+good
+ok
+?
+?
+enrichment, %
+<5
+<5/<20
+<5
+<20
+<20
+<20
+<5/<20
+1) CMI: Coolant – structural Materials Interaction
+
+--- PAGE 25 ---
+25
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Thorium Fuel Cycle 
+Absorption of neutrons by 232Th initiates the series of transformations leading to 
+the production of fissile 233U that is by far the best ‘fissile’ isotope for thermal 
+neutron spectrum and can be used for breeding in both thermal and fast reactors. 
+232Th >> 233U: Th Cycle can operate in thermal spectrum
+See IAEA e-Learning Module on Thorium-Cycle-Based Reactors
+25
+
+--- PAGE 26 ---
+26
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Small and Medium-sized or Modular Reactors (SMRs)
+Economic
+• Lower Upfront capital cost
+• Economy of serial production
+Better Affordability 
+Modularization
+• Multi-module
+• Modular Construction
+Shorter construction time 
+Flexible Application
+• Remote regions
+• Small grids
+Wider range of Users
+Smaller footprint
+Site flexibility
+Replacement for aging 
+fossil-fired plants
+Reduced CO2 production
+Potential Hybrid 
+Energy System
+Integration with Renewables
+• Reduced Emergency 
+planning zone
+2030
+2050
+Commissioning of the FOAK SMR projects
+2015
+Paris 
+Agreement
+Global mass deployment of SMRs
+Enhanced 
+Safety
+Versatile
+Modular
+Reduced 
+Waste
+Affordable
+Non-
+electric 
+application
+s
+2024
+
+--- PAGE 27 ---
+27
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Web accessible database 
+and a tool for Member 
+States at various stages of 
+nuclear power 
+development, offering 
+standardized, impartial 
+data on reactor designs, 
+including evolutionary and 
+innovative concepts, to 
+support informed reactor 
+technology assessments
+Designs in ARIS
+127
+Design 
+Organizations
+> 75
+Countries
+~25
+Access online: Advanced Reactor Information System | Aris
+Advanced Reactors Information System (ARIS)
+
+--- PAGE 28 ---
+28
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Outline: Introduction of Innovative Nuclear Reactors and
+              GEN-IV Concepts
+• Innovative Nuclear Energy Systems and Gen-IV Reactor 
+Concepts
+• IAEA ang GIF Terminology
+• Thermal vs. Fast Neutron Reactors
+• What is wrong with WCR? What about SWCR?
+• Gas cooled: HTGR and GFR
+• Ligiid Metal cooled: SFR and LFR  
+• Molte salt cooled: MSR
+• IAEA Advanced Reactors Information System (ARIS)
+• Fast Reactor Technology: World Status
+• In Operation and Commissioning
+• Under Development and Design 
+
+--- PAGE 29 ---
+29
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+BN-800
+Russia, 2015
+CEFR, 20 MW(e) 
+China, 2011
+FBTR, 13 MW(e) 
+India, 1985
+BN-600, Russia, 1980
+PFBR, 500 MW(e)
+India, 2024
+Country
+Name
+Coolant
+Fuel
+Purpose
+Power (th/e)
+MW
+Year (Op.)
+Status
+Russia
+BOR-60
+sodium
+UO2
+experimental
+60/10
+1969
+operating
+BN-600
+sodium
+UO2
+prototype
+1470/600
+1980
+operating
+BN-800
+sodium
+UO2/MOX
+commercial
+2100/880
+2015
+operating
+China
+CEFR
+sodium
+UO2
+experimental
+65/20
+2011
+operating
+CFR600-1 sodium
+UO2/MOX
+prototype
+1500/650
+2023
+operating
+India
+FBTR
+sodium
+UO2/UC
+experimental
+40/13
+1985
+operating
+PFBR
+sodium
+UO2/MOX
+prototype
+1250/500
+2026
+commissioning
+Japan
+JOYO
+sodium
+UO2/MOX
+experimental
+100/--
+1978
+lic renew (2026)
+Fast Reactors in Operation & under Commissioning
+
+--- PAGE 30 ---
+30
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Fast Reactors under Construction
+Country
+Name
+Coolant
+Fuel
+Purpose
+Power, MW(th/e)
+Year
+(Op.)
+Status
+Russia
+MBIR
+sodium
+MOX
+experimental
+150/50
+~2028
+construction
+BREST-OD-300
+lead
+PuN/UN
+demonstrator
+700/300
+~2028
+construction
+China
+CFR600-2
+sodium
+UO2/MOX
+prototype
+1500/650
+~2028
+construction
+CFR600, China
+BREST-OD-300
+Russia
+MBIR, Russia
+
+--- PAGE 31 ---
+31
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Status of BREST-OD-300 As presented by Ms Y. Kyzina at TWG-FR Meeting in June 2025
+
+--- PAGE 32 ---
+32
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+BREST-OD-300 (April 2024)
+
+--- PAGE 33 ---
+33
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Country
+Name
+Fuel
+Purpose
+Power (th/e), MW
+Status
+Russia
+BN-1200
+PuN/UN/MOX
+Gen-IV, industrial
+2900/1220
+design
+China
+CFR1200
+MOX
+Gen-IV, industrial
+2800/1200
+design
+CiFR1000
+U-Pu-Zr
+Gen-IV, industrial
+2800/1000-1200
+design
+France
+ASTRID
+MOX
+demonstrator
+1500/600
+suspended
+HEXANA
+MOX
+SMR prototype
+2x400/Flexible
+concept
+OTRERA
+MOX
+AMR prototype
+295/110
+concept
+EU
+ESFR
+MOX, (U,Pu)Zr
+Gen-IV prototype
+or AMR
+3600/1500
+360/150
+concept
+India
+FBTR-2
+U-Zr
+experimental/SMR
+320/100
+concept
+FBR 1&2
+MOX
+prototype
+1250/500
+design
+R. of Korea
+KALIMER-600
+U-TRU-10%Z
+GEN-IV, prototype
+1523/600
+design
+PGSFR
+U-Zr/U-TRU-Zr
+GEN-IV, prototype
+400/150
+suspended
+SALUS-100
+U-10%Zr
+AMR prototype
+267/100
+design
+USA
+NATRIUM
+U-Zr
+demonstrator
+1000/345-500
+design
+VTR
+U-Pu-Zr?
+experimental
+300/-
+design
+ARC-100
+U-Zr
+demonstrator
+260/100
+concept
+Oklo
+U-Pu-Zr
+demonstrator
+/15-50
+concept
+Innovative SFRs under Development and Design
+
+--- PAGE 34 ---
+34
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Country
+Name
+Type
+Coolant
+Fuel
+Purpose
+Power (th/e), MW
+Status
+Russia
+SVBR-100
+LFR
+LBE
+UO2
+prototype
+280/100
+design
+China
+CLFR-300
+LFR
+LBE/Pb
+UO2
+demonstrator
+740/300
+concept
+CLEAR-I
+LFR
+LBE
+UO2
+experimental
+10/-
+design
+CLEAR-M10d
+LFR
+Pb
+UO2
+demonstrator
+25/10
+concept
+Belgium
+MYRRHA
+LFR ADS
+LBE
+MOX
+experimental
+100/-
+design
+Italy + EU
+LFR-AS-30/200
+(newcleo)
+LFR
+Pb
+MOX
+Experimental
+/prototype
+/30 or /200
+concept
+Romania
+/Italy + EU
+ALFRED
+LFR
+Pb
+MOX
+Gen-IV, demonstrator
+300/120
+design
+EU
+EAGLES-300
+LFR
+Pb
+MOX
+Gen-IV, industrial
+900?/350
+concept
+Sweden 
+SEALER-55
+LFR
+Pb
+UN
+commercial
+140/55
+design
+USA
+Westinghouse 
+LFR
+LFR
+Pb
+MOX
+demonstrator
+950/450
+design
+USA
+SSTAR
+LFR
+Pb
+experimental
+45/20
+suspended
+Innovative LFRs under Development and Design 
+
+--- PAGE 35 ---
+35
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Joint Romania-Italy- Belgium EU-SMR-LFR
+As presented by Ms M. Nitoi at TWG-FR Meeting in June 2025
+
+--- PAGE 36 ---
+36
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Joint Romania-Italy- Belgium LFR Program
+As presented by Ms M. Nitoi at TWG-FR Meeting in June 2025
+
+--- PAGE 37 ---
+37
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Country
+Name
+Type
+coolant
+fuel
+Purpose
+Power (th/e), 
+MW
+Status
+Japan
+KAMADO FBR GFR
+CO2
+Oxide
+demonstrator
+3000/1000
+concept
+EU
+ALLEGRO
+HeFASTo
+TREASURE
+GFR
+He
+MOX
+Gen-IV, 
+demonstrator
+75/-
+200/
+design
+USA
+EM2
+GFR
+He
+UC
+demonstrator
+500/265
+concept
+FMR
+GFR
+He
+MOX/UF4/ UCO
+demonstrator
+100/44
+concept 
+completed 
+in 2025
+Innovative GFRs under Development and Design
+
+--- PAGE 38 ---
+38
+IAEA Introduction of Innovative Nuclear Reactors and GEN-IV Concepts
+V. Kriventsev, IAEA, 16 Feb 2026
+Country
+Name
+Type
+coolant
+fuel
+Purpose
+Power 
+(th/e), MW
+Status
+Canada
+SSR-W
+MSR
+molten salt 
+UO2
+demonstration
+750/300
+demo
+France
+MSFR
+MSR
+molten salt 
+(LiF-AFn)
+U/Th/TRU
+Gen-IV, prototype
+3000/
+concept
+STELLARIA
+MSR
+NaCl
+TRUF₃
+Prototype SMR
+250/110
+concept
+XS(A)MR 
+(Naarea)
+MSR
+molten salt 
+ThO₂/UO₂
+Prototype SMR
+80/40
+concept
+Netherlands/
+EU 
+Thorizon
+MSR
+molten salt 
+U/Th/TRU
+Prototype SMR
+250/100
+concept
+Russia
+MOSART
+MSR
+molten salt 
+U/TRU
+prototype
+2400/
+concept
+USA
+MCFR
+MSR
+NaCl
+U/TRU
+experimental
+1800/800
+design
+R. of Korea
+MARINA
+MSR
+molten salt
+U/TRU
+Commercial 
+Shippropulsion & 
+FNPP
+100/35 per 
+module
+Concept
+Innovative Fast MSRs under Development and Design
+
+--- PAGE 39 ---
+Atoms for Peace and Development…
+email: FR@IAEA.ORG
+Thank You!

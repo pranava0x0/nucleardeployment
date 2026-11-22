@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  ["Overview", "/"], ["Deployments", "/deployments"], ["Companies", "/companies"],
+  ["Overview", "/"], ["Fission types", "/fission"], ["Deployments", "/deployments"], ["Companies", "/companies"],
   ["Locations", "/map"], ["Financing", "/financing"], ["Buyers", "/bd"],
   ["Federal action", "/federal-action"], ["Capital + supply", "/capital"],
   ["Updates", "/updates"], ["Methodology", "/methodology"],

@@ -1,0 +1,7 @@
+{
+  "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+  "captured_at": "2026-11-22",
+  "title": "Nuclear Power Reactors in the World, 2025 Edition",
+  "capture_method": "PyMuPDF extraction; table 23 on PDF page79 visually checked",
+  "upstream_snapshot": "data/research/families-2026-11-22/iaea-rds2-2025.txt"
+}

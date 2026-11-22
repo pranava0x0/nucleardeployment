@@ -50,9 +50,9 @@
       <description>Proof event · Program selection / agreement · Company-reported.</description>
     </item>
     <item>
-      <title>2026-10-07 · Last Energy: DOE approved the PWR-5 documented safety analysis; readiness review and startup authorization remain</title>
+      <title>2026-10-07 · Last Energy: DOE approved Last Energy’s pilot-reactor documented safety analysis; readiness review precedes startup authorization.</title>
       <link>https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis</link>
-      <guid isPermaLink="false">https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis#2026-10-07#Permit / authorization#DOE approved the PWR-5 documented safety</guid>
+      <guid isPermaLink="false">https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis#2026-10-07#Permit / authorization#DOE approved Last Energy’s pilot-reactor</guid>
       <pubDate>Wed, 07 Oct 2026 12:00:00 GMT</pubDate>
       <description>Proof event · Permit / authorization · Company-reported.</description>
     </item>
@@ -62,6 +62,13 @@
       <guid isPermaLink="false">https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm#2026-09-28#Permit / authorization#NRC issued Clinch River Unit 1 construct</guid>
       <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
       <description>Proof event · Permit / authorization · Verified.</description>
+    </item>
+    <item>
+      <title>2026-09-03 · Westinghouse: eVinci test achieved high-temperature zero-power criticality at NCERC in Nevada.</title>
+      <link>https://www.energy.gov/ne/articles/westinghouse-evinci-microreactor-achieves-criticality-milestone</link>
+      <guid isPermaLink="false">https://www.energy.gov/ne/articles/westinghouse-evinci-microreactor-achieves-criticality-milestone#2026-09-03#Criticality#eVinci test achieved high-temperature ze</guid>
+      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
+      <description>Critical experiment; no commercial startup or electricity delivery. Contributes 0 MWe. · Proof event · Criticality · Government-reported.</description>
     </item>
     <item>
       <title>2026-08-26 · Antares Nuclear: Antares selected for Army Janus vendor and installation pairing at Fort Bragg, North Carolina; payments depend on technical milestones</title>
@@ -99,9 +106,9 @@
       <description>U.S. Army / Defense Innovation Unit · Capital event · Federal award · Company-reported.</description>
     </item>
     <item>
-      <title>2026-08-06 · Oklo: Groves reached first criticality in Caldwell County, Texas, the first Reactor Pilot Program reactor to do so on private land and a greenfield site, under a year from groundbreaking</title>
+      <title>2026-08-06 · Oklo: Groves reached first criticality on a private greenfield site in Texas, less than a year after groundbreaking.</title>
       <link>https://oklo.com/newsroom/news-details/2026/Oklos-Groves-Reactor-Achieves-First-Criticality-in-Under-a-Year/default.aspx</link>
-      <guid isPermaLink="false">https://oklo.com/newsroom/news-details/2026/Oklos-Groves-Reactor-Achieves-First-Criticality-in-Under-a-Year/default.aspx#2026-08-06#Criticality#Groves reached first criticality in Cald</guid>
+      <guid isPermaLink="false">https://oklo.com/newsroom/news-details/2026/Oklos-Groves-Reactor-Achieves-First-Criticality-in-Under-a-Year/default.aspx#2026-08-06#Criticality#Groves reached first criticality on a pr</guid>
       <pubDate>Thu, 06 Aug 2026 12:00:00 GMT</pubDate>
       <description>A zero-power critical assembly. DOE&apos;s environmental determination puts its maximum power at 100 watts, and Oklo states it does not generate electricity for the grid. Contributes 0 MWe. · Proof event · Criticality · Company-reported.</description>
     </item>
@@ -120,18 +127,18 @@
       <description>Erebor Bank (lead), J.P. Morgan, Crescent Cove, Hercules Capital · Capital event · Venture debt · Company-reported.</description>
     </item>
     <item>
-      <title>2026-07-04 · Aalo Atomics: Critical Test Reactor reached initial criticality at INL, the fourth and last before the July 4 goal and the first new reactor built at INL in 50 years</title>
-      <link>https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal</link>
-      <guid isPermaLink="false">https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal#2026-07-04#Criticality#Critical Test Reactor reached initial cr</guid>
-      <pubDate>Sat, 04 Jul 2026 12:00:00 GMT</pubDate>
-      <description>Zero-power test reactor. Contributes 0 MWe. · Proof event · Criticality · Government-reported.</description>
-    </item>
-    <item>
       <title>2026-07-01 · Deployable Energy: Unity reached initial criticality at the National Reactor Innovation Center, INL, about 150 days from kickoff</title>
       <link>https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor</link>
       <guid isPermaLink="false">https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor#2026-07-01#Criticality#Unity reached initial criticality at the</guid>
       <pubDate>Wed, 01 Jul 2026 12:00:00 GMT</pubDate>
       <description>Demonstration reactor. Contributes 0 MWe. · Proof event · Criticality · Government-reported.</description>
+    </item>
+    <item>
+      <title>2026-07 · Aalo Atomics: Aalo-X completed a zero-power fueled criticality demonstration at INL, the fourth DOE milestone before the July 4 goal</title>
+      <link>https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal</link>
+      <guid isPermaLink="false">https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal#2026-07#Criticality#Aalo-X completed a zero-power fueled cri</guid>
+      <pubDate>Wed, 01 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Zero-power test reactor. Contributes 0 MWe. · Proof event · Criticality · Government-reported.</description>
     </item>
     <item>
       <title>2026-07 · Oklo: DOE issued startup authorization for the Groves isotope test reactor, clearing fuel load and first criticality</title>
@@ -141,9 +148,9 @@
       <description>Proof event · Permit / authorization · Company-reported.</description>
     </item>
     <item>
-      <title>2026-07 · Radiant Industries: First TRISO fuel shipment received at the DOME facility, INL; criticality not confirmed as of 2026-08-05</title>
+      <title>2026-07 · Radiant Industries: Radiant received its first TRISO fuel shipment at the DOME facility at Idaho National Laboratory.</title>
       <link>https://www.radiantnuclear.com/blog/triso-fuel-inl/</link>
-      <guid isPermaLink="false">https://www.radiantnuclear.com/blog/triso-fuel-inl/#2026-07#Fuel milestone#First TRISO fuel shipment received at th</guid>
+      <guid isPermaLink="false">https://www.radiantnuclear.com/blog/triso-fuel-inl/#2026-07#Fuel milestone#Radiant received its first TRISO fuel sh</guid>
       <pubDate>Wed, 01 Jul 2026 12:00:00 GMT</pubDate>
       <description>Proof event · Fuel milestone · Company-reported.</description>
     </item>
@@ -190,7 +197,7 @@
       <description>Not disclosed · Capital event · Venture debt · Press-reported.</description>
     </item>
     <item>
-      <title>2026-06-18 · Valar Atomics: Ward 250 reached fuelled criticality in Emery County, Utah, the only pilot reactor built outside a national laboratory</title>
+      <title>2026-06-18 · Valar Atomics: Ward 250 reached fuelled criticality in Emery County, Utah, DOE’s first outside-laboratory pilot-reactor milestone</title>
       <link>https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality</link>
       <guid isPermaLink="false">https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality#2026-06-18#Criticality#Ward 250 reached fuelled criticality in </guid>
       <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
@@ -232,16 +239,16 @@
       <description>Nasdaq (FISN) · Capital event · IPO / listing · Press-reported.</description>
     </item>
     <item>
-      <title>2026-05 · Kairos Power: NRC extended the Hermes 1 construction-completion deadline from 2026-12-31 to 2029-04-30</title>
-      <link>https://www.federalregister.gov/documents/2026/05/18/2026-09880/in-the-matter-of-kairos-power-llc-hermes-test-reactor-extension-of-latest-date-for-completion-of</link>
-      <guid isPermaLink="false">https://www.federalregister.gov/documents/2026/05/18/2026-09880/in-the-matter-of-kairos-power-llc-hermes-test-reactor-extension-of-latest-date-for-completion-of#2026-05#Permit / authorization#NRC extended the Hermes 1 construction-c</guid>
-      <pubDate>Fri, 01 May 2026 12:00:00 GMT</pubDate>
+      <title>2026-05-13 · Kairos Power: NRC extended the Hermes construction-completion deadline from December 31, 2026 to April 30, 2029.</title>
+      <link>https://public-inspection.federalregister.gov/2026-09880.pdf?1778849121=</link>
+      <guid isPermaLink="false">https://public-inspection.federalregister.gov/2026-09880.pdf?1778849121=#2026-05-13#Permit / authorization#NRC extended the Hermes construction-com</guid>
+      <pubDate>Wed, 13 May 2026 12:00:00 GMT</pubDate>
       <description>Proof event · Permit / authorization · Verified.</description>
     </item>
     <item>
-      <title>2026-05 · Last Energy: DOE approved the PWR-5 preliminary documented safety analysis at Texas A&amp;M-RELLIS; criticality not confirmed as of 2026-08-05</title>
+      <title>2026-05 · Last Energy: DOE approved the preliminary documented safety analysis for Last Energy’s PWR-5 pilot at Texas A&amp;M-RELLIS.</title>
       <link>https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026</link>
-      <guid isPermaLink="false">https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026#2026-05#Permit / authorization#DOE approved the PWR-5 preliminary docum</guid>
+      <guid isPermaLink="false">https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026#2026-05#Permit / authorization#DOE approved the preliminary documented </guid>
       <pubDate>Fri, 01 May 2026 12:00:00 GMT</pubDate>
       <description>Proof event · Permit / authorization · Press-reported.</description>
     </item>
@@ -295,11 +302,11 @@
       <description>Nasdaq Global Select Market · Capital event · IPO / listing · Press-reported.</description>
     </item>
     <item>
-      <title>2026-03 · TerraPower: NRC issued construction permit CPAR-1, the first for a commercial-scale Gen IV reactor and the first non-light-water permit in over 40 years</title>
-      <link>https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit</link>
-      <guid isPermaLink="false">https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit#2026-03#Permit / authorization#NRC issued construction permit CPAR-1, t</guid>
-      <pubDate>Sun, 01 Mar 2026 12:00:00 GMT</pubDate>
-      <description>Proof event · Permit / authorization · Company-reported.</description>
+      <title>2026-03-09 · TerraPower: NRC issued construction permit CPAR-1 to US SFR Owner for Kemmerer Power Station Unit 1 on March 9, 2026.</title>
+      <link>https://www.nrc.gov/node/2156776</link>
+      <guid isPermaLink="false">https://www.nrc.gov/node/2156776#2026-03-09#Permit / authorization#NRC issued construction permit CPAR-1 to</guid>
+      <pubDate>Mon, 09 Mar 2026 12:00:00 GMT</pubDate>
+      <description>Proof event · Permit / authorization · Verified.</description>
     </item>
     <item>
       <title>2026-03 · GE Vernova Hitachi: Shaft excavation completed for the first BWRX-300 at Darlington, Ontario</title>
@@ -349,13 +356,6 @@
       <guid isPermaLink="false">https://www.world-nuclear-news.org/articles/final-investment-decision-taken-for-romanias-smrs#2026-02#Design proof (non-U.S.)#RoPower took a final investment decision</guid>
       <pubDate>Sun, 01 Feb 2026 12:00:00 GMT</pubDate>
       <description>Romanian project. Contributes 0 MWe to the U.S. race. · Proof event · Design proof (non-U.S.) · Press-reported.</description>
-    </item>
-    <item>
-      <title>2026-02 · Westinghouse: DOE conditionally selected Westinghouse for the first fuelled microreactor experiments at the DOME test bed</title>
-      <link>https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed</link>
-      <guid isPermaLink="false">https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed#2026-02#Program selection / agreement#DOE conditionally selected Westinghouse </guid>
-      <pubDate>Sun, 01 Feb 2026 12:00:00 GMT</pubDate>
-      <description>Proof event · Program selection / agreement · Government-reported.</description>
     </item>
   </channel>
 </rss>

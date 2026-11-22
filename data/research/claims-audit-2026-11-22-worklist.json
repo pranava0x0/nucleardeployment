@@ -1,0 +1,4307 @@
+{
+  "reviewed_at": "2026-11-22",
+  "scope": "Original 139 unconfirmed records; term mismatch is triage, not an accuracy verdict.",
+  "records": [
+    {
+      "kind": "entrant.rosterSource",
+      "companySlug": "oklo",
+      "label": "Aurora-INL under construction under the DOE Reactor Pilot Program, with a combined license application submitted to the NRC.",
+      "source": "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx",
+      "verification": null,
+      "terms": [
+        "DOE Reactor",
+        "Pilot Program",
+        "NRC"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE Reactor"
+      ],
+      "audit_id": "claim-4ba715bbf6cff347",
+      "sequence": 1,
+      "binding": {
+        "path": [
+          "raceEntrants",
+          1
+        ],
+        "field": "rosterBasis",
+        "sourceField": "rosterSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "entrant.rosterSource",
+      "companySlug": "gev-hitachi",
+      "label": "NRC issued construction permit CPAR-2 for TVA's Clinch River Unit 1 BWRX-300 on September 28, 2026.",
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
+      "verification": null,
+      "terms": [
+        "2026",
+        "CPAR-2",
+        "TVA",
+        "Clinch River",
+        "Unit",
+        "BWRX-300",
+        "September"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "BWRX-300"
+      ],
+      "audit_id": "claim-e7b48ecc98c1ac46",
+      "sequence": 2,
+      "binding": {
+        "path": [
+          "raceEntrants",
+          5
+        ],
+        "field": "rosterBasis",
+        "sourceField": "rosterSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "entrant.rosterSource",
+      "companySlug": "nuscale",
+      "label": "Holds the only NRC-approved SMR design in the United States, a standard design approval for the 77 MWe module.",
+      "source": "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design",
+      "verification": null,
+      "terms": [
+        "77 MWe",
+        "NRC-approved SMR",
+        "United States",
+        "MWe"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "NRC-approved SMR"
+      ],
+      "audit_id": "claim-92d45be7f2776663",
+      "sequence": 3,
+      "binding": {
+        "path": [
+          "raceEntrants",
+          8
+        ],
+        "field": "rosterBasis",
+        "sourceField": "rosterSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "entrant.rosterSource",
+      "companySlug": "last-energy",
+      "label": "Selected for the DOE Reactor Pilot Program to build and test the PWR-5 at the Texas A&M-RELLIS campus.",
+      "source": "https://www.world-nuclear-news.org/articles/last-energy-microreactor-planned-at-texas-university",
+      "verification": null,
+      "terms": [
+        "DOE Reactor",
+        "Pilot Program",
+        "PWR-5",
+        "Texas",
+        "M-RELLIS"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE Reactor"
+      ],
+      "audit_id": "claim-d5839cb8a1d77f16",
+      "sequence": 4,
+      "binding": {
+        "path": [
+          "raceEntrants",
+          11
+        ],
+        "field": "rosterBasis",
+        "sourceField": "rosterSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "entrant.rosterSource",
+      "companySlug": "aalo-atomics",
+      "label": "Reached DOE-authorized criticality with its Critical Test Reactor at Idaho National Laboratory, the fourth and last before the July 4 2026 goal.",
+      "source": "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal",
+      "verification": null,
+      "terms": [
+        "2026",
+        "DOE-authorized",
+        "Critical Test",
+        "Reactor",
+        "Idaho National",
+        "Laboratory",
+        "July"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Critical Test"
+      ],
+      "audit_id": "claim-b8d92db1dce13a47",
+      "sequence": 5,
+      "binding": {
+        "path": [
+          "raceEntrants",
+          13
+        ],
+        "field": "rosterBasis",
+        "sourceField": "rosterSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "entrant.rosterSource",
+      "companySlug": "valar-atomics",
+      "label": "Reached DOE-authorized criticality in Utah, the only pilot reactor built outside a national laboratory.",
+      "source": "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality",
+      "verification": null,
+      "terms": [
+        "DOE-authorized",
+        "Utah"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE-authorized"
+      ],
+      "audit_id": "claim-5db197e2816a28a6",
+      "sequence": 6,
+      "binding": {
+        "path": [
+          "raceEntrants",
+          14
+        ],
+        "field": "rosterBasis",
+        "sourceField": "rosterSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "entrant.rosterSource",
+      "companySlug": "antares-nuclear",
+      "label": "First DOE Reactor Pilot Program participant to reach criticality, at INL with the U.S. Army.",
+      "source": "https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality",
+      "verification": null,
+      "terms": [
+        "DOE Reactor",
+        "Pilot Program",
+        "INL",
+        "Army"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE Reactor",
+        "INL",
+        "Army"
+      ],
+      "audit_id": "claim-45eb91abaebdfd99",
+      "sequence": 7,
+      "binding": {
+        "path": [
+          "raceEntrants",
+          17
+        ],
+        "field": "rosterBasis",
+        "sourceField": "rosterSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "claim.construction",
+      "companySlug": "terrapower",
+      "label": "Kemmerer Unit 1, Wyoming · permit issued 2026-03, construction started 2026-04-23",
+      "source": "https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant",
+      "verification": "Company-reported",
+      "terms": [
+        "2026-03",
+        "2026-04-23",
+        "Unit",
+        "Wyoming"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2026-03",
+        "2026-04-23"
+      ],
+      "audit_id": "claim-6a4f7ac392b863c6",
+      "sequence": 8,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          1
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-04"
+      }
+    },
+    {
+      "kind": "claim.construction",
+      "companySlug": "kairos-power",
+      "label": "Hermes 2, Oak Ridge, Tennessee · company-stated 50 MWe plant output; NRC construction permits issued and groundbreaking documented. Replaces the earlier 20 MWe account.",
+      "source": "https://www.kairospower.com/iterative-development",
+      "verification": "Company-reported",
+      "terms": [
+        "50 MWe",
+        "20 MWe",
+        "Oak Ridge",
+        "Tennessee",
+        "MWe",
+        "NRC",
+        "Replaces"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "20 MWe",
+        "Replaces"
+      ],
+      "audit_id": "claim-15c91f5449150ea6",
+      "sequence": 9,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          2
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-04"
+      }
+    },
+    {
+      "kind": "claim.doe-authorized",
+      "companySlug": "oklo",
+      "label": "Aurora-INL, Idaho · groundbreaking 2025-09-22 under the DOE Reactor Pilot Program; NRC combined license still under review",
+      "source": "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx",
+      "verification": "Company-reported",
+      "terms": [
+        "2025-09-22",
+        "Idaho",
+        "DOE Reactor",
+        "Pilot Program",
+        "NRC"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2025-09-22",
+        "DOE Reactor"
+      ],
+      "audit_id": "claim-98821837fc3cc750",
+      "sequence": 10,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          3
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-09"
+      }
+    },
+    {
+      "kind": "claim.permitted",
+      "companySlug": "x-energy",
+      "label": "Long Mott, Seadrift, Texas · four Xe-100 modules, 320 MWe design capacity; NRC construction permit issued November 9, 2026. Separate operating license required.",
+      "source": "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
+      "verification": "Verified",
+      "terms": [
+        "320 MWe",
+        "2026",
+        "Mott",
+        "Seadrift",
+        "Texas",
+        "Xe-100",
+        "MWe",
+        "NRC",
+        "November",
+        "Separate"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "320 MWe",
+        "MWe"
+      ],
+      "audit_id": "claim-6384d0f6e2ecb76c",
+      "sequence": 11,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          5
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-11-09"
+      }
+    },
+    {
+      "kind": "claim.permitted",
+      "companySlug": "gev-hitachi",
+      "label": "Clinch River Unit 1, Tennessee · 300 MWe BWRX-300; construction permit CPAR-2 issued September 28, 2026. Physical nuclear work not yet documented here.",
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
+      "verification": "Verified",
+      "terms": [
+        "300 MWe",
+        "2026",
+        "River Unit",
+        "Tennessee",
+        "MWe BWRX-300",
+        "CPAR-2",
+        "September",
+        "Physical"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "300 MWe",
+        "River Unit",
+        "MWe BWRX-300",
+        "Physical"
+      ],
+      "audit_id": "claim-14c8fcbb356db5a6",
+      "sequence": 12,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          6
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-09-28"
+      }
+    },
+    {
+      "kind": "claim.contracted",
+      "companySlug": "radiant-industries",
+      "label": "Defense Innovation Unit and Department of the Air Force · delivery agreement signed 2025-08-14; base not yet assigned",
+      "source": "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
+      "verification": "Press-reported",
+      "terms": [
+        "2025-08-14",
+        "Innovation Unit",
+        "Department",
+        "Air Force"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2025-08-14"
+      ],
+      "audit_id": "claim-c70d2145554de296",
+      "sequence": 13,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          7
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-08"
+      }
+    },
+    {
+      "kind": "claim.framework",
+      "companySlug": "oklo",
+      "label": "Switch master power agreement · stated 12 GW by 2044, individual power contracts still to be signed",
+      "source": "https://www.switch.com/oklo-and-switch-form-landmark-strategic-relationship/",
+      "verification": "Company-reported",
+      "terms": [
+        "12 GW",
+        "2044"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "12 GW"
+      ],
+      "audit_id": "claim-bd48ffca9cc95970",
+      "sequence": 14,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          9
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2024-12"
+      }
+    },
+    {
+      "kind": "claim.framework",
+      "companySlug": "x-energy",
+      "label": "Amazon · options-based U.S. framework targeting 2039, beyond the funded Cascade phase, separate from the Texas project under review",
+      "source": "https://www.ans.org/news/article-6480/amazon-investing-in-smrs-to-deploy-5gw-by-2039/",
+      "verification": "Press-reported",
+      "terms": [
+        "2039",
+        "Cascade",
+        "Texas"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Cascade"
+      ],
+      "audit_id": "claim-65c8f779767b49c0",
+      "sequence": 15,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          15
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2024-10"
+      }
+    },
+    {
+      "kind": "claim.framework",
+      "companySlug": "last-energy",
+      "label": "Haskell County, Texas · 200-acre developer site for up to 30 units; ERCOT interconnection request filed",
+      "source": "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/",
+      "verification": "Press-reported",
+      "terms": [
+        "County",
+        "Texas",
+        "ERCOT"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "County"
+      ],
+      "audit_id": "claim-ad1d1e08e556e6e7",
+      "sequence": 16,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          23
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "claim.framework",
+      "companySlug": "kairos-power",
+      "label": "Google · remaining 450 MWe of the up-to-500 MWe master development agreement after the separately counted 50 MWe Hermes 2 plant",
+      "source": "https://www.kairospower.com/iterative-development",
+      "verification": "Company-reported",
+      "terms": [
+        "450 MWe",
+        "500 MWe",
+        "50 MWe",
+        "MWe",
+        "MWe Hermes"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "500 MWe",
+        "MWe Hermes"
+      ],
+      "audit_id": "claim-c50f8ff5948c8b62",
+      "sequence": 17,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          24
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2024-10"
+      }
+    },
+    {
+      "kind": "claim.framework",
+      "companySlug": "valar-atomics",
+      "label": "NVIDIA · pilot data centre in Emery County, Utah; collaboration, no executed offtake",
+      "source": "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia",
+      "verification": "Company-reported",
+      "terms": [
+        "Emery County",
+        "Utah"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Emery County",
+        "Utah"
+      ],
+      "audit_id": "claim-8ea27f90d5a4ccf0",
+      "sequence": 18,
+      "binding": {
+        "path": [
+          "capacityClaims",
+          25
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-08"
+      }
+    },
+    {
+      "kind": "funding.Cost share",
+      "companySlug": "terrapower",
+      "label": "Up to $2B DOE ceiling, 50% of project costs",
+      "source": "https://www.terrapower.com/fundraise",
+      "verification": null,
+      "terms": [
+        "DOE"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE"
+      ],
+      "audit_id": "claim-cfa079bf98397cdb",
+      "sequence": 19,
+      "binding": {
+        "path": [
+          "fundingEvents",
+          3
+        ],
+        "field": "amount",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "funding.Federal loan",
+      "companySlug": "holtec",
+      "label": "$1.52B loan to Holtec Palisades LLC for the existing 800 MW reactor, not the new units",
+      "source": "https://www.energy.gov/edf/palisades",
+      "verification": null,
+      "terms": [
+        "800 MW",
+        "Holtec Palisades",
+        "LLC"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "800 MW"
+      ],
+      "audit_id": "claim-6f8f72d1e9f86116",
+      "sequence": 20,
+      "binding": {
+        "path": [
+          "fundingEvents",
+          13
+        ],
+        "field": "amount",
+        "sourceField": "source",
+        "date": "2024-09"
+      }
+    },
+    {
+      "kind": "funding.Federal award",
+      "companySlug": "gev-hitachi",
+      "label": "Up to $400M Tier 1 award to TVA for Clinch River",
+      "source": "https://www.ans.org/news/2025-12-03/article-7593/doe-selects-tva-and-holtec-for-smr-awards/",
+      "verification": null,
+      "terms": [
+        "Tier",
+        "TVA",
+        "Clinch River"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Tier"
+      ],
+      "audit_id": "claim-9439079cb098bb70",
+      "sequence": 21,
+      "binding": {
+        "path": [
+          "fundingEvents",
+          14
+        ],
+        "field": "amount",
+        "sourceField": "source",
+        "date": "2025-12"
+      }
+    },
+    {
+      "kind": "funding.Federal award",
+      "companySlug": "nano-nuclear",
+      "label": "~$1.25M AFWERX Direct-to-Phase-II contract, a feasibility study rather than a unit order",
+      "source": "https://www.globenewswire.com/news-release/2025/09/09/3147107/0/en/FOR-IMMEDIATE-RELEASE-UPDATE-NANO-Nuclear-Awarded-AFWERX-Direct-to-Phase-II-Contract-for-KRONOS-MMR-RDT-E-at-Joint-Base-Anacostia-Bolling.html",
+      "verification": null,
+      "terms": [
+        "AFWERX Direct-to-Phase-II"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "AFWERX Direct-to-Phase-II"
+      ],
+      "audit_id": "claim-a80d850419c38e4a",
+      "sequence": 22,
+      "binding": {
+        "path": [
+          "fundingEvents",
+          35
+        ],
+        "field": "amount",
+        "sourceField": "source",
+        "date": "2025-09"
+      }
+    },
+    {
+      "kind": "proof.Permit / authorization",
+      "companySlug": "last-energy",
+      "label": "DOE approved the PWR-5 documented safety analysis; readiness review and startup authorization remain",
+      "source": "https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis",
+      "verification": "Company-reported",
+      "terms": [
+        "PWR-5"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "PWR-5"
+      ],
+      "audit_id": "claim-a40bf9389f62a1e9",
+      "sequence": 23,
+      "binding": {
+        "path": [
+          "proofEvents",
+          5
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-10-07"
+      }
+    },
+    {
+      "kind": "proof.Program selection / agreement",
+      "companySlug": "antares-nuclear",
+      "label": "Antares selected for Army Janus vendor and installation pairing at Fort Bragg, North Carolina; payments depend on technical milestones",
+      "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors",
+      "verification": "Government-reported",
+      "terms": [
+        "Army Janus",
+        "Fort Bragg",
+        "North Carolina"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Army Janus"
+      ],
+      "audit_id": "claim-78b0b0ce047ea9f7",
+      "sequence": 24,
+      "binding": {
+        "path": [
+          "proofEvents",
+          8
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-08-26"
+      }
+    },
+    {
+      "kind": "proof.Program selection / agreement",
+      "companySlug": "bwxt",
+      "label": "BWXT selected for Army Janus vendor and installation pairing at Fort Campbell, Kentucky; payments depend on technical milestones",
+      "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors",
+      "verification": "Government-reported",
+      "terms": [
+        "Army Janus",
+        "Fort Campbell",
+        "Kentucky"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Army Janus"
+      ],
+      "audit_id": "claim-e31a606aa0df6b83",
+      "sequence": 25,
+      "binding": {
+        "path": [
+          "proofEvents",
+          9
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-08-26"
+      }
+    },
+    {
+      "kind": "proof.Program selection / agreement",
+      "companySlug": "westinghouse",
+      "label": "Westinghouse selected for Army Janus vendor and installation pairing at Fort Drum, New York; payments depend on technical milestones",
+      "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors",
+      "verification": "Government-reported",
+      "terms": [
+        "Army Janus",
+        "Fort Drum",
+        "New York"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Army Janus"
+      ],
+      "audit_id": "claim-405aa6998779bfd7",
+      "sequence": 26,
+      "binding": {
+        "path": [
+          "proofEvents",
+          10
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-08-26"
+      }
+    },
+    {
+      "kind": "proof.Program selection / agreement",
+      "companySlug": "radiant-industries",
+      "label": "Radiant selected for Army Janus vendor and installation pairing at Fort Benning, Georgia; payments depend on technical milestones",
+      "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors",
+      "verification": "Government-reported",
+      "terms": [
+        "Army Janus",
+        "Fort Benning",
+        "Georgia"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Army Janus"
+      ],
+      "audit_id": "claim-8b5785eb423fb4ec",
+      "sequence": 27,
+      "binding": {
+        "path": [
+          "proofEvents",
+          11
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-08-26"
+      }
+    },
+    {
+      "kind": "proof.Criticality",
+      "companySlug": "antares-nuclear",
+      "label": "Mark-0 reached initial criticality at Idaho National Laboratory, the first of the DOE pilot cohort",
+      "source": "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors",
+      "verification": "Government-reported",
+      "terms": [
+        "Idaho National",
+        "Laboratory",
+        "DOE"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE"
+      ],
+      "audit_id": "claim-03046c2225f8d68b",
+      "sequence": 28,
+      "binding": {
+        "path": [
+          "proofEvents",
+          12
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-06-04"
+      }
+    },
+    {
+      "kind": "proof.Criticality",
+      "companySlug": "oklo",
+      "label": "Groves reached first criticality in Caldwell County, Texas, the first Reactor Pilot Program reactor to do so on private land and a greenfield site, under a year from groundbreaking",
+      "source": "https://oklo.com/newsroom/news-details/2026/Oklos-Groves-Reactor-Achieves-First-Criticality-in-Under-a-Year/default.aspx",
+      "verification": "Company-reported",
+      "terms": [
+        "Caldwell County",
+        "Texas",
+        "Reactor Pilot",
+        "Program"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Caldwell County"
+      ],
+      "audit_id": "claim-24d006a5b50739f1",
+      "sequence": 29,
+      "binding": {
+        "path": [
+          "proofEvents",
+          15
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-08-06"
+      }
+    },
+    {
+      "kind": "proof.Permit / authorization",
+      "companySlug": "terrapower",
+      "label": "NRC issued construction permit CPAR-1, the first for a commercial-scale Gen IV reactor and the first non-light-water permit in over 40 years",
+      "source": "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit",
+      "verification": "Company-reported",
+      "terms": [
+        "CPAR-1",
+        "Gen"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "CPAR-1",
+        "Gen"
+      ],
+      "audit_id": "claim-04d5244ac161660b",
+      "sequence": 30,
+      "binding": {
+        "path": [
+          "proofEvents",
+          18
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-03"
+      }
+    },
+    {
+      "kind": "proof.Permit / authorization",
+      "companySlug": "kairos-power",
+      "label": "NRC extended the Hermes 1 construction-completion deadline from 2026-12-31 to 2029-04-30",
+      "source": "https://www.federalregister.gov/documents/2026/05/18/2026-09880/in-the-matter-of-kairos-power-llc-hermes-test-reactor-extension-of-latest-date-for-completion-of",
+      "verification": "Verified",
+      "terms": [
+        "2026-12-31",
+        "2029-04-30",
+        "Hermes"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2026-12-31",
+        "2029-04-30",
+        "Hermes"
+      ],
+      "audit_id": "claim-1f1cce160001d85a",
+      "sequence": 31,
+      "binding": {
+        "path": [
+          "proofEvents",
+          21
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-05"
+      }
+    },
+    {
+      "kind": "proof.Construction start",
+      "companySlug": "oklo",
+      "label": "Groundbreaking on the first Aurora powerhouse at Idaho National Laboratory, under the DOE Reactor Pilot Program",
+      "source": "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx",
+      "verification": "Company-reported",
+      "terms": [
+        "Aurora",
+        "Idaho National",
+        "Laboratory",
+        "DOE Reactor",
+        "Pilot Program"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE Reactor"
+      ],
+      "audit_id": "claim-c0f69ac8eb0ec147",
+      "sequence": 32,
+      "binding": {
+        "path": [
+          "proofEvents",
+          22
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-09"
+      }
+    },
+    {
+      "kind": "proof.Fuel milestone",
+      "companySlug": "radiant-industries",
+      "label": "First TRISO fuel shipment received at the DOME facility, INL; criticality not confirmed as of 2026-08-05",
+      "source": "https://www.radiantnuclear.com/blog/triso-fuel-inl/",
+      "verification": "Company-reported",
+      "terms": [
+        "2026-08-05",
+        "TRISO",
+        "DOME",
+        "INL"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2026-08-05"
+      ],
+      "audit_id": "claim-034eb479c1d027de",
+      "sequence": 33,
+      "binding": {
+        "path": [
+          "proofEvents",
+          27
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-07"
+      }
+    },
+    {
+      "kind": "proof.Program selection / agreement",
+      "companySlug": "terrestrial-energy",
+      "label": "Executed a DOE Other Transaction Agreement for Project TETRA, a pilot IMSR; it did not reach the July 4 2026 criticality goal",
+      "source": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under",
+      "verification": "Company-reported",
+      "terms": [
+        "2026",
+        "DOE Other",
+        "Transaction Agreement",
+        "Project TETRA",
+        "IMSR",
+        "July"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE Other",
+        "Transaction Agreement",
+        "July"
+      ],
+      "audit_id": "claim-11c70ff8eba6cdeb",
+      "sequence": 34,
+      "binding": {
+        "path": [
+          "proofEvents",
+          36
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-01"
+      }
+    },
+    {
+      "kind": "proof.Permit / authorization",
+      "companySlug": "last-energy",
+      "label": "DOE approved the PWR-5 preliminary documented safety analysis at Texas A&M-RELLIS; criticality not confirmed as of 2026-08-05",
+      "source": "https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026",
+      "verification": "Press-reported",
+      "terms": [
+        "2026-08-05",
+        "PWR-5",
+        "Texas",
+        "M-RELLIS"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2026-08-05"
+      ],
+      "audit_id": "claim-3f82a1789fa2a686",
+      "sequence": 35,
+      "binding": {
+        "path": [
+          "proofEvents",
+          37
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-05"
+      }
+    },
+    {
+      "kind": "proof.Fuel milestone",
+      "companySlug": "bwxt",
+      "label": "Delivered a full core of TRISO fuel for the Project Pele microreactor; criticality not confirmed as of 2026-08-05",
+      "source": "https://www.bwxt.com/bwxt-delivers-full-core-of-triso-nuclear-fuel-for-project-pele-microreactor/",
+      "verification": "Company-reported",
+      "terms": [
+        "2026-08-05",
+        "TRISO",
+        "Project Pele"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2026-08-05"
+      ],
+      "audit_id": "claim-bdadb6f5c8f868e1",
+      "sequence": 36,
+      "binding": {
+        "path": [
+          "proofEvents",
+          41
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "target.conflict",
+      "companySlug": "terrapower",
+      "label": "Coverage of the same permit frames the plant's NRC-told schedule as early 2031, a five to seven year slip from DOE's original target.",
+      "source": "https://thebreakthrough.org/press/release-the-nrc-issues-construction-permit-for-terrapowers-natrium-reactor",
+      "verification": null,
+      "terms": [
+        "2031",
+        "NRC-told",
+        "DOE"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2031",
+        "NRC-told"
+      ],
+      "audit_id": "claim-03ea602f05557db4",
+      "sequence": 37,
+      "binding": {
+        "path": [
+          "statedTargets",
+          0
+        ],
+        "field": "conflict",
+        "sourceField": "conflictSource",
+        "date": "2026-03"
+      }
+    },
+    {
+      "kind": "target",
+      "companySlug": "oklo",
+      "label": "First commercial Aurora-INL plant in late 2027 to early 2028",
+      "source": "https://www.utilitydive.com/news/oklo-75-mw-reactor-design-smr-nuclear/743578/",
+      "verification": null,
+      "terms": [
+        "2027",
+        "2028",
+        "Aurora-INL"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Aurora-INL"
+      ],
+      "audit_id": "claim-ab815b6fac487dd7",
+      "sequence": 38,
+      "binding": {
+        "path": [
+          "statedTargets",
+          1
+        ],
+        "field": "target",
+        "sourceField": "source",
+        "date": "2025-03"
+      }
+    },
+    {
+      "kind": "target",
+      "companySlug": "x-energy",
+      "label": "February 2026 schedule: TX-1 complete mid-2026, operations from 2027 supplying Long Mott",
+      "source": "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication",
+      "verification": null,
+      "terms": [
+        "2026",
+        "2027",
+        "TX-1",
+        "Long Mott"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2027",
+        "Long Mott"
+      ],
+      "audit_id": "claim-848b9727009f1d79",
+      "sequence": 39,
+      "binding": {
+        "path": [
+          "statedTargets",
+          3
+        ],
+        "field": "target",
+        "sourceField": "source",
+        "date": "2026-02"
+      }
+    },
+    {
+      "kind": "target",
+      "companySlug": "deep-fission",
+      "label": "First commercial underground reactor operating at Parsons, Kansas by 2027 or 2028",
+      "source": "https://interestingengineering.com/energy/us-firm-deep-fission-6000-ft-well",
+      "verification": null,
+      "terms": [
+        "2027",
+        "2028",
+        "Parsons",
+        "Kansas"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2027",
+        "2028"
+      ],
+      "audit_id": "claim-8d5a844315df6a0b",
+      "sequence": 40,
+      "binding": {
+        "path": [
+          "statedTargets",
+          12
+        ],
+        "field": "target",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "project",
+      "companySlug": "aalo-atomics",
+      "label": "Aalo Critical Test Reactor",
+      "source": "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal",
+      "verification": "Government-reported",
+      "terms": [
+        "Critical Test",
+        "Reactor"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Critical Test"
+      ],
+      "audit_id": "claim-3bce2f7f00f57f1a",
+      "sequence": 41,
+      "binding": {
+        "path": [
+          "projects",
+          6
+        ],
+        "field": "name",
+        "sourceField": "source",
+        "date": "2026-07"
+      }
+    },
+    {
+      "kind": "project",
+      "companySlug": "tva",
+      "label": "Clinch River · BWRX-300",
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
+      "verification": "Verified",
+      "terms": [
+        "River",
+        "BWRX-300"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "BWRX-300"
+      ],
+      "audit_id": "claim-6fb85b94d55f54e8",
+      "sequence": 42,
+      "binding": {
+        "path": [
+          "projects",
+          18
+        ],
+        "field": "name",
+        "sourceField": "source",
+        "date": "2026-09-28"
+      }
+    },
+    {
+      "kind": "project",
+      "companySlug": "constellation",
+      "label": "New York Gen III+ SMR siting",
+      "source": "https://www.energy.gov/articles/energy-department-awards-94-million-american-companies-help-expedite-deployments-small",
+      "verification": "Government-reported",
+      "terms": [
+        "York Gen",
+        "III",
+        "SMR"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "York Gen"
+      ],
+      "audit_id": "claim-c0ed170eff3e5418",
+      "sequence": 43,
+      "binding": {
+        "path": [
+          "projects",
+          23
+        ],
+        "field": "name",
+        "sourceField": "source",
+        "date": "2026-05"
+      }
+    },
+    {
+      "kind": "company",
+      "companySlug": "radiant-industries",
+      "label": "Radiant Industries",
+      "source": "https://www.energy.gov/ne/demonstration-microreactor-experiments-dome",
+      "verification": null,
+      "terms": [
+        "Industries"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Industries"
+      ],
+      "audit_id": "claim-0fa6f2cc6cd61067",
+      "sequence": 44,
+      "binding": {
+        "path": [
+          "companies",
+          4
+        ],
+        "field": "name",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "company",
+      "companySlug": "gev-hitachi",
+      "label": "GE Vernova Hitachi",
+      "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
+      "verification": null,
+      "terms": [
+        "Vernova Hitachi"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Vernova Hitachi"
+      ],
+      "audit_id": "claim-b72a569bff5a71e8",
+      "sequence": 45,
+      "binding": {
+        "path": [
+          "companies",
+          25
+        ],
+        "field": "name",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.benchmark",
+      "companySlug": "financing",
+      "label": "C$7.7B first unit (Grid-scale SMR FOAK)",
+      "source": "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/",
+      "verification": null,
+      "terms": [
+        "Grid-scale SMR",
+        "FOAK"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "FOAK"
+      ],
+      "audit_id": "claim-e1444a07a97fbd07",
+      "sequence": 46,
+      "binding": {
+        "path": [
+          "costBenchmarks",
+          3
+        ],
+        "field": "figure",
+        "sourceField": "source",
+        "date": "2025-05"
+      }
+    },
+    {
+      "kind": "finance.benchmark",
+      "companySlug": "financing",
+      "label": "~$5.4B (Grid-scale SMR FOAK)",
+      "source": "https://www.wkms.org/energy/2025-10-14/nuclear-hype-is-building-tva-plans-to-buy-in",
+      "verification": null,
+      "terms": [
+        "Grid-scale SMR",
+        "FOAK"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Grid-scale SMR",
+        "FOAK"
+      ],
+      "audit_id": "claim-dfd6d8a0226b574a",
+      "sequence": 47,
+      "binding": {
+        "path": [
+          "costBenchmarks",
+          4
+        ],
+        "field": "figure",
+        "sourceField": "source",
+        "date": "2025-10"
+      }
+    },
+    {
+      "kind": "finance.benchmark",
+      "companySlug": "financing",
+      "label": "~$4B all-in (Grid-scale SMR Company target)",
+      "source": "https://www.powermag.com/terrapowers-kemmerer-1-enters-construction-timeline-of-the-natrium-projects-road-to-first-power/",
+      "verification": null,
+      "terms": [
+        "Grid-scale SMR",
+        "Company"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Grid-scale SMR"
+      ],
+      "audit_id": "claim-9901b13777cc4d02",
+      "sequence": 48,
+      "binding": {
+        "path": [
+          "costBenchmarks",
+          5
+        ],
+        "field": "figure",
+        "sourceField": "source",
+        "date": "2026-04"
+      }
+    },
+    {
+      "kind": "finance.benchmark",
+      "companySlug": "financing",
+      "label": "$0.14–0.41/kWh (Microreactor FOAK)",
+      "source": "https://www.nucnet.org/news/electricity-from-micro-reactors-will-cost-less-than-diesel-generators-says-nei-report",
+      "verification": null,
+      "terms": [
+        "Microreactor FOAK"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Microreactor FOAK"
+      ],
+      "audit_id": "claim-ee5962cf8ff0fba7",
+      "sequence": 49,
+      "binding": {
+        "path": [
+          "costBenchmarks",
+          9
+        ],
+        "field": "figure",
+        "sourceField": "source",
+        "date": "2019"
+      }
+    },
+    {
+      "kind": "finance.benchmark",
+      "companySlug": "financing",
+      "label": "up to $300M (Microreactor Contract value)",
+      "source": "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
+      "verification": null,
+      "terms": [
+        "Microreactor Contract"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Microreactor Contract"
+      ],
+      "audit_id": "claim-e35e38d800dde16b",
+      "sequence": 50,
+      "binding": {
+        "path": [
+          "costBenchmarks",
+          10
+        ],
+        "field": "figure",
+        "sourceField": "source",
+        "date": "2022-06"
+      }
+    },
+    {
+      "kind": "finance.benchmark",
+      "companySlug": "financing",
+      "label": "$40–90/MWh (Microreactor Company target)",
+      "source": "https://www.utilitydive.com/news/oklo-advanced-nuclear-microreactor-project-pipeline-nrc/724343/",
+      "verification": null,
+      "terms": [
+        "Microreactor Company"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Microreactor Company"
+      ],
+      "audit_id": "claim-7f9d1b4475f5991b",
+      "sequence": 51,
+      "binding": {
+        "path": [
+          "costBenchmarks",
+          11
+        ],
+        "field": "figure",
+        "sourceField": "source",
+        "date": "2024-08"
+      }
+    },
+    {
+      "kind": "finance.benchmark",
+      "companySlug": "financing",
+      "label": "5–7¢/kWh (Microreactor Company target)",
+      "source": "https://www.world-nuclear-news.org/articles/deep-fission-and-endeavour-announce-strategic-partnership",
+      "verification": null,
+      "terms": [
+        "Microreactor Company"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Microreactor Company"
+      ],
+      "audit_id": "claim-9dab00a72d0f0fe9",
+      "sequence": 52,
+      "binding": {
+        "path": [
+          "costBenchmarks",
+          12
+        ],
+        "field": "figure",
+        "sourceField": "source",
+        "date": "2025-01"
+      }
+    },
+    {
+      "kind": "finance.underwriter",
+      "companySlug": "financing",
+      "label": "Export-Import Bank of the United States: A $98M approved loan for Romania's SMR pre-project engineering under the Engineering Multiplier Program, on top of earlier letters of interest of up to $3B (EXIM) and $1B (DFC) for the project's deployment.",
+      "source": "https://www.world-nuclear-news.org/articles/us-exim-bank-approves-loan-for-romanian-smr-project",
+      "verification": null,
+      "terms": [
+        "Bank",
+        "United States",
+        "Romania",
+        "SMR",
+        "Engineering Multiplier",
+        "Program",
+        "EXIM",
+        "DFC"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "United States"
+      ],
+      "audit_id": "claim-9c7c4d0707d29ead",
+      "sequence": 53,
+      "binding": {
+        "path": [
+          "underwriters",
+          1
+        ],
+        "field": "commitment",
+        "sourceField": "source",
+        "date": "2024-10"
+      }
+    },
+    {
+      "kind": "finance.underwriter",
+      "companySlug": "financing",
+      "label": "World Bank: Lifted its decades-long ban on financing nuclear energy projects on June 11, 2025.",
+      "source": "https://www.world-nuclear-news.org/articles/world-bank-agrees-to-end-ban-on-funding-nuclear-energy",
+      "verification": null,
+      "terms": [
+        "2025",
+        "Bank",
+        "Lifted",
+        "June"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Lifted"
+      ],
+      "audit_id": "claim-341fcd92413f9c90",
+      "sequence": 54,
+      "binding": {
+        "path": [
+          "underwriters",
+          3
+        ],
+        "field": "commitment",
+        "sourceField": "source",
+        "date": "2025-06"
+      }
+    },
+    {
+      "kind": "finance.underwriter",
+      "companySlug": "financing",
+      "label": "Fourteen global banks and financial institutions: Publicly backed the goal of tripling nuclear capacity by 2050 at New York Climate Week: Bank of America, Barclays, BNP Paribas, Brookfield, Citi, Crédit Agricole CIB, Goldman Sachs, Guggenheim, Morgan Stanley, Rothschild & Co, Société Générale, Ares, Segra, and Abu Dhabi Commercial Bank.",
+      "source": "https://world-nuclear.org/net-zero-nuclear/news/international-banks-express-support-for-nuclear-expansion",
+      "verification": null,
+      "terms": [
+        "2050",
+        "Publicly",
+        "New York",
+        "Climate Week",
+        "Bank",
+        "America",
+        "Barclays",
+        "BNP Paribas",
+        "Brookfield",
+        "Citi",
+        "Agricole CIB",
+        "Goldman Sachs",
+        "Guggenheim",
+        "Morgan Stanley",
+        "Rothschild",
+        "Soci",
+        "Ares",
+        "Segra",
+        "Abu Dhabi",
+        "Commercial Bank"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Publicly"
+      ],
+      "audit_id": "claim-89c6316d8aadcd7a",
+      "sequence": 55,
+      "binding": {
+        "path": [
+          "underwriters",
+          5
+        ],
+        "field": "commitment",
+        "sourceField": "source",
+        "date": "2024-09"
+      }
+    },
+    {
+      "kind": "finance.siting",
+      "companySlug": "financing",
+      "label": "Advanced-reactor applicants pay NRC $148 per professional hour against the $318 full-cost rate, an ADVANCE Act discount in force since FY2025.",
+      "source": "https://www.ans.org/news/2025-06-25/article-7136/nrc-cuts-50-percent-off-for-advanced-reactor-applicants/",
+      "verification": null,
+      "terms": [
+        "NRC",
+        "ADVANCE Act",
+        "FY2025"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "ADVANCE Act",
+        "FY2025"
+      ],
+      "audit_id": "claim-3d47a57b7964faf0",
+      "sequence": 56,
+      "binding": {
+        "path": [
+          "sitingFacts",
+          1
+        ],
+        "field": "fact",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.siting",
+      "companySlug": "financing",
+      "label": "The first units are proving out on federal sites: Project Pele is being assembled at INL under DOE authority, as are the Reactor Pilot Program and DOME reactors.",
+      "source": "https://www.energy.gov/ne/articles/department-defense-breaks-ground-project-pele-microreactor",
+      "verification": null,
+      "terms": [
+        "Project Pele",
+        "INL",
+        "DOE",
+        "Reactor Pilot",
+        "Program",
+        "DOME"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Reactor Pilot"
+      ],
+      "audit_id": "claim-1ee4250f0ff22c27",
+      "sequence": 57,
+      "binding": {
+        "path": [
+          "sitingFacts",
+          6
+        ],
+        "field": "fact",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.siting",
+      "companySlug": "financing",
+      "label": "Last Energy plans up to 30 PWR-20 units on a 200-acre Texas site, industrial-park scale rather than a traditional plant envelope.",
+      "source": "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/",
+      "verification": null,
+      "terms": [
+        "Energy",
+        "PWR-20",
+        "Texas"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "PWR-20"
+      ],
+      "audit_id": "claim-31ac40ed5ee48a2d",
+      "sequence": 58,
+      "binding": {
+        "path": [
+          "sitingFacts",
+          8
+        ],
+        "field": "fact",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "bwxt",
+      "label": "Prime contractor for Project Pele, the DOD Strategic Capabilities Office transportable microreactor being assembled at INL under a cost-type contract worth up to $300M.",
+      "source": "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
+      "verification": null,
+      "terms": [
+        "Project Pele",
+        "DOD Strategic",
+        "Capabilities Office",
+        "INL"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOD Strategic"
+      ],
+      "audit_id": "claim-3b3453b5ced335a0",
+      "sequence": 59,
+      "binding": {
+        "path": [
+          "companyFinance",
+          2,
+          "government",
+          1
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.cost-claim",
+      "companySlug": "bwxt",
+      "label": "~$300M for the 1.5 MWe Pele prototype, a government cost-type demonstration price",
+      "source": "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
+      "verification": null,
+      "terms": [
+        "1.5 MWe",
+        "MWe Pele"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "1.5 MWe",
+        "MWe Pele"
+      ],
+      "audit_id": "claim-440989d0e82ae21f",
+      "sequence": 60,
+      "binding": {
+        "path": [
+          "companyFinance",
+          2
+        ],
+        "field": "costClaim",
+        "sourceField": "costClaimSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "last-energy",
+      "label": "DOE approved the PWR-5 documented safety analysis on October 7, 2026; readiness review and startup authorization remain.",
+      "source": "https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis",
+      "verification": null,
+      "terms": [
+        "2026",
+        "PWR-5",
+        "October"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "PWR-5"
+      ],
+      "audit_id": "claim-ecee39714ffd92a7",
+      "sequence": 61,
+      "binding": {
+        "path": [
+          "companyFinance",
+          3,
+          "government",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.commercial",
+      "companySlug": "last-energy",
+      "label": "A 200-acre Haskell County, Texas site plans up to 30 units (600 MW) for data-center customers in ERCOT, interconnection request filed, with the company saying offtaker news is still to come.",
+      "source": "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/",
+      "verification": null,
+      "terms": [
+        "600 MW",
+        "Haskell County",
+        "Texas",
+        "ERCOT"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Haskell County"
+      ],
+      "audit_id": "claim-2a789b58d1d6eedc",
+      "sequence": 62,
+      "binding": {
+        "path": [
+          "companyFinance",
+          3,
+          "commercial",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.model",
+      "companySlug": "aalo-atomics",
+      "label": "Vertically integrated for AI data centers: the Aalo-X reactor and the 50 MWe Aalo Pod plant product.",
+      "source": "https://www.aalo.com/aalo-x",
+      "verification": null,
+      "terms": [
+        "50 MWe",
+        "Aalo-X",
+        "MWe Aalo",
+        "Pod"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "MWe Aalo"
+      ],
+      "audit_id": "claim-ed373859b6a252f9",
+      "sequence": 63,
+      "binding": {
+        "path": [
+          "companyFinance",
+          5
+        ],
+        "field": "model",
+        "sourceField": "modelSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "aalo-atomics",
+      "label": "DOE Reactor Pilot Program: its Critical Test Reactor reached criticality at INL on July 4, 2026, and Aalo-X proceeds under the same DOE authority.",
+      "source": "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal",
+      "verification": null,
+      "terms": [
+        "2026",
+        "Reactor Pilot",
+        "Program",
+        "Critical Test",
+        "Reactor",
+        "INL",
+        "July",
+        "Aalo-X",
+        "DOE"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Critical Test"
+      ],
+      "audit_id": "claim-5f5bcd79a7593366",
+      "sequence": 64,
+      "binding": {
+        "path": [
+          "companyFinance",
+          5,
+          "government",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.commercial",
+      "companySlug": "valar-atomics",
+      "label": "NVIDIA collaboration for a ~30 MW pilot AI data center in Emery County, Utah, paired with Ward 250. Non-binding.",
+      "source": "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia",
+      "verification": null,
+      "terms": [
+        "30 MW",
+        "Emery County",
+        "Utah",
+        "Ward",
+        "Non-binding"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Emery County",
+        "Utah",
+        "Non-binding"
+      ],
+      "audit_id": "claim-cbd24fe5a663a3b8",
+      "sequence": 65,
+      "binding": {
+        "path": [
+          "companyFinance",
+          6,
+          "commercial",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "antares-nuclear",
+      "label": "First Reactor Pilot Program criticality: Mark-0 at INL, June 2026, run with the U.S. Army.",
+      "source": "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors",
+      "verification": null,
+      "terms": [
+        "2026",
+        "Reactor Pilot",
+        "Program",
+        "Mark-0",
+        "INL",
+        "June",
+        "Army"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "INL"
+      ],
+      "audit_id": "claim-fbba7df48ba80353",
+      "sequence": 66,
+      "binding": {
+        "path": [
+          "companyFinance",
+          7,
+          "government",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "antares-nuclear",
+      "label": "Army selected Antares for Fort Bragg under Janus on August 26, 2026. The separate Air Force program has its own procurement history.",
+      "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors",
+      "verification": null,
+      "terms": [
+        "2026",
+        "Antares",
+        "Fort Bragg",
+        "Janus",
+        "August",
+        "Air Force"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Air Force"
+      ],
+      "audit_id": "claim-2554654b9ad1cb2e",
+      "sequence": 67,
+      "binding": {
+        "path": [
+          "companyFinance",
+          7,
+          "government",
+          1
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "antares-nuclear",
+      "label": "Delivered an electrically heated prototype for testing at NASA's Marshall Space Flight Center, under a NASA program that uses Space Act Agreements in which companies own the reactors and sell the power.",
+      "source": "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/",
+      "verification": null,
+      "terms": [
+        "NASA",
+        "Marshall Space",
+        "Flight Center",
+        "Space Act",
+        "Agreements"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Marshall Space",
+        "Flight Center",
+        "Space Act",
+        "Agreements"
+      ],
+      "audit_id": "claim-b929247caf892a20",
+      "sequence": 68,
+      "binding": {
+        "path": [
+          "companyFinance",
+          7,
+          "government",
+          2
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "nano-nuclear",
+      "label": "AFWERX Direct-to-Phase-II contract (~$1.25M) to study a KRONOS system at Joint Base Anacostia-Bolling. A feasibility study, not a unit order.",
+      "source": "https://www.globenewswire.com/news-release/2025/09/09/3147107/0/en/FOR-IMMEDIATE-RELEASE-UPDATE-NANO-Nuclear-Awarded-AFWERX-Direct-to-Phase-II-Contract-for-KRONOS-MMR-RDT-E-at-Joint-Base-Anacostia-Bolling.html",
+      "verification": null,
+      "terms": [
+        "Direct-to-Phase-II",
+        "KRONOS",
+        "Joint Base",
+        "Anacostia-Bolling"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Direct-to-Phase-II"
+      ],
+      "audit_id": "claim-d168e9a6dd073c68",
+      "sequence": 69,
+      "binding": {
+        "path": [
+          "companyFinance",
+          8,
+          "government",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.model",
+      "companySlug": "deployable-energy",
+      "label": "Nuclear-battery platform: 1 MWe Unity units aimed at behind-the-meter national-security, data-center, maritime, and remote industrial loads.",
+      "source": "https://www.deployable.energy/post/deployable-energy-announces-unity-demonstration-reactor-achieves-criticality-at-idaho-national-labor",
+      "verification": null,
+      "terms": [
+        "1 MWe",
+        "MWe Unity"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "MWe Unity"
+      ],
+      "audit_id": "claim-7998d842e274eac9",
+      "sequence": 70,
+      "binding": {
+        "path": [
+          "companyFinance",
+          9
+        ],
+        "field": "model",
+        "sourceField": "modelSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.model",
+      "companySlug": "terrapower",
+      "label": "Project sponsor: builds Kemmerer with a roughly 50/50 DOE cost share under ARDP, up to a $2B federal ceiling.",
+      "source": "https://www.terrapower.com/fundraise",
+      "verification": null,
+      "terms": [
+        "Kemmerer",
+        "DOE",
+        "ARDP"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Kemmerer",
+        "DOE"
+      ],
+      "audit_id": "claim-7c30c85983dc2fc5",
+      "sequence": 71,
+      "binding": {
+        "path": [
+          "companyFinance",
+          10
+        ],
+        "field": "model",
+        "sourceField": "modelSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "terrapower",
+      "label": "ARDP demonstration cost share, up to $2B DOE ceiling at 50% of project costs, the largest federal commitment behind any entrant's first unit.",
+      "source": "https://www.terrapower.com/fundraise",
+      "verification": null,
+      "terms": [
+        "DOE"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE"
+      ],
+      "audit_id": "claim-6492641ce89d66d7",
+      "sequence": 72,
+      "binding": {
+        "path": [
+          "companyFinance",
+          10,
+          "government",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.model",
+      "companySlug": "oklo",
+      "label": "Build-own-operate: Oklo keeps the plant and sells power, so its deals are power agreements rather than reactor sales. The Eielson structure is exactly that: design, build, own, operate.",
+      "source": "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
+      "verification": null,
+      "terms": [
+        "Oklo",
+        "The Eielson"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "The Eielson"
+      ],
+      "audit_id": "claim-1d981fda206bd6e6",
+      "sequence": 73,
+      "binding": {
+        "path": [
+          "companyFinance",
+          11
+        ],
+        "field": "model",
+        "sourceField": "modelSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "oklo",
+      "label": "Air Force/DLA Notice of Intent to Award for a 5 MW microreactor at Eielson AFB under a prospective 30-year fixed-price power arrangement, pending NRC licensing.",
+      "source": "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
+      "verification": null,
+      "terms": [
+        "5 MW",
+        "Force",
+        "DLA Notice",
+        "Intent",
+        "Award",
+        "Eielson AFB",
+        "NRC"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "5 MW",
+        "DLA Notice",
+        "Eielson AFB"
+      ],
+      "audit_id": "claim-167f2c094ac2d28c",
+      "sequence": 74,
+      "binding": {
+        "path": [
+          "companyFinance",
+          11,
+          "government",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "oklo",
+      "label": "Aurora-INL is being built under the DOE Reactor Pilot Program while its NRC combined license is under review.",
+      "source": "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx",
+      "verification": null,
+      "terms": [
+        "DOE Reactor",
+        "Pilot Program",
+        "NRC"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE Reactor"
+      ],
+      "audit_id": "claim-5ca33cc88728ff14",
+      "sequence": 75,
+      "binding": {
+        "path": [
+          "companyFinance",
+          11,
+          "government",
+          1
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.commercial",
+      "companySlug": "oklo",
+      "label": "Switch master power agreement frames 12 GW of Aurora deployment by 2044; non-binding, with per-project PPAs to follow.",
+      "source": "https://www.switch.com/oklo-and-switch-form-landmark-strategic-relationship/",
+      "verification": null,
+      "terms": [
+        "12 GW",
+        "2044",
+        "Aurora",
+        "PPAs"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "12 GW",
+        "PPAs"
+      ],
+      "audit_id": "claim-b59c0cdfd5b9bd85",
+      "sequence": 76,
+      "binding": {
+        "path": [
+          "companyFinance",
+          11,
+          "commercial",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.model",
+      "companySlug": "x-energy",
+      "label": "Reactor and fuel vendor: sells Xe-100 plants and TRISO-X fuel, with the ARDP demonstration delivering the first commercial four-unit plant and fuel facility.",
+      "source": "https://x-energy.com/news/x-energy-signs-department-of-energys-advanced-reactor-demonstration-program-ardp-cooperative-agreement/",
+      "verification": null,
+      "terms": [
+        "Xe-100",
+        "TRISO-X",
+        "ARDP"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Xe-100",
+        "TRISO-X"
+      ],
+      "audit_id": "claim-abdb07adcac517b2",
+      "sequence": 77,
+      "binding": {
+        "path": [
+          "companyFinance",
+          13
+        ],
+        "field": "model",
+        "sourceField": "modelSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "x-energy",
+      "label": "ARDP cost share of up to $1.2B at 50/50 to develop, license, build, and demonstrate the first Xe-100 plant and fuel facility.",
+      "source": "https://x-energy.com/news/x-energy-signs-department-of-energys-advanced-reactor-demonstration-program-ardp-cooperative-agreement/",
+      "verification": null,
+      "terms": [
+        "Xe-100"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Xe-100"
+      ],
+      "audit_id": "claim-d2e3f2f353f58e34",
+      "sequence": 78,
+      "binding": {
+        "path": [
+          "companyFinance",
+          13,
+          "government",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.model",
+      "companySlug": "holtec",
+      "label": "SMR-300 fleet builder with exclusive EPC partner Hyundai E&C and a stated ambition of a 10 GW North American fleet.",
+      "source": "https://world-nuclear-news.org/articles/holtec-and-hyundai-ec-target-10gw-fleet-of-smrs-in-us",
+      "verification": null,
+      "terms": [
+        "10 GW",
+        "EPC",
+        "Hyundai",
+        "North American"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "EPC",
+        "North American"
+      ],
+      "audit_id": "claim-9893e428c4bc1ea0",
+      "sequence": 79,
+      "binding": {
+        "path": [
+          "companyFinance",
+          14
+        ],
+        "field": "model",
+        "sourceField": "modelSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "holtec",
+      "label": "$400M Gen III+ Tier 1 milestone-based cost share for PIONEER 1&2 licensing, pre-construction, and supply-chain mobilization.",
+      "source": "https://holtecinternational.com/hh-40-24/",
+      "verification": null,
+      "terms": [
+        "Gen III",
+        "Tier",
+        "PIONEER"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Gen III"
+      ],
+      "audit_id": "claim-e54156491a4e01aa",
+      "sequence": 80,
+      "binding": {
+        "path": [
+          "companyFinance",
+          14,
+          "government",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "holtec",
+      "label": "$1.52B DOE loan to Holtec Palisades LLC covers the existing 800 MW reactor's restart, not the new units.",
+      "source": "https://www.energy.gov/edf/palisades",
+      "verification": null,
+      "terms": [
+        "800 MW",
+        "DOE",
+        "Holtec Palisades",
+        "LLC"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "800 MW"
+      ],
+      "audit_id": "claim-27ba82e44115a0b5",
+      "sequence": 81,
+      "binding": {
+        "path": [
+          "companyFinance",
+          14,
+          "government",
+          1
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.commercial",
+      "companySlug": "holtec",
+      "label": "The Wolverine/Hoosier PPA on restarted Palisades carries a contract expansion provision covering up to two SMR-300 units at the site.",
+      "source": "https://www.utilitydive.com/news/palisades-nuclear-holtec-wolverine-hoosier-power-purchase-ppa/693480/",
+      "verification": null,
+      "terms": [
+        "Wolverine",
+        "Hoosier PPA",
+        "Palisades",
+        "SMR-300"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Hoosier PPA",
+        "SMR-300"
+      ],
+      "audit_id": "claim-feb1c370f21643f2",
+      "sequence": 82,
+      "binding": {
+        "path": [
+          "companyFinance",
+          14,
+          "commercial",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "gev-hitachi",
+      "label": "DOE's $400M Tier 1 award flows to TVA to accelerate the Clinch River BWRX-300.",
+      "source": "https://www.ans.org/news/2025-12-03/article-7593/doe-selects-tva-and-holtec-for-smr-awards/",
+      "verification": null,
+      "terms": [
+        "Tier",
+        "TVA",
+        "Clinch River",
+        "BWRX-300"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Tier"
+      ],
+      "audit_id": "claim-391d2f188ab07ef3",
+      "sequence": 83,
+      "binding": {
+        "path": [
+          "companyFinance",
+          15,
+          "government",
+          1
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.cost-claim",
+      "companySlug": "gev-hitachi",
+      "label": "Darlington: C$7.7B first unit including shared systems; C$20.9B for four units (2024 dollars)",
+      "source": "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/",
+      "verification": null,
+      "terms": [
+        "2024"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2024"
+      ],
+      "audit_id": "claim-feac81f5a7326ccd",
+      "sequence": 84,
+      "binding": {
+        "path": [
+          "companyFinance",
+          15
+        ],
+        "field": "costClaim",
+        "sourceField": "costClaimSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.model",
+      "companySlug": "nuscale",
+      "label": "Technology licensor: ENTRA1 Energy exclusively develops, finances, owns, and operates NuScale-powered plants; NuScale sells the licensed module.",
+      "source": "https://www.nuscalepower.com/about/strategic-partners",
+      "verification": null,
+      "terms": [
+        "ENTRA1 Energy",
+        "NuScale-powered",
+        "NuScale"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "NuScale-powered"
+      ],
+      "audit_id": "claim-f72ca462a72e8fde",
+      "sequence": 85,
+      "binding": {
+        "path": [
+          "companyFinance",
+          16
+        ],
+        "field": "model",
+        "sourceField": "modelSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.model",
+      "companySlug": "terrestrial-energy",
+      "label": "Reactor vendor pairing DOE pilot agreements (Project TETRA reactor, Project TEFLA fuel salt) with the commercial IMSR400 product.",
+      "source": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under",
+      "verification": null,
+      "terms": [
+        "DOE",
+        "Project TETRA",
+        "Project TEFLA",
+        "IMSR400"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Project TEFLA",
+        "IMSR400"
+      ],
+      "audit_id": "claim-223f3d0576d95b07",
+      "sequence": 86,
+      "binding": {
+        "path": [
+          "companyFinance",
+          17
+        ],
+        "field": "model",
+        "sourceField": "modelSource",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.government",
+      "companySlug": "terrestrial-energy",
+      "label": "Two DOE Other Transaction Agreements executed under Executive Order 14301 pathways: Project TETRA, the pilot reactor, and Project TEFLA, the fuel salt facility.",
+      "source": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under",
+      "verification": null,
+      "terms": [
+        "DOE Other",
+        "Transaction Agreements",
+        "Executive Order",
+        "Project TETRA",
+        "Project TEFLA"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOE Other",
+        "Transaction Agreements",
+        "Project TEFLA"
+      ],
+      "audit_id": "claim-c5ba46ddadf6c669",
+      "sequence": 87,
+      "binding": {
+        "path": [
+          "companyFinance",
+          17,
+          "government",
+          1
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "finance.commercial",
+      "companySlug": "terrestrial-energy",
+      "label": "Riot Platforms collaboration scoped up to 4 GW across data-center sites in Texas and Kentucky; an MOU-level collaboration, not an order.",
+      "source": "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/",
+      "verification": null,
+      "terms": [
+        "4 GW",
+        "Platforms",
+        "Texas",
+        "Kentucky",
+        "MOU-level"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "MOU-level"
+      ],
+      "audit_id": "claim-1c4c2865cb4dbc94",
+      "sequence": 88,
+      "binding": {
+        "path": [
+          "companyFinance",
+          17,
+          "commercial",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.position.Executed",
+      "companySlug": "microsoft",
+      "label": "20-year PPA with Constellation launching the Crane Clean Energy Center, the Three Mile Island Unit 1 restart, about 835 MW.",
+      "source": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+      "verification": "Company-reported",
+      "terms": [
+        "835 MW",
+        "PPA",
+        "Constellation",
+        "Crane Clean",
+        "Energy Center",
+        "Three Mile",
+        "Island Unit"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "835 MW",
+        "PPA"
+      ],
+      "audit_id": "claim-9db855b149efe06c",
+      "sequence": 89,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          0,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2024-09"
+      }
+    },
+    {
+      "kind": "bd.position.Framework / LOI",
+      "companySlug": "microsoft",
+      "label": "Duke Energy Accelerating Clean Energy MOU, alongside Amazon, Google, and Nucor, to develop anchor tariffs funding clean-firm generation.",
+      "source": "https://news.duke-energy.com/releases/responding-to-growing-demand-duke-energy-amazon-google-microsoft-and-nucor-execute-agreements-to-accelerate-clean-energy-options",
+      "verification": "Company-reported",
+      "terms": [
+        "Energy Accelerating",
+        "Clean Energy",
+        "MOU",
+        "Amazon",
+        "Google",
+        "Nucor"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Energy Accelerating"
+      ],
+      "audit_id": "claim-e190aae1d50d2e08",
+      "sequence": 90,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          0,
+          "positions",
+          1
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2024-05"
+      }
+    },
+    {
+      "kind": "bd.position.Executed",
+      "companySlug": "meta",
+      "label": "20-year PPA for Constellation's Clinton Clean Energy Center in Illinois: 1,121 MW from June 2027, supporting relicensing plus a 30 MW uprate.",
+      "source": "https://www.constellationenergy.com/news/2025/constellation-meta-sign-20-year-deal-for-clean-reliable-nuclear-energy-in-illinois.html",
+      "verification": "Company-reported",
+      "terms": [
+        "1,121 MW",
+        "30 MW",
+        "2027",
+        "PPA",
+        "Constellation",
+        "Clinton Clean",
+        "Energy Center",
+        "Illinois",
+        "June"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "1,121 MW",
+        "30 MW"
+      ],
+      "audit_id": "claim-4b7b970345fba11b",
+      "sequence": 91,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          1,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-06"
+      }
+    },
+    {
+      "kind": "bd.position.Executed",
+      "companySlug": "google",
+      "label": "25-year PPA underpinning NextEra's restart of Duane Arnold, Iowa's only nuclear plant (615 MW), targeted online in early 2029.",
+      "source": "https://newsroom.nexteraenergy.com/NextEra-Energy-and-Google-Announce-New-Collaboration-to-Accelerate-Nuclear-Energy-Deployment-in-the-U-S?l=12",
+      "verification": "Company-reported",
+      "terms": [
+        "615 MW",
+        "2029",
+        "PPA",
+        "NextEra",
+        "Duane Arnold",
+        "Iowa"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "PPA"
+      ],
+      "audit_id": "claim-e58dccf04b3876ba",
+      "sequence": 92,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          2,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-10"
+      }
+    },
+    {
+      "kind": "bd.position.Equity / board",
+      "companySlug": "amazon",
+      "label": "Amazon's Climate Pledge Fund anchored X-energy's roughly $500M Series C-1, funding Xe-100 design completion, licensing, and the first TRISO-X fuel facility phase.",
+      "source": "https://x-energy.com/media/news-releases/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power",
+      "verification": "Company-reported",
+      "terms": [
+        "Climate Pledge",
+        "Fund",
+        "X-energy",
+        "Series C-1",
+        "Xe-100",
+        "TRISO-X"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Xe-100",
+        "TRISO-X"
+      ],
+      "audit_id": "claim-856790cb42f58ec1",
+      "sequence": 93,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          3,
+          "positions",
+          1
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2024-10"
+      }
+    },
+    {
+      "kind": "bd.position.Stated interest",
+      "companySlug": "oracle",
+      "label": "Chairman Larry Ellison told the September 2024 earnings call Oracle is designing a gigawatt data center powered by three small modular reactors, with building permits secured.",
+      "source": "https://www.cnbc.com/2024/09/10/oracle-is-designing-a-data-center-that-would-be-powered-by-three-small-nuclear-reactors.html",
+      "verification": "Press-reported",
+      "terms": [
+        "2024",
+        "Larry Ellison",
+        "September",
+        "Oracle"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "September"
+      ],
+      "audit_id": "claim-63db03010e91d94f",
+      "sequence": 94,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          4,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2024-09"
+      }
+    },
+    {
+      "kind": "bd.position.Framework / LOI",
+      "companySlug": "switch",
+      "label": "Master power agreement with Oklo framing 12 GW of Aurora deployment by 2044; individual power contracts still to be signed.",
+      "source": "https://www.switch.com/oklo-and-switch-form-landmark-strategic-relationship/",
+      "verification": "Company-reported",
+      "terms": [
+        "12 GW",
+        "2044",
+        "Oklo",
+        "Aurora"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "12 GW"
+      ],
+      "audit_id": "claim-b28e472305c1cfa2",
+      "sequence": 95,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          5,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2024-12"
+      }
+    },
+    {
+      "kind": "bd.position.Framework / LOI",
+      "companySlug": "nvidia",
+      "label": "Collaboration with Valar Atomics on a roughly 30 MW pilot AI data center in Emery County, Utah, announced with the Sequoia-led Series B; no executed offtake.",
+      "source": "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia",
+      "verification": "Company-reported",
+      "terms": [
+        "30 MW",
+        "Valar Atomics",
+        "Emery County",
+        "Utah",
+        "Sequoia-led Series"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Emery County",
+        "Utah",
+        "Sequoia-led Series"
+      ],
+      "audit_id": "claim-d3bfb3661116682d",
+      "sequence": 96,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          8,
+          "positions",
+          1
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-08"
+      }
+    },
+    {
+      "kind": "bd.position.Framework / LOI",
+      "companySlug": "riot-platforms",
+      "label": "Collaboration with Terrestrial Energy scoped up to 4 GW across data-center sites in Texas and Kentucky; an MOU-level collaboration, not an order.",
+      "source": "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/",
+      "verification": "Company-reported",
+      "terms": [
+        "4 GW",
+        "Terrestrial Energy",
+        "Texas",
+        "Kentucky",
+        "MOU-level"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "MOU-level"
+      ],
+      "audit_id": "claim-7d8eaf8fd1ad46e4",
+      "sequence": 97,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          9,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-05"
+      }
+    },
+    {
+      "kind": "bd.position.Stated interest",
+      "companySlug": "openai",
+      "label": "Sam Altman personally took Oklo public through a merger with his AltC Acquisition Corp in May 2024 and chaired its board; he stepped down in April 2025, reported as freeing Oklo to explore partnerships with OpenAI and other hyperscalers. OpenAI itself has never held equity, a board seat, or any documented agreement with Oklo.",
+      "source": "https://www.cnbc.com/2025/04/22/sam-altman-steps-down-as-oklo-chair-freeing-nuclear-company-up-to-work-with-more-ai-companies.html",
+      "verification": "Press-reported",
+      "terms": [
+        "2024",
+        "2025",
+        "Altman",
+        "Oklo",
+        "AltC Acquisition",
+        "Corp",
+        "May",
+        "April",
+        "OpenAI"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "April"
+      ],
+      "audit_id": "claim-51f3310e00b13f2c",
+      "sequence": 98,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          11,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-04"
+      }
+    },
+    {
+      "kind": "bd.position.Stated interest",
+      "companySlug": "cenovus-pathways",
+      "label": "Alberta committed C$7M toward a C$26.7M Cenovus-led study of how SMRs could supply non-emitting process heat and power to oil-sands steam-assisted gravity drainage operations.",
+      "source": "https://www.world-nuclear-news.org/Articles/Alberta-funds-SMR-deployment-study",
+      "verification": "Press-reported",
+      "terms": [
+        "Cenovus-led",
+        "SMRs"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Cenovus-led"
+      ],
+      "audit_id": "claim-aa51e957a68fd794",
+      "sequence": 99,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          13,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2023-09"
+      }
+    },
+    {
+      "kind": "bd.position.Framework / LOI",
+      "companySlug": "nucor",
+      "label": "Duke Energy Accelerating Clean Energy MOU, alongside Amazon, Google, and Microsoft, to develop rate structures where large customers fund clean-firm generation.",
+      "source": "https://news.duke-energy.com/releases/responding-to-growing-demand-duke-energy-amazon-google-microsoft-and-nucor-execute-agreements-to-accelerate-clean-energy-options",
+      "verification": "Company-reported",
+      "terms": [
+        "Energy Accelerating",
+        "Clean Energy",
+        "MOU",
+        "Amazon",
+        "Google",
+        "Microsoft"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Energy Accelerating"
+      ],
+      "audit_id": "claim-b43d1d5a291f6c06",
+      "sequence": 100,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          16,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2024-05"
+      }
+    },
+    {
+      "kind": "bd.position.Executed",
+      "companySlug": "dod-sco",
+      "label": "Project Pele: BWXT is building the transportable 1.5 MWe prototype, being assembled at Idaho National Laboratory under a cost-type contract with a ceiling up to $300M.",
+      "source": "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
+      "verification": "Press-reported",
+      "terms": [
+        "1.5 MWe",
+        "Pele",
+        "BWXT",
+        "MWe",
+        "Idaho National",
+        "Laboratory"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "1.5 MWe"
+      ],
+      "audit_id": "claim-e3f48cd732b72247",
+      "sequence": 101,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          17,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2022-06"
+      }
+    },
+    {
+      "kind": "bd.position.Executed",
+      "companySlug": "diu-air-force",
+      "label": "Advanced Nuclear Power for Installations delivery agreement with Radiant: a mass-manufactured Kaleidos delivered to a base within 36 months of the August 2025 signing, with Antares and Westinghouse still competing for Colorado and Montana assignments.",
+      "source": "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
+      "verification": "Press-reported",
+      "terms": [
+        "2025",
+        "Nuclear Power",
+        "Installations",
+        "Radiant",
+        "Kaleidos",
+        "August",
+        "Antares",
+        "Westinghouse",
+        "Colorado",
+        "Montana"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Kaleidos",
+        "Colorado",
+        "Montana"
+      ],
+      "audit_id": "claim-7f3547a51e50721e",
+      "sequence": 102,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          18,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-08"
+      }
+    },
+    {
+      "kind": "bd.position.Framework / LOI",
+      "companySlug": "diu-air-force",
+      "label": "Air Force and DLA notice of intent to award Oklo a 5 MW microreactor at Eielson AFB, Alaska under a prospective 30-year fixed-price power arrangement, pending NRC licensing.",
+      "source": "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
+      "verification": "Press-reported",
+      "terms": [
+        "5 MW",
+        "Force",
+        "DLA",
+        "Oklo",
+        "Eielson AFB",
+        "Alaska",
+        "NRC"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "5 MW",
+        "DLA",
+        "Eielson AFB"
+      ],
+      "audit_id": "claim-bce0052a633c26a0",
+      "sequence": 103,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          18,
+          "positions",
+          1
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-06"
+      }
+    },
+    {
+      "kind": "bd.position.Executed",
+      "companySlug": "diu-air-force",
+      "label": "Finalized ANPI base assignments pairing each developer with a contractor-owned unit: Radiant's Kaleidos (1 MWe) to Buckley Space Force Base, Colorado; Westinghouse's eVinci to Malmstrom Air Force Base, Montana; Antares' R1 (200-300 kW) to Joint Base San Antonio, Texas, with Radiant and Antares targeting delivery as early as 2028.",
+      "source": "https://www.powermag.com/air-force-anpi-picks-put-radiant-antares-westinghouse-on-track-for-first-on%E2%80%91base-microreactors-by-2028/",
+      "verification": "Press-reported",
+      "terms": [
+        "1 MWe",
+        "2028",
+        "ANPI",
+        "Radiant",
+        "Kaleidos",
+        "MWe",
+        "Buckley Space",
+        "Force Base",
+        "Colorado",
+        "Westinghouse",
+        "Malmstrom Air",
+        "Montana",
+        "Antares",
+        "Joint Base",
+        "San Antonio",
+        "Texas"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "1 MWe"
+      ],
+      "audit_id": "claim-9077c9d16205db07",
+      "sequence": 104,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          18,
+          "positions",
+          2
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-04"
+      }
+    },
+    {
+      "kind": "bd.position.Program / solicitation",
+      "companySlug": "army",
+      "label": "The Janus Program solicits commercially owned and operated microreactors on Army installations, paid against milestones; site selection follows, at the program launch, before the August 2026 vendor selections.",
+      "source": "https://www.army.mil/article/288903/army_announces_janus_program_for_next_generation_nuclear_energy",
+      "verification": "Government-reported",
+      "terms": [
+        "2026",
+        "Janus Program",
+        "Army",
+        "August"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "August"
+      ],
+      "audit_id": "claim-28567481c618cf64",
+      "sequence": 105,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          19,
+          "positions",
+          1
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-10"
+      }
+    },
+    {
+      "kind": "bd.position.Program / solicitation",
+      "companySlug": "army",
+      "label": "Named nine candidate Janus installations after on-site assessment, including Fort Wainwright, Alaska, a net power importer since its coal cogeneration plant stopped exporting; DIU opened an area-of-interest solicitation for industry technical proposals, before the August 2026 selection of five initial vendor/site pairings.",
+      "source": "https://www.world-nuclear-news.org/articles/us-army-names-potential-microreactor-sites",
+      "verification": "Press-reported",
+      "terms": [
+        "2026",
+        "Janus",
+        "Fort Wainwright",
+        "Alaska",
+        "DIU",
+        "August"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "August"
+      ],
+      "audit_id": "claim-19d98c666682dc2d",
+      "sequence": 106,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          19,
+          "positions",
+          2
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-11"
+      }
+    },
+    {
+      "kind": "bd.position.Program / solicitation",
+      "companySlug": "army",
+      "label": "Executive Order 14299 directs an Army-regulated reactor operating at a domestic military installation by September 30, 2028.",
+      "source": "https://www.whitehouse.gov/presidential-actions/2025/05/deploying-advanced-nuclear-reactor-technologies-for-national-security/",
+      "verification": "Government-reported",
+      "terms": [
+        "2028",
+        "Order",
+        "Army-regulated",
+        "September"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Army-regulated"
+      ],
+      "audit_id": "claim-402642e69068ec66",
+      "sequence": 107,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          19,
+          "positions",
+          3
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-05"
+      }
+    },
+    {
+      "kind": "bd.position.Program / solicitation",
+      "companySlug": "nasa",
+      "label": "Under NASA's fission surface power approach, companies own the reactors and sell the power through Space Act Agreements; Antares delivered an electrically heated prototype to Marshall Space Flight Center for testing.",
+      "source": "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/",
+      "verification": "Press-reported",
+      "terms": [
+        "NASA",
+        "Space Act",
+        "Agreements",
+        "Antares",
+        "Marshall Space",
+        "Flight Center"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Space Act",
+        "Agreements",
+        "Marshall Space",
+        "Flight Center"
+      ],
+      "audit_id": "claim-bc9de842669755df",
+      "sequence": 108,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          21,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-12"
+      }
+    },
+    {
+      "kind": "bd.position.Framework / LOI",
+      "companySlug": "tva",
+      "label": "Collaborative agreement with ENTRA1 Energy to deploy up to 6 GW of NuScale-based capacity across TVA's seven-state region; no power contract signed.",
+      "source": "https://www.nuscalepower.com/press-releases/2025/nuscale-proudly-supports-tva-and-entra1-energy-announcement-of-landmark-6-gigawatt-small-module-reactor-smr-deployment-program",
+      "verification": "Company-reported",
+      "terms": [
+        "6 GW",
+        "ENTRA1 Energy",
+        "NuScale-based",
+        "TVA"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "NuScale-based"
+      ],
+      "audit_id": "claim-24238c7abcf14edc",
+      "sequence": 109,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          22,
+          "positions",
+          1
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-09"
+      }
+    },
+    {
+      "kind": "bd.position.Executed",
+      "companySlug": "canada",
+      "label": "Ontario approved OPG's four-unit Darlington BWRX-300 program at C$20.9B in 2024 dollars, C$7.7B of it for the first unit and shared systems.",
+      "source": "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/",
+      "verification": "Press-reported",
+      "terms": [
+        "2024",
+        "OPG",
+        "Darlington BWRX-300"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2024"
+      ],
+      "audit_id": "claim-a726523937a65e7d",
+      "sequence": 110,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          28,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-05"
+      }
+    },
+    {
+      "kind": "bd.position.Framework / LOI",
+      "companySlug": "philippines",
+      "label": "Meralco PowerGen and Ultra Safe Nuclear Corporation signed a cooperation agreement, witnessed by President Marcos, for a pre-feasibility study of USNC's 15 MWe Micro-Modular Reactor; Meralco holds an option to pursue a full feasibility study on the results.",
+      "source": "https://world-nuclear-news.org/Articles/Philippines-considers-deploying-USNC-microreactors",
+      "verification": "Press-reported",
+      "terms": [
+        "15 MWe",
+        "PowerGen",
+        "Ultra Safe",
+        "Nuclear Corporation",
+        "President Marcos",
+        "USNC",
+        "MWe Micro-Modular",
+        "Reactor",
+        "Meralco"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "PowerGen",
+        "MWe Micro-Modular"
+      ],
+      "audit_id": "claim-0ed539a99110d8a1",
+      "sequence": 111,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          31,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2023-11"
+      }
+    },
+    {
+      "kind": "bd.position.Stated interest",
+      "companySlug": "south-korea",
+      "label": "Nano Nuclear Energy and DS Dansuk signed a non-binding, non-exclusive MOU for DS Dansuk to serve as local coordinator (siting, supply chain, regulatory) for Nano's KRONOS Micro Modular Reactor under Korea's 'One Factory, One MMR' strategy.",
+      "source": "https://www.barchart.com/story/news/37017636/nano-nuclear-energy-signs-mou-with-ds-dansuk-to-advance-micro-modular-reactor-deployment-in-south-korea",
+      "verification": "Press-reported",
+      "terms": [
+        "Nuclear Energy",
+        "Dansuk",
+        "MOU",
+        "Nano",
+        "KRONOS Micro",
+        "Modular Reactor",
+        "Korea",
+        "One Factory",
+        "One MMR"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "KRONOS Micro"
+      ],
+      "audit_id": "claim-5aa842e2103f539e",
+      "sequence": 112,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          32,
+          "positions",
+          1
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-01"
+      }
+    },
+    {
+      "kind": "bd.position.Program / solicitation",
+      "companySlug": "bulgaria",
+      "label": "USTDA and state-owned Bulgarian Energy Holding agreed to a detailed technical prefeasibility study of US-sourced SMR design options, potential sites, and an implementation roadmap including financing, building on a 2021 Fluor-NuScale MOU that did not advance.",
+      "source": "https://www.world-nuclear-news.org/articles/us-grant-agreements-to-support-bulgarian-nuclear-projects",
+      "verification": "Press-reported",
+      "terms": [
+        "2021",
+        "Bulgarian Energy",
+        "Holding",
+        "US-sourced SMR",
+        "Fluor-NuScale MOU"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Bulgarian Energy",
+        "US-sourced SMR",
+        "Fluor-NuScale MOU"
+      ],
+      "audit_id": "claim-6dafae5910f07a10",
+      "sequence": 113,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          36,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2024-12"
+      }
+    },
+    {
+      "kind": "bd.position.Stated interest",
+      "companySlug": "puerto-rico",
+      "label": "Proyecto de la Cámara 1092, which would amend Puerto Rico's energy policy act to direct government evaluation of SMR deployment, drew supporting testimony from the Puerto Rico Energy Bureau's president and an ANS student chapter at a House Economic Development Commission hearing; the bill had not passed as of the hearing.",
+      "source": "https://www.ans.org/news/article-8091/ansuprm-student-section-advocates-for-puerto-rican-nuclear/",
+      "verification": "Press-reported",
+      "terms": [
+        "Puerto Rico",
+        "SMR",
+        "Energy Bureau",
+        "ANS",
+        "House Economic",
+        "Development Commission"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "SMR",
+        "Energy Bureau"
+      ],
+      "audit_id": "claim-40958fcfebdb9a9d",
+      "sequence": 114,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          41,
+          "positions",
+          1
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-05"
+      }
+    },
+    {
+      "kind": "bd.position.Stated interest",
+      "companySlug": "puerto-rico",
+      "label": "The full Puerto Rico House of Representatives passed C.P. 1092, advancing it to the Senate; the bill keeps the island's 100%-renewable-by-2050 goal but permits evaluating nuclear as a low-emission complementary technology under NRC supervision, and directs the University of Puerto Rico to build nuclear-engineering academic programs. Still a bill, not law: no funded program exists until the Senate and governor act.",
+      "source": "https://www.metro.pr/noticias/2026/06/15/camara-aprueba-medida-que-incorpora-la-energia-nuclear-a-la-politica-publica-energetica-de-puerto-rico/",
+      "verification": "Press-reported",
+      "terms": [
+        "2050",
+        "Puerto Rico",
+        "House",
+        "Representatives",
+        "Senate",
+        "NRC",
+        "University",
+        "Still"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "House",
+        "Representatives",
+        "Senate",
+        "NRC",
+        "University",
+        "Still"
+      ],
+      "audit_id": "claim-c5d82a5e73fd7228",
+      "sequence": 115,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          41,
+          "positions",
+          2
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-06"
+      }
+    },
+    {
+      "kind": "bd.position.Stated interest",
+      "companySlug": "guam",
+      "label": "Guam senators say DOD has set aside roughly $400M for small reactors at two Guam installations, a figure attributed to Sen. Telo Taitague; Guam's Community Defense Liaison Office says the territory's government has received no official DOD notification or confirmed plan.",
+      "source": "https://www.postguam.com/news/local/lawmakers-want-answers-about-micro-nuclear-reactors-on-guam/article_88cb2824-85aa-4c5c-8dd7-e6ac6cdd2b76.html",
+      "verification": "Press-reported",
+      "terms": [
+        "DOD",
+        "Guam",
+        "Sen",
+        "Telo Taitague",
+        "Community Defense",
+        "Liaison Office"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOD"
+      ],
+      "audit_id": "claim-77598bbbc6a5855a",
+      "sequence": 116,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          42,
+          "positions",
+          0
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2026-05"
+      }
+    },
+    {
+      "kind": "bd.position.Stated interest",
+      "companySlug": "guam",
+      "label": "The FY2026 NDAA, signed into law December 2025, requires the Secretary of Defense to give Congress and Guam's governor at least one year's notice before placing any nuclear reactor on the island, a provision credited to Del. James Moylan; a procedural notice requirement, not evidence DOD has a site or plan.",
+      "source": "https://www.postguam.com/news/local/congress-nuclear-reactor-push-alarms-locals/article_a63b9661-5cca-43a3-9fae-e06ab5682477.html",
+      "verification": "Press-reported",
+      "terms": [
+        "2025",
+        "FY2026 NDAA",
+        "December",
+        "Secretary",
+        "Defense",
+        "Congress",
+        "Guam",
+        "Del",
+        "James Moylan",
+        "DOD"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2025",
+        "FY2026 NDAA",
+        "December",
+        "DOD"
+      ],
+      "audit_id": "claim-6463df6477cbdf73",
+      "sequence": 117,
+      "binding": {
+        "path": [
+          "bdBuyers",
+          42,
+          "positions",
+          1
+        ],
+        "field": "label",
+        "sourceField": "source",
+        "date": "2025-12"
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "DOE's UPRISE initiative targets 2.5 GW of added capacity by 2027 and 5 GW by 2029 through uprates and restarts, the same near-term channel the three executed hyperscaler PPAs bought into.",
+      "source": "https://www.powermag.com/doe-unveils-initiative-to-add-5-gw-of-nuclear-capacity-through-uprates-and-restarts/",
+      "verification": null,
+      "terms": [
+        "2.5 GW",
+        "5 GW",
+        "2027",
+        "2029",
+        "UPRISE",
+        "PPAs"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "PPAs"
+      ],
+      "audit_id": "claim-3ec3c1b50a4d1cb9",
+      "sequence": 118,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          0,
+          "evidence",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "Sam Altman stepped down as Oklo chairman in April 2025, a move that gives the reactor company more flexibility to explore partnerships with OpenAI and other hyperscalers.",
+      "source": "https://www.cnbc.com/2025/04/22/sam-altman-steps-down-as-oklo-chair-freeing-nuclear-company-up-to-work-with-more-ai-companies.html",
+      "verification": null,
+      "terms": [
+        "2025",
+        "Altman",
+        "Oklo",
+        "April",
+        "OpenAI"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "April"
+      ],
+      "audit_id": "claim-2998512ac3fd164a",
+      "sequence": 119,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          1,
+          "evidence",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "Executive Order 14299 puts a date on demand: an Army-regulated reactor operating at a domestic installation by September 30, 2028.",
+      "source": "https://www.whitehouse.gov/presidential-actions/2025/05/deploying-advanced-nuclear-reactor-technologies-for-national-security/",
+      "verification": null,
+      "terms": [
+        "2028",
+        "Order",
+        "Army-regulated",
+        "September"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Army-regulated"
+      ],
+      "audit_id": "claim-e2f2a3724dab9403",
+      "sequence": 120,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          4,
+          "evidence",
+          0
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "DOE's principal deputy assistant secretary for nuclear energy says demonstration microreactors are going from start to operation in under a year, against a national goal of 400 GW by 2050.",
+      "source": "https://www.ans.org/news/article-8210/nuclear-is-ready-now/",
+      "verification": null,
+      "terms": [
+        "400 GW",
+        "2050"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "400 GW"
+      ],
+      "audit_id": "claim-1a20cb86be2b5842",
+      "sequence": 121,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          4,
+          "evidence",
+          1
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "Guam's government says it has received no official DOD notification of a reactor site, despite lawmakers citing roughly $400M reportedly set aside for two island installations.",
+      "source": "https://www.postguam.com/news/local/lawmakers-want-answers-about-micro-nuclear-reactors-on-guam/article_88cb2824-85aa-4c5c-8dd7-e6ac6cdd2b76.html",
+      "verification": null,
+      "terms": [
+        "DOD"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOD"
+      ],
+      "audit_id": "claim-d302d378efdd0236",
+      "sequence": 122,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          4,
+          "evidence",
+          4
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "DOE's Gen III+ pathway put $400M behind TVA's Clinch River project and $400M behind Holtec's Palisades SMRs in December 2025, the federal half of the state-federal stack.",
+      "source": "https://www.ans.org/news/2025-12-03/article-7593/doe-selects-tva-and-holtec-for-smr-awards/",
+      "verification": null,
+      "terms": [
+        "2025",
+        "Gen III",
+        "TVA",
+        "Clinch River",
+        "Holtec",
+        "Palisades SMRs",
+        "December"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Palisades SMRs"
+      ],
+      "audit_id": "claim-abb66da784d3a77d",
+      "sequence": 123,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          5,
+          "evidence",
+          1
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "Ontario's Darlington program gives the BWRX-300 its first-of-a-kind proof on an approved C$20.9B budget, the reference plant behind the Polish and U.S. pipelines.",
+      "source": "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/",
+      "verification": null,
+      "terms": [
+        "Darlington",
+        "BWRX-300",
+        "Polish"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Polish"
+      ],
+      "audit_id": "claim-8a7fe6d3304f2ee1",
+      "sequence": 124,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          6,
+          "evidence",
+          1
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "A treaty ally moved through the sequence in under three years: Meralco's USNC study agreement in 2023, the U.S.-Philippines 123 Agreement taking effect in 2024, and a $2.7M USTDA-funded SMR roadmap in 2026 against a stated 1,200 MW by 2032 target.",
+      "source": "https://www.world-nuclear-news.org/articles/us-touts-smr-designs-to-the-philippines",
+      "verification": null,
+      "terms": [
+        "1,200 MW",
+        "2023",
+        "2024",
+        "2026",
+        "2032",
+        "Meralco",
+        "USNC",
+        "Philippines",
+        "Agreement",
+        "USTDA-funded SMR"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "USTDA-funded SMR"
+      ],
+      "audit_id": "claim-e0db733fab540692",
+      "sequence": 125,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          6,
+          "evidence",
+          2
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "The BWRX-300 export book widened past Poland in one year: finalist or MOU-stage positions now stand in Sweden, Finland, Norway, and Lithuania, all citing the Darlington and Poland reference plants rather than a first-of-a-kind case of their own.",
+      "source": "https://www.world-nuclear-news.org/articles/aecon-and-norsk-kjernekraft-to-promote-smrs-in-norway",
+      "verification": null,
+      "terms": [
+        "BWRX-300",
+        "Poland",
+        "MOU-stage",
+        "Sweden",
+        "Finland",
+        "Norway",
+        "Lithuania",
+        "Darlington"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Poland",
+        "MOU-stage",
+        "Sweden",
+        "Finland",
+        "Lithuania"
+      ],
+      "audit_id": "claim-fbbe6d71d8beedab",
+      "sequence": 126,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          6,
+          "evidence",
+          3
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "South Korea flipped from investor to buyer: SK Innovation, already TerraPower's second-largest shareholder from a 2023 equity round, signed an August 2026 term sheet toward Korea's first commercial Natrium plant.",
+      "source": "https://www.world-nuclear-news.org/articles/terrapower-expands-cooperation-with-korean-partners",
+      "verification": null,
+      "terms": [
+        "2023",
+        "2026",
+        "Korea",
+        "Innovation",
+        "TerraPower",
+        "August",
+        "Natrium"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2023"
+      ],
+      "audit_id": "claim-c633354f3d12c269",
+      "sequence": 127,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          6,
+          "evidence",
+          4
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "NEI's 2019 estimate put first-of-a-kind microreactor generation at $0.14 to $0.41 per kWh, overlapping remote diesel, the first market where the FOAK price closes.",
+      "source": "https://www.nucnet.org/news/electricity-from-micro-reactors-will-cost-less-than-diesel-generators-says-nei-report",
+      "verification": null,
+      "terms": [
+        "2019",
+        "FOAK"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "FOAK"
+      ],
+      "audit_id": "claim-891f0e9f3cc24b49",
+      "sequence": 128,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          7,
+          "evidence",
+          2
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "Puerto Rico's DOE-funded feasibility case, closed in 2020, cleared its first legislative chamber in 2026: the House passed C.P. 1092 after testimony from the state energy regulator's own president, sending it to the Senate.",
+      "source": "https://www.metro.pr/noticias/2026/06/15/camara-aprueba-medida-que-incorpora-la-energia-nuclear-a-la-politica-publica-energetica-de-puerto-rico/",
+      "verification": null,
+      "terms": [
+        "2020",
+        "2026",
+        "Rico",
+        "DOE-funded",
+        "House",
+        "Senate"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "2020",
+        "DOE-funded",
+        "House",
+        "Senate"
+      ],
+      "audit_id": "claim-db811cf644e0bd1f",
+      "sequence": 129,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          7,
+          "evidence",
+          3
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.evidence",
+      "companySlug": "bd",
+      "label": "Guam is the same story one stage earlier: lawmakers say a DOD budget line for two island installations exists, and the territory's government says it has no official confirmation of any plan.",
+      "source": "https://www.postguam.com/news/local/lawmakers-want-answers-about-micro-nuclear-reactors-on-guam/article_88cb2824-85aa-4c5c-8dd7-e6ac6cdd2b76.html",
+      "verification": null,
+      "terms": [
+        "DOD"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "DOD"
+      ],
+      "audit_id": "claim-fd83a783af70f155",
+      "sequence": 130,
+      "binding": {
+        "path": [
+          "bdSectorPlans",
+          7,
+          "evidence",
+          4
+        ],
+        "field": "text",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.signal",
+      "companySlug": "bd",
+      "label": "Rian Bahran: Announced UPRISE with a target of 2.5 GW added by 2027 and 5 GW by 2029, calling uprates and restarts the fastest pathway to getting gigawatts on the grid.",
+      "source": "https://www.powermag.com/doe-unveils-initiative-to-add-5-gw-of-nuclear-capacity-through-uprates-and-restarts/",
+      "verification": "Press-reported",
+      "terms": [
+        "2.5 GW",
+        "5 GW",
+        "2027",
+        "2029",
+        "Bahran",
+        "Announced UPRISE"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Announced UPRISE"
+      ],
+      "audit_id": "claim-1aca59f189695586",
+      "sequence": 131,
+      "binding": {
+        "path": [
+          "bdSignals",
+          0
+        ],
+        "field": "said",
+        "sourceField": "source",
+        "date": "2026-03"
+      }
+    },
+    {
+      "kind": "bd.signal",
+      "companySlug": "bd",
+      "label": "Michael Goff: Says nuclear is ready now, with demonstration microreactors going from start to operation in under a year, a 400 GW by 2050 national goal, and $2.7B awarded for uranium enrichment in January 2026.",
+      "source": "https://www.ans.org/news/article-8210/nuclear-is-ready-now/",
+      "verification": "Press-reported",
+      "terms": [
+        "400 GW",
+        "2050",
+        "2026",
+        "Goff",
+        "Says",
+        "January"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "400 GW",
+        "Says"
+      ],
+      "audit_id": "claim-448be838e81d240b",
+      "sequence": 132,
+      "binding": {
+        "path": [
+          "bdSignals",
+          1
+        ],
+        "field": "said",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.signal",
+      "companySlug": "bd",
+      "label": "Sam Altman: Stepped down as Oklo chairman in April 2025, a move giving the reactor company more flexibility to explore partnerships with OpenAI and other hyperscalers.",
+      "source": "https://www.cnbc.com/2025/04/22/sam-altman-steps-down-as-oklo-chair-freeing-nuclear-company-up-to-work-with-more-ai-companies.html",
+      "verification": "Press-reported",
+      "terms": [
+        "2025",
+        "Altman",
+        "Stepped",
+        "Oklo",
+        "April",
+        "OpenAI"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Stepped",
+        "April"
+      ],
+      "audit_id": "claim-eb7773d70c2de5fe",
+      "sequence": 133,
+      "binding": {
+        "path": [
+          "bdSignals",
+          3
+        ],
+        "field": "said",
+        "sourceField": "source",
+        "date": "2025-04"
+      }
+    },
+    {
+      "kind": "bd.signal",
+      "companySlug": "bd",
+      "label": "Mike Dunleavy: Frames microreactors as the replacement for rural diesel generation, with a goal of all Alaskans having access to 10-cent power by 2030.",
+      "source": "https://gov.alaska.gov/microreactor-regulations-put-alaskan-communities-at-forefront-of-energy-innovation/",
+      "verification": "Government-reported",
+      "terms": [
+        "2030",
+        "Dunleavy",
+        "Frames",
+        "Alaskans"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Frames"
+      ],
+      "audit_id": "claim-f597b9d665ec7890",
+      "sequence": 134,
+      "binding": {
+        "path": [
+          "bdSignals",
+          4
+        ],
+        "field": "said",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.signal",
+      "companySlug": "bd",
+      "label": "Radiant Industries: Will build its first factory on a Manhattan Project site in Oak Ridge, Tennessee, with construction from early 2026, the first mass-produced Kaleidos targeted for 2028, and production scaling to 50 reactors a year within a few years after.",
+      "source": "https://www.world-nuclear-news.org/articles/radiant-to-locate-microreactor-factory-in-tennessee",
+      "verification": "Press-reported",
+      "terms": [
+        "2026",
+        "2028",
+        "Industries",
+        "Will",
+        "Manhattan Project",
+        "Oak Ridge",
+        "Tennessee",
+        "Kaleidos"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Industries"
+      ],
+      "audit_id": "claim-98c76ab5277b4b00",
+      "sequence": 135,
+      "binding": {
+        "path": [
+          "bdSignals",
+          5
+        ],
+        "field": "said",
+        "sourceField": "source",
+        "date": "2025-12"
+      }
+    },
+    {
+      "kind": "bd.signal",
+      "companySlug": "bd",
+      "label": "Aalo Atomics: Describes a planned Gigawatt Factory: more than 4,000,000 sq ft of factory scale-up to mass-manufacture reactors at a rate of hundreds of megawatts a year.",
+      "source": "https://www.aalo.com/factory",
+      "verification": "Company-reported",
+      "terms": [
+        "Atomics",
+        "Describes",
+        "Gigawatt Factory"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Atomics",
+        "Describes"
+      ],
+      "audit_id": "claim-a02b77f6a0d40ac6",
+      "sequence": 136,
+      "binding": {
+        "path": [
+          "bdSignals",
+          6
+        ],
+        "field": "said",
+        "sourceField": "source",
+        "date": null
+      }
+    },
+    {
+      "kind": "bd.micro-path",
+      "companySlug": "bd",
+      "label": "Prove the physics under DOE authority: Four DOE-authorized criticalities landed by July 4, 2026 through the Reactor Pilot Program and Launch Pad, each roughly a year or less from start.",
+      "source": "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal",
+      "verification": null,
+      "terms": [
+        "2026",
+        "DOE",
+        "Four DOE-authorized",
+        "July",
+        "Reactor Pilot",
+        "Program",
+        "Launch Pad"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Four DOE-authorized"
+      ],
+      "audit_id": "claim-08f09909b2132cc0",
+      "sequence": 137,
+      "binding": {
+        "path": [
+          "bdMicroPath",
+          0
+        ],
+        "field": "evidence",
+        "sourceField": "source",
+        "date": "2026-07"
+      }
+    },
+    {
+      "kind": "bd.micro-path",
+      "companySlug": "bd",
+      "label": "Contract a delivery date, government first: The ANPI agreement obliges Radiant to deliver a mass-manufactured unit to a military base within 36 months of its August 2025 signing.",
+      "source": "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
+      "verification": null,
+      "terms": [
+        "2025",
+        "The ANPI",
+        "Radiant",
+        "August"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "The ANPI"
+      ],
+      "audit_id": "claim-50361465aa86165e",
+      "sequence": 138,
+      "binding": {
+        "path": [
+          "bdMicroPath",
+          1
+        ],
+        "field": "evidence",
+        "sourceField": "source",
+        "date": "2025-08"
+      }
+    },
+    {
+      "kind": "bd.micro-path",
+      "companySlug": "bd",
+      "label": "Put a statutory date behind demand: Executive Order 14299 directs an Army-regulated reactor operating at a domestic installation by September 30, 2028.",
+      "source": "https://www.whitehouse.gov/presidential-actions/2025/05/deploying-advanced-nuclear-reactor-technologies-for-national-security/",
+      "verification": null,
+      "terms": [
+        "2028",
+        "Executive Order",
+        "Army-regulated",
+        "September"
+      ],
+      "checkedAgainst": "cache",
+      "state": "unconfirmed",
+      "missing": [
+        "Army-regulated"
+      ],
+      "audit_id": "claim-49bb18ee3cabfc71",
+      "sequence": 139,
+      "binding": {
+        "path": [
+          "bdMicroPath",
+          2
+        ],
+        "field": "evidence",
+        "sourceField": "source",
+        "date": "2025-05"
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 Deployment Core is an evidence-led tracker for U.S. nuclear deployment. It separates announcements from binding commitments, licensing, physical construction, criticality, operation, and replication.
 
-The site leads with the race to a gigawatt: 18 companies building new-design reactors for U.S. deployment, ranked by the strongest state their megawatts have actually reached. As of 2026-11-19, no entrant has generated a commercial megawatt. The tracked sample carries 470 MWe in documented builds, 620 MWe permitted without documented physical nuclear work, and 40,045 MWe announced without binding project documents. The capacity frames overlap and are never added together.
+The site separates the U.S. commercial fleet baseline from the selected advanced-reactor sample. EIA’s October 2026 Monthly Energy Review reports 94 year-end operable units, 96,880 MWe net summer capacity, 784.781 TWh net generation, and 17.7% of U.S. electricity for 2025. The 18-company sample carries 420 MWe in documented builds, 620 MWe permitted without documented physical nuclear work, 680 MWe under review, 336 MWe contracted or funded for development, and 37,060 MWe announced. These frames overlap and are never added together. The new `/fission` reference covers 13 reactor families, historical hybrids, and research configurations. The 139-claim sourcing audit is documented in [the audit report](docs/claims-audit-2026-11-22.md).
 
 The current release is a research-backed tracked set: 28 sourced projects and 26 company records, including all 11 initial Reactor Pilot Program projects. It is not yet a complete national census.
 

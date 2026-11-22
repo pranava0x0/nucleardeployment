@@ -1,0 +1,1911 @@
+--- PAGE 1 ---
+Sources of cost overrun in nuclear power plant construction call for a
+new approach to engineering design
+Philip Eash-Gates∗†, Magdalena M. Klemun∗†, Goksin Kavlak∗, James McNerney∗,
+Jacopo Buongiorno ‡, Jessika E. Trancik∗§¶∥
+Abstract
+Nuclear plant costs in the U.S. have repeatedly exceeded projections. Here we use data covering ﬁve decades and
+bottom-up cost modeling to identify the mechanisms behind this divergence. We observe that nth-of-a-kind plants
+have been more, not less expensive than ﬁrst-of-a-kind plants. Soft factors external to standardized reactor hard-
+ware, such as on-site labor supervision, contributed over half of the rapid cost rise from 1976-1987.
+Relatedly,
+reactor containment building costs more than doubled from 1976-2017, due only in part to safety regulations. Labor
+productivity in recent plants is up to thirteen times lower than industry expectations. Our results point to a gap
+between expected and realized costs stemming from low resilience to time- and site- dependent construction con-
+ditions. Prospective models suggest reducing commodity usage and automating construction to increase resilience.
+More generally, rethinking engineering design to relate design variables to cost change mechanisms could help deliver
+real-world cost reductions for technologies with demanding on-site construction requirements.
+DRAFT: not for citation or distribution.
+1
+Introduction
+Nuclear power is often referenced as a potential so-
+lution for helping to reduce greenhouse gas emissions
+from electricity generation and industrial process heat-
+ing, as required to achieve net zero emissions (e.g.,1,2,3,4).
+Although concerns about safety and waste manage-
+ment can aﬀect the public acceptance of nuclear power
+plants5,6, and long-term waste management solutions are
+still in development7,8, nuclear power’s life-cycle emis-
+sions are comparable to other low-carbon options such as
+solar and wind energy9, and nuclear power has the ability
+to supply base-load electricity, relies on signiﬁcant ura-
+nium resources, and shows low fuel price volatility and
+operating costs compared to fossil-ﬁred power plants10,11.
+The U.S. plays an important role in the global nuclear
+industry in several ways. The U.S. pioneered the tech-
+nology in the 1950s for naval submarine use and to this
+day generates more electricity in nuclear plants than the
+three next leading countries combined: France, China,
+and Russia12. U.S. federal investment in nuclear research
+∗Institute for Data, Systems and Society, Massachusetts Insti-
+tute of Technology
+†These authors contributed equally
+‡Department
+of
+Nuclear
+Science
+and
+Engineering,
+Mas-
+sachusetts Institute of Technology
+§Santa Fe Institute
+¶Lead Contact
+∥Correspondence: trancik@mit.edu
+and development is second highest among International
+Energy Agency member countries13, and international
+cost estimating guidelines are based heavily upon U.S.
+reactor design and construction practices (e.g., the work
+of the Economic Modeling Working Group of the Gener-
+ation IV International Forum14).
+However, the history of nuclear energy in the U.S. is one
+of mixed results. Rapid capacity growth in the 1960s was
+accompanied by signiﬁcant unit upscaling, followed by
+operational improvements and rising capacity factors15.
+But in the 1970s rising project durations and costs,
+alongside studies on thermal pollution and low-level radi-
+ation became a source of public controversy16. Following
+the 1979 Three Mile Island accident, a long hiatus of nu-
+clear construction began. Rising construction costs and
+project delays have continued to aﬀect eﬀorts to expand
+nuclear capacity in the U.S. since the 1970s17,18,19. A sur-
+vey of plants begun after 1970 shows an average overnight
+cost overrun of 241%19.
+Since the 1990s, two nuclear
+projects have begun construction, both two-reactor ex-
+pansions of existing generating stations. The VC Summer
+project in South Carolina was abandoned in 2017 with
+sunk costs of $9B, and the Vogtle project in Georgia is
+severely delayed. Current estimates place the total price
+of the Vogtle expansion at $25B ($11,000/kW), almost
+twice as high as the initial estimate of $14B, and costs
+are anticipated to rise further20,21.
+Challenges in nuclear construction are not unique to
+the U.S. Recent projects in Finland (Olkiluoto 3) and
+France (Flamanville 3) have also experienced cost escala-
+tion, cost overrun, and schedule delays 22. Cost estimates
+1
+--- PAGE 2 ---
+for a plant under construction in the United Kingdom
+(Hinkley Point C) have been revised upwards23. In con-
+trast to the experience in Western Europe and the U.S.,
+however, China, Japan, and South Korea have achieved
+construction durations shorter than the global median
+since 1990 24,25,2. Cost and construction duration tend
+to correlate (e.g.,26), but it should be noted that indepen-
+dently veriﬁed cost data1 from these countries are largely
+missing27,28.
+Despite historical precedence for rising costs,
+nu-
+clear industry, government, and research agencies con-
+tinue to forecast cost reductions in nuclear construc-
+tion29,30,14,31,32,33. These entities make signiﬁcant invest-
+ments in the development and commercialization of next-
+generation reactor designs based on the expectation that
+successive plants of standard design will cost less than
+ﬁrst-of-a-kind plants34,2,35,14,36. This notion is applied to
+all commercial reactors, though the anticipated cost re-
+ductions are greatest for small modular reactors (SMR)
+due to expected learning eﬀects in factory settings37,38,32.
+The ﬁrst SMR has yet to be built.
+The
+projected
+role
+of
+nuclear
+power
+in
+many
+decarbonization scenarios (e.g.,39,40) also stands in con-
+trast to recent trends. In the U.S., nuclear power plants
+provided roughly 20% of the electricity supply in 2019,
+down from a reported peak of 23% in 1995, and roughly
+50% of low-carbon electricity41,42, though the exact re-
+ported values show a small amount of variation43. Low-
+cost domestic natural gas supply and declining costs of
+renewable power have put several plants at risk of pre-
+mature retirement, and equipment replacements to ex-
+tend plant lifetimes have proven challenging44. Four U.S.
+plants have shut down despite possible license extensions,
+and closure of 15-20 more plants is expected by 203045.
+Other countries with aging nuclear infrastructure (e.g.,
+Spain, the UK) are facing similar challenges25.
+Previous literature has presented various hypotheses on
+the causes of nuclear construction cost increases. These
+studies fall into two groups: 1) studies of nuclear tech-
+nology cost trends over time; 2) engineering cost mod-
+els of nuclear power plants for a given design, at a given
+point in time. By studying time series of overnight capital
+costs, studies in the ﬁrst group have shown that nuclear
+costs in the U.S. have increased before and after Three
+Mile Island15, cost trends diﬀer across countries26,46, and
+construction costs have increased even in countries with
+comparatively short construction times47. Previous work
+has reported cost reductions when the same ﬁrm built
+multiple plants of the same model in France48 and stable
+costs in Japan between 1980 and 2011, owing among other
+factors to supportive national policies46.
+Overall, the
+majority of studies document construction cost increases
+and conclude that the nuclear experience has been one of
+1Cost data that is provided and audited by entities not actively
+involved in plant procurement and construction (e.g., data from
+international organizations or government agencies as opposed to
+data from utilities and reactor equipment providers).
+limited or even negative learning47,49,50,15,51.
+Cost increases have been associated with reactor up-
+scaling, with a lack of technology standardization, frag-
+mented industry structure and plant ownership, and with
+increasing plant complexity2 47,52,17,53. Studies of cost es-
+calation in mega-projects more broadly have found that
+nuclear power plant projects exhibit greater and more fre-
+quent cost overruns and delays compared to other elec-
+tricity generation infrastructure, which has been linked
+to reduced modularity and more complex project gover-
+nance compared to other technologies54,55.
+By developing engineering cost models of nuclear re-
+actors and plants, studies in the second group have
+provided cost benchmarks for plant construction in
+the U.S.56,57,58,59,60,61,62,63 and other countries (e.g.,64).
+Other, forward-looking studies have outlined strategies
+for cost reduction, such as modularization, oﬀ-site manu-
+facturing, passive cooling, and advanced construction ma-
+terials65,35,33,2. However, the focus of these studies has
+been on aggregated cost measures such as total construc-
+tion costs, which are important for comparing technolo-
+gies but can mask the contribution of speciﬁc technolog-
+ical developments, such as changes in engineering design
+or labor productivity, to cost change over time. Studies
+quantifying these contributions based on empirical data
+are currently absent from the literature.
+Both bottom-up engineering and top down models are
+also used to develop standards for estimating individ-
+ual nuclear plant costs66,36 or forecasting costs of spe-
+ciﬁc reactor technologies14,31,32,35.
+In response to cost
+uncertainty, such guidelines have been developed to min-
+imize ﬁnancial risk and provide consistent comparison
+among available technologies.
+Similarly, cost estimat-
+ing guidelines are used in models for projecting industry-
+wide growth and cost change at a national or global scale
+across nuclear and non-nuclear energy technologies67,68,
+and in global planning for climate change mitigation40,69.
+Although cost estimating guidelines used in these stud-
+ies generally assume costs will decline with experience,
+empirical trends of nuclear construction indicate that
+costs have escalated as industry experience has grown
+47,49,50,15,51.
+Studies that test the validity of model-
+ing assumptions against empirical evidence are currently
+largely missing.
+In this paper we begin to address these gaps by
+examining U.S. construction cost data from ﬁve decades
+and modeling the cost evolution of entire plants and
+of one major plant component, the reactor containment
+building.
+We present a collection of insights on cost
+trends and the sources of these trends.
+Contrary to
+standard engineering estimates for expected cost declines,
+we ﬁnd that costs have instead risen in the U.S. even for
+plants of the same design class. This ﬁnding is missing
+in previous literature. Next, we examine what types of
+2Studies often consider increases in number of plant components,
+new control systems, redundancy in equipment, and added safety
+features to be indicative of increasing complexity.
+2
+--- PAGE 3 ---
+costs contributed most to cost increases, using cost ac-
+counting data on individual plant components and mech-
+anistic models of cost change determinants. We ﬁnd that
+declining labor productivity and increasing commodity
+use were major contributors to cost increases. Overall a
+common theme emerging from this analysis is the lack of
+anticipation in engineering models of the cost-increasing
+contributions of soft technology external to standard re-
+actor hardware, in response to changing regulations and
+other factors such as variable project-speciﬁc conditions.
+Prospective modeling shows the potentially transforma-
+tive eﬀect of re-thinking engineering design to adapt to
+these factors, for example through reduced commodity
+usage and automated construction processes.
+2
+Results
+2.1
+Rising costs of standard plant designs
+Many nuclear power plant cost projections and esti-
+mating guidelines assume that costs will decline as more
+plants are built. Such projections are frequently stated
+in terms of the costs of an nth-of-a-kind (NOAK) plant
+relative to a ﬁrst-of-a-kind (FOAK) plant. That NOAK
+plants will be less expensive than FOAK plants is often
+posed as a “well-known fact” (e.g.,35,2), and this assump-
+tion is reﬂected in a large number of projections and esti-
+mating guidelines, typically expressed in terms of technol-
+ogy learning rates.3 In its cost guidelines for advanced re-
+actors, for example, Oak Ridge National Laboratory66,36
+recommends that labor costs be projected with a learning
+rate of 2% and equipment costs with a learning rate of
+6% for NOAK reactors of any standard design with more
+than 4.5 GWe of cumulative capacity installed. The Eco-
+nomics Modeling Working Group (EMWG) of the Gen-
+eration IV International Forum14 establish a guideline of
+6% total cost reduction with every doubling of cumula-
+tive capacity after 8 GWe. The academic and scientiﬁc
+communities use similar learning rates to assess the role
+of nuclear power in future energy strategies and green-
+house gas mitigation scenarios (e.g.,70). Published esti-
+mates range from 1% to 10%, with SMRs at the upper end
+(e.g., Abdulla et al.32) due to expected cost beneﬁts of
+factory fabrication. The emissions scenarios behind IPCC
+climate modeling rely on nuclear learning rates between
+1% and 7%, while global scenarios of the International
+Atomic Energy Agency (IAEA) expect higher learning
+rates40,69,31.
+The prevalence and speciﬁcity of such projections may
+be a reason why nuclear plants are commonly assumed to
+3Technology costs are often ﬁt to a power law model C ∼x−b,
+where x is the cumulative production of the technology. The learn-
+ing rate LR is given by LR = 100(1 −2−b), and represents the
+percent cost reduction associated with a doubling of cumulative
+production under this model. A positive learning rate corresponds
+to cost reduction. Due to their wide use learning rates provide a
+convenient benchmark to compare estimated rates of cost reduction
+across studies.
+fall in cost as more are built. Another possible reason,
+however, is that historical studies have typically aggre-
+gated across diﬀerent plant types, while engineering pro-
+jections focus on the cost trajectories of individual plant
+technologies. In principle, some plant designs could have
+realized declining costs, which are obscured by averages
+across designs. If so, such cases could provide a histori-
+cal basis for the widespread projections of declining costs.
+We target this issue here, examining the cost trajectories
+of individual standard plant designs using historical data
+from the U.S. (Fig. 1).
+We ﬁrst examine the overnight cost of construction of
+107 nuclear plants from across the U.S. nuclear experi-
+ence (Fig. 1a). Similar curves are shown in Grubler47,
+Koomey and Hultman15, Cooper50, and Lang71. Echo-
+ing previous ﬁndings47,49,50,15,51, we see that costs rose
+rapidly. We estimate a learning rate of -115% for the in-
+dustry, implying that plant costs more than doubled with
+each doubling of cumulative U.S. capacity. Nevertheless,
+the costs in Fig. 1a are averages across plants of all re-
+actor designs. It is possible that the rise in the average
+cost hides trends of decreasing costs in particular reactor
+designs. To see if this is the case, we split out the cost tra-
+jectories of several reactor designs. We examine the cost
+trajectories of all four standard reactor designs installed
+in the U.S. that exceeded 8GWe of installed capacity,
+corresponding to the conditions under which the EMWG
+guidelines project cost reductions. However, even after
+disaggregating, construction costs rose across all four de-
+signs as more plants were built. In fact, the FOAK plant
+was the least expensive in three of the four cases, and was
+among the least expensive plants in the fourth.
+Thus, NOAK cost reductions are far from being a cer-
+tain consequence of repeatedly building a given design. In
+the analyses that follow we further examine the reasons
+why. We note that plants of a given design are subject to
+the same idiosyncratic eﬀects aﬀecting other plants. Al-
+though these plants are based on the same reactor model,
+they are not identical, and design diﬀerences in other as-
+pects of plant design or construction may have mattered
+more than expected, contributing to unexpected cost in-
+creases. We return to this possibility in the analyses that
+follow. A summary of the various learning rates in histor-
+ical and prospective studies is given in Table 1, and shows
+the sharp disparity between empirical estimates and pro-
+jections.
+Next we examine the assumption of model-speciﬁc
+cost reduction, plotting experience curves separately for
+each prominent technology class in Fig. 1b. Although
+the rapid rise in costs across all nuclear plants is well
+known, the assumption that cost reductions may still
+have occurred for particular classes of plants persists.
+The practice of including cost data from all reactor
+types may contribute to this, as historical reports of
+construction costs (e.g.,72,19) and previous publications
+(e.g.,15,68,67,26,50,47) lack information on reactor type.
+Berthelemy and Rangel48 is the only study we ﬁnd which
+3
+--- PAGE 4 ---
+quantiﬁes the cost eﬀect of model standardization. Their
+results show that standardization decreased cost in the
+U.S. and France, while design innovation increased con-
+struction costs.
+2.2
+Sources of cost change in nuclear
+plant construction
+To shed light on the causes of cost escalation, we de-
+compose overnight construction into its cost components,
+beginning with the period 1976-1987, for which we have
+reliable cost data on all components of a Westinghouse
+four-loop plant56,57,60,59,63.
+We examine the contribu-
+tions of 61 diﬀerent cost accounts from the Department of
+Energy’s Energy Economic Data Base (EEDB) to cost in-
+creases. These accounts, shown as ci in Eq. 1 below, rep-
+resent individual plant components and services needed
+to install these components. QE is the electrical output
+capacity of the plant.
+Ctotal
+ $
+We
+
+=
+1
+QE
+61
+X
+i=1
+ci
+(1)
+The contribution of an individual account, ci, to total
+plant cost change is calculated in Eq. 2 below:
+∆ci =
+ci,2 −ci,1
+P61
+i=1 ci,2 −P61
+i=1 ci,1
+(2)
+where ci,1 and ci,2 represent the cost of account i in pe-
+riods 1 and 2, respectively.
+Fig. 2 depicts the eﬀects of the most important ac-
+counts, and SI section 1 provides a full listing of the 61
+cost accounts.
+The overall trend is cost increase, with
+few accounts experiencing minor cost decline, suggest-
+ing that any positive learning eﬀects are outweighed by
+other factors. Further, a diversity of accounts contribute
+to the total cost escalation, indicating that the cause
+cannot be easily attributed to any one source.
+How-
+ever, grouping accounts into direct and indirect cate-
+gories, we identify that changes in indirect expenses were
+the greatest. Indirect costs consist of construction sup-
+port activities such as engineering, administration, con-
+struction services, construction management, ﬁeld super-
+vision, startup and testing73. Direct costs are the costs
+of materials, labor, and equipment needed for physical
+components like the plant reactor, structures, control and
+monitoring systems, and assemblies73.
+Indirect costs caused most (72%) of the cost in-
+crease during period 1 (1976-1987), in particular indi-
+rect expenses incurred by home oﬃce engineering ser-
+vices (engineering design, purchasing and expediting, es-
+timating and cost control, planning and scheduling), ﬁeld
+job supervision (salaries, relocation expenses), temporary
+construction facilities (materials and labor to construct
+and manage temporary buildings needed during construc-
+tion), and payroll insurance and taxes.
+A majority of
+these costs are not hardware related and are rather ’soft’
+costs.
+But why did indirect costs rise so dramatically, while
+the modeled reactor design (Westinghouse 4-loop) re-
+mained the same? The literature presents many hypothe-
+ses, but little quantitative evidence. The account from
+EEDB63 in 1988, the last year the database was updated,
+suggests a multitude of causes: proliferation of safety reg-
+ulations, codes and standards; owner/designer reaction to
+the rapid appearance of these regulations, codes and stan-
+dards; rework caused by ﬁeld interferences, constantly
+changing designs in response to new requirements and in-
+adequate engineering-to-construction lead times; extreme
+precision required in analyses, coupled with inﬂexible
+design and construction quality assurance requirements;
+management preoccupation with regulatory inspection,
+enforcement personnel site visits and prudency reviews;
+and low worker morale, caused by all of the above.
+To quantify which aspects of the technology were most
+responsible for the rise in indirect expenses, we delve fur-
+ther into the EEDB model and attribute indirect costs to
+plant components. We estimate the amount of indirect
+costs incurred by each direct cost component by aggregat-
+ing the indirect expenses into cost “bases”, Bω, according
+to the construction inputs that incur them: site labor,
+materials, factory equipment, and safety-related compo-
+nents. We assume each direct account is responsible for
+a share of the indirect costs base that is the proportion
+of its construction inputs to the total construction inputs
+for each input category, ω. For instance, indirect costs
+incurred by the fuel storage building are proportional to
+the ratio of fuel storage labor, material, equipment, and
+safety-related costs to total plant costs in these four cate-
+gories. The total indirect cost incurred by an account, Zi,
+then, is the sum of the products of each account’s share
+and the indirect cost base for each cost category:
+Zi =
+X
+ω
+Ciω
+P
+i Ciω
+Bω
+(3)
+We assume that the ratio of indirect to direct costs is
+constant within each of the four input categories across
+all accounts, mimicking the methods used in EEDB. A
+complete description of the method and our assumptions
+is provided in SI section S3.
+Fig. 3 shows the results of redistributing indirect costs
+to individual plant components.
+These are rough esti-
+mates based on the assumptions outlined above, in line
+with an expectation that components with more and
+longer installation steps are more labor-intensive and
+also require more engineering and construction super-
+vision to ensure compliance with standards, including
+safety standards. Using this estimation method, the three
+plant components most inﬂuential in causing indirect cost
+change—the nuclear steam supply system (NSSS), the
+4
+--- PAGE 5 ---
+turbine generator, and the containment building—also
+contributed heavily to direct cost increase.
+Recognition of the cost-interdependence of direct and
+indirect accounts motivate going beyond these simpliﬁed
+assumptions in our subsequent analysis into the technical
+and economic mechanisms of cost change.
+In section
+2.2 we focus on direct containment building costs in
+further decomposing cost changes into underlying engi-
+neering choices and productivity trends because we can
+model these costs using historical and recent design draw-
+ings.
+Further, the containment building is one of the
+most expensive components and a component with sig-
+niﬁcant safety requirements. The use of design drawings
+enables us to extend our analysis from the historical pe-
+riod 1 (1976-1987) to the year 2017. We also discuss why
+the main conclusions we draw hold for total containment
+costs, not just indirect costs, using the indirect cost data
+currently available, while acknowledging uncertainties.
+2.3
+Sources of cost change in contain-
+ment buildings
+In this section we further examine mechanisms that led
+to increases in cost components discussed in section 3.2.,
+using a case study of the containment building. Contain-
+ment buildings are airtight steel and concrete structures
+that form the outermost layer of a nuclear reactor. They
+are designed to prevent the escape of radioactive gases or
+materials during accidents, to protect the reactor against
+missile and aircraft impacts, and to provide structural
+support for the nuclear steam supply system. We focus
+on the containment for two reasons: 1) as the largest
+safety-grade structure of a nuclear power plant, the con-
+tainment constitutes a useful lens to study ﬁeld construc-
+tion challenges and changing safety paradigms that also
+aﬀect other plant components; 2) as a symmetric struc-
+ture with comparatively simple geometry, design param-
+eters can be more easily extracted from publicly available
+design drawings than for other components.
+Our cost model separately accounts for material and
+labor costs to construct the foundation, shell, and dome
+of the containment. We write total containment construc-
+tion costs as
+Ccontainment
+ $
+We
+
+= Cfoundation + Cshell + Cdome.
+(4)
+We focus on steel, rebar and concrete and omit other,
+less costly materials used for formwork (see Supplemen-
+tary section S4 for model details).
+To study the eﬀects of labor productivity trends on
+costs, we develop a model with deployment rates of con-
+struction materials as variables. For structures made of
+materials i, this deployment rate is the ratio of mate-
+rial volumes Vi to the quantity of labor (in person-hours)
+needed to deploy these volumes, τi: vi = Vi
+τi . This choice
+results in an equation for direct construction costs of the
+form shown in Eq. 5, where costs are a sum of products
+of structure volumes Vi, material prices pi, volumetric
+material fractions fi, and per-volume labor costs ( wi
+vi ):
+Ccontainment
+ $
+We
+
+=
+3
+X
+i=1
+Vi
+QE
+
+fipi + wi
+vi
+
+.
+(5)
+In Supplemental section S5 we use a simple expan-
+sion of this model to estimate indirect containment costs
+and to draw conclusions about overall plant construction
+costs.
+We select two periods of study to align with major
+shifts in U.S. nuclear construction: From 1976 to 1987
+(period 1), the era characterized by changing public opin-
+ion, rising nuclear regulations, and the events surround-
+ing the Three Mile Island accident. From 1987 to 2017
+(period 2), the recent era characterized by protracted con-
+struction periods, development of new generations of re-
+actor design, the long hiatus in nuclear project develop-
+ment, and an attempt to revive the nuclear industry.
+Populating our cost model with values from these pe-
+riods, we can ask how much each variable contributed
+to the cost increase of the containment building. Even
+with a cost model in hand, attributing cost increases to
+particular variables is non-trivial. Drawing on a recently
+developed method74, we model the cost of a technology
+as a sum over a set of cost components, C(⃗r) = P
+i Ci(⃗r),
+each of which is a multiplicatively separable function
+Ci(⃗r) = Q
+y giy(ry) of cost-determining variables ⃗r. The
+elements of the vector ⃗r can include prices, design param-
+eters, and other characteristics that aﬀect the cost of a
+technology. This method results in estimates of the con-
+tributions ∆Cy of each variable to cost change between
+two periods t1 and t2, given by
+∆Cy ≈
+X
+i
+˜Ci ln
+ 
+giy(r2
+y)
+giy(r1y)
+!
+,
+(6)
+where r1
+y and r2
+y are the values of the yth variable in
+periods t1 and t2, and ˜Ci is the logarithmic mean of the
+ith cost component over the two periods.
+We refer to
+changes in the variables ⃗r as low-level mechanisms of cost
+change.
+As shown in Figs 4 and 5, some low-level mechanisms
+were signiﬁcantly more inﬂuential for cost increase than
+others.
+These mechanisms include changes in material
+deployment rates, structure thicknesses, and steel prices.
+However, the importance of these mechanisms changed
+over time. During period 1 (1976-1987), the design of the
+containment structure stayed the same, and cost increase
+was caused primarily by declining deployment rates. Al-
+though concrete and steel worker productivity declined
+by comparable amounts (-40% for steel, -50% for con-
+crete during the 1976-1987 period), steel worker produc-
+tivity made a larger contribution to cost increase due to
+5
+--- PAGE 6 ---
+the higher wage paid to steel workers. We study nuclear
+productivity decline in more detail in section 3.4.
+During period 2 (1987-2017), a new containment design
+was adopted by Westinghouse (the AP-1000), and the re-
+sulting changes to dimensions, material usage and labor
+needs drove cost increase. The switch from active to pas-
+sive cooling, a design that reduces the need for operator
+intervention during emergencies by taking advantage of
+natural forces, required the separation of the steel liner
+from the concrete shield building. This change enabled
+natural air convection between the two layers, but also
+required thicker structures since
+layers previously act-
+ing together to resist external and internal forces now
+needed to hold up independently75,76,77. The thickness
+of the steel shell, which was ﬁve times greater in 2017 as
+it was in 1987, made the single largest contribution to
+cost increase (70%). Period 2 caused the majority of cost
+increase (80%) during the 1976-2017 period.
+Our results illustrate trade-oﬀs that can result from
+innovations that aﬀect many variables simultaneously.
+Switching to a free-standing containment steel vessel in
+period 2 allowed the use of cheaper steel, as well as more
+rapid steel shell deployment, but the cost-reducing eﬀect
+of these changes was oﬀset by increasing structure thick-
+nesses and the resulting higher material and labor costs.
+Avoiding a cost increase over the 1987-2017 period despite
+increased commodity use would have required massive
+improvements in labor productivity (a ten fold increase
+in steel and rebar deployment rates, over the 1987-2017
+period). While our analysis of direct cost change in con-
+tainment buildings covers only 3-4% of total plant costs
+in 1976 and 1987, the costs of civil works in total account
+for 30-50% of total nuclear power plant costs2. The con-
+clusions drawn from this case study—e.g., on the eﬀects
+of increased commodity usage—can therefore add insight
+on drivers of cost change in other ﬁeld-constructed plant
+components such as spent fuel handling buildings, turbine
+generator buildings, and cooling towers.
+Contrary to the years 1976 and 1987 we do not have
+information on total indirect costs in 2017 because the
+Vogtle plant is still under construction. We exclude indi-
+rect containment costs in Fig. 4 but examine the eﬀects of
+currently available indirect cost data on total containment
+cost change in Supplemental section S5. Although total
+containment costs depend sensitively on assumptions re-
+garding indirect costs, mechanisms that are inﬂuential for
+direct containment cost change also tend to be inﬂuential
+for total containment cost change. Deployment rates are
+slightly more important because they aﬀect a larger frac-
+tion of total costs. Commodity prices become less inﬂu-
+ential. We explore the eﬀects of data uncertainties using
+a sensitivity analysis (see Supplemental section S6). Cost
+change results are most sensitive to uncertainties in vari-
+ables related to the use of steel, but our major conclusions
+are unaﬀected by these uncertainties.
+2.4
+Further evaluation of construction
+productivity changes
+In section 3.3 we ﬁnd that declining construction pro-
+ductivity was a major source of containment building cost
+increase in period 1 (1976-1987). Here we further analyze
+the factors leading to this decline. Previous work points
+to a general decrease in U.S. construction productivity
+during the period2,19, but has not looked at the nuclear
+industry speciﬁcally.
+To study this, we look at the evolution of material de-
+ployment rates in nuclear construction, a measure of la-
+bor productivity in terms of material installed per unit
+of labor (e.g., m3/person-hour). Using data from EEDB
+reports56,57,58,59,60,61,62,63 and recent AP1000 engineering
+construction reports78,79, we compute the ratio of the vol-
+ume of materials (steel or concrete) installed to the total
+hours of labor needed for installation. We compare these
+deployment rates to two benchmarks: An index of ma-
+terial deployment rates in the construction industry as a
+whole, and deployment rates assumed in nuclear industry
+cost estimation guidelines.
+Material deployment rates in the construction industry
+decreased over the period of study, falling about 14%, as
+shown in Fig. 6. Nevertheless, deployment rates in nu-
+clear construction declined more dramatically, with a pre-
+cipitous drop between 1979 and 1980 following the Three
+Mile Island accident.
+Compared with the construction
+industry at large, nuclear deployment rates declined ﬁve
+to six times more quickly. This productivity decline was
+a primary cause of nuclear cost increase.
+Labor inter-
+views provide insight into some of the causes of declin-
+ing productivity80, pointing to problems experienced in
+the ﬁeld. Craft laborers, for example, were unproductive
+during 75% of scheduled working hours, primarily due to
+construction management and workﬂow issues, including
+lack of material and tool availability, overcrowded work
+areas, and scheduling conﬂicts between crews of diﬀerent
+trades.
+Material deployment rates in the U.S. nuclear industry
+have been considerably lower than those assumed by the
+industry for cost estimation purposes (e.g., EMWG14).
+Industry average rates in the post-Three Mile Island pe-
+riod were two to three times slower for steel and con-
+crete. More recently, rates at the Vogtle and VC Sum-
+mer project sites have been three to four times slower for
+steel, and eight to thirteen times slower for concrete. This
+disparity between projections of productivity and actual
+experience has contributed signiﬁcantly to cost overruns.
+These trends are observed despite recent eﬀorts to im-
+prove productivity through modular design. Instead of
+using standard reinforced concrete, which is constructed
+on-site using elaborate formwork, the shield building in
+the AP-1000 is comprised of prefabricated steel-plate
+composite (SC) modules. SC modules have two steel lay-
+ers and tie bars that act as concrete reinforcement, reduc-
+ing the time needed for formwork and rebar placement81.
+6
+--- PAGE 7 ---
+Smaller modules are assembled into larger modules on-
+site and then lifted into place.
+However, placement is
+only one of many steps needed to install a module, which
+also involves welding, piping, cabling, and other tasks.
+Although SC modules were used in two major struc-
+tures on the AP-1000 nuclear island (the containment and
+auxiliary buildings), the eﬀect of modular construction
+on the average steel deployment rate across the nuclear
+island was not enough to raise productivity over previ-
+ous years. Skills and training gaps, and the extra steps
+needed for quality control of the modules, are among the
+possible causes of low productivity82.
+2.5
+High-level
+mechanisms
+of
+contain-
+ment building cost change
+What were the higher-level human activities and strate-
+gies behind low-level mechanisms of cost change discussed
+in sections 3.3 and 3.4? A common view is that safety reg-
+ulations have increased the costs of nuclear power plant
+construction83,49,84,4,2. Here we consider this view along-
+side other drivers by estimating the role of diﬀerent activ-
+ities in changing costs. To do this we attribute changes
+in the variables in our cost model (low-level mechanisms)
+to higher-order processes that likely caused these changes
+(high-level mechanisms)74.
+We assign
+changes that require signiﬁcant modiﬁca-
+tions of the containment building design and construc-
+tion process to the mechanism ‘Research and develop-
+ment (R&D)’. While construction projects are inherently
+site-speciﬁc and on-site adjustments are common, the
+mechanism R&D accounts for more fundamental changes
+that require longer term, oﬀ-site activities.
+For exam-
+ple, changing the design by separating the steel liner and
+concrete shield building required years of R&D by West-
+inghouse, as indicated by patents and journal papers from
+the 1970-2017 period (Supplemental Table S3).
+We deﬁne three additional high-level mechanisms to ac-
+count for changes driven by non-R&D related processes.
+The ﬁrst mechanism, ‘Process interference, safety’ (PIS)’,
+represents the eﬀects of on-site NRC and other safety-
+related personnel on the construction process. Construc-
+tion supervision, quality assurance and control by NRC
+regulators can interfere with construction workﬂows and
+slow productivity (see Supplemental Table S6).
+The second additional high-level mechanism represents
+decreases in the performance of construction workers.
+We refer to this mechanism as ‘Worsening despite doing’
+(WDD) instead of ‘negative learning’47 to distinguish be-
+tween WDD and learning-by-doing as a concept in eco-
+nomic theory. Learning-by-doing refers to improvement
+as a result of an activity, such as working85.
+WDD,
+in contrast, attributes performance decreases to parasitic
+processes (e.g., decreasing morale) that did not origi-
+nate in construction activities, but were also not coun-
+teracted by them. These processes may have diminished
+productivity gains from problem-solving during routine,
+sequential work steps, which is often seen as the source of
+learning-by-doing85,86. Note that these processes may be
+indirectly linked to safety regulations through complex,
+project-speciﬁc interactions but have not been directly
+mandated by regulations, and we therefore distinguish
+between process interference-safety (PIS) and worsening
+despite doing (WDD).
+Finally, we use the mechanism
+‘Other’ to refer to changes originating predominantly out-
+side of the nuclear industry (e.g., wage or commodity
+price changes).
+We relate cost changes to high-level mechanisms by
+using engineering and construction knowledge to identify
+relationships between these mechanisms and the variables
+in our cost model, and then check this initial assignment
+with information from patents and journal papers describ-
+ing motivations for innovations and drivers of productiv-
+ity changes (see Supplemental section S7). A complete
+list of assignments for the low-level mechanisms shown in
+Fig. 4 is given in Supplemental Table S5. In time pe-
+riod 1 (1976-1987), we assign material deployment rates
+to R&D, WDD, and PIS to account for several parallel
+developments that aﬀected labor productivity. Following
+the Three Mile Island accident, NRC regulations required
+increased documentation of safety-compliant construction
+practices, prompting companies to develop quality assur-
+ance programs to manage the correct use and testing of
+safety-related equipment and nuclear construction mate-
+rials.
+In contrast to the more informal practices used
+in the 1960s, NRC quality assurance standards became
+increasingly speciﬁc in the 1970s, regulating construction
+steps such as concrete placement and rebar testing83. We
+therefore categorize slowdowns in productivity as R&D.
+Time period 1 also saw the inception of the NRC’s res-
+ident inspector program, putting NRC directly on site
+to monitor construction activities87. Since these inter-
+ferences directly aﬀected construction practices87,88, we
+categorize material deployment rates as PIS. Finally, we
+account for non safety-related productivity changes by
+assigning deployment rates to the mechanism WDD. A
+worker survey from six nuclear power plants constructed
+during time period 1, for instance, attributes 27% of un-
+productive time to a lack of material and tool availabil-
+ity, indicating supply chain management issues that are
+largely independent from safety requirements80.
+While the dimensions of the containment building were
+constant in time period 1 (1976-1987), they changed in
+time period 289. Based on the information contained in
+patents and journal papers (Supplemental Tables S3 and
+S4), these changes were made in pursuit of design sim-
+plicity, constructibility, and safety goals, and we therefore
+assign thicknesses, radii and heights to R&D. Since the
+use of cheaper steel and its faster deployment are conse-
+quences of the design change, these two mechanisms are
+also assigned to R&D. Concrete and rebar prices are as-
+signed to ‘Other’ (see Supplemental Tables S5 and S6 for
+other assignments and data sources).
+Altogether, R&D-related activities contributed roughly
+7
+--- PAGE 8 ---
+30% to cost increases, and on-site, procedural changes
+(worsening-despite-doing and interferences with the con-
+struction process) contributed roughly 70% (see Fig. 7).
+The large inﬂuence of these procedural and site-speciﬁc
+mechanisms points to the importance of innovation in
+these areas.
+Our results also provide a starting point for quantify-
+ing the eﬀect of safety regulations. While safety-related
+considerations likely had an inﬂuence on many of the
+high-level mechanisms studied here, the mechanism most
+directly related to compliance with regulations is pro-
+cess interference, safety, which contributed approximately
+30% to the observed cost increase between 1976-2017.
+The mechanism representing R&D activities typically ad-
+dresses multiple objectives at once and it is thus more
+diﬃcult to strictly separate this into into safety- and non-
+safety related activities, and the same holds for productiv-
+ity slowdowns reﬂected in ‘worsening by doing’. However,
+despite these diﬃculties, it is relevant to note that direct
+interference to address safety contributed signiﬁcantly to
+cost increases observed (roughly 30%) but was not the
+only driver of cost escalation.
+2.6
+Opportunities for future cost reduc-
+tion in nuclear construction
+We conclude by examining scenarios for future reduc-
+tions in nuclear construction costs. The goal of this anal-
+ysis is to begin to examine whether factors that have led
+to cost increases in the past can be addressed through in-
+novation. Each scenario corresponds to a set of changes
+to the variables in the containment cost model relative to
+their values in 2017. These ‘prospective low-level mecha-
+nisms’ represent the estimated eﬀect of innovations such
+as advanced manufacturing and high-strength construc-
+tion materials, which aﬀect multiple variables either di-
+rectly or indirectly through interactions. We estimate the
+relative eﬀect of diﬀerent low-level mechanisms induced
+by these innovations by populating our containment cost
+model with current U.S. and future estimated cost data
+assuming diﬀerent innovations are implemented (see SI
+section S8.1), and using cost change equations to quantify
+the contribution of low-level mechanisms to the resultant
+cost reduction.
+We use the same cost change model as for historical
+years but include formwork costs, drawing on recent data
+sources. We also estimate the potential contribution of
+higher order improvement processes (high-level mecha-
+nisms) to cost reductions, which shed light on how the
+innovations we consider might be developed and imple-
+mented at construction sites. These scenarios represent
+hypothetical development strategies, which could be fur-
+ther explored and validated through detailed engineering
+models of speciﬁc reactor designs.
+We consider three scenarios.
+In scenario 1, cost im-
+provement is pursued along multiple dimensions, which
+is represented as
+20% change of all variables in a cost-
+reducing direction (e.g., deployment rates increase by
+20%.) Although no real-world design change will induce
+equal percent-changes across all variables, scenario 1 is
+meant to test the sensitivity of our model. We change
+the plant eﬃciency and the concrete fraction in rein-
+forced concrete by less than 20% to reﬂect engineering
+constraints (see Supplemental section S8.1).
+In contrast to scenario 1, scenarios 2 and 3 represent
+speciﬁc eﬀorts to reduce costs. In scenario 2, we assume
+that on-site deployment rates improve due to adoption of
+advanced manufacturing and construction management
+techniques90. We draw on a review article91 to estimate
+improved concrete and formwork deployment rates and
+capital costs of currently available automation equipment
+(see Supplemental section S8.1 and Table S7). For rebar,
+we turn to innovations in process management (e.g., op-
+timized rebar delivery and placement planning92).
+Scenario 3 is focused on advanced, high-strength con-
+struction materials, which have been shown to reduce
+commodity use and on-site rebar congestion in high-rise
+buildings and bridges (e.g.,93,94).
+We model a combi-
+nation of high-strength reinforcement steel (HSRS) and
+ultra high-performance concrete (UHPC)95. HSRS pro-
+vides up to 40% more yield strength (i.e., the stress at
+which a predetermined amount of permanent deforma-
+tion occurs) than conventional rebar96, which is equiva-
+lent to a proportionate reduction in rebar amounts per
+unit of concrete volume (see Supplemental section S8.3
+for details).
+Scenarios 2 and 3 reduce costs by 30-40% relative to
+2017 containment costs, though neither scenario leads
+to a reduction relative to 1976 costs, primarily due the
+switch from one to two shells and the associated increase
+in commodity usage.
+In scenario 1, reductions in
+re-
+bar use (represented by fcon and referred to as ‘concrete
+fraction’ in Fig.
+8) and in ironworker wages are most
+inﬂuential, together causing roughly 30% of total direct
+cost reductions (Fig. 8). Even in a hypothetical scenario
+where steel for the containment vessel was free, changing
+the rebar content of concrete would remain the dominant
+cost changing eﬀect due to labor costs.
+These results
+demonstrate the limits to materials-related cost-reduction
+opportunities in nuclear structures due to their large-scale
+dimensions and labor intensity.
+Scenario 2 results in a reduction of containment con-
+struction costs to approximately two thirds of estimated
+costs in 2017 (-34%). This eﬀect is driven primarily by
+faster concrete deployment. Although formwork materi-
+als cost a fraction of steel, the larger eﬀect of automation
+on formwork as compared to steel productivity leads to
+similar contributions to cost reduction. Estimated capital
+costs for automation equipment are a minor cost driver,
+comprising approximately 6% of total containment con-
+struction costs. Scenario 2 nevertheless represents a 30%
+cost increase relative to 1976 costs.
+Despite the large reduction in commodity usage, sce-
+nario 3 only reduces costs by a little over one third (-37%
+8
+--- PAGE 9 ---
+from 2017 levels).
+Due to the expensive fabrication of
+UHPC steel ﬁbers, the price of UHPC is currently 10
+times that of standard nuclear concrete97,94,93 (see Sup-
+plemental section S8.1), and high-strength rebar is 50%
+more expensive than standard rebar. Cost reductions in
+scenario 3 could reach 50% if the costs of advanced mate-
+rials reached current prices of nuclear commodities. Costs
+have declined in European countries that scaled UHPC
+production earlier94, but similar cost declines have yet to
+be achieved in North America.
+The prospective analysis highlights the challenges in re-
+ducing the costs of a ﬁeld-constructed, site-speciﬁc tech-
+nology under high safety standards.
+Scenario 1 shows
+that the rebar fraction in the concrete shield building is
+twice as inﬂuential as other variables, yet this is one of the
+variables most constrained by safety standards. Scenario
+2 demonstrates that both concrete and steel construc-
+tion would require automation to cut costs by more than
+30%, yet challenges remain in the 3D printing of steel.
+The properties of printed metals under nuclear operating
+conditions (e.g., their microstructure, corrosion cracking,
+and irradiation eﬀects) are an active area of research, but
+no commercially available product currently exists98.
+We use the assignment scheme presented in section ??
+to relate low-level to high-level mechanisms, but include
+an additional mechanism to account for the transfer of
+external innovations to the nuclear industry. We refer to
+this mechanism as ‘Knowledge spillover’ (KS). Knowledge
+spillover is similar to learning-by-copying in the sense that
+capabilities developed in one domain are adopted by an-
+other99. However, activities involved in this process may
+go beyond copying, since adopting advanced materials or
+automated construction systems will likely require adap-
+tations to nuclear construction and inspection processes.
+Although many technologies draw on multiple industries
+as they evolve and historical spillovers are therefore of-
+ten diﬃcult to pin down, the scenarios here assume the
+use of speciﬁc, recent innovations whose development out-
+side the nuclear industry is well documented. Given this
+background, we label the initial implementation of these
+innovations in the nuclear domain as a spillover.
+We assign increases in material prices to the same high-
+level mechanisms that enable the switch to advanced ma-
+terials (R&D and KS). In scenario 1, where we do not
+specify an innovation, we use historical associations be-
+tween low- and high-level mechanisms as our ‘best guess’
+for the future.
+As shown in Fig. 9, we ﬁnd that all scenarios require
+some form of R&D, and that R&D plays a greater role
+relative to other mechanisms compared to the results of
+our retrospective analysis shown in Fig. 7. The contri-
+bution of other high-level mechanisms varies across sce-
+narios.
+LBD is slightly more important when improve-
+ments to the construction process are adopted (scenario
+2). Knowledge spillovers are less important for cost re-
+ductions in scenario 3 (advanced materials) than in sce-
+nario 2 because the cost decrease enabled by knowledge
+spillovers and the use of advanced materials is simultane-
+ously diminished by the higher prices of these materials.
+3
+Discussion
+In this paper we model nuclear plant costs over ﬁve
+decades to understand sources of rising construction costs
+in the U.S. and how these compare to engineering projec-
+tions. We document cost escalation in nuclear technol-
+ogy with time, even among plants of nominally standard
+design. Decomposing individual plant costs, we identify
+declining labor productivity as a major driver of cost in-
+crease over time, which we study mechanistically through
+a case study of the reactor containment building. The
+ﬁndings of this research lead us to revisit how engineering
+expectations regarding construction, technological perfor-
+mance, and innovation may have contributed to an un-
+derestimation of cost factors external to hardware design.
+While it is acknowledged that construction costs in-
+creased for nuclear plants in the U.S. and other countries,
+substantial reductions within a given design class (nth-of-
+a-kind plants) are still commonly expected in engineering
+cost models. We review nuclear cost estimating practices
+and industry growth projections, identifying a common
+expectation that learning eﬀects drive down cost as expe-
+rience grows66,36,68,67,32,40,69,31,35,2,46.
+The notion that
+improved plant designs can solve cost issues once new
+designs can be standardized and production scaled has
+driven substantial public and private R&D investment,
+but it is unclear what the net eﬀect of such investment
+has been. While previous empirical evidence shows that
+costs rise with experience47,50,51, our work demonstrates
+that this eﬀect was also true for NOAK plants of standard
+reactor technology in the U.S., indicating that cost reduc-
+tions from standardization should not be expected as an
+inherent consequence of industry experience. However,
+our results should be interpreted within the context that
+not all plants within each standard design are perfectly
+identical and the design diﬀerences may have contributed
+to the unexpected cost increases. Further work is needed
+to evaluate NOAK cost trends in other countries.
+Rising costs are often assumed to be associated with in-
+creasing stringency of safety regulations (e.g.,83,49. Here
+we estimate that prescriptive
+safety requirements can
+be associated with approximately one third of the direct
+containment cost increase between 1976 and 2017.
+Productivity declines played a signiﬁcant role in cost
+escalation.
+We show that nuclear productivity has de-
+clined faster than that in the construction industry,
+and that actual productivity at nuclear construction
+projects is signiﬁcantly below industry expectations. The
+widespread use of expectations that do not match actual
+experience may be a contributing factor in cost overruns,
+and suggests the importance of a comprehensive update
+using empirical, country-speciﬁc productivity data where
+available. A limitation of our study is that for data avail-
+9
+--- PAGE 10 ---
+ability reasons we use aggregated productivity data cov-
+ering multiple construction tasks. Future work involving
+targeted new data collection could explore productivity
+trends at the component- or task-level to develop a more
+ﬁne-grained picture of on- and oﬀ-site productivity in the
+nuclear industry.
+Looking to the future, our ﬁndings suggest that engi-
+neering models used to project future construction costs
+should be reexamined in light of the limitations of as-
+sumed learning rates and current approaches to engi-
+neering design solutions to site-speciﬁc and variable chal-
+lenges. Using mechanistic models populated with recent,
+observed nuclear construction data can relate engineering
+design changes to cost change and potentially make cost
+projections more reliable. Moreover, there is some sugges-
+tion that cost escalation can be avoided by new strategies
+to assemble and codify knowledge. In China, Japan, and
+South Korea, for example, shorter construction schedules
+have been reported in cases where the same engineering
+company led projects in multiple countries2.
+These observations motivate our modeling of scenar-
+ios for potential for future construction cost reduction.
+Our scenarios suggest that reducing commodity usage,
+for example through employing high-strength composite
+materials alongside automated construction could signif-
+icantly reduce costs.
+To realize these scenarios, R&D
+would need to play a more signiﬁcant role compared to
+its past contribution to cost change.
+Knowledge transfer from other industries, for instance
+in the form of advanced manufacturing techniques, could
+be particularly impactful if it enables automated con-
+trol of process parameters, thereby reducing the costs of
+human-led construction supervision. However, additional
+eﬀorts may be needed to ensure that these innovations
+can be adapted for nuclear applications.
+For instance,
+test data on the performance of new materials will likely
+be required to ensure standards can be satisﬁed100.
+Similarly, while our analysis identiﬁes the rebar den-
+sity in reinforced concrete as the most inﬂuential variable
+for cost decrease, changes to the amount and composi-
+tion of containment concrete are constrained by safety
+regulations, most notably the requirement for contain-
+ment structures to withstand commercial aircraft im-
+pacts. New plant designs with underground (embedded)
+reactors could allow for thinner containment walls. How-
+ever, these designs are still under development and pose
+the risk of high excavation costs in areas or at sites with
+low productivity.
+Our retrospective and prospective analyses together
+provide insights on the past shortcomings of engineering
+cost models and possible solutions for the future.
+Nu-
+clear reactor costs exceeded expectations in engineering
+models because cost variables related to labor productiv-
+ity and safety regulations were underestimated.
+These
+discrepancies between expectation and realized costs in-
+creased with time, with changing regulations and vari-
+able construction site-speciﬁc characteristics. Our analy-
+ses demonstrate the importance of rethinking engineering
+cost models and design approaches to anticipate these ef-
+fects and choose designs that are robust to them. Mecha-
+nistic models of cost change of the kind presented in this
+paper could be used to explore potential solutions. In the
+case of nuclear ﬁssion reactors, reducing commodity usage
+and automating construction could be particularly impor-
+tant. While this study focuses on nuclear ﬁssion reactors,
+other technologies with similarly demanding on-site con-
+struction and performance requirements may also beneﬁt
+from this approach.
+Several areas for future research emerge from this work.
+One important area for further investigation is to extend
+our analysis of the containment building to the entire
+plant. An important advance in the methods for doing
+so would be to explicitly model engineering- and physics-
+based interactions between plant components. Another
+approach would be to use expert elicitations to develop
+insight on how variables aﬀecting cost might change in
+the future (e.g.,101). Furthermore, previous studies have
+highlighted incomplete designs as one of several possi-
+ble causes for cost escalation in nuclear power plants and
+other construction projects2,102.
+Future research could
+disaggregate various components of total plant costs (such
+as those shown in Fig. 2) to enable mechanistic modeling
+of the eﬀects of design revisions on home oﬃce engineer-
+ing and other soft costs. Moreover, future work might in-
+vestigate the institutional and regulatory conditions that
+best support learning in the nuclear industry to better un-
+derstand diﬀerences in nuclear construction costs across
+countries and construction ﬁrms. Finally, additional re-
+search should focus on other technologies with similarly
+demanding on-site construction and performance require-
+ments to develop better understanding of the potential
+avenues for preventing cost overruns and supporting in-
+novation.
+4
+Experimental Procedures
+4.1
+Lead Contact
+Further information and requests for resources and ma-
+terials should be directed to and will be fulﬁlled by the
+Lead Contact, Jessika E. Trancik (trancik@mit.edu).
+4.2
+Materials Availability
+Materials generated in this study will be made available
+on request, but we may require a payment and/or a com-
+pleted Materials Transfer Agreement if there is potential
+for commercial application.
+10
+--- PAGE 11 ---
+4.3
+Data and Code Availability
+The published article with Supplemental Information
+includes detailed equations that can be use to replicate
+the code in this study and also includes detailed tabular
+data collected during this study.
+Additional materials
+supporting the study are available from the Lead Contact
+on request.
+4.4
+Data
+Collection of empirical data from nuclear projects is
+challenging. Primary data sources are scarce and dated
+compared to other technologies, as relatively few nuclear
+plants have been completed by only a handful of compa-
+nies, and the average plant in the U.S. is over forty years
+old. In addition, the use of best-case nuclear data or data
+from non-nuclear projects is common in bottom-up cost
+modeling (e.g.,14,36). Changes to project design, sched-
+ule, and cost mid-stream are frequent and create another
+obstacle to ﬁnding data that is representative of an entire
+project.
+To address the above issues we collect data from a
+broad array of sources and check empirical data against
+hypothetical and best-case assumptions.
+For our anal-
+ysis of nuclear learning rates and nth-of-a-kind (NOAK)
+cost trends, we use databases of construction data, includ-
+ing International Atomic Energy Agency reactor informa-
+tion, historical government reports, and published data
+from academic and industry literature (e.g., PRIS24, U.S.
+EIA72,19, Koomey and Hultman15). We use ‘overnight’
+cost of construction data in our analysis, which excludes
+ﬁnancing costs. We use the gross domestic product price
+deﬂator to convert nominal costs to real costs, choosing
+an economy-wide index as the objective is to analyze costs
+in such a way that they can be compared to other poten-
+tial technologies and investments.
+The total cost of a
+nuclear power plant includes interest on funds used to
+build the plant, which accounts for approximately 65% of
+the total cost of plants which began construction in the
+mid 1970s (up from approximately 35% for plants begun
+a decade earlier)19. To study construction productivity
+changes in the U.S., we derive material deployment and
+labor data from reports by the Bureau of Labor Statis-
+tics103.
+Our evaluation of cost estimating guidelines is based
+upon series of reports prepared under the U.S. Depart-
+ment of Energy and by industry consortia (e.g.,36,14). For
+containment cost decomposition, we turn to EEDB data
+on commodity costs, labor costs, labor productivity, and
+structure dimensions of light-water reactor containment
+buildings constructed during the 1970s and 1980s, and ﬁll
+in the gaps with U.S. Geological Survey commodity price
+data. We use containment building data from nuclear en-
+gineering speciﬁcations and architectural drawings of the
+Westinghouse AP1000 LWR for analysis of 2017 costs,
+as this is the only plant design currently under construc-
+tion in the U.S. We also draw on
+AP1000 construction
+and engineering reports from the VC Summer project in
+South Carolina.
+The resulting data set is, to the extent possible, rep-
+resentative of the U.S. nuclear industry in all three years
+studied in our analysis of containment building cost
+change. In 1976 and 1987, several plants were under con-
+struction, and our data represents an industry average56.
+In 2017, our data represent the only nuclear project under
+construction. Projects using the same containment design
+are under way in other countries, thus our ﬁndings may
+be relevant in some non-U.S. markets. Note that overall,
+while we build on and draw upon existing, peer-reviewed
+nuclear cost datasets26,104, the mechanistic modeling of
+cost drivers in sections 3.3 and 3.6 requires component-
+level, detailed cost data that is not available from peer-
+reviewed sources (e.g., construction productivity data at
+recent nuclear construction sites, containment building
+dimensions).
+We use this data with an understanding
+that a lack of peer-review introduces uncertainty, and we
+address this issue using sensitivity analysis (SI section
+S6).
+Acknowledgements
+We thank the The David and Lucile Packard Foun-
+dation and the MIT Energy Initiative for funding this
+research. We also thank Dr. David Petti, David Jones,
+and Patrick Champlin for valuable discussions.
+Author Contributions
+PEG: Conceptualization, Methodology, Investigation,
+Writing - Original Draft, Writing - Review & Editing, Vi-
+sualization; MMK: Conceptualization, Methodology, In-
+vestigation, Writing - Original Draft, Writing - Review &
+Editing, Visualization; GK: Conceptualization, Method-
+ology, Writing - Review & Editing; JM: Conceptualiza-
+tion, Methodology, Writing - Review & Editing; JB: Con-
+ceptualization, Writing - Review & Editing, Funding Ac-
+quisition; JET: Conceptualization, Methodology, Writing
+- Review & Editing, Funding Acquisition, Supervision.
+Declaration of Interests
+The authors declare no competing interests.
+11
+--- PAGE 12 ---
+References
+[1] Davis, S.J., Lewis, N.S., Shaner, M., Aggarwal, S.,
+Arent, D., Azevedo, I.L., Benson, S.M., Bradley, T.,
+Brouwer, J., Chiang, Y.M. et al., (2018). Net-zero
+emissions energy systems. Science, 360(6396).
+[2] Buongiorno, J., Corradini, M., Parsons, J. and
+Petti, D., (2018).
+The Future of Nuclear Energy
+in a Carbon-Constrained World, An MIT Interdis-
+ciplinary Study. MIT Energy Initiative.
+[3] Energy Advisory Board, S. of, (2016). Report of the
+Task Force on the Future of Nuclear Power. U.S.
+Department of Energy.
+[4] Deutch, J.M., Forsberg, C.W., Kadak, A.C., Kaz-
+imi, M.S., Moniz, E.J., Parsons, J.E. et al., (2009).
+Update of the mit 2003 future of nuclear power.
+Cambridge, mass.: Report for massachusetts insti-
+tute of technology. retrieved september, 17, p.2009.
+[5] Ansolabehere, S. and Konisky, D.M., (2009). Public
+attitudes toward construction of new power plants.
+Public opinion quarterly, 73(3), pp.566–577.
+[6] Kim, Y., Kim, W. and Kim, M., (2014). An inter-
+national comparative analysis of public acceptance
+of nuclear energy. Energy policy, 66, pp.475–483.
+[7] Corkhill, C. and Hyatt, N., (2018). Nuclear waste
+management. IOP Publishing.
+[8] Ewing, R.C. and Hippel, F.N. von, (2009).
+Nu-
+clear waste management in the united statesstart-
+ing over. Science, 325(5937), pp.151–152.
+[9] Laboratory,
+N.R.E.,
+(2012).
+Life
+cy-
+cle
+assessment
+harmonization.
+Available
+from:
+https://www.nrel.gov/analysis/
+life-cycle-assessment.html [Accessed 2020].
+[10] Weisser, D., (2007). A guide to life-cycle greenhouse
+gas (ghg) emissions from electric supply technolo-
+gies. Energy, 32(9), pp.1543–1559.
+[11] Bruckner, T., Bashmakov, I., Mulugetta, Y., Chum,
+H., Vega, A. de la, Navarro, J.E., Faaij, A., Fung-
+tammasan, B., Garg, A., Hertwich, E., Honnery, D.,
+In eld, M., Kainuma, S., Khennas, Kim, S., Nimir,
+H.B., Riahi, K., Strachan, R., Wiser, R. and Zhang,
+X., (2014).
+Energy systems. in: Climate change
+2014: Mitigation of climate change. contribution
+of working group iii to the ﬁfth assessment report
+of the intergovernmental panel on climate change.
+Cambridge university press, cambridge, united king-
+dom and new york, ny, usa.
+[12] International
+Atomic
+Energy
+Agency,
+(2018).
+Power Reactor Information System:
+History of
+Electricity Production.
+Available from:
+https:
+//pris.iaea.org.
+[13] Association, W.N., (2018). Energy Subsidies. Avail-
+able
+from:
+http://www.worldenergyoutlook.
+org/resources/energysubsidies/
+[Accessed
+2018].
+[14] Rasin, W., Ono, K., Bertel, E., Berbey, P., Duﬀey,
+R., Khalil, H., Kinoshita, I., Kuran, S., Lee, M.,
+Onopko, E., Rothwell, G. and Williams, K., (2007).
+Cost Estimating Guidelines for Generation IV Nu-
+clear Energy Systems. Generation IV International
+Forum.
+[15] Koomey, J. and Hultman, N.E., (2007). A reactor-
+level analysis of busbar costs for us nuclear plants,
+1970–2005. Energy policy, 35(11), pp.5630–5642.
+[16] Walker, J.S. and Wellock, T.R., (2010). A short his-
+tory of nuclear regulation, 1946-2009. United states
+nuclear regulatory commission, pp.1–116.
+[17] Marshall, J.M. and Navarro, P., (1991). Costs of
+nuclear power plant construction: theory and new
+evidence. The rand journal of economics, pp.148–
+154.
+[18] Hultman, N.E., Koomey, J.G. and Kammen, D.M.,
+(2007). What history can teach us about the future
+costs of us nuclear power.
+[19] U.S. Energy Information Administration, (1986).
+Analysis of nuclear power plant construction costs.
+U.S. Department of Energy.
+Available from:
+https://doi.org/10.2172/6071600.
+[20] Gold, R., (2017).
+Tab swells to $25 billion for
+nuclear-power plant in georgia. The wall street jour-
+nal.
+[21] Bade, G., (2017). Vogtle nuke cost could top $25b
+as decision time looms. Utility drive.
+[22] Locatelli, G. and Mancini, M., (2012). Looking back
+to see the future: building nuclear power plants in
+europe. Construction management and economics,
+30(8), pp.623–637.
+[23] BBC, (2019). Hinkley Point C nuclear plant to run
+2.9bn over budget. Available from: https://www.
+bbc.com/news/business-49823305.
+[24] International
+Atomic
+Energy
+Agency,
+(2018).
+Power Reactor Information System: Country De-
+tails.
+[25] Schneider,
+M.,
+Froggatt,
+A.,
+Hazemann,
+J.,
+Matsuta,
+T.,
+Ramana,
+M.,
+Rodriguez,
+J.
+and
+Rudinger,
+A.,
+(2017).
+The
+world
+nu-
+clear
+industry
+status
+report
+2017.
+Available
+from:
+https://www.worldnuclearreport.org/
+IMG/pdf/20170912wnisr2017-en-lr.pdf.
+12
+--- PAGE 13 ---
+[26] Lovering, J.R., Yip, A. and Nordhaus, T., (2016).
+Historical construction costs of global nuclear power
+reactors. Energy policy, 91, pp.371–382. Available
+from: https://doi.org/10.1016/j.enpol.2016.
+01.011.
+[27] Gilbert, A., Sovacool, B.K., Johnstone, P. and Stir-
+ling, A., (2017). Cost overruns and ﬁnancial risk
+in the construction of nuclear power reactors: A
+critical appraisal. Energy policy, 102, pp.644–649.
+[28] Yi-Chong, X., (2010). The politics of nuclear energy
+in china. Springer.
+[29] Administration, U.E.I., (2018).
+Assumptions to
+the annual energy outlook 2018: Electricity mar-
+ket module.
+[30] Cole, W., Mai, T., Logan, J., Steinberg, D., Mc-
+Call, J.M., Richards, J., Sigrin, B. and Porro, G.,
+(2016). 2016 standard scenarios report: A u.s. elec-
+tricity sector outlook.
+National renewable energy
+laboratory technical report tp-6a20-66939.
+[31] International Atomic Energy Agency, (2003). Guid-
+ance for the evaluation of innovative nuclear reac-
+tors and fuel cycles. Department of Nuclear Energy.
+[32] Abdulla, A., Azevedo, I.L. and Morgan, M.G.,
+(2013). Expert assessments of the cost of light wa-
+ter small modular reactors. Proceedings of the na-
+tional academy of sciences, 110(24), pp.9686–9691.
+Available from: https://doi.org/10.1073/pnas.
+1300195110.
+[33] Schulz, T.L., (2006).
+Westinghouse ap1000 ad-
+vanced passive plant. Nuclear engineering and de-
+sign, 236(14-16), pp.1547–1557.
+[34] Energy Innovation Portfolio Plan FY2018-2022,
+(2017). U.S. Department of Energy.
+[35] Carelli, M.D., Garrone, P., Locatelli, G., Mancini,
+M., Mycoﬀ, C., Trucco, P. and Ricotti, M.E.,
+(2010).
+Economic features of integral, modular,
+small-to-medium size reactors. Progress in nuclear
+energy, 52(4), pp.403–414. Available from: https:
+//doi.org/10.1016/j.pnucene.2009.09.003.
+[36] Delene, J. and Hudson, C., (1993). Cost Estimate
+Guidelines for Advance Nuclear Power Technologies
+(R3). Oak Ridge National Laboratory.
+[37] Rosner, R. and Goldberg, S., (2011). Small modu-
+lar reactors–key to future nuclear power generation
+in the us.
+Energy policy institute at chicago, the
+university of chicago, chicago.
+[38] Boldon, L.M. and Sabharwall, P., (2014).
+Small
+modular reactor: First-of-a-kind (foak) and nth-of-
+a-kind (noak) economic analysis.
+Idaho national
+lab.(inl): Idaho falls, id, usa.
+[39] Iyer, G., Ledna, C., Clarke, L., McJeon, H., Ed-
+monds, J. and Wise, M., (2017). Gcam-usa analysis
+of us electric power sector transitions. Paciﬁc north-
+west national laboratory, richland, washington.
+[40] Intergovernmental
+Panel
+on
+Climate
+Change,
+(2000). Emissions Scenarios. A Special Report of
+Working Group III of the Intergovernmental Panel
+on Climate Change.
+[41] Administration, U.E.I., (2020).
+Electric power
+monthly.
+[42] International
+Atomic
+Energy
+Agency,
+(2020).
+Power
+Reactor
+Information
+System:
+Reactor
+overview and Nuclear share.
+Available from:
+https://pris.iaea.org.
+[43] Administration,
+U.E.I.,
+(2020).
+U.S.
+elec-
+tricity
+generation
+by
+major
+energy
+source,
+1950-2019.
+Available
+from:
+https://www.
+eia.gov/energyexplained/electricity/
+electricity-in-the-us.php.
+[44] Association, W.N., (2018).
+Country proﬁle: Nu-
+clear power in the usa.
+[45] Roth, M.B. and Jaramillo, P., (2017). Going nu-
+clear for climate mitigation: An analysis of the cost
+eﬀectiveness of preserving existing us nuclear power
+plants as a carbon avoidance strategy. Energy, 131,
+pp.67–77.
+[46] Matsuo, Y. and Nei, H., (2019). An analysis of the
+historical trends in nuclear power plant construc-
+tion costs: The japanese experience. Energy policy,
+124, pp.180–198.
+[47] Grubler, A., (2010). The costs of the french nuclear
+scale-up: A case of negative learning by doing. En-
+ergy policy, 38(9), pp.5174–5188.
+[48] Berth´elemy, M. and Rangel, L.E., (2015). Nuclear
+reactors’ construction costs: The role of lead-time,
+standardization and technological progress. Energy
+policy, 82, pp.118–130.
+[49] MacKerron, G., (1992).
+Nuclear costs: Why do
+they keep rising? Energy policy, 20(7), pp.641–652.
+[50] Cooper,
+M.,
+(2010).
+Policy
+Challenges
+of
+Nuclear
+Reactor
+Construction,
+Cost
+Escala-
+tion
+and
+Crowding
+Out
+Alternatives.
+In-
+stitute
+for
+energy
+and
+the
+environment,
+ver-
+mont
+law
+. . . ,
+5(6
+2),
+pp.1–5.
+Available
+from:
+http://www.ises.org.il/assets/files/
+News/20100909{\_}cooperStudy.pdf.
+[51] Rubin, E.S., Azevedo, I.M.L., Jaramillo, P. and
+Yeh, S., (2015). Review article A review of learn-
+ing rates for electricity supply technologies.
+En-
+ergy policy, 86, pp.198–218. Available from: https:
+//doi.org/10.1016/j.enpol.2015.06.011.
+13
+--- PAGE 14 ---
+[52] Lovins, A.B., (1986).
+The origins of the nuclear
+power ﬁasco. The politics of energy research and
+development, energy policy studies vol, 3, pp.7–34.
+[53] Lester, R.K. and McCabe, M.J., (1993). The eﬀect
+of industrial structure on learning by doing in nu-
+clear power plant operation. The rand journal of
+economics, pp.418–438.
+[54] Sovacool, B.K., Gilbert, A. and Nugent, D., (2014).
+Risk, innovation, electricity infrastructure and con-
+struction cost overruns: Testing six hypotheses. En-
+ergy, 74, pp.906–917.
+[55] Brookes, N.J. and Locatelli, G., (2015).
+Power
+plants as megaprojects: Using empirics to shape
+policy, planning, and construction management.
+Utilities policy, 36, pp.57–66.
+[56] United Engineers & Constructors, (1977).
+Capi-
+tal Cost: Pressurized Water Reactor Plant.
+Nu-
+clear Regulatory Commission & Energy Research
+and Development Administration. Available from:
+https://doi.org/10.2172/6033498.
+[57] United Engineers & Constructors, (1979). Energy
+Economic Data Base (EEDB) Program: Phase I.
+U.S. Department of Energy.
+[58] United Engineers & Constructors, (1981).
+En-
+ergy Economic Data Base (EEDB) Program: Phase
+II.
+U.S. Department of Energy.
+Available from:
+https://doi.org/10.2172/6477534.
+[59] United Engineers & Constructors, (1981). Energy
+Economic Data Base (EEDB) Program: Phase III.
+U.S. Department of Energy.
+[60] United Engineers & Constructors, (1981). Energy
+Economic Data Base (EEDB) Program: Phase IV.
+U.S Department of Energy. Available from: https:
+//doi.org/10.2172/5388083.
+[61] United Engineers & Constructors, (1984).
+En-
+ergy Economic Data Base (EEDB) Program: Phase
+VI. U.S. Department of Energy. Available from:
+https://doi.org/10.2172/6504693.
+[62] United Engineers & Constructors, (1985).
+En-
+ergy Economic Data Base (EEDB) Program: Phase
+VII. U.S. Department of Energy. Available from:
+https://doi.org/10.2172/5237914.
+[63] United Engineers & Constructors, (1988). Energy
+Economic Data Base (EEDB) Program: Phase IX.
+U.S. Department of Energy.
+[64] Harris, G., Heptonstall, P., Gross, R. and Handley,
+D., (2013). Cost estimates for nuclear power in the
+uk. Energy policy, 62, pp.431–442.
+[65] Maronati, G., Petrovic, B., Van Wyk, J.J., Kel-
+ley,
+M.H. and White,
+C.C.,
+(2018).
+EVAL:
+A methodological approach to identify NPP to-
+tal capital investment cost drivers and sensitiv-
+ities.
+Progress in nuclear energy, 104, pp.190–
+202. Available from: https://doi.org/10.1016/
+j.pnucene.2017.09.014.
+[66] Delene, J. and Hudson, C., (1990). Cost Estimate
+Guidelines for Advance Nuclear Power Technologies
+(R2). Oak Ridge National Laboratory.
+[67] Kouvaritakis, N., Soria, A. and Isoard, S., (2000).
+Modelling energy technology dynamics: methodol-
+ogy for adaptive expectations models with learn-
+ing by doing and learning by searching. Interna-
+tional journal of global energy issues (ijgei), 14(1-
+4), pp.104–115. Available from: https://doi.org/
+10.1504/IJGEI.2000.004384.
+[68] Mcdonald, A. and Schrattenholzer, L., (2001).
+Learning rates for energy technologies. 29, pp.255–
+261.
+[69] Change,
+I.P.o.C.,
+(2007).
+Climate
+Change
+2007
+Synthesis
+Report.
+9809069v1,
+Avail-
+able
+from:
+https://doi.org/10.1256/
+004316502320517344.
+[70] Sepulveda, N.A., Jenkins, J.D., Sisternes, F.J. de
+and Lester, R.K., (2018).
+The role of ﬁrm low-
+carbon electricity resources in deep decarbonization
+of power generation. Joule, 2(11), pp.2403–2420.
+[71] Lang, P., (2017). Nuclear power learning and de-
+ployment rates; disruption and global beneﬁts for-
+gone. Energies, 10(12), p.2169.
+[72] U.S. Energy Information Administration, (1985).
+Nuclear Power Plant Construction Activity, 1984.
+U.S. Department of Energy.
+[73] Ganda, F., Hansen, J., Kim, T., Taiwo, T. and
+Wigeland, R., (2016). Reactor capital costs break-
+down and statistical analysis of historical us con-
+struction costs. Argonne National Lab.(ANL), Ar-
+gonne, IL (United States).
+[74] Kavlak, G., McNerney, J. and Trancik, J.E., (2018).
+Evaluating the causes of cost reduction in photo-
+voltaic modules. Energy policy, 123, pp.700–710.
+[75] Harstead, G.A., (1979). Component nuclear con-
+tainment structure. US Patent 4,175,005.
+[76] Conway, L.E. and Stewart, W.A., (1991). Passive
+containment cooling system. US Patent 5,049,353.
+[77] Vereb, F.T., Brown, W.L. and Johnson, F.T.,
+(2015). Passive containment air cooling for nuclear
+power plants. US Patent 9,177,675.
+14
+--- PAGE 15 ---
+[78] Fluor Corporation, (2016). Basis of ”Estimate to
+Complete”: Plant Vogtle Units 3 & 4, VC Summer
+Units 2 & 3. Greenville, SC.
+[79] Bechtel
+Power
+Corporation,
+(2017).
+Cost
+and
+Schedule
+Assessment
+for
+the
+Completion
+of
+Construction
+for
+Southern
+Nuclear
+Operat-
+ing Company’s Vogtle Units 3 & 4.
+Available
+from:
+http://www.psc.state.ga.us/factsv2/
+Document.aspx?documentNumber=171748.
+[80] Borcherding, J. and Sebastian, S., (1980).
+Ma-
+jor factors inﬂuencing craft productivity in nu-
+clear power plant construction. Transactions of the
+american association of cost engineers, pp.I.1.1 –
+I.1.5.
+[81] Varma, A.H., Malushte, S.R., Sener, K.C. and Lai,
+Z., (2014).
+Steel-plate composite (sc) walls for
+safety related nuclear facilities: Design for in-plane
+forces and out-of-plane moments. Nuclear engineer-
+ing and design, 269, pp.240–249.
+[82] (2018).
+Phone interview.
+David jones, southern
+company.
+[83] Komanoﬀ, C., (1981). Power plant cost escalation:
+nuclear and coal capital costs, regulation, and eco-
+nomics, vol. 12. Van Nostrand Reinhold Company.
+[84] Deutch, J., Moniz, E., Ansolabehere, S., Driscoll,
+M., Gray, P., Holdren, J., Joskow, P., Lester, R.
+and Todreas, N., (2003).
+The future of nuclear
+power. an mit interdisciplinary study, http://web.
+mit. edu/nuclearpower.
+[85] Arrow, K.J., (1962). The economic implications of
+learning by doing. The review of economic studies,
+29(3), pp.155–173.
+[86] Anzai, Y. and Simon, H.A., (1979).
+The theory
+of learning by doing. Psychological review, 86(2),
+p.124.
+[87] Commission,
+U.N.R.,
+(2018).
+Back-
+grounder
+on
+nrc
+resident
+inspectors
+program.
+Available
+from:
+https://www.nrc.gov/
+reading-rm/doc-collections/fact-sheets/
+resident-inspectors-bg.html.
+[88] Commission, U.N.R., (2018).
+Inspections, tests,
+analyses, and acceptance criteria (itaac).
+Avail-
+able
+from:
+https://www.nrc.gov/reactors/
+new-reactors/oversight/itaac.html.
+[89] Paulson, C., (2002).
+Westinghouse ap1000 ad-
+vanced plant simpliﬁcation results, measures, and
+beneﬁts. 10th international conference on nuclear
+engineering. American Society of Mechanical Engi-
+neers, pp.1065–1068.
+[90] Tay, Y.W.D., Panda, B., Paul, S.C., Noor Mo-
+hamed, N.A., Tan, M.J. and Leong, K.F., (2017).
+3d printing trends in building and construction in-
+dustry: a review. Virtual and physical prototyping,
+12(3), pp.261–276.
+[91] Keating, S.J., Leland, J.C., Cai, L. and Oxman,
+N., (2017). Toward site-speciﬁc and self-suﬃcient
+robotic fabrication on architectural scales. Science
+robotics, 2(5), p.eaam8986.
+[92] Salim, M. and Bernold, L.E., (1994).
+Eﬀects of
+design-integrated process planning on productivity
+in rebar placement. Journal of construction engi-
+neering and management, 120(4), pp.720–738.
+[93] Development of non-proprietary ultra-high perfor-
+mance concrete for use in the highway bridge sector,
+(2017). U.S. Department of Transportation.
+[94] Cost and ecological feasibility of using ultra- high
+performance
+concrete
+in
+highway
+bridge
+piers,
+(2017). Nevada Department of Transportation.
+[95] Devine, R., Kurama, Y.C., Thrall, A.P., San-
+born, S.E., Van Liew, M., Barbachyn, S.M., Ducey,
+M. and Sower, M., (2015).
+Prefabricated high-
+strength rebar systems with high-performance con-
+crete for accelerated construction of nuclear con-
+crete structures. Sandia National Lab.(SNL-NM),
+Albuquerque, NM (United States).
+[96] Use of high-strength reinforcement in earthquake-
+resistant concrete structures, (2017). National In-
+stitutes of Standards and Technology.
+[97] Bridge design and drafting manual, (2017). Oregon
+Department of Transportation.
+[98] Rebak, R.B. and Lou, X., (2018). Environmental
+cracking and irradiation resistant stainless steels by
+additive manufacturing. General Electric Company
+(GE), Schenectady, NY (United States).
+[99] Sagar, A.D. and Zwaan, B. Van der, (2006). Tech-
+nological innovation in the energy sector: R&d, de-
+ployment, and learning-by-doing.
+Energy policy,
+34(17), pp.2601–2608.
+[100] Schlaseman, C., (2004).
+Application of advanced
+construction technologies to new nuclear power
+plants. Nuclear Regulatory Commission.
+[101] Nemet, G.F., Baker, E. and Jenni, K.E., (2013).
+Modeling the future costs of carbon capture using
+experts’ elicited probabilities under policy scenar-
+ios. Energy, 56, pp.218–228.
+[102] Li, Y. and Taylor, T.R., (2014). Modeling the im-
+pact of design rework on transportation infrastruc-
+ture construction project performance. Journal of
+15
+--- PAGE 16 ---
+construction engineering and management, 140(9),
+p.04014044.
+[103] Sveikauskas, L., Rowe, S., Mildenberger, J., Price,
+J. and Young, A., (2014).
+Measuring produc-
+tivity growth in construction.
+Monthly labor
+review, u.s. bureau of labor statistics.
+Avail-
+able from:
+https://doi.org/https://doi.org/
+10.21916/mlr.2018.1.
+[104] Portugal-Pereira, J., Ferreira, P., Cunha, J., Szklo,
+A., Schaeﬀer, R. and Ara´ujo, M., (2018). Better late
+than never, but never late is better: Risk assess-
+ment of nuclear power construction projects. En-
+ergy policy, 120, pp.158–166.
+16

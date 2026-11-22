@@ -52,7 +52,8 @@ export async function writeIndex(index) {
 
 export async function readCachedText(hash) {
   try {
-    return await readFile(new URL(`pages/${hash}.txt`, CACHE_DIR), "utf8");
+    const text = await readFile(new URL(`pages/${hash}.txt`, CACHE_DIR), "utf8");
+    return looksLikeWall(text) ? null : text;
   } catch (error) {
     if (error.code === "ENOENT") return null;
     throw error;
@@ -150,6 +151,7 @@ export function missingTerms(text, terms) {
  */
 const WALL_MARKERS = [
   "request access",
+  "programmatic access to these sites is limited",
   "due to aggressive automated scraping",
   "enable javascript",
   "verify you are human",
@@ -162,7 +164,7 @@ const WALL_MARKERS = [
 
 export function looksLikeWall(text) {
   if (!text) return "empty response";
-  const head = text.slice(0, 1500).toLowerCase();
+  const head = text.slice(0, 1500).toLowerCase().replace(/\s+/g, " ");
   for (const marker of WALL_MARKERS) {
     if (head.includes(marker)) return `interstitial: "${marker}"`;
   }

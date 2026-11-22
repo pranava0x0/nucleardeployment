@@ -25,6 +25,8 @@
 import { hostOf, loadData, sourcedRecords } from "./lib/records.mjs";
 import { claimTerms, htmlToText, missingTerms, readCachedText, readIndex, urlHash } from "./lib/source-cache.mjs";
 
+import { claimIdentity, loadClaimAudit } from "./lib/claim-audits.mjs";
+
 const argv = process.argv.slice(2);
 const has = (flag) => argv.includes(flag);
 const valueOf = (flag) => {
@@ -38,6 +40,8 @@ const asJson = has("--json");
 
 const data = await loadData();
 const index = await readIndex();
+const audit = await loadClaimAudit(data);
+if (audit.errors.length) { console.error(audit.errors.join("\n")); process.exit(1); }
 let rows = sourcedRecords(data);
 if (onlyCompany) rows = rows.filter((row) => row.companySlug === onlyCompany);
 
@@ -101,6 +105,11 @@ for (const row of rows) {
   });
 }
 
+for (const result of results) {
+  const review = audit.reviewed.get(claimIdentity(result));
+  if (review) { result.rawState = result.state; result.state = "reviewed"; result.review = review; }
+}
+
 const counts = {};
 for (const result of results) counts[result.state] = (counts[result.state] ?? 0) + 1;
 
@@ -112,6 +121,7 @@ if (asJson) {
 console.log(`Checked ${results.length} record(s) against their sources.\n`);
 for (const [state, count] of Object.entries(counts).sort((a, b) => b[1] - a[1])) {
   const meaning = {
+    reviewed: "exact claim adjudicated; evidence and canonical record unchanged",
     supported: "every figure, date and name in the label appears in the source",
     unconfirmed: "the source does not obviously contain part of the claim; go read it",
     uncached: "no local snapshot yet",

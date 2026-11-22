@@ -1,9 +1,7 @@
 {
   "url": "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos",
-  "fetched_via": "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos",
-  "fetched_at": "2026-11-21T22:19:08.625Z",
-  "http_status": 200,
-  "content_type": "text/html; charset=utf-8",
-  "bytes": 13257,
-  "title": "Hermes 2 – Kairos Application | Nuclear Regulatory Commission"
+  "captured_at": "2026-11-22",
+  "title": "Hermes 2 – Kairos Application | Nuclear Regulatory Commission",
+  "capture_method": "Archived primary-source text; see research manifest",
+  "upstream_snapshot": "data/research/families-2026-11-22/nrc-hermes2.txt"
 }

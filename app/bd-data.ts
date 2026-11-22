@@ -16,7 +16,7 @@ import type { Verification } from "./data";
  * reason financingAsOf is: this layer was assembled and verified later, and
  * its page and sitemap entry carry this date instead.
  */
-export const bdAsOf = "2026-11-21";
+export const bdAsOf = "2026-11-22";
 
 /**
  * Buyer-facing reactor classes. "Any class" holds positions that create
@@ -81,6 +81,7 @@ export const bdSectors: BdSector[] = [
 
 /** One position: a class, a rung on the tier ladder, and the source for it. */
 export type BdPosition = {
+  additionalSources?: { url: string; label: string }[];
   class: BdClass;
   tier: BdTier;
   /** The claim, with its own figures. Never summed across positions. */
@@ -312,7 +313,7 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Microreactor",
         tier: "Framework / LOI",
-        label: "Collaboration with Valar Atomics on a roughly 30 MW pilot AI data center in Emery County, Utah, announced with the Sequoia-led Series B; no executed offtake.",
+        label: "Valar announced an NVIDIA collaboration on a waterless30 MW AI factory alongside its Series B; no reactor electrical-capacity order is established.",
         date: "2026-08",
         source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia",
         verification: "Company-reported",
@@ -362,7 +363,7 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Grid-scale SMR",
         tier: "Stated interest",
-        label: "Sam Altman personally took Oklo public through a merger with his AltC Acquisition Corp in May 2024 and chaired its board; he stepped down in April 2025, reported as freeing Oklo to explore partnerships with OpenAI and other hyperscalers. OpenAI itself has never held equity, a board seat, or any documented agreement with Oklo.",
+        label: "Sam Altman chaired Oklo and brought it public through AltC in May 2024; he stepped down in April 2025. The report discusses potential OpenAI partnerships.",
         date: "2025-04",
         source: "https://www.cnbc.com/2025/04/22/sam-altman-steps-down-as-oklo-chair-freeing-nuclear-company-up-to-work-with-more-ai-companies.html",
         verification: "Press-reported",
@@ -464,7 +465,7 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Microreactor",
         tier: "Executed",
-        label: "Project Pele: BWXT is building the transportable 1.5 MWe prototype, being assembled at Idaho National Laboratory under a cost-type contract with a ceiling up to $300M.",
+        label: "Project Pele: BWXT received an option-dependent prototype contract worth up to$300M, with the program targeting 1–5 MWe.",
         date: "2022-06",
         source: "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
         verification: "Press-reported",
@@ -480,7 +481,7 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Microreactor",
         tier: "Executed",
-        label: "Advanced Nuclear Power for Installations delivery agreement with Radiant: a mass-manufactured Kaleidos delivered to a base within 36 months of the August 2025 signing, with Antares and Westinghouse still competing for Colorado and Montana assignments.",
+        label: "Radiant announced an ANPI microreactor delivery agreement with DIU and the U.S. Air Force in August 2025.",
         date: "2025-08",
         source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
         verification: "Press-reported",
@@ -488,15 +489,15 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Microreactor",
         tier: "Framework / LOI",
-        label: "Air Force and DLA notice of intent to award Oklo a 5 MW microreactor at Eielson AFB, Alaska under a prospective 30-year fixed-price power arrangement, pending NRC licensing.",
+        label: "Air Force notice of intent to award an Oklo microreactor pilot at Eielson, Alaska.",
         date: "2025-06",
         source: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
         verification: "Press-reported",
       },
       {
         class: "Microreactor",
-        tier: "Executed",
-        label: "Finalized ANPI base assignments pairing each developer with a contractor-owned unit: Radiant's Kaleidos (1 MWe) to Buckley Space Force Base, Colorado; Westinghouse's eVinci to Malmstrom Air Force Base, Montana; Antares' R1 (200-300 kW) to Joint Base San Antonio, Texas, with Radiant and Antares targeting delivery as early as 2028.",
+        tier: "Program / solicitation",
+        label: "ANPI vendor selections pair Radiant with Buckley Space Force Base, Westinghouse with Malmstrom Air Force Base, and Antares with Joint Base San Antonio. Siting and environmental reviews remain before potential deployment.",
         date: "2026-04",
         source: "https://www.powermag.com/air-force-anpi-picks-put-radiant-antares-westinghouse-on-track-for-first-on%E2%80%91base-microreactors-by-2028/",
         verification: "Press-reported",
@@ -521,7 +522,7 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Microreactor",
         tier: "Program / solicitation",
-        label: "Named nine candidate Janus installations after on-site assessment, including Fort Wainwright, Alaska, a net power importer since its coal cogeneration plant stopped exporting; DIU opened an area-of-interest solicitation for industry technical proposals, before the August 2026 selection of five initial vendor/site pairings.",
+        label: "Army identified nine initial candidate Janus installations and opened a DIU area-of-interest solicitation for industry proposals.",
         date: "2025-11",
         source: "https://www.world-nuclear-news.org/articles/us-army-names-potential-microreactor-sites",
         verification: "Press-reported",
@@ -577,9 +578,9 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Microreactor",
         tier: "Program / solicitation",
-        label: "Under NASA's fission surface power approach, companies own the reactors and sell the power through Space Act Agreements; Antares delivered an electrically heated prototype to Marshall Space Flight Center for testing.",
+        label: "Antares reports non-nuclear testing of an electrically heated reactor-core stand-in with NASA Marshall in Huntsville.",
         date: "2025-12",
-        source: "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/",
+        source: "https://www.linkedin.com/posts/antares-industries_after-6-months-in-huntsville-ourelectrically-heated-activity-7396980168080154624-i2CV",
         verification: "Press-reported",
       },
     ],
@@ -717,11 +718,13 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Grid-scale SMR",
         tier: "Executed",
-        label: "Ontario approved OPG's four-unit Darlington BWRX-300 program at C$20.9B in 2024 dollars, C$7.7B of it for the first unit and shared systems.",
+        label: "Historical 2025 Darlington budget: C$20.9B for four units, including C$7.7B for the first unit and shared systems. OPG is reassessing the cost and schedule.",
         date: "2025-05",
-        source: "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/",
-        verification: "Press-reported",
-      },
+        source: "https://www.opg.com/news-resources/newsroom/release/opg-reports-2025-first-quarter-financial-results/",
+        verification: "Company-reported",
+
+    additionalSources: [{"url":"https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/","label":"OPG November 2026 budget and schedule reassessment"}],
+  },
       {
         class: "Microreactor",
         tier: "Framework / LOI",
@@ -805,7 +808,7 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Microreactor",
         tier: "Stated interest",
-        label: "Nano Nuclear Energy and DS Dansuk signed a non-binding, non-exclusive MOU for DS Dansuk to serve as local coordinator (siting, supply chain, regulatory) for Nano's KRONOS Micro Modular Reactor under Korea's 'One Factory, One MMR' strategy.",
+        label: "NANO Nuclear and DS Dansuk signed a non-binding, non-exclusive MOU to explore KRONOS deployment and local industrial coordination in South Korea.",
         date: "2026-01",
         source: "https://www.barchart.com/story/news/37017636/nano-nuclear-energy-signs-mou-with-ds-dansuk-to-advance-micro-modular-reactor-deployment-in-south-korea",
         verification: "Press-reported",
@@ -877,7 +880,7 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Grid-scale SMR",
         tier: "Program / solicitation",
-        label: "USTDA and state-owned Bulgarian Energy Holding agreed to a detailed technical prefeasibility study of US-sourced SMR design options, potential sites, and an implementation roadmap including financing, building on a 2021 Fluor-NuScale MOU that did not advance.",
+        label: "USTDA and Bulgarian Energy Holding agreed on a technical prefeasibility study of U.S. SMR design options, potential sites, and financing pathways.",
         date: "2024-12",
         source: "https://www.world-nuclear-news.org/articles/us-grant-agreements-to-support-bulgarian-nuclear-projects",
         verification: "Press-reported",
@@ -975,7 +978,7 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Any class",
         tier: "Stated interest",
-        label: "The full Puerto Rico House of Representatives passed C.P. 1092, advancing it to the Senate; the bill keeps the island's 100%-renewable-by-2050 goal but permits evaluating nuclear as a low-emission complementary technology under NRC supervision, and directs the University of Puerto Rico to build nuclear-engineering academic programs. Still a bill, not law: no funded program exists until the Senate and governor act.",
+        label: "Puerto Rico’s House passed C.P.1092 in June 2026 to permit nuclear evaluation alongside its renewable-energy goals and direct university academic programs. This record is a House vote, not a reactor authorization.",
         date: "2026-06",
         source: "https://www.metro.pr/noticias/2026/06/15/camara-aprueba-medida-que-incorpora-la-energia-nuclear-a-la-politica-publica-energetica-de-puerto-rico/",
         verification: "Press-reported",
@@ -999,7 +1002,7 @@ export const bdBuyers: BdBuyer[] = [
       {
         class: "Any class",
         tier: "Stated interest",
-        label: "The FY2026 NDAA, signed into law December 2025, requires the Secretary of Defense to give Congress and Guam's governor at least one year's notice before placing any nuclear reactor on the island, a provision credited to Del. James Moylan; a procedural notice requirement, not evidence DOD has a site or plan.",
+        label: "The FY2026 NDAA, reported as law by the source, requires the Secretary of Defense to give Congress and Guam's governor at least one year's notice before placing any nuclear reactor on the island, a provision credited to Del. James Moylan; a procedural notice requirement, not evidence DOD has a site or plan.",
         date: "2025-12",
         source: "https://www.postguam.com/news/local/congress-nuclear-reactor-push-alarms-locals/article_a63b9661-5cca-43a3-9fae-e06ab5682477.html",
         verification: "Press-reported",
@@ -1127,7 +1130,7 @@ export const bdSectorPlans: BdSectorPlan[] = [
         source: "https://www.whitehouse.gov/presidential-actions/2025/05/deploying-advanced-nuclear-reactor-technologies-for-national-security/",
       },
       {
-        text: "DOE's principal deputy assistant secretary for nuclear energy says demonstration microreactors are going from start to operation in under a year, against a national goal of 400 GW by 2050.",
+        text: "A DOE official described recent demonstration-reactor progress and the 400 GW-by 2050 national policy goal at the 2026ANS conference.",
         source: "https://www.ans.org/news/article-8210/nuclear-is-ready-now/",
       },
       {
@@ -1160,8 +1163,8 @@ export const bdSectorPlans: BdSectorPlan[] = [
         source: "https://www.nypa.gov/News/Press-Releases/2026/20260623-nuclear",
       },
       {
-        text: "DOE's Gen III+ pathway put $400M behind TVA's Clinch River project and $400M behind Holtec's Palisades SMRs in December 2025, the federal half of the state-federal stack.",
-        source: "https://www.ans.org/news/2025-12-03/article-7593/doe-selects-tva-and-holtec-for-smr-awards/",
+        text: "DOE selected TVA and Holtec for up to$400M each in federal cost-shared funding in December 2025.",
+        source: "https://www.energy.gov/articles/energy-department-selects-tva-and-holtec-advance-deployment-us-small-modular-reactors",
       },
     ],
     plays: [
@@ -1180,19 +1183,19 @@ export const bdSectorPlans: BdSectorPlan[] = [
         source: "https://www.gov.uk/government/news/great-british-energy-nuclear-and-rolls-royce-smr-sign-contract",
       },
       {
-        text: "Ontario's Darlington program gives the BWRX-300 its first-of-a-kind proof on an approved C$20.9B budget, the reference plant behind the Polish and U.S. pipelines.",
-        source: "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/",
+        text: "OPG’s historical 2025 Darlington budget was C$20.9B for four units. Its November 2026 update says Unit1 will miss the earlier schedule and budget; reassessment is underway.",
+        source: "https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/",
       },
       {
-        text: "A treaty ally moved through the sequence in under three years: Meralco's USNC study agreement in 2023, the U.S.-Philippines 123 Agreement taking effect in 2024, and a $2.7M USTDA-funded SMR roadmap in 2026 against a stated 1,200 MW by 2032 target.",
+        text: "USTDA announced $2.7M in 2026 for Meralco PowerGen to evaluate U.S. SMR designs and prepare a roadmap. The source also dates the U.S.–Philippines 123 Agreement’s entry into force to July 2024.",
         source: "https://www.world-nuclear-news.org/articles/us-touts-smr-designs-to-the-philippines",
       },
       {
-        text: "The BWRX-300 export book widened past Poland in one year: finalist or MOU-stage positions now stand in Sweden, Finland, Norway, and Lithuania, all citing the Darlington and Poland reference plants rather than a first-of-a-kind case of their own.",
+        text: "Norsk Kjernekraft and Aecon agreed to cooperate on evaluating BWRX-300 deployment in Norway, drawing on Aecon’s Darlington work.",
         source: "https://www.world-nuclear-news.org/articles/aecon-and-norsk-kjernekraft-to-promote-smrs-in-norway",
       },
       {
-        text: "South Korea flipped from investor to buyer: SK Innovation, already TerraPower's second-largest shareholder from a 2023 equity round, signed an August 2026 term sheet toward Korea's first commercial Natrium plant.",
+        text: "TerraPower announced Korean cooperation agreements and a term sheet toward a first commercial Natrium plant in Korea.",
         source: "https://www.world-nuclear-news.org/articles/terrapower-expands-cooperation-with-korean-partners",
       },
     ],
@@ -1218,11 +1221,11 @@ export const bdSectorPlans: BdSectorPlan[] = [
         source: "https://ceepr.mit.edu/workingpaper/the-value-of-nuclear-microreactors-in-providing-heat-and-electricity-to-alaskan-communities/",
       },
       {
-        text: "NEI's 2019 estimate put first-of-a-kind microreactor generation at $0.14 to $0.41 per kWh, overlapping remote diesel, the first market where the FOAK price closes.",
-        source: "https://www.nucnet.org/news/electricity-from-micro-reactors-will-cost-less-than-diesel-generators-says-nei-report",
+        text: "NEI’s historical modeled microreactor generation estimate was $0.14–0.41/kWh, as reported by INL; it is not an observed commercial electricity price.",
+        source: "https://inl.gov/trending-topics/microreactors/",
       },
       {
-        text: "Puerto Rico's DOE-funded feasibility case, closed in 2020, cleared its first legislative chamber in 2026: the House passed C.P. 1092 after testimony from the state energy regulator's own president, sending it to the Senate.",
+        text: "Puerto Rico’s House approved C.P.1092 in June 2026 to permit nuclear evaluation and expand university academic programs.",
         source: "https://www.metro.pr/noticias/2026/06/15/camara-aprueba-medida-que-incorpora-la-energia-nuclear-a-la-politica-publica-energetica-de-puerto-rico/",
       },
       {
@@ -1295,7 +1298,7 @@ export const bdSignals: BdSignal[] = [
   {
     who: "Radiant Industries",
     role: "Microreactor developer",
-    said: "Will build its first factory on a Manhattan Project site in Oak Ridge, Tennessee, with construction from early 2026, the first mass-produced Kaleidos targeted for 2028, and production scaling to 50 reactors a year within a few years after.",
+    said: "December 2025 plan: an Oak Ridge factory targeting first Kaleidos deliveries in 2028 and later production of 50 units per year. This is a dated company plan.",
     date: "2025-12",
     source: "https://www.world-nuclear-news.org/articles/radiant-to-locate-microreactor-factory-in-tennessee",
     verification: "Press-reported",
@@ -1303,7 +1306,7 @@ export const bdSignals: BdSignal[] = [
   {
     who: "Aalo Atomics",
     role: "Microreactor developer",
-    said: "Describes a planned Gigawatt Factory: more than 4,000,000 sq ft of factory scale-up to mass-manufacture reactors at a rate of hundreds of megawatts a year.",
+    said: "Company concept:1 GW of annual manufacturing output per 1,000,000 sqft of factory space, with procurement planned for its first million-square-foot factory.",
     date: null,
     source: "https://www.aalo.com/factory",
     verification: "Company-reported",
@@ -1329,18 +1332,18 @@ export type BdPathStep = {
 export const bdMicroPath: BdPathStep[] = [
   {
     step: "Prove the physics under DOE authority",
-    evidence: "Four DOE-authorized criticalities landed by July 4, 2026 through the Reactor Pilot Program and Launch Pad, each roughly a year or less from start.",
+    evidence: "DOE reported four authorized zero-power criticality milestones before July 4, 2026; the events establish test progress, not commercial electricity.",
     date: "2026-07",
     source: "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal",
   },
   {
-    step: "Contract a delivery date, government first",
-    evidence: "The ANPI agreement obliges Radiant to deliver a mass-manufactured unit to a military base within 36 months of its August 2025 signing.",
+    step: "Start with a government delivery agreement",
+    evidence: "Radiant announced an ANPI delivery agreement with DIU and the Air Force in August 2025.",
     date: "2025-08",
     source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
   },
   {
-    step: "Put a statutory date behind demand",
+    step: "Use a dated executive-order target",
     evidence: "Executive Order 14299 directs an Army-regulated reactor operating at a domestic installation by September 30, 2028.",
     date: "2025-05",
     source: "https://www.whitehouse.gov/presidential-actions/2025/05/deploying-advanced-nuclear-reactor-technologies-for-national-security/",

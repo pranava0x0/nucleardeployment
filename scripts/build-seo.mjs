@@ -81,7 +81,7 @@ for (const project of data.projects) noteDate(project.companySlug, project.lates
 
 /** [route, lastmod]. A null lastmod is omitted, never guessed. */
 const routes = [
-  ...["", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/methodology"]
+  ...["", "/fission", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/methodology"]
     .map((route) => [route, data.dataAsOf]),
   // The financing and BD layers carry their own stamps: each was assembled
   // after the race dataset's date, and a lastmod predating the page's

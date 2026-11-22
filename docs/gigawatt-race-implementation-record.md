@@ -192,3 +192,9 @@ than the behavior. Worth re-running the mutation pass on any new guard here.
 ## Current snapshot · reviewed 2026-11-21
 
 The refreshed records carry 40,045 MWe announced, 680 MWe under review, 620 MWe permitted, and 336 MWe contracted. Physical builds total 470 MWe. On the refreshed denominators, announcements are **19 to one** against all 2,106 MWe on executed actions and **85 to one** against physical builds. Long Mott and Clinch River migrated to permitted; Hermes 2 now uses the company's current 50 MWe rating and its framework remainder fell by 30 MWe, preserving the 500 MWe whole. Pioneer uses the NRC's approximately 340 MWe per unit. The original implementation snapshot above is historical.
+
+### 2026-11-22 claim audit supersession
+
+The current sample has 37,060 MWe announced, 680 MWe under review, 620 MWe permitted, 336 MWe contracted or funded for development, and 420 MWe in builds. Documented actions total 2,056 MWe. Hermes 2’s 50 MWe company plan is excluded from capacity accounting because the NRC permits describe two 35 MWth test reactors. Google’s full 500 MW ceiling is restored to framework. Unproven additional 3,000 MWe in a GEV framework and 30 MW of Valar AI demand are excluded. Earlier snapshots above are historical. National fleet output now has a separate EIA baseline. See claims-audit-2026-11-22.md for the 139 dispositions and source boundaries.
+
+Current announcement ceilings are **18 to one** against documented actions and **88 to one** against builds. These are comparisons of disclosed frames, not a forecast.

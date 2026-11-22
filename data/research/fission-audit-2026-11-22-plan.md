@@ -1,0 +1,15 @@
+# Claim audit and fission coverage
+
+User request: adjudicate all 139 mechanically flagged claims, correct sourcing and statistics, and research all nuclear fission reactor families over recent years using government, laboratory, company and energy/statistical/modeling authorities.
+
+Approaches: citation fixes alone leave the national/sample denominator ambiguous; a single expanded race board mixes fleets, designs and technologies; separate national statistics and family coverage preserve the existing deployment sample while explaining the full industry. Use the third approach. U.S. deployment remains the working default while the optional geography question is pending; international family examples are explicitly non-U.S. context.
+
+Contract: preserve the original 139 claims as a stable-ID worklist. For each, record original source/claim, outcome, supporting exact evidence, rationale, and final canonical claim if corrected. Read cached full source sections and fetch specific authoritative replacements for genuinely unsupported components. No flag is closed just because terms were dropped or a URL responds. A reviewed override applies only while the exact final record and its cited evidence remain unchanged; quote validation and tests reject stale or unsupported overrides. Unavailable evidence remains explicit, or unsupported wording is removed from the product.
+
+Statistics: treat operating reactor units, sites, net summer MWe, annual net generation, capacity factors, design ratings, announced pipeline and model scenarios as separate frames. Keep source year/date and geography beside every number. National operating power is not the selected advanced-reactor board's zero. A source's thermal MW are never converted to electric MW without that source's conversion basis.
+
+Coverage: distinguish coolant/moderator/spectrum/fuel families from size (large, SMR, microreactor), generation, floating installation, and research/heat-only roles. Cover PWR, BWR, heavy water, graphite gas, graphite light-water, HTGR, sodium fast, lead fast, gas fast, molten-fuel salt, solid-fuel salt cooled, supercritical water and heat-pipe concepts. Explain historical/inactive or not-yet-commercial families honestly; fusion is excluded.
+
+Research execution: existing NRC/EIA/IAEA/NEA inventories first, then verify and enrich only the gaps. Two bounded independent research partitions cover national fleet statistics and broad family taxonomy; the primary agent audits the supplied 139-record corpus and integrates canonical edits. Workers own separate JSON/raw snapshot files and never mutate shared canonical files or cache indexes.
+
+Gates: baseline tests/source validation; all 139 disposition entries plus exact evidence checks; source-host and ID constraints; sum/denominator and thermal/electric invariants; generated artifacts twice; build/tests/lint/Pages; tablet/desktop/mobile browser verification; independent committed-diff reviews; PR for review, no merge authorization assumed for this new work.

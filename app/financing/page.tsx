@@ -43,7 +43,7 @@ export default function FinancingPage() {
   /** Each claim renders with its own source link, stacked inside the row. */
   const sourcedLines = (lines: SourcedLine[]) => lines.map((line) => <Fragment key={line.source + line.text.slice(0, 24)}>
     <b>{line.text}</b>
-    <a href={line.source} target="_blank" rel="noreferrer">Source ↗</a>
+    <a href={line.source} target="_blank" rel="noreferrer">Source ↗</a>{line.additionalSources?.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}
   </Fragment>);
 
   return <PageShell><main id="main" className="inner-page financing-page">
@@ -80,12 +80,12 @@ export default function FinancingPage() {
               <span className="ledger-date">{benchmark.series}{benchmark.date ? ` · ${benchmark.date}` : ""}</span>
               <b>{benchmark.figure}</b>
               <span className="ledger-detail">{benchmark.scope} {benchmark.basis}{pageRef(benchmark.report)}.</span>
-              <a href={benchmark.source} target="_blank" rel="noreferrer">Source ↗</a>
+              <a href={benchmark.source} target="_blank" rel="noreferrer">Source ↗</a>{benchmark.additionalSources?.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}
             </li>)}
           </ul>
         </details>;
       })}
-      <p className="data-note">FOAK is a first-of-a-kind unit; NOAK is the nth of a kind after learning. A company target is the company&rsquo;s own number, printed as such. No figure here is the site&rsquo;s estimate.</p>
+      <p className="data-note">FOAK is a first-of-a-kind unit; NOAK is the nth of a kind after learning. A company target is the company&rsquo;s own number, printed as such. Modeled LCOE uses assumed output, financing, and capital inputs, even when those inputs reflect completed projects. It is not an observed electricity tariff or contract price. No figure here is the site&rsquo;s estimate.</p>
     </section>
 
     <details className="section acc" id="learning">
@@ -118,7 +118,7 @@ export default function FinancingPage() {
             const entrant = entrantFor(row.companySlug);
             return <article key={row.companySlug}>
               <h3><Link href={`/companies/${row.companySlug}`}>{companyName(row.companySlug)}</Link></h3>
-              <p className="frame-note">{entrant?.design} · {entrant?.unitMWe.toLocaleString("en-US")} MWe per unit · {entrant?.ticker ?? "Private"}</p>
+              <p className="frame-note">{entrant?.design} · {entrant?.unitMWe == null ? "Electrical rating not verified" : `${entrant.unitMWe.toLocaleString("en-US")} MWe per unit`} · {entrant?.ticker ?? "Private"}</p>
               <ul className="ledger wide">
                 <li><span className="ledger-date">Model</span><b>{row.model}</b><a href={row.modelSource} target="_blank" rel="noreferrer">Source ↗</a></li>
                 <li><span className="ledger-date">Government</span>{row.government.length
@@ -128,7 +128,7 @@ export default function FinancingPage() {
                   ? sourcedLines(row.commercial)
                   : <b>No commercial position on record. A research finding, not a sourced claim.</b>}</li>
                 <li><span className="ledger-date">Stated cost</span>{row.costClaim
-                  ? <><b>{row.costClaim}</b>{row.costClaimSource && <a href={row.costClaimSource} target="_blank" rel="noreferrer">Source ↗</a>}</>
+                  ? <><b>{row.costClaim}</b>{row.costClaimSource && <a href={row.costClaimSource} target="_blank" rel="noreferrer">Source ↗</a>}{row.additionalSources?.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}</>
                   : <b>No price or cost target on record</b>}</li>
                 <li><span className="ledger-date">Next gate</span><b>{row.nextGate}</b><span className="ledger-detail">Site judgment, derived from the records above.</span></li>
               </ul>

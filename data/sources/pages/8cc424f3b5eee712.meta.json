@@ -1,0 +1,7 @@
+{
+  "url": "https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/",
+  "captured_at": "2026-11-22",
+  "title": "Darlington SMR: Project Update - Nov.10, 2026",
+  "capture_method": "Exact page text returned by web.open; dated project-update section in a maintained page; direct scripted HTML request returned403.",
+  "upstream_snapshot": "data/research/claim-primary-replacements-2026-11-22/opg-darlington-current.txt"
+}

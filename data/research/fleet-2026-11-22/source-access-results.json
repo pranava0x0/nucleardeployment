@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://www.energy.gov/edf/articles/plant-vogtle-unit-3-enters-commercial-operations-bringing-carbon-free-nuclear-energy",
+    "state": "dead",
+    "note": "404 on direct fetch; discovery snippet was not accepted as source evidence."
+  },
+  {
+    "url": "https://www.nrc.gov/facilities-safety/facility-finder/reactors/pali",
+    "state": "blocked",
+    "note": "403 on direct fetch; search excerpt alone is not accepted as proof of restart completion."
+  },
+  {
+    "url": "https://www.nrc.gov/facilities-safety/facility-finder/reactors/ccec",
+    "state": "blocked",
+    "note": "403 on direct fetch; no currently-operating status inferred."
+  },
+  {
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-061.pdf",
+    "state": "blocked",
+    "note": "403 on web fetch and direct Mozilla-UA fetch."
+  },
+  {
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-046.pdf",
+    "state": "blocked",
+    "note": "403 on direct fetch; licensing approval and actual restart remain distinct."
+  }
+]
