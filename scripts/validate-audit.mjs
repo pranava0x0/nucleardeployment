@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { loadData } from './lib/records.mjs';
+import { validateFleetStatistics } from './lib/fleet-evidence.mjs';
 import { loadClaimAudit } from './lib/claim-audits.mjs';
 const data = await loadData();
 const audit = await loadClaimAudit(data);
@@ -11,10 +12,7 @@ for (const row of [...data.fleetStatistics, ...data.fleetMilestones, ...data.fis
   if (!texts.has(row.source_url) || !norm(texts.get(row.source_url)).includes(norm(row.evidence_quote))) errors.push(`Primary-source quote missing: ${row.metric ?? row.name ?? row.id}`);
 }
 for (const row of data.fissionCrosswalk.evidence) if (!norm(await readFile(row.snapshot_path, 'utf8')).includes(norm(row.quote))) errors.push(`Crosswalk quote missing: ${row.quote}`);
-for (const row of data.fleetStatistics.filter((row) => row.series_id)) {
-  const multiplier = row.source_unit === 'Million Kilowatts' ? 1000 : row.source_unit === 'Million Kilowatthours' ? 0.001 : 1;
-  if (Math.abs(row.value - Number(row.source_value) * multiplier) > 1e-9) errors.push(`Incorrect unit conversion: ${row.metric} ${row.observation_date}`);
-}
+errors.push(...validateFleetStatistics(data.fleetStatistics.filter((row) => row.series_id), texts.get('https://www.eia.gov/totalenergy/data/browser/csv.php?tbl=T08.01')));
 console.log(`139-claim audit: ${JSON.stringify(audit.counts)}. ${data.fleetStatistics.length} fleet observations; ${data.fissionFamilies.length} fission families.`);
 if (errors.length) console.error(errors.join('\n'));
 process.exitCode = errors.length ? 1 : 0;

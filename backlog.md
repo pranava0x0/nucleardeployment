@@ -171,4 +171,4 @@ the masthead to reach it. Measurements below are from the built pages.
 - [x] Adjudicate the original 139 flagged claims with exact evidence and fix source/claim mismatches. User requested 2026-11-22; worklist and scope in `data/research/claims-audit-2026-11-22-worklist.json` and `data/research/fission-audit-2026-11-22-plan.md`.
 - [x] Separate authoritative national fleet/generation statistics from the 18-company advanced-reactor sample, and cover all fission reactor families with recent primary-source milestones and clear gaps.
 
-Audit evidence and the 139-record disposition ledger are complete; verification and the new PR remain in progress. See `docs/claims-audit-2026-11-22.md`.
+Audit evidence, the 139-record disposition ledger, national/family coverage and verification are complete. PR #16 contains the implementation and independently reviewed fixes. See `docs/claims-audit-2026-11-22.md`.

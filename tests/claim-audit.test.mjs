@@ -54,3 +54,22 @@ test('thermal experiments, AI demand and unquantified agreements receive no gene
   assert.equal(data.fissionCrosswalk.historical_labels.length, 3);
   assert.equal(data.fissionCrosswalk.research_configurations.length, 6);
 });
+
+
+test('fleet figures, periods, series and units must match the actual EIA source rows', async () => {
+  const { validateFleetStatistics } = await import('../scripts/lib/fleet-evidence.mjs');
+  const csv = await readFile(new URL('../data/research/fleet-2026-11-22/eia-mer-table-8-1.csv', import.meta.url), 'utf8');
+  const annual = data.fleetStatistics.filter((row) => row.series_id);
+  assert.deepEqual(validateFleetStatistics(annual, csv), []);
+  for (const change of [
+    (row) => { row.value = 999; row.source_value = '999'; },
+    (row) => { row.observation_date = '2030-12-31'; row.source_period = '203013'; },
+    (row) => { row.series_id = 'NUGBPUS'; },
+    (row) => { row.unit = 'MWe'; },
+    (row) => { row.geography = 'Global'; },
+    (row) => { row.evidence_quote = annual[1].evidence_quote; },
+  ]) {
+    const changed = structuredClone(annual); change(changed[0]);
+    assert.ok(validateFleetStatistics(changed, csv).length > 0, 'a genuine but unrelated quote cannot approve a changed observation');
+  }
+});

@@ -1167,11 +1167,11 @@ export const companies: Company[] = [
     slug: "gev-hitachi",
     name: "GE Vernova Hitachi",
     role: "Reactor technology provider",
-    summary: "Developer of the BWRX-300 used in TVA's permitted Clinch River Unit 1 project.",
+    summary: "Provider of the BWRX-300 design selected for TVA’s Clinch River project.",
     technology: "Boiling-water SMR",
     projectSlugs: [],
     source: "https://www.energy.gov/articles/energy-department-selects-tva-and-holtec-advance-deployment-us-small-modular-reactors",
-    sourceLabel: "NRC Clinch River construction permit",
+    sourceLabel: "DOE TVA and Holtec deployment funding selection",
   },
 ];
 
