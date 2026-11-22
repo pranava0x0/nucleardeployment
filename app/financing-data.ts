@@ -357,7 +357,7 @@ export const companyFinance: CompanyFinance[] = [
     modelSource: "https://radiantnuclear.com/news/radiant-expands-manufacturing",
     government: [
       {"text": "Up to $750M binding Janus agreement for 15 Kaleidos units; a milestone contract ceiling, not equity or cash received.", "source": "https://www.radiantnuclear.com/news/radiant-wins-750m-janus-army-contract"},
-      { text: "First ANPI delivery agreement with the Defense Innovation Unit and Department of the Air Force: deliver a mass-manufactured unit to a base within 36 months of the August 2025 signing.", source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/" },
+      { text: "In August 2025, Radiant announced an ANPI agreement with the Defense Innovation Unit and Department of the Air Force to deliver a mass-manufactured microreactor to a U.S. military base.", source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/" },
       { text: "Army selected Radiant for Fort Benning under Janus; its separate Air Force and Navy selections are also now named.", source: "https://radiantnuclear.com/news/radiant-expands-manufacturing" },
     ],
     commercial: [
@@ -647,8 +647,8 @@ export const mechanisms: FinancingMechanism[] = [
   {
     status: "In use",
     mechanism: "Defense delivery agreement",
-    how: "A delivery deadline, not a study: the contract obliges a working unit at a base by a date.",
-    example: "Radiant's ANPI agreement with DIU and the Department of the Air Force: a mass-manufactured Kaleidos delivered within 36 months.",
+    how: "A government delivery agreement creates a hardware milestone; it does not establish permission to operate.",
+    example: "Radiant’s announced ANPI delivery agreement with DIU and the Department of the Air Force for a mass-manufactured microreactor.",
     date: "2025-08",
     source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
   },

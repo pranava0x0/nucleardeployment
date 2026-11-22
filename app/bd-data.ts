@@ -1204,7 +1204,7 @@ export const bdSectorPlans: BdSectorPlan[] = [
       { move: "Finance the first unit with the new sovereign stack.", why: "The World Bank re-entry, EXIM, and frameworks like the U.S.-Japan $40B earmark exist to close deals in markets whose balance sheets could not carry FOAK risk alone." },
       { move: "Structure emerging-market deals as owner-operator subsidiaries.", why: "The Ghana shape, a U.S. design inside a jointly owned local operating company, answers the capability question that stalls first-time nuclear countries." },
       { move: "Lead treaty allies with the 123 Agreement, not the reactor pitch.", why: "The Philippines sequence shows the legal framework (technology transfer rights, safeguards) unlocking the study money and the vendor shortlist; a reactor pitch with no 123 Agreement in place has nothing to attach to." },
-      { move: "Convert an existing investor into a domestic customer.", why: "SK Innovation put equity into TerraPower in 2023 with no Korean deployment attached; the 2026 term sheet shows the fastest path to a second country's first commercial unit runs through a shareholder who already knows the technology." },
+      { move: "Convert an existing investor into a domestic customer.", why: "SK Innovation held equity in TerraPower before the Korean deployment term sheet; the 2026 term sheet shows the fastest path to a second country's first commercial unit runs through a shareholder who already knows the technology." },
     ],
     watch: "The World Bank's first actual nuclear financing, and the first non-North-American final investment decision on a U.S. SMR after Romania's.",
   },
