@@ -37,7 +37,7 @@ test("server-renders the evidence-led homepage", async () => {
   assert.doesNotMatch(html, /core-readout|hero-core|class="orbit/);
 });
 
-test("the homepage leads with the comparison board and retains sourced summaries and progressive disclosure", async () => {
+test("the homepage shows every company without an expansion and retains sourced summaries", async () => {
   const dataModule = await import("../app/data.ts");
   const raw = await (await render()).text();
   const html = raw.replace(/<!--.*?-->/g, "");
@@ -64,30 +64,8 @@ test("the homepage leads with the comparison board and retains sourced summaries
   assert.ok(eoNumbers.length > 0, "an EO number appears in the strip");
   assert.ok(eoNumbers[0] >= 14300, "the strip picks the highest (most recent) EO number, not the first array entry");
 
-  // Only the first VISIBLE_ROWS render before the show-all toggle; every
-  // entrant still has a row somewhere, most of them inside the collapsed tail.
-  const marker = `Show all ${board.length} companies`;
-  assert.ok(html.includes(marker), "the show-all toggle names the true entrant count");
-  const [beforeToggle] = html.split(marker);
-  const visibleRowCount = (beforeToggle.match(/class="race-row"/g) ?? []).length;
-  assert.equal(visibleRowCount, 6, "exactly six rows render before the show-all toggle");
-  const totalRowCount = (html.match(/class="race-row"/g) ?? []).length;
-  assert.equal(totalRowCount, board.length, "every entrant still has a row, most inside the collapsed tail");
-
-  // The collapsed tail is a native <details>, which hides its content
-  // natively when closed; a filter match there needs to open it explicitly,
-  // or the match toggles "visible" and still renders nothing (DESIGN.md
-  // section 12.3's <details>-collapse trap).
-  const { readFile } = await import("node:fs/promises");
-  const filterSource = await readFile(new URL("../app/components/RaceFilter.tsx", import.meta.url), "utf8");
-  assert.match(filterSource, /closest\("details"\)/, "a filter match opens its <details> ancestor");
-  // A WeakMap that captures a <details>'s state once and never refreshes it
-  // restores the wrong value across a second filtering session (filter,
-  // clear, manually open the section by hand, filter and clear again: a
-  // stale captured "closed" snaps it shut even though the reader just
-  // opened it). Codex found this on PR #14; the baseline must be recaptured
-  // at the start of each session, not held forever after the first one.
-  assert.match(filterSource, /startingNewSession/, "the saved <details> state is recaptured at the start of each new filtering session");
+  assert.equal((html.match(/class="race-row"/g) ?? []).length, board.length, "every company is present without a disclosure");
+  assert.doesNotMatch(html, /race-board-more|race-board-rest/, "reading the company board requires no show-all click");
 });
 
 test("the homepage race board states its zero and gives every entrant a row", async () => {
@@ -561,7 +539,7 @@ test("the methodology page explains the race rules the board links to", async ()
   // The board's legend links to /methodology#race, so the anchor has to exist.
   assert.match(html, /id="race"/, "the race anchor the board links to exists");
   for (const heading of ["Who is on the board", "What counts as a megawatt", "The seven bands",
-    "A DOE authorization is not an NRC license", "Binding and non-binding never merge"]) {
+    "A DOE authorization is not an NRC license", "Contracts and announcements"]) {
     assert.ok(html.includes(heading), `methodology explains: ${heading}`);
   }
   // Every band is defined with the authority that grants it, including the empty one.
@@ -1613,7 +1591,7 @@ test("the financing page renders every lane, company row, and labeled judgment",
 
   // An absence is the site's finding, never pinned on a source, in both directions.
   const emptyCommercial = financing.companyFinance.filter((row) => row.commercial.length === 0).length;
-  const absenceCount = html.split("No commercial position on record. A research finding, not a sourced claim.").length - 1;
+  const absenceCount = html.split("No commercial agreement recorded in the reviewed sources.").length - 1;
   assert.equal(absenceCount, emptyCommercial, "every empty commercial lane states the research finding exactly once");
   assert.ok(emptyCommercial > 0 && emptyCommercial < rowCount, "the dataset exercises both the sourced and absent commercial cases");
 
@@ -1885,4 +1863,32 @@ test("fission coverage renders dated fleet observations and every family with it
   for (const family of fissionFamilies) for (const source of family.source_urls) assert.ok(html.includes(source.replaceAll("&", "&amp;")), `${family.id} links its definition source`);
   assert.match(html, /784.781/); assert.match(html, /98,441/);
   assert.match(html, /not a census/); assert.match(html, /not current statistics/);
+});
+
+
+test("technical and procurement explanations agree across the public views", async () => {
+  const method = (await (await render("/methodology")).text()).replace(/<!--.*?-->/g, "");
+  assert.match(method, /pre-application activities/);
+  assert.match(method, /non-federal sites/);
+  assert.doesNotMatch(method, /combined license is still under review|reactors on its own sites/);
+  const data = await import("../app/data.ts");
+  const proof = data.proofEvents.find((row) => row.companySlug === "nuscale" && /77 MWe/.test(row.label));
+  assert.doesNotMatch(proof.label, /only approved/);
+  const finance = await import("../app/financing-data.ts");
+  const eielson = finance.mechanisms.find((row) => /eielson/i.test(row.example));
+  assert.doesNotMatch(`${eielson.how} ${eielson.example}`, /5 MW|30.year|fixed price for decades|bankable/);
+  assert.doesNotMatch(finance.overrunRecords.find((row) => row.subject === "Vogtle 3&4, as built").note, /169\/MWh actual/);
+  const bd = await import("../app/bd-data.ts");
+  const nasa = bd.bdBuyers.find((row) => row.slug === "nasa");
+  assert.equal(nasa.positions[0].date, "2025-11-19", "date reflects the cited company report, not an inferred completion day");
+  assert.doesNotMatch(nasa.note, /companies own the reactor and sell the power/);
+});
+
+
+test("a verified company post does not upgrade the whole social platform", async () => {
+  const data = await import("../app/data.ts");
+  const bd = await import("../app/bd-data.ts");
+  const source = bd.bdBuyers.find((row) => row.slug === "nasa").positions[0].source;
+  assert.equal(data.verificationForSource(source), "Company-reported");
+  assert.equal(data.verificationForSource("https://www.linkedin.com/posts/unverified-other-post"), "Press-reported");
 });

@@ -42,12 +42,19 @@ export const verificationHosts: { verification: Verification; hosts: string[] }[
     "rdworldonline.com", "thebreakthrough.org", "esgtoday.com", "spacenews.com",
     "datacenterdynamics.com", "fortune.com", "sltrib.com", "axios.com",
     // BD layer: business press and a professional-society journal.
-    "cnbc.com", "jpt.spe.org",
+    "cnbc.com", "jpt.spe.org", "linkedin.com",
   ] },
 ];
 
+// Authorship of this official company post was verified in its archived HTML/JSON-LD.
+// A platform-wide upgrade would incorrectly treat unrelated social posts as company disclosures.
+const officialCompanyPosts = new Set([
+  "https://www.linkedin.com/posts/antares-industries_after-6-months-in-huntsville-ourelectrically-heated-activity-7396980168080154624-i2CV",
+]);
+
 /** The tier a source URL belongs to. Press is the default, never an upgrade. */
 export function verificationForSource(source: string): Verification {
+  if (officialCompanyPosts.has(source)) return "Company-reported";
   const host = new URL(source).host.replace(/^www\./, "");
   return verificationHosts.find((tier) => tier.hosts.includes(host))?.verification ?? "Press-reported";
 }
@@ -438,7 +445,7 @@ export const projects: Project[] = [
     // step shown on the same company dossier. Found in a 2026-08-23 domain
     // review; corrected against evidence already in this file, not new
     // sourcing.
-    latest: "Company reports Aurora-INL construction through the DOE pathway; NRC lists the current75 MWe design in pre-application activities.",
+    latest: "Company reports Aurora-INL construction through the DOE pathway; NRC lists the current 75 MWe design in pre-application activities.",
     latestDate: "2025-09",
     next: "Complete DOE-authorized construction, fuel readiness and startup steps; pursue the separate NRC licensing process.",
     nextOwner: "Oklo, DOE Idaho Operations, and NRC",
@@ -1427,7 +1434,7 @@ export const raceEntrants: RaceEntrant[] = [
     unitMWeNote: "Design scaled from 15 MWe through 50 MWe to a current 75 MWe maximum.",
     lane: "Grid-scale SMR",
     ticker: "NYSE: OKLO",
-    rosterBasis: "NRC is engaged in pre-application activities for the proposed75 MWe Oklo Aurora Powerhouse.",
+    rosterBasis: "NRC is engaged in pre-application activities for the proposed 75 MWe Oklo Aurora Powerhouse.",
     rosterSource: "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse",
   },
   {
@@ -1973,7 +1980,7 @@ export const proofEvents: ProofEvent[] = [
   { companySlug: "radiant-industries", date: "2026-07", kind: "Fuel milestone", label: "Radiant received its first TRISO fuel shipment at the DOME facility at Idaho National Laboratory.", source: "https://www.radiantnuclear.com/blog/triso-fuel-inl/", verification: "Company-reported" },
   { companySlug: "x-energy", date: "2026-02", kind: "Permit / authorization", label: "NRC issued TRISO-X a 40-year special nuclear material license for commercial HALEU fuel manufacture", source: "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication", verification: "Government-reported" },
   { companySlug: "gev-hitachi", date: "2026-03", kind: "Design proof (non-U.S.)", label: "Shaft excavation completed for the first BWRX-300 at Darlington, Ontario", powerNote: "Canadian unit. Contributes 0 MWe to the U.S. race.", source: "https://www.nucnet.org/news/opg-completes-excavation-works-at-darlington-bwrx-300-smr-project-3-1-2026", verification: "Press-reported" },
-  { companySlug: "nuscale", date: "2025-05", kind: "Permit / authorization", label: "NRC issued a standard design approval for the uprated 77 MWe design, the only approved U.S. SMR design", source: "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design", verification: "Government-reported" },
+  { companySlug: "nuscale", date: "2025-05", kind: "Permit / authorization", label: "NRC issued a standard design approval for NuScale’s uprated 77 MWe design; this is not a site operating license", source: "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design", verification: "Government-reported" },
   { companySlug: "nuscale", date: "2026-02", kind: "Design proof (non-U.S.)", label: "RoPower took a final investment decision for a 462 MWe six-module plant at Doicești, Romania", powerNote: "Romanian project. Contributes 0 MWe to the U.S. race.", source: "https://www.world-nuclear-news.org/articles/final-investment-decision-taken-for-romanias-smrs", verification: "Press-reported" },
   { companySlug: "holtec", date: "2026-06", kind: "Design proof (non-U.S.)", label: "Holtec and EDF submitted a joint proposal for up to four SMR-300 units at Cottam, England", powerNote: "UK proposal. Contributes 0 MWe to the U.S. race.", source: "https://www.ans.org/news/2026-06-29/article-8155/holtec-and-edf-submit-proposal-to-deploy-smr300-at-cottam-nottinghamshire/", verification: "Press-reported" },
   { companySlug: "westinghouse", date: "2026-02", kind: "Program selection / agreement", label: "DOE conditionally selected Westinghouse for the first fuelled microreactor experiments at the DOME test bed", source: "https://www.energy.gov/ne/articles/energy-department-announces-first-microreactor-experiments-dome-test-bed", verification: "Government-reported" },

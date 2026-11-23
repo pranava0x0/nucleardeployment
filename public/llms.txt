@@ -53,7 +53,7 @@ Publication: October 2026. Stocks and annual flows have different denominators. 
 2. **Oklo** (Aurora, 75 MWe per unit, Grid-scale SMR)
    - Strongest state: DOE-authorized build · 75 MWe
    - Capacity: 75 MWe doe-authorized build; 13,750 MWe announced, non-binding
-   - On the board because: NRC is engaged in pre-application activities for the proposed75 MWe Oklo Aurora Powerhouse. Source: https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse
+   - On the board because: NRC is engaged in pre-application activities for the proposed 75 MWe Oklo Aurora Powerhouse. Source: https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse
    - Full record: https://pranava0x0.github.io/nucleardeployment/companies/oklo
 3. **X-energy** (Xe-100, 80 MWe per unit, Grid-scale SMR)
    - Strongest state: NRC permitted · 320 MWe

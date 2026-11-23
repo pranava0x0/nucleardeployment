@@ -1001,3 +1001,22 @@ footer nav a { display: inline-flex; align-items: center; min-height: 44px; font
 @media (max-width: 600px) { .coverage-grid { grid-template-columns: 1fr; } .family-body { padding-inline: 16px; } .family-entry summary { padding: 16px; } }
 
 .stat-strip .strip-note a { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* Keep comparison data visible; disclosure is optional, not a prerequisite. */
+.family-index { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
+.family-index a { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 14px; background: var(--surface); border: 1px solid var(--border); font-weight: 650; }
+.family-entry { scroll-margin-top: 150px; }
+.fleet-mobile { display: none; }
+@media (max-width: 800px) {
+  .fleet-desktop { display: none; }
+  .fleet-mobile { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; list-style: none; padding: 0; }
+  .fleet-mobile > li { border: 1px solid var(--border); background: var(--surface); padding: 16px; }
+  .fleet-mobile h3 { margin: 0 0 12px; }
+  .fleet-mobile dl { margin: 0; }
+  .fleet-mobile dl > div { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--border); padding: 10px 0; }
+  .fleet-mobile dt { color: var(--ink-muted); font-size: 13px; }
+  .fleet-mobile dd { margin: 0; font-weight: 750; text-align: right; }
+}
+@media (max-width: 480px) { .fleet-mobile { grid-template-columns: 1fr; } }
+
+.family-sources a { max-width: 100%; overflow-wrap: anywhere; }

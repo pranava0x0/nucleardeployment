@@ -4261,7 +4261,7 @@
       "publisher": "Antares (official company account on LinkedIn)",
       "published_at": "2025-11-19",
       "captured_at": "2026-11-22",
-      "source_tier": "secondary",
+      "source_tier": "primary",
       "use": "supports-record",
       "officials": [],
       "companies": [
@@ -4272,7 +4272,7 @@
       "industry_domains": [
         "nuclear fission"
       ],
-      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+      "notes": "Official Antares company post; authorship verified in the captured HTML and JSON-LD. Establishes electrically heated hardware testing, not a nuclear reactor or power-sale contract."
     },
     {
       "id": "audit-2026-11-22-6c42e7c81838ade8",

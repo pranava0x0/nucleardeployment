@@ -573,15 +573,15 @@ export const bdBuyers: BdBuyer[] = [
     slug: "nasa",
     name: "NASA",
     sector: "Federal & defense",
-    note: "Space power runs the same model: companies own the reactor and sell the power.",
+    note: "Antares reported non-nuclear thermal-hardware testing with NASA Marshall. This record does not establish a NASA reactor or power-purchase agreement.",
     positions: [
       {
         class: "Microreactor",
         tier: "Program / solicitation",
         label: "Antares reports non-nuclear testing of an electrically heated reactor-core stand-in with NASA Marshall in Huntsville.",
-        date: "2025-12",
+        date: "2025-11-19",
         source: "https://www.linkedin.com/posts/antares-industries_after-6-months-in-huntsville-ourelectrically-heated-activity-7396980168080154624-i2CV",
-        verification: "Press-reported",
+        verification: "Company-reported",
       },
     ],
   },
@@ -1049,15 +1049,15 @@ export const bdSectorPlans: BdSectorPlan[] = [
         source: "https://www.congress.gov/crs-product/IN12719",
       },
       {
-        text: "Four federal sites were selected in December 2025 to pair AI data centers with new generation, including co-located reactors, putting land and authorization behind the co-location thesis.",
+        text: "Four federal sites were selected in December 2025 to pair AI data centers with new generation, including co-located reactors. Site selection does not authorize a reactor to operate.",
         source: "https://www.energy.gov/articles/doe-announces-site-selection-ai-data-center-and-energy-infrastructure-development-federal",
       },
     ],
     plays: [
-      { move: "Anchor on restarts and uprates first.", why: "The only nuclear megawatts deliverable before 2030 are existing-fleet megawatts, and all three executed hyperscaler deals (Crane, Clinton, Duane Arnold) are exactly that shape." },
-      { move: "Structure SMR sales as order books with per-plant PPAs.", why: "The Google-Kairos master agreement shape gives the buyer optionality and gives the developer a book that supply chains and lenders can invest against." },
+      { move: "Anchor on restarts and uprates first.", why: "Crane, Clinton and Duane Arnold are the existing-fleet projects behind the three listed hyperscaler power contracts. Check each project’s approvals and schedule before treating its capacity as available." },
+      { move: "Separate master plans from plant power contracts.", why: "The Google-Kairos agreement sets a deployment framework. Check individual plant power contracts before treating the framework ceiling as committed supply." },
       { move: "Take deposits for queue position.", why: "Equinix moved cash on both ends of the market, a $25M Oklo prepayment and deposits on 20 Kaleidos units, years before any commercial operation date." },
-      { move: "Expect equity asks alongside offtake.", why: "Amazon anchored X-energy's round and NVIDIA led TerraPower's; a board seat prices cheaper than a cost overrun for buyers who intend to order fleets." },
+      { move: "Expect equity asks alongside offtake.", why: "Some customers also invest in vendors. Keep equity and power-purchase commitments separate when comparing buyer positions." },
     ],
     watch: "The first SMR framework converting to a signed per-plant power contract. NuScale management targets converting the TVA and ENTRA1 collaboration by the end of 2026; whoever converts first resets every negotiation that follows.",
   },
@@ -1147,16 +1147,16 @@ export const bdSectorPlans: BdSectorPlan[] = [
       },
     ],
     plays: [
-      { move: "Bid every installation program.", why: "Janus, the ANPI competition, and the Eielson template all carry deadlines that force factory discipline, and defense contracts absorb first-of-a-kind pricing that no commercial buyer will." },
-      { move: "Use federal land and DOE authorization to build now.", why: "The Pilot Program, DOME, the Launch Pad, and the AI-site solicitations put steel in the ground while NRC applications run; every criticality so far happened through this channel." },
-      { move: "Design for the 30-year fixed-price shape.", why: "The Eielson notice of intent shows the government buying power, not reactors: developer-owned, developer-operated, bankable against a federal offtaker." },
+      { move: "Compare installation solicitations.", why: "Janus, ANPI and Eielson have different requirements. Check funding, delivery milestones and operating approvals before committing manufacturing capacity." },
+      { move: "Choose the appropriate DOE pathway.", why: "The Reactor Pilot Program includes qualifying non-federal sites. DOME and the Launch Pad provide laboratory testing arrangements. Program selection does not establish construction or startup authorization." },
+      { move: "Separate a notice of intent from a power contract.", why: "Eielson identifies a prospective government customer. Verify an executed agreement before relying on its capacity, pricing, ownership or duration." },
       { move: "Track overseas and island installations before they open a docket.", why: "Guam shows the pattern one step earlier than Janus or ANPI did: lawmakers naming a reported budget line with no confirmed DOD program yet, the exact stage at which a BD relationship is cheapest to start." },
     ],
     watch: "Which vendor wins the first Janus milestones, whether the Executive Order 14299 reactor is operating on an installation by September 30, 2028, and whether DOD gives Guam's government the official notification its senators have been asking for.",
   },
   {
     sector: "States & power authorities",
-    thesis: "States are building demand floors with public money: a New York public-power build mandate, a Texas grant fund, and TVA's federal-power channel. State programs de-risk the first commercial units that follow the federal cohort.",
+    thesis: "States are building demand floors with public money: a New York public-power build mandate, a Texas grant fund, and TVA's federal-power channel. State grants and public-power procurement can help finance early commercial projects.",
     evidence: [
       {
         text: "NYPA's 2025 nuclear solicitations drew responses from more than 30 entities for at least 1 GW upstate, 23 of them developer teams, and a developer RFQ followed in 2026.",
@@ -1170,13 +1170,13 @@ export const bdSectorPlans: BdSectorPlan[] = [
     plays: [
       { move: "Compete for the two live state checkbooks.", why: "The NYPA RFQ and the Texas fund's construction reimbursements are open now, and both reward projects that already hold federal cost share." },
       { move: "Treat public power as the domestic sovereign buyer.", why: "TVA, NYPA, and the public power districts can sign multi-decade paper and carry siting politics that private load-serving entities cannot." },
-      { move: "Stack state money on federal awards.", why: "Clinch River carries a DOE Tier 1 award inside a state that courts nuclear; the projects that close first will hold both halves of the stack." },
+      { move: "Combine eligible state and federal funding.", why: "Clinch River has a DOE Tier 1 selection in Tennessee. Check eligibility and cost-sharing rules before combining funding sources." },
     ],
     watch: "NYPA's developer selection for the upstate gigawatt, and whether Texas funds its completion-bonus program in the next budget cycle.",
   },
   {
     sector: "International markets",
-    thesis: "Export demand is becoming bankable: the World Bank is reengaging with nuclear for the first time in decades, allied governments are selecting vendors, and sovereign frameworks route capital into named designs. The competition is national, so BD runs government-to-government as much as company-to-company.",
+    thesis: "International projects depend on government policy, utility buyers and export finance. Vendor selections and investment frameworks do not by themselves establish funded plant orders.",
     evidence: [
       {
         text: "The UK ran a national competition and picked its own champion, selecting Rolls-Royce SMR as preferred technology partner in June 2025 and allocating £2.6B in the 2025 Spending Review to enable the contract.",
@@ -1201,10 +1201,10 @@ export const bdSectorPlans: BdSectorPlan[] = [
     ],
     plays: [
       { move: "Sell the fleet curve behind a reference plant.", why: "Darlington, Doicești, and Wylfa give buyers a unit to point at; the pitch for every later unit is the learning ladder, not the prototype." },
-      { move: "Finance the first unit with the new sovereign stack.", why: "The World Bank re-entry, EXIM, and frameworks like the U.S.-Japan $40B earmark exist to close deals in markets whose balance sheets could not carry FOAK risk alone." },
+      { move: "Match export finance to the first unit.", why: "Review World Bank policy, EXIM support and sovereign investment frameworks separately. A policy change or investment framework is not a project financing commitment." },
       { move: "Structure emerging-market deals as owner-operator subsidiaries.", why: "The Ghana shape, a U.S. design inside a jointly owned local operating company, answers the capability question that stalls first-time nuclear countries." },
-      { move: "Lead treaty allies with the 123 Agreement, not the reactor pitch.", why: "The Philippines sequence shows the legal framework (technology transfer rights, safeguards) unlocking the study money and the vendor shortlist; a reactor pitch with no 123 Agreement in place has nothing to attach to." },
-      { move: "Convert an existing investor into a domestic customer.", why: "SK Innovation held equity in TerraPower before the Korean deployment term sheet; the 2026 term sheet shows the fastest path to a second country's first commercial unit runs through a shareholder who already knows the technology." },
+      { move: "Check the nuclear cooperation agreement first.", why: "The Philippines study follows the entry into force of its U.S. nuclear cooperation agreement. Check transfer and safeguards requirements before proposing a U.S. design." },
+      { move: "Convert an existing investor into a domestic customer.", why: "SK Innovation held equity in TerraPower before the Korean deployment term sheet; the 2026 term sheet shows how an existing investor can become a prospective domestic customer." },
     ],
     watch: "The World Bank's first actual nuclear financing, and the first non-North-American final investment decision on a U.S. SMR after Romania's.",
   },
@@ -1234,9 +1234,9 @@ export const bdSectorPlans: BdSectorPlan[] = [
       },
     ],
     plays: [
-      { move: "Price against delivered diesel, not grid LCOE.", why: "The comparison that closes is fuel barged or flown into a remote site, including the logistics chain a reactor deletes for years at a time." },
+      { move: "Price against delivered diesel, not grid LCOE.", why: "Compare modeled nuclear costs with delivered diesel costs, including transport and storage. Include reactor fuel and maintenance logistics." },
       { move: "Lead with heat plus power.", why: "Villages and mines buy heat too, and the CEEPR value case rests on serving both loads from one unit." },
-      { move: "Sell through aggregators.", why: "State programs, co-op federations, and the DLA fixed-price template pool fragmented 1 to 5 MW loads into contracts big enough to carry project overhead." },
+      { move: "Sell through aggregators.", why: "State programs and co-op federations can combine small remote loads. Check whether a procurement program specifies a fixed price before modeling revenue." },
       { move: "Design the O&M case for unattended years.", why: "Multi-year cores and factory refueling are what make the remote economics work; a site that needs a resident nuclear staff never beats diesel." },
       { move: "Treat islands and territories as a distinct aggregator, not a state.", why: "Puerto Rico and Guam both run on imported fuel and diesel-parity economics like Alaska, but the buyer is a legislature or DOD budget line, not a state siting statute; the sales motion is government relations first, offtake second." },
     ],
@@ -1385,4 +1385,4 @@ export const bdMicroPath: BdPathStep[] = [
  * explicit judgment label.
  */
 export const bdMicroPathJudgment =
-  "The sequencing on the record is government first, commercial second. Defense and DOE programs carry the deadlines (2028), absorb first-of-a-kind pricing, and supply authorized sites, while remote markets pay diesel prices that already clear FOAK costs. A 10-to-20-unit year from 2028 onward requires all of: at least one factory shipping at rate, NRC licenses for sites off federal land, fuel deliveries at cadence from the licensed HALEU and TRISO lines, and a commercial book beyond the first preorder. Every one of those has a first instance on the record above; none yet has a second.";
+  "The early deployments in this record depend on government programs and test sites. Repeat commercial delivery needs operating approvals, reliable fuel supply, factories producing at the planned rate and paying customers. Neither program deadlines nor prototype criticality establish a commercial production rate. NRC licensing and DOE authorization have different scopes; site ownership alone does not determine the pathway.";

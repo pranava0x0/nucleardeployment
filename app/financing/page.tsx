@@ -69,7 +69,7 @@ export default function FinancingPage() {
       {laneOrder.map((lane) => {
         const rows = costBenchmarks.filter((benchmark) => benchmark.lane === lane);
         if (!rows.length) return null;
-        return <details className="acc-sub" key={lane}>
+        return <details open className="acc-sub" key={lane}>
           <summary>
             <span className="lane-sub">{lane}</span>
             <span className="acc-note">{laneNotes[lane]}</span>
@@ -106,8 +106,8 @@ export default function FinancingPage() {
     </details>
 
     <section className="section" id="companies">
-      <div className="section-head"><h2>Company by company</h2><p>How each entrant gets paid, its strongest government vehicle, its strongest commercial position, and any stated price. Model, government, and commercial rows are sourced facts; the next gate is this site&rsquo;s judgment of the event that would move the row.</p></div>
-      {["Microreactor", "Grid-scale SMR"].map((lane) => <details className="acc-sub" key={lane}>
+      <div className="section-head"><h2>Company by company</h2><p>Business models, government programs, customers and stated prices. Sources accompany each claim; the next financing step is the site&rsquo;s assessment.</p></div>
+      {["Microreactor", "Grid-scale SMR"].map((lane) => <details open className="acc-sub" key={lane}>
         <summary>
           <span className="lane-sub">{lane} lane</span>
           <span className="acc-note">{financeByLane(lane).length} companies</span>
@@ -123,10 +123,10 @@ export default function FinancingPage() {
                 <li><span className="ledger-date">Model</span><b>{row.model}</b><a href={row.modelSource} target="_blank" rel="noreferrer">Source ↗</a></li>
                 <li><span className="ledger-date">Government</span>{row.government.length
                   ? sourcedLines(row.government)
-                  : <b>No government vehicle on record. A research finding, not a sourced claim.</b>}</li>
+                  : <b>No government agreement recorded in the reviewed sources.</b>}</li>
                 <li><span className="ledger-date">Commercial</span>{row.commercial.length
                   ? sourcedLines(row.commercial)
-                  : <b>No commercial position on record. A research finding, not a sourced claim.</b>}</li>
+                  : <b>No commercial agreement recorded in the reviewed sources.</b>}</li>
                 <li><span className="ledger-date">Stated cost</span>{row.costClaim
                   ? <><b>{row.costClaim}</b>{row.costClaimSource && <a href={row.costClaimSource} target="_blank" rel="noreferrer">Source ↗</a>}{row.additionalSources?.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}</>
                   : <b>No price or cost target on record</b>}</li>
@@ -146,7 +146,7 @@ export default function FinancingPage() {
         // An empty lane renders nothing: a heading over an empty grid would be
         // the empty legend slot the project's rules forbid.
         if (!rows.length) return null;
-        return <details className="acc-sub" key={group.status}>
+        return <details open className="acc-sub" key={group.status}>
           <summary>
             <span className="lane-sub">{group.heading}</span>
             <span className="acc-note">{rows.length} {rows.length === 1 ? "mechanism" : "mechanisms"}</span>

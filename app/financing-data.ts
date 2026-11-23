@@ -306,7 +306,7 @@ export const overrunRecords: OverrunRecord[] = [
   {
     subject: "Vogtle 3&4, as built",
     figure: "~$32.3B total capital",
-    note: "Lazard's assumption for the completed 2.2 GW, the basis of its $169/MWh actual.",
+    note: "Lazard’s completed-project capital-cost assumption for 2.2 GW, used in its modeled $169/MWh LCOE; not an observed electricity tariff.",
     date: "2025-06",
     source: "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
     report: { reportSlug: "lazard-lcoe-june-2025", page: 8 },
@@ -654,8 +654,8 @@ export const mechanisms: FinancingMechanism[] = [
   },
   {
     status: "In use",
-    mechanism: "Order book with per-plant PPAs",
-    how: "One master agreement commits a fleet; each plant closes its own PPA as it matures. The buyer gets optionality, the developer gets a book that supply chains can invest against.",
+    mechanism: "Master development agreement",
+    how: "A master agreement sets a deployment framework. Individual plants need their own power contracts, approvals and financing.",
     example: "Google-Kairos Master Plant Development Agreement: up to 500 MW by 2035.",
     date: "2024-10",
     source: "https://www.kairospower.com/updates/google-and-kairos-power-partner-to-deploy-500-mw-of-clean-electricity-generation",
@@ -766,9 +766,9 @@ export const mechanisms: FinancingMechanism[] = [
   },
   {
     status: "Pending",
-    mechanism: "Fixed-price power at a defense site",
-    how: "The developer finances, builds, owns, and operates; the government commits to buy power at a fixed price for decades, making the plant bankable without an equipment sale.",
-    example: "The Air Force/DLA Notice of Intent to Award to Oklo: a 5 MW microreactor at Eielson AFB under a prospective 30-year arrangement, with contract negotiations pending NRC licensing. No contract is executed.",
+    mechanism: "Defense-site notice of intent",
+    how: "A notice of intent identifies a prospective supplier; it does not establish an executed power contract or its terms.",
+    example: "The Air Force announced a notice of intent to award Oklo an Eielson microreactor pilot. The readable source does not establish electrical capacity, contract duration or a fixed electricity price.",
     date: "2025-06",
     source: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
   },

@@ -73,15 +73,15 @@ export default function MethodologyPage() {
 
       <article className="method-note">
         <h3>A DOE authorization is not an NRC license</h3>
-        <p>These are two different pathways and the board keeps them apart. The NRC licenses commercial power reactors; a construction permit authorizes building one, and a separate operating license is still required before it may run. DOE authorizes reactors on its own sites under its own safety process, which is how the pilot-program reactors were built and started so quickly.</p>
-        <p>A reactor being built under a DOE authorization is real physical progress, so it gets its own band rather than being folded into either NRC-permitted construction or a paper application. Oklo&rsquo;s Aurora at Idaho National Laboratory is the case that forces the distinction: ground was broken in September 2025 under the DOE pathway while its NRC combined license is still under review. Ranking it beside an NRC-permitted build would overstate it; calling it an application would ignore a reactor being built.</p>
+        <p>An NRC construction permit allows construction; operation needs a separate license. DOE uses its own safety authorization process for qualifying research and pilot projects, including projects at non-federal sites. DOE&rsquo;s Ward250 determination names a state-operated Utah facility. <a href="https://www.energy.gov/nepa/articles/cx-271015-valar-ward250-research-reactor" target="_blank" rel="noreferrer">DOE site determination ↗</a></p>
+        <p>Oklo reported Aurora-INL groundbreaking in September 2025 through the DOE pathway. Its separate NRC licensing track remains in pre-application activities. The board records the DOE construction progress separately from NRC-permitted construction. <a href="https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse" target="_blank" rel="noreferrer">NRC project record ↗</a> · <a href="https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx" target="_blank" rel="noreferrer">Oklo groundbreaking report ↗</a></p>
       </article>
 
       <article className="method-note">
-        <h3>Binding and non-binding never merge</h3>
+        <h3>Contracts and announcements</h3>
         <p>A memorandum of understanding, a letter of intent, a master agreement, and a press-released target are announcements. They are recorded, dated, sourced, and kept on their own track, and the words &ldquo;announced, non-binding&rdquo; travel with the figure everywhere it appears.</p>
-        <p>This is the largest single fact on the board, and it is worth stating in both frames because they answer different questions. Against every megawatt resting on an executed action of any kind, including applications merely filed, announced capacity runs about {announcedRatio} to one. Against the megawatts actually being built today, it runs about {buildingRatio} to one.</p>
-        <p>The largest single announcement on record, {biggestFramework.label.split(" · ")[0]} at {biggestFramework.mwe.toLocaleString("en-US")} MWe, is on its own roughly {Math.round(biggestFramework.mwe / buildingTotal)} times all the new-design capacity under construction in the United States. That is why the two are never summed into one number.</p>
+        <p>Announcement ceilings are about {announcedRatio} times the capacity backed by documented actions, including applications and funded development. They are about {buildingRatio} times capacity in documented builds.</p>
+        <p>The largest single announcement on record, {biggestFramework.label.split(" · ")[0]} at {biggestFramework.mwe.toLocaleString("en-US")} MWe, is on its own roughly {Math.round(biggestFramework.mwe / buildingTotal)} times the capacity in documented builds in this sample. Announcement ceilings and builds are never added together.</p>
       </article>
     </section>
 

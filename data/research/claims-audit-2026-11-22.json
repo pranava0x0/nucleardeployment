@@ -17,14 +17,14 @@
       "final": {
         "kind": "entrant.rosterSource",
         "companySlug": "oklo",
-        "label": "NRC is engaged in pre-application activities for the proposed75 MWe Oklo Aurora Powerhouse.",
+        "label": "NRC is engaged in pre-application activities for the proposed 75 MWe Oklo Aurora Powerhouse.",
         "source": "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse",
         "verification": null,
         "canonical_path": [
           "raceEntrants",
           1
         ],
-        "record_sha256": "e738d4f7e533316ae2ef0657be6ae6d152d66c104f1767868ace4c7c32970f93"
+        "record_sha256": "49785d63bab1d5d91dad1adf64c9c23c1d594bde0d947363dd0e0b77d19bc907"
       },
       "evidence": [
         {
@@ -4155,7 +4155,7 @@
       "audit_id": "claim-bc9de842669755df",
       "sequence": 108,
       "outcome": "corrected",
-      "reason": "The company post verifies thermal-hardware testing; it does not establish a NASA nuclear operating reactor or company-owned power-sale terms.",
+      "reason": "The company post verifies thermal-hardware testing, not a NASA nuclear reactor or power-sale arrangement. The ledger uses the November 19, 2025 report date; the completion date is not inferred.",
       "reviewed_at": "2026-11-22",
       "original": {
         "kind": "bd.position.Program / solicitation",
@@ -4168,14 +4168,14 @@
         "companySlug": "nasa",
         "label": "Antares reports non-nuclear testing of an electrically heated reactor-core stand-in with NASA Marshall in Huntsville.",
         "source": "https://www.linkedin.com/posts/antares-industries_after-6-months-in-huntsville-ourelectrically-heated-activity-7396980168080154624-i2CV",
-        "verification": "Press-reported",
+        "verification": "Company-reported",
         "canonical_path": [
           "bdBuyers",
           21,
           "positions",
           0
         ],
-        "record_sha256": "8ca4c977eebe9dc5587ad905890e02f42089ed224632e202e813754fccaaaa6a"
+        "record_sha256": "b5b37f92866c869641b0b25f3656375f5d30098a1d374c9cb42baf56842e375b"
       },
       "evidence": [
         {
