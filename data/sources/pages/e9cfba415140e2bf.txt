@@ -1,0 +1,186 @@
+--- PAGE 1 ---
+Status of Lead-cooled Fast Reactor 
+activities in GEN-IV Countries/Entities
+Mariano TARANTINO
+Co-Chair pSCC GIF LFR
+GIF Industry Forum, Toronto, Canada 
+3-7 October 2022
+TS06 - Gen-IV Demos: LFR Technical Session 
+
+--- PAGE 2 ---
+Aim of the Seminar
+2
+Among the promising reactor technologies considered by the Generation IV International Forum (GIF), the Lead-
+cooled Fast Reactor (LFR) was identified as a technology with great potential to meet needs for both remote sites
+and central power stations, fulfilling the four main goals of GIF in terms of sustainability, safety, economics and
+proliferation resistance.
+In the technology evaluations of the Generation IV Technology Roadmap, the LFR system was top-ranked in
+sustainability because a closed fuel cycle can be more easily achieved, and in proliferation resistance and physical
+protection. It was also assessed as good in safety and economics. Safety was considered to be enhanced by the
+choice of a relatively inert coolant.
+This session aims to highlight the main recent collaborative achievements of the GIF LFR and briefly lists the main
+ongoing LFR developments in the world.
+The most mature LFR designs represent the focus of this session, with the associated development activities
+demonstrating their high level of technical readiness
+
+--- PAGE 3 ---
+BREST-OD-300
+Elimination of NPPs accidents requiring population 
+evacuation or resettlement
+Closed NFC to fully exploit the energy 
+potential of uranium feedstock – use 
+of VVER Pu for starting loading
+Consistent approach to radiation-
+equivalent disposal of radwaste – at the 
+operating stage after development of 
+fuel with MA
+Commercial reactor
+Technological enhancement to non-proliferation regime
+no blanket, no Pu extraction during SNF reprocessing, on-
+site NFC, no uranium enrichment required
+Ensuring
+competitiveness
+of
+nuclear
+power
+in
+comparison with other types of power generation –
+demonstration of technology potential
+BREST-OD-300
+3
+10 Feb 2021: Construction license for BREST-OD-300 issued by
+Rostechnadzor
+June 8 2021: Start of construction (concrete pouring of the
+foundation slab)
+2026: First criticality, start of commissioning for BREST-OD-300
+
+--- PAGE 4 ---
+MYRRHA
+4
+The reactor is scheduled to be commissioned in 2036
+On 7 September 2018 the Belgian Federal Government decided to have the MYRRHA project built on the SCK
+CEN site in Mol. Based on a total budget of € 1.6 bn, the government committed € 558 m towards the project’s
+phased approach.
+In addition, the Belgian government announced the establishment of an international non-profit organization that
+will be ideally suited to welcome investment from additional participating countries. As MYRRHA fits within the
+European Union’s ESFRI (European Strategic Forum for Research Infrastructure) and SET (European Strategic
+Energy Technologies) Plan, it is a candidate for European Investment Bank financing.
+
+--- PAGE 5 ---
+ALFRED
+5
+ALFRED, a demonstration reactor, also prototypic of a Lead-based SMR, to bridge 
+the final gap between conducted research and industrial application
+Research Infrastructure: ATHENA (ongoing)
+
+--- PAGE 6 ---
+Westinghouse LFR
+6
+©2022 Westinghouse Electric Company LLC. All Rights Reserved
+Courtesy of SRS, Servizi di Ricerche e Sviluppo
+Courtesy of SRS, Servizi di Ricerche e Sviluppo
+Status:
+• Design: conceptual design and plant layout 
+near completion
+• Testing: 
+–
+8 test rigs being set up in the UK
+–
+Others being built/used in the 
+US (at Westinghouse, U. of New 
+Mexico, Virginia Tech and U. of 
+Pittsburgh) and Italy (ENEA)
+• Licensing: pre-licensing meetings 
+with UK Regulators
+
+--- PAGE 7 ---
+LeadCold
+7
+
+--- PAGE 8 ---
+newcleo’s LFR-SMRs  
+8
+Precursor
+Electrically heated facility 10MWth, 
+with turbogenerator.
+It reproduces scaled or full-scale 
+components of the Mini LFR
+5 years
+Mini LFR-SMR (30 MWe)
+Power: 30 MWe
+Core outlet T: 430/440°, later 530°
+Fuel: MOX
+newcleo’s present activity is 
+focused on LFR-AS-30
+Small LFR-SMR (200 MWe)
+Power: 200 MWe
+Fuel: MOX + MA
+Terrestrial plant to burn existing 
+nuclear waste
+7/10 years
+10/12 years
+Long term
+ADS LFR-SMR
+Power: TBD
+Fuel: MOX + MA, U free fuels, 
+Thorium 
+The future Accelerator-Driven reactor 
+Thermal Insulation
+ Pump
+W
+S
+Fas-int er locking cams
+Thermal Insulation
+ Pump
+W
+S
+Fas-interlocking cams
+
+--- PAGE 9 ---
+MicroURANUS’s LFR-SMRs 
+9
+Offshore H2 Unit
+20MWe
+Standard Design 
+Pre-Application
+Review
+Small LFR-SMR (200 MWe)
+2027
+2031/2032
+2035/2037
+Demonstration
+DC & COL
+20MWe
+Offshore Clean
+Hydrogen Plant
+Ship Propulsion
+Demo System Design 
+License
+Construction
+Sea Trials
+
+--- PAGE 10 ---
+CLEAR LFR-SMRs
+
+The modern energy system plan for China’s 14th Five-Year plan has been issued on March 22,
+2022：“…actively promote technological development and demonstration applications such as SMR，
+VTGR, low temperature heating reactor, fast reactor, MSR and offshore floating nuclear power
+platform”
+
+CLEAR series LFR developed by International Academy of Neutron Science (IANS)
+•
+CLEAR-M: Small modular LFR with 10MWe
+•
+CLEAR-A: 1GeV/10mA proton accelerate coupled with 100 MWth LFR; Ultra-high flux
+mixed spectrum neutron source：6×1015 n/(cm2·s)
+
+CLEAR-M0: pool-type integration verification facility, >5MWth , started commissioning in
+August 2022 and core outlet temp. reaches 550oC
+
+CLEAR-A0: accelerator based subcritical facility, with neutron source yield of 2×1014 n/s, started
+field installation
+
+Other facilities: experimental facilities and devices for engineering verification, 4000 hours’ test
+data
+10
+

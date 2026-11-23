@@ -107,7 +107,7 @@ export default function BdPage() {
                 {buyer.positions.map((position) => <li key={position.source + position.label.slice(0, 32)}>
                   <span className="ledger-date">{bdClassShort[position.class]} · {bdTiers[tierIndex(position.tier)].short}{position.date ? ` · ${position.date}` : ""}</span>
                   <b>{position.label}</b>
-                  <a href={position.source} target="_blank" rel="noreferrer">Source ↗</a>
+                  <a href={position.source} target="_blank" rel="noreferrer">Source ↗</a>{position.additionalSources?.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}
                 </li>)}
               </ul>
             </article>)}

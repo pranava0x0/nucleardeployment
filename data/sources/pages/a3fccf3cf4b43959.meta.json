@@ -1,0 +1,7 @@
+{
+  "url": "https://www.eia.gov/electricity/Annual/",
+  "captured_at": "2026-11-22",
+  "title": "Electric Power Annual with Data for 2025",
+  "capture_method": "Archived primary-source text; see research manifest",
+  "upstream_snapshot": "data/research/fleet-2026-11-22/eia-electric-power-annual-index.txt"
+}

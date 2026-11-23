@@ -29,3 +29,12 @@ test("GitHub Pages export ships the canonical, the updates route, and the machin
   const sitemap = await readFile(new URL("../out/sitemap.xml", import.meta.url), "utf8");
   assert.match(sitemap, /<loc>https:\/\/pranava0x0\.github\.io\/nucleardeployment\/updates\/<\/loc>/);
 });
+
+
+test("Pages exports the fission reference and preserves the national/sample distinction", async () => {
+  const fission = await readFile(new URL("../out/fission/index.html", import.meta.url), "utf8");
+  assert.match(fission, /Fission types and fleet statistics/);
+  assert.match(fission, /href="\/nucleardeployment\/fission\/"/);
+  assert.match(homepage, /U.S. national fleet statistics/);
+  assert.match(homepage, /Selected advanced-reactor sample totals/);
+});

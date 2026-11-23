@@ -1,0 +1,276 @@
+Gas-Cooled Fast Reactor (GFR) | GIF Portal
+Skip to main content
+Menu
+Search
+Search
+saved resources
+User account menu
+Public Login
+GIF Member Area
+GIF Activities
+GIF carries out its mission through its Generation IV technology specific System Steering Committees and works on cross cutting and methodological matters through its Working Groups and Task Forces.
+System Steering Committees
+LFR pSSC
+MSR pSSC
+SCWR SSC
+SFR SSC
+VHTR SSC
+GFR SSC - Completed
+Working Groups
+Advanced Manufacturing and Materials Engineering WG (AMMEWG)
+Economic Modelling WG (EMWG)
+Education and Training WG (ETWG)
+Non-Electric and Cogeneration Applications of Nuclear Energy WG (NECAWG)
+Proliferation Resistance & Physical Protection WG (PRPPWG)
+Risk and Safety WG (RSWG)
+Task Forces
+R&D Infrastructure Task Force (RITF) - Concluded
+Safety Design Criteria Task Force (SDCTF) - Concluded
+Industry Engagement
+Events and Resources
+Generation IV Criteria and Technologies
+Get an overview of how Gen IV Nuclear Energy Systems are defined, what are the Generation IV criteria, which Nuclear Reactors Technologies were selected as capable of meeting those criteria and how this relates to the GIF Technology Roadmap (and its revisions).
+Lead Fast Reactors (LFR)
+Molten Salt Reactors (MSR)
+Sodium Fast Reactors (SFR)
+Super Critical Water Reactors (SCWR)
+Very High Temperature Reactor (VHTR)
+Gas Fast Reactors (GFR)
+About GIF
+Generation IV International Forum (GIF) was created as a co-operative international endeavour seeking to develop the research necessary to test the feasibility and performance of fourth generation nuclear systems, and to make them available for industrial deployment by 2030. Learn more about its governing agreements and structure here.
+History and achievements
+Organisation and Governance
+GIF Leadership
+GIF Member States & International Organisations
+GIF Technical Secretariat
+Senior Industry Advisory Panel (SIAP)
+Partners and Counterparts
+Breadcrumb
+Home
+Generation IV Goals, Techno...
+Gas-Cooled Fast Reactor (GFR)
+Page navigation
+Overview
+Attributes
+Gen IV Criteria
+Benefits
+Challenges
+GIF GFR Activities
+GFR History - Past
+GFR Current & Future
+GIF Publications
+Webinars
+References
+News
+Close
+Gas-Cooled Fast Reactor (GFR)
+The GFR system is a high-temperature helium-cooled fast-spectrum reactor with a closed fuel cycle. It combines the advantages of fast-spectrum systems for long-term sustainability of uranium resources and waste minimisation (through fuel multiple reprocessing and fission of long-lived actinides), with those of high-temperature systems (high thermal cycle efficiency and industrial use of the generated heat, for hydrogen production for example).
+The GFR uses the same fuel recycling processes as the Sodium-Cooled Fast Reactor (SFR) and similar reactor technologies to the Very-High-Temperature Reactor (VHTR). Therefore, its development approach will also benefit and support other technologies developed for other Gen IV systems, including structures, materials, components and power conversion systems.
+Presentation of the Gas Fast Reactor System
+The Gas-Cooled Fast Reactor (GFR) is an advanced nuclear reactor design employing a gaseous coolant, typically helium, and operating in the fast neutron spectrum. It combines the advantages of fast-spectrum systems for long-term sustainability of uranium resources usage and waste minimization (through potential multiple fuel reprocessing and the fission of long-lived actinides), with those of high-temperature systems (high thermal cycle efficiency and use of the generated heat for industrial processes requiring higher temperatures). Its inert transparent gaseous coolant brings several advantages: no corrosion at high operating temperature, very low void reactivity coefficient in case of loss of coolant, and easy visual inspection of the internals.
+The GFR uses the same fuel recycling processes as the Sodium-Cooled Fast Reactor (SFR) and similar reactor technologies to the Very-High-Temperature Reactor (VHTR ). Therefore, its development approach will also benefit and support other technologies developed for other Gen IV systems, including structures, materials, components and power conversion systems.
+Using gas coolant without graphite in GFR systems poses several technological challenges such as rapid heating after coolant loss, hindering the High-temperature gas reactor (HTR )-type "conduction cool-down" due to the high power density of GFR cores. The low gas-coolant density limits natural convection for core cooling, requiring power-intensive blowers at low pressure. Addressing fast neutron dose effects on the reactor pressure vessel is crucial without graphite moderation, essential for HTR systems. Therefore, the advancement of GFR systems calls for specific R&D beyond the current and foreseen work on the VHTR system, mainly on fuel and core design and safety approaches.
+These are among the key objectives set for the GFR System Steering Committee of the GIF.
+Schematic view of the Gen. IV Gas-cooled Fast Reactor (GFR) Nuclear Energy System
+Attributes of the GFR
+The GIF GFR reference design is based on a 2400 MWth core, which satisfies breakeven-breeding requirements. It is this break-even breeding requirement that led to increasing the power rating from the original 600 MWth concept, which is still being considered for a gas-cooled small modular reactor. The current reference concept involves an indirect cycle with helium in the primary circuit, a Brayton cycle in the secondary circuit, and a steam cycle in the tertiary circuit.
+The core consists of an assembly of hexagonal fuel elements, each consisting of ceramic-clad, mixed-carbide-fuel pins contained within a ceramic hex-tube. The favored material now for the pin clad and hex-tubes is silicon carbide fiber-reinforced silicon carbide, for enhanced strength and corrosion-resistance.
+GFR Reactor Parameters
+Reference Value
+Spectrum
+Fast (>1MeV)
+Core Outlet Temperature range
+800-850°C
+Coolant
+Helium
+Primary pressure
+7 MPa
+Power Range
+2400 MWth
+Fuel
+(U,Pu)C
+Breeding Ratio
+1
+How do Gas Fast Reactors meet Generation IV Criteria?
+Sustainability
+Gas-cooled Fast Reactors (GFRs) contribute to sustainability by allowing for efficient use of nuclear fuel resources thanks to its operation in the fast neutron spectrum. If the adequate reprocessing infrastructure is deployed together with GFR they can rely on a closed fuel cycle, extracting more energy from nuclear fuel and reducing long-lived radioactive waste.
+Economics
+GFRs possess economic viability through the efficient use of nuclear fuel due to a closed fuel cycle, which can reduce the demand for refuelling. The high-temperature operation of GFRs also means a higher efficiency and allows for various industrial applications, improving the economics of the reactor operation.
+Safety & Reliability
+In addition to traditional methods, GFR design incorporates diverse measures of safeguarding the core, mainly passive measures.
+For instance, a passive system is designed for the GFR, based on natural heat transfer mechanisms, for example, the natural circulation of water or air. In ALLEGRO design, there are 3 dedicated DHR loops (3 x 100 % DHR) for redundancy and diversification. Each DHR loop can realize the function alone. The heat exchanger of dedicated DHR loops (helium / water heat exchanger) is located above the core at sufficient elevation to allow also natural helium circulation if necessary.
+Proliferation Resistance & Physical Protection
+GFR designs utilize a closed fuel cycle and prevent separation of trans-uranic elements promoting inherent proliferation resistance. Fuel assembly structures make entire fuel assemblies, not individual pins, potential targets to sabotage and therefore have increased logistical challenges and resistance. Also, multiple containment buildings prevent theft or sabotage of the facility.
+Benefits and Applications of Gas Fast Reactors
+The main advantages of GFRs besides enabling a closed fuel cycle are:
+high operating temperature, allowing increased thermal efficiency and high temperature heat for industrial applications similar to the very high temperature reactor;
+specific properties of Helium as a coolant:
+chemically inert and non-corrosive coolant,
+relatively small (albeit positive) coolant void reactivity coefficient,
+helium is transparent, facilitating in-service inspection and repair, as well as fuel handling.
+Main Challenges for the Deployment of GFR
+The challenge facing the GFR is the development and qualification of robust high temperature, high power density refractory fuels and core structural materials. The materials must be capable of withstanding the in-core thermal, mechanical, and radiation environment. Below are the requirements of the materials comprising the components.
+High thermomechanical resistance (temperature 850°C & pressure 7 MPa)
+Resilient tensile fatigue characteristics and long-term creep resistance
+Resistance to extreme environments – corrosion/oxidation in impure helium which may include hydrogen and helium gas that can cause embrittlement
+Industrial feasibility: manufacturability & joining techniques & compactness
+In addition, the inherent drawback of the concept is the absence of grace period between a fast depressurization of the primary circuit and the requirement for diverse cooling of the core.
+To solve these challenges, specific developments are needed as well as experimental validation of solutions to above mentioned challenges, as listed below.
+Specific blowers and turbomachines
+These are needed to cope with a wide range of pressure operations (from 70 to 10 bar) with rotating parts that retain their leak tightness.
+Thermal barriers
+During normal operation, the GFR metallic structures are protected from the hot (850°C) helium flow by thermal barriers. These thermal barriers must continue to be effective during transients, typically up to 1250°C for1 hour; withstand helium velocities of about 60 m/s and depressurization rates in the range of 2 MPa/s.
+Valves and check-valves
+The safety demonstration of the GFR relies on continuous core cooling by gas circulation, either through normal loops or dedicated DHR (Decay Heat Removal) loops for which it is necessary to isolate the main loops and open the DHR loops with a high degree of reliability. Valves and check-valves are therefore critical components of the GFR. Qualification tests of candidate technologies for these components are needed and must be performed using a dedicated helium loop.
+Instrumentation
+The development of instrumentation that can survive under GFR conditions is one of the main issues of gas-cooled reactors. In particular, the main safety issue concerns the temperature measurement at the core outlet, in order to be able to detect hot spots on the fuel cladding or fuel assembly plugging. The primary development objective is the reduction of measurement uncertainties and also the development of innovative measurement methods, using, if possible, the helium transparency. The instrumentation R&D program includes core temperature measurement, monitoring of structural temperatures, and optical viewing during fuel handling and maintenance phases.
+How is GIF working to solve those
+In its 2014 update to it’s Technology Roadmap the GIF defined the following priorities for the GFR System:
+Improving the design for the safe management of loss-of-coolant accidents including depressurization, and a robust removal of decay heat without external power supply
+Advancing suitable nuclear fuel technologies with out-of-pile and irradiation experiments
+Building experimental facilities for qualifying the main components and systems
+Design studies for a small experimental reactor (e.g. ALLEGRO)
+To know more please consult the 2014 GIF Technology Roadmap report and the 2018 GIF R&D Outlook reports.
+GIF has established System Steering Committees (SSC) to implement the research and development (R&D) for each Generation IV Reactor Concept, with participation from GIF Members interested in contributing to collaborative R&D efforts on the said system. Each SSC plans and integrates R&D projects contributing to the development of a system.
+Each SSC is governed by a System Arrangement (SA), provisional SSCs are created under a Memorandum of Understanding (MoU).
+Several projects can be carried within an SSC, each project is government by a Project Arrangement (PA) and managed by a Project Management Board (PMB).
+The GFR SSC was established in 2006. Currently three countries are participating in the SSC. The SSC oversees two projects:
+Conceptual Design and Safety (CDS)
+conceptual studies of a reference system
+analyses of specific safety features
+development of computational tools
+Fuel and Core Materials (FCM)
+Testing of fuel and core materials
+Development of qualification procedure for start-up core
+Development of numerical models for ALLEGRO start-up core fuel simulation
+To learn more about GIF GFR related activities, follow the link to the corresponding SSC.
+GIF GFR System Steering Committee and Projects
+GFR Projects History - Past projects
+No gas-cooled fast reactor design has reached criticality. However, gas-cooled fast reactor designs and demonstration projects were undergone, listed below.
+Germany
+In 1969, German researchers, in collaboration with industry, outlined the Gas Breeder Memorandum for Gas-Cooled Fast Reactors (GCFRs). The design featured helium cooling, a conventional core extrapolated from an LMFBR, and a Pre-stressed Concrete Reactor Vessel (PCRV) derived from thermal High-Temperature Reactors (HTR). The detailed plan included pin-type fuel, stainless steel cladding, and integrated blowers and steam generators in the PCRV. The design emphasized maintaining elevated backup pressure post-Loss Of Coolant Accident for efficient core cooling. Irradiation tests were planned in the BR-2 reactor in Mol, Belgium, in the mid to late 1970s.
+United States of America
+In 1962, General Atomics planned for a Gas-Cooled Fast Reactor (GCFR) in the US, with designs for a 300 MWe demonstration plant and a 1000 MWe commercial plant. The GCFR Utility Program began in 1968 to develop a 300 MWe demonstration plant, targeting operation by 1983. The design utilized helium coolant, UO2 fuel in stainless steel cladding, and a core based on Liquid Metal Fast Breeder Reactor (LMFBR) technology, with adjustments for the gaseous coolant. The fuel pins were roughened to enhance heat exchange. The primary system was housed in a Pre-Stressed Concrete Reactor Vessel (PCRV), integrating blowers and steam generators. By 1981, the power output was increased to 350 MWe, but safety concerns persisted.
+European Union
+The Gas Breeder Reactor Association in Europe proposed the GBR-1 in 1970, a 1000 MWe gas-cooled fast reactor with helium coolant and pin-type fuel. Evolving into GBR-2 and -3 with coated particle fuel and different coolants, it culminated in the GBR-4, a 1200 MWe reactor using helium and pin-type fuel. GBR-2 design elements reappeared in modern gas-cooled fast reactor proposals, emphasizing coated particle fuels for improved efficiency, while GBR-4 addressed fabrication challenges with a conventional design and decreased outlet temperatures.
+Soviet Union
+In the Soviet Union a GFR program was initiated focusing on a dissociating coolant: N2O4.
+The operating temperature of this reactor was like that of contemporary Gas-Cooled Fast Reactor (GCFR) designs, but it operated at a higher pressure, ranging between 16 MPa and 25 MPa. The key advantage of the dissociating coolant was the potential for condensing the working fluid in the heat exchanger, leading to significant reductions in pumping power. The system functioned akin to a refrigerator, utilizing both evaporation and a chemical reaction to absorb substantial heat from the core, allowing for a relatively small coolant mass flow.
+Despite these advantages, the coolant used was highly corrosive. This challenge was addressed through the development of chromium dispersion fuel pins in the late 1970s, incorporating small inclusions of U metal or UO2 in a chromium matrix. Extensive research into the corrosion behavior of various steel types was conducted to mitigate the corrosive effects. A paper from the late 1970s also mentioned irradiation experiments on the chromium dispersion fuel pins in a test rig using N2O4. No references beyond the early 1980s were found.
+UK
+In the late 1970s, the UK initiated the Existing Technology Gas Breeder Reactor (ETGBR), blending experience from sodium and CO2-cooled AGR reactors. The concept persisted into the late 1990s, rebranded as the Enhanced Gas-Cooled Reactor (EGCR), proposed as an actinide burner with 3600 MWth, CO2 cooling, and nitride fuel in fuel pins within the European Fast Reactor (EFR) and CAPRA (Combustion Améliorée du Plutonium dans les Réacteurs Avancés) / CADRA (Consommation d'Actinides et de Déchets dans les Réacteurs Avancés) study.
+Japan
+In Japan, the 1960s fast reactor program explored gas-cooled concepts, including Kawasaki Heavy Industries' (KHI) investigation into Gas-Cooled Fast Reactors (GCFRs) with steam, CO2, and helium cooling options. The helium-based GCFR design by KHI, influenced by Liquid Metal Fast Breeder Reactor (LMFBR) technology, featured a low "pancake core" for reduced pumping power and increased breeding gain. In the late 1990s, Japan Nuclear Cycle Development Institute ( JNC) proposed a GCFR design with coated particle fuel, nitride compound, and helium coolant, offering a thermal output of 2400 MWth and a direct cycle energy conversion system.
+Project/Program
+Country
+Power Rating
+Timeframe
+Notes
+GCFR* Utility ProgramGeneral Atomics, US
+300 MWe Demonstration Plant
+1962 - 1983
+Helium coolant, UO2 fuel in stainless steel cladding, core based on LMFBR
+Gas breeder MemorandumGerman researchers in collaboration with industry
+125 MWe
+1969 - late 1970s
+Helium cooling, conventional core from LMFBR***
+GBR (Gas Breeder Reactor)Gas Breeder Reactor Association in Europe
+1000 MWe
+1970s - GBR-1 evolving into GBR-2 and -3, GBR-4
+GBR-2 elements in modern proposals, coated particle fuels for efficiency, GBR-4 addressing fabrication challenges and decreased outlet temperatures.
+GCFR Program, dissociating coolantSoviet Union
+N/A
+1970s - early 1980s
+Dissociating coolant (N2O4) at high pressure has potential for heat absorption
+ETGBR/EGCR**UK
+3600 MWth
+Late 1970s - late 1990s
+Proposed as actinide burner, CO2 cooling, nitride fuel
+Fast Reactor programKawasaki Heavy Industries, Japan
+N/A
+late 1990s
+Helium-based GCFR influenced by LMFBR, "pancake core"
+* Gas Cooled Fast Reactor
+**Existing Technology Gas Breeder Reactor / Enhanced Gas-cooled reactor
+*** Liquid Metal Fast Breeder Reactor
+GFR Current Developments
+No GFR is currently operating or under construction in the world yet several GFR concepts are currently under development.
+Project NameCountryPower RatingExpected Deployment DateNotes
+ALLEGROEU
+75 MWth
+2035
+Helium Coolant
+EM2USA, General Atomics
+500 MWth
+2032
+Helium Coolant
+KAMADO FBRJapan, Central Research Institute of Electric Power Industry (CREIPI)
+3000 MWth
+Unknown
+Supercritical Carbon dioxide Coolant
+HeFASToEU
+200 MWth
+2045
+Helium Coolant
+ALLEGRO
+The GoFastR program, which started in 2001, includes research cooperation plans regarding ALLEGRO, which was superseded by many complementary projects, including the SafeG project. The SafeG project, which has a project timeline from October 2020 to September 2024, includes 7 Work Packages that aim to advance R&D and connect developers of the ALLEGRO demonstrator.
+The core design includes a two-step approach: First core (start-up core) using conventional MOX fuel and steel cladding with some experimental GFR fuel subassemblies and second core (refractory core) using only GFR reference fuel.
+EM2
+The baseline Energy Multiplier Module (EM2) plant is composed of four 265 MWe modules for a combine net power of 1060 MWe. Each module consists of a complete powertrain from reactor to heat rejection such that the modules can be built sequentially and operated independently
+KAMADO FBR
+The concept of a passive-safety Fast breeder reactors (FBR) reactor "KAMADO FBR" was proposed in 2008 by the Central Research Institute of Electric Power Industry (CRIEPI), Japan. The KAMADO-FBR concept is based on a synthesis of the design approaches used in light water reactors (LWRs), CO2 gas cooled reactors and pool type research reactors.
+HeFASTo
+The HeFASTo, or Helium-cooled Fast Reactor, is a commercial GFR technology that has been under development by ÚJV Řež since 2021. HeFASTo features modularity and passive safety, and is designed to utilize reprocessed spent fuel from PWRs.
+GIF GFR Related Publications
+GIF has produced several reports and conducted analysis on GFR Systems produced by cross cutting methodological working groups (Risk and Safety WG, Proliferation Resistance & Physical Protection Working Group). GIF's annual reports, technology roadmap and R&D Outlooks provide more information on the progress made by GIF's GFR System Steering Committee and Project Management Boards.
+2022 GIF PRPP (Proliferation Resistance & Physical Protection GIF working group) White Paper GFR
+2022 Safety Design Criteria For Generation IV Gas-Cooled Fast Reactor System
+2022 Gas-Cooled Fast Reactor System Safety Assessment
+GIF Annual Reports
+2018 GIF R&D Outlook for Generation IV Nuclear Energy Systems 2018 Update
+2016 GIF GFR Risk and Safety Assessment White Paper - GIF Risk & Safety WG
+2014 A Technology Roadmap for Generation IV Nuclear Energy Systems
+GIF GFR Related Webinars
+Webinars
+Education and Training Series #94: Prospects and challenges of the GFR technology
+Webinars
+Education and Training Series #6: Gas Cooled Fast Reactor (GFR)
+References
+Stainsby R., Garnier J.C., Guedeney P.,Mikityuk K., Mizuno T., Poette C., Pouchon M., Rini M., Somers J., Touron E. “The Generation IV Gas-cooled Fast Reactor”. Paper 11321, Proc. ICAPP 2011 Nice, France, 2-5 May 2011.
+Perkó Z., Kloosterman J.L., Fehér S., “Minor Actinide Transmutation in GFR600”. Nuclear Technology, Vol 177, January 2012.
+Stainsby R., Peers K., Mitchell C., Poette C., Mikityuk K., Somers J., “Gas cooled fast reactor research in Europe”, Nuclear Engineering and Design, Vol 241, 2011, pp. 3481– 3489.
+Epiney A., Alpy N., Mikityuk K., Chawla R., “A standalone decay heat removal device for the Gas-cooled Fast Reactor for intermediate to atmospheric pressure conditions”. Nuclear Engineering and Design, Vol 242, January 2012, pp. 267-284.
+2024, NEA SMR Dashboard Second Edition
+International Atomic Energy Agency Advanced Reactors Information System (ARIS) Online Database
+News related to the GFR System
+Nov 2022, NEI, Time for a new focus on fast reactors
+May 2018, NEI, US DOE awards $60m for advanced nuclear technology development
+Oct 2015, NCBJ, Research on 4th generation nuclear reactors
+May 2010, WNA, Countries move to host Allegro reactor
+Create account
+Creating a public GIF account takes less than a minute. It will allow you to receive updates about GIF events and webinars and, once logged in, to directly watch the GIF webinars without having to fill a questionnaire. You will also be able to bookmark your favourite GIF Resources.
+You can also just leave us your email below to only receive updates about GIF activities.
+Create a GIF Public Account
+Navigation
+GIF Home Page
+GIF Activities
+Industry Engagement
+Events and Resources
+Generation IV Criteria and Technologies
+About GIF
+Other websites
+GIF LinkedIn Page
+GIF Youtube official channel
+OECD website
+Partners & Counterparts
+Get in touch
+Enter your email below to subscribe to updates about GIF events and publications:
+Math question
+3 + 8 =
+Solve this simple math problem and enter the result. E.g. for 1+3, enter 4.
+This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.
+Validate email
+Contact us
+Sitemap
+Privacy policy
+Credits

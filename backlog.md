@@ -113,7 +113,7 @@ the masthead to reach it. Measurements below are from the built pages.
 - [x] Fix the 14 findings from the post-merge review of PR #6. Done 2026-08-06 on `chore/session-learnings`: link-checker classification and argument validation, `data:check` in CI, all deploy actions SHA-pinned, race-bar overflow marker, capped gigawatt progress, llms.txt URL derivation and pluralisation, plus four cleanup items. Each carries a regression test. Details in `issues.md` under REVIEW-002.
 
 - [x] Bring the stage pipeline's company chips up to the 44px touch floor. Fixed in the 2026-11-21 redesign with a coarse-pointer rule. Prior measurements: Measured 2026-08-05 at 375px: 31 links inside `.pipe-companies` render at 20 to 39px. Pre-existing and untouched by the race work, and the fix is not free, since 44px on every chip makes the pipeline cards much taller. Decide whether to raise the chips, make each card a single target, or document an inline exception in DESIGN.md. Priority: medium.
-- [ ] Upgrade the remaining 52 trade-press citations to primary sources. Run `npm run data:press` for the queue. Eleven were upgraded on 2026-08-05; the rest need a company newsroom, regulator, or national-lab original located and read. Ten cite low-quality aggregators (tipranks, stocktitan, gurufocus, premieralts, techfundingnews, theaiworld, interestingengineering, manilatimes) and should go first. Priority: medium.
+- [ ] Upgrade the remaining trade-press citations (152 sourced records after the November 22 provenance review) to primary sources. Run `npm run data:press` for the queue. Eleven were upgraded on 2026-08-05; the rest need a company newsroom, regulator, or national-lab original located and read. Ten cite low-quality aggregators (tipranks, stocktitan, gurufocus, premieralts, techfundingnews, theaiworld, interestingengineering, manilatimes) and should go first. Priority: medium.
 - [ ] Watch uncompressed page weight. The homepage is 456 KB raw against a 250 KB target, though only 122 KB gzipped. The 185 KB React framework chunk dominates and predates this work; revisit if the raw figure gates anything. Priority: low.
 - [x] Added the `permitted` band back on 2026-11-21. Original request: Add the `permitted` band back when an entrant first holds an authorization with no physical work started. It was dropped because no entrant occupied it and an empty legend slot is worse than an absent one. Priority: low.
 - [x] Bootstrap a `REFRESH.md` for the race dataset via the data-refresh skill, so capacity claims, funding rounds, and proof events can be re-verified on a cadence rather than by hand. Priority: medium.
@@ -164,4 +164,16 @@ the masthead to reach it. Measurements below are from the built pages.
 - [ ] Add General Atomics to the roster only after a primary source establishes its named commercial design and electrical rating; Army Janus selection alone is not that specification.
 
 - [ ] Resolve the 2025 Lazard original-URL 404 without replacing its historical figures with a newer edition. Four Business Wire timeouts and 44 bot-blocked sources remain explicit capture gaps; `data/research/refresh-2026-11-21.json` carries the inventory.
-- [ ] Curate the mechanical claim-term queue: 139 labels did not match every extracted term. Treat these as prompts to read, not 139 confirmed errors.
+- [x] Curate the original mechanical claim-term queue: 139 labels did not match every extracted term. Treat these as prompts to read, not 139 confirmed errors.
+
+## November 22 source audit and fission coverage
+
+- [x] Adjudicate the original 139 flagged claims with exact evidence and fix source/claim mismatches. User requested 2026-11-22; worklist and scope in `data/research/claims-audit-2026-11-22-worklist.json` and `data/research/fission-audit-2026-11-22-plan.md`.
+- [x] Separate authoritative national fleet/generation statistics from the 18-company advanced-reactor sample, and cover all fission reactor families with recent primary-source milestones and clear gaps.
+
+Audit evidence, the 139-record disposition ledger, national/family coverage and verification are complete. PR #16 contains the implementation and independently reviewed fixes. See `docs/claims-audit-2026-11-22.md`.
+
+## PR 16 final review
+
+- [x] Review data quality/completeness, nuclear technical accuracy, UI interactions and writing; reconcile confirmed findings across public views. User requested 2026-11-22; findings and checks in `docs/review-merge-2026-11-22.md`.
+- [x] Show the complete board and family definitions without expansion clicks, provide narrow-screen annual values, and reveal section targets in one action.

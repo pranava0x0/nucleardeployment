@@ -14,10 +14,10 @@ export async function loadData() {
   // One merged view: the race dataset, the financing layer, and the BD layer
   // validate on the same terms. Export names are disjoint across the three
   // modules; the BD module keeps a `bd` prefix on everything to guarantee it.
-  const [data, financing, bd] = await Promise.all([
-    import(DATA_URL.href), import(FINANCING_URL.href), import(BD_URL.href),
+  const [data, financing, bd, fission] = await Promise.all([
+    import(DATA_URL.href), import(FINANCING_URL.href), import(BD_URL.href), import(new URL("../../app/fission-data.ts", import.meta.url).href),
   ]);
-  return { ...data, ...financing, ...bd };
+  return { ...data, ...financing, ...bd, ...fission };
 }
 
 /**
@@ -117,6 +117,21 @@ export function sourcedRecords(data) {
   for (const rung of data.bdMicroPath) {
     push("bd.micro-path", "bd", `${rung.step}: ${rung.evidence}`, rung.source);
   }
+  // Secondary citations are evidence too; do not hide them from source hygiene.
+  for (const [kind, list] of [["claim", data.capacityClaims], ["project", data.projects], ["finance.benchmark", data.costBenchmarks]]) {
+    for (const row of list) for (const link of row.additionalSources ?? []) push(`${kind}.additional`, row.companySlug ?? "financing", link.label, link.url);
+  }
+  for (const buyer of data.bdBuyers) for (const row of buyer.positions) for (const link of row.additionalSources ?? []) push("bd.additional", buyer.slug, link.label, link.url);
+  for (const row of data.companyFinance) for (const link of row.additionalSources ?? []) push("finance.additional", row.companySlug, link.label, link.url);
+  for (const row of data.companyFinance) for (const line of [...row.government, ...row.commercial]) for (const link of line.additionalSources ?? []) push("finance.additional", row.companySlug, link.label, link.url);
+  for (const row of data.fleetStatistics ?? []) push("fleet.statistic", "fleet", `${row.observation_date}: ${row.value} ${row.unit} (${row.metric})`, row.source_url);
+  for (const row of data.fleetMilestones ?? []) push("fleet.milestone", "fleet", row.achievement, row.source_url);
+  for (const row of data.fissionFamilies ?? []) {
+    for (const url of row.source_urls) push("fission.family", row.id, row.definition, url);
+    for (const event of row.examples) push("fission.milestone", row.id, `${event.date}: ${event.achievement}`, event.source_url);
+  }
+  const crosswalk = data.fissionCrosswalk;
+  if (crosswalk) for (const row of [...crosswalk.historical_labels, ...crosswalk.research_configurations, ...crosswalk.cross_cutting_axes]) for (const url of row.source_urls) push("fission.definition", row.id, row.definition, url);
   return rows;
 }
 

@@ -1,9 +1,7 @@
 {
   "url": "https://www.energy.gov/edf/palisades",
-  "fetched_via": "https://www.energy.gov/edf/palisades",
-  "fetched_at": "2026-11-21T22:17:23.328Z",
-  "http_status": 200,
-  "content_type": "text/html; charset=utf-8",
-  "bytes": 6657,
-  "title": "Palisades | Department of Energy"
+  "captured_at": "2026-11-22",
+  "title": "Palisades",
+  "capture_method": "Archived primary-source text; see research manifest",
+  "upstream_snapshot": "data/research/fleet-2026-11-22/doe-palisades-cached.txt"
 }

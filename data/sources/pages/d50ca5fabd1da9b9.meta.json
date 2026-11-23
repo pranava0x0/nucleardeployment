@@ -1,0 +1,7 @@
+{
+  "url": "https://www.eia.gov/totalenergy/data/monthly/",
+  "captured_at": "2026-11-22",
+  "title": "Monthly Energy Review, October 2026",
+  "capture_method": "Archived primary-source text; see research manifest",
+  "upstream_snapshot": "data/research/fleet-2026-11-22/eia-mer-index.txt"
+}

@@ -8,7 +8,7 @@ Run every command from the repository root.
 ## The dataset in one paragraph
 
 Everything ships from `app/data.ts`, `app/financing-data.ts`, and
-`app/bd-data.ts`. There is no database and no fetch at runtime. `data.ts` holds
+`app/bd-data.ts`, plus `app/fission-data.ts` over curated fleet/family research JSON. There is no database and no fetch at runtime. `data.ts` holds
 two layers: the older project records (`projects`, `companies`,
 `federalActions`, `programs`, `capital`) and the race layer (`raceEntrants`,
 `capacityClaims`, `fundingEvents`, `cashPositions`, `proofEvents`,
@@ -19,7 +19,7 @@ two layers: the older project records (`projects`, `companies`,
 positions on a six-rung tier ladder, `bdSectorPlans`, `bdSignals`,
 `bdMicroPath`), every export prefixed `bd` so the merged namespace stays
 disjoint, with its own `bdAsOf` stamp that the sitemap and page carry.
-`scripts/lib/records.mjs` merges all three modules, so every validate / cache /
+`scripts/lib/records.mjs` merges all four modules, so every validate / cache /
 claims / link command covers them; a BD buyer position's `verification` label
 is checked against its source host the same way race records are. BD sector
 plans keep theses, plays, and watch items as labeled site judgment; only
@@ -71,7 +71,7 @@ tell your own breakage from inherited breakage otherwise.
 | `npm run data:llms` | Regenerates `public/llms.txt` from the data. |
 | `npm run data:seo` | Regenerates `public/sitemap.xml`, `public/robots.txt`, and `public/feed.xml` from the data. Run after any record change; `data:check` fails if they drift. |
 | `npm run data:prose` | Reads the built HTML and fails on model-register words or em-dashes. Add `--stats` for sentence length. |
-| `npm run data:check` | validate + llms sync + prose, in one pass. Run before every commit that touches data. |
+| `npm run data:check` | audit + source validation + llms/SEO sync + prose, in one pass. Run before every commit that touches data. |
 | `npm run data:cache` | Fetch every cited source once and store a readable snapshot under `data/sources/`. Add `-- --url <URL>` for a single new record, `-- --stale 90` to re-fetch anything older than 90 days. |
 | `npm run data:claims` | Check each record's figures, dates and names against its own cached source. Local store first, web only with `-- --web`. |
 | `npm run data:news` | Freshness canary for "Latest developments": re-fetches every newsroom this dataset already cites and reports which ones changed since the last run. Detection only, see below. Add `-- --list` to print the derived watch list without fetching anything. |
@@ -132,6 +132,12 @@ Band totals and ratios appear in prose in `README.md` and
 hand-edit: that number went stale four separate times before the test existed.
 
 `public/llms.txt` regenerates with `npm run data:llms`. Do not edit it.
+
+## Fleet, family and claim-audit maintenance
+
+`app/fission-data.ts` reads the curated `fleet-2026-11-22.json` and `families-2026-11-22.json` packets under `data/research/`. Fleet observation dates differ from publication dates. EIA CSV row checks bind series, year, units, geography, frame and converted value; a real quote elsewhere in the file cannot approve a changed figure.
+
+`npm run data:audit` validates the original 139-record worklist against its dispositions and current canonical objects. The original worklist and IDs stay immutable. When a legitimate correction expires an approval, read that claim's actual source and any other visible text relying on it, update the disposition rationale/final identity and canonical fingerprint, and retain source-specific exact excerpts. Do not regenerate approvals just to silence a failing check. The validator separately checks primary fleet/family quotations and EIA conversions. An unchanged snapshot keeps its original capture date.
 
 ## Known quirks
 
@@ -226,3 +232,8 @@ exists to avoid.
   headless fallback in AGENTS.md worked with an already-installed Playwright
   package and cached browser; no installation was needed. Wait for hydration
   before interaction, test tablet first, and verify DOM counts before capture.
+
+- 2026-11-22: A sourcing correction must cover notes, examples, sector advice and methodology as well as labels. Grep the removed terms and every reference to the cited URL. A replacement source can also change the report date; do not carry a date from the previous article into the new record.
+- 2026-11-22: Default-open family details and a flat company board remove discovery clicks. Test visibility, not just DOM counts. Section hash links must reveal a target that is itself a closed disclosure, and must work again after the reader closes it.
+
+- 2026-11-22: An official company post on a general social platform needs verified authorship. Use an exact-URL exception for the archived official Antares post; do not upgrade an entire social host. Other posts retain the conservative default.

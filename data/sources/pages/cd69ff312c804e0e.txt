@@ -1,0 +1,405 @@
+After 6 months in Huntsville our Electrically-Heated Demonstration Unit (EDU) campaign is complete — and we’re sharing a look inside the work that got us here.
+We built the EDU because we believe… | Antares | 10 comments
+Agree & Join LinkedIn
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy.
+Skip to main content
+LinkedIn
+Top Content
+People
+Learning
+Jobs
+Games
+Sign in
+Join now
+Antares
+19,862 followers
+1y
+Report this post
+After 6 months in Huntsville our Electrically-Heated Demonstration Unit (EDU) campaign is complete — and we’re sharing a look inside the work that got us here.
+We built the EDU because we believe you have to build a reactor to design a reactor. This unit is a full-scale, electrically heated stand-in for our core, built to push each heat pipe, interface, and material to real operating temperatures and pressures.
+Over the last several months, the team has run repeated startup and steady-state cycles, pulled the hardware down between tests, inspected every surface, and fed each lesson back into our models. That tight loop — design, build, test, refine — is already shaping the first-of-a-kind reactor we’re bringing to life.
+We use heat pipes to move heat from the core to our heat exchanger. They’re passive, simple, and reliable, which means we can iterate quickly without relying on exotic materials or complex pump systems that slow development.
+This is the first in a series of full-scale prototypes that will take us to a clear goal: achieving criticality on American soil by July 4, 2026, and delivering our first electricity producing demonstration in 2027.
+Come build with us.
+…more
+224
+10 Comments
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+Transcript
+Transcript
+Transcript
+Most important reactors in the history of nuclear is the very first one, Chicago pile one. It was constructed by Enrico Fermi. The military had a need to know if nuclear reactors could work and if they could breed plutonium, and they needed to find out that answer quickly. Americans walked on the moon. The man we split the atom, we put reactors into space, we powered submarines underneath the ocean. We laid a foundation where nuclear energy would enable reliable, resilient, almost limitless power throughout the solar system. We really are seeing unprecedented policy changes that are designed to accelerate privately funded reactor programs getting deployed. The number one reason we started this company is because energy scarcity is hindering America's ability to employ our most critical defense and space systems. America's most critical industries are all starved for electrons right now. Enrico Fermi was enlisted to make a reactor as quickly and as simply as possible, and that you did so using graphite and uranium. The reactor that we're building at enteries is graphite and uranium for exactly the same reasons. At Ontario's we are laser focused on building reactors, not just a reactor. And so we're building the company from the very beginning so that we can mass produce for us. We want to vertically integrate all of the things that are core to our iteration speed as a company. So we make our heat pipes here in Torrance, we machine our own graphite here in Torrance. You know our full scale reactor has hundreds of those. So like we need to be able to produce some very rapidly. So I'm working on getting not only quality good, but also figuring out how to make these faster. So a nuclear reactor is one of the most extreme environments that a material has to survive in. So we really are committed to understanding exactly how a material will behave in the extreme environment from the beginning of its lifetime during transit to the end of its lifetime when it's decommissioned. And it's these improvements in materials and manufacturing processes that has made it. So much easier for us to move quickly, designing a simple reactor that is quick to build and safe to operate. So we partnered with NASA Marshall and Huntsville, AL to test our electrically heated prototype. We call it our Edu Electrical Demonstration Unit. And us putting this together and testing it and validating that is something that we're really looking forward to having so that when it comes to other models later, we can say, hey, this is how this operated on the Edu. Let's bring this back in. And now we can make changes, we can do things, we can make better informed decisions for later whenever we do larger Edus or for our actual full size reactor in the future. You know, we believe you basically have to build a reactor to design A reactor. And so this is the first of multiple electrically heated prototypes that we're going to build to validate. Different aspects of our design. A lot of us are upstairs designing things on computers, but then we are able to come downstairs and talk to people that are actually building the things that we were just designing. You know, if you can name an engineering discipline. Pretty much have to do it to build a reactor. And you know, we've recruited the best across all of those disciplines and brought them together around this really ambitious, inspiring mission. Energy security is national security. We really view ourselves as building the prime of strategic energy. What that really looks like is using nuclear power to enable critical mission capabilities that would be impossible without the use of nuclear power or the introduction of nuclear power is just a 10X improvement over the alternatives. As a company, we are trying to unlock abundant energy for the most pressing problems that DoD has. Yeah, the future of missile defense, space superiority, point to the problems where we can't do something that we want to do. Keep our nation safe if it's constrained by energy, how can we open U the box of what's possible. I truly believe that with our customer focus and our engineering philosophy, we will be first to market and we will be able to rapidly design and build faster than anybody else out there. Nuclear power will be a part of the solution to how we generate the clean, abundant power that we need in this country, but it will also be how we ultimately expand humanities presence throughout the solar system. So you know I believe in our lifetime will have a commercial. Market, commercial economy in space and our ability to harness nuclear power as the energy source for that will dictate how large that market will ultimately be. This is the best time to build a nuclear energy ever.
+Derek Holowasko
+1y
+Report this comment
+God bless Antares🤘🏻
+Like
+Reply
+5 Reactions
+6 Reactions
+Bala C.
+1y
+Report this comment
+Let's go!
+Like
+Reply
+3 Reactions
+4 Reactions
+Ford Johnstone
+1y
+Report this comment
+Enrico Fermi and the Chicago represent 💪
+Like
+Reply
+3 Reactions
+4 Reactions
+Kayla Taylor
+1y
+Report this comment
+This is the kind of momentum the industry needs. Great work, Antares team.
+Like
+Reply
+3 Reactions
+4 Reactions
+Benjamin Sattler
+1y
+Report this comment
+Great testing!
+Like
+Reply
+2 Reactions
+3 Reactions
+Adrian Munoz
+11mo
+Report this comment
+Love seeing this level of hands-on hardware work!
+Full-scale EDU testing with heat pipes and repeated cycles gives a lot of confidence that the 2026 and 2027 milestones are backed by real engineering, not just slideware!
+Like
+Reply
+1 Reaction
+Roger M. Cabiness II
+11mo
+Report this comment
+Well produced and informative package. Short-term and long-term goals clearly defined, challenges acknowledged, and way-ahead inspiring.
+Like
+Reply
+1 Reaction
+Craig Gravelle
+11mo
+Report this comment
+Nice video! Look forward to the progress in space.
+Like
+Reply
+1 Reaction
+Vladimir Ghidirim
+11mo
+Report this comment
+👏
+Like
+Reply
+1 Reaction
+Sean White
+1y
+Report this comment
+Impressive! Shaun Jacobson, MBA, ME Levitte Cox John Eschenberg Eric Knox Mark Ellison
+Like
+Reply
+1 Reaction
+See more comments
+To view or add a comment, sign in
+More Relevant Posts
+Antares
+19,862 followers
+9mo
+Report this post
+The U.S. Department of Energy (DOE) has formally approved our Preliminary Documented Safety Analysis (PDSA) for the Mark-0 reactor—our first demonstration reactor, scheduled to go live before July 4, 2026. Mark-0 will validate fueling operations, reactor controls, and core physics.
+This demonstration is a critical step toward generating electricity from advanced microreactors. Mark-0 uses a full-scale core and the same facility and fuel that will support our next reactor test in 2027.
+The PDSA defines the preliminary safety basis for the reactor, facility, and planned operations, demonstrating that our approach meets DOE expectations at this stage. This approval validates our safety case and establishes a clear pathway to final acceptance as we prepare for fabrication, assembly, and installation.
+Mark-0 will be tested at Idaho National Laboratory in Building 793—now the Reactors and Critical Experiments facility—a site with deep nuclear history. Decades ago, this building housed ML-1, the Army’s first mobile nuclear reactor. Today, it supports the next generation of deployable nuclear power. We find the historical relevance fitting and inspiring, as Antares develops a similar-scale microreactor to meet Army operational and installation needs.
+Since 2024, we’ve worked to establish this facility as an enduring testbed, enabling rapid progress without the need for groundbreaking construction. We’re grateful for our partners at DOE and Idaho National Laboratory, and for leaders like Congressman Mike Simpson who continue to support the American nuclear renaissance.
+…more
+250
+11 Comments
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+To view or add a comment, sign in
+Jordan Bramble
+5mo
+Report this post
+Another really cool aspect of last weeks reactor test. The reactor included an AI designed and manufactured part developed as part of the Genesis Mission!
+Office of the Under Secretary for Science, U.S. Department of Energy
+13,048 followers
+5mo
+Last week, the Antares Mark-0 reactor achieved criticality, marking a historical milestone for American nuclear energy. This is the first reactor to reach criticality in the U.S. Department of Energy (DOE)'s Reactor Pilot Program, established just one year ago in response to President Trump’s executive order directing DOE to fast-track advanced reactor demonstration.
+In support of the Genesis Mission, Antares collaborated with Idaho National Laboratory, Oak Ridge National Laboratory, Argonne National Laboratory, and Sandia National Laboratories to develop an artificial intelligence iterative workflow from design to manufacturing to 3D print the reactor’s neutron sensor bracket, which condensed a multi-month process into weeks.
+This project is a prime example of what the Genesis Mission aims to do: Unite DOE National Labs, industry, and academia to harness artificial intelligence for breakthroughs in energy dominance, discovery science, and national security.
+https://lnkd.in/gEz89BuD
+77
+4 Comments
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+To view or add a comment, sign in
+Antares
+19,862 followers
+10mo
+Report this post
+Later this year, our Mark-0 reactor will go critical—achieving a self-sustaining nuclear chain reaction for the first time.
+We’ll do this under the Department of Energy’s "Authorization Pathway for Nuclear Facilities" (DOE-STD-1271-2025), validating that our facility, full-scale reactor core, TRISO fuel, and control systems operate safely and as designed.
+Critical operations in a full-scale reactor let us perform real fueling operations, validate neutronics models, measure reactivity and shutdown margins, and demonstrate safe, reliable control. This is where analysis meets hardware.
+The milestone isn’t “going critical” for its own sake. We are fissioning uranium in a reactor we designed and built to prove we're ready to start building our first full-power reactor.
+Every data point from Mark-0 reduces uncertainty and puts us one bit closer to generating power and moving electrons for customers in 2027.
+This is how advanced reactors are built: step by step, with discipline, closing the gap between simulation and operation.
+Gateway for Accelerated Innovation in Nuclear (GAIN)
+2,871 followers
+11mo
+What does it mean when a reactor “goes critical”? ⚛️
+It’s not a crisis! It’s a milestone that marks the beginning of a multi-step path toward full operation and commercialization.
+🔗Learn more: https://brnw.ch/21wYCc2
+59
+1 Comment
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+To view or add a comment, sign in
+Jordan Bramble
+9mo
+Edited
+Report this post
+We are turning on a full-scale reactor at zero to low power, with our control system and fuel (made by BWXT) before July 4th of this year. Most importantly, this is a step toward producing electricity at full power in the same facility. There is no more important milestone in reactor development than a true commercial product that produces electricity.
+Now is a good time to discuss our approach to technology maturation milestones and how we've sequenced them to enable true speed to commercial deployment as early as 2028.
+https://lnkd.in/gMCUgRte
+Antares
+antaresindustries.com
+326
+13 Comments
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+To view or add a comment, sign in
+Pulse 2.0
+8,162 followers
+3mo
+Report this post
+Antares Raises $470 Million Series C To Deploy Nuclear Microreactors For Critical Missions: Antares announced it has raised $470 million in Series C funding, co-led by Paradigm and Caffeinated Capital, with participation from Point72 Ventures, Shine Capital, Industrious Ventures, and others. The round, which includes $370 million in equity and $100 million in debt, is intended to accelerate Antares' path from a demonstrated reactor to fielded power systems for defense and space, with initial deployments to U.S. military installations beginning by 2028.
+The post Antares Raises $470 Million Series C To Deploy Nuclear Microreactors For Critical Missions appeared first on Pulse 2.0.
+Antares Raises $470 Million Series C To Deploy Nuclear Microreactors For Critical Missions
+https://pulse2.com
+1
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+To view or add a comment, sign in
+William Madsen
+9mo
+Report this post
+First ever PDSA approved by DOE for an advanced reactor. We have line of sight to being first commercial reactor to achieve a fueled test in over 50 years.
+Antares
+19,862 followers
+9mo
+The U.S. Department of Energy (DOE) has formally approved our Preliminary Documented Safety Analysis (PDSA) for the Mark-0 reactor—our first demonstration reactor, scheduled to go live before July 4, 2026. Mark-0 will validate fueling operations, reactor controls, and core physics.
+This demonstration is a critical step toward generating electricity from advanced microreactors. Mark-0 uses a full-scale core and the same facility and fuel that will support our next reactor test in 2027.
+The PDSA defines the preliminary safety basis for the reactor, facility, and planned operations, demonstrating that our approach meets DOE expectations at this stage. This approval validates our safety case and establishes a clear pathway to final acceptance as we prepare for fabrication, assembly, and installation.
+Mark-0 will be tested at Idaho National Laboratory in Building 793—now the Reactors and Critical Experiments facility—a site with deep nuclear history. Decades ago, this building housed ML-1, the Army’s first mobile nuclear reactor. Today, it supports the next generation of deployable nuclear power. We find the historical relevance fitting and inspiring, as Antares develops a similar-scale microreactor to meet Army operational and installation needs.
+Since 2024, we’ve worked to establish this facility as an enduring testbed, enabling rapid progress without the need for groundbreaking construction. We’re grateful for our partners at DOE and Idaho National Laboratory, and for leaders like Congressman Mike Simpson who continue to support the American nuclear renaissance.
+19
+2 Comments
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+To view or add a comment, sign in
+Jordan Bramble
+7mo
+Report this post
+Today, U.S. Department of Energy (DOE) approved our Documented Safety Analysis (DSA) for the Mark-0 reactor. This was the first-ever approval for a new reactor. This marks the FINAL regulatory approval, confirming the reactor's as-built safety basis. Now, we enter the final phase of readiness, fueling and commissioning the reactor.
+I want to thank the Antares team, Bob Boston, our partners, Idaho National Laboratory, especially Justin Coleman's team and National Reactor Innovation Center | NRIC, and Rian Bahran, Ph.D. Seth Cohen from U.S. Department of Energy (DOE) headquarters.
+Neutrons coming soon!
+Antares
+19,862 followers
+7mo
+The U.S. Department of Energy (DOE) approved our Documented Safety Analysis under DOE standard 1271, a major step in DOE's advanced nuclear reactor authorization pathway.
+This milestone represents the culmination of design, analysis, subsystem development, and integrated testing across the reactor, controls and supporting systems. It confirms that our safety framework meets the standards required under DOE authorization.
+We have entered the DOE Readiness process. After the Readiness Review is complete, we will commence nuclear operations. Rigor, discipline, and collaboration between the Antares team, DOE, Idaho National Laboratory, and National Reactor Innovation Center | NRIC made this milestone possible.
+Onward.
+171
+8 Comments
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+To view or add a comment, sign in
+Brad Rearden
+5mo
+Report this post
+At Antares, we are quickly and safely developing the technology realizations, licensing approaches, and deployment implementations to provide resilient energy solutions for the military and commercial sectors.
+Jeff Waksman
+Principal Deputy Assistant Secretary of the Army for Installations, Energy and Environment
+5mo
+“The DOE Reactor Pilot Program is a critical step necessary to deliver on President Trump’s executive orders,” said Dr. Jeff Waksman, Principal Deputy Assistant Secretary of the Army for Installation, Energy and Environment. “Antares is the first company in that program to achieve criticality. Next, we need to see a reactor generate electricity at full power. Then the Army will take the baton and deliver a full electricity-generating nuclear reactor to a military installation.”
+https://lnkd.in/eVk39Btv
+Antares Achieves Initial Criticality of a Privately Developed Advanced Reactor Under DOE Pilot Program
+lasvegassun.com
+35
+1 Comment
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+To view or add a comment, sign in
+Jordan Bramble
+4mo
+Report this post
+AI and nuclear are in a positive feedback loop. AI will enable autonomously controlled reactors, design iterations, and analysis compressing cost and schedule and nuclear will power the compute itself. The factories will be automated and powered by nuclear, compressing cost and schedule further. Prometheus will be the genesis (pun intended) for all of this. Excited to partner with INL on this $60M phase II award!
+Antares
+19,862 followers
+4mo
+Antares is proud to contribute to Prometheus, which the U.S. Department of Energy (DOE) selected today for a $60 million Phase II award under the Genesis Mission.
+Prometheus applies AI across the full arc of nuclear deployment. We've been part of this work from the start, building an AI workflow with DOE national labs that 3D printed a neutron sensor bracket for Mark-0.
+Read more: https://lnkd.in/eZGRrC5Z
+Genesis Mission funds AI innovation to speed up safe, affordable nuclear energy
+inl.gov
+83
+1 Comment
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+To view or add a comment, sign in
+Brad Rearden
+7mo
+Report this post
+Proud to support the Air Force’s push for resilient energy at Joint Base San Antonio (JBSA) through the Advanced Nuclear Power for Installations (ANPI) program.
+Mission assurance starts with energy assurance, and microreactors offer a reliable, on-site solution that reduces dependence on vulnerable grids while enabling uninterrupted operations.
+This is the core mission of Antares, and we’re excited to work alongside our partners to bring this capability to life.
+Antares
+19,862 followers
+7mo
+The United States Air Force and the Defense Innovation Unit (DIU) have selected Antares to deploy a microreactor at Joint Base San Antonio under the Advanced Nuclear Power for Installations (ANPI) initiative.
+Critical missions depend on resilient power. Our R1 microreactor — sodium heat pipe-cooled, TRISO-fueled, and built to operate for years between refueling without connection to the commercial grid — is purpose-built to deliver it.
+Read more: https://lnkd.in/gAfy_jRu
+39
+1 Comment
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+X
+To view or add a comment, sign in
+19,862 followers
+View Profile
+Follow
+Explore content categories
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+Technology
+Leadership
+Ecommerce
+User Experience
+Show more
+Show less
+LinkedIn
+© 2026
+About
+Accessibility
+User Agreement
+Privacy Policy
+Your California Privacy Choices
+Cookie Policy
+Copyright Policy
+Brand Policy
+Guest Controls
+Community Guidelines
+العربية (Arabic)
+বাংলা (Bangla)
+Čeština (Czech)
+Dansk (Danish)
+Deutsch (German)
+Ελληνικά (Greek)
+English (English)
+Español (Spanish)
+فارسی (Persian)
+Suomi (Finnish)
+Français (French)
+हिंदी (Hindi)
+Magyar (Hungarian)
+Bahasa Indonesia (Indonesian)
+Italiano (Italian)
+עברית (Hebrew)
+日本語 (Japanese)
+한국어 (Korean)
+मराठी (Marathi)
+Bahasa Malaysia (Malay)
+Nederlands (Dutch)
+Norsk (Norwegian)
+ਪੰਜਾਬੀ (Punjabi)
+Polski (Polish)
+Português (Portuguese)
+Română (Romanian)
+Русский (Russian)
+Svenska (Swedish)
+తెలుగు (Telugu)
+ภาษาไทย (Thai)
+Tagalog (Tagalog)
+Türkçe (Turkish)
+Українська (Ukrainian)
+Tiếng Việt (Vietnamese)
+简体中文 (Chinese (Simplified))
+正體中文 (Chinese (Traditional))
+Language
+Sign in to view more content
+Create your free account or sign in to continue your search
+Email or phone
+Password
+Show
+Forgot password?
+Sign in
+Sign in with Email
+or
+New to LinkedIn? Join now
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy.

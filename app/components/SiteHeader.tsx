@@ -28,6 +28,7 @@ export function PageShell({ children }: { children: React.ReactNode }) {
       <span>U.S. nuclear projects, milestones, and next steps.</span>
       <nav aria-label="Footer">
         <Link href="/methodology">Sources &amp; methodology</Link>
+        <Link href="/fission">Fission types &amp; fleet</Link>
         <Link href="/updates">Updates</Link>
         <a href={sitePath("/feed.xml")}>RSS</a>
         <a href={sitePath("/llms.txt")}>llms.txt</a>

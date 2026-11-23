@@ -1,0 +1,455 @@
+U.S. nuclear industry - U.S. Energy Information Administration (EIA)
+Skip to sub-navigation
+U.S. Energy Information Administration - EIA - Independent Statistics and Analysis
+Menu
+Statistics
+Analysis
+Tools
+Education
+News
+Search
+Nuclear explained
+U.S. nuclear industry
+Basics
++Menu
+What is energy?
+Units and conversions
+U.S. energy facts
+Use of energy
+Energy and the environment
+Close
+Also in What is energy?
+What is energy?
+Forms of energy
+Sources of energy
+Laws of energy
+Close
+Also in Units and conversions explained
+Units and conversions
+British thermal units (Btu)
+Degree days
+Close
+Also in U.S. energy facts explained
+Consumption and production
+Imports and exports
+Data and statistics
+Estimated primary energy consumption, 1635–1945
+State and U.S. territory data
+Close
+Also in Use of energy explained
+Use of energy
+Energy use for transportation
+Electric vehicles
+Energy use in homes
+Energy efficiency and conservation
+Close
+Also in Energy and the environment explained
+Energy and the environment
+Greenhouse gases
+Greenhouse gases and the climate
+Where greenhouse gases come from
+Outlook for future emissions
+Recycling and energy
+Nonrenewable sources
+Oil and petroleum products
+Gasoline
+Diesel fuel
+Heating oil
+Close
+Also in Oil and petroleum products explained
+Oil and petroleum products
+Data and statistics
+Refining crude oil
+The refining process
+Inputs and outputs
+Refinery rankings
+Where oil is produced
+Where oil comes from
+Imports and exports
+Offshore oil and natural gas
+Offshore oil and natural gas production
+Use of oil
+Prices and outlook
+Oil and the environment
+Close
+Also in Gasoline explained
+Gasoline
+Octane in depth
+Where our gasoline comes from
+Use of gasoline
+Prices and outlook
+Factors affecting gasoline prices
+Regional price differences
+Price fluctuations
+History of gasoline
+Gasoline and the environment
+Leaded Gasoline
+Close
+Also in Diesel fuel explained
+Diesel fuel
+Where our diesel comes from
+Use of diesel
+Prices and outlook
+Factors affecting diesel prices
+Diesel fuel surcharges
+Diesel and the environment
+Close
+Also in Heating oil explained
+Heating oil
+Where our heating oil comes from
+Use of heating oil
+Prices and outlook
+Factors affecting heating oil prices
+Hydrocarbon Gas Liquids
+Natural gas
+Coal
+Nuclear
+Close
+Also in Hydrocarbon gas liquids explained
+Hydrocarbon gas liquids
+Where do hydrocarbon gas liquids come from?
+Propane production
+Transporting and storing
+Uses of hydrocarbon gas liquids
+Propane consumption
+Imports and exports
+Prices
+Propane prices
+Close
+Also in Natural gas explained
+Natural gas
+Data and statistics
+Delivery and storage
+Natural gas pipelines
+Liquefied natural gas
+Where our natural gas comes from
+Imports and exports
+How much gas is left
+Use of natural gas
+Prices
+Factors affecting natural gas prices
+Natural gas and the environment
+Customer choice programs
+Close
+Also in Coal explained
+Coal
+Data and statistics
+Mining and transportation
+Where our coal comes from
+Imports and exports
+How much coal is left
+Use of coal
+Prices and outlook
+Coal and the environment
+Close
+Also in Nuclear explained
+Nuclear
+Data and statistics
+Nuclear power plants
+Types of reactors
+The nuclear fuel cycle
+Where our uranium comes from
+U.S. nuclear industry
+Nuclear power and the environment
+Renewable sources
+Renewable energy
+Hydropower
+Biomass
+Biofuels
+Close
+Also in Renewable energy explained
+Renewable energy
+Types & usages
+Incentives
+Portfolio standards
+Close
+Also in Hydropower explained
+Hydropower
+Where hydropower is generated
+Hydropower and the environment
+Tidal power
+Wave power
+Ocean thermal energy conversion
+Close
+Also in Biomass explained
+Biomass
+Wood and wood waste
+Waste-to-energy (MSW)
+In depth
+Landfill gas and biogas
+Biomass and the environment
+Close
+Also in Biofuels explained
+Biofuels
+Data and statistics
+Ethanol
+Ethanol Use
+Ethanol Supply
+Biodiesel, renewable diesel, and other biofuels
+Use and supply
+Biofuels and the environment
+Wind
+Geothermal
+Solar
+Close
+Also in Wind explained
+Wind
+Electricity generation from wind
+Where wind power is harnessed
+Types of wind turbines
+History of wind power
+Wind energy and the environment
+Close
+Also in Geothermal explained
+Geothermal
+Where geothermal energy is found
+Use of geothermal energy
+Geothermal power plants
+Geothermal heat pumps
+Geothermal energy and the environment
+Close
+Also in Solar explained
+Solar
+Photovoltaics and electricity
+Where solar is found and used
+Solar thermal power plants
+Solar thermal collectors
+Solar energy and the environment
+Secondary sources
+Electricity
+Hydrogen
+Close
+Also in Electricity explained
+Electricity
+Data and statistics
+The science of electricity
+Magnets and electricity
+Batteries, circuits, and transformers
+Measuring electricity
+How electricity is generated
+Energy storage for electricity generation
+Electricity in the United States
+Generation, capacity, and sales
+Top 10
+Delivery to consumers
+Use of electricity
+Prices and factors affecting prices
+Electricity and the environment
+Close
+Also in Hydrogen explained
+Hydrogen
+Hydrogen production
+Use of hydrogen
+There are 54 nuclear power plants operating in the United States
+Electricity generation from commercial nuclear power plants in the United States began in 1958. As of March 2026, the United States had 94 operating commercial nuclear reactors at 54 nuclear power plants in 28 states.1 The average age of these nuclear reactors is about 44 years old. The oldest operating reactor, Nine Mile Point Unit 1 in New York, began commercial operation in December 1969. The newest reactor to enter commercial service is Unit 4 at the Alvin W. Vogtle Electric Generating Plant in Georgia, which began commercial operation in April 2024.
+The number of operating U.S. nuclear reactors and their combined net summer electricity generation capacity was 98,441 megawatts. Although the number of reactors has declined since 2012, power plant uprates—modifications to increase capacity—at individual nuclear power plants have made it possible for the entire operating nuclear reactor fleet to maintain high capacity-utilization rates (or capacity factors).
+Nuclear reactors are decommissioned after they are retired from commercial service. According to the U.S. Nuclear Regulatory Commission, 19 commercial nuclear power reactors at 15 sites are in various stages of decommissioning.
+did youknow
+?
+On December 2, 1942, under the bleachers of the football stadium at the University of Chicago, Dr. Enrico Fermi initiated the first controlled nuclear chain reaction. The experiment, conducted as part of the wartime atomic bomb program, also led to peaceful uses of the atom, including construction of the first U.S. commercial nuclear power plant at Shippingport, Pennsylvania, in 1958.
+Click to enlarge
+28 states have at least one commercial nuclear reactor
+Most U.S. commercial nuclear power reactors are located east of the Mississippi River. Illinois has more reactors than any state (11 reactors at 6 plants), and at the end of 2025, it had the largest total nuclear net summer electricity generation capacity, at about 11,592 megawatts (MW). The Grand Gulf Nuclear Station in Port Gibson, Mississippi, has the largest U.S. nuclear reactor, with a net summer electricity generation capacity of about 1,400 MW. The two smallest operating reactors, each with a net summer generation capacity of about 520 MW, are at the Prairie Island nuclear plant in Red Wing, Minnesota.
+Click to enlarge
+Many nuclear power plants have more than one reactor
+The term power plant refers to an entire facility. A power plant may contain nuclear as well as non-nuclear electricity generating units. Each nuclear reactor located at a commercial nuclear power plant is unique and has its own personnel and equipment. The reactor provides heat to make steam, which drives a turbine that drives the generator that produces electricity.
+The number of reactors at U.S. nuclear power plants varies. As of March 2026:
+19 U.S. nuclear plants had one reactor
+31 had two reactors
+3 had three reactors
+1 had four reactors
+Some foreign nuclear power plants have as many as eight reactors.
+Nuclear power plants are generally used more intensively than other power plants
+For cost and technical reasons, nuclear power plants are generally used more intensively than coal- or natural gas-fired power plants, as measured by electric generation capacity factor. The average annual capacity factor for nuclear power plants in 2025 was 91%, which was higher than the capacity factors for other types of power plants.
+Recent U.S. nuclear construction activity welcomes another reactor
+The new reactor, Unit 4, reached completion at the Vogtle nuclear plant in Georgia in early 2024. Vogtle is the largest nuclear power plant in the United States, with four reactors and a total 4,530 MW net summer electricity generation capacity.
+The NRC issues license applications for new reactors in various stages of review. The NRC application review process can take up to five years to complete. Under current licensing regulations, a company that seeks to build a new reactor can use reactor designs that the NRC has approved. NRC's design certification is independent of its approval of applications to construct or operate new nuclear power plants. When the applicant uses an NRC-certified reactor design, all safety issues related to the design have been resolved, and the focus of NRC's review is the quality of construction. Construction of a nuclear power plant may take five years or more.
+EIA projects in the Annual Energy Outlook 2026 Counterfactual Baseline case that total nuclear net summer electricity generation capacity will remain relatively stable, slightly increasing by 99,000 MW in 2050. However, the share of nuclear generation declines from 17% in 2025 to between 12% and 15% by 2050.
+1 Data note: Operators of two power plants—Palisades in Michigan and Crane Energy Center (formerly Three Mile Island) in Pennsylvania—planning to bring reactors back online report those reactors as operating but “out of service” rather than planned or retired in EIA’s survey of electricity units.
+Also in Nuclear explained
+Nuclear
+Data and statistics
+Nuclear power plants
+Types of reactors
+The nuclear fuel cycle
+Where our uranium comes from
+U.S. nuclear industry
+Nuclear power and the environment
+Learn more
+U.S. nuclear generation and generation capacity
+Monthly Energy Review—Nuclear energy
+Electric Power Monthly
+U.S. energy consumption by source and sector
+U.S. energy flow
+U.S. electricity flow
+Annual Energy Outlook
+International Energy Outlook
+Despite closures, U.S. nuclear electricity generation in 2018 surpassed its previous peak
+Articles on nuclear
+Also on Energy Explained
+U.S. energy facts
+Electricity in the United States
+Electricity generation, capacity, and sales
+Also on EIA.gov
+How many nuclear power plants are in the United States, and where are they located?
+How old are United States nuclear power plants, and when was the last one built?
+About EIA
+Open Data
+Legacy
+Contact Us
+U.S. Energy Information Administration
+1000 Independence Ave., SW
+Washington, DC 20585
+Policies
+Privacy/Security
+Copyright & Reuse
+Accessibility
+Information Quality
+Freedom of Information Act (FOIA)
+Related Sites
+usa.gov
+U.S. Department of Energy
+Stay Connected
+Facebook
+X
+Youtube
+LinkedIn
+Email Updates
+RSS Feeds
+Statistics
+Analysis
+Tools
+Education
+News
+Petroleum & Other Liquids
+Crude oil, gasoline, heating oil, diesel, propane, and other liquids including biofuels and natural gas liquids.
+Natural Gas
+Exploration and reserves, storage, imports and exports, production, prices, sales.
+Electricity
+Sales, revenue and prices, power plants, fuel use, stocks, generation, trade, demand & emissions.
+Coal
+Reserves, production, prices, employment and productivity, distribution, stocks, imports and exports.
+Nuclear & Uranium
+Uranium fuel, nuclear reactors, generation, spent fuel.
+Renewable & Alternative Fuels
+Includes hydropower, solar, wind, geothermal, biomass and ethanol.
+EIA Survey Forms
+Forms EIA uses to collect energy data including descriptions, links to survey instructions, and additional information.
+Total Energy
+Comprehensive data summaries, comparisons, analysis, and projections integrated across all energy sources.
+Monthly Energy Review
+Consumption & Efficiency
+Energy use in homes, commercial buildings, manufacturing, and transportation.
+Residential Energy Consumption Survey (RECS)
+Commercial Buildings Energy Consumption Survey (CBECS)
+Manufacturing Energy Consumption Survey (MECS)
+U.S. States
+State energy information, including overviews, rankings, data, and analyses.
+International
+International energy information, including overviews, rankings, data, and analyses.
+Environment
+Greenhouse gas data, voluntary reporting, electric power plant emissions.
+U.S. Energy-Related Carbon Dioxide Emissions
+Energy-Related Carbon Dioxide Emissions at the State Level
+Analysis and Projections
+Monthly and yearly energy forecasts, analysis of energy topics, financial analysis, congressional reports.
+Short-Term Energy Outlook
+Annual Energy Outlook
+Special Reports
+Special market analysis and/or data requests.
+EIA-112 Residential Utility Disconnections
+SHIP Act
+Energy & Financial Markets: What Drives Crude Oil Prices?
+International
+International energy analyses.
+Regional Analysis Briefs
+Country Analysis Briefs
+World Oil Transit Chokepoints
+OPEC Revenue
+Global Energy Security Data
+Data Tools, Apps, & Maps
+Tools to customize searches, view specific data sets, study detailed documentation, and access time-series data.
+Open Data
+EIA's free and open data available as API, Excel add-in, bulk files, and widgets
+EIA Beta
+Come test out some of the products still in development and let us know what you think!
+Open Source Code
+EIA's open source code, available on GitHub.
+All Reports & Products
+Email Updates
+Sign up for email subscriptions to receive messages about specific EIA products
+RSS Feeds
+Subscribe to feeds for updates on EIA products including Today in Energy and What's New.
+Follow us. . .
+A-Z Index
+A |
+B |
+C |
+D |
+E |
+F |
+G |
+H |
+I |
+J |
+K |
+L |
+M |
+N |
+O |
+P |
+Q |
+R |
+S |
+T |
+U |
+V |
+W |
+XYZ
+Energy Explained
+What is Energy?
+Units & Calculators
+U.S. Energy Facts
+Use of Energy
+Energy & Environment
+Petroleum
+Hydrocarbon Gas Liquids
+Natural Gas
+Coal
+Nuclear
+Electricity
+Hydrogen
+Hydropower
+Biofuels
+Biomass
+Wind
+Geothermal
+Solar
+For Teachers
+Lesson plans, science fair experiments, field trips, teacher guide, and career corner.
+Glossary
+FAQs
+Coal
+Conversion & Equivalents
+Oil/Petroleum
+Diesel
+Electricity
+Environment
+Gasoline
+General Energy
+Natural Gas
+Nuclear
+Prices
+Renewables
+What's New?
+Global Energy Security Data
+Nov 16, 2026
+Wholesale Electricity Market Data
+Nov 12, 2026
+Monthly Densified Biomass Fuel Report
+Nov 12, 2026
+Press Room
+Press Releases
+Congressional Testimony
+Presentations
+Events

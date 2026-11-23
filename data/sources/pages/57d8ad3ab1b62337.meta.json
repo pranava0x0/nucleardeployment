@@ -1,0 +1,7 @@
+{
+  "url": "https://gain.inl.gov/content/uploads/4/2024/11/DOE-Advanced-Nuclear-Liftoff-Report.pdf",
+  "captured_at": "2026-11-22",
+  "title": "Pathways to Commercial Liftoff: Advanced Nuclear (September 2024 update)",
+  "capture_method": "curl download + PyMuPDF text extraction",
+  "upstream_snapshot": "data/sources/reports/doe-liftoff-advanced-nuclear-2024.txt"
+}

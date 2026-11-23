@@ -160,7 +160,7 @@ const HEDGES = ["generally", "typically", "in most cases", "arguably", "somewhat
 const data = await loadData();
 // The financing page was missing from this sweep from its first release; it
 // and the BD page are listed now so every layer's prose gets linted.
-const paths = ["/", "/updates", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map", "/financing", "/bd",
+const paths = ["/", "/fission", "/updates", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map", "/financing", "/bd",
   ...data.raceEntrants.map((entrant) => `/companies/${entrant.companySlug}`)];
 
 const worker = (await import(new URL("../dist/server/index.js", import.meta.url).href + `?t=${Math.random()}`)).default;

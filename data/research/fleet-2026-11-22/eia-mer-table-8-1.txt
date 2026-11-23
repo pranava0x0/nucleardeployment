@@ -1,0 +1,418 @@
+--- PAGE 1 ---
+ 
+ 
+U. S. Energy Information Administration / Monthly Energy Review October 2026 
+197 
+ 
+ 
+Table 8.1 
+Nuclear Energy Overview 
+Total 
+Net Summer 
+Operable 
+Unitsa,b 
+Capacity of 
+Operable Unitsb,c 
+Number 
+Million Kilowatts 
+1957 Total .......................... 
+1 
+0.055 
+1960 Total .......................... 
+3 
+.411 
+1965 Total .......................... 
+13 
+.793 
+1970 Total .......................... 
+20 
+7.004 
+1975 Total .......................... 
+57 
+37.267 
+1980 Total .......................... 
+71 
+51.810 
+1985 Total .......................... 
+96 
+79.397 
+1990 Total .......................... 
+112 
+99.624 
+1995 Total .......................... 
+109 
+99.515 
+2000 Total .......................... 
+104 
+97.860 
+2005 Total .......................... 
+104 
+99.988 
+2010 Total .......................... 
+104 
+101.167 
+2011 Total .......................... 
+104 
+C 101.419 
+2012 Total .......................... 
+104 
+101.885 
+2013 Total .......................... 
+100 
+99.240 
+2014 Total .......................... 
+99 
+98.569 
+2015 Total .......................... 
+99 
+98.672 
+2016 Total .......................... 
+99 
+99.565 
+2017 Total .......................... 
+99 
+99.629 
+2018 Total .......................... 
+98 
+99.433 
+2019 Total .......................... 
+96 
+98.119 
+2020 Total .......................... 
+94 
+96.501 
+2021 Total .......................... 
+93 
+95.546 
+2022 Total .......................... 
+92 
+94.659 
+2023 Total .......................... 
+93 
+95.712 
+2024 January ...................... 
+93 
+95.706 
+February .................... 
+93 
+95.706 
+March ......................... 
+93 
+95.706 
+April ........................... 
+93 
+96.820 
+May ............................ 
+94 
+96.820 
+June ........................... 
+94 
+96.820 
+July ............................ 
+94 
+96.820 
+August ....................... 
+94 
+96.820 
+September ................. 
+94 
+96.820 
+October ...................... 
+94 
+96.820 
+November .................. 
+94 
+96.820 
+December .................. 
+94 
+96.820 
+Total .......................... 
+94 
+96.820 
+2025 January ...................... 
+94 
+96.834 
+February .................... 
+94 
+96.834 
+March ......................... 
+94 
+96.834 
+April ........................... 
+94 
+96.834 
+May ............................ 
+94 
+96.880 
+June ........................... 
+94 
+96.880 
+July ............................ 
+94 
+96.880 
+August ....................... 
+94 
+96.880 
+September ................. 
+94 
+96.880 
+October ...................... 
+94 
+96.880 
+November .................. 
+94 
+96.880 
+December .................. 
+94 
+96.880 
+Total .......................... 
+94 
+96.880 
+2026 January ...................... 
+94 
+96.867 
+February .................... 
+94 
+96.870 
+March ......................... 
+94 
+96.853 
+April ........................... 
+94 
+96.853 
+May ............................ 
+94 
+96.853 
+June ........................... 
+94 
+96.852 
+July ............................ 
+94 
+96.852 
+7-Month Total ........... 
+94 
+96.852 
+2025 7-Month Total ........... 
+94 
+96.880 
+2024 7-Month Total ........... 
+94 
+96.820 
+a Total of nuclear generating units holding full-power licenses, or equivalent 
+permission to operate, at end of period. See Note 1, "Operable Nuclear Reactors," 
+at end of section. 
+b At end of period. 
+c For the definition of "Net Summer Capacity," see Note 2, "Nuclear Capacity," 
+at end of section. Beginning in 2011, monthly capacity values are estimated in two 
+steps: 1) uprates and derates reported on Form EIA-860M are added to specific 
+months; and 2) the difference between the resulting year-end capacity (from data 
+reported on Form EIA-860M) and final capacity (reported on Form EIA-860) is 
+allocated to the month of January. 
+d Beginning in 2008, capacity factor data are calculated using a new 
+Nuclear Share 
+Nuclear Electricity 
+Net Generation 
+of Electricity 
+Net Generation 
+Capacity Factord 
+Million Kilowatthours 
+Percent 
+10 
+(s) 
+NA 
+518 
+.1 
+NA 
+3,657 
+.3 
+NA 
+21,804 
+1.4 
+NA 
+172,505 
+9.0 
+55.9 
+251,116 
+11.0 
+56.3 
+383,691 
+15.5 
+58.0 
+576,862 
+19.0 
+66.0 
+673,402 
+20.1 
+77.4 
+753,893 
+19.8 
+88.1 
+781,986 
+19.3 
+89.3 
+806,968 
+19.6 
+91.1 
+790,204 
+19.3 
+89.1 
+769,331 
+19.0 
+86.6 
+789,016 
+19.4 
+90.8 
+797,166 
+19.5 
+91.7 
+797,178 
+19.5 
+92.3 
+805,694 
+19.8 
+92.3 
+804,950 
+19.9 
+92.3 
+807,084 
+19.3 
+92.5 
+809,409 
+19.6 
+93.4 
+789,879 
+19.7 
+92.4 
+n9,645 
+19.0 
+92.8 
+n1,537 
+18.2 
+92.7 
+n4,873 
+18.5 
+93.0 
+69,080 
+18.1 
+95.6 
+64,584 
+20.0 
+95.4 
+63,346 
+19.5 
+87.5 
+57,542 
+18.5 
+81.8 
+64,973 
+18.6 
+88.8 
+68,192 
+17.4 
+96.3 
+69,851 
+16.3 
+95.4 
+69,760 
+16.5 
+95.3 
+62,660 
+17.4 
+88.5 
+58,773 
+17.6 
+80.3 
+61,904 
+19.2 
+87.4 
+71,200 
+19.7 
+97.3 
+781,865 
+18.1 
+90.8 
+71,739 
+17.8 
+98.0 
+61,829 
+18.3 
+93.5 
+62,457 
+18.7 
+85.3 
+57,893 
+18.1 
+81.7 
+62,145 
+18.1 
+84.9 
+66,222 
+16.8 
+93.4 
+70,781 
+15.9 
+96.6 
+70,705 
+16.8 
+96.5 
+65,458 
+17.8 
+92.3 
+59,222 
+17.2 
+80.9 
+63,809 
+19.0 
+90.0 
+72,521 
+19.0 
+99.0 
+784,781 
+17.7 
+91.0 
+73,251 
+18.3 
+100.0 
+62,384 
+18.2 
+94.3 
+62,096 
+17.8 
+84.8 
+57,373 
+17.3 
+81.0 
+65,001 
+18.3 
+88.8 
+68,786 
+17.2 
+97.1 
+71,172 
+15.7 
+97.2 
+460,063 
+17.5 
+91.9 
+453,065 
+17.6 
+90.5 
+457,567 
+18.2 
+91.5 
+methodology. For an explanation of the method of calculating the capacity factor, 
+see Note 2, "Nuclear Capacity," at end of section. 
+E=Estimate. NA=Not available. (s)=Less than 0.05%. 
+Notes: 
+• 
+For a discussion of nuclear reactor unit coverage, see Note 1, 
+"Operable Nuclear Reactors," at end of section. 
+• 
+Nuclear electricity net 
+generation totals may not equal sum of components due to independent rounding. 
+• Geographic coverage is the 50 states and the District of Columbia. 
+Web Page: 
+See http://www.eia.gov/totalenergy/data/monthly/#nuclear (Excel 
+and CSV files) for all available annual data beginning in 1957 and monthly data 
+beginning in 1973. 
+Sources: See end of section. 

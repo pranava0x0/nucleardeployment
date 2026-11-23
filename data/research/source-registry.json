@@ -1313,6 +1313,4280 @@
         "states": []
       },
       "notes": "Exact supported claims and limitations recorded in refresh-2026-11-21.json."
+    },
+    {
+      "id": "audit-2026-11-22-ec8a15c8bd4ea505",
+      "url": "https://www.terrapower.com/TerraPower-Commences-Construction-on-Americas-First-Utility-Scale-Advanced-Nuclear-Power-Plant",
+      "title": "TerraPower Commences Construction on America’s First Utility-Scale Advanced Nuclear Power Plant",
+      "publisher": "terrapower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrapower"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-4c664b3af385346e",
+      "url": "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse",
+      "title": "Oklo Aurora Powerhouse | Nuclear Regulatory Commission",
+      "publisher": "nrc.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-b8bd39ad0d5561e2",
+      "url": "https://www.federalregister.gov/documents/2026/02/27/2026-03943/smr-llc-pioneer-units-1-and-2-phased-construction-permit-application-limited-work-authorization",
+      "title": "SMR, LLC; Pioneer Units 1 and 2; Phased Construction Permit Application-Limited Work Authorization",
+      "publisher": "federalregister.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "holtec"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-a14eacc514dfc0fc",
+      "url": "https://npre.illinois.edu/news/stories/imdp-cpa",
+      "title": "Illinois Microreactor Demonstration Project submits construction permit application, marking major milestone in deployment of research reactor | Nuclear, Plasma & Radiological Engineering | Illinois",
+      "publisher": "npre.illinois.edu",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nano-nuclear"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-4a6ce4c0c4bc1606",
+      "url": "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
+      "title": "Radiant signs contract on microreactors for the military -- ANS / Nuclear Newswire",
+      "publisher": "ans.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "radiant-industries"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-443eb6acfc203215",
+      "url": "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design",
+      "title": "NRC Approves NuScale Power’s Uprated Small Modular Reactor Design | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nuscale"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ad630b2409886e5c",
+      "url": "https://www.ans.org/news/2026-06-23/article-8139/terrestrial-energy-and-texas-am-reach-agreement-on-reactor-siting/",
+      "title": "Terrestrial Energy and Texas A&M reach agreement on reactor siting -- ANS / Nuclear Newswire",
+      "publisher": "ans.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrestrial-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ebf8b5a4120c3e9a",
+      "url": "https://rellis.tamus.edu/2025/10/15/last-energy-texas-am-collaborate-to-launch-microreactor-pilot-at-texas-am-rellis/",
+      "title": "Last Energy, Texas A&M Collaborate to Launch Microreactor Pilot at Texas A&M-RELLIS - Texas A&M RELLIS Technology & Innovation Campus",
+      "publisher": "rellis.tamus.edu",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "last-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-3addb402090ccd9d",
+      "url": "https://www.world-nuclear-news.org/articles/deep-fission-begins-drilling-first-data-acquisition-well",
+      "title": "Deep Fission begins drilling first data acquisition well - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "deep-fission"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-88d34912dc2bf5ba",
+      "url": "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality",
+      "title": "Department of Energy Celebrates Second Advanced Reactor Achieving Criticality | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "valar-atomics"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9562edd78b46b6f5",
+      "url": "https://www.energy.gov/ne/articles/department-defense-breaks-ground-project-pele-microreactor",
+      "title": "Department of Defense Breaks Ground on Project Pele Microreactor | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bwxt"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-0ad293da659d67e6",
+      "url": "https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality",
+      "title": "Department of Energy Celebrates First Advanced Reactor Criticality | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "antares-nuclear"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-246dd6427b9555e8",
+      "url": "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx",
+      "title": "Oklo Breaks Ground on First Aurora Powerhouse | Oklo",
+      "publisher": "oklo.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f8bbad771c81de3c",
+      "url": "https://www.utilitydive.com/news/washington-nuclear-facility-smrs-cascade-amazon-modular/802967/",
+      "title": "Washington nuclear facility will deploy 12 Amazon-funded SMRs | Utility Dive",
+      "publisher": "utilitydive.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "x-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-b9b2009161ff8e15",
+      "url": "https://www.switch.com/oklo-and-switch-form-landmark-strategic-relationship/",
+      "title": "Oklo and Switch Form Landmark Strategic Relationship to Deploy 12 Gigawatts of Advanced Nuclear Power",
+      "publisher": "switch.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-38e2dc3326277a1b",
+      "url": "https://oklo.com/newsroom/news-details/2026/Oklo-Meta-Announce-Agreement-in-Support-of-1-2-GW-Nuclear-Energy-Development-in-Southern-Ohio/default.aspx",
+      "title": "Oklo, Meta Announce Agreement in Support of 1.2 GW Nuclear Energy Development in Southern Ohio | Oklo",
+      "publisher": "oklo.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-af32f1470f091d30",
+      "url": "https://www.nucnet.org/news/oklo-signs-nuclear-pre-agreement-with-data-company-equinix-4-2-2024",
+      "title": "Equinix · letter of intent with a $25M prepayment and a right of first refusal",
+      "publisher": "nucnet.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-d3890f688a2ce12f",
+      "url": "https://oklo.com/newsroom/news-details/2024/Oklo-Signs-LOI-to-Supply-50-Megawatts-of-Power-to-Diamondback-Energy/default.aspx",
+      "title": "Oklo Signs LOI to Supply 50 Megawatts of Power to Diamondback Energy | Oklo",
+      "publisher": "oklo.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-422ebb32e3fdab4d",
+      "url": "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
+      "title": "Air Force issues notice to partner with Oklo on microreactor deployment in Alaska -- ANS / Nuclear Newswire",
+      "publisher": "ans.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-319dd11a0d657da3",
+      "url": "https://www.nuscalepower.com/press-releases/2025/nuscale-proudly-supports-tva-and-entra1-energy-announcement-of-landmark-6-gigawatt-small-module-reactor-smr-deployment-program",
+      "title": "NuScale Proudly Supports TVA and ENTRA1 Energy Announcement of Landmark 6-Gigawatt Small Module Reactor (SMR) Deployment Program",
+      "publisher": "nuscalepower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nuscale"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-b6495a1c09624bae",
+      "url": "https://www.ans.org/news/article-6480/amazon-investing-in-smrs-to-deploy-5gw-by-2039/",
+      "title": "Amazon investing in SMRs to deploy 5 GW by 2039 -- ANS / Nuclear Newswire",
+      "publisher": "ans.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "x-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-db3724234f383ee6",
+      "url": "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/",
+      "title": "Terrestrial Energy and Riot Platforms Launch Collaboration to Develop Nuclear-Powered Large-Scale Data Center Projects | Riot Platforms",
+      "publisher": "riotplatforms.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrestrial-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-6018067f06b84344",
+      "url": "https://www.terrapower.com/terrapower-announces-deal-with-meta",
+      "title": "TerraPower and Meta Enter Agreement for 8 Natrium® Advanced Nuclear Plants",
+      "publisher": "terrapower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrapower"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-5ad5b8a029c2e3cd",
+      "url": "https://www.terrapower.com/pacificorp-forecasts-need-for-two-additional-natrium-reactors-in-new-regulatory-filing/",
+      "title": "PacifiCorp Forecasts Need for Two Additional Natrium Reactors in New Regulatory Filing",
+      "publisher": "terrapower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrapower"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9c60f6ff40add39e",
+      "url": "https://www.ans.org/news/2026-03-25/article-7878/new-us-bwrx300-projects-get-japanese-investment/",
+      "title": "New U.S. BWRX-300 projects get Japanese investment -- ANS / Nuclear Newswire",
+      "publisher": "ans.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "gev-hitachi"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-77d65230116b2bfc",
+      "url": "https://www.powermag.com/holtec-targets-2036-for-1-36-gw-smr-300-project-at-oyster-creek/",
+      "title": "Holtec Targets 2036 for 1.36-GW SMR-300 Project at Oyster Creek",
+      "publisher": "powermag.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "holtec"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f4345e1598af272b",
+      "url": "https://www.manilatimes.net/2026/08/04/tmt-newswire/globenewswire/holtec-entergy-and-hyundai-ec-sign-moa-to-evaluate-potential-smr-300-projects-in-gulf-south-region/2397924",
+      "title": "Holtec, Entergy and Hyundai E&C Sign MOA to Evaluate Potential SMR-300 Projects in Gulf South Region\n| The Manila Times",
+      "publisher": "manilatimes.net",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "holtec"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-08c34aabbae8f6c1",
+      "url": "https://www.world-nuclear-news.org/articles/deep-fission-and-endeavour-announce-strategic-partnership",
+      "title": "Deep Fission and Endeavour announce strategic partnership - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "deep-fission"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-1487847e9c7759cf",
+      "url": "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/",
+      "title": "Last Energy plans to deploy 600 MW of microreactors to power Texas data centers | Utility Dive",
+      "publisher": "utilitydive.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "last-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-af3298d0714bc2c9",
+      "url": "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia",
+      "title": "Announcing our $1B Series B Led By Sequoia | Valar Atomics",
+      "publisher": "valaratomics.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "valar-atomics"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-6c3101e86e05b83a",
+      "url": "https://www.tatachemicals.com/upload/content_pdf/BWXT-Tata-LOI-12-December-2024.pdf",
+      "title": "Tata Chemicals · letter of intent for up to eight BANR units in Wyoming; capacity not disclosed",
+      "publisher": "tatachemicals.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bwxt"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-3a5b8931025efde5",
+      "url": "https://www.globenewswire.com/news-release/2026/07/30/3336005/0/en/crusoe-and-aalo-atomics-form-strategic-partnership-with-goal-of-deploying-first-nuclear-powered-ai-factory.html",
+      "title": "Crusoe · strategic partnership to power one modular data centre at INL in 2027; capacity not disclosed",
+      "publisher": "globenewswire.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "aalo-atomics"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-674b590d0c5a40a2",
+      "url": "https://www.terrapower.com/terrapower-announces-650-million-fundraise",
+      "title": "TerraPower Announces $650 Million Fundraise",
+      "publisher": "terrapower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrapower"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-6f866373430e5480",
+      "url": "https://www.terrapower.com/fundraise",
+      "title": "TerraPower Announces $750 Million Secured in Fundraise",
+      "publisher": "terrapower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrapower"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-71a3b47f32e71c11",
+      "url": "https://www.tipranks.com/news/oklo-is-about-to-report-q2-earnings-heres-what-to-expect-from-the-nuclear-energy-stock",
+      "title": "Up to $1B at-the-market program, replacing a prior program that placed ~$1.5B gross",
+      "publisher": "tipranks.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-e6e6a85d97a5b44e",
+      "url": "https://www.powermag.com/doe-kairos-unveil-milestone-based-funding-agreement-for-advanced-nuclear-demonstration-project/",
+      "title": "DOE, Kairos Unveil Milestone-Based Funding Agreement for Advanced Nuclear Demonstration Project",
+      "publisher": "powermag.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "kairos-power"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c4fc23f9e15e113b",
+      "url": "https://www.nucnet.org/news/oak-ridge-lab-signs-usd27m-deal-with-kairos-power-for-advanced-reactor-development-2-5-2026",
+      "title": "$27M agreement",
+      "publisher": "nucnet.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "kairos-power"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-7e32bfe9a668e856",
+      "url": "https://techcrunch.com/2026/04/24/x-energy-stock-pops-27-on-first-day-of-trading-following-upsized-ipo/",
+      "title": "X-energy stock pops 27% on first day of trading following upsized IPO | TechCrunch",
+      "publisher": "techcrunch.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "x-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-89f7d125e6da06f4",
+      "url": "https://x-energy.com/news/x-energy-closes-oversubscribed-700-million-series-d-financing-round-to-continue-expansion-to-meet-global-energy-demand/",
+      "title": "X-energy Closes Oversubscribed $700 Million Series D Financing Round to Continue Expansion to Meet Global Energy Demand - X-energy",
+      "publisher": "x-energy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "x-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-dda62134745fdc57",
+      "url": "https://x-energy.com/news/x-energy-closes-upsized-700-million-series-c-1-financing-round-to-accelerate-the-development-of-advanced-small-modular-nuclear-technology/",
+      "title": "X-energy Closes Upsized $700 Million Series C-1 Financing Round to Accelerate the Development of Advanced Small Modular Nuclear Technology - X-energy",
+      "publisher": "x-energy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "x-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-2b1530e91508ecb4",
+      "url": "https://holtecinternational.com/hh-40-24/",
+      "title": "Holtec Receives Coveted “Tier 1 First Mover Award” from the USDOE to Accelerate Deployment of its Dual-Unit SMR-300 Plant at the Company’s Palisades Energy Site - Holtec International",
+      "publisher": "holtecinternational.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "holtec"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-7a430bdaf384935d",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002104277/000119312526301023/d40440ds1.htm",
+      "title": "Public S-1 filed; terms not priced",
+      "publisher": "sec.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "holtec"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-d0ba2a5e54caa373",
+      "url": "https://www.energy.gov/edf/palisades",
+      "title": "Palisades",
+      "publisher": "U.S. Department of Energy",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "holtec"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-b6f8ef4e376a6495",
+      "url": "https://www.nuscalepower.com/press-releases/2022/nuscale-completes-merger-with-spring-valley",
+      "title": "NuScale Power Completes Merger with Spring Valley Acquisition Corp. to Create World’s First and Only Publicly Traded Provider of Transformational Small Modular Nuclear Reactor Technology",
+      "publisher": "nuscalepower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nuscale"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-0b530c5e19d4c61b",
+      "url": "https://www.barchart.com/story/news/35743041/terrestrial-energy-inc-completes-business-combination-with-hcm-ii-acquisition-corp",
+      "title": "Over $292M gross including a $50M PIPE",
+      "publisher": "barchart.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrestrial-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-0093ba816400cb65",
+      "url": "https://info.westinghousenuclear.com/news/westinghouse-announces-department-of-energy-partnership-to-jumpstart-large-scale-nuclear-supply-chain",
+      "title": "Westinghouse Announces Department of Energy Partnership to Jumpstart Large-Scale Nuclear Supply Chain",
+      "publisher": "info.westinghousenuclear.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "westinghouse"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9ffd92ad72e9efd5",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-31/nuclear-tech-firm-westinghouse-files-confidentially-for-ipo",
+      "title": "Confidential draft S-1 filed; share count, price and venue not disclosed",
+      "publisher": "bloomberg.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "westinghouse"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-cdb38eaf2c069cd3",
+      "url": "https://www.businesswire.com/news/home/20250820559252/en/Aalo-Atomics-Secures-$100-Million-in-Series-B-Funding-to-Build-Modular-Nuclear-Plants-Purpose-Built-for-Powering-AI-Data-Centers",
+      "title": "$100M Series B",
+      "publisher": "businesswire.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "aalo-atomics"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f71a752f3d93f206",
+      "url": "https://www.bloomberg.com/news/articles/2025-12-17/nuclear-startup-radiant-raises-300-million-for-small-reactors",
+      "title": "$300M+ Series D at a valuation above $1.8B",
+      "publisher": "bloomberg.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "radiant-industries"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-e73ab482b802c374",
+      "url": "https://www.radiantnuclear.com/blog/series-c-close/",
+      "title": "$165M Series C",
+      "publisher": "radiantnuclear.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "radiant-industries"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-68dc6814bd7bbd95",
+      "url": "https://theaiworld.org/news/valar-atomics-raises-450m-to-power-ai-data-centres",
+      "title": "Valar Atomics Raises $450M to Power AI Data Centres",
+      "publisher": "theaiworld.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "valar-atomics"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ed96ecaab5132b0e",
+      "url": "https://techfundingnews.com/a-high-school-dropouts-nuclear-startup-just-landed-1b-from-sequoia-at-a-6b-valuation/",
+      "title": "A high school dropout&#039;s nuclear startup just landed $1B from Sequoia at a $6B valuation — TFN",
+      "publisher": "techfundingnews.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "valar-atomics"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-63aafa774a7b1238",
+      "url": "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/",
+      "title": "Antares fetches $470M to move on military base reactor push - Washington Technology",
+      "publisher": "washingtontechnology.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "antares-nuclear"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-86b5b149d93aeed1",
+      "url": "https://www.businesswire.com/news/home/20251202017776/en/Antares-Raises-$96-Million-in-Series-B-Funding-to-Accelerate-Nuclear-Microreactor-Development",
+      "title": "$71M equity within a $96M Series B",
+      "publisher": "businesswire.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "antares-nuclear"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c7a01718f12b4a14",
+      "url": "https://www.gurufocus.com/news/8922229/deep-fission-fisn-prices-ipo-at-16-raising-40-million",
+      "title": "$40M gross at $16/share, scaled back from a ~$156M roadshow target",
+      "publisher": "gurufocus.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "deep-fission"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-d1a8a6dea8f28cf3",
+      "url": "https://techcrunch.com/2025/12/16/nuclear-startup-last-energy-raises-100m-for-its-steel-encased-micro-reactor/",
+      "title": "Nuclear startup Last Energy raises $100M for its steel-encased micro reactor | TechCrunch",
+      "publisher": "techcrunch.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "last-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-cd7ca7d5fcb1ae7a",
+      "url": "https://www.nucnet.org/news/us-startup-last-energy-raises-usd40-million-for-ambitious-microreactor-project-8-5-2024",
+      "title": "$40M Series B",
+      "publisher": "nucnet.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "last-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-282bb19c4d0c3d67",
+      "url": "https://www.premieralts.com/companies/deployable-energy",
+      "title": "~$1.7M raised to date alongside substantial founder self-funding",
+      "publisher": "premieralts.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "deployable-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ee83465c45d45c73",
+      "url": "https://www.globenewswire.com/news-release/2025/09/09/3147107/0/en/FOR-IMMEDIATE-RELEASE-UPDATE-NANO-Nuclear-Awarded-AFWERX-Direct-to-Phase-II-Contract-for-KRONOS-MMR-RDT-E-at-Joint-Base-Anacostia-Bolling.html",
+      "title": "~$1.25M AFWERX Direct-to-Phase-II contract, a feasibility study rather than a unit order",
+      "publisher": "globenewswire.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nano-nuclear"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f6a9718febfb1dcc",
+      "url": "https://www.neimagazine.com/news/bwxt-awarded-second-contract-to-evaluate-microreactor-for-wyoming/",
+      "title": "BWXT awarded second contract to evaluate microreactor for Wyoming - Nuclear Engineering International",
+      "publisher": "neimagazine.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bwxt"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ce7876516b36e6ec",
+      "url": "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-first-quarter-2026-results",
+      "title": "NuScale Power Reports First Quarter 2026 Results",
+      "publisher": "nuscalepower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nuscale"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c9ed7c387f68c591",
+      "url": "https://x-energy.com/news/x-energy-reports-first-quarter-2026-results/",
+      "title": "X-energy Reports First Quarter 2026 Results | X-Energy News",
+      "publisher": "x-energy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "x-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-13366e80d61e82e6",
+      "url": "https://www.stocktitan.net/news/NNE/nano-nuclear-reports-q1-fy-2026-financial-results-and-provides-awkjhq74zjnt.html",
+      "title": "NANO Nuclear Q1 2026 results; cash $577M after raise | NNE Stock News",
+      "publisher": "stocktitan.net",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nano-nuclear"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-e99bce68e50b1ac3",
+      "url": "https://www.businesswire.com/news/home/20260514188075/en/Terrestrial-Energy-Reports-First-Quarter-2026-Results",
+      "title": "$289.9M cash and investments",
+      "publisher": "businesswire.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrestrial-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f68abb8c2c225454",
+      "url": "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors",
+      "title": "Department of Energy and U.S. Army reach a major milestone on advanced microreactors &#124; Article &#124; The United States Army",
+      "publisher": "army.mil",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "antares-nuclear"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f1b960f1cd9ace8d",
+      "url": "https://oklo.com/newsroom/news-details/2026/Oklos-Groves-Reactor-Achieves-First-Criticality-in-Under-a-Year/default.aspx",
+      "title": "Oklo's Groves Reactor Achieves First Criticality in Under a Year | Oklo",
+      "publisher": "oklo.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-60c79d6f68b5f27f",
+      "url": "https://www.energy.gov/nepa/articles/cx-271014-groves-1-project",
+      "title": "CX-271014: Groves-1 Project | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-d7e1b6d9a04497ec",
+      "url": "https://www.nrc.gov/node/2156776",
+      "title": "NRC Issues Construction Permit to US SFR Owner | Nuclear Regulatory Commission",
+      "publisher": "nrc.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrapower"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-1de74fff12531fc0",
+      "url": "https://www.kairospower.com/updates/kairos-power-breaks-ground-on-hermes-2-demonstration-plant",
+      "title": "Kairos Power Breaks Ground on Hermes 2 Demonstration Plant | Kairos Power",
+      "publisher": "kairospower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "kairos-power"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f25399e374249bd6",
+      "url": "https://public-inspection.federalregister.gov/2026-09880.pdf?1778849121=",
+      "title": "nrc-hermes-deadline-2026",
+      "publisher": "public-inspection.federalregister.gov",
+      "published_at": "2026-05-18",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "kairos-power"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-5152bae6d06807c9",
+      "url": "https://www.energy.gov/ne/articles/us-department-energy-signs-oklo-fuel-fabrication-facility-design-concept",
+      "title": "U.S. Department of Energy Signs Off on Oklo Fuel Fabrication Facility Design Concept | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-7dcc5fcd4a9d82cf",
+      "url": "https://oklo.com/newsroom/news-details/2025/Oklo-and-Los-Alamos-National-Lab-Conduct-Fast-Spectrum-Plutonium-Criticality-Experiment/default.aspx",
+      "title": "Oklo and Los Alamos National Lab Conduct Fast Spectrum Plutonium Criticality Experiment | Oklo",
+      "publisher": "oklo.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-d6e354305862ae7f",
+      "url": "https://oklo.com/newsroom/news-details/2026/Oklo-Receives-U-S--Department-of-Energy-Startup-Authorization-for-Groves-Reactor-Clearing-Way-for-Fuel-Loading-and-First-Criticality/default.aspx",
+      "title": "Oklo Receives U.S. Department of Energy Startup Authorization for Groves Reactor, Clearing Way for Fuel Loading and First Criticality | Oklo",
+      "publisher": "oklo.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-78e9167ca5de23fc",
+      "url": "https://www.radiantnuclear.com/blog/doe-pdsa-approval/",
+      "title": "DOE approved the Kaleidos preliminary documented safety analysis for the DOME test",
+      "publisher": "radiantnuclear.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "radiant-industries"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f71a013f07cdab8f",
+      "url": "https://www.radiantnuclear.com/blog/triso-fuel-inl/",
+      "title": "Radiant received its first TRISO fuel shipment at the DOME facility at Idaho National Laboratory.",
+      "publisher": "radiantnuclear.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "radiant-industries"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-17459f6649228b76",
+      "url": "https://www.energy.gov/ne/articles/triso-x-receives-nrc-special-nuclear-material-license-advanced-fuel-fabrication",
+      "title": "TRISO-X Receives NRC Special Nuclear Material License for Advanced Fuel Fabrication Facility | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "x-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-e0d7d318065b7439",
+      "url": "https://www.nucnet.org/news/opg-completes-excavation-works-at-darlington-bwrx-300-smr-project-3-1-2026",
+      "title": "Shaft excavation completed for the first BWRX-300 at Darlington, Ontario",
+      "publisher": "nucnet.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "gev-hitachi"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-2aa50c867bbb9c8f",
+      "url": "https://www.world-nuclear-news.org/articles/final-investment-decision-taken-for-romanias-smrs",
+      "title": "Final Investment Decision taken for Romanian SMR project - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nuscale"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-05fbc21abfa52369",
+      "url": "https://www.ans.org/news/2026-06-29/article-8155/holtec-and-edf-submit-proposal-to-deploy-smr300-at-cottam-nottinghamshire/",
+      "title": "Holtec and EDF submit proposal to deploy SMR-300 at Cottam, Nottinghamshire -- ANS / Nuclear Newswire",
+      "publisher": "ans.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "holtec"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-69ebbaf76ba02a0a",
+      "url": "https://www.powermag.com/westinghouse-secures-first-customer-for-evinci-nuclear-microreactor/",
+      "title": "Westinghouse Secures First Customer for eVinci Nuclear Microreactor",
+      "publisher": "powermag.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "westinghouse"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-7dfffcd59d45f114",
+      "url": "https://www.globenewswire.com/news-release/2025/09/10/3147707/0/en/NRC-Completes-Safety-Evaluation-and-Approves-Terrestrial-Energy-IMSR-Principal-Design-Criteria-Including-its-Mechanism-for-Inherent-Reactor-Power-Control.html",
+      "title": "NRC approved the IMSR principal design criteria, including its inherent power-control mechanism",
+      "publisher": "globenewswire.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrestrial-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-3ab35c798a457c24",
+      "url": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under",
+      "title": "Executed a DOE Other Transaction Authority agreement for Project TETRA, a pilot using Integral Molten Salt Reactor technology.",
+      "publisher": "ir.terrestrialenergy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrestrial-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-fefe17aaa74463c9",
+      "url": "https://www.nucnet.org/news/us-doe-approves-pdsa-for-last-energy-pilot-nuclear-reactor-at-texas-university-5-5-2026",
+      "title": "DOE approved the preliminary documented safety analysis for Last Energy’s PWR-5 pilot at Texas A&M-RELLIS.",
+      "publisher": "nucnet.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "last-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-038a91d361499746",
+      "url": "https://www.powermag.com/last-energy-secures-ppas-for-34-smr-nuclear-power-plants-in-poland-and-the-uk/",
+      "title": "Last Energy Secures PPAs for 34 SMR Nuclear Power Plants in Poland and the UK",
+      "publisher": "powermag.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "last-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-309330e8a1766219",
+      "url": "https://www.deepfission.com/pr-media-kit/press-releases/detail/114/deep-fission-prototype-reactor-canister-arrives-at-kansas-site-advancing-reactor-proof-of-concept-program",
+      "title": "Deep Fission Prototype Reactor Canister Arrives at Kansas Site, Advancing Reactor Proof-of-Concept Program :: Deep Fission, Inc. (FISN)",
+      "publisher": "deepfission.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "deep-fission"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-eb6537076513aefd",
+      "url": "https://www.bwxt.com/bwxt-delivers-full-core-of-triso-nuclear-fuel-for-project-pele-microreactor/",
+      "title": "BWXT Delivers Full Core of TRISO Nuclear Fuel for Project Pele Microreactor - | People Strong. Innovation Driven.",
+      "publisher": "bwxt.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bwxt"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-3a998634e6b98416",
+      "url": "https://www.businesswire.com/news/home/20250910715287/en/Aalo-Atomics-Becomes-First-U.S.-Nuclear-Reactor-Company-with-a-Contract-for-Commercial-Delivery-of-Enriched-Uranium-Hits-Crucial-Next-Milestone-on-Path-to-2026-Startup",
+      "title": "Signed what Aalo describes as the first U.S. commercial contract for delivery of enriched uranium to a reactor company",
+      "publisher": "businesswire.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "aalo-atomics"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-42af2e0a90264d8c",
+      "url": "https://oodaloop.com/briefs/technology/valar-atomics-begins-construction-on-ward-250-nuclear-reactor-utah/",
+      "title": "Valar Atomics Begins Construction on Ward 250 Nuclear Reactor, Utah — OODAloop",
+      "publisher": "oodaloop.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "valar-atomics"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f83a4eec5c8bbffc",
+      "url": "https://www.globenewswire.com/news-release/2026/05/20/3298411/0/en/NANO-Nuclear-s-KRONOS-MMR-and-the-University-of-Illinois-Urbana-Champaign-Advance-to-Next-Regulatory-Milestone-as-U-S-NRC-Formally-Accepts-Construction-Permit-Application-for-Revie.html",
+      "title": "NRC formally accepted the KRONOS construction-permit application for full review, an estimated 12-month clock",
+      "publisher": "globenewswire.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nano-nuclear"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-7fd0bdd565ce8ec7",
+      "url": "https://inl.gov/news-release/national-reactor-innovation-center-announces-first-selections-for-nuclear-energy-launch-pad/",
+      "title": "Named one of the first four developers in DOE's Nuclear Energy Launch Pad",
+      "publisher": "inl.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "deployable-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-4c1802480bd48512",
+      "url": "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos",
+      "title": "Hermes 2 – Kairos Application | Nuclear Regulatory Commission",
+      "publisher": "U.S. Nuclear Regulatory Commission",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "kairos-power"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-30bc966c18605aef",
+      "url": "https://www.energy.gov/ne/articles/westinghouse-evinci-microreactor-achieves-criticality-milestone",
+      "title": "Westinghouse eVinci Microreactor Achieves Criticality Milestone",
+      "publisher": "U.S. Department of Energy",
+      "published_at": "2026-09-16",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "westinghouse"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-a79ba09189c68638",
+      "url": "https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit",
+      "title": "NRC Approves the Natrium® Reactor Construction Permit",
+      "publisher": "terrapower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrapower"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-93924c005a2983cf",
+      "url": "https://www.utilitydive.com/news/oklo-75-mw-reactor-design-smr-nuclear/743578/",
+      "title": "Oklo reveals 75-MW reactor design, eyes late 2027 commercial deployment | Utility Dive",
+      "publisher": "utilitydive.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oklo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-b5a61f40af09c445",
+      "url": "https://energy-communities-alliance.squarespace.com/s/Holtec-Slides.pdf",
+      "title": "Execute a power contract for PIONEER in 2026, NRC permit in 2028, interconnection in 2029",
+      "publisher": "energy-communities-alliance.squarespace.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "holtec"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-1ea39c50034e1881",
+      "url": "https://www.world-nuclear-news.org/Articles/Westinghouse-unveils-AP300-small-modular-reactor",
+      "title": "Westinghouse unveils AP300 small modular reactor - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "westinghouse"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-3d297e65a7f7156a",
+      "url": "https://www.aalo.com/aalo-x",
+      "title": "Aalo Pod: 50 MWe Nuclear Power Plant for AI Data Centers",
+      "publisher": "aalo.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "aalo-atomics"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c70bd59e744fe7ff",
+      "url": "https://interestingengineering.com/energy/us-firm-deep-fission-6000-ft-well",
+      "title": "US firm begins drilling for world's first mile-deep nuclear reactor",
+      "publisher": "interestingengineering.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "deep-fission"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9c9b1c5ef1cd5b30",
+      "url": "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/past-license-activities/terrapower",
+      "title": "TerraPower, LLC -- Kemmerer Power Station Unit 1 Application | Nuclear Regulatory Commission",
+      "publisher": "nrc.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrapower"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-77f376c4a67fb2c5",
+      "url": "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf",
+      "title": "Deep Fission DBR pilot",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "deep-fission"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-007a694eb9d28b3e",
+      "url": "https://www.energy.gov/ne/demonstration-microreactor-experiments-dome",
+      "title": "Demonstration of Microreactor Experiments (DOME) | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "radiant-industries"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c21a53fed2daec08",
+      "url": "https://www.energy.gov/articles/department-energy-announces-american-nuclear-supply-chain-loans",
+      "title": "Department of Energy Announces American Nuclear Supply Chain Loans | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "context"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-4a135351f2ec5d0b",
+      "url": "https://www.energy.gov/ne/articles/us-department-energy-announces-160-million-first-awards-under-advanced-reactor",
+      "title": "U.S. Department of Energy Announces $160 Million in First Awards under Advanced Reactor Demonstration Program | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "context"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-43e47030b1760d49",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/05/deploying-advanced-nuclear-reactor-technologies-for-national-security/",
+      "title": "Deploying Advanced Nuclear Reactor Technologies for National Security – The White House",
+      "publisher": "whitehouse.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "context"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-0d0458eb9215ed6c",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/05/ordering-the-reform-of-the-nuclear-regulatory-commission/",
+      "title": "Ordering the Reform of the Nuclear Regulatory Commission – The White House",
+      "publisher": "whitehouse.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "context"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-4814eb720f02e2ed",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/05/reforming-nuclear-reactor-testing-at-the-department-of-energy/",
+      "title": "Reforming Nuclear Reactor Testing at the Department of Energy – The White House",
+      "publisher": "whitehouse.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "context"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c340a2f57e5e41f8",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/05/reinvigorating-the-nuclear-industrial-base/",
+      "title": "Reinvigorating the Nuclear Industrial Base – The White House",
+      "publisher": "whitehouse.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "context"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-698e215b28a10b11",
+      "url": "https://www.energy.gov/ne/advanced-reactor-demonstration-projects",
+      "title": "Advanced Reactor Demonstration Projects | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "context"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ba02deeb2d6b76ff",
+      "url": "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
+      "title": "Lazard Levelized Cost of Energy+ (June 2025)",
+      "publisher": "Lazard",
+      "published_at": "2025-06",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-57d8ad3ab1b62337",
+      "url": "https://gain.inl.gov/content/uploads/4/2024/11/DOE-Advanced-Nuclear-Liftoff-Report.pdf",
+      "title": "Pathways to Commercial Liftoff: Advanced Nuclear (September 2024 update)",
+      "publisher": "U.S. Department of Energy",
+      "published_at": "2024-09",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-2d21b568e75eb5e4",
+      "url": "https://www.opg.com/news-resources/newsroom/release/opg-reports-2025-first-quarter-financial-results/",
+      "title": "OPG reports 2025 first quarter financial results",
+      "publisher": "Ontario Power Generation",
+      "published_at": "2025-05-13",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-66364a01663124ac",
+      "url": "https://www.powermag.com/terrapowers-kemmerer-1-enters-construction-timeline-of-the-natrium-projects-road-to-first-power/",
+      "title": "TerraPower’s Kemmerer 1 Enters Construction: Timeline of the Natrium Project’s Road to First Power",
+      "publisher": "powermag.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-b699b213e8f016e8",
+      "url": "https://www.sec.gov/Archives/edgar/data/1822966/000182296623000008/pressreleasenuscalereach.htm",
+      "title": "$89/MWh (Grid-scale SMR Company target)",
+      "publisher": "sec.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-7545f944429043a7",
+      "url": "https://gain.inl.gov/content/uploads/4/2025/03/2024-Document-INL-RPT-24-80433.pdf",
+      "title": "Technoeconomic Evaluation of Microreactor Using Detailed Bottom-up Estimate (INL/RPT-24-80433)",
+      "publisher": "Idaho National Laboratory",
+      "published_at": "2024",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-0a31162d4d666fd1",
+      "url": "https://inl.gov/trending-topics/microreactors/",
+      "title": "Microreactors: What They Are and How They Work",
+      "publisher": "inl.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-07d828c675afb6ec",
+      "url": "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
+      "title": "DOD Picks BWXT Design for &#039;Project Pele&#039; Prototype Nuclear Microreactor",
+      "publisher": "powermag.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-b9611c85c7843176",
+      "url": "https://www.utilitydive.com/news/oklo-advanced-nuclear-microreactor-project-pipeline-nrc/724343/",
+      "title": "Oklo’s microreactor project pipeline jumps 93% ahead of 2027 planned deployment | Utility Dive",
+      "publisher": "utilitydive.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-8e03d2e9fc21608e",
+      "url": "https://dspace.mit.edu/bitstream/handle/1721.1/133049/Jacopo's%20and%20Jessika's%20paper%20on%20nuclear%20cost%20Sep%202020.pdf",
+      "title": "Sources of Cost Overrun in Nuclear Power Plant Construction Call for a New Approach to Engineering Design (Joule, 2020; MIT open-access copy)",
+      "publisher": "Eash-Gates, Klemun, Kavlak, McNerney, Buongiorno, Trancik",
+      "published_at": "2020-11",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-78074bdb3b9a94cc",
+      "url": "https://www.cooperative.com/programs-services/bts/documents/advisories/advisory-nuscale-and-uamps-end-smr-project-cfpp-dec-2023.pdf",
+      "title": "CFPP (NuScale/UAMPS): Target price $55 → $89/MWh before construction",
+      "publisher": "cooperative.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-824564e19ed1acdf",
+      "url": "https://x-energy.com/news/x-energy-signs-department-of-energys-advanced-reactor-demonstration-program-ardp-cooperative-agreement/",
+      "title": "X-energy signs Department of Energy’s Advanced Reactor Demonstration Program (ARDP) Cooperative Agreement - X-energy",
+      "publisher": "x-energy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-de41cc60e387558e",
+      "url": "https://www.kairospower.com/updates/google-and-kairos-power-partner-to-deploy-500-mw-of-clean-electricity-generation",
+      "title": "Google and Kairos Power Partner to Deploy 500 MW of Clean Electricity Generation | Kairos Power",
+      "publisher": "kairospower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c30aa2c537969ff4",
+      "url": "https://www.accessnewswire.com/newsroom/en/clean-technology/radiant-announces-equinix-preorder-and-deposits-for-20-kaleidos-microreactors-1061067",
+      "title": "Factory preorder with deposits",
+      "publisher": "accessnewswire.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-d336459803707a26",
+      "url": "https://www.nuscalepower.com/about/strategic-partners",
+      "title": "Strategic Partners | NuScale Power",
+      "publisher": "nuscalepower.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-acbc4b839d1b45ed",
+      "url": "https://www.utilitydive.com/news/palisades-nuclear-holtec-wolverine-hoosier-power-purchase-ppa/693480/",
+      "title": "Holtec International formally launches process to restart Palisades nuclear power plant | Utility Dive",
+      "publisher": "utilitydive.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-eabc53a7811b923b",
+      "url": "https://natlawreview.com/article/us-government-announces-historic-80-billion-nuclear-partnership-westinghouse",
+      "title": "President Trump Unveils $80B Nuclear Reactor Partnership",
+      "publisher": "natlawreview.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-2682db2e22cc3db3",
+      "url": "https://news.duke-energy.com/releases/responding-to-growing-demand-duke-energy-amazon-google-microsoft-and-nucor-execute-agreements-to-accelerate-clean-energy-options",
+      "title": "Responding to growing demand, Duke Energy, Amazon, Google, Microsoft and Nucor execute agreements to accelerate clean energy options | Duke Energy | News Center",
+      "publisher": "news.duke-energy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-4b54f4ed3813139c",
+      "url": "https://www.sizewellc.com/news-views/final-investment-decision-reached-for-sizewell-c-the-biggest-british-clean-energy-project-in-a-generation/",
+      "title": "Final Investment Decision reached for Sizewell C – the biggest British clean energy project in a generation - Sizewell C",
+      "publisher": "sizewellc.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-16c20b57ebf031fe",
+      "url": "https://www.congress.gov/crs-product/IN12719",
+      "title": "Tax-credit monetization",
+      "publisher": "congress.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-4d0edfd554dced1b",
+      "url": "https://www.power-eng.com/nuclear/oklo-secures-up-to-750-mw-worth-of-new-data-center-partnerships/",
+      "title": "Oklo secures up to 750 MW-worth of new data center partnerships",
+      "publisher": "power-eng.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-64fac9e0f1db44f0",
+      "url": "https://www.risch.senate.gov/news/press-releases/risch-gallego-introduce-bill-to-accelerate-new-nuclear-investment/",
+      "title": "Risch, Gallego Introduce Bill to Accelerate New Nuclear Investment",
+      "publisher": "risch.senate.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c6f1bd5b456a371e",
+      "url": "https://www.catf.us/2025/05/can-they-make-atoms-great-again/",
+      "title": "Can they “Make Atoms Great Again”? How the federal government can support domestic advanced nuclear energy production and exports – Clean Air Task Force",
+      "publisher": "catf.us",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-fad6fea0a78fec7e",
+      "url": "https://www.congress.gov/crs-product/IF10821",
+      "title": "Price-Anderson retrospective pool: Up to $165.9M per reactor per incident including the 5% surcharge",
+      "publisher": "congress.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-31f776db771eb1c7",
+      "url": "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000024/a2025annualreportmaster.htm",
+      "title": "NEIL mutual property pool: Up to $3.2B per incident in property coverage, per PG&E's 2025 annual report",
+      "publisher": "sec.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-502eb9e2c4634950",
+      "url": "https://nuclearinnovationalliance.org/sites/default/files/2026-04/The%20Role%20of%20DOE%E2%80%99s%20Office%20of%20Energy%20Dominance%20Financing%20in%20U.S.%20Nuclear%20Energy%20Leadership%20-%20March%202026%20Update.pdf",
+      "title": "The Role of DOE's Office of Energy Dominance Financing in U.S. Nuclear Energy Leadership (March 2026 update)",
+      "publisher": "Nuclear Innovation Alliance",
+      "published_at": "2026-03",
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ac8c10d684042451",
+      "url": "https://www.world-nuclear-news.org/articles/us-exim-bank-approves-loan-for-romanian-smr-project",
+      "title": "US Exim Bank approves loan for Romanian SMR project - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-5438acfd3a91da10",
+      "url": "https://osge.com/en/us-government-financial-institutions-indicate-willingness-to-support-osge/",
+      "title": "US government financial institutions indicate willingness to support ORLEN Synthos Green Energy with its GE Hitachi BWRX-300 small modular reactor deployment program in Poland - OSGE :OSGE",
+      "publisher": "osge.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-a03a7e3ae4a3808f",
+      "url": "https://www.world-nuclear-news.org/articles/world-bank-agrees-to-end-ban-on-funding-nuclear-energy",
+      "title": "World Bank ends ban on funding nuclear energy - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9bcc7b7df82ebae1",
+      "url": "https://cib-bic.ca/en/medias/articles/cib-commits-970-million-towards-canadas-first-small-modular-reactor/",
+      "title": "CIB commits $970 million towards Canada’s first Small Modular Reactor (SMR) | Canada Infrastructure Bank (CIB)",
+      "publisher": "cib-bic.ca",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-af596f7de83f7f66",
+      "url": "https://world-nuclear.org/net-zero-nuclear/news/international-banks-express-support-for-nuclear-expansion",
+      "title": "International banks express support for nuclear expansion - World Nuclear Association",
+      "publisher": "world-nuclear.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9762e171e0df6494",
+      "url": "https://www.federalregister.gov/documents/2023/11/16/2023-25163/emergency-preparedness-for-small-modular-reactors-and-other-new-technologies",
+      "title": "Emergency Preparedness for Small Modular Reactors and Other New Technologies",
+      "publisher": "federalregister.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-4ccdcc989b0fdcfc",
+      "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-066.pdf",
+      "title": "nrc-fees-2026",
+      "publisher": "nrc.gov",
+      "published_at": "2026-06-16",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-2ee10a98245590c1",
+      "url": "https://www.bdlaw.com/publications/nrc-finalizes-new-optional-licensing-framework-for-advanced-reactors/",
+      "title": "Part 53, the optional risk-informed, technology-inclusive licensing framework, was finalized in March 2026 as an alternative to the Part 50 and Part 52 pathways.",
+      "publisher": "bdlaw.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-d9cca3915b4665a0",
+      "url": "https://nanonuclearenergy.com/kronos-mmr/",
+      "title": "KRONOS MMR | NANO Nuclear Energy",
+      "publisher": "nanonuclearenergy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-8dcd15490dfb6def",
+      "url": "https://www.deepfission.com/technology",
+      "title": "Gravity Reactor™ | Small modular PWR a mile underground :: Deep Fission, Inc. (FISN)",
+      "publisher": "deepfission.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-35d0e74073a33e03",
+      "url": "https://www.nrc.gov/docs/ML2009/ML20097B839.pdf",
+      "title": "An IMSR plant needs about 17 acres inside a roughly 130m by 145m security perimeter.",
+      "publisher": "nrc.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c4f9be65bc0b2113",
+      "url": "https://gain.inl.gov/content/uploads/4/2024/11/INL-RPT-23-72972-Literature-Review-of-Adv-Reactor-Cost-Estimates.pdf",
+      "title": "Literature Review of Advanced Reactor Cost Estimates (INL/RPT-23-72972)",
+      "publisher": "Idaho National Laboratory",
+      "published_at": "2023",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "financing"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-0b187afb5bb71f25",
+      "url": "https://www.valaratomics.com",
+      "title": "The New Atomic Age | Valar Atomics",
+      "publisher": "valaratomics.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "valar-atomics"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-cd69ff312c804e0e",
+      "url": "https://www.linkedin.com/posts/antares-industries_after-6-months-in-huntsville-ourelectrically-heated-activity-7396980168080154624-i2CV",
+      "title": "Electrically-Heated Demonstration Unit campaign complete",
+      "publisher": "Antares (official company account on LinkedIn)",
+      "published_at": "2025-11-19",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "antares-nuclear"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Official Antares company post; authorship verified in the captured HTML and JSON-LD. Establishes electrically heated hardware testing, not a nuclear reactor or power-sale contract."
+    },
+    {
+      "id": "audit-2026-11-22-6c42e7c81838ade8",
+      "url": "https://www.deployable.energy/post/deployable-energy-announces-unity-demonstration-reactor-achieves-criticality-at-idaho-national-labor",
+      "title": "Deployable Energy Announces Unity Demonstration Reactor Achieves Criticality at Idaho National Laboratory",
+      "publisher": "deployable.energy",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "deployable-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9d335d2027bb8cbf",
+      "url": "https://www.neimagazine.com/news/pacificorp-considers-adding-two-more-natrium-units-to-its-generation-mix-by-2033-10759748/",
+      "title": "PacifiCorp considers adding two more Natrium units to its generation mix by 2033 - Nuclear Engineering International",
+      "publisher": "neimagazine.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrapower"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ff20c03392c324b8",
+      "url": "https://world-nuclear-news.org/articles/holtec-and-hyundai-ec-target-10gw-fleet-of-smrs-in-us",
+      "title": "Holtec and Hyundai E&C target 10 GW SMR fleet after Palisades - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "holtec"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-7bdde35fe9ccf8fe",
+      "url": "https://www.bechtel.com/press-releases/tva-bechtel-sargent-lundy-and-ge-hitachi-plan-initial-construction-and-design-for-potential-clinch-river-smr/",
+      "title": "TVA, Bechtel, Sargent & Lundy and GE Hitachi Plan Initial Construction and Design for Potential Clinch River SMR - Bechtel",
+      "publisher": "bechtel.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "gev-hitachi"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-617178504259020d",
+      "url": "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/",
+      "title": "Ontario Authorizes OPG to Start Construction of First Commercial Nuclear SMR",
+      "publisher": "powermag.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "gev-hitachi"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-1147414b5e1ecad7",
+      "url": "https://www.sec.gov/Archives/edgar/data/1822966/000182296623000256/uampsnuscalejointpressre.htm",
+      "title": "The DOE-backed CFPP, the company's federal build program, terminated in November 2023 when subscription fell short.",
+      "publisher": "sec.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nuscale"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ddbc5c65daad583e",
+      "url": "https://www.world-nuclear-news.org/articles/tva-entra1-energy-team-up-for-smr-deployment",
+      "title": "TVA, ENTRA1 Energy team up for SMR deployment - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nuscale"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-8bf8b360a118b2fd",
+      "url": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tefla-under",
+      "title": "Terrestrial Energy Executes DOE Agreement for Project TEFLA",
+      "publisher": "ir.terrestrialenergy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrestrial-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-3d08f82f9e367f5a",
+      "url": "https://www.globenewswire.com/news-release/2025/06/24/3104171/0/en/Terrestrial-Energy-and-Ameresco-Announce-Collaboration-to-Develop-IMSR-Plant-Projects-for-Customized-Energy-Supply.html",
+      "title": "An Ameresco collaboration on customized IMSR energy-supply projects carries no quantified megawatts.",
+      "publisher": "globenewswire.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "terrestrial-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-b1caf7cf2ec3c22e",
+      "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+      "title": "Constellation to Launch Crane Clean Energy Center, Restoring Jobs and Carbon-Free Power to The Grid",
+      "publisher": "constellationenergy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "microsoft"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-1b76f4395543e722",
+      "url": "https://www.constellationenergy.com/news/2025/constellation-meta-sign-20-year-deal-for-clean-reliable-nuclear-energy-in-illinois.html",
+      "title": "Constellation, Meta Sign 20-Year Deal for Clean, Reliable Nuclear Energy in Illinois",
+      "publisher": "constellationenergy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "meta"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-3925eb2186ca9df2",
+      "url": "https://newsroom.nexteraenergy.com/NextEra-Energy-and-Google-Announce-New-Collaboration-to-Accelerate-Nuclear-Energy-Deployment-in-the-U-S?l=12",
+      "title": "NextEra Energy Newsroom - News Releases",
+      "publisher": "newsroom.nexteraenergy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "google"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9343fca4e1aac3cc",
+      "url": "https://x-energy.com/media/news-releases/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power",
+      "title": "Amazon Invests in X-energy to Support Advanced Small Modular Nuclear Reactors and Expand Carbon-Free Power - X-energy",
+      "publisher": "x-energy.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "amazon"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-d1b7a9f41e528038",
+      "url": "https://www.nucnet.org/news/amazon-buys-stake-in-nuclear-reactor-developer-in-bid-to-power-data-centres-10-4-2024",
+      "title": "The stake came with two X-energy board seats; its size was not disclosed.",
+      "publisher": "nucnet.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "amazon"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-751958d5412f035b",
+      "url": "https://www.cnbc.com/2024/09/10/oracle-is-designing-a-data-center-that-would-be-powered-by-three-small-nuclear-reactors.html",
+      "title": "Oracle designing data center that would be powered by 3 small nuclear reactors",
+      "publisher": "cnbc.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "oracle"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-440165a9abe2a1ae",
+      "url": "https://www.cnbc.com/2025/04/22/sam-altman-steps-down-as-oklo-chair-freeing-nuclear-company-up-to-work-with-more-ai-companies.html",
+      "title": "Sam Altman steps down as Oklo chair",
+      "publisher": "cnbc.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "openai"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-cd1d30c3bad8a566",
+      "url": "https://www.world-nuclear-news.org/Articles/Alberta-funds-SMR-deployment-study",
+      "title": "Alberta funds SMR deployment study - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "cenovus-pathways"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ab0a322b6a417cc0",
+      "url": "https://www.powermag.com/air-force-anpi-picks-put-radiant-antares-westinghouse-on-track-for-first-on%E2%80%91base-microreactors-by-2028/",
+      "title": "Air Force ANPI Picks Put Radiant, Antares, Westinghouse on Track for First On‑Base Microreactors by 2028",
+      "publisher": "powermag.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "diu-air-force"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-7d9b334e99cb3b50",
+      "url": "https://www.world-nuclear-news.org/articles/us-army-names-potential-microreactor-sites",
+      "title": "US Army names potential microreactor sites - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "army"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-0cbca60ded4ad145",
+      "url": "https://www.energy.gov/articles/doe-announces-site-selection-ai-data-center-and-energy-infrastructure-development-federal",
+      "title": "DOE Announces Site Selection for AI Data Center and Energy Infrastructure Development on Federal Lands | Department of Energy",
+      "publisher": "energy.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "doe"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c2b023f24d6650fd",
+      "url": "https://www.powermag.com/doe-unveils-initiative-to-add-5-gw-of-nuclear-capacity-through-uprates-and-restarts/",
+      "title": "DOE Launches UPRISE to Add 5 GW of Nuclear Capacity by 2029",
+      "publisher": "powermag.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "doe"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ba8d9292274c56cd",
+      "url": "https://www.nypa.gov/News/Press-Releases/2026/20260623-nuclear",
+      "title": "Directed in June 2025 to develop at least 1 GW of advanced nuclear upstate; the 2025 solicitations drew responses from more than 30 entities, including 23 developer teams, and a developer RFQ followed in 2026.",
+      "publisher": "nypa.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "nypa"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-5d5dde092a6d1cab",
+      "url": "https://www.ans.org/news/2026-04-09/article-7920/texas-opens-350m-in-nuclear-funding/",
+      "title": "Texas opens $350M in nuclear funding -- ANS / Nuclear Newswire",
+      "publisher": "ans.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "texas-taneo"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9743c5478835f71b",
+      "url": "https://www.gov.uk/government/news/great-british-energy-nuclear-and-rolls-royce-smr-sign-contract",
+      "title": "Great British Energy - Nuclear and Rolls-Royce SMR sign contract - GOV.UK",
+      "publisher": "gov.uk",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "united-kingdom"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-7d77fd9fea7a519f",
+      "url": "https://www.gevernova.com/news/press-releases/deployment-bwrx-300-small-modular-reactor-poland-major-step-forward-design-development",
+      "title": "Deployment of BWRX-300 small modular reactor in Poland takes major step forward with design development | GE Vernova News",
+      "publisher": "gevernova.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "poland"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-0cfff917a3181246",
+      "url": "https://www.world-nuclear-news.org/articles/site-of-polands-first-smr-selected",
+      "title": "Site of Poland's first SMR selected - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "poland"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-a8ec783c1e39ca86",
+      "url": "https://world-nuclear-news.org/Articles/Philippines-considers-deploying-USNC-microreactors",
+      "title": "Philippines&nbsp;considers deploying USNC microreactors - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "philippines"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f7ecf7e6d39c2c91",
+      "url": "https://www.world-nuclear-news.org/articles/us-touts-smr-designs-to-the-philippines",
+      "title": "USA touts SMR designs to the Philippines - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "philippines"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-c17f11f7b4332e7f",
+      "url": "https://www.world-nuclear-news.org/articles/terrapower-expands-cooperation-with-korean-partners",
+      "title": "TerraPower expands cooperation with Korean partners - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "south-korea"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-92f40e74b0a7a82b",
+      "url": "https://www.barchart.com/story/news/37017636/nano-nuclear-energy-signs-mou-with-ds-dansuk-to-advance-micro-modular-reactor-deployment-in-south-korea",
+      "title": "NANO Nuclear and DS Dansuk signed a non-binding, non-exclusive MOU to explore KRONOS deployment and local industrial coordination in South Korea.",
+      "publisher": "barchart.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "south-korea"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f375d37deaff5889",
+      "url": "https://group.vattenfall.com/press-and-media/newsroom/2025/vattenfall-selects-suppliers-on-the-journey-towards-new-nuclear-power/",
+      "title": "Vattenfall selects suppliers on the journey towards new nuclear power - Vattenfall",
+      "publisher": "group.vattenfall.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "finland-sweden"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-71e02a5d0bb09bbb",
+      "url": "https://www.gevernova.com/news/press-releases/ge-vernova-hitachi-nuclear-energy-fortum-agreement-deployment-bwrx-300-small-modular-reactor-finland-sweden",
+      "title": "GE Vernova Hitachi Nuclear Energy and Fortum sign early works agreement to advance potential deployment of BWRX-300 small modular reactor | GE Vernova News",
+      "publisher": "gevernova.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "finland-sweden"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f4c2c95234a8f79d",
+      "url": "https://www.world-nuclear-news.org/articles/aecon-and-norsk-kjernekraft-to-promote-smrs-in-norway",
+      "title": "Aecon and Norsk Kjernekraft aim to develop SMRs in Norway - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "norway"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-e9e705783b67b6c6",
+      "url": "https://www.neimagazine.com/news/lithuania-considers-smr-technology/",
+      "title": "Lithuania considers SMR technology - Nuclear Engineering International",
+      "publisher": "neimagazine.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "lithuania"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-960e6a34ed49f183",
+      "url": "https://www.world-nuclear-news.org/articles/us-grant-agreements-to-support-bulgarian-nuclear-projects",
+      "title": "US development agency announces grants for Bulgarian nuclear projects - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bulgaria"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-39df5d7087524fac",
+      "url": "https://info.westinghousenuclear.com/news/westinghouse-ap300-smr-ap1000-interest-in-europe-slovakia-deployment-discussions",
+      "title": "Interest in Westinghouse AP300™ Small Modular Reactor, AP1000® Technology Surging in Europe as Slovakia Begins Deployment Discussions",
+      "publisher": "info.westinghousenuclear.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "slovakia"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f227938899a686d4",
+      "url": "https://www.nucnet.org/news/african-nation-signs-agreement-for-nuscale-12-module-nuclear-power-plant-8-5-2024",
+      "title": "Nuclear Power Ghana and Regnum Technology Group agreed to deploy a NuScale VOYGR-12 plant, planned as Africa's first commercial advanced light-water SMR, with a subsidiary company to own and operate it.",
+      "publisher": "nucnet.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "ghana"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-b31041a88ded32aa",
+      "url": "https://www.worldbank.org/en/news/press-release/2025/06/26/world-bank-group-iaea-formalize-partnership-to-collaborate-on-nuclear-energy-for-development",
+      "title": "World Bank Group, IAEA Formalize Partnership to Collaborate on Nuclear Energy for Development",
+      "publisher": "worldbank.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "world-bank"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f0a3d1dc3bc73969",
+      "url": "https://gov.alaska.gov/microreactor-regulations-put-alaskan-communities-at-forefront-of-energy-innovation/",
+      "title": "Microreactor Regulations Put Alaskan Communities at Forefront of Energy Innovation - Mike Dunleavy",
+      "publisher": "gov.alaska.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "alaska"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-8059045a66b4ddb6",
+      "url": "https://www.world-nuclear-news.org/Articles/Small-reactors-feasible-in-Puerto-Rico,-study-conc",
+      "title": "Small reactors feasible in Puerto Rico, study concludes - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "puerto-rico"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ec9a0845868ad13f",
+      "url": "https://www.ans.org/news/article-8091/ansuprm-student-section-advocates-for-puerto-rican-nuclear/",
+      "title": "ANS-UPRM Student Section advocates for Puerto Rican nuclear -- ANS / Nuclear Newswire",
+      "publisher": "ans.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "puerto-rico"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f23abcf5f5c932aa",
+      "url": "https://www.metro.pr/noticias/2026/06/15/camara-aprueba-medida-que-incorpora-la-energia-nuclear-a-la-politica-publica-energetica-de-puerto-rico/",
+      "title": "Cámara aprueba medida que incorpora la energía nuclear a la política pública energética de Puerto Rico | Metro Puerto Rico",
+      "publisher": "metro.pr",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "puerto-rico"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-8509ea1ecb70dbf2",
+      "url": "https://www.postguam.com/news/local/lawmakers-want-answers-about-micro-nuclear-reactors-on-guam/article_88cb2824-85aa-4c5c-8dd7-e6ac6cdd2b76.html",
+      "title": "Lawmakers want answers about micro-nuclear reactors on Guam | Local News | postguam.com",
+      "publisher": "postguam.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "guam"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-feaa2fca7e62194c",
+      "url": "https://www.postguam.com/news/local/congress-nuclear-reactor-push-alarms-locals/article_a63b9661-5cca-43a3-9fae-e06ab5682477.html",
+      "title": "Congress’ nuclear reactor push alarms locals | Local News | postguam.com",
+      "publisher": "postguam.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "guam"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-b4276307e9043694",
+      "url": "https://www.powermag.com/exxonmobil-planning-large-gas-fired-plant-to-serve-data-centers/",
+      "title": "ExxonMobil Planning Large Gas-Fired Plant to Serve Data Centers",
+      "publisher": "powermag.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bd"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f90be5ace3c99e57",
+      "url": "https://jpt.spe.org/chevron-partners-with-ge-vernova-and-engine-no-1-to-power-up-ai-data-centers-in-us",
+      "title": "Chevron Partners With GE Vernova and Engine No. 1 To Power Up AI Data Centers in US",
+      "publisher": "jpt.spe.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bd"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-57746af06ed50630",
+      "url": "https://www.ans.org/news/article-8210/nuclear-is-ready-now/",
+      "title": "Nuclear is ready now -- ANS / Nuclear Newswire",
+      "publisher": "ans.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bd"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-196a21d7e356dcd8",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002086716/000162828026056936/cohen_boardxappointmentxpr.htm",
+      "title": "The personnel flow runs both ways: DOE's former chief counsel for nuclear policy joined the board of TRISO fuel maker Standard Nuclear in August 2026.",
+      "publisher": "sec.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bd"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-8cc424f3b5eee712",
+      "url": "https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/",
+      "title": "Darlington SMR: Project Update - Nov.10, 2026",
+      "publisher": "Ontario Power Generation",
+      "published_at": "2026-11-10",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bd"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9d8952c8c1f344db",
+      "url": "https://ceepr.mit.edu/workingpaper/the-value-of-nuclear-microreactors-in-providing-heat-and-electricity-to-alaskan-communities/",
+      "title": "The Value of Nuclear Microreactors in Providing Heat and Electricity to Alaskan Communities - CEEPR",
+      "publisher": "ceepr.mit.edu",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bd"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-60d3e8d1229c8423",
+      "url": "https://www.world-nuclear-news.org/articles/radiant-to-locate-microreactor-factory-in-tennessee",
+      "title": "Radiant to locate microreactor factory in Tennessee - World Nuclear News",
+      "publisher": "world-nuclear-news.org",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "secondary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bd"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-47e98c927fba4989",
+      "url": "https://www.aalo.com/factory",
+      "title": "Aalo Gigawatt Factory | Mass-Manufactured Nuclear Reactors",
+      "publisher": "aalo.com",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "bd"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-544b273c9190f405",
+      "url": "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/long-mott",
+      "title": "Long Mott Energy, LLC – Long Mott Generating Station Xe-100 Power Reactor Application | Nuclear Regulatory Commission",
+      "publisher": "nrc.gov",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "x-energy"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-8bd7bc7d17a87b67",
+      "url": "https://www.eia.gov/totalenergy/data/browser/csv.php?tbl=T08.01",
+      "title": "Monthly Energy Review, October 2026, Table 8.1 Nuclear Energy Overview",
+      "publisher": "U.S. Energy Information Administration",
+      "published_at": "2026-10-29",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-bffde8c1ff9b31d0",
+      "url": "https://www.eia.gov/energyexplained/nuclear/us-nuclear-industry.php",
+      "title": "Nuclear explained: U.S. nuclear industry",
+      "publisher": "U.S. Energy Information Administration",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-80ba931a8c31d24d",
+      "url": "https://www.energy.gov/ne/articles/11-big-wins-nuclear-energy-2024",
+      "title": "11 Big Wins for Nuclear Energy in 2024",
+      "publisher": "U.S. Department of Energy",
+      "published_at": "2024-12-31",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-f0b3ac7a868cffe5",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+      "title": "Nuclear Power Reactors in the World, 2025 Edition",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2025-08",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "pwr"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-9f0bd2a04aa2b45c",
+      "url": "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+      "title": "Introduction of Innovative Nuclear Reactors and GEN-IV Concepts",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2026-02-16",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "pwr"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ac2d75cbdfcf543d",
+      "url": "https://www.wrpc.gov.in/allfile/Share_Allocation_KAPP_29.06.2023.pdf",
+      "title": "Commercial operation and allocation for Kakrapar Atomic Power Station Unit 3",
+      "publisher": "Government of India Western Regional Power Committee",
+      "published_at": "2023-06-29",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "phwr"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-7be24212b5408077",
+      "url": "https://www.gen-4.org/generation-iv-criteria-and-technologies",
+      "title": "Generation IV Goals, Technologies and GIF R&D Roadmap",
+      "publisher": "Generation IV International Forum",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "htgr"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-894a1acdc3125216",
+      "url": "https://www.inet.tsinghua.edu.cn/ineten/info/1024/1698.htm",
+      "title": "Chinese HTR-PM Demo begins commercial operation",
+      "publisher": "Tsinghua University Institute of Nuclear and New Energy Technology",
+      "published_at": "2023-12-07",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "htgr"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-e9cfba415140e2bf",
+      "url": "https://www.gen-4.org/sites/default/files/2024-08/2022%20Status%20of%20LFR%20activities%20in%20Gen%20IV%20countries%20and%20entities%20GIF%20Industry%20Forum.pdf",
+      "title": "Status of Lead-cooled Fast Reactor activities in GEN-IV Countries/Entities",
+      "publisher": "Generation IV International Forum",
+      "published_at": "2022-10",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "lfr"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-fc7a4a9b7e708e47",
+      "url": "https://www.gen-4.org/generation-iv-criteria-and-technologies/gas-cooled-fast-reactor-gfr",
+      "title": "Gas-Cooled Fast Reactor",
+      "publisher": "Generation IV International Forum",
+      "published_at": null,
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "gfr"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-34df440b8a71abf4",
+      "url": "https://info.westinghousenuclear.com/news/westinghouse-evinci-microreactor-achieves-zero-power-high-temperature-criticality",
+      "title": "Westinghouse eVinci Microreactor Achieves Zero-Power High-Temperature Criticality",
+      "publisher": "Westinghouse Electric Company",
+      "published_at": "2026-09-15",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "heat-pipe"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-ffa1d65387ccf8a7",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS446_web.pdf",
+      "title": "Decommissioning of Research Reactors: Evolution, State of the Art, Open Issues",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2006-05",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "research-pool"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
+    },
+    {
+      "id": "audit-2026-11-22-45e45bc74b58beba",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf",
+      "title": "Research Reactor Exercises for Higher Education Programmes: Compendium (IAEA-TECDOC-2024)",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2023-05",
+      "captured_at": "2026-11-22",
+      "source_tier": "primary",
+      "use": "supports-record",
+      "officials": [],
+      "companies": [
+        "research-pool"
+      ],
+      "reactor_types": [],
+      "deployment_stages": [],
+      "industry_domains": [
+        "nuclear fission"
+      ],
+      "notes": "Reviewed through the 139-claim audit or primary-source family/fleet research. Scope and limitations are retained in those records."
     }
   ]
 }

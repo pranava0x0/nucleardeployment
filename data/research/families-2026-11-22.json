@@ -1,0 +1,798 @@
+{
+  "captured_at": "2026-11-22",
+  "scope": "Fission power-reactor family coverage with 2021–2026 primary-source milestones and explicitly dated international operating context; no national or global totals inferred.",
+  "families": [
+    {
+      "id": "pwr",
+      "name": "Pressurized light-water reactor (PWR / VVER)",
+      "definition": "Light water cools and moderates the core; primary coolant remains pressurized and transfers heat to a separate steam circuit.",
+      "axes": {
+        "coolant": "Light water",
+        "moderator": "Light water",
+        "spectrum": "Thermal",
+        "fuel_form": "Solid enriched uranium oxide or mixed oxide"
+      },
+      "status": "Commercial fleet technology, including large reactors and smaller derivative designs.",
+      "us_position": "One of the two operating U.S. commercial power-reactor families; national fleet figures belong to the separate baseline.",
+      "examples": [
+        {
+          "name": "IAEA operational fleet classification",
+          "country": "Global",
+          "date": "2024-12-31",
+          "achievement": "The year-end operating inventory includes PWRs; the 2025 publication reports a 2024 snapshot.",
+          "remaining_gate": "Existing-fleet operation and new-build licensing are separate records.",
+          "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+          "evidence_quote": "Pressurized Light-Water Moderated and Cooled Reactor"
+        },
+        {
+          "name": "Vogtle Unit 4",
+          "country": "United States",
+          "date": "2024-04-29",
+          "achievement": "Unit 4 entered commercial service, completing the Vogtle expansion. This is delivered commercial operation, separate from advanced-reactor plans.",
+          "remaining_gate": "Ongoing operation; already included in the national fleet baseline.",
+          "source_url": "https://www.energy.gov/ne/articles/11-big-wins-nuclear-energy-2024",
+          "evidence_quote": "Vogtle 4 entered commercial service on April 29 to wrap up the power plant’s expansion project in Waynesboro, Georgia."
+        }
+      ],
+      "source_urls": [
+        "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+        "https://www.energy.gov/ne/articles/11-big-wins-nuclear-energy-2024"
+      ],
+      "gaps": []
+    },
+    {
+      "id": "bwr",
+      "name": "Boiling light-water reactor (BWR)",
+      "definition": "Light water cools and moderates the core and boils in the reactor to supply steam.",
+      "axes": {
+        "coolant": "Light water",
+        "moderator": "Light water",
+        "spectrum": "Thermal",
+        "fuel_form": "Solid enriched uranium oxide"
+      },
+      "status": "Commercial fleet technology; newer large and small designs use the same broad family.",
+      "us_position": "Existing U.S. commercial fleet and BWRX-300 licensing; do not combine fleet megawatts with prospective design capacity.",
+      "examples": [
+        {
+          "name": "IAEA operational fleet classification",
+          "country": "Global",
+          "date": "2024-12-31",
+          "achievement": "The operating inventory includes BWRs; SMR describes size, not a new coolant family.",
+          "remaining_gate": "A particular new BWR still needs its project-specific construction and operating authorizations.",
+          "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+          "evidence_quote": "Boiling Light-Water Cooled and Moderated Reactor"
+        },
+        {
+          "name": "Clinch River Nuclear Unit 1",
+          "country": "United States",
+          "date": "2026-09-28",
+          "achievement": "NRC issued construction permit CPAR-2 to TVA for Clinch River Unit 1.",
+          "remaining_gate": "A construction permit does not establish commercial operation.",
+          "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
+          "evidence_quote": "DATES: The Construction Permit No. CPAR-2 was issued on September 28,\n2026."
+        }
+      ],
+      "source_urls": [
+        "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+        "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm"
+      ],
+      "gaps": []
+    },
+    {
+      "id": "phwr",
+      "name": "Pressurized heavy-water reactor (PHWR / CANDU)",
+      "definition": "Heavy water moderates the core and, in conventional PHWRs, also cools pressurized fuel channels.",
+      "axes": {
+        "coolant": "Heavy water",
+        "moderator": "Heavy water",
+        "spectrum": "Thermal",
+        "fuel_form": "Usually solid natural-uranium oxide; some designs use alternative fuel"
+      },
+      "status": "Commercially deployed abroad.",
+      "us_position": "International comparator; no new U.S. commercial PHWR verified in this bounded review.",
+      "examples": [
+        {
+          "name": "Kakrapar Unit 3",
+          "country": "India",
+          "date": "2023-06-30",
+          "achievement": "The government power-allocation letter declares the 700 MW unit commercial effective June 30, 2023. This is a declared electrical-unit rating, not a net-output series.",
+          "remaining_gate": "Ongoing commercial operation; no contribution to U.S. deployment totals.",
+          "source_url": "https://www.wrpc.gov.in/allfile/Share_Allocation_KAPP_29.06.2023.pdf",
+          "evidence_quote": "Unit 3 (700MW) of Kakrapar Atomic Power Station (2x700MW) to be commercial w.e.f. 10:00hrs of 30.06.2023."
+        }
+      ],
+      "source_urls": [
+        "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+        "https://www.wrpc.gov.in/allfile/Share_Allocation_KAPP_29.06.2023.pdf"
+      ],
+      "gaps": []
+    },
+    {
+      "id": "gcr",
+      "name": "Graphite-moderated gas-cooled reactor (GCR / AGR / Magnox)",
+      "definition": "Graphite moderates the core and gas removes heat; historical Magnox and AGR designs are distinct from helium-cooled HTGRs.",
+      "axes": {
+        "coolant": "Gas; carbon dioxide in AGR/Magnox",
+        "moderator": "Graphite",
+        "spectrum": "Thermal",
+        "fuel_form": "Solid uranium metal or oxide, depending on design"
+      },
+      "status": "Legacy commercial fleet; distinguish remaining operating AGRs from retired Magnox units.",
+      "us_position": "Historical and international context; no current U.S. commercial GCR build verified.",
+      "examples": [
+        {
+          "name": "GCR year-end fleet classification",
+          "country": "Global",
+          "date": "2024-12-31",
+          "achievement": "IAEA lists an operating GCR class separately from HTGR.",
+          "remaining_gate": "Specific unit life extensions require their own regulator decisions; no extension inferred here.",
+          "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+          "evidence_quote": "Gas Cooled, Graphite Moderated Reactor"
+        }
+      ],
+      "source_urls": [
+        "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf"
+      ],
+      "gaps": [
+        "No new 2021–2026 GCR construction milestone was verified within this bounded source set."
+      ]
+    },
+    {
+      "id": "lwgr",
+      "name": "Light-water-cooled graphite-moderated reactor (LWGR / RBMK)",
+      "definition": "Graphite moderates the core while light water cools the fuel channels.",
+      "axes": {
+        "coolant": "Light water",
+        "moderator": "Graphite",
+        "spectrum": "Thermal",
+        "fuel_form": "Solid uranium oxide"
+      },
+      "status": "Legacy commercial operation abroad; not the same family as a light-water-moderated BWR.",
+      "us_position": "International comparison; no U.S. deployment verified.",
+      "examples": [
+        {
+          "name": "LWGR year-end fleet classification",
+          "country": "Global",
+          "date": "2024-12-31",
+          "achievement": "IAEA retains an operational LWGR class, and its unit inventory identifies RBMK designs.",
+          "remaining_gate": "Existing operation is not evidence of a new build or modernized export design.",
+          "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+          "evidence_quote": "Light-Water Cooled, Graphite Moderated Reactor"
+        }
+      ],
+      "source_urls": [
+        "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf"
+      ],
+      "gaps": [
+        "No new 2021–2026 LWGR construction or commercial-start milestone verified."
+      ]
+    },
+    {
+      "id": "htgr",
+      "name": "High-temperature gas-cooled reactor (HTGR / VHTR)",
+      "definition": "Helium removes heat from graphite-moderated solid fuel, commonly ceramic-coated TRISO particles; VHTR is a higher-temperature development goal.",
+      "axes": {
+        "coolant": "Helium",
+        "moderator": "Graphite",
+        "spectrum": "Thermal",
+        "fuel_form": "Solid ceramic-coated particles in pebbles or prismatic blocks"
+      },
+      "status": "Commercial demonstration abroad and active U.S. licensing/test pathways.",
+      "us_position": "U.S. Xe-100 and pilot/test designs are tracked separately from Chinese operating proof.",
+      "examples": [
+        {
+          "name": "HTR-PM demonstration plant",
+          "country": "China",
+          "date": "2023-12-06",
+          "achievement": "Tsinghua reports entry into commercial operation after a demonstration run. Two reactor modules share a steam turbine; the release reports2×200 MWt, not400 MWe.",
+          "remaining_gate": "Further replication and country-specific authorization; foreign output adds no U.S. megawatts.",
+          "source_url": "https://www.inet.tsinghua.edu.cn/ineten/info/1024/1698.htm",
+          "evidence_quote": "entered commercial operation on December 6"
+        },
+        {
+          "name": "Long Mott Generating Station",
+          "country": "United States",
+          "date": "2026-11-09",
+          "achievement": "NRC issued a construction permit for the four-reactor facility to supply industrial steam and electricity.",
+          "remaining_gate": "Operating licensing and physical delivery remain separate gates.",
+          "source_url": "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
+          "evidence_quote": "ROCKVILLE, Md. — The Nuclear Regulatory Commission has issued a construction permit for the Long Mott Generating Station in Calhoun County, Texas — the first construction permit for a high-temperature gas-cooled reactor in nearly 60 years. It is the third advanced reactor construction permit the NRC has issued this year, clearing the way for Long Mott Energy to build a four-reactor facility."
+        }
+      ],
+      "source_urls": [
+        "https://www.gen-4.org/generation-iv-criteria-and-technologies",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+        "https://www.inet.tsinghua.edu.cn/ineten/info/1024/1698.htm",
+        "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+        "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99"
+      ],
+      "gaps": []
+    },
+    {
+      "id": "sfr",
+      "name": "Sodium-cooled fast reactor (SFR)",
+      "definition": "Liquid sodium cools a fast-neutron core without a moderator. Fuel-cycle and breeding claims depend on the actual design and associated facilities.",
+      "axes": {
+        "coolant": "Liquid sodium",
+        "moderator": "None",
+        "spectrum": "Fast",
+        "fuel_form": "Solid metal alloy or mixed-oxide fuel, depending on design"
+      },
+      "status": "Operating power-reactor experience abroad; new U.S. demonstration development.",
+      "us_position": "Natrium and Aurora are prospective U.S. projects; their construction, tests and electricity claims must remain separate.",
+      "examples": [
+        {
+          "name": "BN-600 and BN-800 operating inventory",
+          "country": "Russia",
+          "date": "2024-12-31",
+          "achievement": "IAEA lists BELOYARSK-3/BN-600 and BELOYARSK-4/BN-800 in its operational-reactor inventory. These are established units, not 2024 startups.",
+          "remaining_gate": "Separate evidence is required for a new design or breeding/fuel-recycle claim.",
+          "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+          "evidence_quote": "BELOYARSK-4"
+        },
+        {
+          "name": "Kemmerer Power Station Unit 1",
+          "country": "United States",
+          "date": "2026-03-09",
+          "achievement": "NRC issued construction permit CPAR-1 to US SFR Owner for the TerraPower project.",
+          "remaining_gate": "Construction completion and separate operating authorization remain.",
+          "source_url": "https://www.nrc.gov/node/2156776",
+          "evidence_quote": "On March 9, the NRC staff issued construction permit CPAR-1 to US SFR Owner, LLC (USO), a wholly owned subsidiary of TerraPower, LLC (TerraPower), authorizing construction of the Kemmerer Power Station, Unit 1 in Kemmerer, Wyoming. Issuance of the permit was authorized by Commission Order CLI-26-5 . Learn more ."
+        }
+      ],
+      "source_urls": [
+        "https://www.gen-4.org/generation-iv-criteria-and-technologies",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+        "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+        "https://www.nrc.gov/node/2156776"
+      ],
+      "gaps": []
+    },
+    {
+      "id": "lfr",
+      "name": "Lead-cooled fast reactor (LFR)",
+      "definition": "Lead or lead-bismuth eutectic removes heat from an unmoderated fast-spectrum core.",
+      "axes": {
+        "coolant": "Lead or lead-bismuth eutectic",
+        "moderator": "None",
+        "spectrum": "Fast",
+        "fuel_form": "Solid oxide or nitride fuels, depending on design"
+      },
+      "status": "Demonstration construction and research; no commercial operation established by this source set.",
+      "us_position": "U.S. R&D/design context; no U.S. commercial LFR build verified.",
+      "examples": [
+        {
+          "name": "BREST-OD-300 first concrete",
+          "country": "Russia",
+          "date": "2021-06-08",
+          "achievement": "A GIF 2022 status presentation records construction beginning with foundation-slab concrete.",
+          "remaining_gate": "Completion, fuel loading and startup need current evidence. The slide’s 2026 criticality date is an old forecast, not proof it occurred.",
+          "source_url": "https://www.gen-4.org/sites/default/files/2024-08/2022%20Status%20of%20LFR%20activities%20in%20Gen%20IV%20countries%20and%20entities%20GIF%20Industry%20Forum.pdf",
+          "evidence_quote": "June 8 2021: Start of construction (concrete pouring of the\nfoundation slab)"
+        }
+      ],
+      "source_urls": [
+        "https://www.gen-4.org/generation-iv-criteria-and-technologies",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+        "https://www.gen-4.org/sites/default/files/2024-08/2022%20Status%20of%20LFR%20activities%20in%20Gen%20IV%20countries%20and%20entities%20GIF%20Industry%20Forum.pdf"
+      ],
+      "gaps": [
+        "No claim of achieved 2026 BREST criticality is made; only a 2022 forecast was located in the bounded sources."
+      ]
+    },
+    {
+      "id": "gfr",
+      "name": "Gas-cooled fast reactor (GFR)",
+      "definition": "Helium cools an unmoderated fast-spectrum core, requiring refractory fuels and dedicated decay-heat safety provisions.",
+      "axes": {
+        "coolant": "Helium in GIF reference designs",
+        "moderator": "None",
+        "spectrum": "Fast",
+        "fuel_form": "Solid carbide or other refractory fuel"
+      },
+      "status": "Concept/design and supporting research; GIF explicitly reports no operating or under-construction GFR.",
+      "us_position": "U.S. design/R&D concepts exist; commercial deployment not verified.",
+      "examples": [
+        {
+          "name": "SafeG / ALLEGRO research programme",
+          "country": "European Union",
+          "date": "2024-09",
+          "achievement": "GIF describes a research timeline from October 2020 through September 2024 supporting ALLEGRO; it does not report a reactor startup.",
+          "remaining_gate": "Demonstrator licensing, fuel qualification, construction and operation remain to be shown.",
+          "source_url": "https://www.gen-4.org/generation-iv-criteria-and-technologies/gas-cooled-fast-reactor-gfr",
+          "evidence_quote": "The SafeG project, which has a project timeline from October 2020 to September 2024"
+        }
+      ],
+      "source_urls": [
+        "https://www.gen-4.org/generation-iv-criteria-and-technologies",
+        "https://www.gen-4.org/generation-iv-criteria-and-technologies/gas-cooled-fast-reactor-gfr",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf"
+      ],
+      "gaps": [
+        "GIF states: No GFR is currently operating or under construction in the world. Its forecast power/deployment table is not an achieved milestone."
+      ]
+    },
+    {
+      "id": "msr",
+      "name": "Liquid-fuel molten-salt reactor (MSR)",
+      "definition": "Fissile material is dissolved in molten salt, which carries fuel and heat; concepts may use thermal or fast neutrons.",
+      "axes": {
+        "coolant": "Molten fluoride or chloride salt",
+        "moderator": "Graphite in some thermal concepts; none in fast concepts",
+        "spectrum": "Thermal or fast, design-specific",
+        "fuel_form": "Liquid salt containing fissile material"
+      },
+      "status": "Experimental and development programmes; the cited U.S. milestone is fuel production, not criticality or electricity.",
+      "us_position": "MCRE and university liquid-fuel experiments belong here; do not merge them with solid-fuel FHRs.",
+      "examples": [
+        {
+          "name": "Molten Chloride Reactor Experiment fuel batch",
+          "country": "United States",
+          "date": "2025-12-03",
+          "achievement": "DOE reported INL’s first batch of fuel salt for MCRE, a fast-spectrum salt-fueled reactor test.",
+          "remaining_gate": "Many further batches, reactor authorization, loading and startup were still required; the article anticipated operation in 2028.",
+          "source_url": "https://www.energy.gov/ne/articles/idaho-national-lab-creates-first-batch-fuel-worlds-first-fast-spectrum-molten-salt",
+          "evidence_quote": "Researchers at Idaho National Laboratory (INL) successfully created the first batch of fuel salt"
+        }
+      ],
+      "source_urls": [
+        "https://www.gen-4.org/generation-iv-criteria-and-technologies",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+        "https://www.energy.gov/ne/articles/idaho-national-lab-creates-first-batch-fuel-worlds-first-fast-spectrum-molten-salt"
+      ],
+      "gaps": []
+    },
+    {
+      "id": "fhr",
+      "name": "Solid-fuel fluoride-salt-cooled high-temperature reactor (FHR)",
+      "definition": "Molten fluoride salt cools solid TRISO fuel in a graphite-moderated core; fuel is not dissolved in the coolant.",
+      "axes": {
+        "coolant": "Molten fluoride salt",
+        "moderator": "Graphite",
+        "spectrum": "Thermal",
+        "fuel_form": "Solid TRISO fuel pebbles in the Kairos design"
+      },
+      "status": "Test/demo licensing and development; separate from liquid-fuel MSRs.",
+      "us_position": "NRC-issued Hermes 2 construction permits are an achieved licensing milestone; design ratings must name their dated basis.",
+      "examples": [
+        {
+          "name": "Hermes 2 construction permits",
+          "country": "United States",
+          "date": "2024-11-21",
+          "achievement": "NRC issued two construction permits. Its application page specifies two 35 MWth test reactors and a shared steam-powered conversion system.",
+          "remaining_gate": "Operation still requires authorization. A newer company 50 MWe claim must not silently replace the permitted thermal design basis.",
+          "source_url": "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos",
+          "evidence_quote": "issued construction permits for the Hermes 2 test reactor facility to Kairos Power LLC on November 21, 2024"
+        }
+      ],
+      "source_urls": [
+        "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos"
+      ],
+      "gaps": [
+        "NRC35 MWth-per-reactor page and company 50 MWe plant claim describe conflicting frames/design states; reconcile before assigning current built electric capacity."
+      ]
+    },
+    {
+      "id": "scwr",
+      "name": "Supercritical-water-cooled reactor (SCWR)",
+      "definition": "Water above its thermodynamic critical pressure and temperature removes heat, without a liquid/steam phase change in the core circuit.",
+      "axes": {
+        "coolant": "Supercritical water",
+        "moderator": "Water in thermal concepts; design-specific",
+        "spectrum": "Thermal or fast concepts",
+        "fuel_form": "Solid fuel, design-specific"
+      },
+      "status": "Research/design concept; the 2026 IAEA overview reports no nuclear-reactor operating experience for this coolant regime.",
+      "us_position": "Research concept rather than a verified U.S. operating or construction project.",
+      "examples": [],
+      "source_urls": [
+        "https://www.gen-4.org/generation-iv-criteria-and-technologies",
+        "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf"
+      ],
+      "gaps": [
+        "No 2021–2026 reactor construction or operating milestone verified. Fossil-plant supercritical steam experience is not nuclear deployment."
+      ]
+    },
+    {
+      "id": "heat-pipe",
+      "name": "Heat-pipe-cooled fission reactor",
+      "definition": "Sealed heat pipes transfer heat from solid fuel; moderator and neutron spectrum depend on the specific design.",
+      "axes": {
+        "coolant": "Working fluid in sealed heat pipes; design-specific",
+        "moderator": "Graphite in eVinci; design-specific otherwise",
+        "spectrum": "Design-specific",
+        "fuel_form": "Solid fuel; TRISO in eVinci"
+      },
+      "status": "Zero-power critical experiments and prototype development; a5 MWe commercial design target is not delivered electricity.",
+      "us_position": "The eVinci experiment reached zero-power hot criticality at NCERC in Nevada, separately from a commercial power plant or DOME campaign.",
+      "examples": [
+        {
+          "name": "eVinci high-temperature zero-power test",
+          "country": "United States",
+          "date": "2026-09-03",
+          "achievement": "DOE and Westinghouse report criticality at663°C at NCERC; the 1011°C measurement was subcritical. This is zero-power reactor-physics proof, with no grid electricity established.",
+          "remaining_gate": "Prototype development, facility-specific authorization, fuel loading and commercial power operation remain separate steps.",
+          "source_url": "https://www.energy.gov/ne/articles/westinghouse-evinci-microreactor-achieves-criticality-milestone",
+          "evidence_quote": "On September 3, 2026, the eVinci test reached criticality at 663 degrees Celsius."
+        }
+      ],
+      "source_urls": [
+        "https://www.energy.gov/ne/articles/westinghouse-evinci-microreactor-achieves-criticality-milestone",
+        "https://info.westinghousenuclear.com/news/westinghouse-evinci-microreactor-achieves-zero-power-high-temperature-criticality"
+      ],
+      "gaps": []
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.gen-4.org/generation-iv-criteria-and-technologies",
+      "title": "Generation IV Goals, Technologies and GIF R&D Roadmap",
+      "publisher": "Generation IV International Forum",
+      "published_at": null,
+      "snapshot_path": "data/research/families-2026-11-22/gif-overview.txt"
+    },
+    {
+      "url": "https://www.gen-4.org/generation-iv-criteria-and-technologies/gas-cooled-fast-reactor-gfr",
+      "title": "Gas-Cooled Fast Reactor",
+      "publisher": "Generation IV International Forum",
+      "published_at": null,
+      "snapshot_path": "data/research/families-2026-11-22/gif-gfr.txt"
+    },
+    {
+      "url": "https://www.gen-4.org/sites/default/files/2024-08/2022%20Status%20of%20LFR%20activities%20in%20Gen%20IV%20countries%20and%20entities%20GIF%20Industry%20Forum.pdf",
+      "title": "Status of Lead-cooled Fast Reactor activities in GEN-IV Countries/Entities",
+      "publisher": "Generation IV International Forum",
+      "published_at": "2022-10",
+      "snapshot_path": "data/research/families-2026-11-22/gif-lfr-2022.txt"
+    },
+    {
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+      "title": "Nuclear Power Reactors in the World, 2025 Edition",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2025-08",
+      "snapshot_path": "data/research/families-2026-11-22/iaea-rds2-2025.txt",
+      "observation_date": "2024-12-31",
+      "capture_method": "PyMuPDF extraction; table 23 on PDF page79 visually checked"
+    },
+    {
+      "url": "https://www.energy.gov/ne/articles/westinghouse-evinci-microreactor-achieves-criticality-milestone",
+      "title": "Westinghouse eVinci Microreactor Achieves Criticality Milestone",
+      "publisher": "U.S. Department of Energy",
+      "published_at": "2026-09-16",
+      "snapshot_path": "data/research/families-2026-11-22/doe-evinci-2026.txt"
+    },
+    {
+      "url": "https://info.westinghousenuclear.com/news/westinghouse-evinci-microreactor-achieves-zero-power-high-temperature-criticality",
+      "title": "Westinghouse eVinci Microreactor Achieves Zero-Power High-Temperature Criticality",
+      "publisher": "Westinghouse Electric Company",
+      "published_at": "2026-09-15",
+      "snapshot_path": "data/research/families-2026-11-22/westinghouse-evinci-2026.txt"
+    },
+    {
+      "url": "https://www.inet.tsinghua.edu.cn/ineten/info/1024/1698.htm",
+      "title": "Chinese HTR-PM Demo begins commercial operation",
+      "publisher": "Tsinghua University Institute of Nuclear and New Energy Technology",
+      "published_at": "2023-12-07",
+      "snapshot_path": "data/research/families-2026-11-22/tsinghua-htrpm-2023.txt"
+    },
+    {
+      "url": "https://www.wrpc.gov.in/allfile/Share_Allocation_KAPP_29.06.2023.pdf",
+      "title": "Commercial operation and allocation for Kakrapar Atomic Power Station Unit 3",
+      "publisher": "Government of India Western Regional Power Committee",
+      "published_at": "2023-06-29",
+      "snapshot_path": "data/research/families-2026-11-22/wrpc-kakrapar-2023.txt",
+      "capture_method": "PDF text extraction plus page-1 visual transcription; source original saved in gitignored work/reports"
+    },
+    {
+      "url": "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos",
+      "title": "Hermes 2 – Kairos Application | Nuclear Regulatory Commission",
+      "publisher": "U.S. Nuclear Regulatory Commission",
+      "published_at": null,
+      "snapshot_path": "data/research/families-2026-11-22/nrc-hermes2.txt",
+      "snapshot_captured_at": "2026-11-21T22:19:08.625Z"
+    },
+    {
+      "url": "https://www.energy.gov/ne/articles/idaho-national-lab-creates-first-batch-fuel-worlds-first-fast-spectrum-molten-salt",
+      "title": "Idaho National Lab Creates First Batch of Fuel for World’s First Fast Spectrum Molten Salt Reactor Experiment | Department of Energy",
+      "publisher": "U.S. Department of Energy",
+      "published_at": "2025-12-03",
+      "snapshot_path": "data/research/families-2026-11-22/doe-mcre-fuel.txt",
+      "snapshot_captured_at": "2026-11-21T22:19:27.370Z"
+    },
+    {
+      "url": "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+      "title": "Introduction of Innovative Nuclear Reactors and GEN-IV Concepts",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2026-02-16",
+      "snapshot_path": "data/research/families-2026-11-22/iaea-classification-2026.txt"
+    },
+    {
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS446_web.pdf",
+      "title": "Decommissioning of Research Reactors: Evolution, State of the Art, Open Issues",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2006-05",
+      "snapshot_path": "data/research/families-2026-11-22/iaea-trs446.txt",
+      "use": "Historical classification only; its reactor counts are not current."
+    },
+    {
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf",
+      "title": "Research Reactor Exercises for Higher Education Programmes: Compendium (IAEA-TECDOC-2024)",
+      "publisher": "International Atomic Energy Agency",
+      "published_at": "2023-05",
+      "snapshot_path": "data/research/families-2026-11-22/iaea-tecdoc2024.txt",
+      "use": "Research-configuration definitions and neutron-physics distinctions; no current fleet totals inferred."
+    },
+    {
+      "url": "https://www.energy.gov/ne/articles/11-big-wins-nuclear-energy-2024",
+      "title": "Vogtle Unit 4 primary milestone",
+      "publisher": "U.S. Department of Energy",
+      "published_at": "2024-04-29",
+      "captured_at": "2026-11-22",
+      "snapshot_path": "data/research/fleet-2026-11-22/doe-vogtle-2024.txt"
+    },
+    {
+      "url": "https://www.nrc.gov/node/2156776",
+      "title": "Kemmerer Power Station Unit 1 primary milestone",
+      "publisher": "U.S. Nuclear Regulatory Commission",
+      "published_at": "2026-03-09",
+      "captured_at": "2026-11-22",
+      "snapshot_path": "data/sources/pages/d7e1b6d9a04497ec.txt"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm",
+      "title": "Clinch River Nuclear Unit 1 primary milestone",
+      "publisher": "U.S. Nuclear Regulatory Commission",
+      "published_at": "2026-09-28",
+      "captured_at": "2026-11-22",
+      "snapshot_path": "data/sources/pages/e27bbf2c849a40a6.txt"
+    },
+    {
+      "url": "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99",
+      "title": "Long Mott Generating Station primary milestone",
+      "publisher": "U.S. Nuclear Regulatory Commission",
+      "published_at": "2026-11-09",
+      "captured_at": "2026-11-22",
+      "snapshot_path": "data/sources/pages/ad6c6135014a773b.txt"
+    }
+  ],
+  "gaps": [
+    "The 13 coverage families are supplemented by a historical/role crosswalk for HWGCR, HWLWR, SGHWR and research configurations. This is not an exhaustive prototype census.",
+    "Size, generation, installation, fuel cycles and application roles remain separate axes; the historical/role crosswalk documents overlap and remaining source gaps.",
+    "IAEA RDS2 2025 Edition describes 31 December 2024. It is not a 2025 or 2026 operating-fleet snapshot. Publication and observation dates are preserved separately.",
+    "PRIS old Glossary URL redirected to a JavaScript analytics shell; an obsolete NRC student URL was unavailable; a guessed IAEA HTR-PM article URL failed; PIB Kakrapar page timed out. Specific alternative primary documents were read instead.",
+    "Only dated observed records are treated as achieved. GIF 2022 BREST 2026 forecast and GIF GFR expected deployment dates are not confirmed occurrence.",
+    "No verified recent deployment milestone for GCR, LWGR or SCWR was found within the bounded research set; operating/historical classification or R&D is explicitly described instead.",
+    "https://www.nrc.gov/regulations-legislation/fact-sheets-brochures/backgrounder-on-research-and-test-reactors: HTTP Error 403: Forbidden"
+  ],
+  "historical_role_crosswalk": {
+    "scope": "Historical power-reactor labels, research configurations and cross-cutting applications. This is a classification crosswalk, not an exhaustive inventory of every prototype or facility.",
+    "relationship_note": "Coolant, moderator, neutron spectrum, fuel form, research role, power level and installation can overlap. Preserve the original authority’s database label instead of forcing every design into one flat list.",
+    "historical_labels": [
+      {
+        "id": "hwgcr",
+        "name": "Heavy-water-moderated gas-cooled reactor (HWGCR)",
+        "definition": "Heavy water moderates the core while gas removes heat. It is a historical hybrid of moderation and cooling choices, separate from conventional graphite-moderated GCR.",
+        "status": "IAEA’s December 31, 2024 power-reactor table lists this historical class only under shutdown; it is not included as an operating family here.",
+        "source_urls": [
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf"
+        ],
+        "gaps": [
+          "The archive does not independently establish a recent new build or a complete inventory of research variants."
+        ]
+      },
+      {
+        "id": "hwlwr",
+        "name": "Heavy-water-moderated boiling-light-water-cooled reactor (HWLWR)",
+        "definition": "Heavy water provides moderation while ordinary water cools the fuel and boils. Distinguish this combination from PHWR’s heavy-water coolant.",
+        "status": "Historical power-reactor database class; IAEA lists shutdown examples rather than an operating class in the 2024 snapshot.",
+        "source_urls": [
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf"
+        ],
+        "gaps": [
+          "Do not silently rename every HWLWR design SGHWR: IAEA retains separate codes."
+        ]
+      },
+      {
+        "id": "sghwr",
+        "name": "Steam-generating heavy-water reactor (SGHWR)",
+        "definition": "Historical steam-generating heavy-water reactor label. It is related to the heavy-water-moderated, boiling-light-water-cooled configuration, but the IAEA database records it separately.",
+        "status": "The December 31, 2024 IAEA table lists this class under shutdown. No current commercial deployment is asserted.",
+        "source_urls": [
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf"
+        ],
+        "gaps": [
+          "HWLWR and SGHWR overlap physically but are not interchangeable aliases in this source’s classification; design-level equivalence requires its original design record."
+        ]
+      }
+    ],
+    "research_configurations": [
+      {
+        "id": "research-pool",
+        "name": "Open-pool research reactor",
+        "definition": "The core is arranged in a water pool that provides cooling and shielding. Pool describes the arrangement and can overlap with TRIGA and other fuel/design classes.",
+        "status": "An established research-reactor arrangement, not evidence of commercial electricity generation.",
+        "source_urls": [
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS446_web.pdf",
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf"
+        ],
+        "gaps": []
+      },
+      {
+        "id": "research-tank",
+        "name": "Tank or tank-in-pool research reactor",
+        "definition": "The core is housed in a tank or in a tank within a pool. Vessel/arrangement labels can coexist with coolant, moderator and fuel descriptions.",
+        "status": "Established research configurations classified separately from power-reactor families.",
+        "source_urls": [
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS446_web.pdf",
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf"
+        ],
+        "gaps": []
+      },
+      {
+        "id": "triga",
+        "name": "TRIGA research reactor",
+        "definition": "A named research-reactor design tradition; the IAEA’s historical classification places TRIGA under the broader pool-type category. It is not a mutually exclusive coolant family.",
+        "status": "Research/training/isotope configuration; individual facilities and fuel variants require facility-specific records.",
+        "source_urls": [
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS446_web.pdf",
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf"
+        ],
+        "gaps": [
+          "The attempted NRC backgrounder was403-blocked. This packet does not replace a particular TRIGA facility’s fuel or licensing specification."
+        ]
+      },
+      {
+        "id": "aqueous-homogeneous",
+        "name": "Aqueous homogeneous research reactor",
+        "definition": "A water-based liquid-fuel configuration: fissile material is in solution rather than in distinct solid fuel elements. It is a subset of the broader homogeneous-liquid category, not a molten-salt reactor.",
+        "status": "IAEA recognizes homogeneous-liquid research reactors as a historical configuration; no present commercial operating fleet is inferred.",
+        "source_urls": [
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS446_web.pdf",
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf"
+        ],
+        "gaps": [
+          "The archived IAEA table establishes the broader homogeneous-liquid category; no named current aqueous facility, solution chemistry or electrical output was independently verified in this bounded follow-up."
+        ]
+      },
+      {
+        "id": "critical-assembly",
+        "name": "Critical assembly",
+        "definition": "A fissile-material assembly intended to sustain a controlled chain reaction at low power to investigate core geometry and composition. Criticality alone establishes no electric generation.",
+        "status": "Research/physics-test role; it may exercise material and temperature conditions relevant to a future power reactor.",
+        "source_urls": [
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf"
+        ],
+        "gaps": []
+      },
+      {
+        "id": "subcritical-assembly",
+        "name": "Subcritical assembly",
+        "definition": "An assembly with effective multiplication below one. With an external neutron source its neutrons can be multiplied, while the assembly remains below the self-sustaining critical condition.",
+        "status": "Research/training or source-driven configuration; do not report subcritical measurements as achieved criticality.",
+        "source_urls": [
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf"
+        ],
+        "gaps": []
+      }
+    ],
+    "cross_cutting_axes": [
+      {
+        "id": "naval",
+        "name": "Naval and marine propulsion",
+        "definition": "A propulsion/application label, to be combined with a reactor’s actual coolant, moderator, spectrum and fuel design. It is not a new mutually exclusive fission family.",
+        "status": "Application axis; no national naval fleet census or classified design inference is attempted.",
+        "source_urls": [
+          "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf"
+        ],
+        "gaps": [
+          "The archived IAEA taxonomy includes ship-propulsion applications but does not enumerate naval fleets."
+        ]
+      },
+      {
+        "id": "space",
+        "name": "Space fission systems",
+        "definition": "Space describes the mission and environment. A space reactor still has a physical reactor family; radioisotope power sources are not fission reactors simply because both are nuclear.",
+        "status": "Application axis; no recent mission milestone or comprehensive space-reactor inventory verified in this packet.",
+        "source_urls": [
+          "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+          "https://www.gen-4.org/generation-iv-criteria-and-technologies"
+        ],
+        "gaps": [
+          "A dedicated NASA/DOE space-fission source remains needed before adding mission-specific power or deployment statistics."
+        ]
+      },
+      {
+        "id": "floating",
+        "name": "Floating nuclear installation",
+        "definition": "Floating describes siting or plant installation, not a distinct coolant/moderator/neutron-spectrum family. A floating design must retain its actual reactor technology label.",
+        "status": "Installation axis; the IAEA technology survey includes floating applications across concepts.",
+        "source_urls": [
+          "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf"
+        ],
+        "gaps": []
+      },
+      {
+        "id": "size",
+        "name": "Large reactor, SMR and microreactor",
+        "definition": "Size and modular construction describe power or delivery scale. Water, gas, salt, liquid-metal and heat-pipe concepts can occupy different size classes.",
+        "status": "Scale axis; thresholds and electrical/thermal units must be stated from the relevant authority.",
+        "source_urls": [
+          "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+          "https://www.gen-4.org/generation-iv-criteria-and-technologies"
+        ],
+        "gaps": []
+      },
+      {
+        "id": "fuel-cycle",
+        "name": "Fuel composition and fuel cycle",
+        "definition": "Uranium, plutonium and thorium refer to fuel/material choices; open or closed cycles describe material management. These do not by themselves identify a coolant/moderator family.",
+        "status": "Fuel and lifecycle axes; fuel-production milestones do not prove reactor operation or recycling at commercial scale.",
+        "source_urls": [
+          "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+          "https://www.gen-4.org/generation-iv-criteria-and-technologies"
+        ],
+        "gaps": []
+      },
+      {
+        "id": "role",
+        "name": "Power, heat, isotope production and research",
+        "definition": "Application and research roles can overlap the same reactor physics. Electricity, heat, neutron production and criticality are distinct output/achievement frames.",
+        "status": "Role axis; preserve separate thermal, electrical and research statistics.",
+        "source_urls": [
+          "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+          "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf"
+        ],
+        "gaps": []
+      }
+    ],
+    "evidence": [
+      {
+        "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+        "quote": "Heavy-Water Moderated, Gas Cooled Reactor",
+        "snapshot_path": "data/research/families-2026-11-22/iaea-rds2-2025.txt",
+        "page": "PDF79 / printed72"
+      },
+      {
+        "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+        "quote": "Heavy-Water Moderated, Boiling Light-Water Cooled Reactor",
+        "snapshot_path": "data/research/families-2026-11-22/iaea-rds2-2025.txt",
+        "page": "PDF79 / printed72"
+      },
+      {
+        "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+        "quote": "Steam Generating Heavy-Water Reactor",
+        "snapshot_path": "data/research/families-2026-11-22/iaea-rds2-2025.txt",
+        "page": "PDF79 / printed72"
+      },
+      {
+        "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS446_web.pdf",
+        "quote": "Homogeneous liquid",
+        "snapshot_path": "data/research/families-2026-11-22/iaea-trs446.txt",
+        "page": "PDF14 / printed3"
+      },
+      {
+        "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf",
+        "quote": "pool type reactors, tank type reactors or tank-in-pool type reactors",
+        "snapshot_path": "data/research/families-2026-11-22/iaea-tecdoc2024.txt",
+        "page": "PDF19 / printed8"
+      },
+      {
+        "source_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf",
+        "quote": "In a subcritical state keff < 1",
+        "snapshot_path": "data/research/families-2026-11-22/iaea-tecdoc2024.txt",
+        "page": "PDF63; subcritical multiplication section"
+      }
+    ],
+    "gaps": [
+      "No complete inventory of all historical prototypes, pulse devices, irradiation facilities, naval reactors or space experiments is claimed.",
+      "The 2006 research-reactor report is used for configuration nomenclature, not for current facility counts; the 2023 compendium is used for definitions.",
+      "No source examined here establishes that HWLWR and SGHWR are exact interchangeable database aliases. Their physical overlap is described without merging the authority’s separate labels.",
+      "A dedicated primary source for each named current aqueous or space facility remains required before publishing facility-level power, dates or status."
+    ]
+  }
+}

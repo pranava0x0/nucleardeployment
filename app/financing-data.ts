@@ -1,3 +1,5 @@
+import type { SourceLink } from "./data";
+
 /**
  * The financing layer: what new nuclear costs, who pays for it, and what each
  * tracked company still needs before a government or commercial contract can
@@ -18,10 +20,11 @@ export type FinanceLane = "Microreactor" | "Grid-scale SMR" | "Large LWR" | "Cro
  * suite derives from the newest race record; this layer was assembled and
  * verified later, and its page and sitemap entry carry this date instead.
  */
-export const financingAsOf = "2026-11-21";
+export const financingAsOf = "2026-11-22";
 
 /** One claim, one source that supports exactly that claim. */
 export type SourcedLine = {
+  additionalSources?: SourceLink[];
   text: string;
   source: string;
 };
@@ -37,8 +40,9 @@ export type ReportRef = {
 
 /** An estimate or actual, labeled with who published it and in what frame. */
 export type CostBenchmark = {
+  additionalSources?: SourceLink[];
   lane: FinanceLane;
-  series: "FOAK" | "Early units" | "NOAK" | "Actual" | "Contract value" | "Company target";
+  series: "Modeled" | "FOAK" | "Early units" | "NOAK" | "Actual" | "Contract value" | "Company target";
   figure: string;
   scope: string;
   basis: string;
@@ -57,6 +61,7 @@ export type LearningRung = {
 };
 
 export type CompanyFinance = {
+  additionalSources?: SourceLink[];
   companySlug: string;
   /** How the company gets paid: what it sells and who carries the plant. */
   model: string;
@@ -118,17 +123,17 @@ export const costBenchmarks: CostBenchmark[] = [
   // Large LWR: the only class with completed U.S. actuals.
   {
     lane: "Large LWR",
-    series: "Actual",
+    series: "Modeled",
     figure: "$169/MWh",
     scope: "Vogtle 3&4 as built: ~2.2 GW, ~$32.3B total capital cost, ~97% capacity factor, 70-year life, with ~30% cost learning between unit 3 and unit 4.",
-    basis: "Lazard LCOE+ analysis of the completed project",
+    basis: "Lazard model using completed Vogtle project capital-cost inputs; not a measured electricity tariff",
     date: "2025-06",
     source: "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
     report: { reportSlug: "lazard-lcoe-june-2025", page: 8 },
   },
   {
     lane: "Large LWR",
-    series: "FOAK",
+    series: "Modeled",
     figure: "$175–255/MWh",
     scope: "Unsubsidized U.S. nuclear LCOE modeled from publicly available Vogtle 3&4 capital costs, including 0–30% learning between units, in Lazard's July 2026 analysis. An estimate, not an observed electricity tariff.",
     basis: "Lazard LCOE+ version 19.0 estimate",
@@ -151,27 +156,21 @@ export const costBenchmarks: CostBenchmark[] = [
     lane: "Grid-scale SMR",
     series: "FOAK",
     figure: "C$7.7B first unit",
-    scope: "OPG's approved Darlington budget: C$6.1B for the first 300 MWe BWRX-300 plus C$1.6B for systems shared by all four planned units; C$20.9B for the four-unit, 1,200 MW project in 2024 dollars.",
-    basis: "Ontario's project approval, reported by POWER",
+    scope: "Historical May 2025 budget: C$6.1B for Unit 1 plus C$1.6B in shared systems; C$20.9B for four units, including interest, cost escalation, and contingency. OPG’s November 2026 update says Unit 1 will not meet the prior budget or October 2030 target; reassessment is expected substantially complete by mid 2027.",
+    basis: "OPG May 2025 release-quality project budget; includes financing, escalation and contingency",
     date: "2025-05",
-    source: "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/",
+    source: "https://www.opg.com/news-resources/newsroom/release/opg-reports-2025-first-quarter-financial-results/",
+
+    additionalSources: [{"url":"https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/","label":"OPG November 2026 budget and schedule reassessment"}],
   },
-  {
-    lane: "Grid-scale SMR",
-    series: "FOAK",
-    figure: "~$5.4B",
-    scope: "TVA's estimate for the first Clinch River BWRX-300, before interest costs and tax credits.",
-    basis: "TVA figure, reported by WKMS",
-    date: "2025-10",
-    source: "https://www.wkms.org/energy/2025-10-14/nuclear-hype-is-building-tva-plans-to-buy-in",
-  },
+
   {
     lane: "Grid-scale SMR",
     series: "Company target",
     figure: "~$4B all-in",
-    scope: "TerraPower's stated cost for Kemmerer Unit 1 (345 MWe Natrium), split roughly 50/50 with DOE under ARDP. The company has held the figure since 2021, before construction pricing could test it.",
+    scope: "Historical company estimate reported for the 2021 site announcement, retrospectively covered in 2026. A projected all-in cost, not a completed cost or a newly reaffirmed 2026 budget.",
     basis: "Company statement, reported by POWER",
-    date: "2026-04",
+    date: "2021-11",
     source: "https://www.powermag.com/terrapowers-kemmerer-1-enters-construction-timeline-of-the-natrium-projects-road-to-first-power/",
   },
   {
@@ -208,16 +207,16 @@ export const costBenchmarks: CostBenchmark[] = [
     lane: "Microreactor",
     series: "FOAK",
     figure: "$0.14–0.41/kWh",
-    scope: "NEI's 2019 estimate for first-of-a-kind microreactors, overlapping the cost of remote diesel generation, the first market where micro FOAK economics close.",
-    basis: "NEI report, reported by NucNet",
-    date: "2019",
-    source: "https://www.nucnet.org/news/electricity-from-micro-reactors-will-cost-less-than-diesel-generators-says-nei-report",
+    scope: "Historical NEI estimate for first microreactor electricity generation, attributed by INL; a model range for remote-market comparison, not an observed tariff.",
+    basis: "NEI estimate, reported by Idaho National Laboratory",
+    date: null,
+    source: "https://inl.gov/trending-topics/microreactors/",
   },
   {
     lane: "Microreactor",
     series: "Contract value",
     figure: "up to $300M",
-    scope: "The Project Pele prototype: a 1.5 MWe transportable unit under a cost-type DOD contract whose value depends on options selected. A contract ceiling, not an outturn cost.",
+    scope: "The Project Pele prototype award: an option-dependent DOD cost-type contract under a 1–5 MWe programme target. A contract ceiling, not an outturn cost.",
     basis: "DOD Strategic Capabilities Office award, reported by POWER",
     date: "2022-06",
     source: "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
@@ -307,7 +306,7 @@ export const overrunRecords: OverrunRecord[] = [
   {
     subject: "Vogtle 3&4, as built",
     figure: "~$32.3B total capital",
-    note: "Lazard's assumption for the completed 2.2 GW, the basis of its $169/MWh actual.",
+    note: "Lazard’s completed-project capital-cost assumption for 2.2 GW, used in its modeled $169/MWh LCOE; not an observed electricity tariff.",
     date: "2025-06",
     source: "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
     report: { reportSlug: "lazard-lcoe-june-2025", page: 8 },
@@ -358,7 +357,7 @@ export const companyFinance: CompanyFinance[] = [
     modelSource: "https://radiantnuclear.com/news/radiant-expands-manufacturing",
     government: [
       {"text": "Up to $750M binding Janus agreement for 15 Kaleidos units; a milestone contract ceiling, not equity or cash received.", "source": "https://www.radiantnuclear.com/news/radiant-wins-750m-janus-army-contract"},
-      { text: "First ANPI delivery agreement with the Defense Innovation Unit and Department of the Air Force: deliver a mass-manufactured unit to a base within 36 months of the August 2025 signing.", source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/" },
+      { text: "In August 2025, Radiant announced an ANPI agreement with the Defense Innovation Unit and Department of the Air Force to deliver a mass-manufactured microreactor to a U.S. military base.", source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/" },
       { text: "Army selected Radiant for Fort Benning under Janus; its separate Air Force and Navy selections are also now named.", source: "https://radiantnuclear.com/news/radiant-expands-manufacturing" },
     ],
     commercial: [
@@ -390,12 +389,12 @@ export const companyFinance: CompanyFinance[] = [
     modelSource: "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
     government: [
       {"text": "Army selected BWXT for the Janus project at Fort Campbell; site authorization and milestone delivery remain.", "source": "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors"},
-      { text: "Prime contractor for Project Pele, the DOD Strategic Capabilities Office transportable microreactor being assembled at INL under a cost-type contract worth up to $300M.", source: "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/" },
+      { text: "BWXT received the Project Pele prototype manufacturing and delivery contract, with an option-dependent ceiling up to $300M.", source: "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/" },
     ],
     commercial: [
       { text: "Tata Chemicals letter of intent to explore up to eight BANR units at a Green River, Wyoming soda-ash site, early-2030s target, commercial terms still to be established.", source: "https://www.tatachemicals.com/upload/content_pdf/BWXT-Tata-LOI-12-December-2024.pdf" },
     ],
-    costClaim: "~$300M for the 1.5 MWe Pele prototype, a government cost-type demonstration price",
+    costClaim: "Up to $300M Project Pele prototype contract value; a demonstration contract ceiling rather than an electricity price or completed plant cost.",
     costClaimSource: "https://www.powermag.com/dod-picks-bwxt-to-manufacture-project-pele-prototype-nuclear-microreactor/",
     nextGate: "Pele criticality at INL; commercial terms on the Tata letter of intent.",
   },
@@ -404,10 +403,10 @@ export const companyFinance: CompanyFinance[] = [
     model: "Developer-owner: builds, owns, and operates PWR-20 units and sells the power. Its 34 executed PPAs in Poland and the UK (680 MW, ~$18.9B in power sales) are the model working outside the U.S.",
     modelSource: "https://www.powermag.com/last-energy-secures-ppas-for-34-smr-nuclear-power-plants-in-poland-and-the-uk/",
     government: [
-      { text: "DOE approved the PWR-5 documented safety analysis on October 7, 2026; readiness review and startup authorization remain.", source: "https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis" },
+      { text: "DOE approved Last Energy’s pilot-reactor documented safety analysis on October 7, 2026; readiness review and startup authorization remain.", source: "https://www.lastenergy.com/news-press/last-energy-receives-doe-approval-of-pilot-reactor-documented-safety-analysis" },
     ],
     commercial: [
-      { text: "A 200-acre Haskell County, Texas site plans up to 30 units (600 MW) for data-center customers in ERCOT, interconnection request filed, with the company saying offtaker news is still to come.", source: "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/" },
+      { text: "Company plans up to 30 units (600 MW) at Haskell, Texas for ERCOT data-center customers, with an interconnection request filed.", source: "https://www.utilitydive.com/news/last-energy-microreactors-texas-ercot-data-centers/741268/" },
     ],
     costClaim: null,
     costClaimSource: null,
@@ -429,10 +428,10 @@ export const companyFinance: CompanyFinance[] = [
   },
   {
     companySlug: "aalo-atomics",
-    model: "Vertically integrated for AI data centers: the Aalo-X reactor and the 50 MWe Aalo Pod plant product.",
+    model: "Vertically integrated supplier of the proposed 50 MWe Aalo Pod plant for AI data centers.",
     modelSource: "https://www.aalo.com/aalo-x",
     government: [
-      { text: "DOE Reactor Pilot Program: its Critical Test Reactor reached criticality at INL on July 4, 2026, and Aalo-X proceeds under the same DOE authority.", source: "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal" },
+      { text: "DOE reported Aalo-X’s zero-power fueled criticality demonstration at INL as the fourth milestone before the July 4, 2026 goal.", source: "https://www.energy.gov/articles/department-energy-celebrates-fourth-criticality-ahead-july-4th-goal" },
     ],
     commercial: [
       { text: "Crusoe strategic partnership: power one Crusoe Spark modular data center at INL in 2027 as proof of concept, with aspirational Pod deployments by 2029. No megawatts contracted.", source: "https://www.globenewswire.com/news-release/2026/07/30/3336005/0/en/crusoe-and-aalo-atomics-form-strategic-partnership-with-goal-of-deploying-first-nuclear-powered-ai-factory.html" },
@@ -446,10 +445,10 @@ export const companyFinance: CompanyFinance[] = [
     model: "Gigasite model: hundreds of reactors clustered on single industrial campuses selling grid-independent power, hydrogen, and clean hydrocarbon fuels.",
     modelSource: "https://www.valaratomics.com",
     government: [
-      { text: "DOE Reactor Pilot Program: Ward 250 reached criticality in Utah in June 2026, the only pilot reactor built outside a national laboratory.", source: "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality" },
+      { text: "DOE Reactor Pilot Program: Ward 250 reached criticality in Utah in June 2026, the first DOE-authorized reactor built outside a national laboratory.", source: "https://www.energy.gov/articles/department-energy-celebrates-second-advanced-reactor-achieving-criticality" },
     ],
     commercial: [
-      { text: "NVIDIA collaboration for a ~30 MW pilot AI data center in Emery County, Utah, paired with Ward 250. Non-binding.", source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia" },
+      { text: "Valar announced a collaboration with NVIDIA on a waterless30 MW AI factory. No reactor electrical-capacity order is established by this announcement.", source: "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia" },
     ],
     costClaim: null,
     costClaimSource: null,
@@ -461,8 +460,8 @@ export const companyFinance: CompanyFinance[] = [
     modelSource: "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/",
     government: [
       { text: "First Reactor Pilot Program criticality: Mark-0 at INL, June 2026, run with the U.S. Army.", source: "https://www.army.mil/article/293057/antares_nuclears_successful_zero_power_criticality_test_marks_major_step_for_military_applications_of_advanced_microreactors" },
-      { text: "Army selected Antares for Fort Bragg under Janus on August 26, 2026. The separate Air Force program has its own procurement history.", source: "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors" },
-      { text: "Delivered an electrically heated prototype for testing at NASA's Marshall Space Flight Center, under a NASA program that uses Space Act Agreements in which companies own the reactors and sell the power.", source: "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/" },
+      { text: "Army selected Antares for a Janus vendor/site pairing at Fort Bragg on August 26, 2026.", source: "https://www.army.mil/article/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors" },
+      { text: "Antares reported testing an electrically heated demonstration unit with NASA Marshall in Huntsville. This is non-nuclear hardware testing.", source: "https://www.linkedin.com/posts/antares-industries_after-6-months-in-huntsville-ourelectrically-heated-activity-7396980168080154624-i2CV" },
     ],
     commercial: [],
     costClaim: null,
@@ -483,7 +482,7 @@ export const companyFinance: CompanyFinance[] = [
   },
   {
     companySlug: "deployable-energy",
-    model: "Nuclear-battery platform: 1 MWe Unity units aimed at behind-the-meter national-security, data-center, maritime, and remote industrial loads.",
+    model: "Unity Nuclear Battery developer: a compact1 MWe water-moderated, gas-cooled product for locations underserved by conventional energy infrastructure.",
     modelSource: "https://www.deployable.energy/post/deployable-energy-announces-unity-demonstration-reactor-achieves-criticality-at-idaho-national-labor",
     government: [
       { text: "Reactor Pilot Program criticality at INL on July 1, 2026, about 150 days from kickoff.", source: "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor" },
@@ -500,7 +499,7 @@ export const companyFinance: CompanyFinance[] = [
     model: "Project sponsor: builds Kemmerer with a roughly 50/50 DOE cost share under ARDP, up to a $2B federal ceiling.",
     modelSource: "https://www.terrapower.com/fundraise",
     government: [
-      { text: "ARDP demonstration cost share, up to $2B DOE ceiling at 50% of project costs, the largest federal commitment behind any entrant's first unit.", source: "https://www.terrapower.com/fundraise" },
+      { text: "ARDP demonstration cost share requires a 50% project-cost match, up to a$2B federal ceiling.", source: "https://www.terrapower.com/fundraise" },
     ],
     commercial: [
       { text: "PacifiCorp's resource plan selected two additional Natrium units in Utah by 2033, alongside the Kemmerer unit already in its territory.", source: "https://www.neimagazine.com/news/pacificorp-considers-adding-two-more-natrium-units-to-its-generation-mix-by-2033-10759748/" },
@@ -512,11 +511,11 @@ export const companyFinance: CompanyFinance[] = [
   },
   {
     companySlug: "oklo",
-    model: "Build-own-operate: Oklo keeps the plant and sells power, so its deals are power agreements rather than reactor sales. The Eielson structure is exactly that: design, build, own, operate.",
+    model: "Oklo is pursuing an Air Force microreactor pilot at Eielson Air Force Base under a notice of intent to award.",
     modelSource: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
     government: [
-      { text: "Air Force/DLA Notice of Intent to Award for a 5 MW microreactor at Eielson AFB under a prospective 30-year fixed-price power arrangement, pending NRC licensing.", source: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/" },
-      { text: "Aurora-INL is being built under the DOE Reactor Pilot Program while its NRC combined license is under review.", source: "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx" },
+      { text: "The Air Force announced a notice of intent to award Oklo an Eielson microreactor pilot.", source: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/" },
+      { text: "Aurora-INL groundbreaking is proceeding through the DOE Reactor Pilot Program; NRC licensing remains a separate process.", source: "https://oklo.com/newsroom/news-details/2025/Oklo-Breaks-Ground-on-First-Aurora-Powerhouse/default.aspx" },
     ],
     commercial: [
       { text: "Switch master power agreement frames 12 GW of Aurora deployment by 2044; non-binding, with per-project PPAs to follow.", source: "https://www.switch.com/oklo-and-switch-form-landmark-strategic-relationship/" },
@@ -561,10 +560,10 @@ export const companyFinance: CompanyFinance[] = [
   },
   {
     companySlug: "holtec",
-    model: "SMR-300 fleet builder with exclusive EPC partner Hyundai E&C and a stated ambition of a 10 GW North American fleet.",
+    model: "SMR-300 developer working with Hyundai E&C toward a stated10 GW North American fleet ambition.",
     modelSource: "https://world-nuclear-news.org/articles/holtec-and-hyundai-ec-target-10gw-fleet-of-smrs-in-us",
     government: [
-      { text: "$400M Gen III+ Tier 1 milestone-based cost share for PIONEER 1&2 licensing, pre-construction, and supply-chain mobilization.", source: "https://holtecinternational.com/hh-40-24/" },
+      { text: "DOE selected Holtec for up to$400M in federal cost-shared funding for a two-unit SMR-300 project at Palisades.", source: "https://www.energy.gov/articles/energy-department-selects-tva-and-holtec-advance-deployment-us-small-modular-reactors" },
       { text: "$1.52B DOE loan to Holtec Palisades LLC covers the existing 800 MW reactor's restart, not the new units.", source: "https://www.energy.gov/edf/palisades" },
     ],
     commercial: [
@@ -581,16 +580,18 @@ export const companyFinance: CompanyFinance[] = [
     modelSource: "https://www.bechtel.com/press-releases/tva-bechtel-sargent-lundy-and-ge-hitachi-plan-initial-construction-and-design-for-potential-clinch-river-smr/",
     government: [
       {"text": "NRC issued the Clinch River Unit 1 construction permit on September 28, 2026; operating licensing is separate.", "source": "https://www.govinfo.gov/content/pkg/FR-2026-10-05/html/2026-20345.htm"},
-      { text: "DOE's $400M Tier 1 award flows to TVA to accelerate the Clinch River BWRX-300.", source: "https://www.ans.org/news/2025-12-03/article-7593/doe-selects-tva-and-holtec-for-smr-awards/" },
+      { text: "DOE selected TVA for up to$400M in cost-shared funding to advance Clinch River and follow-on BWRX-300 deployment.", source: "https://www.energy.gov/articles/energy-department-selects-tva-and-holtec-advance-deployment-us-small-modular-reactors" },
       { text: "The U.S.-Japan framework earmarks up to $40B for BWRX-300 builds at unidentified Tennessee and Alabama sites.", source: "https://www.ans.org/news/2026-03-25/article-7878/new-us-bwrx300-projects-get-japanese-investment/" },
     ],
     commercial: [
       { text: "TVA's Clinch River Unit 1 proceeds as a utility self-build with Bechtel, Sargent & Lundy, and GE Hitachi on the project team.", source: "https://www.bechtel.com/press-releases/tva-bechtel-sargent-lundy-and-ge-hitachi-plan-initial-construction-and-design-for-potential-clinch-river-smr/" },
       { text: "OPG's four-unit Darlington program in Canada is the design's first-of-a-kind proof, on an approved C$20.9B budget.", source: "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/" },
     ],
-    costClaim: "Darlington: C$7.7B first unit including shared systems; C$20.9B for four units (2024 dollars)",
-    costClaimSource: "https://www.powermag.com/ontario-authorizes-opg-to-start-construction-of-first-commercial-nuclear-smr/",
+    costClaim: "Historical 2025 Darlington budget: C$7.7B for the first unit and shared systems; C$20.9B for four units. OPG began a cost and schedule reassessment in 2026.",
+    costClaimSource: "https://www.opg.com/news-resources/newsroom/release/opg-reports-2025-first-quarter-financial-results/",
     nextGate: "Clinch River construction and separate operating licensing after the September 2026 construction permit; Darlington completion tests the cost estimates.",
+
+    additionalSources: [{"url":"https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/","label":"OPG November 2026 budget and schedule reassessment"}],
   },
   {
     companySlug: "nuscale",
@@ -610,11 +611,11 @@ export const companyFinance: CompanyFinance[] = [
   },
   {
     companySlug: "terrestrial-energy",
-    model: "Reactor vendor pairing DOE pilot agreements (Project TETRA reactor, Project TEFLA fuel salt) with the commercial IMSR400 product.",
-    modelSource: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under",
+    model: "IMSR vendor with separate DOE pilot agreements for the TETRA reactor and TEFLA fuel-salt facility; the commercial plant is company-rated 390 MWe.",
+    modelSource: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tefla-under",
     government: [
       {"text": "Selected as Ameresco's nuclear technology supplier at Aberdeen Proving Ground, reported November 10, 2026.", "source": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-reports-third-quarter-2026-results"},
-      { text: "Two DOE Other Transaction Agreements executed under Executive Order 14301 pathways: Project TETRA, the pilot reactor, and Project TEFLA, the fuel salt facility.", source: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under" },
+      { text: "Separate DOE Other Transaction Authority agreements cover Project TETRA, the test reactor, and Project TEFLA, a fuel-salt pilot under the Fuel Line Pilot Program.", source: "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tefla-under" },
     ],
     commercial: [
       { text: "Riot Platforms collaboration scoped up to 4 GW across data-center sites in Texas and Kentucky; an MOU-level collaboration, not an order.", source: "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/" },
@@ -646,15 +647,15 @@ export const mechanisms: FinancingMechanism[] = [
   {
     status: "In use",
     mechanism: "Defense delivery agreement",
-    how: "A delivery deadline, not a study: the contract obliges a working unit at a base by a date.",
-    example: "Radiant's ANPI agreement with DIU and the Department of the Air Force: a mass-manufactured Kaleidos delivered within 36 months.",
+    how: "A government delivery agreement creates a hardware milestone; it does not establish permission to operate.",
+    example: "Radiant’s announced ANPI delivery agreement with DIU and the Department of the Air Force for a mass-manufactured microreactor.",
     date: "2025-08",
     source: "https://www.ans.org/news/2025-08-14/article-7277/radiant-signs-contract-on-microreactors-for-the-military/",
   },
   {
     status: "In use",
-    mechanism: "Order book with per-plant PPAs",
-    how: "One master agreement commits a fleet; each plant closes its own PPA as it matures. The buyer gets optionality, the developer gets a book that supply chains can invest against.",
+    mechanism: "Master development agreement",
+    how: "A master agreement sets a deployment framework. Individual plants need their own power contracts, approvals and financing.",
     example: "Google-Kairos Master Plant Development Agreement: up to 500 MW by 2035.",
     date: "2024-10",
     source: "https://www.kairospower.com/updates/google-and-kairos-power-partner-to-deploy-500-mw-of-clean-electricity-generation",
@@ -765,9 +766,9 @@ export const mechanisms: FinancingMechanism[] = [
   },
   {
     status: "Pending",
-    mechanism: "Fixed-price power at a defense site",
-    how: "The developer finances, builds, owns, and operates; the government commits to buy power at a fixed price for decades, making the plant bankable without an equipment sale.",
-    example: "The Air Force/DLA Notice of Intent to Award to Oklo: a 5 MW microreactor at Eielson AFB under a prospective 30-year arrangement, with contract negotiations pending NRC licensing. No contract is executed.",
+    mechanism: "Defense-site notice of intent",
+    how: "A notice of intent identifies a prospective supplier; it does not establish an executed power contract or its terms.",
+    example: "The Air Force announced a notice of intent to award Oklo an Eielson microreactor pilot. The readable source does not establish electrical capacity, contract duration or a fixed electricity price.",
     date: "2025-06",
     source: "https://www.ans.org/news/2025-06-16/article-7114/air-force-issues-notice-to-partner-with-oklo-on-microreactor-deployment-in-alaska/",
   },
@@ -883,8 +884,8 @@ export const sitingFacts: SitingFact[] = [
   },
   {
     lane: "Cross-class",
-    fact: "Advanced-reactor applicants pay NRC $148 per professional hour against the $318 full-cost rate, an ADVANCE Act discount in force since FY2025.",
-    source: "https://www.ans.org/news/2025-06-25/article-7136/nrc-cuts-50-percent-off-for-advanced-reactor-applicants/",
+    fact: "FY2026 NRC fee rule: $154 per hour for qualifying advanced-reactor work, compared with the $337 professional hourly rate.",
+    source: "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-066.pdf",
   },
   {
     lane: "Cross-class",
@@ -908,7 +909,7 @@ export const sitingFacts: SitingFact[] = [
   },
   {
     lane: "Microreactor",
-    fact: "The first units are proving out on federal sites: Project Pele is being assembled at INL under DOE authority, as are the Reactor Pilot Program and DOME reactors.",
+    fact: "Project Pele demonstrates a federal-site pathway: the prototype is being assembled at Idaho National Laboratory under DOE authority.",
     source: "https://www.energy.gov/ne/articles/department-defense-breaks-ground-project-pele-microreactor",
   },
   {

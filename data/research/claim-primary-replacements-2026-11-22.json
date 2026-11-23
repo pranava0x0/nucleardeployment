@@ -1,0 +1,71 @@
+{
+  "sources": [
+    {
+      "url": "https://www.opg.com/news-resources/newsroom/release/opg-reports-2025-first-quarter-financial-results/",
+      "title": "OPG reports 2025 first quarter financial results",
+      "publisher": "Ontario Power Generation",
+      "published_at": "2025-05-13",
+      "snapshot_path": "data/research/claim-primary-replacements-2026-11-22/opg-q1-2025.txt",
+      "capture_method": "Exact page text returned by web.open; direct scripted HTML request returned403.",
+      "claims": [
+        {
+          "claim": "In May 2025 OPG estimated the four-unit DNNP at $20.9B including interest,cost escalation and contingency; this is a project estimate rather than an overnight-capital estimate.",
+          "evidence_quote": "The total cost of the four-unit DNNP, including interest, cost escalation, and contingency, is currently estimated at approximately $20.9 billion."
+        },
+        {
+          "claim": "The May 2025 first-unit release-quality budget was $7.7B including $6.1B for the reactor and $1.6B for shared systems/services.",
+          "evidence_quote": "The first unit SMR is expected to cost $6.1 billion, along with systems and services that would be common to all four SMRs planned as part of the project of $1.6 billion."
+        },
+        {
+          "claim": "The $7.7B amount includes first-unit and shared infrastructure, not four units and not the reactor alone.",
+          "evidence_quote": "The total budget of $7.7 billion represents the release-quality estimate for both the first SMR and shared infrastructure."
+        }
+      ]
+    },
+    {
+      "url": "https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/",
+      "title": "Darlington SMR: Project Update - Nov.10, 2026",
+      "publisher": "Ontario Power Generation",
+      "published_at": "2026-11-10",
+      "snapshot_path": "data/research/claim-primary-replacements-2026-11-22/opg-darlington-current.txt",
+      "capture_method": "Exact page text returned by web.open; dated project-update section in a maintained page; direct scripted HTML request returned403.",
+      "claims": [
+        {
+          "claim": "The Nov10, 2026 update withdraws the prior October 2030 commercial-operation target and prior budget for Unit1; keep the May 2025 $7.7B as historical.",
+          "evidence_quote": "Unit 1 is no longer expected to meet the previously disclosed October 2030 commercial-operation target or be completed within the previously disclosed budget."
+        },
+        {
+          "claim": "OPG expects the cost/schedule assessment to be substantially complete by mid2027; the source does not provide a replacement budget.",
+          "evidence_quote": "This updated budget and schedule will be informed by a comprehensive assessment that is now underway and expected to be substantially complete by mid-2027."
+        }
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/antares-industries_after-6-months-in-huntsville-ourelectrically-heated-activity-7396980168080154624-i2CV",
+      "title": "Electrically-Heated Demonstration Unit campaign complete",
+      "publisher": "Antares (official company account on LinkedIn)",
+      "published_at": "2025-11-19",
+      "snapshot_path": "data/research/claim-primary-replacements-2026-11-22/antares-edu-company-post.txt",
+      "capture_method": "Direct public company-post HTML; datePublished2025-11-19T18:38:21.292Z in JSON-LD; transcript read as company-reported evidence.",
+      "claims": [
+        {
+          "claim": "Antares reports testing its electrically heated prototype with NASA Marshall in Huntsville. It is thermal hardware testing, not a nuclear criticality or electricity-producing reactor demonstration.",
+          "evidence_quote": "So we partnered with NASA Marshall and Huntsville, AL to test our electrically heated prototype."
+        },
+        {
+          "claim": "The company describes the EDU as an electrically heated stand-in for its reactor core.",
+          "evidence_quote": "This unit is a full-scale, electrically heated stand-in for our core, built to push each heat pipe, interface, and material to real operating temperatures and pressures."
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "OPG Q1 release states interest,cost escalation and contingency but does not establish a fixed real-currency base year in the accessible text. Do not label the figures2024-dollars or overnight capital; retain the original currency frame from separately verified issuer financial disclosures.",
+    "Ontario Newsroom release1005889 returns a JavaScript-only shell on direct read. It was not treated as substantive evidence.",
+    "The official Apr22, 2026 DAF announcement and SpaceForce mirror both returned403 on direct reads. Exact indexed official extracts pair Radiant–Buckley,Westinghouse–Malmstrom,Antares–JBSA and say potentially develop and operate, with siting/NEPA next and2030-or-sooner goal. These are discovery leads pending an accessible exact source, not directly verified award/operating claims. URLs: https://www.af.mil/News/Article-Display/Article/4465439/daf-announces-next-steps-in-advanced-nuclear-power-for-installations-initiative/ and https://www.spaceforce.mil/News/Article-Display/Article/4465446/daf-announces-next-steps-in-advanced-nuclear-power-for-installations-initiative/",
+    "The indexed2026 ANPI announcement does not support the old2025 36-month delivery promise. No2026 site deployment was classified as an operating reactor.",
+    "Two targeted NASA/Antares searches produced no directly readable NASA SpaceAct agreement establishing a company-owned plant/power-sale commercial contract. The company EDU post supports thermal testing only; remove or explicitly leave the ownership/power-sale terms unverified.",
+    "The Antares company post does not establish a delivery acceptance date at Marshall. Use the supported testing statement rather than asserting a separately documented delivery event.",
+    "Search/fetch bounds reached:5 search queries and6 distinct fetched URLs; no retry of the explicitly blocked2025-Q4 OPG PDF."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://www.eia.gov/totalenergy/data/browser/csv.php?tbl=T08.01",
+  "captured_at": "2026-11-22",
+  "title": "Monthly Energy Review, October 2026, Table 8.1 Nuclear Energy Overview",
+  "capture_method": "Archived primary-source text; see research manifest",
+  "upstream_snapshot": "data/research/fleet-2026-11-22/eia-mer-table-8-1.csv"
+}

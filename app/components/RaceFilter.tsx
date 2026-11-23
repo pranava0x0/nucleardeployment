@@ -1,18 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 type Sort = "evidence" | "announced";
 
 /** Filter and reorder server-rendered rows without shipping the dataset. */
-function updateRows(query: string, lane: string, sort: Sort, saved: WeakMap<HTMLDetailsElement, boolean>, startingNewSession: boolean) {
+function updateRows(query: string, lane: string, sort: Sort) {
   const board = document.querySelector<HTMLOListElement>("[data-race-board]");
   if (!board) return 0;
-  const tail = board.querySelector<HTMLOListElement>(".race-board-rest");
-  const wrapper = board.querySelector<HTMLElement>(".race-board-more");
-  const details = tail?.closest("details");
-  const active = !!query.trim() || lane !== "all" || sort !== "evidence";
-  if (details && (startingNewSession || !saved.has(details))) saved.set(details, details.open);
   const rows = [...board.querySelectorAll<HTMLElement>("[data-filter]")];
   const needle = query.trim().toLowerCase();
   let visible = 0;
@@ -26,11 +21,8 @@ function updateRows(query: string, lane: string, sort: Sort, saved: WeakMap<HTML
     const rank = row.querySelector<HTMLElement>(".race-rank");
     if (rank) rank.textContent = String(index + 1).padStart(2, "0");
     if (hit) visible += 1;
-    // Keep six rows outside the native disclosure in either ordering.
-    (tail && index >= 6 ? tail : board).appendChild(row);
+    board.appendChild(row);
   }
-  if (wrapper) { board.appendChild(wrapper); wrapper.hidden = active && visible === 0; }
-  if (details) details.open = active ? visible > 0 : (saved.get(details) ?? false);
   const empty = document.querySelector<HTMLElement>("[data-race-empty]");
   if (empty) empty.hidden = visible > 0;
   return visible;
@@ -41,16 +33,12 @@ export function RaceFilter({ total }: { total: number }) {
   const [lane, setLane] = useState("all");
   const [sort, setSort] = useState<Sort>("evidence");
   const [matches, setMatches] = useState(total);
-  const openBeforeFilter = useRef(new WeakMap<HTMLDetailsElement, boolean>());
   // Cached server DOM may retain a previous search or ordering on navigation.
-  useEffect(() => { updateRows("", "all", "evidence", openBeforeFilter.current, false); }, []);
+  useEffect(() => { updateRows("", "all", "evidence"); }, []);
 
   function apply(nextQuery: string, nextLane: string, nextSort: Sort) {
-    const wasActive = !!query.trim() || lane !== "all" || sort !== "evidence";
-    const isActive = !!nextQuery.trim() || nextLane !== "all" || nextSort !== "evidence";
-    const startingNewSession = !wasActive && isActive;
     setQuery(nextQuery); setLane(nextLane); setSort(nextSort);
-    setMatches(updateRows(nextQuery, nextLane, nextSort, openBeforeFilter.current, startingNewSession));
+    setMatches(updateRows(nextQuery, nextLane, nextSort));
   }
 
   return <div className="race-filter">

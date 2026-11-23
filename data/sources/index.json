@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T22:33:37.358Z",
+  "updated_at": "2026-11-22",
   "sources": {
     "https://ceepr.mit.edu/workingpaper/the-value-of-nuclear-microreactors-in-providing-heat-and-electricity-to-alaskan-communities/": {
       "hash": "9d8952c8c1f344db",
@@ -16,6 +16,16 @@
       "state": "stored",
       "title": "CIB commits $970 million towards Canada’s first Small Modular Reactor (SMR) | Canada Infrastructure Bank (CIB)",
       "bytes": 6642
+    },
+    "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf": {
+      "hash": "9f0bd2a04aa2b45c",
+      "state": "stored",
+      "url": "https://conferences.iaea.org/event/460/contributions/39511/attachments/22096/37991/2026-02-16_V.%20Kriventsev_IAEA%20Introduction%20of%20Innovative%20Nuclear%20Reactors%20and%20GEN-IV%20Concepts.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Introduction of Innovative Nuclear Reactors and GEN-IV Concepts",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/iaea-classification-2026.txt",
+      "text_chars": 21847
     },
     "https://content.govdelivery.com/accounts/USNRC/bulletins/4323d99": {
       "hash": "ad6c6135014a773b",
@@ -36,8 +46,14 @@
       "hash": "8e03d2e9fc21608e",
       "fetched_at": "2026-11-21T22:19:44.890Z",
       "http_status": 429,
-      "state": "blocked",
-      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+      "state": "stored",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl.",
+      "url": "https://dspace.mit.edu/bitstream/handle/1721.1/133049/Jacopo's%20and%20Jessika's%20paper%20on%20nuclear%20cost%20Sep%202020.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Sources of Cost Overrun in Nuclear Power Plant Construction Call for a New Approach to Engineering Design (Joule, 2020; MIT open-access copy)",
+      "capture_method": "curl download + PyMuPDF text extraction",
+      "upstream_snapshot": "data/sources/reports/eash-gates-2020-joule.txt",
+      "text_chars": 80855
     },
     "https://energy-communities-alliance.squarespace.com/s/Holtec-Slides.pdf": {
       "hash": "b5a61f40af09c445",
@@ -50,22 +66,40 @@
       "hash": "57d8ad3ab1b62337",
       "fetched_at": "2026-11-21T22:19:40.004Z",
       "http_status": 200,
-      "state": "not-text",
-      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
+      "state": "stored",
+      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool.",
+      "url": "https://gain.inl.gov/content/uploads/4/2024/11/DOE-Advanced-Nuclear-Liftoff-Report.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Pathways to Commercial Liftoff: Advanced Nuclear (September 2024 update)",
+      "capture_method": "curl download + PyMuPDF text extraction",
+      "upstream_snapshot": "data/sources/reports/doe-liftoff-advanced-nuclear-2024.txt",
+      "text_chars": 285931
     },
     "https://gain.inl.gov/content/uploads/4/2024/11/INL-RPT-23-72972-Literature-Review-of-Adv-Reactor-Cost-Estimates.pdf": {
       "hash": "c4f9be65bc0b2113",
       "fetched_at": "2026-11-21T22:20:03.443Z",
       "http_status": 200,
-      "state": "not-text",
-      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
+      "state": "stored",
+      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool.",
+      "url": "https://gain.inl.gov/content/uploads/4/2024/11/INL-RPT-23-72972-Literature-Review-of-Adv-Reactor-Cost-Estimates.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Literature Review of Advanced Reactor Cost Estimates (INL/RPT-23-72972)",
+      "capture_method": "curl download + PyMuPDF text extraction",
+      "upstream_snapshot": "data/sources/reports/inl-adv-reactor-cost-lit-review-2023.txt",
+      "text_chars": 153495
     },
     "https://gain.inl.gov/content/uploads/4/2025/03/2024-Document-INL-RPT-24-80433.pdf": {
       "hash": "7545f944429043a7",
       "fetched_at": "2026-11-21T22:19:42.266Z",
       "http_status": 200,
-      "state": "not-text",
-      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
+      "state": "stored",
+      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool.",
+      "url": "https://gain.inl.gov/content/uploads/4/2025/03/2024-Document-INL-RPT-24-80433.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Technoeconomic Evaluation of Microreactor Using Detailed Bottom-up Estimate (INL/RPT-24-80433)",
+      "capture_method": "curl download + PyMuPDF text extraction",
+      "upstream_snapshot": "data/sources/reports/inl-microreactor-bottom-up-2024.txt",
+      "text_chars": 160062
     },
     "https://gov.alaska.gov/microreactor-regulations-put-alaskan-communities-at-forefront-of-energy-innovation/": {
       "hash": "f0a3d1dc3bc73969",
@@ -114,12 +148,31 @@
       "title": "Interest in Westinghouse AP300™ Small Modular Reactor, AP1000® Technology Surging in Europe as Slovakia Begins Deployment Discussions",
       "bytes": 4666
     },
+    "https://info.westinghousenuclear.com/news/westinghouse-evinci-microreactor-achieves-zero-power-high-temperature-criticality": {
+      "hash": "34df440b8a71abf4",
+      "state": "stored",
+      "url": "https://info.westinghousenuclear.com/news/westinghouse-evinci-microreactor-achieves-zero-power-high-temperature-criticality",
+      "captured_at": "2026-11-22",
+      "title": "Westinghouse eVinci Microreactor Achieves Zero-Power High-Temperature Criticality",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/westinghouse-evinci-2026.txt",
+      "text_chars": 4359
+    },
     "https://inl.gov/news-release/national-reactor-innovation-center-announces-first-selections-for-nuclear-energy-launch-pad/": {
       "hash": "7fd0bdd565ce8ec7",
       "fetched_at": "2026-11-21T22:19:00.888Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://inl.gov/trending-topics/microreactors/": {
+      "url": "https://inl.gov/trending-topics/microreactors/",
+      "title": "Microreactors: What They Are and How They Work",
+      "hash": "0a31162d4d666fd1",
+      "captured_at": "2026-11-22",
+      "capture_method": "Direct web source reader; scripted request blocked",
+      "state": "stored",
+      "text_chars": 19176
     },
     "https://interestingengineering.com/energy/us-firm-deep-fission-6000-ft-well": {
       "hash": "c70bd59e744fe7ff",
@@ -142,6 +195,15 @@
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tefla-under": {
+      "url": "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tefla-under",
+      "title": "Terrestrial Energy Executes DOE Agreement for Project TEFLA",
+      "hash": "8bf8b360a118b2fd",
+      "captured_at": "2026-11-22",
+      "capture_method": "Direct web source reader; scripted request blocked",
+      "state": "stored",
+      "text_chars": 10639
     },
     "https://ir.terrestrialenergy.com/news-releases/news-release-details/terrestrial-energy-executes-doe-agreement-project-tetra-under": {
       "hash": "3ab35c798a457c24",
@@ -216,8 +278,14 @@
       "hash": "502eb9e2c4634950",
       "fetched_at": "2026-11-21T22:19:55.818Z",
       "http_status": 200,
-      "state": "not-text",
-      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
+      "state": "stored",
+      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool.",
+      "url": "https://nuclearinnovationalliance.org/sites/default/files/2026-04/The%20Role%20of%20DOE%E2%80%99s%20Office%20of%20Energy%20Dominance%20Financing%20in%20U.S.%20Nuclear%20Energy%20Leadership%20-%20March%202026%20Update.pdf",
+      "captured_at": "2026-11-22",
+      "title": "The Role of DOE's Office of Energy Dominance Financing in U.S. Nuclear Energy Leadership (March 2026 update)",
+      "capture_method": "curl download + PyMuPDF text extraction",
+      "upstream_snapshot": "data/sources/reports/nia-edf-nuclear-2026.txt",
+      "text_chars": 23931
     },
     "https://oklo.com/newsroom/news-details/2024/Oklo-Signs-LOI-to-Supply-50-Megawatts-of-Power-to-Diamondback-Energy/default.aspx": {
       "hash": "d3890f688a2ce12f",
@@ -299,12 +367,33 @@
       "title": "US government financial institutions indicate willingness to support ORLEN Synthos Green Energy with its GE Hitachi BWRX-300 small modular reactor deployment program in Poland - OSGE :OSGE",
       "bytes": 10279
     },
+    "https://public-inspection.federalregister.gov/2026-09880.pdf?1778849121=": {
+      "hash": "f25399e374249bd6",
+      "fetched_at": "2026-11-22T06:56:47.320Z",
+      "http_status": 200,
+      "state": "stored",
+      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool.",
+      "url": "https://public-inspection.federalregister.gov/2026-09880.pdf?1778849121=",
+      "captured_at": "2026-11-22",
+      "title": "nrc-hermes-deadline-2026",
+      "capture_method": "PyMuPDF page-marked extraction",
+      "upstream_snapshot": "data/sources/reports/nrc-hermes-deadline-2026.txt",
+      "text_chars": 13306
+    },
     "https://radiantnuclear.com/news/radiant-expands-manufacturing": {
       "hash": "52ad7d7f55d7ca87",
       "fetched_at": "2026-11-21T22:21:33.731Z",
       "http_status": 403,
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
+    "https://rellis.tamus.edu/2025/10/15/last-energy-texas-am-collaborate-to-launch-microreactor-pilot-at-texas-am-rellis/": {
+      "hash": "ebf8b5a4120c3e9a",
+      "fetched_at": "2026-11-22T06:56:42.244Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Last Energy, Texas A&M Collaborate to Launch Microreactor Pilot at Texas A&M-RELLIS - Texas A&M RELLIS Technology & Innovation Campus",
+      "bytes": 4563
     },
     "https://spacenews.com/antares-raises-96-million-for-nuclear-reactors-on-earth-and-in-space/": {
       "hash": "2ee45153ae836f20",
@@ -399,6 +488,36 @@
       "http_status": 404,
       "state": "error",
       "note": "Could not fetch: 404"
+    },
+    "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf": {
+      "hash": "f0b3ac7a868cffe5",
+      "state": "stored",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Nuclear Power Reactors in the World, 2025 Edition",
+      "capture_method": "PyMuPDF extraction; table 23 on PDF page79 visually checked",
+      "upstream_snapshot": "data/research/families-2026-11-22/iaea-rds2-2025.txt",
+      "text_chars": 149608
+    },
+    "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf": {
+      "hash": "45e45bc74b58beba",
+      "state": "stored",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Research Reactor Exercises for Higher Education Programmes: Compendium (IAEA-TECDOC-2024)",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/iaea-tecdoc2024.txt",
+      "text_chars": 420413
+    },
+    "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS446_web.pdf": {
+      "hash": "ffa1d65387ccf8a7",
+      "state": "stored",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS446_web.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Decommissioning of Research Reactors: Evolution, State of the Art, Open Issues",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/iaea-trs446.txt",
+      "text_chars": 337057
     },
     "https://www.aalo.com/aalo-x": {
       "hash": "3d297e65a7f7156a",
@@ -706,6 +825,73 @@
       "title": "Deployable Energy Announces Unity Demonstration Reactor Achieves Criticality at Idaho National Laboratory",
       "bytes": 5538
     },
+    "https://www.eia.gov/electricity/Annual/": {
+      "hash": "a3fccf3cf4b43959",
+      "state": "stored",
+      "url": "https://www.eia.gov/electricity/Annual/",
+      "captured_at": "2026-11-22",
+      "title": "Electric Power Annual with Data for 2025",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/fleet-2026-11-22/eia-electric-power-annual-index.txt",
+      "text_chars": 26478
+    },
+    "https://www.eia.gov/energyexplained/nuclear/us-nuclear-industry.php": {
+      "hash": "bffde8c1ff9b31d0",
+      "state": "stored",
+      "url": "https://www.eia.gov/energyexplained/nuclear/us-nuclear-industry.php",
+      "captured_at": "2026-11-22",
+      "title": "Nuclear explained: U.S. nuclear industry",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/fleet-2026-11-22/eia-us-nuclear-industry.txt",
+      "text_chars": 14788
+    },
+    "https://www.eia.gov/totalenergy/data/browser/csv.php?tbl=T08.01": {
+      "hash": "8bd7bc7d17a87b67",
+      "state": "stored",
+      "url": "https://www.eia.gov/totalenergy/data/browser/csv.php?tbl=T08.01",
+      "captured_at": "2026-11-22",
+      "title": "Monthly Energy Review, October 2026, Table 8.1 Nuclear Energy Overview",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/fleet-2026-11-22/eia-mer-table-8-1.csv",
+      "text_chars": 325392
+    },
+    "https://www.eia.gov/totalenergy/data/monthly/": {
+      "hash": "d50ca5fabd1da9b9",
+      "state": "stored",
+      "url": "https://www.eia.gov/totalenergy/data/monthly/",
+      "captured_at": "2026-11-22",
+      "title": "Monthly Energy Review, October 2026",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/fleet-2026-11-22/eia-mer-index.txt",
+      "text_chars": 18260
+    },
+    "https://www.eia.gov/totalenergy/data/monthly/pdf/sec8_3.pdf": {
+      "hash": "2c8a5b7ea772c4ff",
+      "state": "stored",
+      "url": "https://www.eia.gov/totalenergy/data/monthly/pdf/sec8_3.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Monthly Energy Review, October 2026, Table 8.1 Nuclear Energy Overview",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/fleet-2026-11-22/eia-mer-table-8-1.txt",
+      "text_chars": 5893
+    },
+    "https://www.eia.gov/totalenergy/data/monthly/pdf/sec8_n.pdf": {
+      "hash": "347ba03c59fa543c",
+      "state": "stored",
+      "url": "https://www.eia.gov/totalenergy/data/monthly/pdf/sec8_n.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Monthly Energy Review, October 2026: Nuclear Energy Notes",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/fleet-2026-11-22/eia-mer-nuclear-notes.txt",
+      "text_chars": 2990
+    },
+    "https://www.eielson.af.mil/microreactor/quot/": {
+      "hash": "58acd64005e3d124",
+      "fetched_at": "2026-11-22T06:56:36.779Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+    },
     "https://www.energy.gov/articles/department-energy-announces-american-nuclear-supply-chain-loans": {
       "hash": "c21a53fed2daec08",
       "fetched_at": "2026-11-21T22:19:31.452Z",
@@ -754,6 +940,14 @@
       "title": "Energy Department Awards $94 Million to American Companies to Help Expedite the Deployments of Small Modular Reactors in the United States | Department of Energy",
       "bytes": 10258
     },
+    "https://www.energy.gov/articles/energy-department-selects-tva-and-holtec-advance-deployment-us-small-modular-reactors": {
+      "hash": "db9290bdce7cd837",
+      "fetched_at": "2026-11-22T06:56:33.194Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Energy Department Selects TVA and Holtec to Advance Deployment of U.S. Small Modular Reactors | Department of Energy",
+      "bytes": 9108
+    },
     "https://www.energy.gov/articles/us-department-energy-meets-president-trumps-goal-delivers-third-advanced-reactor": {
       "hash": "e6e04a0ad0ec6b8c",
       "fetched_at": "2026-11-21T22:17:01.451Z",
@@ -767,8 +961,13 @@
       "fetched_at": "2026-11-21T22:17:23.329Z",
       "http_status": 200,
       "state": "stored",
-      "title": "Palisades | Department of Energy",
-      "bytes": 6657
+      "title": "Palisades",
+      "bytes": 6657,
+      "url": "https://www.energy.gov/edf/palisades",
+      "captured_at": "2026-11-22",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/fleet-2026-11-22/doe-palisades-cached.txt",
+      "text_chars": 6657
     },
     "https://www.energy.gov/ne/advanced-reactor-demonstration-projects": {
       "hash": "698e215b28a10b11",
@@ -777,6 +976,16 @@
       "state": "stored",
       "title": "Advanced Reactor Demonstration Projects | Department of Energy",
       "bytes": 8038
+    },
+    "https://www.energy.gov/ne/articles/11-big-wins-nuclear-energy-2024": {
+      "hash": "80ba931a8c31d24d",
+      "state": "stored",
+      "url": "https://www.energy.gov/ne/articles/11-big-wins-nuclear-energy-2024",
+      "captured_at": "2026-11-22",
+      "title": "11 Big Wins for Nuclear Energy in 2024",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/fleet-2026-11-22/doe-vogtle-2024.txt",
+      "text_chars": 15813
     },
     "https://www.energy.gov/ne/articles/department-defense-breaks-ground-project-pele-microreactor": {
       "hash": "9562edd78b46b6f5",
@@ -800,7 +1009,12 @@
       "http_status": 200,
       "state": "stored",
       "title": "Idaho National Lab Creates First Batch of Fuel for World’s First Fast Spectrum Molten Salt Reactor Experiment | Department of Energy",
-      "bytes": 8152
+      "bytes": 8152,
+      "url": "https://www.energy.gov/ne/articles/idaho-national-lab-creates-first-batch-fuel-worlds-first-fast-spectrum-molten-salt",
+      "captured_at": "2026-11-22",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/doe-mcre-fuel.txt",
+      "text_chars": 8152
     },
     "https://www.energy.gov/ne/articles/nrc-approves-nuscale-powers-uprated-small-modular-reactor-design": {
       "hash": "443eb6acfc203215",
@@ -842,6 +1056,19 @@
       "title": "U.S. Department of Energy Signs Off on Oklo Fuel Fabrication Facility Design Concept | Department of Energy",
       "bytes": 7579
     },
+    "https://www.energy.gov/ne/articles/westinghouse-evinci-microreactor-achieves-criticality-milestone": {
+      "hash": "30bc966c18605aef",
+      "fetched_at": "2026-11-22T06:56:52.014Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Westinghouse eVinci Microreactor Achieves Criticality Milestone",
+      "bytes": 8937,
+      "url": "https://www.energy.gov/ne/articles/westinghouse-evinci-microreactor-achieves-criticality-milestone",
+      "captured_at": "2026-11-22",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/doe-evinci-2026.txt",
+      "text_chars": 8923
+    },
     "https://www.energy.gov/ne/demonstration-microreactor-experiments-dome": {
       "hash": "007a694eb9d28b3e",
       "fetched_at": "2026-11-21T22:19:12.133Z",
@@ -865,6 +1092,14 @@
       "state": "stored",
       "title": "CX-271014: Groves-1 Project | Department of Energy",
       "bytes": 6283
+    },
+    "https://www.energy.gov/nepa/articles/cx-271015-valar-ward250-research-reactor": {
+      "hash": "2974e2164eecef5a",
+      "fetched_at": "2026-11-22T07:00:53.400Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "CX-271015: Valar Ward250 Research Reactor | Department of Energy",
+      "bytes": 6014
     },
     "https://www.energy.gov/sites/default/files/2026-04/NE_10CFR851_VariancePackage_Final_05JAN2026.pdf": {
       "hash": "77f376c4a67fb2c5",
@@ -922,6 +1157,36 @@
       "title": "Tennessee Valley Authority; Clinch River Nuclear Site, Unit 1; Notice of Hearing",
       "bytes": 915,
       "fetched_via": "https://www.federalregister.gov/api/v1/documents/2026-13662.json"
+    },
+    "https://www.gen-4.org/generation-iv-criteria-and-technologies": {
+      "hash": "7be24212b5408077",
+      "state": "stored",
+      "url": "https://www.gen-4.org/generation-iv-criteria-and-technologies",
+      "captured_at": "2026-11-22",
+      "title": "Generation IV Goals, Technologies and GIF R&D Roadmap",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/gif-overview.txt",
+      "text_chars": 14773
+    },
+    "https://www.gen-4.org/generation-iv-criteria-and-technologies/gas-cooled-fast-reactor-gfr": {
+      "hash": "fc7a4a9b7e708e47",
+      "state": "stored",
+      "url": "https://www.gen-4.org/generation-iv-criteria-and-technologies/gas-cooled-fast-reactor-gfr",
+      "captured_at": "2026-11-22",
+      "title": "Gas-Cooled Fast Reactor",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/gif-gfr.txt",
+      "text_chars": 23961
+    },
+    "https://www.gen-4.org/sites/default/files/2024-08/2022%20Status%20of%20LFR%20activities%20in%20Gen%20IV%20countries%20and%20entities%20GIF%20Industry%20Forum.pdf": {
+      "hash": "e9cfba415140e2bf",
+      "state": "stored",
+      "url": "https://www.gen-4.org/sites/default/files/2024-08/2022%20Status%20of%20LFR%20activities%20in%20Gen%20IV%20countries%20and%20entities%20GIF%20Industry%20Forum.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Status of Lead-cooled Fast Reactor activities in GEN-IV Countries/Entities",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/gif-lfr-2022.txt",
+      "text_chars": 5539
     },
     "https://www.georgiapower.com/news-hub/press-releases/vogtle-unit-4-enters-commercial-operation.html": {
       "hash": "656726e2921259e2",
@@ -1005,6 +1270,16 @@
       "state": "blocked",
       "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
+    "https://www.inet.tsinghua.edu.cn/ineten/info/1024/1698.htm": {
+      "hash": "894a1acdc3125216",
+      "state": "stored",
+      "url": "https://www.inet.tsinghua.edu.cn/ineten/info/1024/1698.htm",
+      "captured_at": "2026-11-22",
+      "title": "Chinese HTR-PM Demo begins commercial operation",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/tsinghua-htrpm-2023.txt",
+      "text_chars": 3170
+    },
     "https://www.kairospower.com/iterative-development": {
       "hash": "a15193f25852fc27",
       "fetched_at": "2026-11-21T22:21:31.031Z",
@@ -1041,15 +1316,37 @@
       "hash": "ba02deeb2d6b76ff",
       "fetched_at": "2026-11-21T22:19:39.920Z",
       "http_status": 404,
-      "state": "error",
-      "note": "Could not fetch: 404"
+      "state": "stored",
+      "note": "Could not fetch: 404",
+      "url": "https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Lazard Levelized Cost of Energy+ (June 2025)",
+      "capture_method": "curl download + PyMuPDF text extraction",
+      "upstream_snapshot": "data/sources/reports/lazard-lcoe-june-2025.txt",
+      "text_chars": 92530
     },
     "https://www.lazard.com/media/kcfconhf/lazards-lcoeplus_vf.pdf": {
       "hash": "fc84312db28ddea4",
       "fetched_at": "2026-11-21T22:30:16.295Z",
       "http_status": 200,
-      "state": "not-text",
-      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
+      "state": "stored",
+      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool.",
+      "url": "https://www.lazard.com/media/kcfconhf/lazards-lcoeplus_vf.pdf",
+      "captured_at": "2026-11-22",
+      "title": "Lazard, Levelized Cost of Energy+ (July 2026)",
+      "capture_method": "PyMuPDF text extraction; page 7 chart visually checked",
+      "upstream_snapshot": "data/sources/reports/lazard-lcoe-july-2026.txt",
+      "text_chars": 76869
+    },
+    "https://www.linkedin.com/posts/antares-industries_after-6-months-in-huntsville-ourelectrically-heated-activity-7396980168080154624-i2CV": {
+      "hash": "cd69ff312c804e0e",
+      "state": "stored",
+      "url": "https://www.linkedin.com/posts/antares-industries_after-6-months-in-huntsville-ourelectrically-heated-activity-7396980168080154624-i2CV",
+      "captured_at": "2026-11-22",
+      "title": "Electrically-Heated Demonstration Unit campaign complete",
+      "capture_method": "Direct public company-post HTML; datePublished2025-11-19T18:38:21.292Z in JSON-LD; transcript read as company-reported evidence.",
+      "upstream_snapshot": "data/research/claim-primary-replacements-2026-11-22/antares-edu-company-post.txt",
+      "text_chars": 22170
     },
     "https://www.manilatimes.net/2026/08/04/tmt-newswire/globenewswire/holtec-entergy-and-hyundai-ec-sign-moa-to-evaluate-potential-smr-300-projects-in-gulf-south-region/2397924": {
       "hash": "f4345e1598af272b",
@@ -1099,12 +1396,35 @@
       "title": "PacifiCorp considers adding two more Natrium units to its generation mix by 2033 - Nuclear Engineering International",
       "bytes": 15216
     },
+    "https://www.nrc.gov/cdn/doc-collection-news/2025/25-038.pdf": {
+      "hash": "a30bb019f72178d2",
+      "fetched_at": "2026-11-22T06:56:49.678Z",
+      "http_status": 200,
+      "state": "not-text",
+      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
+    },
     "https://www.nrc.gov/docs/ML2009/ML20097B839.pdf": {
       "hash": "35d0e74073a33e03",
       "fetched_at": "2026-11-21T22:20:03.376Z",
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
+    },
+    "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/new-applicants/general-information/nrc-fees": {
+      "hash": "049d03aeb79c0e88",
+      "fetched_at": "2026-11-22T07:00:48.650Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "NRC Fees | Nuclear Regulatory Commission",
+      "bytes": 20840
+    },
+    "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse": {
+      "hash": "4c664b3af385346e",
+      "fetched_at": "2026-11-22T06:56:39.469Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Oklo Aurora Powerhouse | Nuclear Regulatory Commission",
+      "bytes": 11948
     },
     "https://www.nrc.gov/info-finder/reactors/ccec": {
       "hash": "1bb90c2454b0b07b",
@@ -1113,6 +1433,14 @@
       "state": "stored",
       "title": "Christopher M. Crane Clean Energy Center | Nuclear Regulatory Commission",
       "bytes": 28607
+    },
+    "https://www.nrc.gov/node/2156776": {
+      "hash": "d7e1b6d9a04497ec",
+      "fetched_at": "2026-11-22T06:56:44.785Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "NRC Issues Construction Permit to US SFR Owner | Nuclear Regulatory Commission",
+      "bytes": 9502
     },
     "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/dukeenergy": {
       "hash": "c18b1678121eba86",
@@ -1168,7 +1496,12 @@
       "http_status": 200,
       "state": "stored",
       "title": "Hermes 2 – Kairos Application | Nuclear Regulatory Commission",
-      "bytes": 13257
+      "bytes": 13257,
+      "url": "https://www.nrc.gov/reactors/non-power/new-facility-licensing/hermes2-kairos",
+      "captured_at": "2026-11-22",
+      "capture_method": "Archived primary-source text; see research manifest",
+      "upstream_snapshot": "data/research/families-2026-11-22/nrc-hermes2.txt",
+      "text_chars": 13257
     },
     "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-008.pdf": {
       "hash": "cc15962cbf443bbb",
@@ -1183,6 +1516,19 @@
       "http_status": 200,
       "state": "not-text",
       "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool."
+    },
+    "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-066.pdf": {
+      "hash": "4ccdcc989b0fdcfc",
+      "fetched_at": "2026-11-22T07:00:45.667Z",
+      "http_status": 200,
+      "state": "stored",
+      "note": "Real response, not readable as text. A PDF or binary; read it with a PDF tool.",
+      "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-066.pdf",
+      "captured_at": "2026-11-22",
+      "title": "nrc-fees-2026",
+      "capture_method": "PyMuPDF page-marked extraction",
+      "upstream_snapshot": "data/sources/reports/nrc-fees-2026.txt",
+      "text_chars": 2672
     },
     "https://www.nucnet.org/news/african-nation-signs-agreement-for-nuscale-12-module-nuclear-power-plant-8-5-2024": {
       "hash": "f227938899a686d4",
@@ -1287,6 +1633,33 @@
       "state": "stored",
       "title": null,
       "bytes": 11019
+    },
+    "https://www.opg.com/news-resources/newsroom/release/opg-reports-2025-first-quarter-financial-results/": {
+      "hash": "2d21b568e75eb5e4",
+      "state": "stored",
+      "url": "https://www.opg.com/news-resources/newsroom/release/opg-reports-2025-first-quarter-financial-results/",
+      "captured_at": "2026-11-22",
+      "title": "OPG reports 2025 first quarter financial results",
+      "capture_method": "Exact page text returned by web.open; direct scripted HTML request returned403.",
+      "upstream_snapshot": "data/research/claim-primary-replacements-2026-11-22/opg-q1-2025.txt",
+      "text_chars": 13724
+    },
+    "https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/": {
+      "hash": "8cc424f3b5eee712",
+      "state": "stored",
+      "url": "https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/",
+      "captured_at": "2026-11-22",
+      "title": "Darlington SMR: Project Update - Nov.10, 2026",
+      "capture_method": "Exact page text returned by web.open; dated project-update section in a maintained page; direct scripted HTML request returned403.",
+      "upstream_snapshot": "data/research/claim-primary-replacements-2026-11-22/opg-darlington-current.txt",
+      "text_chars": 16269
+    },
+    "https://www.opg.com/wp-content/uploads/2026/03/2025-Q4-OPG-PR-MDA-FS-FINAL.pdf": {
+      "hash": "f0945d8b2eb50451",
+      "fetched_at": "2026-11-22T07:00:58.643Z",
+      "http_status": 403,
+      "state": "blocked",
+      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
     },
     "https://www.postguam.com/news/local/congress-nuclear-reactor-push-alarms-locals/article_a63b9661-5cca-43a3-9fae-e06ab5682477.html": {
       "hash": "feaa2fca7e62194c",
@@ -1436,10 +1809,12 @@
     },
     "https://www.radiantnuclear.com/news/radiant-wins-750m-janus-army-contract": {
       "hash": "f04d2d6a8d170af3",
-      "fetched_at": "2026-11-21T22:21:30.726Z",
-      "http_status": 403,
-      "state": "blocked",
-      "note": "Host refuses scripted fetches. Verify in a browser and record the read in link-check-history.jsonl."
+      "fetched_at": "2026-11-22T07:14:58.840Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Radiant Janus binding agreement",
+      "bytes": 6931,
+      "capture_method": "web source reader"
     },
     "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/": {
       "hash": "db3724234f383ee6",
@@ -1649,6 +2024,14 @@
       "title": "Announcing our $1B Series B Led By Sequoia | Valar Atomics",
       "bytes": 6273
     },
+    "https://www.valaratomics.com/docs/Ward-250-By-the-Numbers": {
+      "hash": "cdc4ecc9a7b113b5",
+      "fetched_at": "2026-11-22T07:00:56.160Z",
+      "http_status": 200,
+      "state": "stored",
+      "title": "Ward 250 By the Numbers | Valar Atomics",
+      "bytes": 5733
+    },
     "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/": {
       "hash": "63aafa774a7b1238",
       "fetched_at": "2026-11-21T22:17:46.375Z",
@@ -1848,6 +2231,12 @@
       "state": "stored",
       "title": "World Bank Group, IAEA Formalize Partnership to Collaborate on Nuclear Energy for Development",
       "bytes": 8382
+    },
+    "https://www.wrpc.gov.in/allfile/Share_Allocation_KAPP_29.06.2023.pdf": {
+      "hash": "ac2d75cbdfcf543d",
+      "state": "not-text",
+      "captured_at": "2026-11-22",
+      "note": "Scanned primary PDF; visual transcription archived at data/research/families-2026-11-22/wrpc-kakrapar-2023.txt"
     },
     "https://x-energy.com/media/news-releases/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power": {
       "hash": "9343fca4e1aac3cc",

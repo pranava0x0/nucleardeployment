@@ -54,10 +54,16 @@ for (const band of data.capacityBands) {
 }
 say();
 
-say("## The headline numbers");
+say("## U.S. commercial fleet baseline");
+say();
+const baseline = data.nationalBaseline;
+say(`${baseline.year}: ${baseline.units.value} year-end operable units, ${baseline.capacity.value} MWe net summer capacity, ${baseline.generation.value} TWh annual net generation, ${baseline.share.value}% of U.S. electricity, ${baseline.capacityFactor.value}% published capacity factor. Source: ${baseline.generation.source_url}`);
+say(`Publication: October 2026. Stocks and annual flows have different denominators. See ${page("/fission")} for five years and all reactor families.`);
+say();
+say("## Selected advanced-reactor sample totals");
 say();
 say(headline.operationalMWe === 0
-  ? `- No company has generated a commercial megawatt. Operational capacity is 0 MWe.`
+  ? `- No entrant in this selected new-design sample has generated a commercial megawatt. Sample operational capacity is 0 MWe; this is not national nuclear output.`
   : `- ${mwe(headline.operationalMWe)} MWe is grid-connected and generating commercial power.`);
 say(`- ${mwe(headline.buildingMWe)} MWe is physically under construction.`);
 say(`- ${mwe(headline.executedMWe)} MWe rests on an executed action of any kind, including applications filed.`);
@@ -80,7 +86,7 @@ say("## Companies");
 say();
 for (const [index, row] of data.raceBoard().entries()) {
   const parts = row.cells.filter((cell) => cell.mwe > 0).map((cell) => `${mwe(cell.mwe)} MWe ${cell.label.toLowerCase()}`);
-  say(`${index + 1}. **${row.company.name}** (${row.entrant.design}, ${mwe(row.entrant.unitMWe)} MWe per unit, ${row.entrant.lane})`);
+  say(`${index + 1}. **${row.company.name}** (${row.entrant.design}, ${row.entrant.unitMWe === null ? "electrical rating not verified" : `${mwe(row.entrant.unitMWe)} MWe per unit`}, ${row.entrant.lane})`);
   say(`   - Strongest state: ${row.strongestLine}`);
   say(`   - Capacity: ${parts.length ? parts.join("; ") : "none on record"}`);
   say(`   - On the board because: ${row.entrant.rosterBasis} Source: ${row.entrant.rosterSource}`);

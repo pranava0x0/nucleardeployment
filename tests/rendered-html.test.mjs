@@ -18,7 +18,7 @@ test("server-renders the evidence-led homepage", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Deployment Core/);
-  assert.match(html, /racing to put a gigawatt/);
+  assert.match(html, /Fleet statistics, reactor families/);
   assert.match(html, /Projects by stage/);
   assert.match(html, /brand\/reactor-velocity-mark\.png/);
   assert.match(html, /Exploring the idea/);
@@ -37,7 +37,7 @@ test("server-renders the evidence-led homepage", async () => {
   assert.doesNotMatch(html, /core-readout|hero-core|class="orbit/);
 });
 
-test("the homepage leads with the comparison board and retains sourced summaries and progressive disclosure", async () => {
+test("the homepage shows every company without an expansion and retains sourced summaries", async () => {
   const dataModule = await import("../app/data.ts");
   const raw = await (await render()).text();
   const html = raw.replace(/<!--.*?-->/g, "");
@@ -64,30 +64,8 @@ test("the homepage leads with the comparison board and retains sourced summaries
   assert.ok(eoNumbers.length > 0, "an EO number appears in the strip");
   assert.ok(eoNumbers[0] >= 14300, "the strip picks the highest (most recent) EO number, not the first array entry");
 
-  // Only the first VISIBLE_ROWS render before the show-all toggle; every
-  // entrant still has a row somewhere, most of them inside the collapsed tail.
-  const marker = `Show all ${board.length} companies`;
-  assert.ok(html.includes(marker), "the show-all toggle names the true entrant count");
-  const [beforeToggle] = html.split(marker);
-  const visibleRowCount = (beforeToggle.match(/class="race-row"/g) ?? []).length;
-  assert.equal(visibleRowCount, 6, "exactly six rows render before the show-all toggle");
-  const totalRowCount = (html.match(/class="race-row"/g) ?? []).length;
-  assert.equal(totalRowCount, board.length, "every entrant still has a row, most inside the collapsed tail");
-
-  // The collapsed tail is a native <details>, which hides its content
-  // natively when closed; a filter match there needs to open it explicitly,
-  // or the match toggles "visible" and still renders nothing (DESIGN.md
-  // section 12.3's <details>-collapse trap).
-  const { readFile } = await import("node:fs/promises");
-  const filterSource = await readFile(new URL("../app/components/RaceFilter.tsx", import.meta.url), "utf8");
-  assert.match(filterSource, /closest\("details"\)/, "a filter match opens its <details> ancestor");
-  // A WeakMap that captures a <details>'s state once and never refreshes it
-  // restores the wrong value across a second filtering session (filter,
-  // clear, manually open the section by hand, filter and clear again: a
-  // stale captured "closed" snaps it shut even though the reader just
-  // opened it). Codex found this on PR #14; the baseline must be recaptured
-  // at the start of each session, not held forever after the first one.
-  assert.match(filterSource, /startingNewSession/, "the saved <details> state is recaptured at the start of each new filtering session");
+  assert.equal((html.match(/class="race-row"/g) ?? []).length, board.length, "every company is present without a disclosure");
+  assert.doesNotMatch(html, /race-board-more|race-board-rest/, "reading the company board requires no show-all click");
 });
 
 test("the homepage race board states its zero and gives every entrant a row", async () => {
@@ -98,7 +76,7 @@ test("the homepage race board states its zero and gives every entrant a row", as
   const board = dataModule.raceBoard();
 
   // The zero is written, not implied by an empty bar.
-  assert.match(html, /0 MWe operational across all 18 entrants/);
+  assert.match(html, /Selected advanced-reactor sample/);
   assert.match(html, new RegExp(`as of ${dataModule.dataAsOf}`));
 
   for (const row of board) {
@@ -210,7 +188,7 @@ test("DOE program coverage distinguishes pilot, criticality, and ARDP projects",
   assert.equal(dataModule.projects.length, 28);
   assert.equal(dataModule.companies.length, 26);
   assert.equal(pilotProjects.length, 11);
-  assert.deepEqual(criticalityProjects.map((project) => project.name).sort(), ["Aalo Critical Test Reactor", "Antares R1 Mark-0", "Groves pilot reactor", "Ward 250 critical experiment"]);
+  assert.deepEqual(criticalityProjects.map((project) => project.name).sort(), ["Aalo-X · zero-power criticality demonstration", "Antares R1 Mark-0", "Groves pilot reactor", "Ward 250 critical experiment"]);
   assert.deepEqual(ardpProjects.map((project) => project.slug).sort(), ["long-mott-xe-100", "natrium-kemmerer"]);
   assert.deepEqual(launchPadProjects.map((project) => project.slug), ["deployable-unity"]);
 });
@@ -325,7 +303,7 @@ test("every race record carries one band, an https source, and a real or null da
     assert.ok(companySlugs.has(entrant.companySlug), `${entrant.companySlug} has a company record`);
     assert.match(entrant.rosterSource, /^https:\/\//, entrant.companySlug);
     assert.ok(entrant.rosterBasis.length > 20, `${entrant.companySlug} states why it qualifies`);
-    assert.ok(entrant.unitMWe > 0, `${entrant.companySlug} has a unit rating`);
+    assert.ok(entrant.unitMWe === null || entrant.unitMWe > 0, `${entrant.companySlug} has a unit rating`);
   }
 
   for (const claim of dataModule.capacityClaims) {
@@ -380,7 +358,7 @@ test("the board reports an honest zero and never lets frameworks move a row", as
     const operational = row.cells.find((cell) => cell.band === "operational");
     assert.equal(operational.mwe, 0, `${row.company.name} has no operational capacity yet`);
     assert.match(row.ariaLabel, /operational/, `${row.company.name} states operational MWe in its label`);
-    assert.equal(row.unitsToGigawatt, Math.ceil(1000 / row.entrant.unitMWe));
+    assert.equal(row.unitsToGigawatt, row.entrant.unitMWe === null ? null : Math.ceil(1000 / row.entrant.unitMWe));
   }
 
   // Zeroing every framework megawatt must not reorder the board.
@@ -402,7 +380,7 @@ test("race capacity counts hold a floor and stay in disjoint frames", async () =
   const totals = Object.fromEntries(dataModule.raceTotals().map((entry) => [entry.band, entry.mwe]));
   assert.ok(dataModule.raceEntrants.length >= 18, `entrant count floor: ${dataModule.raceEntrants.length}`);
   assert.equal(totals.operational, 0);
-  assert.ok(totals.construction >= 365, `construction floor: ${totals.construction}`);
+  assert.ok(totals.construction >= 345, `construction floor: ${totals.construction}`);
   assert.ok(totals["doe-authorized"] >= 75, `DOE-authorized floor: ${totals["doe-authorized"]}`);
   // Supersession, 2026-08-05: the floor was 1,235. NANO Nuclear's 15 MWe left
   // the review band because its NRC filing is for a non-power research reactor
@@ -417,8 +395,8 @@ test("race capacity counts hold a floor and stay in disjoint frames", async () =
   // and Amazon signed a development and funding agreement for it and only the
   // options-based remainder is an announcement. Capacity moved between bands;
   // none was lost.
-  // 2026-11-21: Hermes 2 uses 50 MWe; its framework remainder fell by 30 MWe to preserve 500 MWe.
-  assert.ok(totals.framework >= 40045, `framework floor: ${totals.framework}`);
+  // 2026-11-22: Hermes test permits do not establish commercial 50 MWe; remove 3 GW unproven additional GEV capacity and 30 MW AI demand.
+  assert.ok(totals.framework >= 37060, `framework floor: ${totals.framework}`);
   assert.ok(totals.contracted >= 321, `contracted floor: ${totals.contracted}`);
 
   // Each claim sits in exactly one band, so the bands never double-count a megawatt.
@@ -462,7 +440,7 @@ test("every entrant dossier renders every lane, with explicit empty states", asy
     assert.ok(html.includes(`href="/#race"`), `${entrant.companySlug} links back to the race board`);
     assert.ok(html.includes(`href="/companies"`), `${entrant.companySlug} keeps the directory link`);
     // Derived, never hand-written.
-    assert.ok(html.includes(`${dossier.row.unitsToGigawatt} × ${entrant.unitMWe.toLocaleString("en-US")} MWe`), `${entrant.companySlug} shows gigawatt math`);
+    assert.ok(entrant.unitMWe === null ? html.includes("Electrical rating not verified") : html.includes(`${dossier.row.unitsToGigawatt} × ${entrant.unitMWe.toLocaleString("en-US")} MWe`), `${entrant.companySlug} shows gigawatt math`);
     // A private company says so rather than rendering a blank cell.
     assert.ok(html.includes(entrant.ticker ?? "Private"), `${entrant.companySlug} states its listing`);
     // No placeholder ever reaches the reader.
@@ -534,7 +512,7 @@ test("shipped copy stays out of the AI register", async () => {
     "at the end of the day", "in conclusion", "at your fingertips", "next level",
     "designed to help you", "not only",
   ];
-  const paths = ["/", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
+  const paths = ["/", "/fission", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
     ...dataModule.raceEntrants.map((entrant) => `/companies/${entrant.companySlug}`)];
 
   for (const path of paths) {
@@ -561,7 +539,7 @@ test("the methodology page explains the race rules the board links to", async ()
   // The board's legend links to /methodology#race, so the anchor has to exist.
   assert.match(html, /id="race"/, "the race anchor the board links to exists");
   for (const heading of ["Who is on the board", "What counts as a megawatt", "The seven bands",
-    "A DOE authorization is not an NRC license", "Binding and non-binding never merge"]) {
+    "A DOE authorization is not an NRC license", "Contracts and announcements"]) {
     assert.ok(html.includes(heading), `methodology explains: ${heading}`);
   }
   // Every band is defined with the authority that grants it, including the empty one.
@@ -610,7 +588,7 @@ test("no text-carrying element ever renders blank", async () => {
   // blank element. This guards the class: a PR review found the companies
   // directory rendering an empty <b></b> for the stage of a roster entrant with
   // no tracked project, while the detail page handled the same case correctly.
-  const paths = ["/", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
+  const paths = ["/", "/fission", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
     ...dataModule.companies.map((company) => `/companies/${company.slug}`)];
 
   for (const path of paths) {
@@ -640,8 +618,8 @@ test("every entrant's unit rating obeys the roster rule", async () => {
   const dataModule = await import("../app/data.ts");
   for (const entrant of dataModule.raceEntrants) {
     // The roster rule caps an entrant at roughly 350 MWe per unit.
-    assert.ok(entrant.unitMWe > 0 && entrant.unitMWe <= 350, `${entrant.companySlug} is rated ${entrant.unitMWe} MWe`);
-    assert.equal(entrant.lane, entrant.unitMWe >= 50 ? "Grid-scale SMR" : "Microreactor", `${entrant.companySlug} lane matches its rating`);
+    assert.ok(entrant.unitMWe === null || (entrant.unitMWe > 0 && entrant.unitMWe <= 350), `${entrant.companySlug} is rated ${entrant.unitMWe} MWe`);
+    assert.equal(entrant.lane, entrant.unitMWe !== null && entrant.unitMWe >= 50 ? "Grid-scale SMR" : "Microreactor", `${entrant.companySlug} lane matches its rating`);
 
     // A roster basis must say what the company HAS, never what it lacks. This
     // is the guard that catches the real defect a PR review found: Westinghouse
@@ -732,9 +710,9 @@ test("a company's capacity claims describe different projects", async () => {
   const framework = xenergy.find((claim) => claim.band === "framework");
   const contracted = xenergy.find((claim) => claim.band === "contracted");
   assert.match(review.label, /Texas/, "the reviewed project names its state");
-  assert.match(contracted.label, /Washington/, "the funded Cascade phase names its state");
-  assert.match(framework.label, /separate from the Texas project under review/, "the framework says it does not contain the reviewed project");
-  assert.match(framework.label, /beyond the funded Cascade phase/, "the framework excludes the phase now counted as contracted");
+  assert.match(contracted.label, /Cascade/, "the funded phase names its project");
+  assert.match(framework.label, /U.S. program/, "the framework says it does not contain the reviewed project");
+  assert.match(framework.label, /320 MWe.*deducted/, "the framework excludes the phase now counted as contracted");
 
   // Every claim label opens with a distinct project or counterparty per company,
   // so no two claims can silently describe the same megawatts.
@@ -749,7 +727,7 @@ test("a company's capacity claims describe different projects", async () => {
 test("a conflicting account carries its own source", async () => {
   const dataModule = await import("../app/data.ts");
   const conflicts = dataModule.statedTargets.filter((target) => target.conflict);
-  assert.ok(conflicts.length > 0, "the dataset still exercises the conflict case");
+  assert.ok(!dataModule.statedTargets.some((target) => /five.to.seven.year slip|2031/.test(target.conflict ?? "")), "the unsupported TerraPower conflict stays removed");
   for (const target of conflicts) {
     // The conflict comes from a different publication than the target it
     // disputes, so the target's source cannot stand in for it.
@@ -854,7 +832,7 @@ test("a program selection is never filed under permits or physical work", async 
   // unawarded Air Force finalist status rendering under "Physical progress"
   // and a program naming rendering under "Licensing".
   const grantsPermission = /\b(approved|issued|accepted|extended|granted|authoriz|submitted|filed)/i;
-  const isSelection = /\b(selected|named one of|finalists?|other transaction agreement|signed)\b/i;
+  const isSelection = /\b(selected|named one of|finalists?|other transaction (?:authority )?agreement|signed)\b/i;
 
   for (const event of dataModule.proofEvents.filter((record) => record.kind === "Permit / authorization")) {
     assert.match(event.label, grantsPermission, `"${event.label.slice(0, 60)}" names the authorizing act`);
@@ -931,7 +909,7 @@ test("llms.txt is generated from the data and stays in sync", async () => {
 
 test("every page passes the accessibility checks a screen reader depends on", async () => {
   const dataModule = await import("../app/data.ts");
-  const paths = ["/", "/updates", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
+  const paths = ["/", "/fission", "/updates", "/methodology", "/companies", "/deployments", "/capital", "/federal-action", "/map",
     ...dataModule.raceEntrants.slice(0, 4).map((entrant) => `/companies/${entrant.companySlug}`)];
 
   for (const path of paths) {
@@ -1248,7 +1226,7 @@ test("today's criticality is recorded as proof, not capacity", async () => {
   assert.ok(groves, "the 2026-08-06 criticality is recorded");
   assert.equal(groves.companySlug, "oklo");
   assert.match(groves.powerNote, /0 MWe/, "a test reactor contributes no capacity");
-  assert.match(groves.label, /private land/, "the label states what is new about it");
+  assert.match(groves.label, /private greenfield site/, "the label states what is new about it");
 
   // It must not have moved a megawatt. Groves is an isotope test reactor.
   const oklo = dataModule.raceBoard().find((row) => row.entrant.companySlug === "oklo");
@@ -1282,7 +1260,7 @@ test("the homepage leads with four separate frames and a filterable board", asyn
   // The strip renders each frame with its own label, and never a grand total.
   const mwe = (value) => value.toLocaleString("en-US");
   assert.match(html, new RegExp(`${mwe(totals.buildingMWe)}</b><span[^>]*>MWe being built`));
-  assert.match(html, new RegExp(`${mwe(totals.executedMWe)}</b><span[^>]*>MWe on executed actions`));
+  assert.match(html, new RegExp(`${mwe(totals.executedMWe)}</b><span[^>]*>MWe on documented actions`));
   assert.match(html, new RegExp(`${mwe(totals.announcedMWe)}</b><span[^>]*>MWe announced, non-binding`));
   assert.doesNotMatch(html, new RegExp(mwe(totals.executedMWe + totals.announcedMWe)), "executed and announced are never summed");
 
@@ -1395,7 +1373,7 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
 
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   const base = "https://pranava0x0.github.io/nucleardeployment";
-  for (const route of ["/", "/updates/", "/deployments/", "/companies/", "/map/", "/federal-action/", "/capital/", "/financing/", "/bd/", "/methodology/"]) {
+  for (const route of ["/", "/fission/", "/updates/", "/deployments/", "/companies/", "/map/", "/federal-action/", "/capital/", "/financing/", "/bd/", "/methodology/"]) {
     assert.ok(sitemap.includes(`<loc>${base}${route}</loc>`), `sitemap lists ${route}`);
   }
   for (const company of dataModule.companies) {
@@ -1414,7 +1392,7 @@ test("sitemap, robots, and feed cover every route and stay in sync", async () =>
     assert.ok(match[1] >= project.latestDate, `${project.slug}'s lastmod (${match[1]}) never regresses behind its latestDate (${project.latestDate})`);
   }
   const urlCount = (sitemap.match(/<url>/g) ?? []).length;
-  assert.equal(urlCount, 10 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
+  assert.equal(urlCount, 11 + dataModule.companies.length + dataModule.projects.length, "sitemap covers exactly the shipped routes");
   const lastmods = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1]);
   assert.ok(lastmods.length > 8, "sitemap states lastmod dates");
   // The financing and BD layers carry their own later stamps; everything else
@@ -1557,7 +1535,7 @@ test("every page states a canonical and the lead pages carry structured data", a
 test("the header and footer map the whole site", async () => {
   const raw = await (await render()).text();
   const html = raw.replace(/<!--.*?-->/g, "");
-  for (const route of ["/", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/financing", "/bd", "/methodology"]) {
+  for (const route of ["/", "/fission", "/updates", "/deployments", "/companies", "/map", "/federal-action", "/capital", "/financing", "/bd", "/methodology"]) {
     assert.ok(html.includes(`href="${route}"`), `the navigation reaches ${route}`);
   }
   // The footer carries the credit and the code, per the footer rule.
@@ -1613,7 +1591,7 @@ test("the financing page renders every lane, company row, and labeled judgment",
 
   // An absence is the site's finding, never pinned on a source, in both directions.
   const emptyCommercial = financing.companyFinance.filter((row) => row.commercial.length === 0).length;
-  const absenceCount = html.split("No commercial position on record. A research finding, not a sourced claim.").length - 1;
+  const absenceCount = html.split("No commercial agreement recorded in the reviewed sources.").length - 1;
   assert.equal(absenceCount, emptyCommercial, "every empty commercial lane states the research finding exactly once");
   assert.ok(emptyCommercial > 0 && emptyCommercial < rowCount, "the dataset exercises both the sourced and absent commercial cases");
 
@@ -1850,8 +1828,8 @@ test("issued permits migrate capacity without implying physical construction", a
     assert.ok(!data.capacityClaims.some((other) => other !== claim && other.companySlug === claim.companySlug && ["review", "construction"].includes(other.band)), `${claim.companySlug} retains no superseded review/build capacity`);
   }
   const totals = data.headlineTotals();
-  assert.equal(totals.buildingMWe, 470, "permitted capacity stays out of physical builds");
-  assert.equal(totals.executedMWe, 2106, "issued permits remain in the executed frame");
+  assert.equal(totals.buildingMWe, 420, "permitted capacity stays out of physical builds");
+  assert.equal(totals.executedMWe, 2056, "issued permits remain in the executed frame");
   const kairos = data.capacityClaims.filter((claim) => claim.companySlug === "kairos-power");
   assert.equal(kairos.reduce((sum, claim) => sum + claim.mwe, 0), 500, "updated Hermes 2 rating preserves the whole Google framework");
   assert.equal(data.capacityClaims.find((claim) => claim.companySlug === "holtec" && claim.band === "review").mwe, 680);
@@ -1873,4 +1851,44 @@ test("the refresh preserves cash history and distinguishes contract ceilings fro
   const latest = finance.costBenchmarks.find((record) => record.report?.reportSlug === "lazard-lcoe-july-2026");
   assert.equal(latest.figure, "$175–255/MWh");
   assert.equal(latest.report.page, 7);
+});
+
+
+test("fission coverage renders dated fleet observations and every family with its source", async () => {
+  const { fissionFamilies, fleetYears } = await import("../app/fission-data.ts");
+  const response = await render("/fission"); assert.equal(response.status, 200);
+  const html = (await response.text()).replace(/<!--.*?-->/g, "");
+  assert.equal((html.match(/class="family-entry"/g) ?? []).length, 13);
+  for (const year of fleetYears) assert.ok(html.includes(`<th scope="row">${year}</th>`));
+  for (const family of fissionFamilies) for (const source of family.source_urls) assert.ok(html.includes(source.replaceAll("&", "&amp;")), `${family.id} links its definition source`);
+  assert.match(html, /784.781/); assert.match(html, /98,441/);
+  assert.match(html, /not a census/); assert.match(html, /not current statistics/);
+});
+
+
+test("technical and procurement explanations agree across the public views", async () => {
+  const method = (await (await render("/methodology")).text()).replace(/<!--.*?-->/g, "");
+  assert.match(method, /pre-application activities/);
+  assert.match(method, /non-federal sites/);
+  assert.doesNotMatch(method, /combined license is still under review|reactors on its own sites/);
+  const data = await import("../app/data.ts");
+  const proof = data.proofEvents.find((row) => row.companySlug === "nuscale" && /77 MWe/.test(row.label));
+  assert.doesNotMatch(proof.label, /only approved/);
+  const finance = await import("../app/financing-data.ts");
+  const eielson = finance.mechanisms.find((row) => /eielson/i.test(row.example));
+  assert.doesNotMatch(`${eielson.how} ${eielson.example}`, /5 MW|30.year|fixed price for decades|bankable/);
+  assert.doesNotMatch(finance.overrunRecords.find((row) => row.subject === "Vogtle 3&4, as built").note, /169\/MWh actual/);
+  const bd = await import("../app/bd-data.ts");
+  const nasa = bd.bdBuyers.find((row) => row.slug === "nasa");
+  assert.equal(nasa.positions[0].date, "2025-11-19", "date reflects the cited company report, not an inferred completion day");
+  assert.doesNotMatch(nasa.note, /companies own the reactor and sell the power/);
+});
+
+
+test("a verified company post does not upgrade the whole social platform", async () => {
+  const data = await import("../app/data.ts");
+  const bd = await import("../app/bd-data.ts");
+  const source = bd.bdBuyers.find((row) => row.slug === "nasa").positions[0].source;
+  assert.equal(data.verificationForSource(source), "Company-reported");
+  assert.equal(data.verificationForSource("https://www.linkedin.com/posts/unverified-other-post"), "Press-reported");
 });

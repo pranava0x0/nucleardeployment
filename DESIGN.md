@@ -572,3 +572,11 @@ blue, orange, square corners, and system fonts remain the identity.
 Keyboard focus uses deep blue on light surfaces and the bright accent on navy
 surfaces. The native six-row board disclosure remains available; active
 filters or alternate sorting expand it, then restore its previous open state.
+
+### November 2026 statistics and family coverage
+
+The national baseline leads with dated EIA observations and explicit units. The selected advanced-reactor sample follows under its own label. A five-year table keeps stocks and annual flows separate. Reactor families use native disclosure rows with visible maturity and dated examples; historical hybrids, research configurations, and application axes stay separate. Use existing palette tokens and 44px disclosure/source targets.
+
+### November 2026 interaction review
+
+Show all tracked companies without an expansion. Family definitions and cost comparisons start open; disclosures remain optional. Family jump links lead directly to visible details. On narrow screens, annual fleet observations use a vertical list with labeled values, so reading generation or capacity factor needs no sideways scroll. Section links open their target disclosure and its ancestors in one action.

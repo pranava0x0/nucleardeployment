@@ -69,7 +69,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
       </div>
       <div className="identity-strip">
         <div><span>Design</span><b>{dossier.entrant.design}</b></div>
-        <div><span>Per unit</span><b>{mwe(dossier.entrant.unitMWe)} MWe</b></div>
+        <div><span>Per unit</span><b>{dossier.entrant.unitMWe === null ? "Electrical rating not verified" : `${mwe(dossier.entrant.unitMWe)} MWe`}</b></div>
         <div><span>Lane</span><b>{dossier.entrant.lane}</b></div>
         <div><span>Listing</span><b>{dossier.entrant.ticker ?? "Private"}</b></div>
       </div>
@@ -77,7 +77,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
       <RaceBar row={dossier.row} compact />
       <p className="race-state">{dossier.row.strongestLine}</p>
       <p className="gw-math">
-        One gigawatt is <b>{dossier.row.unitsToGigawatt} × {mwe(dossier.entrant.unitMWe)} MWe</b> units.
+        {dossier.entrant.unitMWe === null ? <>A unit count for one gigawatt cannot be calculated without a verified electrical rating.</> : <>One gigawatt is <b>{dossier.row.unitsToGigawatt} × {mwe(dossier.entrant.unitMWe)} MWe</b> units.</>}
         {" "}{dossier.row.executedMWe >= gigawattMWe
           ? <>{mwe(dossier.row.executedMWe)} MWe rest on an executed action, past the gigawatt.</>
           : dossier.row.executedMWe > 0
@@ -143,7 +143,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
             <span className="ledger-date">{when(claim.date)}</span>
             <b>{mwe(claim.mwe)} MWe · {bandLabel(claim.band)}</b>
             <span className="ledger-detail">{claim.label} · {claim.verification}</span>
-            <a href={claim.source} target="_blank" rel="noreferrer">Source ↗</a>
+            <a href={claim.source} target="_blank" rel="noreferrer">Source ↗</a>{claim.additionalSources?.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}
           </li>)}
         </ul> : <p className="lane-empty">No executed megawatts on record as of {dataAsOf}.</p>}
         <h3 className="lane-sub">Announced, non-binding</h3>
@@ -152,7 +152,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
             <span className="ledger-date">{when(claim.date)}</span>
             <b>{claim.mwe > 0 ? `${mwe(claim.mwe)} MWe` : "Capacity not disclosed"}</b>
             <span className="ledger-detail">{claim.label} · {claim.verification}</span>
-            <a href={claim.source} target="_blank" rel="noreferrer">Source ↗</a>
+            <a href={claim.source} target="_blank" rel="noreferrer">Source ↗</a>{claim.additionalSources?.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}
           </li>)}
         </ul> : <p className="lane-empty">No announced pipeline on record as of {dataAsOf}.</p>}
       </section>

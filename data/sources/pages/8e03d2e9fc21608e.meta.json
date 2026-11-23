@@ -1,0 +1,7 @@
+{
+  "url": "https://dspace.mit.edu/bitstream/handle/1721.1/133049/Jacopo's%20and%20Jessika's%20paper%20on%20nuclear%20cost%20Sep%202020.pdf",
+  "captured_at": "2026-11-22",
+  "title": "Sources of Cost Overrun in Nuclear Power Plant Construction Call for a New Approach to Engineering Design (Joule, 2020; MIT open-access copy)",
+  "capture_method": "curl download + PyMuPDF text extraction",
+  "upstream_snapshot": "data/sources/reports/eash-gates-2020-joule.txt"
+}
